@@ -1009,17 +1009,18 @@ public class SiteSettingsFragment extends PreferenceFragment
 
         boolean isAccessedViaWPComRest = SiteUtils.isAccessedViaWPComRest(mSite);
 
-        // .com sites hide the Account category, self-hosted sites hide the Related Posts preference
-        if (!isAccessedViaWPComRest) {
-            // self-hosted, non-jetpack site
-            removeNonSelfHostedPreferences();
-        } else if (mSite.isJetpackConnected()) {
-            // jetpack site
-            removeNonJetpackPreferences();
-        } else {
-            // wp.com site
-            removeNonWPComPreferences();
-        }
+        removeNonSelfHostedPreferences();
+        //// .com sites hide the Account category, self-hosted sites hide the Related Posts preference
+        //if (!isAccessedViaWPComRest) {
+        //    // self-hosted, non-jetpack site
+        //    removeNonSelfHostedPreferences();
+        //} else if (mSite.isJetpackConnected()) {
+        //    // jetpack site
+        //    removeNonJetpackPreferences();
+        //} else {
+        //    // wp.com site
+        //    removeNonWPComPreferences();
+        //}
 
         if (!mSite.isUsingWpComRestApi()) {
             WPPrefUtils.removePreference(this, R.string.pref_key_homepage, R.string.pref_key_homepage_settings);
@@ -1920,7 +1921,7 @@ public class SiteSettingsFragment extends PreferenceFragment
     private void removeNonSelfHostedPreferences() {
         mUsernamePref.setEnabled(true);
         mPasswordPref.setEnabled(true);
-        WPPrefUtils.removePreference(this, R.string.pref_key_site_screen, R.string.pref_key_site_general);
+        //WPPrefUtils.removePreference(this, R.string.pref_key_site_screen, R.string.pref_key_site_general);
         WPPrefUtils.removePreference(this, R.string.pref_key_site_screen, R.string.pref_key_site_writing);
         WPPrefUtils.removePreference(this, R.string.pref_key_site_screen, R.string.pref_key_site_discussion);
         WPPrefUtils.removePreference(this, R.string.pref_key_site_screen, R.string.pref_key_site_advanced);

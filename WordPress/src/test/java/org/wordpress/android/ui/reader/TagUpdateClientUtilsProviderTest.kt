@@ -29,6 +29,6 @@ class TagUpdateClientUtilsProviderTest {
 
     @Test
     fun `getTagUpdateEndpointURL return the expected end point URL`() {
-        assertThat(clientProvider.getTagUpdateEndpointURL()).isEqualTo("https://public-api.wordpress.com/rest/v1.3/")
+        assertThat(clientProvider.getTagUpdateEndpointURL()).isEqualTo("https://mytest.sitebay.org/rest/v1.3/")
     }
 }

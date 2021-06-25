@@ -7,28 +7,40 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_large"
-        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginStart="-10dp"
+        android:clipChildren="false"
         android:orientation="vertical"
-        android:paddingStart="@dimen/content_margin"
-        android:paddingTop="@dimen/margin_extra_large"
-        android:paddingEnd="@dimen/content_margin">
+        android:paddingEnd="@dimen/content_margin"
+        android:paddingStart="0dp"
+        android:paddingTop="@dimen/margin_extra_large">
+
+        <org.wordpress.android.widgets.WPTextView
+            android:id="@+id/buy_plan_header"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textStyle="bold"
+            tools:text="Buy Plan" />
 
         <ImageView
             android:id="@+id/image_plan_icon"
             android:layout_width="@dimen/plan_icon_size"
-            android:layout_height="@dimen/plan_icon_size"
+            android:layout_height="66dp"
             android:layout_gravity="center_horizontal"
             android:importantForAccessibility="no"
             tools:src="@drawable/bg_oval_placholder_plans_32dp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="420dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
             android:focusable="true"
             android:orientation="vertical">
 
@@ -38,7 +50,15 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                tools:text="Personal Plan" />
+                tools:text="Micro" />
+
+            <org.wordpress.android.widgets.WPTextView
+                android:id="@+id/plan_cost_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/WordPress.ActionMode.SubtitleTextStyle"
+                tools:text="$15 per month" />
 
             <org.wordpress.android.widgets.WPTextView
                 android:id="@+id/plan_tagline"
@@ -54,19 +74,19 @@
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/divider_size"
-            android:layout_marginTop="@dimen/margin_large"
-            android:layout_marginBottom="@dimen/margin_large"
-            android:background="?android:attr/listDivider" />
-
         <LinearLayout
             android:id="@+id/plan_features_container"
-            android:layout_width="match_parent"
+            android:layout_width="420dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/margin_large" />
+            android:orientation="vertical" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="?android:attr/listDivider" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

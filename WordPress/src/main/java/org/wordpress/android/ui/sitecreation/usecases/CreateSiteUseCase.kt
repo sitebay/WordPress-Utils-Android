@@ -47,6 +47,14 @@ class CreateSiteUseCase @Inject constructor(
         val domain = if (isWordPressComSubDomain(siteData.domain)) {
             urlUtilsWrapper.extractSubDomain(siteData.domain)
         } else siteData.domain
+        val wpValues =   siteData.wpValues
+        val wpBlogName = wpValues["wpBlogName"]!!
+        val wpFirstName =wpValues["wpFirstName"]!!
+        val wpLastName = wpValues["wpLastName"]!!
+        val wpEmail =    wpValues["wpEmail"]!!
+        val wpUsername = wpValues["wpUsername"]!!
+        val wpPassword = wpValues["wpPassword"]!!
+
         return suspendCoroutine { cont ->
             val newSitePayload = NewSitePayload(
                     domain,
@@ -54,6 +62,12 @@ class CreateSiteUseCase @Inject constructor(
                     siteVisibility,
                     siteData.segmentId,
                     siteData.siteDesign,
+                    wpBlogName,
+                    wpFirstName,
+                    wpLastName,
+                    wpEmail,
+                    wpUsername,
+                    wpPassword,
                     dryRun
             )
             continuation = cont
@@ -69,4 +83,4 @@ class CreateSiteUseCase @Inject constructor(
     }
 }
 
-fun isWordPressComSubDomain(url: String) = url.endsWith(".wordpress.com")
+fun isWordPressComSubDomain(url: String) = url.endsWith(".sitebay.ca")

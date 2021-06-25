@@ -167,7 +167,8 @@ class SitePreviewViewModel @Inject constructor(
                 val serviceData = SiteCreationServiceData(
                         segmentIdentifier,
                         siteDesign,
-                        urlWithoutScheme
+                        urlWithoutScheme,
+                        wpValues
                 )
                 _startCreateSiteService.value = SitePreviewStartServiceData(serviceData, previousState)
             }
@@ -248,6 +249,8 @@ class SitePreviewViewModel @Inject constructor(
                 val siteBySiteId = requireNotNull(siteStore.getSiteBySiteId(remoteSiteId)) {
                     "Site successfully fetched but has not been found in the local db."
                 }
+                siteBySiteId.username = siteCreationState.wpValues["username"]
+                siteBySiteId.password = siteCreationState.wpValues["password"]
                 CreateSiteState.SiteCreationCompleted(siteBySiteId.id)
             } else {
                 SiteNotInLocalDb(remoteSiteId)

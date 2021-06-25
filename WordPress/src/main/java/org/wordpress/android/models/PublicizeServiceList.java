@@ -50,7 +50,7 @@ public class PublicizeServiceList extends ArrayList<PublicizeService> {
                     "unicode":"\\f203"
                  },
                  "icon":"http:\/\/i.wordpress.com\/wp-content\/admin-plugins\/publicize\/assets\/publicize-fb-2x.png",
-                 "connect_URL":"https:\/\/public-api.wordpress.com\/connect\/?action=request&kr_nonce=a1e2ad2b80
+                 "connect_URL":"https:\/\/mytest.sitebay.org\/connect\/?action=request&kr_nonce=a1e2ad2b80
                  &nonce=c4b69a25c1&for=connect&service=facebook&kr_blog_nonce=0ae2027be9&magic=keyring&blog=90298630",
                  "multiple_external_user_ID_support":true,
                  "external_users_only":true,

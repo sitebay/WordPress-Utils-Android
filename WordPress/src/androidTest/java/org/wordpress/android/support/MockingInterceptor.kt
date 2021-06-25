@@ -12,7 +12,7 @@ class MockingInterceptor : Interceptor {
         val request = chain.request()
 
         // Redirect all WordPress.com API requests to local mock server
-        if (request.url.host == "public-api.wordpress.com") {
+        if (request.url.host == "mytest.sitebay.org") {
             val newUrl = request.url.newBuilder()
                     .scheme("http")
                     .host("localhost")

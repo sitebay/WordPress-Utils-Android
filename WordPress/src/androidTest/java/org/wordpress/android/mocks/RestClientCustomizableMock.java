@@ -94,7 +94,7 @@ public class RestClientCustomizableMock extends RestClient {
                                    RestRequest.Listener listener, RestRequest.ErrorListener errorListener) {
         AppLog.v(T.TESTS, this.getClass() + ": makeRequest(" + url + ")");
         RestRequest dummyReturnValue = new RestRequest(method, url, params, listener, errorListener);
-        // URL example: https://public-api.wordpress.com/rest/v1/me
+        // URL example: https://mytest.sitebay.org/rest/v1/me
         // Filename: default-public-api-wordpress-com-rest-v1-me.json
         String filename = mPrefix + "-" + url.replace("https://", "").replace("/", "-").replace(".", "-").replace("?",
                                                                                                                   "-")

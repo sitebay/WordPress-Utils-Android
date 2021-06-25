@@ -19,10 +19,13 @@ import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScre
 import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleGeneral
 import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleStepCount
 import org.wordpress.android.ui.sitecreation.SiteCreationStep.DOMAINS
+import org.wordpress.android.ui.sitecreation.SiteCreationStep.LOGIN_DETAILS
 import org.wordpress.android.ui.sitecreation.SiteCreationStep.SEGMENTS
 import org.wordpress.android.ui.sitecreation.SiteCreationStep.SITE_PREVIEW
 import org.wordpress.android.ui.sitecreation.domains.DomainsScreenListener
+import org.wordpress.android.ui.sitecreation.domains.LoginDetailsScreenListener
 import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsFragment
+import org.wordpress.android.ui.sitecreation.domains.SiteCreationLoginDetailsFragment
 import org.wordpress.android.ui.sitecreation.misc.OnHelpClickedListener
 import org.wordpress.android.ui.sitecreation.previews.SiteCreationPreviewFragment
 import org.wordpress.android.ui.sitecreation.previews.SitePreviewScreenListener
@@ -39,6 +42,7 @@ import javax.inject.Inject
 @Suppress("TooManyFunctions")
 class SiteCreationActivity : LocaleAwareActivity(),
         DomainsScreenListener,
+        LoginDetailsScreenListener,
         SitePreviewScreenListener,
         OnHelpClickedListener,
         BasicDialogPositiveClickInterface,
@@ -47,6 +51,8 @@ class SiteCreationActivity : LocaleAwareActivity(),
     @Inject internal lateinit var uiHelpers: UiHelpers
     private lateinit var mainViewModel: SiteCreationMainVM
     private lateinit var hppViewModel: HomePagePickerViewModel
+    private lateinit var wpUsername: String
+    private lateinit var wpPassword: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -83,6 +89,8 @@ class SiteCreationActivity : LocaleAwareActivity(),
                     }
                     is SiteCreationCompleted -> Pair(true, createSiteState.localSiteId)
                 }
+                intent.putExtra(SitePickerActivity.KEY_USERNAME, wpUsername)
+                intent.putExtra(SitePickerActivity.KEY_PASSWORD, wpPassword)
                 intent.putExtra(SitePickerActivity.KEY_LOCAL_ID, localSiteId)
                 setResult(if (siteCreated) Activity.RESULT_OK else Activity.RESULT_CANCELED, intent)
                 finish()
@@ -119,6 +127,14 @@ class SiteCreationActivity : LocaleAwareActivity(),
         mainViewModel.onSiteCreationCompleted()
     }
 
+
+    override fun onCreateSiteSelected(wpValues: Map<String, String>) {
+        wpUsername = wpValues.get("wpUsername").toString()
+        wpPassword = wpValues.get("wpPassword").toString()
+        mainViewModel.onLoginDetailsScreenFinished(wpValues)
+    }
+
+
     override fun onSitePreviewScreenDismissed(createSiteState: CreateSiteState) {
         mainViewModel.onSitePreviewScreenFinished(createSiteState)
     }
@@ -134,6 +150,11 @@ class SiteCreationActivity : LocaleAwareActivity(),
             DOMAINS -> SiteCreationDomainsFragment.newInstance(
                     screenTitle
             )
+            LOGIN_DETAILS -> {
+                SiteCreationLoginDetailsFragment.newInstance(
+                        screenTitle,
+                )
+            }
             SITE_PREVIEW -> SiteCreationPreviewFragment.newInstance(screenTitle, target.wizardState)
         }
         slideInFragment(fragment, target.wizardStep.toString())

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="@dimen/margin_large"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="@dimen/margin_large"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/discountText"
+        android:layout_width="371dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginVertical="5dp"
+        android:gravity="center_horizontal"
+        android:text="Switch to Yearly billing to get 2 months free!"
+        android:textAppearance="?attr/textAppearanceCaption"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/intervalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginVertical="5dp"
+            android:gravity="left"
+            android:text="Billing Schedule"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/planToggleButton"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textAppearance="@style/JetpackInstallMessageText"
+            android:textOff="Monthly"
+            android:textOn="Yearly" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp">
+
+        <Button
+            android:id="@+id/addCardButton"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Add Card"
+            android:textColor="@color/accent_100" />
+
+        <TextView
+            android:id="@+id/cardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginVertical="5dp"
+            android:gravity="left"
+            android:text="Payment Method"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/planCostTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text="Plan"
+            android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+
+        <TextView
+            android:id="@+id/planCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/planCostTV"
+            android:gravity="right"
+            android:text="$x" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/taxCostTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text="Sales Tax"
+            android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+
+        <TextView
+            android:id="@+id/taxCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/taxCostTV"
+            android:gravity="right"
+            android:text="$x" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/totalCostTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Total"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalCostVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/totalCostTV"
+            android:gravity="right"
+            android:text="$x"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_size"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buyPlanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue_wordpress"
+        android:text="Pay Now"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:text="I authorise Stripe Samples to send instructions to the financial institution that issued my card to take payments from my card account in accordance with the terms of my agreement with you."
+        android:textAppearance="?attr/textAppearanceCaption"
+        android:textColor="?attr/wpColorOnSurfaceMedium"
+        app:layout_constraintEnd_toEndOf="@+id/buyPlanButton"
+        app:layout_constraintStart_toStartOf="@+id/buyPlanButton"
+        app:layout_constraintTop_toBottomOf="@+id/buyPlanButton" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>
+

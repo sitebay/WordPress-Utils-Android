@@ -1,6 +1,7 @@
 package org.wordpress.android.util;
 
 import android.text.TextUtils;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -177,10 +178,14 @@ public class SiteUtils {
     }
 
     public static boolean enableBlockEditorOnSiteCreation(Dispatcher dispatcher, SiteStore siteStore,
-                                                          int siteLocalSiteID) {
+                                                          int siteLocalSiteID, String username, String password) {
         SiteModel newSiteModel = siteStore.getSiteByLocalId(siteLocalSiteID);
         if (newSiteModel != null) {
             enableBlockEditor(dispatcher, newSiteModel);
+            newSiteModel.setUsername(username);
+            newSiteModel.setPassword(password);
+            Log.i("MYLOG", "SET PASSWORD");
+            Log.i("MYLOG", password);
             AnalyticsUtils.trackWithSiteDetails(Stat.EDITOR_GUTENBERG_ENABLED, newSiteModel,
                     BlockEditorEnabledSource.ON_SITE_CREATION.asPropertyMap());
             return true;

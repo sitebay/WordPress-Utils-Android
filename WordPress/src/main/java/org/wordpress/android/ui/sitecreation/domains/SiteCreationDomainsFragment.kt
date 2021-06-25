@@ -67,7 +67,7 @@ class SiteCreationDomainsFragment : SiteCreationBaseFormFragment() {
                     rootView = it.root as ViewGroup,
                     onClear = { viewModel.onClearTextBtnClicked() }
             )
-            it.createSiteButton.setOnClickListener { viewModel.createSiteBtnClicked() }
+            it.selectDomainButton.setOnClickListener { viewModel.selectDomainBtnClicked() }
             it.initRecyclerView()
             it.initViewModel()
         }
@@ -100,7 +100,7 @@ class SiteCreationDomainsFragment : SiteCreationBaseFormFragment() {
         viewModel.clearBtnClicked.observe(this@SiteCreationDomainsFragment, {
             searchInputWithHeader?.setInputText("")
         })
-        viewModel.createSiteBtnClicked.observe(this@SiteCreationDomainsFragment, { domain ->
+        viewModel.selectDomainBtnClicked.observe(this@SiteCreationDomainsFragment, { domain ->
             domain?.let { (requireActivity() as DomainsScreenListener).onDomainSelected(domain) }
         })
         viewModel.onHelpClicked.observe(this@SiteCreationDomainsFragment, {

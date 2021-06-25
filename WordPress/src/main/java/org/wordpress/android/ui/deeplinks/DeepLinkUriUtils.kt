@@ -34,10 +34,10 @@ class DeepLinkUriUtils
     }
 
     /**
-     * Tracking URIs like `public-api.wordpress.com/mbar/...` come from emails and should be handled here
+     * Tracking URIs like `mytest.sitebay.org/mbar/...` come from emails and should be handled here
      */
     fun isTrackingUrl(uri: UriWrapper): Boolean {
-        // https://public-api.wordpress.com/mbar/
+        // https://mytest.sitebay.org/mbar/
         return uri.host == HOST_API_WORDPRESS_COM &&
                 uri.pathSegments.firstOrNull() == MOBILE_TRACKING_PATH
     }
@@ -49,7 +49,7 @@ class DeepLinkUriUtils
     }
 
     companion object {
-        private const val HOST_API_WORDPRESS_COM = "public-api.wordpress.com"
+        private const val HOST_API_WORDPRESS_COM = "mytest.sitebay.org"
         private const val MOBILE_TRACKING_PATH = "mbar"
         private const val WP_LOGIN = "wp-login.php"
         private const val REDIRECT_TO_PARAM = "redirect_to"

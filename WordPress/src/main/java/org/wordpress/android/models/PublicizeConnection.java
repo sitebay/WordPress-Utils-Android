@@ -196,16 +196,16 @@ public class PublicizeConnection {
         "external_profile_URL":"http://twitter.com/AutomatticNickB",
         "external_follower_count":null,
         "status":"ok",
-        "refresh_URL":"https://public-api.wordpress.com/connect/?action=request&kr_nonce=
+        "refresh_URL":"https://mytest.sitebay.org/connect/?action=request&kr_nonce=
         10c147b6fb&nonce=44fce811bb&refresh=1&for=connect&service=twitter&kr_blog_nonce=
         e3686ea86a&magic=keyring&blog=52451176",
         "meta":{
             "links":{
-                "self":"https://public-api.wordpress.com/rest/v1.1/sites/52451176/publicize-connections/12783250",
-                "help":"https://public-api.wordpress.com/rest/v1.1/sites/52451176/publicize-connections/12783250/help",
-                "site":"https://public-api.wordpress.com/rest/v1.1/sites/52451176",
-                "service":"https://public-api.wordpress.com/rest/v1.1/meta/external-services/twitter",
-                "keyring-connection":"https://public-api.wordpress.com/rest/v1.1/me/keyring-connections/12781808"}
+                "self":"https://mytest.sitebay.org/api/sites/52451176/publicize-connections/12783250",
+                "help":"https://mytest.sitebay.org/api/sites/52451176/publicize-connections/12783250/help",
+                "site":"https://mytest.sitebay.org/api/sites/52451176",
+                "service":"https://mytest.sitebay.org/api/meta/external-services/twitter",
+                "keyring-connection":"https://mytest.sitebay.org/api/me/keyring-connections/12781808"}
              }}]}
      */
     public static PublicizeConnection fromJson(JSONObject json) {

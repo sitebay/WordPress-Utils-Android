@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/clear_all_layout"
+        app:hintEnabled="false"
+        app:startIconDrawable="@drawable/ic_search_white_24dp"
+        app:startIconTint="?attr/wpColorOnSurfaceMedium">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:drawablePadding="@dimen/margin_extra_large"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            tools:hint="Type a keyword for more ideas!!!"
+            tools:ignore="RtlSymmetry"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/input_container"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:background="?android:attr/listDivider"
+        android:visibility="gone" />
+</RelativeLayout>

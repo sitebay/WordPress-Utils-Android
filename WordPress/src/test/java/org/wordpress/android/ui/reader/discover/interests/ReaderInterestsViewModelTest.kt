@@ -634,7 +634,7 @@ class ReaderInterestsViewModelTest {
                     (add(
                             ReaderTag(
                                     c.toString(), c.toString(), c.toString(),
-                                    "https://public-api.wordpress.com/rest/v1.2/read/tags/$c/posts",
+                                    "https://mytest.sitebay.org/rest/v1.2/read/tags/$c/posts",
                                     ReaderTagType.DEFAULT
                             )
                     ))
@@ -646,7 +646,7 @@ class ReaderInterestsViewModelTest {
                     (add(
                             ReaderTag(
                                     c.toString(), c.toString(), c.toString(),
-                                    "https://public-api.wordpress.com/rest/v1.2/read/tags/$c/posts",
+                                    "https://mytest.sitebay.org/rest/v1.2/read/tags/$c/posts",
                                     ReaderTagType.DEFAULT
                             )
                     ))

@@ -71,8 +71,8 @@ class SiteCreationDomainsViewModel @Inject constructor(
         }
     }
 
-    private val _createSiteBtnClicked = SingleLiveEvent<String>()
-    val createSiteBtnClicked: LiveData<String> = _createSiteBtnClicked
+    private val _selectDomainBtnClicked = SingleLiveEvent<String>()
+    val selectDomainBtnClicked: LiveData<String> = _selectDomainBtnClicked
 
     private val _clearBtnClicked = SingleLiveEvent<Unit>()
     val clearBtnClicked = _clearBtnClicked
@@ -98,12 +98,12 @@ class SiteCreationDomainsViewModel @Inject constructor(
         resetUiState()
     }
 
-    fun createSiteBtnClicked() {
+    fun selectDomainBtnClicked() {
         val domain = requireNotNull(selectedDomain) {
             "Create site button should not be visible if a domain is not selected"
         }
         tracker.trackDomainSelected(domain, currentQuery?.value ?: "")
-        _createSiteBtnClicked.value = domain
+        _selectDomainBtnClicked.value = domain
     }
 
     fun onClearTextBtnClicked() {
@@ -282,7 +282,7 @@ class SiteCreationDomainsViewModel @Inject constructor(
         return if (isDomainUnavailable) {
             DomainsModelUnavailabilityUiState(
                     sanitizedQuery,
-                    ".wordpress.com",
+                    ".sitebay.ca",
                     UiStringRes(R.string.new_site_creation_unavailable_domain)
             )
         } else {

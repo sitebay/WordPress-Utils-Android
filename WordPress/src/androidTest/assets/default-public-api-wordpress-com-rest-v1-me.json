@@ -10,9 +10,9 @@
    "avatar_URL":"http:\/\/0.gravatar.com\/avatar\/098a6277aeca89a789a1d3be00db59f8?s=96&d=identicon",
    "meta":{
       "links":{
-         "site":"https:\/\/public-api.wordpress.com\/rest\/v1\/sites\/5836086",
-         "help":"https:\/\/public-api.wordpress.com\/rest\/v1\/me\/help",
-         "self":"https:\/\/public-api.wordpress.com\/rest\/v1\/me"
+         "site":"https:\/\/mytest.sitebay.org\/rest\/v1\/sites\/5836086",
+         "help":"https:\/\/mytest.sitebay.org\/rest\/v1\/me\/help",
+         "self":"https:\/\/mytest.sitebay.org\/rest\/v1\/me"
       }
    }
 }

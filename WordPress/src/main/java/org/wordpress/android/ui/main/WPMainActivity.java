@@ -1103,7 +1103,9 @@ public class WPMainActivity extends LocaleAwareActivity implements
                 // Enable the block editor on sites created on mobile
                 if (data != null) {
                     int newSiteLocalID = data.getIntExtra(SitePickerActivity.KEY_LOCAL_ID, -1);
-                    SiteUtils.enableBlockEditorOnSiteCreation(mDispatcher, mSiteStore, newSiteLocalID);
+                    String username = data.getStringExtra(SitePickerActivity.KEY_USERNAME);
+                    String password = data.getStringExtra(SitePickerActivity.KEY_PASSWORD);
+                    SiteUtils.enableBlockEditorOnSiteCreation(mDispatcher, mSiteStore, newSiteLocalID, username, password);
                 }
 
                 setSite(data);

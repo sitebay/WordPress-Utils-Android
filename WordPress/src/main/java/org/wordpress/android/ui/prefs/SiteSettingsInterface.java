@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.os.Handler;
 import android.text.Html;
 import android.text.TextUtils;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -121,10 +122,15 @@ public abstract class SiteSettingsInterface {
             return null;
         }
 
-        if (SiteUtils.isAccessedViaWPComRest(site)) {
-            return new WPComSiteSettings(host, site, listener);
+        //if (SiteUtils.isAccessedViaWPComRest(site)) {
+         //   return new WPComSiteSettings(host, site, listener);
+        //}
+        Log.i("MYLOG", "HOST ACCCESSED SELFHOSTED");
+        if (site.getUsername() == null) {
+            Log.i("MYLOG", "username NULL");
+        } else {
+            Log.i("MYLOG", site.getUsername());
         }
-
         return new SelfHostedSiteSettings(host, site, listener);
     }
 
@@ -203,6 +209,12 @@ public abstract class SiteSettingsInterface {
 
     public void saveSettings() {
         SiteSettingsTable.saveSettings(mSettings);
+        if (mSettings.username == null || mSettings.password == null) {
+            Log.i("MYLOG SAVE SETTINGS", "USER/PASS NULL");
+        }
+        Log.i("MYLOG SAVE SETTINGS", mSettings.toString());
+        mSite.setUsername(mSettings.username);
+        mSite.setPassword(mSettings.password);
     }
 
     public int getLocalSiteId() {
@@ -1072,11 +1084,14 @@ public abstract class SiteSettingsInterface {
             setQuotaDiskSpace(quotaAvailableSentence);
         }
         // Self hosted always read account data from the main table
-        if (!SiteUtils.isAccessedViaWPComRest(mSite)) {
-            setUsername(mSite.getUsername());
-            setPassword(mSite.getPassword());
-        }
-
+        //if (!SiteUtils.isAccessedViaWPComRest(mSite)) {
+        //    Log.i("MYLOG", "IS WPCOMREST, SETTIGNS PASSWORD");
+        //    setUsername(mSite.getUsername());
+        //    setPassword(mSite.getPassword());
+        ////}
+        Log.i("MYLOG", "IS WPCOMREST, SETTIGNS PASSWORD");
+        setUsername(mSite.getUsername());
+        setPassword(mSite.getPassword());
         if (localSettings != null) {
             localSettings.close();
         }

@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="1">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/create_site_button"
+            android:id="@+id/select_domain_button"
             style="@style/Widget.ModalLayoutPicker.Button.Primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

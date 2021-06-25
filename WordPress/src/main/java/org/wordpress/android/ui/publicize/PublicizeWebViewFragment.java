@@ -172,7 +172,7 @@ public class PublicizeWebViewFragment extends PublicizeBaseFragment {
             // does this url denotes that we made it past the auth stage?
             if (isAdded() && url != null) {
                 Uri uri = Uri.parse(url);
-                if (uri.getHost().equals("public-api.wordpress.com")
+                if (uri.getHost().equals("mytest.sitebay.org")
                     && uri.getPath().equals("/connect/")
                     && uri.getQueryParameter("action").equals("verify")) {
                     // "denied" param will appear on failure or cancellation

@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+import org.jetbrains.annotations.Nullable;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.wordpress.android.BuildConfig;
@@ -46,6 +48,8 @@ import org.wordpress.android.ui.main.SitePickerAdapter.SitePickerMode;
 import org.wordpress.android.ui.main.SitePickerAdapter.SiteRecord;
 import org.wordpress.android.ui.prefs.AppPrefs;
 import org.wordpress.android.ui.prefs.EmptyViewRecyclerView;
+import org.wordpress.android.ui.prefs.SiteSettingsInterface;
+import org.wordpress.android.ui.prefs.SiteSettingsInterface.SiteSettingsListener;
 import org.wordpress.android.util.AccessibilityUtils;
 import org.wordpress.android.util.ActivityUtils;
 import org.wordpress.android.util.AppLog;
@@ -75,6 +79,9 @@ public class SitePickerActivity extends LocaleAwareActivity
         SitePickerAdapter.OnSelectedCountChangedListener,
         SearchView.OnQueryTextListener {
     public static final String KEY_LOCAL_ID = "local_id";
+    public static final String KEY_USERNAME = "key_username";
+    public static final String KEY_PASSWORD = "key_password";
+
     public static final String KEY_SITE_CREATED_BUT_NOT_FETCHED = "key_site_created_but_not_fetched";
 
     public static final String KEY_SITE_PICKER_MODE = "key_site_picker_mode";
@@ -282,7 +289,14 @@ public class SitePickerActivity extends LocaleAwareActivity
                     } else {
                         data.putExtra(WPMainActivity.ARG_CREATE_SITE, RequestCodes.CREATE_SITE);
                         setResult(resultCode, data);
+
                         finish();
+
+                        SiteModel site = mSiteStore.getSiteByLocalId(data.getIntExtra(KEY_LOCAL_ID, -1));
+                        site.setUsername(data.getStringExtra(KEY_USERNAME));
+                        site.setPassword(data.getStringExtra(KEY_PASSWORD));
+                        Log.i("MYLOG", "KEY USERNAME SET");
+                        Log.i("MYLOG", site.getUsername());
                     }
                 }
                 break;
@@ -293,7 +307,9 @@ public class SitePickerActivity extends LocaleAwareActivity
             case RequestCodes.CREATE_SITE:
                 if (data != null) {
                     int newSiteLocalID = data.getIntExtra(SitePickerActivity.KEY_LOCAL_ID, -1);
-                    SiteUtils.enableBlockEditorOnSiteCreation(mDispatcher, mSiteStore, newSiteLocalID);
+                    String username = data.getStringExtra(KEY_USERNAME);
+                    String password = data.getStringExtra(KEY_PASSWORD);
+                    SiteUtils.enableBlockEditorOnSiteCreation(mDispatcher, mSiteStore, newSiteLocalID, username, password);
                 }
                 break;
         }

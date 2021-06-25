@@ -199,7 +199,7 @@ public class ReaderTagActions {
                 "ID": "5189",
                 "slug": "fitness",
                 "title": "Fitness",
-                "URL": "https://public-api.wordpress.com/rest/v1.1/read/tags/fitness/posts"
+                "URL": "https://mytest.sitebay.org/api/read/tags/fitness/posts"
             },
             ...
         }

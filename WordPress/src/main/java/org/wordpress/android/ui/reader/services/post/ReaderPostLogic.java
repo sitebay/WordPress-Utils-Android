@@ -314,7 +314,7 @@ public class ReaderPostLogic {
      * full path but we don't want to use the full path since it may change
      * between API versions (as it did when we moved from v1 to v1.1)
      *
-     * ex: https://public-api.wordpress.com/rest/v1/read/tags/fitness/posts
+     * ex: https://mytest.sitebay.org/rest/v1/read/tags/fitness/posts
      * becomes just read/tags/fitness/posts
      */
     private static String getRelativeEndpoint(final String endpoint) {

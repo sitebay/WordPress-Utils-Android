@@ -72,7 +72,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
 
     @Test
     fun `does not navigate and finishes on non-mobile URL`() {
-        val uri = buildUri("public-api.wordpress.com")
+        val uri = buildUri("mytest.sitebay.org")
 
         viewModel.start(null, uri)
 
@@ -82,7 +82,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
     @Test
     fun `mbar URL without redirect parameter replaced mbar to bar and opened in browser`() {
         val uri = initTrackingUri()
-        val barUri = buildUri("public-api.wordpress.com")
+        val barUri = buildUri("mytest.sitebay.org")
         whenever(uri.copy("bar")).thenReturn(barUri)
 
         viewModel.start(null, uri)
@@ -109,7 +109,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
         val startUrl = mock<UriWrapper>()
         val wpLoginUri = initWpLoginUri(startUrl)
         val uri = initTrackingUri(wpLoginUri)
-        val barUri = buildUri("public-api.wordpress.com")
+        val barUri = buildUri("mytest.sitebay.org")
 
         whenever(deepLinkHandlers.buildNavigateAction(startUrl)).thenReturn(null)
         whenever(uri.copy("bar")).thenReturn(barUri)
@@ -123,7 +123,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
     fun `wp-login mbar URL redirects user to browser with missing second redirect`() {
         val wpLoginUri = initWpLoginUri()
         val uri = initTrackingUri(wpLoginUri)
-        val barUri = buildUri("public-api.wordpress.com")
+        val barUri = buildUri("mytest.sitebay.org")
         whenever(uri.copy("bar")).thenReturn(barUri)
 
         viewModel.start(null, uri)
@@ -164,7 +164,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
     }
 
     private fun initTrackingUri(redirectTo: UriWrapper? = null): UriWrapper {
-        val uri = initRedirectUri("public-api.wordpress.com", redirectTo)
+        val uri = initRedirectUri("mytest.sitebay.org", redirectTo)
         whenever(deepLinkUriUtils.isTrackingUrl(uri)).thenReturn(true)
         return uri
     }

@@ -55,7 +55,7 @@ class DeepLinkTrackingUtilsTest {
 
     @Test
     fun `builds tracking data from redirect param of a tracking URI with a login reason`() {
-        val host = "public-api.wordpress.com"
+        val host = "mytest.sitebay.org"
         val uri = buildUri(host)
         whenever(deepLinkUriUtils.isTrackingUrl(uri)).thenReturn(true)
         val redirectUri = mock<UriWrapper>()
@@ -72,7 +72,7 @@ class DeepLinkTrackingUtilsTest {
 
     @Test
     fun `builds tracking data from a nested param of a tracking URI without a login reason`() {
-        val host = "public-api.wordpress.com"
+        val host = "mytest.sitebay.org"
         val uri = buildUri(host)
         whenever(deepLinkUriUtils.isTrackingUrl(uri)).thenReturn(true)
         val firstRedirect = mock<UriWrapper>()

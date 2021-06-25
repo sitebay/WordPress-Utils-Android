@@ -79,7 +79,8 @@ class WPMainNavigationView @JvmOverloads constructor(
 
         // overlay each item with our custom view
         val menuView = getChildAt(0) as BottomNavigationMenuView
-        if (BuildConfig.IS_JETPACK_APP) hideReaderTab()
+        //if (BuildConfig.IS_JETPACK_APP) hideReaderTab()
+        hideReaderTab()
 
         val inflater = LayoutInflater.from(context)
         for (i in 0 until menu.size()) {
@@ -295,7 +296,7 @@ class WPMainNavigationView @JvmOverloads constructor(
                     MySiteFragment.newInstance()
                 }
                 READER -> ReaderFragment()
-                NOTIFS -> NotificationsListFragment.newInstance()
+                NOTIFS -> MeFragment()
             }
             fragmentManager.beginTransaction()
                     .add(R.id.fragment_container, fragment, getTagForPageType(pageType))
@@ -317,7 +318,8 @@ class WPMainNavigationView @JvmOverloads constructor(
     }
 
     companion object {
-        private val pages = if (BuildConfig.IS_JETPACK_APP) listOf(MY_SITE, NOTIFS) else listOf(MY_SITE, READER, NOTIFS)
+        // REMOVED READER
+        private val pages = listOf(MY_SITE, NOTIFS)
 
         private const val TAG_MY_SITE = "tag-mysite"
         private const val TAG_READER = "tag-reader"

@@ -405,47 +405,47 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="public-api.wordpress.com"
+                    android:host="mytest.sitebay.org"
                     android:pathPattern="/mbar/.*"
                     android:scheme="https" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/post/..*"
                     android:scheme="https" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/post/..*"
                     android:scheme="http" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/stats/..*"
                     android:scheme="https" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/stats/..*"
                     android:scheme="http" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/pages/..*"
                     android:scheme="https" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/pages/..*"
                     android:scheme="http" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/notifications/.*"
                     android:scheme="https" />
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/notifications/.*"
                     android:scheme="http" />
 
@@ -479,49 +479,49 @@
             android:targetActivity=".ui.reader.ReaderPostPagerActivity">
             <intent-filter>
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/read/feeds/.*/posts/.*"
                     android:scheme="https" >
                 </data>
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/read/feeds/.*/posts/.*"
                     android:scheme="http" >
                 </data>
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/read/blogs/.*/posts/.*"
                     android:scheme="https" >
                 </data>
 
                 <data
-                    android:host="wordpress.com"
+                    android:host="sitebay.org"
                     android:pathPattern="/read/blogs/.*/posts/.*"
                     android:scheme="http" >
                 </data>
 
                 <data
-                    android:host="*.wordpress.com"
+                    android:host="*.sitebay.org"
                     android:pathPattern="/2.../../../.*"
                     android:scheme="https" >
                 </data>
 
                 <data
-                    android:host="*.wordpress.com"
+                    android:host="*.sitebay.org"
                     android:pathPattern="/2.../../../.*"
                     android:scheme="http" >
                 </data>
 
                 <data
-                    android:host="*.wordpress.com"
+                    android:host="*.sitebay.org"
                     android:pathPattern="/19../../../.*"
                     android:scheme="https" >
                 </data>
 
                 <data
-                    android:host="*.wordpress.com"
+                    android:host="*.sitebay.org"
                     android:pathPattern="/19../../../.*"
                     android:scheme="http" >
                 </data>
@@ -936,7 +936,10 @@
         <receiver android:name=".ui.quickstart.QuickStartReminderReceiver" />
         <receiver android:name=".ui.posts.PublishNotificationReceiver" />
 
-
+        <!-- Google wallet crap -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
         <!-- Google Cloud Messaging receiver and services -->
         <meta-data
             android:name="com.google.android.gms.version"

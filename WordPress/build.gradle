@@ -241,7 +241,8 @@ dependencies {
     testImplementation project(path:':photoeditor')
     implementation project(path:':libs:image-editor::ImageEditor')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
-
+    implementation 'com.stripe:stripe-android:16.10.0'
+    implementation 'com.google.android.gms:play-services-wallet:18.1.3'
     // Provided by maven central
     implementation 'com.google.code.gson:gson:2.6.2'
     implementation 'org.ccil.cowan.tagsoup:tagsoup:1.2.1'
@@ -257,7 +258,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.exifinterface:exifinterface:1.0.0'
     implementation 'androidx.media:media:1.0.1'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation "com.google.android.material:material:$materialVersion"
@@ -292,17 +293,20 @@ dependencies {
     implementation 'com.android.installreferrer:installreferrer:2.2'
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'org.greenrobot:eventbus:3.2.0'
-    implementation ('com.automattic:rest:1.0.8') {
+    // REPLACE AUTOMATTIC
+    implementation ('com.github.sitebay:android-wordpress-com-rest:1.0.81') {
+    //implementation ('com.automattic:rest:1.0.8') {
         exclude group: 'com.mcxiaoke.volley'
     }
     implementation 'org.wordpress:graphview:3.4.0'
     implementation 'org.wordpress:persistentedittext:1.0.2'
     implementation 'org.wordpress:emailchecker2:1.1.0'
-    implementation "com.github.Automattic:Automattic-Tracks-Android:$tracksVersion"
+    implementation "com.github.sitebay:Automattic-Tracks-Android:$tracksVersion"
     implementation 'com.squareup.okio:okio:2.8.0'
     implementation 'org.apache.commons:commons-text:1.1'
     implementation 'com.airbnb.android:lottie:3.4.0'
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.nulab-inc:zxcvbn:1.4.0'
 
     implementation ("com.github.yalantis:ucrop:$uCropVersion") {
         exclude group: 'androidx.core', module: 'core'
@@ -394,7 +398,7 @@ dependencies {
     }
 
     implementation ("$gradle.ext.loginFlowBinaryPath:$wordPressLoginVersion") {
-        exclude group: "com.github.wordpress-mobile.WordPress-FluxC-Android", module: "fluxc"
+        exclude group: "com.github.sitebay.WordPress-FluxC-Android", module: "fluxc"
         exclude group: 'com.github.bumptech.glide'
         exclude group: 'org.wordpress', module: 'utils'
     }
@@ -409,7 +413,7 @@ dependencies {
     lintChecks 'org.wordpress:lint:1.0.1'
 
     // Firebase
-    implementation 'com.google.firebase:firebase-config:19.1.3'
+    implementation 'com.google.firebase:firebase-config:20.0.3'
 
     compileOnly project(path:':libs:WordPressAnnotations')
     kapt project(':libs:WordPressProcessors')

@@ -60,7 +60,7 @@ class DeepLinkingIntentReceiverViewModel
      * Handles the following URLs
      * `wordpress.com/post...`
      * `wordpress.com/stats...`
-     * `public-api.wordpress.com/mbar`
+     * `mytest.sitebay.org/mbar`
      * and builds the navigation action based on them
      */
     private fun handleUrl(uriWrapper: UriWrapper, action: String? = null): Boolean {

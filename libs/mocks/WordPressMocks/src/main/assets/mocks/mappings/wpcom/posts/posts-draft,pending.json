@@ -1,7 +1,7 @@
 {
     "request": {
         "method": "GET",
-        "urlPath": "/rest/v1.1/sites/106707880/posts/",
+        "urlPath": "/api/sites/106707880/posts/",
         "queryParameters": {
             "number": {
                 "equalTo": "60"
@@ -69,7 +69,7 @@
             ],
             "meta": {
                 "links": {
-                    "counts": "{{request.requestLine.baseUrl}}/rest/v1.1/sites/106707880/post-counts/post"
+                    "counts": "{{request.requestLine.baseUrl}}/api/sites/106707880/post-counts/post"
                 },
                 "wpcom": true
             }

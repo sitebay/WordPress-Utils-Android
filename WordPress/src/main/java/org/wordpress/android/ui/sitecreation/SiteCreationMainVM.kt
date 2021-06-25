@@ -13,6 +13,7 @@ import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScre
 import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleGeneral
 import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleStepCount
 import org.wordpress.android.ui.sitecreation.SiteCreationStep.DOMAINS
+import org.wordpress.android.ui.sitecreation.SiteCreationStep.LOGIN_DETAILS
 import org.wordpress.android.ui.sitecreation.SiteCreationStep.SEGMENTS
 import org.wordpress.android.ui.sitecreation.SiteCreationStep.SITE_PREVIEW
 import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
@@ -36,7 +37,8 @@ const val KEY_SITE_CREATION_STATE = "key_site_creation_state"
 data class SiteCreationState(
     val segmentId: Long? = null,
     val siteDesign: String? = null,
-    val domain: String? = null
+    val domain: String? = null,
+    val wpValues: Map<String, String> =  emptyMap<String, String>()
 ) : WizardState, Parcelable
 
 typealias NavigationTarget = WizardNavigationTarget<SiteCreationStep, SiteCreationState>
@@ -125,12 +127,24 @@ class SiteCreationMainVM @Inject constructor(
             DOMAINS -> siteCreationState.domain?.let {
                 siteCreationState = siteCreationState.copy(domain = null)
             }
+            LOGIN_DETAILS -> {
+                siteCreationState.wpValues?.let {
+                    siteCreationState = siteCreationState.copy(wpValues = emptyMap<String, String>())
+                }
+            }
+
             SITE_PREVIEW -> {} // intentionally left empty
         }
     }
 
     fun onDomainsScreenFinished(domain: String) {
         siteCreationState = siteCreationState.copy(domain = domain)
+        wizardManager.showNextStep()
+    }
+
+    fun onLoginDetailsScreenFinished(wpValues: Map<String, String>) {
+        siteCreationState = siteCreationState.copy(wpValues = wpValues)
+
         wizardManager.showNextStep()
     }
 

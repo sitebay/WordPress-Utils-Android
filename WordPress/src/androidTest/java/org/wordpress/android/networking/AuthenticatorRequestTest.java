@@ -35,29 +35,29 @@ public class AuthenticatorRequestTest extends InstrumentationTestCase {
     }
 
     public void testExtractSiteIdFromUrl3() {
-        String url = "https://public-api.wordpress.com/rest/v1/batch/?urls%5B%5D=%2Fsites%2F57991476%2Fstats%2F"
+        String url = "https://mytest.sitebay.org/rest/v1/batch/?urls%5B%5D=%2Fsites%2F57991476%2Fstats%2F"
                      + "referrers%3Fdate%3D2014-05-08&urls%5B%5D=%2Fsites%2F57991476%2Fstats%2F"
                      + "referrers%3Fdate%3D2014-05-07";
         assertEquals("57991476", mAuthenticatorRequest.extractSiteIdFromUrl(mRestClient.getEndpointURL(), url));
     }
 
     public void testExtractSiteIdFromUrl4() {
-        String url = "https://public-api.wordpress.com/rest/v1/sites/59073674/stats";
+        String url = "https://mytest.sitebay.org/rest/v1/sites/59073674/stats";
         assertEquals("59073674", mAuthenticatorRequest.extractSiteIdFromUrl(mRestClient.getEndpointURL(), url));
     }
 
     public void testExtractSiteIdFromUrl5() {
-        String url = "https://public-api.wordpress.com/rest/v1/sites//stats";
+        String url = "https://mytest.sitebay.org/rest/v1/sites//stats";
         assertEquals("", mAuthenticatorRequest.extractSiteIdFromUrl(mRestClient.getEndpointURL(), url));
     }
 
     public void testExtractSiteIdFromUrl6() {
-        String url = "https://public-api.wordpress.com/rest/v1/batch/?urls%5B%5D=%2Fsites%2F";
+        String url = "https://mytest.sitebay.org/rest/v1/batch/?urls%5B%5D=%2Fsites%2F";
         assertEquals(null, mAuthenticatorRequest.extractSiteIdFromUrl(mRestClient.getEndpointURL(), url));
     }
 
     public void testExtractSiteIdFromUrl7() {
-        String url = "https://public-api.wordpress.com/rest/v1/sites/";
+        String url = "https://mytest.sitebay.org/rest/v1/sites/";
         assertEquals(null, mAuthenticatorRequest.extractSiteIdFromUrl(mRestClient.getEndpointURL(), url));
     }
 }
