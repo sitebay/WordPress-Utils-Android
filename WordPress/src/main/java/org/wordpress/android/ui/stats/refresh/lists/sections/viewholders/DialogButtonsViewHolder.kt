@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.ViewGroup
 import android.widget.Button
-import org.wordpress.android.R
-import org.wordpress.android.R.id
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.DialogButtons
+import org.sitebay.android.R
+import org.sitebay.android.R.id
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.DialogButtons
 
 class DialogButtonsViewHolder(val parent: ViewGroup) : BlockListItemViewHolder(
         parent,

@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
 import android.app.Activity
 import android.content.Intent
 import android.view.View
 import android.view.View.OnClickListener
 import dagger.Reusable
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.store.PostStore.PostError
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction
-import org.wordpress.android.util.SnackbarSequencer
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.store.PostStore.PostError
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction
+import org.sitebay.android.util.SnackbarSequencer
 import javax.inject.Inject
 
 /**

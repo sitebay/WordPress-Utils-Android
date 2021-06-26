@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.gutenberg
+package org.sitebay.android.editor.gutenberg
 
 import android.app.Dialog
 import android.content.Context

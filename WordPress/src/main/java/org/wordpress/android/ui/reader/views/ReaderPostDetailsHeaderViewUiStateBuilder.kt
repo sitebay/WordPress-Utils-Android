@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
 import dagger.Reusable
-import org.wordpress.android.R.string
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.reader.discover.ReaderPostTagsUiStateBuilder
-import org.wordpress.android.ui.reader.discover.ReaderPostUiStateBuilder
-import org.wordpress.android.ui.reader.views.uistates.FollowButtonUiState
-import org.wordpress.android.ui.reader.views.uistates.ReaderBlogSectionUiState
-import org.wordpress.android.ui.reader.views.uistates.ReaderPostDetailsHeaderViewUiState.ReaderPostDetailsHeaderUiState
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.R.string
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.reader.discover.ReaderPostTagsUiStateBuilder
+import org.sitebay.android.ui.reader.discover.ReaderPostUiStateBuilder
+import org.sitebay.android.ui.reader.views.uistates.FollowButtonUiState
+import org.sitebay.android.ui.reader.views.uistates.ReaderBlogSectionUiState
+import org.sitebay.android.ui.reader.views.uistates.ReaderPostDetailsHeaderViewUiState.ReaderPostDetailsHeaderUiState
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.DateTimeUtilsWrapper
 import javax.inject.Inject
 
 @Reusable

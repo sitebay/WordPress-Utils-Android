@@ -36,7 +36,7 @@
             android:src="@drawable/ic_chevron_up_white_24dp"
             app:tint="?attr/wpColorOnSurfaceMedium" />
 
-        <org.wordpress.android.widgets.SuggestionAutoCompleteText
+        <org.sitebay.android.widgets.SuggestionAutoCompleteText
             android:id="@+id/edit_comment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

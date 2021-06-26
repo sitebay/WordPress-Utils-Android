@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.reader.models;
+package org.sitebay.android.ui.reader.models;
 
 import android.text.TextUtils;
 
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.util.StringUtils;
 
 /**
  * Information used by ReaderTagHeaderView

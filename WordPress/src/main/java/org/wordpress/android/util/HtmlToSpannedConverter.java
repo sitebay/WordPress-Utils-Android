@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -28,14 +28,14 @@ import android.text.style.TypefaceSpan;
 import android.text.style.URLSpan;
 
 import org.ccil.cowan.tagsoup.Parser;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.android.util.helpers.WPImageSpan;
-import org.wordpress.android.util.helpers.WPUnderlineSpan;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.WPImageSpan;
+import org.sitebay.android.util.helpers.WPUnderlineSpan;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;
@@ -350,10 +350,10 @@ public class HtmlToSpannedConverter implements ContentHandler {
             if (resizedBitmap == null && src != null) {
                 if (src.contains("video")) {
                     resizedBitmap = BitmapFactory.decodeResource(
-                            mContext.getResources(), org.wordpress.android.editor.R.drawable.media_movieclip);
+                            mContext.getResources(), org.sitebay.android.editor.R.drawable.media_movieclip);
                 } else {
                     resizedBitmap = BitmapFactory.decodeResource(
-                            mContext.getResources(), org.wordpress.android.R.drawable.media_image_placeholder);
+                            mContext.getResources(), org.sitebay.android.R.drawable.media_image_placeholder);
                 }
             }
         } catch (OutOfMemoryError e) {

@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString
 
 /**
  * This sealed class is used to hold the UI state of a Progress Dialog.

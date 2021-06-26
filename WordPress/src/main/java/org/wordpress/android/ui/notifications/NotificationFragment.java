@@ -5,9 +5,9 @@
  * More specialized note adapters will need to be made to provide the correct views for the type
  * of note/note template it has.
  */
-package org.wordpress.android.ui.notifications;
+package org.sitebay.android.ui.notifications;
 
-import org.wordpress.android.models.Note;
+import org.sitebay.android.models.Note;
 
 public interface NotificationFragment {
     interface OnPostClickListener {

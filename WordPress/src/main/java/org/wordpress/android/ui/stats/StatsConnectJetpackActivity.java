@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats;
+package org.sitebay.android.ui.stats;
 
 import android.os.Bundle;
 import android.text.Html;
@@ -15,25 +15,25 @@ import androidx.appcompat.widget.Toolbar;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.action.AccountAction;
-import org.wordpress.android.fluxc.generated.AccountActionBuilder;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.AccountStore.OnAccountChanged;
-import org.wordpress.android.ui.JetpackConnectionWebViewActivity;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.WPWebViewActivity;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.WPUrlUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.action.AccountAction;
+import org.sitebay.android.fluxc.generated.AccountActionBuilder;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.AccountStore.OnAccountChanged;
+import org.sitebay.android.ui.JetpackConnectionWebViewActivity;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.WPWebViewActivity;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.WPUrlUtils;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.WordPress.SITE;
-import static org.wordpress.android.ui.JetpackConnectionSource.STATS;
+import static org.sitebay.android.WordPress.SITE;
+import static org.sitebay.android.ui.JetpackConnectionSource.STATS;
 
 /**
  * An activity that shows when user tries to open Stats without Jetpack connected.
@@ -41,7 +41,7 @@ import static org.wordpress.android.ui.JetpackConnectionSource.STATS;
  */
 public class StatsConnectJetpackActivity extends LocaleAwareActivity {
     public static final String ARG_CONTINUE_JETPACK_CONNECT = "ARG_CONTINUE_JETPACK_CONNECT";
-    public static final String FAQ_URL = "https://wordpress.org/plugins/jetpack/#faq";
+    public static final String FAQ_URL = "https://sitebay.org/plugins/jetpack/#faq";
 
     private boolean mIsJetpackConnectStarted;
 

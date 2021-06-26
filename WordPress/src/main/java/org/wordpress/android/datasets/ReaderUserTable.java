@@ -1,14 +1,14 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
-import org.wordpress.android.models.ReaderUser;
-import org.wordpress.android.models.ReaderUserIdList;
-import org.wordpress.android.models.ReaderUserList;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.models.ReaderUser;
+import org.sitebay.android.models.ReaderUserIdList;
+import org.sitebay.android.models.ReaderUserList;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.SqlUtils;
 
 import java.util.ArrayList;
 

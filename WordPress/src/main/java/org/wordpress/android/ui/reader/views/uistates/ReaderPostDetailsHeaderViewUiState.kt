@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.reader.views.uistates
+package org.sitebay.android.ui.reader.views.uistates
 
-import org.wordpress.android.ui.reader.discover.interests.TagUiState
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.ui.reader.discover.interests.TagUiState
+import org.sitebay.android.ui.utils.UiString
 
 sealed class ReaderPostDetailsHeaderViewUiState {
     data class ReaderPostDetailsHeaderUiState(

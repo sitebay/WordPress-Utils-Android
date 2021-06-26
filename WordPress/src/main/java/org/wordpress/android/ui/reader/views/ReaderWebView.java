@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,14 +15,14 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.ui.WPWebView;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.WPUrlUtils;
-import org.wordpress.android.util.helpers.WebChromeClientWithVideoPoster;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.ui.WPWebView;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.WPUrlUtils;
+import org.sitebay.android.util.helpers.WebChromeClientWithVideoPoster;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -179,7 +179,7 @@ public class ReaderWebView extends WPWebView {
 
     private static boolean isValidClickedUrl(String url) {
         // only return true for http(s) urls so we avoid file: and data: clicks
-        return (url != null && (url.startsWith("http") || url.startsWith("wordpress:")));
+        return (url != null && (url.startsWith("http") || url.startsWith("sitebay:")));
     }
 
     public boolean isCustomViewShowing() {

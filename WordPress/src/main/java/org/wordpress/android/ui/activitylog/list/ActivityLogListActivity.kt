@@ -1,22 +1,22 @@
-package org.wordpress.android.ui.activitylog.list
+package org.sitebay.android.ui.activitylog.list
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ActivityLogListActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.RequestCodes
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailActivity
-import org.wordpress.android.ui.jetpack.backup.download.KEY_BACKUP_DOWNLOAD_ACTION_STATE_ID
-import org.wordpress.android.ui.jetpack.backup.download.KEY_BACKUP_DOWNLOAD_DOWNLOAD_ID
-import org.wordpress.android.ui.jetpack.backup.download.KEY_BACKUP_DOWNLOAD_REWIND_ID
-import org.wordpress.android.ui.jetpack.common.JetpackBackupDownloadActionState
-import org.wordpress.android.ui.jetpack.restore.KEY_RESTORE_RESTORE_ID
-import org.wordpress.android.ui.jetpack.restore.KEY_RESTORE_REWIND_ID
-import org.wordpress.android.viewmodel.activitylog.ACTIVITY_LOG_REWINDABLE_ONLY_KEY
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ActivityLogListActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.RequestCodes
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailActivity
+import org.sitebay.android.ui.jetpack.backup.download.KEY_BACKUP_DOWNLOAD_ACTION_STATE_ID
+import org.sitebay.android.ui.jetpack.backup.download.KEY_BACKUP_DOWNLOAD_DOWNLOAD_ID
+import org.sitebay.android.ui.jetpack.backup.download.KEY_BACKUP_DOWNLOAD_REWIND_ID
+import org.sitebay.android.ui.jetpack.common.JetpackBackupDownloadActionState
+import org.sitebay.android.ui.jetpack.restore.KEY_RESTORE_RESTORE_ID
+import org.sitebay.android.ui.jetpack.restore.KEY_RESTORE_REWIND_ID
+import org.sitebay.android.viewmodel.activitylog.ACTIVITY_LOG_REWINDABLE_ONLY_KEY
 
 class ActivityLogListActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

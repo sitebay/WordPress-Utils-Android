@@ -238,7 +238,7 @@ Language: hi_IN
     <string name="privacy_policy">गोपनीयता नीति</string>
     <string name="comment_status_spam">स्पैम</string>
     <string name="mnu_comment_spam">स्पैम</string>
-    <string name="wordpress_blog">वर्डप्रेस ब्लॉग</string>
+    <string name="sitebay_blog">वर्डप्रेस ब्लॉग</string>
     <string name="view_in_browser">ब्राउज़र में देखें</string>
     <string name="mnu_comment_trash">कचरा पेटी</string>
     <string name="trash">कचरा पेटी</string>

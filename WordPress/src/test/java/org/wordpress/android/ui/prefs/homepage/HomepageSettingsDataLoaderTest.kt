@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.homepage
+package org.sitebay.android.ui.prefs.homepage
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
@@ -9,16 +9,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.page.PageModel
-import org.wordpress.android.fluxc.model.page.PageStatus.PUBLISHED
-import org.wordpress.android.fluxc.store.PageStore
-import org.wordpress.android.fluxc.store.PageStore.OnPageChanged
-import org.wordpress.android.fluxc.store.PostStore.PostError
-import org.wordpress.android.fluxc.store.PostStore.PostErrorType.GENERIC_ERROR
-import org.wordpress.android.test
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.page.PageModel
+import org.sitebay.android.fluxc.model.page.PageStatus.PUBLISHED
+import org.sitebay.android.fluxc.store.PageStore
+import org.sitebay.android.fluxc.store.PageStore.OnPageChanged
+import org.sitebay.android.fluxc.store.PostStore.PostError
+import org.sitebay.android.fluxc.store.PostStore.PostErrorType.GENERIC_ERROR
+import org.sitebay.android.test
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult
 
 @RunWith(MockitoJUnitRunner::class)
 class HomepageSettingsDataLoaderTest {

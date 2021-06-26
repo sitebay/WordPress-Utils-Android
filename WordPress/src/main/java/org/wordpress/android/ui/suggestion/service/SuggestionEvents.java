@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion.service;
+package org.sitebay.android.ui.suggestion.service;
 
 public class SuggestionEvents {
     public static class SuggestionNameListUpdated {

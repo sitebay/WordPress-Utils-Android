@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.models.ReaderComment;
-import org.wordpress.android.models.ReaderCommentList;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.models.ReaderComment;
+import org.sitebay.android.models.ReaderCommentList;
+import org.sitebay.android.util.AppLog;
 
 /*
  * utility class which accepts a list of comments and then creates a "level list" from it

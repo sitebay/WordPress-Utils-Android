@@ -1,9 +1,9 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncement
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncementItem
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncement
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncementItem
 
 class FeatureAnnouncementValidityTest {
     private val testFeatures = listOf(
@@ -11,19 +11,19 @@ class FeatureAnnouncementValidityTest {
                     "Test Feature 1",
                     "Test Description 1",
                     "",
-                    "https://wordpress.org/icon1.png"
+                    "https://sitebay.org/icon1.png"
             ),
             FeatureAnnouncementItem(
                     "Test Feature 2",
                     "Test Description 1",
                     "",
-                    "https://wordpress.org/icon2.png"
+                    "https://sitebay.org/icon2.png"
             ),
             FeatureAnnouncementItem(
                     "Test Feature 3",
                     "Test Description 3",
                     "",
-                    "https://wordpress.org/icon3.png"
+                    "https://sitebay.org/icon3.png"
             )
     )
 
@@ -33,7 +33,7 @@ class FeatureAnnouncementValidityTest {
             "14.5",
             "14.7",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             testFeatures
     )
@@ -44,7 +44,7 @@ class FeatureAnnouncementValidityTest {
             "14.5",
             "14.7",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             false,
             testFeatures
     )
@@ -55,7 +55,7 @@ class FeatureAnnouncementValidityTest {
             "14.5",
             "14.7",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             emptyList()
     )
@@ -66,7 +66,7 @@ class FeatureAnnouncementValidityTest {
             "14.0",
             "14.2",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             testFeatures
     )
@@ -77,7 +77,7 @@ class FeatureAnnouncementValidityTest {
             "-1.0",
             "14.8",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             testFeatures
     )
@@ -88,7 +88,7 @@ class FeatureAnnouncementValidityTest {
             "14.5",
             "-1.0",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             testFeatures
     )
@@ -99,7 +99,7 @@ class FeatureAnnouncementValidityTest {
             "14.5",
             "14.7",
             listOf("alpha-centauri-1", "alpha-centauri-2"),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             testFeatures
     )

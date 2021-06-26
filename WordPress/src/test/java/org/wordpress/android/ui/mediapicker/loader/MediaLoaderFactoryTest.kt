@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,18 +7,18 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R.string
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.CameraSetup.HIDDEN
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.DEVICE
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.GIF_LIBRARY
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.STOCK_LIBRARY
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.WP_LIBRARY
-import org.wordpress.android.ui.mediapicker.loader.DeviceListBuilder.DeviceListBuilderFactory
-import org.wordpress.android.ui.mediapicker.loader.MediaLibraryDataSource.MediaLibraryDataSourceFactory
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.R.string
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.CameraSetup.HIDDEN
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.DEVICE
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.GIF_LIBRARY
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.STOCK_LIBRARY
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.WP_LIBRARY
+import org.sitebay.android.ui.mediapicker.loader.DeviceListBuilder.DeviceListBuilderFactory
+import org.sitebay.android.ui.mediapicker.loader.MediaLibraryDataSource.MediaLibraryDataSourceFactory
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class MediaLoaderFactoryTest {

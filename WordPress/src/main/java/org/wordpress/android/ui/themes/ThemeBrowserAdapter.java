@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.themes;
+package org.sitebay.android.ui.themes;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -25,15 +25,15 @@ import androidx.core.widget.ImageViewCompat;
 
 import com.google.android.material.elevation.ElevationOverlayProvider;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.model.ThemeModel;
-import org.wordpress.android.ui.plans.PlansConstants;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.themes.ThemeBrowserFragment.ThemeBrowserFragmentCallback;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
-import org.wordpress.android.widgets.HeaderGridView;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.model.ThemeModel;
+import org.sitebay.android.ui.plans.PlansConstants;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.themes.ThemeBrowserFragment.ThemeBrowserFragmentCallback;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
+import org.sitebay.android.widgets.HeaderGridView;
 
 import java.util.ArrayList;
 import java.util.List;

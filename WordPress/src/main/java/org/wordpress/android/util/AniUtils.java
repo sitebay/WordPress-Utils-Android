@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,7 +15,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.TranslateAnimation;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 public class AniUtils {
     public enum Duration {

@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.activitylog.list
+package org.sitebay.android.ui.activitylog.list
 
 import android.os.Bundle
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Event
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Header
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Notice
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Progress
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.ViewType
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Event
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Header
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Notice
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Progress
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.ViewType
+import org.sitebay.android.ui.utils.UiHelpers
 
 class ActivityLogAdapter(
     private val itemClickListener: (ActivityLogListItem) -> Unit,

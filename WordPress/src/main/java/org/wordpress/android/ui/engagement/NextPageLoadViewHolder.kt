@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import org.wordpress.android.R
-import org.wordpress.android.ui.engagement.EngageItem.NextLikesPageLoader
+import org.sitebay.android.R
+import org.sitebay.android.ui.engagement.EngageItem.NextLikesPageLoader
 
 class NextPageLoadViewHolder(parent: ViewGroup) : EngagedPeopleViewHolder(parent, R.layout.load_or_action_item) {
     private val progress = itemView.findViewById<View>(R.id.progress)

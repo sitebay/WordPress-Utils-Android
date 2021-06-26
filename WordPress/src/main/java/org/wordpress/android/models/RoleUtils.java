@@ -1,12 +1,12 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.content.Context;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.model.RoleModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.model.RoleModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.util.StringUtils;
 
 import java.util.List;
 

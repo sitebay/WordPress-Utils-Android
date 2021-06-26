@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.reader.discover
+package org.sitebay.android.ui.reader.discover
 
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.ui.PagePostCreationSourcesDetail
-import org.wordpress.android.ui.engagement.HeaderData
-import org.wordpress.android.ui.main.SitePickerAdapter.SitePickerMode
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.ui.PagePostCreationSourcesDetail
+import org.sitebay.android.ui.engagement.HeaderData
+import org.sitebay.android.ui.main.SitePickerAdapter.SitePickerMode
 
 sealed class ReaderNavigationEvents {
     data class ShowPostDetail(val post: ReaderPost) : ReaderNavigationEvents()

@@ -2,7 +2,7 @@
 
 ## Introduction ##
 
-WordPress-Editor-Android is the text editor used in the [WordPress Android app](https://github.com/wordpress-mobile/WordPress-Android) to create and edit pages & posts. In short it's a simple, straightforward way to visually edit HTML.
+WordPress-Editor-Android is the text editor used in the [WordPress Android app](https://github.com/sitebay-mobile/WordPress-Android) to create and edit pages & posts. In short it's a simple, straightforward way to visually edit HTML.
 
 ## Testing ##
 

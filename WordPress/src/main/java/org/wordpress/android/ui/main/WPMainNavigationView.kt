@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import android.content.Context
 import android.util.AttributeSet
@@ -19,19 +19,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemReselectedListener
 import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemSelectedListener
 import com.google.android.material.bottomnavigation.LabelVisibilityMode
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.R
-import org.wordpress.android.ui.main.WPMainActivity.OnScrollToTopListener
-import org.wordpress.android.ui.main.WPMainNavigationView.PageType.MY_SITE
-import org.wordpress.android.ui.main.WPMainNavigationView.PageType.NOTIFS
-import org.wordpress.android.ui.main.WPMainNavigationView.PageType.READER
-import org.wordpress.android.ui.mysite.ImprovedMySiteFragment
-import org.wordpress.android.ui.notifications.NotificationsListFragment
-import org.wordpress.android.ui.prefs.AppPrefs
-import org.wordpress.android.ui.reader.ReaderFragment
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.AniUtils.Duration
-import org.wordpress.android.util.getColorStateListFromAttribute
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.R
+import org.sitebay.android.ui.main.WPMainActivity.OnScrollToTopListener
+import org.sitebay.android.ui.main.WPMainNavigationView.PageType.MY_SITE
+import org.sitebay.android.ui.main.WPMainNavigationView.PageType.NOTIFS
+import org.sitebay.android.ui.main.WPMainNavigationView.PageType.READER
+import org.sitebay.android.ui.mysite.ImprovedMySiteFragment
+import org.sitebay.android.ui.notifications.NotificationsListFragment
+import org.sitebay.android.ui.prefs.AppPrefs
+import org.sitebay.android.ui.reader.ReaderFragment
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.AniUtils.Duration
+import org.sitebay.android.util.getColorStateListFromAttribute
 
 /*
  * Bottom navigation view and related adapter used by the main activity for the

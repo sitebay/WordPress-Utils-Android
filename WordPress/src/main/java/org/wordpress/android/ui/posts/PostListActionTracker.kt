@@ -1,26 +1,26 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.util.analytics.AnalyticsUtils
-import org.wordpress.android.widgets.PostListButtonType
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_CANCEL_PENDING_AUTO_UPLOAD
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_COPY
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_DELETE
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_DELETE_PERMANENTLY
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_EDIT
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_MORE
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_MOVE_TO_DRAFT
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_PREVIEW
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_PUBLISH
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_RETRY
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_SHOW_MOVE_TRASHED_POST_TO_DRAFT_DIALOG
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_STATS
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_SUBMIT
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_SYNC
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_TRASH
-import org.wordpress.android.widgets.PostListButtonType.BUTTON_VIEW
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.util.analytics.AnalyticsUtils
+import org.sitebay.android.widgets.PostListButtonType
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_CANCEL_PENDING_AUTO_UPLOAD
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_COPY
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_DELETE
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_DELETE_PERMANENTLY
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_EDIT
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_MORE
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_MOVE_TO_DRAFT
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_PREVIEW
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_PUBLISH
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_RETRY
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_SHOW_MOVE_TRASHED_POST_TO_DRAFT_DIALOG
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_STATS
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_SUBMIT
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_SYNC
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_TRASH
+import org.sitebay.android.widgets.PostListButtonType.BUTTON_VIEW
 
 fun trackPostListAction(site: SiteModel, buttonType: PostListButtonType, postData: PostModel, statsEvent: Stat) {
     val properties = HashMap<String, Any?>()

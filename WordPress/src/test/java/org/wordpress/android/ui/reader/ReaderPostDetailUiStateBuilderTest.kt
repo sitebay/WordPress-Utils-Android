@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.any
@@ -13,26 +13,26 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.discover.ReaderPostUiStateBuilder
-import org.wordpress.android.ui.reader.models.ReaderSimplePost
-import org.wordpress.android.ui.reader.models.ReaderSimplePostList
-import org.wordpress.android.ui.reader.utils.FeaturedImageUtils
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
-import org.wordpress.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState
-import org.wordpress.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.ExcerptFooterUiState
-import org.wordpress.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.ReaderPostFeaturedImageUiState
-import org.wordpress.android.ui.reader.views.ReaderPostDetailsHeaderViewUiStateBuilder
-import org.wordpress.android.ui.utils.HtmlMessageUtils
-import org.wordpress.android.ui.utils.HtmlUtilsWrapper
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.DisplayUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.discover.ReaderPostUiStateBuilder
+import org.sitebay.android.ui.reader.models.ReaderSimplePost
+import org.sitebay.android.ui.reader.models.ReaderSimplePostList
+import org.sitebay.android.ui.reader.utils.FeaturedImageUtils
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState
+import org.sitebay.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.ExcerptFooterUiState
+import org.sitebay.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.ReaderPostFeaturedImageUiState
+import org.sitebay.android.ui.reader.views.ReaderPostDetailsHeaderViewUiStateBuilder
+import org.sitebay.android.ui.utils.HtmlMessageUtils
+import org.sitebay.android.ui.utils.HtmlUtilsWrapper
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.DisplayUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
+import org.sitebay.android.viewmodel.ResourceProvider
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

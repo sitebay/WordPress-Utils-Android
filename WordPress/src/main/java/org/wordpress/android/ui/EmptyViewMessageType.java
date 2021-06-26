@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 public enum EmptyViewMessageType {
     LOADING, NO_CONTENT, NETWORK_ERROR, PERMISSION_ERROR, GENERIC_ERROR;

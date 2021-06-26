@@ -1,10 +1,10 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.app.Activity;
 
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.util.AppLog;
 
 import javax.inject.Inject;
 
@@ -13,7 +13,7 @@ import javax.inject.Inject;
  */
 public class ShortcutsNavigator {
     public static final String ACTION_OPEN_SHORTCUT =
-            "org.wordpress.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT";
+            "org.sitebay.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT";
 
     @Inject ShortcutsNavigator() {
     }

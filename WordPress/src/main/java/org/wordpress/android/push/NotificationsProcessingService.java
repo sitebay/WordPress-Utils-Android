@@ -1,4 +1,4 @@
-package org.wordpress.android.push;
+package org.sitebay.android.push;
 
 import android.app.PendingIntent;
 import android.app.Service;
@@ -14,43 +14,43 @@ import androidx.core.app.NotificationManagerCompat;
 import androidx.core.app.RemoteInput;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.action.CommentAction;
-import org.wordpress.android.fluxc.generated.CommentActionBuilder;
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.CommentStore;
-import org.wordpress.android.fluxc.store.CommentStore.OnCommentChanged;
-import org.wordpress.android.fluxc.store.CommentStore.RemoteCommentPayload;
-import org.wordpress.android.fluxc.store.CommentStore.RemoteCreateCommentPayload;
-import org.wordpress.android.fluxc.store.CommentStore.RemoteLikeCommentPayload;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.Note;
-import org.wordpress.android.ui.main.WPMainActivity;
-import org.wordpress.android.ui.notifications.NotificationsListFragment;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.ui.notifications.receivers.NotificationsPendingDraftsReceiver;
-import org.wordpress.android.ui.notifications.utils.NotificationsActions;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtils;
-import org.wordpress.android.ui.notifications.utils.PendingDraftsNotificationsUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.LocaleManager;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils.AnalyticsCommentActionSource;
-import org.wordpress.android.util.analytics.AnalyticsUtils.QuickActionTrackPropertyValue;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.action.CommentAction;
+import org.sitebay.android.fluxc.generated.CommentActionBuilder;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.CommentStore;
+import org.sitebay.android.fluxc.store.CommentStore.OnCommentChanged;
+import org.sitebay.android.fluxc.store.CommentStore.RemoteCommentPayload;
+import org.sitebay.android.fluxc.store.CommentStore.RemoteCreateCommentPayload;
+import org.sitebay.android.fluxc.store.CommentStore.RemoteLikeCommentPayload;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.Note;
+import org.sitebay.android.ui.main.WPMainActivity;
+import org.sitebay.android.ui.notifications.NotificationsListFragment;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.ui.notifications.receivers.NotificationsPendingDraftsReceiver;
+import org.sitebay.android.ui.notifications.utils.NotificationsActions;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtils;
+import org.sitebay.android.ui.notifications.utils.PendingDraftsNotificationsUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.LocaleManager;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils.AnalyticsCommentActionSource;
+import org.sitebay.android.util.analytics.AnalyticsUtils.QuickActionTrackPropertyValue;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -58,8 +58,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.push.NotificationPushIds.GROUP_NOTIFICATION_ID;
-import static org.wordpress.android.push.NotificationPushIds.QUICK_START_REMINDER_NOTIFICATION_ID;
+import static org.sitebay.android.push.NotificationPushIds.GROUP_NOTIFICATION_ID;
+import static org.sitebay.android.push.NotificationPushIds.QUICK_START_REMINDER_NOTIFICATION_ID;
 
 /**
  * service which makes it possible to process Notifications quick actions in the background,

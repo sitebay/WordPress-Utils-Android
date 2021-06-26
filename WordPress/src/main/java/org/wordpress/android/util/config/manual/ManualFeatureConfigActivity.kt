@@ -1,9 +1,9 @@
-package org.wordpress.android.util.config.manual
+package org.sitebay.android.util.config.manual
 
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.databinding.ManualFeatureConfigActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
+import org.sitebay.android.databinding.ManualFeatureConfigActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
 
 class ManualFeatureConfigActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

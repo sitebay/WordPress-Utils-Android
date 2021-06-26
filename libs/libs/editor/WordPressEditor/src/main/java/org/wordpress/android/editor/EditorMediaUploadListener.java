@@ -1,6 +1,6 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaFile;
 
 public interface EditorMediaUploadListener {
     void onMediaUploadRetry(String localId, EditorFragmentAbstract.MediaType mediaType);

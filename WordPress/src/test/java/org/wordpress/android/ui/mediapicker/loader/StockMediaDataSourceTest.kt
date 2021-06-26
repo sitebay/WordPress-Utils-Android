@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.verify
@@ -9,23 +9,23 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.StockMediaModel
-import org.wordpress.android.fluxc.store.StockMediaItem
-import org.wordpress.android.fluxc.store.StockMediaStore
-import org.wordpress.android.fluxc.store.StockMediaStore.OnStockMediaListFetched
-import org.wordpress.android.test
-import org.wordpress.android.ui.mediapicker.MediaItem
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.StockMediaIdentifier
-import org.wordpress.android.ui.mediapicker.MediaType.IMAGE
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.StockMediaModel
+import org.sitebay.android.fluxc.store.StockMediaItem
+import org.sitebay.android.fluxc.store.StockMediaStore
+import org.sitebay.android.fluxc.store.StockMediaStore.OnStockMediaListFetched
+import org.sitebay.android.test
+import org.sitebay.android.ui.mediapicker.MediaItem
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.StockMediaIdentifier
+import org.sitebay.android.ui.mediapicker.MediaType.IMAGE
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @InternalCoroutinesApi
 class StockMediaDataSourceTest : BaseUnitTest() {
@@ -33,7 +33,7 @@ class StockMediaDataSourceTest : BaseUnitTest() {
     @Mock lateinit var stockMediaStore: StockMediaStore
     @Mock lateinit var networkUtilsWrapper: NetworkUtilsWrapper
     private lateinit var stockMediaDataSource: StockMediaDataSource
-    private val url = "wordpress://url"
+    private val url = "sitebay://url"
     private val title = "title"
     private val name = "name"
     private val thumbnail = "image.jpg"

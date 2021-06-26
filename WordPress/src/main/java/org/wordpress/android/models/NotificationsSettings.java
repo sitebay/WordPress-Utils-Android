@@ -1,12 +1,12 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import androidx.collection.LongSparseArray;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.JSONUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.JSONUtils;
 
 // Maps to notification settings returned from the /me/notifications/settings endpoint on wp.com
 public class NotificationsSettings {

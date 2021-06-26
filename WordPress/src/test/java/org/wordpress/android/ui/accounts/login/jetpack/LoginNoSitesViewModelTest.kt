@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login.jetpack
+package org.sitebay.android.ui.accounts.login.jetpack
 
 import android.os.Bundle
 import com.nhaarman.mockitokotlin2.any
@@ -10,18 +10,18 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.model.AccountModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.accounts.LoginNavigationEvents
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowInstructions
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker
-import org.wordpress.android.ui.accounts.login.jetpack.LoginNoSitesViewModel.State.NoUser
-import org.wordpress.android.ui.accounts.login.jetpack.LoginNoSitesViewModel.State.ShowUser
-import org.wordpress.android.ui.accounts.login.jetpack.LoginNoSitesViewModel.UiModel
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.model.AccountModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.accounts.LoginNavigationEvents
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowInstructions
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker
+import org.sitebay.android.ui.accounts.login.jetpack.LoginNoSitesViewModel.State.NoUser
+import org.sitebay.android.ui.accounts.login.jetpack.LoginNoSitesViewModel.State.ShowUser
+import org.sitebay.android.ui.accounts.login.jetpack.LoginNoSitesViewModel.UiModel
 
 private const val USERNAME = "username"
 private const val DISPLAY_NAME = "display_name"

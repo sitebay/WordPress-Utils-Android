@@ -1,6 +1,6 @@
 # Localization
 
-During development, adding a string in the [`values/strings.xml`](../WordPress/src/main/res/values/strings.xml) resource and using it in the code or layout file should be enough. 
+During development, adding a string in the [`values/strings.xml`](../WordPress/src/main/res/values/strings.xml) resource and using it in the code or layout file should be enough.
 
 ```xml
 <!-- strings.xml -->
@@ -21,11 +21,11 @@ val label = context.getString(R.string.stats_comments_posts_and_pages)
     />
 ```
 
-You shouldn't need to touch the `strings.xml` for the other languages. During the release process, the `values/strings.xml` file is uploaded to [GlotPress](https://translate.wordpress.org/projects/apps/android/) for translation. Before the release build is finalized, all the translations are grabbed from GlotPress and saved back to their appropriate `values-[lang_code]/strings.xml` file.
+You shouldn't need to touch the `strings.xml` for the other languages. During the release process, the `values/strings.xml` file is uploaded to [GlotPress](https://translate.sitebay.org/projects/apps/android/) for translation. Before the release build is finalized, all the translations are grabbed from GlotPress and saved back to their appropriate `values-[lang_code]/strings.xml` file.
 
 ## Use Meaningful Names
 
-Meaningful names help give more context to translators. Whenever possible, the first part of the `name` should succinctly describe where the string is used. 
+Meaningful names help give more context to translators. Whenever possible, the first part of the `name` should succinctly describe where the string is used.
 
 ```xml
 <!-- Do -->
@@ -67,7 +67,7 @@ Use placeholders instead. They give more context and enables translators to move
 ```
 
 ```kotlin
-// Do 
+// Do
 val label = String.format(
         context.getString(string.reader_discover_attribution_author_and_blog),
         author, blog

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -27,19 +27,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.appbar.AppBarLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.models.FilterCriteria;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper;
-import org.wordpress.android.util.widgets.CustomSwipeRefreshLayout;
-import org.wordpress.android.widgets.RecyclerItemDecoration;
+import org.sitebay.android.R;
+import org.sitebay.android.models.FilterCriteria;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper;
+import org.sitebay.android.util.widgets.CustomSwipeRefreshLayout;
+import org.sitebay.android.widgets.RecyclerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.wordpress.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
+import static org.sitebay.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
 
 
 public class FilteredRecyclerView extends RelativeLayout {

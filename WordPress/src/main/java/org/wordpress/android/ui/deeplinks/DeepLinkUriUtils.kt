@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.deeplinks
+package org.sitebay.android.ui.deeplinks
 
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.HOST_WORDPRESS_COM
-import org.wordpress.android.util.UriUtilsWrapper
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.HOST_WORDPRESS_COM
+import org.sitebay.android.util.UriUtilsWrapper
+import org.sitebay.android.util.UriWrapper
 import javax.inject.Inject
 
 class DeepLinkUriUtils
@@ -43,7 +43,7 @@ class DeepLinkUriUtils
     }
 
     fun isWpLoginUrl(uri: UriWrapper): Boolean {
-        // https://wordpress.com/wp-login.php/
+        // https://sitebay.com/wp-login.php/
         return uri.host == HOST_WORDPRESS_COM &&
                 uri.pathSegments.firstOrNull() == WP_LOGIN
     }

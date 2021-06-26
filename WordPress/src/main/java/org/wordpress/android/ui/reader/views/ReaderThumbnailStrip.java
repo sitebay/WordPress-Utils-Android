@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,22 +9,22 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher.PhotoViewerOption;
-import org.wordpress.android.ui.reader.models.ReaderImageList;
-import org.wordpress.android.ui.reader.utils.ReaderImageScanner;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher.PhotoViewerOption;
+import org.sitebay.android.ui.reader.models.ReaderImageList;
+import org.sitebay.android.ui.reader.utils.ReaderImageScanner;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.EnumSet;
 
-import static org.wordpress.android.ui.reader.ReaderConstants.MIN_GALLERY_IMAGE_WIDTH;
-import static org.wordpress.android.ui.reader.ReaderConstants.THUMBNAIL_STRIP_IMG_COUNT;
+import static org.sitebay.android.ui.reader.ReaderConstants.MIN_GALLERY_IMAGE_WIDTH;
+import static org.sitebay.android.ui.reader.ReaderConstants.THUMBNAIL_STRIP_IMG_COUNT;
 
 /**
  * displays a row of image thumbnails from a reader post - only shows when two or more images

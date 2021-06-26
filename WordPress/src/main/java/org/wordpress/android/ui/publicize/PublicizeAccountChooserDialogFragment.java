@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -20,13 +20,13 @@ import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.PublicizeTable;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.models.PublicizeConnection;
-import org.wordpress.android.models.PublicizeService;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.PublicizeTable;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.models.PublicizeConnection;
+import org.sitebay.android.models.PublicizeService;
+import org.sitebay.android.util.ToastUtils;
 
 import java.util.ArrayList;
 

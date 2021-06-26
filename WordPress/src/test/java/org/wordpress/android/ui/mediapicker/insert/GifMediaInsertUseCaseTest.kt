@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.insert
+package org.sitebay.android.ui.mediapicker.insert
 
 import android.content.Context
 import android.webkit.MimeTypeMap
@@ -13,20 +13,20 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentMatchers.anyInt
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.test
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.GifMediaIdentifier
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.LocalId
-import org.wordpress.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel.Progress
-import org.wordpress.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel.Success
-import org.wordpress.android.util.FluxCUtilsWrapper
-import org.wordpress.android.util.MimeTypeMapUtilsWrapper
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.WPMediaUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.test
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.GifMediaIdentifier
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.LocalId
+import org.sitebay.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel.Progress
+import org.sitebay.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel.Success
+import org.sitebay.android.util.FluxCUtilsWrapper
+import org.sitebay.android.util.MimeTypeMapUtilsWrapper
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.WPMediaUtilsWrapper
 
 @InternalCoroutinesApi
 class GifMediaInsertUseCaseTest : BaseUnitTest() {

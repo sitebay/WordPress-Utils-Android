@@ -16,7 +16,7 @@
                                 <member>
                                     <name>url</name>
                                     <value>
-                                        <string>https://taliwutblog.wordpress.com/</string>
+                                        <string>https://taliwutblog.sitebay.com/</string>
                                     </value>
                                 </member>
                                 <member>
@@ -34,7 +34,7 @@
                                 <member>
                                     <name>xmlrpc</name>
                                     <value>
-                                        <string>https://taliwutblog.wordpress.com/xmlrpc.php</string>
+                                        <string>https://taliwutblog.sitebay.com/xmlrpc.php</string>
                                     </value>
                                 </member>
                             </struct>
@@ -50,7 +50,7 @@
                                 <member>
                                     <name>url</name>
                                     <value>
-                                        <string>https://tataliwut.wordpress.com/</string>
+                                        <string>https://tataliwut.sitebay.com/</string>
                                     </value>
                                 </member>
                                 <member>
@@ -68,7 +68,7 @@
                                 <member>
                                     <name>xmlrpc</name>
                                     <value>
-                                        <string>https://tataliwut.wordpress.com/xmlrpc.php</string>
+                                        <string>https://tataliwut.sitebay.com/xmlrpc.php</string>
                                     </value>
                                 </member>
                             </struct>
@@ -84,7 +84,7 @@
                                 <member>
                                     <name>url</name>
                                     <value>
-                                        <string>https://ilovecutecats.wordpress.com/</string>
+                                        <string>https://ilovecutecats.sitebay.com/</string>
                                     </value>
                                 </member>
                                 <member>
@@ -102,7 +102,7 @@
                                 <member>
                                     <name>xmlrpc</name>
                                     <value>
-                                        <string>https://ilovecutecats.wordpress.com/xmlrpc.php</string>
+                                        <string>https://ilovecutecats.sitebay.com/xmlrpc.php</string>
                                     </value>
                                 </member>
                             </struct>

@@ -39,7 +39,7 @@
                         "first_name": "Nomadic",
                         "last_name": "Wordsmith",
                         "nice_name": "thenomadicwordsmith",
-                        "URL": "http://thenomadicwordsmith.wordpress.com",
+                        "URL": "http://thenomadicwordsmith.sitebay.com",
                         "avatar_URL": "https://0.gravatar.com/avatar/9ba48385fc40dfd9a55a3348d8e7f4d9?s=96&d=identicon&r=G",
                         "profile_URL": "https://en.gravatar.com/thenomadicwordsmith",
                         "site_ID": 71769073
@@ -72,11 +72,11 @@
                     "is_reblogged": false,
                     "is_following": false,
                     "global_ID": "9dc6f7941b6a68fc2323b652c4e9516b",
-                    "featured_image": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
+                    "featured_image": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
                     "post_thumbnail": {
                         "ID": 238,
-                        "URL": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
-                        "guid": "http://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
+                        "URL": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
+                        "guid": "http://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
                         "mime_type": "image/jpeg",
                         "width": 4256,
                         "height": 2628
@@ -129,8 +129,8 @@
                     "attachments": {
                         "238": {
                             "ID": 238,
-                            "URL": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
-                            "guid": "http://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
+                            "URL": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
+                            "guid": "http://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
                             "date": "2019-03-20T23:44:49+00:00",
                             "post_ID": 237,
                             "author_ID": 14151046,
@@ -142,9 +142,9 @@
                             "description": "",
                             "alt": "",
                             "thumbnails": {
-                                "thumbnail": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg?w=150",
-                                "medium": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg?w=300",
-                                "large": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg?w=1024"
+                                "thumbnail": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg?w=150",
+                                "medium": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg?w=300",
+                                "large": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg?w=1024"
                             },
                             "height": 2628,
                             "width": 4256,
@@ -260,10 +260,10 @@
                     "title": "Some News to Share",
                     "URL": "http://infocusphotographers.com/2016/04/19/some-news-to-share/",
                     "short_URL": "https://wp.me/p7dJAQ-1I",
-                    "content": "John was shortlisted for the World Press Photo competition, an international celebration of the best photojournalism of the year.\n\nhttps://twitter.com/wordpressdotcom/status/702181837079187456",
+                    "content": "John was shortlisted for the World Press Photo competition, an international celebration of the best photojournalism of the year.\n\nhttps://twitter.com/sitebaydotcom/status/702181837079187456",
                     "excerpt": "",
                     "slug": "some-news-to-share",
-                    "guid": "https://infocusphotographers.wordpress.com/?p=106",
+                    "guid": "https://infocusphotographers.sitebay.com/?p=106",
                     "status": "publish",
                     "sticky": false,
                     "password": "",
@@ -283,11 +283,11 @@
                     "is_reblogged": false,
                     "is_following": false,
                     "global_ID": "3a10a002b4f389596205c24992732a3e",
-                    "featured_image": "https://infocusphotographers.files.wordpress.com/2016/02/photo-1449761485030-c9bf16154670.jpg",
+                    "featured_image": "https://infocusphotographers.files.sitebay.com/2016/02/photo-1449761485030-c9bf16154670.jpg",
                     "post_thumbnail": {
                         "ID": 62,
-                        "URL": "https://infocusphotographers.files.wordpress.com/2016/02/photo-1449761485030-c9bf16154670.jpg",
-                        "guid": "http://infocusphotographers.files.wordpress.com/2016/02/photo-1449761485030-c9bf16154670.jpg",
+                        "URL": "https://infocusphotographers.files.sitebay.com/2016/02/photo-1449761485030-c9bf16154670.jpg",
+                        "guid": "http://infocusphotographers.files.sitebay.com/2016/02/photo-1449761485030-c9bf16154670.jpg",
                         "mime_type": "image/jpeg",
                         "width": 1080,
                         "height": 720
@@ -348,27 +348,27 @@
                         {
                             "id": "267",
                             "key": "_oembed_00ce3f36d70c72c174774d1222895a08",
-                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"500\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@wordpressdotcom) <a href=\"https://twitter.com/wordpressdotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
+                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"500\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@sitebaydotcom) <a href=\"https://twitter.com/sitebaydotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
                         },
                         {
                             "id": "294",
                             "key": "_oembed_33aac0b04f7a7bc31eec252936d4ae4a",
-                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash&amp;ref_src=twsrc%5Etfw\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto?ref_src=twsrc%5Etfw\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@wordpressdotcom) <a href=\"https://twitter.com/wordpressdotcom/status/702181837079187456?ref_src=twsrc%5Etfw\">February 23, 2016</a></blockquote><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
+                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\" data-dnt=\"true\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash&amp;ref_src=twsrc%5Etfw\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto?ref_src=twsrc%5Etfw\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@sitebaydotcom) <a href=\"https://twitter.com/sitebaydotcom/status/702181837079187456?ref_src=twsrc%5Etfw\">February 23, 2016</a></blockquote><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
                         },
                         {
                             "id": "257",
                             "key": "_oembed_4e3318c4371cf9880f6705450efd7fe6",
-                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@wordpressdotcom) <a href=\"https://twitter.com/wordpressdotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
+                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@sitebaydotcom) <a href=\"https://twitter.com/sitebaydotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
                         },
                         {
                             "id": "251",
                             "key": "_oembed_8655c52bd5f940727d92329c248de249",
-                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@wordpressdotcom) <a href=\"https://twitter.com/wordpressdotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
+                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@sitebaydotcom) <a href=\"https://twitter.com/sitebaydotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
                         },
                         {
                             "id": "262",
                             "key": "_oembed_eb2de30a8aa65d93ca387e4a12fd9f06",
-                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@wordpressdotcom) <a href=\"https://twitter.com/wordpressdotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
+                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@sitebaydotcom) <a href=\"https://twitter.com/sitebaydotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
                         },
                         {
                             "id": "268",
@@ -431,7 +431,7 @@
                                 "author_ID": "14151046",
                                 "post_ID": 106,
                                 "title": "Photo Contest",
-                                "content": "John was shortlisted for the World Press Photo competition, an international celebration of the best photojournalism of the year.\n\nhttps://twitter.com/wordpressdotcom/status/702181837079187456",
+                                "content": "John was shortlisted for the World Press Photo competition, an international celebration of the best photojournalism of the year.\n\nhttps://twitter.com/sitebaydotcom/status/702181837079187456",
                                 "excerpt": "",
                                 "preview_URL": "http://infocusphotographers.com/2016/04/19/some-news-to-share/?preview=true&preview_nonce=ef0913f6c4",
                                 "modified": "2019-03-21T00:23:25+00:00"
@@ -475,7 +475,7 @@
                     "content": "Martin and Amy are a wonderful couple that John and I were lucky to photograph. The theme for their wedding was sophisticated but warm and everything had a clearly personal touch.\n\nThey decided they wanted the bulk of their wedding photos to be black and white. While some couples like personal, goofy photos, Amy and Martin found a perfect balance between classic elegance and shots with personality.\n\n&nbsp;\n\nhttps://www.instagram.com/p/BCF4Z6UjRjE/?taken-by=photomatt\n\n&nbsp;\n\nhttps://www.instagram.com/p/8qwIAWDRum/?taken-by=photomatt\n\n&nbsp;",
                     "excerpt": "",
                     "slug": "martin-and-amys-wedding",
-                    "guid": "https://infocusphotographers.wordpress.com/?p=90",
+                    "guid": "https://infocusphotographers.sitebay.com/?p=90",
                     "status": "publish",
                     "sticky": false,
                     "password": "",
@@ -495,11 +495,11 @@
                     "is_reblogged": false,
                     "is_following": false,
                     "global_ID": "8ffbda2c616a90c6b92efe4fb016fe95",
-                    "featured_image": "https://infocusphotographers.files.wordpress.com/2016/02/photo-1453857271477-4f9a4081966e1.jpeg",
+                    "featured_image": "https://infocusphotographers.files.sitebay.com/2016/02/photo-1453857271477-4f9a4081966e1.jpeg",
                     "post_thumbnail": {
                         "ID": 82,
-                        "URL": "https://infocusphotographers.files.wordpress.com/2016/02/photo-1453857271477-4f9a4081966e1.jpeg",
-                        "guid": "http://infocusphotographers.files.wordpress.com/2016/02/photo-1453857271477-4f9a4081966e1.jpeg",
+                        "URL": "https://infocusphotographers.files.sitebay.com/2016/02/photo-1453857271477-4f9a4081966e1.jpeg",
+                        "guid": "http://infocusphotographers.files.sitebay.com/2016/02/photo-1453857271477-4f9a4081966e1.jpeg",
                         "mime_type": "image/jpeg",
                         "width": 3853,
                         "height": 2384
@@ -565,7 +565,7 @@
                         {
                             "id": "248",
                             "key": "_oembed_4e3318c4371cf9880f6705450efd7fe6",
-                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@wordpressdotcom) <a href=\"https://twitter.com/wordpressdotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
+                            "value": "<div class=\"embed-twitter\"><blockquote class=\"twitter-tweet\" data-width=\"550\"><p lang=\"en\" dir=\"ltr\">Congrats to the photojournalists on WordPress who won <a href=\"https://twitter.com/hashtag/WPPh16?src=hash\">#WPPh16</a> <a href=\"https://twitter.com/WorldPressPhoto\">@WorldPressPhoto</a> prizes: <a href=\"https://t.co/9ya2boX1Yy\">https://t.co/9ya2boX1Yy</a> <a href=\"https://t.co/ZFAHNngh1f\">pic.twitter.com/ZFAHNngh1f</a></p>&mdash; WordPress.com (@sitebaydotcom) <a href=\"https://twitter.com/sitebaydotcom/status/702181837079187456\">February 23, 2016</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></div>"
                         },
                         {
                             "id": "249",

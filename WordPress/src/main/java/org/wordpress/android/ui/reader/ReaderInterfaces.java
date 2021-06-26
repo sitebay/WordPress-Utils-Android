@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.view.View;
 
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.ui.reader.discover.ReaderPostCardActionType;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.ui.reader.discover.ReaderPostCardActionType;
 
 public class ReaderInterfaces {
     private ReaderInterfaces() {

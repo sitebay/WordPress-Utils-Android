@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
 import android.content.Context
 import com.automattic.android.tracks.crashlogging.CrashLogging
@@ -6,7 +6,7 @@ import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.times
 import com.nhaarman.mockitokotlin2.verify
-import com.wordpress.stories.compose.story.StoryFrameItem
+import com.sitebay.stories.compose.story.StoryFrameItem
 import kotlinx.coroutines.InternalCoroutinesApi
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions
@@ -15,18 +15,18 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.mediauploadcompletionprocessors.TestContent
-import org.wordpress.android.ui.stories.SaveStoryGutenbergBlockUseCase.Companion.TEMPORARY_ID_PREFIX
-import org.wordpress.android.ui.stories.SaveStoryGutenbergBlockUseCase.DoWithMediaFilesListener
-import org.wordpress.android.ui.stories.SaveStoryGutenbergBlockUseCase.StoryMediaFileData
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs
-import org.wordpress.android.util.helpers.MediaFile
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.mediauploadcompletionprocessors.TestContent
+import org.sitebay.android.ui.stories.SaveStoryGutenbergBlockUseCase.Companion.TEMPORARY_ID_PREFIX
+import org.sitebay.android.ui.stories.SaveStoryGutenbergBlockUseCase.DoWithMediaFilesListener
+import org.sitebay.android.ui.stories.SaveStoryGutenbergBlockUseCase.StoryMediaFileData
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs
+import org.sitebay.android.util.helpers.MediaFile
 
 @RunWith(MockitoJUnitRunner::class)
 class SaveStoryGutenbergBlockUseCaseTest : BaseUnitTest() {
@@ -128,7 +128,7 @@ class SaveStoryGutenbergBlockUseCaseTest : BaseUnitTest() {
         Assertions.assertThat(mediaFileData.alt).isEqualTo("")
         Assertions.assertThat(mediaFileData.id).isEqualTo(TEMPORARY_ID_PREFIX + mediaFileId)
         Assertions.assertThat(mediaFileData.link).isEqualTo(
-                "https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg"
+                "https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg"
         )
         Assertions.assertThat(mediaFileData.type).isEqualTo("image")
         Assertions.assertThat(mediaFileData.mime).isEqualTo(mediaFile.mimeType)
@@ -250,7 +250,7 @@ class SaveStoryGutenbergBlockUseCaseTest : BaseUnitTest() {
                     mediaFile.mediaId = (i + 1000).toString()
                     mediaFile.mimeType = "image/jpeg"
                     mediaFile.alt = ""
-                    mediaFile.fileURL = "https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg"
+                    mediaFile.fileURL = "https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg"
                     mediaFiles.add(mediaFile)
                 }
                 mediaFiles
@@ -264,7 +264,7 @@ class SaveStoryGutenbergBlockUseCaseTest : BaseUnitTest() {
         mediaFile.mediaId = (id + 1000).toString()
         mediaFile.mimeType = "image/jpeg"
         mediaFile.alt = ""
-        mediaFile.fileURL = "https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg"
+        mediaFile.fileURL = "https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg"
         return mediaFile
     }
 
@@ -286,8 +286,8 @@ class SaveStoryGutenbergBlockUseCaseTest : BaseUnitTest() {
                     val mediaFile = StoryMediaFileData(
                             id = i.toString(),
                             mime = "image/jpeg",
-                            link = "https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg",
-                            url = "https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg",
+                            link = "https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg",
+                            url = "https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg",
                             alt = "",
                             type = "image",
                             caption = ""
@@ -308,56 +308,56 @@ class SaveStoryGutenbergBlockUseCaseTest : BaseUnitTest() {
                 "<!-- /wp:jetpack/story -->"
         private const val BLOCK_WITH_NON_EMPTY_MEDIA_FILES = "<!-- wp:jetpack/story " +
                 "{\"mediaFiles\":[{\"alt\":\"\",\"id\":\"1\",\"link\":\"https://testsite.files." +
-                "wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"," +
-                "\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"2\"," +
-                "\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\"" +
-                ":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000." +
-                "jpg\"},{\"alt\":\"\",\"id\":\"3\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000" +
+                "sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"," +
+                "\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"2\"," +
+                "\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\"" +
+                ":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000." +
+                "jpg\"},{\"alt\":\"\",\"id\":\"3\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000" +
                 ".jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files" +
-                ".wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"4\",\"link\":\"https://testsite.file" +
-                "s.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"" +
-                ",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"5\"" +
-                ",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime" +
-                "\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000" +
-                ".jpg\"},{\"alt\":\"\",\"id\":\"6\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-000000" +
+                ".sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"4\",\"link\":\"https://testsite.file" +
+                "s.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"" +
+                ",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"5\"" +
+                ",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime" +
+                "\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000" +
+                ".jpg\"},{\"alt\":\"\",\"id\":\"6\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-000000" +
                 "0.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.file" +
-                "s.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"7\",\"link\":\"https://testsite.fi" +
-                "les.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":" +
-                "\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":" +
-                "\"8\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\"," +
-                "\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-" +
-                "0000000.jpg\"},{\"alt\":\"\",\"id\":\"9\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp" +
+                "s.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"7\",\"link\":\"https://testsite.fi" +
+                "les.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":" +
+                "\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":" +
+                "\"8\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\"," +
+                "\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-" +
+                "0000000.jpg\"},{\"alt\":\"\",\"id\":\"9\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp" +
                 "-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://tests" +
-                "ite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"10\",\"link\":\"https://te" +
-                "stsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"ca" +
-                "ption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"}]} -->\n" +
+                "ite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"10\",\"link\":\"https://te" +
+                "stsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"ca" +
+                "ption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"}]} -->\n" +
                 "<div class=\"wp-story wp-block-jetpack-story\"></div>\n" +
                 "<!-- /wp:jetpack/story -->"
         private const val BLOCK_WITH_NON_EMPTY_MEDIA_FILES_WITH_ONE_REMOTE_ID = "<!-- wp:jetpack/story " +
                 "{\"mediaFiles\":[{\"alt\":\"\",\"id\":\"1001\",\"link\":\"https://testsite.files." +
-                "wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"," +
-                "\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"2\"," +
-                "\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\"" +
-                ":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000." +
-                "jpg\"},{\"alt\":\"\",\"id\":\"3\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000" +
+                "sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"," +
+                "\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"2\"," +
+                "\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\"" +
+                ":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000." +
+                "jpg\"},{\"alt\":\"\",\"id\":\"3\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000" +
                 ".jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files" +
-                ".wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"4\",\"link\":\"https://testsite.file" +
-                "s.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"" +
-                ",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"5\"" +
-                ",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime" +
-                "\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000" +
-                ".jpg\"},{\"alt\":\"\",\"id\":\"6\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-000000" +
+                ".sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"4\",\"link\":\"https://testsite.file" +
+                "s.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\"" +
+                ",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"5\"" +
+                ",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime" +
+                "\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000" +
+                ".jpg\"},{\"alt\":\"\",\"id\":\"6\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-000000" +
                 "0.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.file" +
-                "s.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"7\",\"link\":\"https://testsite.fi" +
-                "les.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":" +
-                "\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":" +
-                "\"8\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\"," +
-                "\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-" +
-                "0000000.jpg\"},{\"alt\":\"\",\"id\":\"9\",\"link\":\"https://testsite.files.wordpress.com/2020/10/wp" +
+                "s.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"7\",\"link\":\"https://testsite.fi" +
+                "les.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":" +
+                "\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":" +
+                "\"8\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\"," +
+                "\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-" +
+                "0000000.jpg\"},{\"alt\":\"\",\"id\":\"9\",\"link\":\"https://testsite.files.sitebay.com/2020/10/wp" +
                 "-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"caption\":\"\",\"url\":\"https://tests" +
-                "ite.files.wordpress.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"10\",\"link\":\"https://te" +
-                "stsite.files.wordpress.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"ca" +
-                "ption\":\"\",\"url\":\"https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg\"}]} -->\n" +
+                "ite.files.sitebay.com/2020/10/wp-0000000.jpg\"},{\"alt\":\"\",\"id\":\"10\",\"link\":\"https://te" +
+                "stsite.files.sitebay.com/2020/10/wp-0000000.jpg\",\"type\":\"image\",\"mime\":\"image/jpeg\",\"ca" +
+                "ption\":\"\",\"url\":\"https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg\"}]} -->\n" +
                 "<div class=\"wp-story wp-block-jetpack-story\"></div>\n" +
                 "<!-- /wp:jetpack/story -->"
     }

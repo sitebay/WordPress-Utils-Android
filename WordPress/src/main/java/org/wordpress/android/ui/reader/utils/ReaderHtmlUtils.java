@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import android.net.Uri;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.util.StringUtils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

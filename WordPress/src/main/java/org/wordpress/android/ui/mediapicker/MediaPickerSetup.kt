@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.StringRes
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 data class MediaPickerSetup(
     val primaryDataSource: DataSource,

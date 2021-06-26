@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -25,8 +25,8 @@ import androidx.appcompat.widget.SwitchCompat;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.util.StringUtils;
 
 import java.io.Serializable;
 import java.util.ArrayList;

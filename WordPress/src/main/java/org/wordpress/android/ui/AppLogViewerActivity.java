@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -19,10 +19,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.Locale;

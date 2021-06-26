@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -7,18 +7,18 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.time.VisitsAndViewsModel.PeriodData
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Columns.Column
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewUseCase.UiState
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.time.VisitsAndViewsModel.PeriodData
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Columns.Column
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewUseCase.UiState
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class OverviewMapperTest : BaseUnitTest() {
     @Mock lateinit var statsDateFormatter: StatsDateFormatter

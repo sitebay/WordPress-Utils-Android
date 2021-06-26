@@ -13,12 +13,12 @@
         android:descendantFocusability="blocksDescendants"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+        <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
             android:id="@+id/swipe_to_refresh"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <org.wordpress.android.widgets.WPScrollView
+            <org.sitebay.android.widgets.WPScrollView
                 android:id="@+id/scroll_view_reader"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/margin_extra_large">
 
-                    <org.wordpress.android.ui.reader.views.ReaderPostDetailHeaderView
+                    <org.sitebay.android.ui.reader.views.ReaderPostDetailHeaderView
                         android:id="@+id/header_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -64,14 +64,14 @@
                         android:layout_alignStart="@+id/layout_post_detail_content"
                         tools:ignore="UnknownIdInLayout">
 
-                        <org.wordpress.android.ui.reader.views.ReaderSimplePostContainerView
+                        <org.sitebay.android.ui.reader.views.ReaderSimplePostContainerView
                             android:id="@+id/related_posts_view_local"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:visibility="gone"
                             tools:visibility="visible" />
 
-                        <org.wordpress.android.ui.reader.views.ReaderSimplePostContainerView
+                        <org.sitebay.android.ui.reader.views.ReaderSimplePostContainerView
                             android:id="@+id/related_posts_view_global"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -89,9 +89,9 @@
 
                 </RelativeLayout>
 
-            </org.wordpress.android.widgets.WPScrollView>
+            </org.sitebay.android.widgets.WPScrollView>
 
-        </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+        </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
         <ProgressBar
             android:id="@+id/progress_loading"
@@ -108,7 +108,7 @@
         android:layout_height="match_parent">
 
         <!-- error message when requesting post fails -->
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/text_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
             android:layout_marginStart="@dimen/reader_detail_margin"
             android:layout_marginEnd="@dimen/reader_detail_margin"/>
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/nux_sign_in_button"
             style="@style/WordPress.NUXPrimaryButton"
             android:layout_width="match_parent"

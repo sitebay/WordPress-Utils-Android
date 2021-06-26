@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
-import org.wordpress.android.R
-import org.wordpress.android.ui.mysite.MySiteItem.CategoryHeader
-import org.wordpress.android.ui.mysite.MySiteItem.ListItem
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.R
+import org.sitebay.android.ui.mysite.MySiteItem.CategoryHeader
+import org.sitebay.android.ui.mysite.MySiteItem.ListItem
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 val SITE_ITEM_ACTION: (ListItemAction) -> Unit = {}
 val JETPACK_HEADER = CategoryHeader(
@@ -77,7 +77,7 @@ val UNIFIED_COMMENTS_ITEM = ListItem(
         onClick = ListItemInteraction.create(ListItemAction.UNIFIED_COMMENTS, SITE_ITEM_ACTION)
 )
 val ADMIN_ITEM = ListItem(
-        R.drawable.ic_wordpress_white_24dp,
+        R.drawable.ic_sitebay_white_24dp,
         UiStringRes(R.string.my_site_btn_view_admin),
         secondaryIcon = R.drawable.ic_external_white_24dp,
         onClick = ListItemInteraction.create(ListItemAction.ADMIN, SITE_ITEM_ACTION)

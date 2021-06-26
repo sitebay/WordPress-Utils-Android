@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -14,19 +14,19 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.models.ReaderBlog;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.ui.ActionableEmptyView;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.adapters.ReaderBlogAdapter;
-import org.wordpress.android.ui.reader.adapters.ReaderBlogAdapter.ReaderBlogType;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.ui.reader.views.ReaderRecyclerView;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.models.ReaderBlog;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.ui.ActionableEmptyView;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.adapters.ReaderBlogAdapter;
+import org.sitebay.android.ui.reader.adapters.ReaderBlogAdapter.ReaderBlogType;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.ui.reader.views.ReaderRecyclerView;
+import org.sitebay.android.util.AppLog;
 
 import javax.inject.Inject;
 

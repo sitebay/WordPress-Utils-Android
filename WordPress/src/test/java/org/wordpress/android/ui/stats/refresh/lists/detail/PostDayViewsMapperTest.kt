@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -7,13 +7,13 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class PostDayViewsMapperTest : BaseUnitTest() {
     @Mock lateinit var statsDateFormatter: StatsDateFormatter

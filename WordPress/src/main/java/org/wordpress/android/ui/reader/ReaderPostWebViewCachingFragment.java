@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 
 import android.os.Bundle;
@@ -10,13 +10,13 @@ import android.webkit.WebView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.ui.reader.views.ReaderWebView;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.ui.reader.views.ReaderWebView;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.UrlUtils;
 
 import javax.inject.Inject;
 

@@ -80,7 +80,7 @@
                             tools:visibility="visible" />
                     </FrameLayout>
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:id="@+id/change_photo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                         tools:ignore="SmallSp"
                         tools:text="Change photo" />
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:id="@+id/me_display_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                         android:textAppearance="?attr/textAppearanceSubtitle1"
                         tools:text="Full Name" />
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:id="@+id/me_username"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
                     android:contentDescription="@null"
                     android:src="@drawable/ic_user_white_24dp" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/me_my_profile_text_view"
                     style="@style/MeListRowTextView"
                     android:text="@string/my_profile" />
@@ -153,7 +153,7 @@
                     android:contentDescription="@null"
                     android:src="@drawable/ic_cog_white_24dp" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/me_account_settings_text_view"
                     style="@style/MeListRowTextView"
                     android:text="@string/account_settings" />
@@ -172,7 +172,7 @@
                     android:contentDescription="@null"
                     android:src="@drawable/ic_phone_white_24dp" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/me_app_settings_text_view"
                     style="@style/MeListRowTextView"
                     android:text="@string/me_btn_app_settings" />
@@ -191,7 +191,7 @@
                     android:contentDescription="@null"
                     android:src="@drawable/ic_help_white_24dp" />
 
-                <org.wordpress.android.util.widgets.AutoResizeTextView
+                <org.sitebay.android.util.widgets.AutoResizeTextView
                     android:id="@+id/me_support_text_view"
                     style="@style/MeListRowTextView"
                     android:text="@string/me_btn_support" />
@@ -210,7 +210,7 @@
                     android:contentDescription="@null"
                     android:src="@drawable/ic_sign_out_white_24dp" />
 
-                <org.wordpress.android.util.widgets.AutoResizeTextView
+                <org.sitebay.android.util.widgets.AutoResizeTextView
                     android:id="@+id/me_login_logout_text_view"
                     style="@style/MeListRowTextView"
                     tools:text="@string/me_btn_login_logout" />

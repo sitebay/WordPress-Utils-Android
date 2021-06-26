@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.services.discover
+package org.sitebay.android.ui.reader.services.discover
 
 import android.app.job.JobInfo
 import android.app.job.JobInfo.Builder
@@ -9,10 +9,10 @@ import android.content.Intent
 import android.os.Build.VERSION
 import android.os.Build.VERSION_CODES
 import android.os.PersistableBundle
-import org.wordpress.android.JobServiceId
-import org.wordpress.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.READER
+import org.sitebay.android.JobServiceId
+import org.sitebay.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.READER
 
 /*
 * This class provides a way to decide which kind of Service to start, depending on the platform we're running on.

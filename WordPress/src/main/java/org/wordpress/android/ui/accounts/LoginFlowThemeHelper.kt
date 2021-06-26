@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 import android.content.res.Resources
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 object LoginFlowThemeHelper {
     /**

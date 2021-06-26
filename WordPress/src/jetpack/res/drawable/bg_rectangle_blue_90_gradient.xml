@@ -4,7 +4,7 @@
 
     <gradient
         android:angle="270"
-        android:endColor="@color/wordpress_blue_90"
+        android:endColor="@color/sitebay_blue_90"
         android:startColor="@color/transparent"
         android:type="linear"/>
 

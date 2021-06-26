@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists
+package org.sitebay.android.ui.stats.refresh.lists
 
 import androidx.lifecycle.MutableLiveData
 import com.nhaarman.mockitokotlin2.whenever
@@ -6,16 +6,16 @@ import org.assertj.core.api.Assertions
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SectionChange
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateSelector
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SectionChange
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateSelector
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
 import java.util.Date
 
 class StatsDateSelectorTest : BaseUnitTest() {

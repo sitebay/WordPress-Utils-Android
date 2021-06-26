@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.os.Bundle
@@ -6,14 +6,14 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PostPrepublishingHomeFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PostPrepublishingHomeFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class PrepublishingHomeFragment : Fragment(R.layout.post_prepublishing_home_fragment) {

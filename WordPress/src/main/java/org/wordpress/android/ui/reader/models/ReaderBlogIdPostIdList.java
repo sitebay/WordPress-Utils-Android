@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.models;
+package org.sitebay.android.ui.reader.models;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import android.os.Bundle
 import android.view.View
@@ -7,10 +7,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.flow.collect
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.CommentListFragmentBinding
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListViewModel.CommentsListUiModel
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.CommentListFragmentBinding
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListViewModel.CommentsListUiModel
 import javax.inject.Inject
 
 class UnifiedCommentListFragment : Fragment(R.layout.comment_list_fragment) {

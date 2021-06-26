@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media.services;
+package org.sitebay.android.ui.media.services;
 
 import android.app.Service;
 import android.content.Intent;
@@ -9,16 +9,16 @@ import androidx.annotation.NonNull;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.MediaActionBuilder;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.fluxc.store.MediaStore.MediaPayload;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaChanged;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.MediaActionBuilder;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.fluxc.store.MediaStore.MediaPayload;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaChanged;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.ArrayList;
 import java.util.List;

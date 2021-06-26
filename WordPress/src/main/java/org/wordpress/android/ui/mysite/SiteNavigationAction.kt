@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
-import com.wordpress.stories.compose.frame.StorySaveEvents.StorySaveResult
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.PagePostCreationSourcesDetail
-import org.wordpress.android.util.UriWrapper
+import com.sitebay.stories.compose.frame.StorySaveEvents.StorySaveResult
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.PagePostCreationSourcesDetail
+import org.sitebay.android.util.UriWrapper
 
 sealed class SiteNavigationAction {
     object OpenMeScreen : SiteNavigationAction()

@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 /**
  * The layout list item

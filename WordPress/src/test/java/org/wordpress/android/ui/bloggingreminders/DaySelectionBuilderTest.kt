@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,23 +7,23 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.BloggingRemindersModel
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.SUNDAY
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.WEDNESDAY
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons.DayItem
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.EmphasizedText
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Illustration
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.MediumEmphasisText
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Title
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersViewModel.UiState.PrimaryButton
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.utils.ListItemInteraction.Companion
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.BloggingRemindersModel
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.SUNDAY
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.WEDNESDAY
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons.DayItem
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.EmphasizedText
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Illustration
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.MediumEmphasisText
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Title
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersViewModel.UiState.PrimaryButton
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.utils.ListItemInteraction.Companion
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 @RunWith(MockitoJUnitRunner::class)
 class DaySelectionBuilderTest {

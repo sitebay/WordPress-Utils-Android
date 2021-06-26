@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.content.Context
 import android.content.res.Configuration
@@ -6,7 +6,7 @@ import android.os.Build
 import android.util.AttributeSet
 import android.webkit.WebView
 import androidx.appcompat.view.ContextThemeWrapper
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 // https://stackoverflow.com/questions/58028821/webview-crash-on-android-5-5-1-api-21-22-resourcesnotfoundexception-string-r
 open class WPWebView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) :

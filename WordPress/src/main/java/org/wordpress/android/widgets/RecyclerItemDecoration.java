@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.graphics.Rect;
 import android.view.View;

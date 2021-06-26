@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.prepublishing
+package org.sitebay.android.ui.posts.prepublishing
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
@@ -6,12 +6,12 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Calendar
 import java.util.Locale
 

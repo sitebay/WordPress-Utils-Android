@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -13,10 +13,10 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.test
-import org.wordpress.android.ui.posts.editor.EditorTracker
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.test
+import org.sitebay.android.ui.posts.editor.EditorTracker
 
 @RunWith(MockitoJUnitRunner::class)
 @UseExperimental(InternalCoroutinesApi::class)

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize.services;
+package org.sitebay.android.ui.publicize.services;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,21 +7,21 @@ import androidx.annotation.NonNull;
 import androidx.core.app.JobIntentService;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.PublicizeTable;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.models.PublicizeConnectionList;
-import org.wordpress.android.models.PublicizeServiceList;
-import org.wordpress.android.ui.publicize.PublicizeEvents;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.PublicizeTable;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.models.PublicizeConnectionList;
+import org.sitebay.android.models.PublicizeServiceList;
+import org.sitebay.android.ui.publicize.PublicizeEvents;
+import org.sitebay.android.util.AppLog;
 
 import java.util.Locale;
 
-import static org.wordpress.android.JobServiceId.JOB_PUBLICIZE_UPDATE_SERVICE_ID;
+import static org.sitebay.android.JobServiceId.JOB_PUBLICIZE_UPDATE_SERVICE_ID;
 
 /**
  * service which requests the user's available sharing services and publicize connections

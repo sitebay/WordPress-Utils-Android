@@ -13,7 +13,7 @@
         android:background="?attr/colorSurface"
         android:elevation="@dimen/card_elevation"/>
 
-    <org.wordpress.android.ui.FilteredRecyclerView
+    <org.sitebay.android.ui.FilteredRecyclerView
         android:id="@+id/reader_recycler_view"
         style="@style/ReaderRecyclerView"
         android:layout_width="match_parent"
@@ -49,14 +49,14 @@
             android:paddingEnd="24dp"
             android:paddingBottom="@dimen/margin_large">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/reader_label_new_posts"
                 android:textAppearance="?attr/textAppearanceSubtitle1"
                 android:textColor="?attr/colorOnPrimarySurface" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/reader_label_new_posts_subtitle"

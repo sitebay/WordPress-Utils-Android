@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.blocks;
+package org.sitebay.android.ui.notifications.blocks;
 
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
@@ -22,20 +22,20 @@ import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.tools.FormattableContent;
-import org.wordpress.android.fluxc.tools.FormattableMedia;
-import org.wordpress.android.fluxc.tools.FormattableRange;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper;
-import org.wordpress.android.util.AccessibilityUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.FormattableContentUtilsKt;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
-import org.wordpress.android.widgets.WPTextView;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.tools.FormattableContent;
+import org.sitebay.android.fluxc.tools.FormattableMedia;
+import org.sitebay.android.fluxc.tools.FormattableRange;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper;
+import org.sitebay.android.util.AccessibilityUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.FormattableContentUtilsKt;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
+import org.sitebay.android.widgets.WPTextView;
 
 /**
  * A block of data displayed in a notification.

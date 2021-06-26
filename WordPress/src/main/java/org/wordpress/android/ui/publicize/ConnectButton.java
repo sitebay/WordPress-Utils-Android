@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,8 +7,8 @@ import androidx.annotation.StringRes;
 
 import com.google.android.material.button.MaterialButton;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.publicize.PublicizeConstants.ConnectAction;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.publicize.PublicizeConstants.ConnectAction;
 
 /**
  * Publicize connect/disconnect/reconnect button

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.content.DialogInterface
@@ -15,22 +15,22 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.databinding.PostPrepublishingBottomSheetBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.WPBottomSheetDialogFragment
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ActionType
-import org.wordpress.android.ui.posts.PrepublishingScreen.ADD_CATEGORY
-import org.wordpress.android.ui.posts.PrepublishingScreen.CATEGORIES
-import org.wordpress.android.ui.posts.PrepublishingScreen.HOME
-import org.wordpress.android.ui.posts.prepublishing.PrepublishingBottomSheetListener
-import org.wordpress.android.ui.posts.prepublishing.PrepublishingPublishSettingsFragment
-import org.wordpress.android.util.ActivityUtils
-import org.wordpress.android.util.KeyboardResizeViewUtil
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.databinding.PostPrepublishingBottomSheetBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.WPBottomSheetDialogFragment
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ActionType
+import org.sitebay.android.ui.posts.PrepublishingScreen.ADD_CATEGORY
+import org.sitebay.android.ui.posts.PrepublishingScreen.CATEGORIES
+import org.sitebay.android.ui.posts.PrepublishingScreen.HOME
+import org.sitebay.android.ui.posts.prepublishing.PrepublishingBottomSheetListener
+import org.sitebay.android.ui.posts.prepublishing.PrepublishingPublishSettingsFragment
+import org.sitebay.android.util.ActivityUtils
+import org.sitebay.android.util.KeyboardResizeViewUtil
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class PrepublishingBottomSheetFragment : WPBottomSheetDialogFragment(),

@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
 import android.util.Base64
-import org.wordpress.android.fluxc.network.HTTPAuthManager
-import org.wordpress.android.fluxc.network.UserAgent
-import org.wordpress.android.fluxc.network.rest.wpcom.auth.AccessToken
-import org.wordpress.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie
-import org.wordpress.android.util.WPUrlUtils
+import org.sitebay.android.fluxc.network.HTTPAuthManager
+import org.sitebay.android.fluxc.network.UserAgent
+import org.sitebay.android.fluxc.network.rest.wpcom.auth.AccessToken
+import org.sitebay.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie
+import org.sitebay.android.util.WPUrlUtils
 import javax.inject.Inject
 import javax.inject.Singleton
 

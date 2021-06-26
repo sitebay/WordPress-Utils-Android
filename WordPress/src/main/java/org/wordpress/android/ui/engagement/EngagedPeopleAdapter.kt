@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.engagement.EngageItem.EngageItemType
-import org.wordpress.android.ui.engagement.EngageItem.LikedItem
-import org.wordpress.android.ui.engagement.EngageItem.Liker
-import org.wordpress.android.ui.engagement.EngageItem.NextLikesPageLoader
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.ui.engagement.EngageItem.EngageItemType
+import org.sitebay.android.ui.engagement.EngageItem.LikedItem
+import org.sitebay.android.ui.engagement.EngageItem.Liker
+import org.sitebay.android.ui.engagement.EngageItem.NextLikesPageLoader
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.lang.IllegalArgumentException
 
 class EngagedPeopleAdapter constructor(

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.reader.discover
+package org.sitebay.android.ui.reader.discover
 
 import dagger.Reusable
-import org.wordpress.android.R
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.reader.discover.interests.TagUiState
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.viewmodel.ContextProvider
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.reader.discover.interests.TagUiState
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.viewmodel.ContextProvider
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 @Reusable

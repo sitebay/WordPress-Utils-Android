@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats;
+package org.sitebay.android.ui.stats;
 
 public class StatsConstants {
     // Date formatting constants

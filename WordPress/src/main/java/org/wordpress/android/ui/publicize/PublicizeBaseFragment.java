@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 class PublicizeBaseFragment extends Fragment {
     private Toolbar getToolbar() {

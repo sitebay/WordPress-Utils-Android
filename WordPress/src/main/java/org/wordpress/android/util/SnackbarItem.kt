@@ -1,9 +1,9 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.view.View
 import android.view.View.OnClickListener
 import com.google.android.material.snackbar.Snackbar
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString
 import java.lang.ref.SoftReference
 import java.lang.ref.WeakReference
 

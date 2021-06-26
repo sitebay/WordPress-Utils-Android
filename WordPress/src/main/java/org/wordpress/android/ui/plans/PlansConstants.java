@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.plans;
+package org.sitebay.android.ui.plans;
 
 
 public class PlansConstants {

@@ -1,15 +1,15 @@
-package org.wordpress.android.modules;
+package org.sitebay.android.modules;
 
 import android.app.Application;
 
-import org.wordpress.android.fluxc.module.DatabaseModule;
-import org.wordpress.android.fluxc.module.OkHttpClientModule;
-import org.wordpress.android.fluxc.module.ReleaseNetworkModule;
-import org.wordpress.android.fluxc.module.ReleaseToolsModule;
-import org.wordpress.android.login.di.LoginFragmentModule;
-import org.wordpress.android.login.di.LoginServiceModule;
-import org.wordpress.android.ui.stats.refresh.StatsModule;
-import org.wordpress.android.ui.suggestion.SuggestionSourceSubcomponent.SuggestionSourceModule;
+import org.sitebay.android.fluxc.module.DatabaseModule;
+import org.sitebay.android.fluxc.module.OkHttpClientModule;
+import org.sitebay.android.fluxc.module.ReleaseNetworkModule;
+import org.sitebay.android.fluxc.module.ReleaseToolsModule;
+import org.sitebay.android.login.di.LoginFragmentModule;
+import org.sitebay.android.login.di.LoginServiceModule;
+import org.sitebay.android.ui.stats.refresh.StatsModule;
+import org.sitebay.android.ui.suggestion.SuggestionSourceSubcomponent.SuggestionSourceModule;
 
 import javax.inject.Singleton;
 

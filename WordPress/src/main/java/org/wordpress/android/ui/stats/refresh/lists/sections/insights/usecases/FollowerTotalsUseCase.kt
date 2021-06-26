@@ -1,29 +1,29 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import android.view.View
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.async
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.LimitMode
-import org.wordpress.android.fluxc.model.stats.PagedMode
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.FOLLOWER_TOTALS
-import org.wordpress.android.fluxc.store.stats.insights.FollowersStore
-import org.wordpress.android.fluxc.store.stats.insights.PublicizeStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Title
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType.EMAIL
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType.SOCIAL
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType.WP_COM
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.ItemPopupMenuHandler
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.LimitMode
+import org.sitebay.android.fluxc.model.stats.PagedMode
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.FOLLOWER_TOTALS
+import org.sitebay.android.fluxc.store.stats.insights.FollowersStore
+import org.sitebay.android.fluxc.store.stats.insights.PublicizeStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Title
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType.EMAIL
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType.SOCIAL
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases.FollowerTotalsUseCase.FollowerType.WP_COM
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.ItemPopupMenuHandler
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -126,7 +126,7 @@ class FollowerTotalsUseCase
 
     private fun getIcon(type: FollowerType): Int {
         return when (type) {
-            WP_COM -> R.drawable.ic_wordpress_white_24dp
+            WP_COM -> R.drawable.ic_sitebay_white_24dp
             EMAIL -> R.drawable.ic_mail_white_24dp
             SOCIAL -> R.drawable.ic_share_white_24dp
         }
@@ -134,7 +134,7 @@ class FollowerTotalsUseCase
 
     private fun getTitle(type: FollowerType): Int {
         return when (type) {
-            WP_COM -> R.string.stats_followers_wordpress_com
+            WP_COM -> R.string.stats_followers_sitebay_com
             EMAIL -> R.string.email
             SOCIAL -> R.string.stats_insights_social
         }

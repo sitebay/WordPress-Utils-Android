@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,12 +7,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.AccountModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.plugins.PluginUtilsWrapper
-import org.wordpress.android.ui.themes.ThemeBrowserUtils
-import org.wordpress.android.util.SiteUtilsWrapper
+import org.sitebay.android.fluxc.model.AccountModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.plugins.PluginUtilsWrapper
+import org.sitebay.android.ui.themes.ThemeBrowserUtils
+import org.sitebay.android.util.SiteUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class SiteListItemBuilderTest {

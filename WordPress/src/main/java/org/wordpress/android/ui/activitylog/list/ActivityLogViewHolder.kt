@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.activitylog.list
+package org.sitebay.android.ui.activitylog.list
 
 import android.os.Bundle
 import android.view.LayoutInflater

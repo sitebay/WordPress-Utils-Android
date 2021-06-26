@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.minified
+package org.sitebay.android.ui.stats.refresh.lists.widget.minified
 
-import org.wordpress.android.modules.AppComponent
-import org.wordpress.android.ui.stats.refresh.lists.widget.StatsWidget
-import org.wordpress.android.ui.stats.refresh.lists.widget.WidgetUpdater
+import org.sitebay.android.modules.AppComponent
+import org.sitebay.android.ui.stats.refresh.lists.widget.StatsWidget
+import org.sitebay.android.ui.stats.refresh.lists.widget.WidgetUpdater
 import javax.inject.Inject
 
 class StatsMinifiedWidget : StatsWidget() {

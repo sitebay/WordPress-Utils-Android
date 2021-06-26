@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.BloggingRemindersModel
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.BloggingRemindersModel
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class DayLabelUtils

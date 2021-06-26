@@ -1,4 +1,4 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
 import android.os.StrictMode;
 import android.util.Log;
@@ -9,9 +9,9 @@ import androidx.work.WorkManager;
 import com.facebook.stetho.Stetho;
 import com.yarolegovich.wellsql.WellSql;
 
-import org.wordpress.android.modules.DaggerAppComponentDebug;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.modules.DaggerAppComponentDebug;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 public class WordPressDebug extends WordPress {
     @Override

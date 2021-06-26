@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.plugins;
+package org.sitebay.android.ui.plugins;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.plugin.ImmutablePluginModel;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.helpers.Version;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.plugin.ImmutablePluginModel;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.helpers.Version;
 
 import java.util.Arrays;
 import java.util.List;

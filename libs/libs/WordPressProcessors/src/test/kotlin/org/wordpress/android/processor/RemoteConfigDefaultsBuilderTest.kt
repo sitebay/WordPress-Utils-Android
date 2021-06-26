@@ -1,4 +1,4 @@
-package org.wordpress.android.processor
+package org.sitebay.android.processor
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
@@ -21,19 +21,19 @@ class RemoteConfigDefaultsBuilderTest {
         assertThat(fileContent.toString()).isEqualTo(
                 """
             // Automatically generated file. DO NOT MODIFY
-            package org.wordpress.android.util.config
-            
+            package org.sitebay.android.util.config
+
             import kotlin.Any
             import kotlin.String
             import kotlin.collections.Map
-            
+
             object RemoteConfigDefaults {
                 val remoteConfigDefaults: Map<String, Any> = mapOf(
                         "$keyA" to "$valueA",
                         "$keyB" to "$valueB"
                         )
             }
-            
+
         """.trimIndent()
         )
     }

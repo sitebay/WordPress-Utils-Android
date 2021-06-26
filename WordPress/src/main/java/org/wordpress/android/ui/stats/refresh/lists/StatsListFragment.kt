@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists
+package org.sitebay.android.ui.stats.refresh.lists
 
 import android.os.Bundle
 import android.os.Parcelable
@@ -9,22 +9,22 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.StatsListFragmentBinding
-import org.wordpress.android.ui.ViewPagerFragment
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.UiModel
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.UiModel.Empty
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.UiModel.Error
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.UiModel.Success
-import org.wordpress.android.ui.stats.refresh.lists.detail.DetailListViewModel
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsNavigator
-import org.wordpress.android.ui.stats.refresh.utils.drawDateSelector
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.setVisible
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.StatsListFragmentBinding
+import org.sitebay.android.ui.ViewPagerFragment
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.UiModel
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.UiModel.Empty
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.UiModel.Error
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.UiModel.Success
+import org.sitebay.android.ui.stats.refresh.lists.detail.DetailListViewModel
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsNavigator
+import org.sitebay.android.ui.stats.refresh.utils.drawDateSelector
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.setVisible
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class StatsListFragment : ViewPagerFragment(R.layout.stats_list_fragment) {

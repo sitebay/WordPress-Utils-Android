@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.domains
+package org.sitebay.android.ui.sitecreation.domains
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,11 +8,11 @@ import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsFetchSuggestionsErrorUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.R
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsFetchSuggestionsErrorUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState
+import org.sitebay.android.ui.utils.UiHelpers
 
 sealed class SiteCreationDomainViewHolder(internal val parent: ViewGroup, @LayoutRes layout: Int) :
         RecyclerView.ViewHolder(

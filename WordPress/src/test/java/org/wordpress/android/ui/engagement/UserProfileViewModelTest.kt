@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import com.nhaarman.mockitokotlin2.times
 import com.nhaarman.mockitokotlin2.verify
@@ -7,15 +7,15 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentMatchers.anyString
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.ui.engagement.BottomSheetAction.HideBottomSheet
-import org.wordpress.android.ui.engagement.BottomSheetAction.ShowBottomSheet
-import org.wordpress.android.ui.engagement.BottomSheetUiState.UserProfileUiState
-import org.wordpress.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
-import org.wordpress.android.ui.engagement.EngagementNavigationSource.LIKE_NOTIFICATION_LIST
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.ui.engagement.BottomSheetAction.HideBottomSheet
+import org.sitebay.android.ui.engagement.BottomSheetAction.ShowBottomSheet
+import org.sitebay.android.ui.engagement.BottomSheetUiState.UserProfileUiState
+import org.sitebay.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
+import org.sitebay.android.ui.engagement.EngagementNavigationSource.LIKE_NOTIFICATION_LIST
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class UserProfileViewModelTest : BaseUnitTest() {
     @Mock lateinit var resourceProvider: ResourceProvider

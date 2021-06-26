@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
 import androidx.lifecycle.Observer
 import com.nhaarman.mockitokotlin2.any
@@ -11,12 +11,12 @@ import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stories.intro.StoriesIntroViewModel
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stories.intro.StoriesIntroViewModel
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 class StoriesIntroViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: StoriesIntroViewModel

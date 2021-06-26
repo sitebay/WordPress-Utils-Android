@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.argumentCaptor
@@ -13,20 +13,20 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import org.mockito.ArgumentMatchers.any
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.store.UploadStore
-import org.wordpress.android.fluxc.store.UploadStore.ClearMediaPayload
-import org.wordpress.android.test
-import org.wordpress.android.ui.posts.PostUtilsWrapper
-import org.wordpress.android.ui.posts.editor.AztecEditorFragmentStaticWrapper
-import org.wordpress.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createAztecEditorWrapper
-import org.wordpress.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createMediaList
-import org.wordpress.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createPostUtilsWrapper
-import org.wordpress.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createUploadStore
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.store.UploadStore
+import org.sitebay.android.fluxc.store.UploadStore.ClearMediaPayload
+import org.sitebay.android.test
+import org.sitebay.android.ui.posts.PostUtilsWrapper
+import org.sitebay.android.ui.posts.editor.AztecEditorFragmentStaticWrapper
+import org.sitebay.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createAztecEditorWrapper
+import org.sitebay.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createMediaList
+import org.sitebay.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createPostUtilsWrapper
+import org.sitebay.android.ui.posts.editor.media.CleanUpMediaToPostAssociationUseCaseTest.Fixtures.createUploadStore
 
 @InternalCoroutinesApi
 @RunWith(Parameterized::class)

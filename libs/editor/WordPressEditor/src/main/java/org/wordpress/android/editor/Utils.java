@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.Patterns;
 
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.util.AppLog;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -57,7 +57,7 @@ public class Utils {
             html = html.replace("\n", "\\n");
 
             // Escape invisible line separator (U+2028) and paragraph separator (U+2029) characters
-            // https://github.com/wordpress-mobile/WordPress-Editor-Android/issues/405
+            // https://github.com/sitebay-mobile/WordPress-Editor-Android/issues/405
             html = html.replace("\u2028", "\\u2028");
             html = html.replace("\u2029", "\\u2029");
         }

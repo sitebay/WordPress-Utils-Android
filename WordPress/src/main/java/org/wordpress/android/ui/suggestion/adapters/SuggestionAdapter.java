@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion.adapters;
+package org.sitebay.android.ui.suggestion.adapters;
 
 import android.content.Context;
 import android.util.TypedValue;
@@ -15,12 +15,12 @@ import androidx.annotation.AttrRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.suggestion.Suggestion;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.suggestion.Suggestion;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.ArrayList;
 import java.util.Collections;

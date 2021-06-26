@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.usecases
+package org.sitebay.android.ui.jetpack.scan.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -12,20 +12,20 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.action.ScanAction.FETCH_SCAN_STATE
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.scan.ScanStateModel
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.fluxc.store.ScanStore.OnScanStateFetched
-import org.wordpress.android.fluxc.store.ScanStore.ScanStateError
-import org.wordpress.android.fluxc.store.ScanStore.ScanStateErrorType
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState
-import org.wordpress.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Failure.RemoteRequestFailure
-import org.wordpress.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.action.ScanAction.FETCH_SCAN_STATE
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.scan.ScanStateModel
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.fluxc.store.ScanStore.OnScanStateFetched
+import org.sitebay.android.fluxc.store.ScanStore.ScanStateError
+import org.sitebay.android.fluxc.store.ScanStore.ScanStateErrorType
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState
+import org.sitebay.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Failure.RemoteRequestFailure
+import org.sitebay.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @ExperimentalCoroutinesApi
 @InternalCoroutinesApi

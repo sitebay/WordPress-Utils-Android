@@ -1,11 +1,11 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.content.Context
 import android.net.Uri
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.util.helpers.MediaFile
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.util.helpers.MediaFile
 import javax.inject.Inject
 
 /**

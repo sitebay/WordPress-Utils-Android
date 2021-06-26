@@ -1,4 +1,4 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,16 +10,16 @@ import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
-import com.wordpress.rest.JsonRestRequest;
-import com.wordpress.rest.RestClient;
-import com.wordpress.rest.RestRequest;
-import com.wordpress.rest.RestRequest.ErrorListener;
-import com.wordpress.rest.RestRequest.Listener;
+import com.sitebay.rest.JsonRestRequest;
+import com.sitebay.rest.RestClient;
+import com.sitebay.rest.RestRequest;
+import com.sitebay.rest.RestRequest.ErrorListener;
+import com.sitebay.rest.RestRequest.Listener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.LanguageUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.LanguageUtils;
 
 import java.util.HashMap;
 import java.util.Locale;

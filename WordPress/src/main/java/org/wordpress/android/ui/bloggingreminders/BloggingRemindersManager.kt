@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.config.BloggingRemindersFeatureConfig
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.config.BloggingRemindersFeatureConfig
 import javax.inject.Inject
 
 class BloggingRemindersManager

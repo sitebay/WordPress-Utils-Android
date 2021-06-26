@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -6,23 +6,23 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel.Day
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel.Month
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel.Week
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.DAYS
-import org.wordpress.android.ui.stats.refresh.lists.detail.PostDetailMapper.ExpandedWeekUiState
-import org.wordpress.android.ui.stats.refresh.lists.detail.PostDetailMapper.ExpandedYearUiState
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Divider
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ExpandableItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Header
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.util.LocaleManagerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel.Day
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel.Month
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel.Week
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.DAYS
+import org.sitebay.android.ui.stats.refresh.lists.detail.PostDetailMapper.ExpandedWeekUiState
+import org.sitebay.android.ui.stats.refresh.lists.detail.PostDetailMapper.ExpandedYearUiState
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Divider
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ExpandableItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Header
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.util.LocaleManagerWrapper
 import java.util.Calendar
 import java.util.Locale
 

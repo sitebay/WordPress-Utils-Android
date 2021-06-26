@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications
+package org.sitebay.android.ui.notifications
 
 import android.content.Context
 import androidx.core.app.NotificationManagerCompat

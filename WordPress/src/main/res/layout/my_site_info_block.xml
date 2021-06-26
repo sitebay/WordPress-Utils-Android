@@ -53,7 +53,7 @@
         </com.google.android.material.card.MaterialCardView>
     </com.google.android.material.card.MaterialCardView>
 
-    <org.wordpress.android.widgets.QuickStartFocusPoint
+    <org.sitebay.android.widgets.QuickStartFocusPoint
         android:id="@+id/quick_start_icon_focus_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toTopOf="@id/blavatar_container"
         tools:ignore="RtlSymmetry"/>
 
-    <org.wordpress.android.widgets.MySiteTitleAndSubtitleLabelView
+    <org.sitebay.android.widgets.MySiteTitleAndSubtitleLabelView
         android:id="@+id/site_info_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
         app:layout_constraintStart_toEndOf="@id/blavatar_container"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <org.wordpress.android.widgets.QuickStartFocusPoint
+    <org.sitebay.android.widgets.QuickStartFocusPoint
         android:id="@+id/quick_start_title_focus_point"
         android:layout_width="@dimen/quick_start_focus_point_size"
         android:layout_height="@dimen/quick_start_focus_point_size"

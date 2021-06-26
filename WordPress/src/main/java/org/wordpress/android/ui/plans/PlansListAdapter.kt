@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.plans
+package org.sitebay.android.ui.plans
 
 import android.app.Activity
 import android.text.TextUtils
@@ -9,13 +9,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.model.plans.PlanOffersModel
-import org.wordpress.android.ui.plans.PlansListAdapter.PlansItemViewHolder
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.model.plans.PlanOffersModel
+import org.sitebay.android.ui.plans.PlansListAdapter.PlansItemViewHolder
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
 import javax.inject.Inject
 
 class PlansListAdapter(

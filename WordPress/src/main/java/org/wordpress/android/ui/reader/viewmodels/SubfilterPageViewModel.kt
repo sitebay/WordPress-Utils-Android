@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.reader.viewmodels
+package org.sitebay.android.ui.reader.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.reader.ReaderSubsActivity
-import org.wordpress.android.ui.reader.subfilter.ActionType.OpenLoginPage
-import org.wordpress.android.ui.reader.subfilter.ActionType.OpenSubsAtPage
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.HiddenEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.VisibleEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory.SITES
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.reader.ReaderSubsActivity
+import org.sitebay.android.ui.reader.subfilter.ActionType.OpenLoginPage
+import org.sitebay.android.ui.reader.subfilter.ActionType.OpenSubsAtPage
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.HiddenEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.VisibleEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory.SITES
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 import javax.inject.Inject
 
 class SubfilterPageViewModel @Inject constructor(

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -8,15 +8,15 @@ import android.view.LayoutInflater;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderLikeTable;
-import org.wordpress.android.datasets.ReaderUserTable;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderUserIdList;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderLikeTable;
+import org.sitebay.android.datasets.ReaderUserTable;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderUserIdList;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.notifications;
+package org.sitebay.android.ui.prefs.notifications;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -28,7 +28,7 @@ import androidx.appcompat.widget.SearchView;
 import androidx.core.view.ViewCompat;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -36,38 +36,38 @@ import org.greenrobot.eventbus.ThreadMode;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.datasets.ReaderBlogTable;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.AccountActionBuilder;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload;
-import org.wordpress.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload.SubscriptionAction;
-import org.wordpress.android.fluxc.store.AccountStore.OnSubscriptionUpdated;
-import org.wordpress.android.fluxc.store.AccountStore.OnSubscriptionsChanged;
-import org.wordpress.android.fluxc.store.AccountStore.SubscriptionType;
-import org.wordpress.android.fluxc.store.AccountStore.UpdateSubscriptionPayload;
-import org.wordpress.android.fluxc.store.AccountStore.UpdateSubscriptionPayload.SubscriptionFrequency;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.NotificationsSettings;
-import org.wordpress.android.models.NotificationsSettings.Channel;
-import org.wordpress.android.models.NotificationsSettings.Type;
-import org.wordpress.android.ui.notifications.NotificationEvents;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtils;
-import org.wordpress.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel;
-import org.wordpress.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel.ClickHandler;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.BuildConfigWrapper;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.ToastUtils.Duration;
-import org.wordpress.android.util.WPActivityUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.datasets.ReaderBlogTable;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.AccountActionBuilder;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload;
+import org.sitebay.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload.SubscriptionAction;
+import org.sitebay.android.fluxc.store.AccountStore.OnSubscriptionUpdated;
+import org.sitebay.android.fluxc.store.AccountStore.OnSubscriptionsChanged;
+import org.sitebay.android.fluxc.store.AccountStore.SubscriptionType;
+import org.sitebay.android.fluxc.store.AccountStore.UpdateSubscriptionPayload;
+import org.sitebay.android.fluxc.store.AccountStore.UpdateSubscriptionPayload.SubscriptionFrequency;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.NotificationsSettings;
+import org.sitebay.android.models.NotificationsSettings.Channel;
+import org.sitebay.android.models.NotificationsSettings.Type;
+import org.sitebay.android.ui.notifications.NotificationEvents;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtils;
+import org.sitebay.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel;
+import org.sitebay.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel.ClickHandler;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.BuildConfigWrapper;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.ToastUtils.Duration;
+import org.sitebay.android.util.WPActivityUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -77,11 +77,11 @@ import java.util.Locale;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionEmailCommentAction;
-import static org.wordpress.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionEmailPostAction;
-import static org.wordpress.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionEmailPostFrequencyAction;
-import static org.wordpress.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionNotificationPostAction;
-import static org.wordpress.android.ui.RequestCodes.NOTIFICATION_SETTINGS;
+import static org.sitebay.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionEmailCommentAction;
+import static org.sitebay.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionEmailPostAction;
+import static org.sitebay.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionEmailPostFrequencyAction;
+import static org.sitebay.android.fluxc.generated.AccountActionBuilder.newUpdateSubscriptionNotificationPostAction;
+import static org.sitebay.android.ui.RequestCodes.NOTIFICATION_SETTINGS;
 
 public class NotificationsSettingsFragment extends PreferenceFragment
         implements SharedPreferences.OnSharedPreferenceChangeListener {

@@ -1,4 +1,4 @@
-package org.wordpress.android.e2e.pages;
+package org.sitebay.android.e2e.pages;
 
 import android.view.View;
 
@@ -10,7 +10,7 @@ import androidx.test.espresso.action.ViewActions;
 import com.google.android.material.snackbar.SnackbarContentLayout;
 
 import org.hamcrest.Matcher;
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.Espresso.openActionBarOverflowOrOptionsMenu;
@@ -26,13 +26,13 @@ import static androidx.test.espresso.matcher.ViewMatchers.withHint;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
-import static org.wordpress.android.support.WPSupportUtils.checkViewHasText;
-import static org.wordpress.android.support.WPSupportUtils.clickOn;
-import static org.wordpress.android.support.WPSupportUtils.idleFor;
-import static org.wordpress.android.support.WPSupportUtils.isElementDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.populateTextField;
-import static org.wordpress.android.support.WPSupportUtils.waitForElementToBeDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.withIndex;
+import static org.sitebay.android.support.WPSupportUtils.checkViewHasText;
+import static org.sitebay.android.support.WPSupportUtils.clickOn;
+import static org.sitebay.android.support.WPSupportUtils.idleFor;
+import static org.sitebay.android.support.WPSupportUtils.isElementDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.populateTextField;
+import static org.sitebay.android.support.WPSupportUtils.waitForElementToBeDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.withIndex;
 
 public class EditorPage {
     private static ViewInteraction publishButton = onView(withId(R.id.menu_primary_action));
@@ -120,7 +120,7 @@ public class EditorPage {
     public void setFeaturedImage() {
         clickOn(onView(withId(R.id.post_add_featured_image_button)));
         openActionBarOverflowOrOptionsMenu(ApplicationProvider.getApplicationContext());
-        clickOn(onView(withText(R.string.photo_picker_wordpress_media_library)));
+        clickOn(onView(withText(R.string.photo_picker_sitebay_media_library)));
         idleFor(2000);
         onView(withIndex(withId(R.id.image_thumbnail), 0)).perform(click());
         clickOn(confirmButton);

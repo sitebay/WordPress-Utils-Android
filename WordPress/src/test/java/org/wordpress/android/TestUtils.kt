@@ -1,9 +1,9 @@
-package org.wordpress.android
+package org.sitebay.android
 
 import androidx.lifecycle.LiveData
 import com.nhaarman.mockitokotlin2.internal.createInstance
 import org.mockito.Mockito
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.viewmodel.Event
 
 /**
  * This method allows you to match a nullable parameter in mocked methods

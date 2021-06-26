@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import android.animation.ObjectAnimator
 import android.content.res.ColorStateList
@@ -17,12 +17,12 @@ import androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
-import org.wordpress.android.R
-import org.wordpress.android.databinding.QuickStartCardBinding
-import org.wordpress.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ColorUtils
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.R
+import org.sitebay.android.databinding.QuickStartCardBinding
+import org.sitebay.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ColorUtils
+import org.sitebay.android.util.viewBinding
 
 class QuickStartCardViewHolder(
     parent: ViewGroup,

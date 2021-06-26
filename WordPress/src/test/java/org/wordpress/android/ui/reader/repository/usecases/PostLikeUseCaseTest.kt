@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -16,18 +16,18 @@ import org.mockito.ArgumentMatchers.anyBoolean
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.AccountModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener
-import org.wordpress.android.ui.reader.actions.ReaderPostActionsWrapper
-import org.wordpress.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Failed
-import org.wordpress.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Failed.NoNetwork
-import org.wordpress.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Success
-import org.wordpress.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Unchanged
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.fluxc.model.AccountModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener
+import org.sitebay.android.ui.reader.actions.ReaderPostActionsWrapper
+import org.sitebay.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Failed
+import org.sitebay.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Failed.NoNetwork
+import org.sitebay.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Success
+import org.sitebay.android.ui.reader.repository.usecases.PostLikeUseCase.PostLikeState.Unchanged
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 private const val POST_AND_BLOG_ID = 1L
 private const val SOURCE = "source"

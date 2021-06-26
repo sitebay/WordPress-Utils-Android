@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.stats;
+package org.sitebay.android.ui.stats;
 
 import android.content.Context;
 import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.R;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.ui.WPWebViewActivity;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.viewmodel.ResourceProvider;
+import org.sitebay.android.R;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.ui.WPWebViewActivity;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.viewmodel.ResourceProvider;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.mysite.MySiteItem.SiteInfoBlock
-import org.wordpress.android.ui.mysite.MySiteItem.SiteInfoBlock.IconState
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.util.SiteUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.mysite.MySiteItem.SiteInfoBlock
+import org.sitebay.android.ui.mysite.MySiteItem.SiteInfoBlock.IconState
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.util.SiteUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class SiteInfoBlockBuilder

@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import androidx.core.util.Consumer;
 

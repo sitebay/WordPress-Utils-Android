@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 
 class DeepLinkHandlers

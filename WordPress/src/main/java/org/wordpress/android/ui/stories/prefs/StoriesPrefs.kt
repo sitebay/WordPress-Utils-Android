@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.stories.prefs
+package org.sitebay.android.ui.stories.prefs
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.net.Uri
 import androidx.preference.PreferenceManager
-import com.wordpress.stories.compose.story.StoryFrameItem
-import com.wordpress.stories.compose.story.StoryFrameItem.BackgroundSource.FileBackgroundSource
-import com.wordpress.stories.compose.story.StoryFrameItem.BackgroundSource.UriBackgroundSource
-import com.wordpress.stories.compose.story.StorySerializerUtils
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
+import com.sitebay.stories.compose.story.StoryFrameItem
+import com.sitebay.stories.compose.story.StoryFrameItem.BackgroundSource.FileBackgroundSource
+import com.sitebay.stories.compose.story.StoryFrameItem.BackgroundSource.UriBackgroundSource
+import com.sitebay.stories.compose.story.StorySerializerUtils
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
 import javax.inject.Inject
 import javax.inject.Singleton
 

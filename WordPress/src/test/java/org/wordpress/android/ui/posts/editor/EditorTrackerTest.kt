@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.eq
@@ -8,9 +8,9 @@ import com.nhaarman.mockitokotlin2.verify
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.editor.EditorFragmentAbstract.TrackableEvent
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.editor.EditorFragmentAbstract.TrackableEvent
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class EditorTrackerTest {

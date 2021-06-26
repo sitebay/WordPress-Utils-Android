@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -6,9 +6,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.prefs.AppPrefs.UndeletablePrefKey;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.prefs.AppPrefs.UndeletablePrefKey;
 
 /**
  * Simple class for limiting the number of times to show a toast message and only showing it after a

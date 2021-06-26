@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.graphics.Rect
 import android.view.View
@@ -9,12 +9,12 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.wordpress.android.R
-import org.wordpress.android.databinding.StatsBlockActivityItemBinding
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
-import org.wordpress.android.util.ContentDescriptionListAnnouncer
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.R
+import org.sitebay.android.databinding.StatsBlockActivityItemBinding
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
+import org.sitebay.android.util.ContentDescriptionListAnnouncer
+import org.sitebay.android.util.viewBinding
 
 private const val SIZE_PADDING = 32
 private const val GAP = 8

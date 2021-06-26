@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.os.Bundle
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
 
 class EditPostPublishSettingsFragment : PublishSettingsFragment() {
     override fun getContentLayout() = R.layout.edit_post_published_settings_fragment

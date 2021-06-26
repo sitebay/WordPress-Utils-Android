@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections
+package org.sitebay.android.ui.stats.refresh.lists.sections
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,22 +8,22 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.StatsStore.StatsType
-import org.wordpress.android.ui.stats.refresh.NavigationTarget
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Data
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Empty
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Error
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Loading
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase.NotUsedUiState
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.LOADING
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.StatsStore.StatsType
+import org.sitebay.android.ui.stats.refresh.NavigationTarget
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Data
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Empty
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Error
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.State.Loading
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase.NotUsedUiState
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.LOADING
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.viewmodel.Event
 import kotlin.coroutines.CoroutineContext
 
 /**

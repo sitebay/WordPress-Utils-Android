@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.viewholders
+package org.sitebay.android.ui.reader.viewholders
 
 import android.content.Context
 import android.graphics.Rect

@@ -4,12 +4,12 @@
     android:id="@+id/sitePreviewHeaderLayout"
     style="@style/SiteCreationHeaderLinearLayoutStyle">
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/sitePreviewTitle"
         style="@style/SiteCreationPreviewHeaderTitle"
         app:fixWidowWords="true" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/sitePreviewSubtitle"
         style="@style/SiteCreationPreviewHeaderSubtitle"
         app:fixWidowWords="true" />

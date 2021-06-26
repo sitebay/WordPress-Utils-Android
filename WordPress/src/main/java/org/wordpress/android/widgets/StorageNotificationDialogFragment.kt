@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.app.Dialog
 import android.content.DialogInterface
@@ -7,9 +7,9 @@ import android.os.Bundle
 import android.provider.Settings
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.ui.prefs.AppPrefs
-import org.wordpress.android.util.analytics.AnalyticsUtils
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.ui.prefs.AppPrefs
+import org.sitebay.android.util.analytics.AnalyticsUtils
 
 class StorageNotificationDialogFragment : DialogFragment() {
     data class DialogLabels(

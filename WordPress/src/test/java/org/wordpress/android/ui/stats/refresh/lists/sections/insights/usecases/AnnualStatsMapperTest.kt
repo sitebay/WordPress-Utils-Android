@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -9,16 +9,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.anyNullable
-import org.wordpress.android.fluxc.model.stats.YearsInsightsModel.YearInsights
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Type.LIST_ITEM_WITH_ICON
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Type.QUICK_SCAN_ITEM
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.R
+import org.sitebay.android.anyNullable
+import org.sitebay.android.fluxc.model.stats.YearsInsightsModel.YearInsights
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Type.LIST_ITEM_WITH_ICON
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Type.QUICK_SCAN_ITEM
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
 
 @RunWith(MockitoJUnitRunner::class)
 class AnnualStatsMapperTest {

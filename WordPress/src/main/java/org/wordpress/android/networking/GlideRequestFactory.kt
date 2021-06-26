@@ -1,13 +1,13 @@
-package org.wordpress.android.networking
+package org.sitebay.android.networking
 
 import com.android.volley.Request
 import com.android.volley.Request.Priority
 import com.bumptech.glide.integration.volley.VolleyRequestFactory
 import com.bumptech.glide.integration.volley.VolleyStreamFetcher
 import com.bumptech.glide.load.data.DataFetcher.DataCallback
-import org.wordpress.android.ui.utils.AuthenticationUtils
-import org.wordpress.android.util.UrlUtils
-import org.wordpress.android.util.WPUrlUtils
+import org.sitebay.android.ui.utils.AuthenticationUtils
+import org.sitebay.android.util.UrlUtils
+import org.sitebay.android.util.WPUrlUtils
 import java.io.InputStream
 import javax.inject.Inject
 import javax.inject.Singleton

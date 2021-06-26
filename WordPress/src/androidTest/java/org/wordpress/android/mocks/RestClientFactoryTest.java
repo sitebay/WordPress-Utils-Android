@@ -1,14 +1,14 @@
-package org.wordpress.android.mocks;
+package org.sitebay.android.mocks;
 
 import android.content.Context;
 
 import com.android.volley.RequestQueue;
-import com.wordpress.rest.RestClient;
-import com.wordpress.rest.RestClient.REST_CLIENT_VERSIONS;
+import com.sitebay.rest.RestClient;
+import com.sitebay.rest.RestClient.REST_CLIENT_VERSIONS;
 
-import org.wordpress.android.networking.RestClientFactoryAbstract;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.networking.RestClientFactoryAbstract;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.HashSet;
 import java.util.Set;

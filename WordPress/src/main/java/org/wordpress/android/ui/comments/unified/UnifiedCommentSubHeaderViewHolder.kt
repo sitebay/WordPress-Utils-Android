@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import android.view.ViewGroup
-import org.wordpress.android.databinding.CommentListSubheaderBinding
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.SubHeader
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.CommentListSubheaderBinding
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.SubHeader
+import org.sitebay.android.util.viewBinding
 
 class UnifiedCommentSubHeaderViewHolder(
     parent: ViewGroup

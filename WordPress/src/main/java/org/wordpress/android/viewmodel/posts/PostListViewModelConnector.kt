@@ -1,10 +1,10 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.PostActionHandler
-import org.wordpress.android.ui.posts.PostListType
-import org.wordpress.android.ui.posts.PostModelUploadStatusTracker
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.PostActionHandler
+import org.sitebay.android.ui.posts.PostListType
+import org.sitebay.android.ui.posts.PostModelUploadStatusTracker
 
 class PostListViewModelConnector(
     val site: SiteModel,

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -7,9 +7,9 @@ import androidx.annotation.NonNull;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.UrlUtils;
 
 import java.util.HashMap;
 import java.util.Iterator;

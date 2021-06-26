@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,15 +9,15 @@ import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.annotation.StringRes
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.AVATAR
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.EMPTY_SPACE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.NORMAL
-import org.wordpress.android.util.getColorStateListFromAttribute
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
-import org.wordpress.android.util.image.ImageType.ICON
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.AVATAR
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.EMPTY_SPACE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.NORMAL
+import org.sitebay.android.util.getColorStateListFromAttribute
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
+import org.sitebay.android.util.image.ImageType.ICON
 
 open class BlockListItemViewHolder(
     view: View

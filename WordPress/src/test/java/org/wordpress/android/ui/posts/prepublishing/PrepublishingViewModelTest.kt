@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.posts.prepublishing
+package org.sitebay.android.ui.posts.prepublishing
 
 import com.nhaarman.mockitokotlin2.mock
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ActionType
-import org.wordpress.android.ui.posts.PrepublishingNavigationTarget
-import org.wordpress.android.ui.posts.PrepublishingScreen.HOME
-import org.wordpress.android.ui.posts.PrepublishingScreen.PUBLISH
-import org.wordpress.android.ui.posts.PrepublishingScreen.TAGS
-import org.wordpress.android.ui.posts.PrepublishingViewModel
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ActionType
+import org.sitebay.android.ui.posts.PrepublishingNavigationTarget
+import org.sitebay.android.ui.posts.PrepublishingScreen.HOME
+import org.sitebay.android.ui.posts.PrepublishingScreen.PUBLISH
+import org.sitebay.android.ui.posts.PrepublishingScreen.TAGS
+import org.sitebay.android.ui.posts.PrepublishingViewModel
+import org.sitebay.android.viewmodel.Event
 
 class PrepublishingViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: PrepublishingViewModel

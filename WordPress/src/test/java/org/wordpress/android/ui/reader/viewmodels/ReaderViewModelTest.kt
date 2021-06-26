@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.viewmodels
+package org.sitebay.android.ui.reader.viewmodels
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -14,23 +14,23 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.any
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTag.DISCOVER_PATH
-import org.wordpress.android.models.ReaderTag.FOLLOWING_PATH
-import org.wordpress.android.models.ReaderTag.LIKED_PATH
-import org.wordpress.android.models.ReaderTagList
-import org.wordpress.android.models.ReaderTagType
-import org.wordpress.android.test
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.reader.repository.usecases.tags.GetFollowedTagsUseCase
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.LoadReaderTabsUseCase
-import org.wordpress.android.ui.reader.utils.DateProvider
-import org.wordpress.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState
-import org.wordpress.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState.ContentUiState
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTag.DISCOVER_PATH
+import org.sitebay.android.models.ReaderTag.FOLLOWING_PATH
+import org.sitebay.android.models.ReaderTag.LIKED_PATH
+import org.sitebay.android.models.ReaderTagList
+import org.sitebay.android.models.ReaderTagType
+import org.sitebay.android.test
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.reader.repository.usecases.tags.GetFollowedTagsUseCase
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.LoadReaderTabsUseCase
+import org.sitebay.android.ui.reader.utils.DateProvider
+import org.sitebay.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState
+import org.sitebay.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState.ContentUiState
+import org.sitebay.android.viewmodel.Event
 import java.util.Date
 
 private const val DUMMY_CURRENT_TIME: Long = 10000000000

@@ -1,10 +1,10 @@
-package org.wordpress.android.models
+package org.sitebay.android.models
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 @RunWith(MockitoJUnitRunner::class)
 class NoticonUtilsTest {

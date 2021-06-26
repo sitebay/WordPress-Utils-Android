@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import android.app.Activity
 import android.app.ProgressDialog
@@ -21,46 +21,46 @@ import com.yalantis.ucrop.UCropActivity
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.R
-import org.wordpress.android.R.attr
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_CROPPED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_GALLERY_PICKED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_SHOT_NEW
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_TAPPED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_UPLOADED
-import org.wordpress.android.databinding.MeFragmentBinding
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.fluxc.store.AccountStore.OnAccountChanged
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.networking.GravatarApi
-import org.wordpress.android.networking.GravatarApi.GravatarUploadListener
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.RequestCodes
-import org.wordpress.android.ui.accounts.HelpActivity.Origin.ME_SCREEN_HELP
-import org.wordpress.android.ui.main.WPMainActivity.OnScrollToTopListener
-import org.wordpress.android.ui.main.utils.MeGravatarLoader
-import org.wordpress.android.ui.photopicker.MediaPickerConstants
-import org.wordpress.android.ui.photopicker.MediaPickerLauncher
-import org.wordpress.android.ui.photopicker.PhotoPickerActivity.PhotoPickerMediaSource
-import org.wordpress.android.ui.photopicker.PhotoPickerActivity.PhotoPickerMediaSource.ANDROID_CAMERA
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.MAIN
-import org.wordpress.android.util.AppLog.T.UTILS
-import org.wordpress.android.util.FluxCUtils
-import org.wordpress.android.util.MediaUtils
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.ToastUtils.Duration.SHORT
-import org.wordpress.android.util.WPMediaUtils
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.image.ImageManager.RequestListener
-import org.wordpress.android.util.image.ImageType.AVATAR_WITHOUT_BACKGROUND
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.R
+import org.sitebay.android.R.attr
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_CROPPED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_GALLERY_PICKED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_SHOT_NEW
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_TAPPED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ME_GRAVATAR_UPLOADED
+import org.sitebay.android.databinding.MeFragmentBinding
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.fluxc.store.AccountStore.OnAccountChanged
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.networking.GravatarApi
+import org.sitebay.android.networking.GravatarApi.GravatarUploadListener
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.RequestCodes
+import org.sitebay.android.ui.accounts.HelpActivity.Origin.ME_SCREEN_HELP
+import org.sitebay.android.ui.main.WPMainActivity.OnScrollToTopListener
+import org.sitebay.android.ui.main.utils.MeGravatarLoader
+import org.sitebay.android.ui.photopicker.MediaPickerConstants
+import org.sitebay.android.ui.photopicker.MediaPickerLauncher
+import org.sitebay.android.ui.photopicker.PhotoPickerActivity.PhotoPickerMediaSource
+import org.sitebay.android.ui.photopicker.PhotoPickerActivity.PhotoPickerMediaSource.ANDROID_CAMERA
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.MAIN
+import org.sitebay.android.util.AppLog.T.UTILS
+import org.sitebay.android.util.FluxCUtils
+import org.sitebay.android.util.MediaUtils
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.ToastUtils.Duration.SHORT
+import org.sitebay.android.util.WPMediaUtils
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.image.ImageManager.RequestListener
+import org.sitebay.android.util.image.ImageType.AVATAR_WITHOUT_BACKGROUND
+import org.sitebay.android.viewmodel.observeEvent
 import java.io.File
 import javax.inject.Inject
 
@@ -204,7 +204,7 @@ class MeFragment : Fragment(R.layout.me_fragment), OnScrollToTopListener {
             rowMyProfile.visibility = View.VISIBLE
             loadAvatar(null)
             meUsername.text = getString(R.string.at_username, defaultAccount.userName)
-            meLoginLogoutTextView.setText(R.string.me_disconnect_from_wordpress_com)
+            meLoginLogoutTextView.setText(R.string.me_disconnect_from_sitebay_com)
             meDisplayName.text = defaultAccount.displayName.ifEmpty { defaultAccount.userName }
         } else {
             meDisplayName.visibility = View.GONE
@@ -213,7 +213,7 @@ class MeFragment : Fragment(R.layout.me_fragment), OnScrollToTopListener {
             avatarProgress.visibility = View.GONE
             rowMyProfile.visibility = View.GONE
             rowAccountSettings.visibility = View.GONE
-            meLoginLogoutTextView.setText(R.string.me_connect_to_wordpress_com)
+            meLoginLogoutTextView.setText(R.string.me_connect_to_sitebay_com)
         }
     }
 

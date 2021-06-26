@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.hamcrest.CoreMatchers
 import org.junit.Assert.assertThat

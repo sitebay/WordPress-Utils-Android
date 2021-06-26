@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.app.Dialog
 import android.app.DialogFragment
@@ -11,10 +11,10 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
 import java.util.Date
 import java.util.concurrent.TimeUnit
 

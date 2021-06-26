@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.mlp
+package org.sitebay.android.ui.mlp
 
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.ui.layoutpicker.LayoutPickerTracker
-import org.wordpress.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.FILTER
-import org.wordpress.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.LOCATION
-import org.wordpress.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.PREVIEW_MODE
-import org.wordpress.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.SELECTED_FILTERS
-import org.wordpress.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.TEMPLATE
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.ui.layoutpicker.LayoutPickerTracker
+import org.sitebay.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.FILTER
+import org.sitebay.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.LOCATION
+import org.sitebay.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.PREVIEW_MODE
+import org.sitebay.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.SELECTED_FILTERS
+import org.sitebay.android.ui.mlp.ModalLayoutPickerTracker.PROPERTY.TEMPLATE
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 import javax.inject.Inject
 import javax.inject.Singleton
 

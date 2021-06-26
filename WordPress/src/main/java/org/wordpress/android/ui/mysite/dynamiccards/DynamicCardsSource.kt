@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.mysite.dynamiccards
+package org.sitebay.android.ui.mysite.dynamiccards
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import org.wordpress.android.fluxc.model.DynamicCardType
-import org.wordpress.android.fluxc.store.DynamicCardStore
-import org.wordpress.android.ui.mysite.MySiteSource
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.DynamicCardsUpdate
-import org.wordpress.android.ui.mysite.SelectedSiteRepository
+import org.sitebay.android.fluxc.model.DynamicCardType
+import org.sitebay.android.fluxc.store.DynamicCardStore
+import org.sitebay.android.ui.mysite.MySiteSource
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.DynamicCardsUpdate
+import org.sitebay.android.ui.mysite.SelectedSiteRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

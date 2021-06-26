@@ -13,7 +13,7 @@
         android:padding="@dimen/margin_extra_large"
         android:scrollbarStyle="outsideOverlay">
 
-        <org.wordpress.android.widgets.SuggestionAutoCompleteText
+        <org.sitebay.android.widgets.SuggestionAutoCompleteText
             android:id="@+id/edit_comment_expand"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

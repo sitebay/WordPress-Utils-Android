@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.preview
+package org.sitebay.android.imageeditor.preview
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -7,27 +7,27 @@ import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.wordpress.android.imageeditor.R
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.InputData
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.OutputData
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileFailedState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileIdleState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileSuccessState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageStartLoadingToFileState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageDataStartLoadingUiState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInHighResLoadFailedUiState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInHighResLoadSuccessUiState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInLowResLoadFailedUiState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInLowResLoadSuccessUiState
+import org.sitebay.android.imageeditor.R
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.InputData
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.OutputData
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileFailedState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileIdleState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileSuccessState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageStartLoadingToFileState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageDataStartLoadingUiState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInHighResLoadFailedUiState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInHighResLoadSuccessUiState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInLowResLoadFailedUiState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageUiState.ImageInLowResLoadSuccessUiState
 import java.net.URI
 
-private const val TEST_LOW_RES_IMAGE_URL = "https://wordpress.com/low_res_image.png"
-private const val TEST_HIGH_RES_IMAGE_URL = "https://wordpress.com/image.png"
+private const val TEST_LOW_RES_IMAGE_URL = "https://sitebay.com/low_res_image.png"
+private const val TEST_HIGH_RES_IMAGE_URL = "https://sitebay.com/image.png"
 private const val TEST_OUTPUT_FILE_EXTENSION = ".png"
 private const val TEST_INPUT_FILE_PATH_TO_CROP = "/file/path/to/crop"
 
-private const val TEST2_LOW_RES_IMAGE_URL = "https://wordpress.com/low_res_image2.jpg"
-private const val TEST2_HIGH_RES_IMAGE_URL = "https://wordpress.com/image2.jpg"
+private const val TEST2_LOW_RES_IMAGE_URL = "https://sitebay.com/low_res_image2.jpg"
+private const val TEST2_HIGH_RES_IMAGE_URL = "https://sitebay.com/image2.jpg"
 private const val TEST2_OUTPUT_FILE_EXTENSION = ".jpg"
 private const val TEST2_OUTPUT_FILE_PATH_FROM_CROP = "file://path/from/crop/2"
 private const val FIRST_ITEM_POSITION = 0

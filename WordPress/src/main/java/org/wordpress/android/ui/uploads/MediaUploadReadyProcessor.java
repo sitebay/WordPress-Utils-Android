@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.editor.AztecEditorFragment;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.ui.media.services.MediaUploadReadyListener;
-import org.wordpress.android.ui.posts.PostUtils;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.stories.SaveStoryGutenbergBlockUseCase;
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.editor.AztecEditorFragment;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.ui.media.services.MediaUploadReadyListener;
+import org.sitebay.android.ui.posts.PostUtils;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.stories.SaveStoryGutenbergBlockUseCase;
+import org.sitebay.android.util.helpers.MediaFile;
 
 import javax.inject.Inject;
 

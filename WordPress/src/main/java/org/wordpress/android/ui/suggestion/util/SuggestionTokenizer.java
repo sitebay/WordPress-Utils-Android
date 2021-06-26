@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion.util;
+package org.sitebay.android.ui.suggestion.util;
 
 import android.text.SpannableString;
 import android.text.Spanned;

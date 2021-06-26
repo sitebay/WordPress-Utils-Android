@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.services
+package org.sitebay.android.ui.sitecreation.services
 
 import android.annotation.SuppressLint
 import android.os.Parcelable

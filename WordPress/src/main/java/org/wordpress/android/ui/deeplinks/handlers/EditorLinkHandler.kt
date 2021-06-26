@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditor
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditorForPost
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditorForSite
-import org.wordpress.android.ui.deeplinks.DeepLinkUriUtils
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.APPLINK_SCHEME
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditor
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditorForPost
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditorForSite
+import org.sitebay.android.ui.deeplinks.DeepLinkUriUtils
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.APPLINK_SCHEME
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 
 class EditorLinkHandler
@@ -30,20 +30,20 @@ class EditorLinkHandler
 
     /**
      * Builds navigate action from URL like:
-     * https://wordpress.com/post/siteNameOrUrl/postId
+     * https://sitebay.com/post/siteNameOrUrl/postId
      * where siteNameOrUrl and postID are optional
-     * or App links like wordpress://post?blogId=798&postId=1231
+     * or App links like sitebay://post?blogId=798&postId=1231
      */
     override fun buildNavigateAction(uri: UriWrapper): NavigateAction {
         var hasSiteParam = false
         var hasPostParam = false
         val (targetSite, targetPost) = if (uri.host == POST_PATH) {
-            // Handles wordpress://post?blogId=798&postId=1231
+            // Handles sitebay://post?blogId=798&postId=1231
             val targetSite = uri.getQueryParameter(BLOG_ID).also { hasSiteParam = it != null }?.blogIdToSite()
             val targetPost = uri.getQueryParameter(POST_ID).also { hasPostParam = it != null }?.toPost(targetSite)
             targetSite to targetPost
         } else {
-            // Handles https://wordpress.com/post/siteNameOrUrl/postId
+            // Handles https://sitebay.com/post/siteNameOrUrl/postId
             val pathSegments = uri.pathSegments
             val targetSite = pathSegments.getOrNull(1).also { hasSiteParam = it != null }?.hostNameToSite()
             val targetPost = pathSegments.getOrNull(2).also { hasPostParam = it != null }?.toPost(targetSite)
@@ -54,7 +54,7 @@ class EditorLinkHandler
 
     /**
      * Returns true if the URI should be handled by EditorLinkHandler.
-     * The handled links are `wordpress.com/post...1
+     * The handled links are `sitebay.com/post...1
      */
     override fun shouldHandleUrl(uri: UriWrapper): Boolean {
         return (uri.host == DeepLinkingIntentReceiverViewModel.HOST_WORDPRESS_COM &&
@@ -63,7 +63,7 @@ class EditorLinkHandler
 
     override fun stripUrl(uri: UriWrapper): String {
         return if (uri.host == POST_PATH) {
-            // Transforms wordpress://post?blogId=798&postId=1231 to wordpress://post?blogId=blogId&postId=postId
+            // Transforms sitebay://post?blogId=798&postId=1231 to sitebay://post?blogId=blogId&postId=postId
             buildString {
                 append("$APPLINK_SCHEME$POST_PATH")
                 val hasBlogIdParameter = uri.getQueryParameter(BLOG_ID) != null
@@ -82,7 +82,7 @@ class EditorLinkHandler
                 }
             }
         } else {
-            // Transforms https://wordpress.com/post/example.com/1231 to https://wordpress.com/post/siteNameOrUrl/postId
+            // Transforms https://sitebay.com/post/example.com/1231 to https://sitebay.com/post/siteNameOrUrl/postId
             buildString {
                 append("${DeepLinkingIntentReceiverViewModel.HOST_WORDPRESS_COM}/$POST_PATH/")
                 if (uri.pathSegments.size > 2) {

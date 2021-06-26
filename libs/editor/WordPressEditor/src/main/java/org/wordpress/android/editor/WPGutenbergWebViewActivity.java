@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,10 +6,10 @@ import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebView;
 
-import org.wordpress.android.editor.gutenberg.GutenbergWebViewAuthorizationData;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.mobile.ReactNativeGutenbergBridge.GutenbergWebViewActivity;
+import org.sitebay.android.editor.gutenberg.GutenbergWebViewAuthorizationData;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.mobile.ReactNativeGutenbergBridge.GutenbergWebViewActivity;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -18,7 +18,7 @@ import java.util.List;
 
 public class WPGutenbergWebViewActivity extends GutenbergWebViewActivity {
     public static final String ENCODING_UTF8 = "UTF-8";
-    public static final String WPCOM_LOGIN_URL = "https://wordpress.com/wp-login.php";
+    public static final String WPCOM_LOGIN_URL = "https://sitebay.com/wp-login.php";
 
     public static final String ARG_GUTENBERG_WEB_VIEW_AUTH_DATA = "param_gutenberg_web_view_auth_data";
 
@@ -126,7 +126,7 @@ public class WPGutenbergWebViewActivity extends GutenbergWebViewActivity {
             }
 
             // Add token authorization when signing in to WP.com
-            if (authenticationUrl.contains("wordpress.com/wp-login.php") && !TextUtils.isEmpty(token)) {
+            if (authenticationUrl.contains("sitebay.com/wp-login.php") && !TextUtils.isEmpty(token)) {
                 postData += "&authorization=Bearer " + URLEncoder.encode(token, ENCODING_UTF8);
             }
 

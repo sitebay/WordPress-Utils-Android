@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.databinding.ModalLayoutPickerCategoryBinding
-import org.wordpress.android.login.util.getColorStateListFromAttribute
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.setVisible
+import org.sitebay.android.databinding.ModalLayoutPickerCategoryBinding
+import org.sitebay.android.login.util.getColorStateListFromAttribute
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.setVisible
 
 /**
  * Renders the Layout Category header buttons

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login
+package org.sitebay.android.ui.accounts.login
 
 interface LoginPrologueListener {
     // Login Prologue callbacks

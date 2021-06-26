@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStats
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStatsForSite
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStatsForSiteAndTimeframe
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStatsForTimeframe
-import org.wordpress.android.ui.deeplinks.DeepLinkUriUtils
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.APPLINK_SCHEME
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.HOST_WORDPRESS_COM
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.SITE_DOMAIN
-import org.wordpress.android.ui.stats.StatsTimeframe
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStats
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStatsForSite
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStatsForSiteAndTimeframe
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenStatsForTimeframe
+import org.sitebay.android.ui.deeplinks.DeepLinkUriUtils
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.APPLINK_SCHEME
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.HOST_WORDPRESS_COM
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.SITE_DOMAIN
+import org.sitebay.android.ui.stats.StatsTimeframe
+import org.sitebay.android.util.UriWrapper
 import javax.inject.Inject
 
 class StatsLinkHandler
@@ -20,10 +20,10 @@ class StatsLinkHandler
 ) : DeepLinkHandler {
     /**
      * Builds navigate action from URL like:
-     * https://wordpress.com/stats/$timeframe/$site
+     * https://sitebay.com/stats/$timeframe/$site
      * where timeframe and site are optional
      * or
-     * wordpress://stats
+     * sitebay://stats
      */
     override fun buildNavigateAction(uri: UriWrapper): NavigateAction {
         val pathSegments = uri.pathSegments
@@ -49,7 +49,7 @@ class StatsLinkHandler
 
     /**
      * Returns true if the URI should be handled by StatsLinkHandler.
-     * The handled links are `https://wordpress.com/stats/day/$site` and `wordpress://stats`
+     * The handled links are `https://sitebay.com/stats/day/$site` and `sitebay://stats`
      */
     override fun shouldHandleUrl(uri: UriWrapper): Boolean {
         return (uri.host == HOST_WORDPRESS_COM &&

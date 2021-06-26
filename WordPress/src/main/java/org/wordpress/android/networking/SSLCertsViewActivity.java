@@ -1,11 +1,11 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBar;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.WebViewActivity;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.WebViewActivity;
 
 /**
  * Display details of a SSL cert

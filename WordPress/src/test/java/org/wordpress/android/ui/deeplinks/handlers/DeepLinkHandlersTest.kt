@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import androidx.lifecycle.MutableLiveData
 import com.nhaarman.mockitokotlin2.whenever
@@ -6,11 +6,11 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditor
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenEditor
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.viewmodel.Event
 
 class DeepLinkHandlersTest : BaseUnitTest() {
     @Mock lateinit var editorLinkHandler: EditorLinkHandler

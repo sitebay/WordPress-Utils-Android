@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.modules.IO_THREAD
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.modules.IO_THREAD
 import javax.inject.Inject
 import javax.inject.Named
 

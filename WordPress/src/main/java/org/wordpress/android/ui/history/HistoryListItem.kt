@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.annotation.SuppressLint
 import android.os.Parcelable
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 import kotlinx.parcelize.RawValue
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.model.revisions.Diff
-import org.wordpress.android.fluxc.model.revisions.RevisionModel
-import org.wordpress.android.ui.history.HistoryListItem.ViewType.FOOTER
-import org.wordpress.android.ui.history.HistoryListItem.ViewType.HEADER
-import org.wordpress.android.ui.history.HistoryListItem.ViewType.REVISION
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.util.toFormattedDateString
-import org.wordpress.android.util.toFormattedTimeString
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.model.revisions.Diff
+import org.sitebay.android.fluxc.model.revisions.RevisionModel
+import org.sitebay.android.ui.history.HistoryListItem.ViewType.FOOTER
+import org.sitebay.android.ui.history.HistoryListItem.ViewType.HEADER
+import org.sitebay.android.ui.history.HistoryListItem.ViewType.REVISION
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.util.toFormattedDateString
+import org.sitebay.android.util.toFormattedTimeString
 import java.util.ArrayList
 import java.util.Date
 

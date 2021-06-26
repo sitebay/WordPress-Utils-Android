@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;

@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import androidx.annotation.StringRes
 import dagger.Reusable
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
 import javax.inject.Inject
 
 @Reusable

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.wordpress.android.widgets.WPViewPager
+    <org.sitebay.android.widgets.WPViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -72,7 +72,7 @@
                     android:contentDescription="@string/content_description_person_reading_device_notification"
                     android:src="@drawable/img_illustration_notifications_152dp" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     style="@style/JetpackConnectionText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

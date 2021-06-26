@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.app.Dialog
 import android.app.ProgressDialog
@@ -7,7 +7,7 @@ import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 class PrivateAtCookieRefreshProgressDialog : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

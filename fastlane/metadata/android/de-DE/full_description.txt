@@ -40,6 +40,6 @@ WordPress ist ein Open-Source-System zur Website-Erstellung, was bedeutet, dass 
 
 Ganz gleich, ob du einen Baukasten zur Website-Erstellung benötigst oder ein einfaches Tool zur Erstellung von Blogs: WordPress kann dir helfen. WordPress bietet dir wunderschöne Designs, leistungsstarke Funktionen und die Freiheit, alle deine Ideen zu verwirklichen.
 
-WordPress für Android unterstützt selbst gehostete Websites mit WordPress 4.0 oder höher und alle Websites auf WordPress.com. Wie WordPress ist WordPress für Android ein Open-Source-System. Weitere Informationen unter https://wp.me/P7jrAc-tJ.  Du benötigst Hilfe mit der App? Sende uns einen Tweet an @WPAndroid oder besuche unsere Foren unter https://android.forums.wordpress.org/forum/troubleshooting.
+WordPress für Android unterstützt selbst gehostete Websites mit WordPress 4.0 oder höher und alle Websites auf WordPress.com. Wie WordPress ist WordPress für Android ein Open-Source-System. Weitere Informationen unter https://wp.me/P7jrAc-tJ.  Du benötigst Hilfe mit der App? Sende uns einen Tweet an @WPAndroid oder besuche unsere Foren unter https://android.forums.sitebay.org/forum/troubleshooting.
 
 Datenschutzhinweis für Benutzer in Kalifornien: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa.

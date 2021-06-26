@@ -4,7 +4,7 @@
         "urlPattern": "/api/connect/site-info(/)?($|\\?.*)",
         "queryParameters": {
             "url": {
-                "matches": "(https?://)?(.*wordpress.com).*"
+                "matches": "(https?://)?(.*sitebay.com).*"
             }
         }
     },

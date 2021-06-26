@@ -1,10 +1,10 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.content.pm.ShortcutManager;
 import android.os.Build.VERSION_CODES;
 
-import org.wordpress.android.ui.Shortcut;
+import org.sitebay.android.ui.Shortcut;
 
 import javax.inject.Inject;
 

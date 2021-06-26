@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat

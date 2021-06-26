@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
@@ -7,7 +7,7 @@ import android.preference.PreferenceGroup;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 /**
  * Design guidelines for Calypso-styled Site Settings (and likely other screens)

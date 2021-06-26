@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,16 +10,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.PublicizeTable;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.models.PublicizeService;
-import org.wordpress.android.ui.ScrollableViewInitializedListener;
-import org.wordpress.android.ui.publicize.PublicizeConstants.ConnectAction;
-import org.wordpress.android.ui.publicize.adapters.PublicizeConnectionAdapter;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.PublicizeTable;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.models.PublicizeService;
+import org.sitebay.android.ui.ScrollableViewInitializedListener;
+import org.sitebay.android.ui.publicize.PublicizeConstants.ConnectAction;
+import org.sitebay.android.ui.publicize.adapters.PublicizeConnectionAdapter;
+import org.sitebay.android.util.ToastUtils;
 
 import javax.inject.Inject;
 

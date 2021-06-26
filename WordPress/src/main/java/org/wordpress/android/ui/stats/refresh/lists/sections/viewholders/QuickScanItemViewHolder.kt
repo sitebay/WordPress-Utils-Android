@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.widget.TooltipCompat
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem.Column
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem.Column
 
 class QuickScanItemViewHolder(parent: ViewGroup) : BlockListItemViewHolder(
         parent,

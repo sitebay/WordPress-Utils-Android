@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite.dynamiccards
+package org.sitebay.android.ui.mysite.dynamiccards
 
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyZeroInteractions
@@ -7,16 +7,16 @@ import org.assertj.core.api.Java6Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.DynamicCardType.CUSTOMIZE_QUICK_START
-import org.wordpress.android.fluxc.model.DynamicCardType.GROW_QUICK_START
-import org.wordpress.android.fluxc.model.DynamicCardsModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.DynamicCardStore
-import org.wordpress.android.test
-import org.wordpress.android.testScope
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.DynamicCardsUpdate
-import org.wordpress.android.ui.mysite.SelectedSiteRepository
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.DynamicCardType.CUSTOMIZE_QUICK_START
+import org.sitebay.android.fluxc.model.DynamicCardType.GROW_QUICK_START
+import org.sitebay.android.fluxc.model.DynamicCardsModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.DynamicCardStore
+import org.sitebay.android.test
+import org.sitebay.android.testScope
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.DynamicCardsUpdate
+import org.sitebay.android.ui.mysite.SelectedSiteRepository
 
 class DynamicCardsSourceTest : BaseUnitTest() {
     @Mock lateinit var dynamicCardStore: DynamicCardStore

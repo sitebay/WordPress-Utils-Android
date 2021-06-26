@@ -96,7 +96,7 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <org.wordpress.android.widgets.WPViewPager
+    <org.sitebay.android.widgets.WPViewPager
         android:id="@+id/diff_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
                 android:layout_marginLeft="@dimen/sourceview_side_margin"
                 android:layout_marginRight="@dimen/sourceview_side_margin" />
 
-            <org.wordpress.aztec.AztecText
+            <org.sitebay.aztec.AztecText
                 android:id="@+id/visual_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

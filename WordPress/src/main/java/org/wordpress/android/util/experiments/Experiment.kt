@@ -1,6 +1,6 @@
-package org.wordpress.android.util.experiments
+package org.sitebay.android.util.experiments
 
-import org.wordpress.android.fluxc.model.experiments.Variation
+import org.sitebay.android.fluxc.model.experiments.Variation
 
 open class Experiment(
     val name: String,

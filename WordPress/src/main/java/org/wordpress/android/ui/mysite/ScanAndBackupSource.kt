@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,10 +6,10 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.jetpack.JetpackCapabilitiesUseCase
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.JetpackCapabilities
-import org.wordpress.android.util.SiteUtils
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.jetpack.JetpackCapabilitiesUseCase
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.JetpackCapabilities
+import org.sitebay.android.util.SiteUtils
 import javax.inject.Inject
 import javax.inject.Named
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.screenshots;
+package org.sitebay.android.ui.screenshots;
 
 import android.provider.Settings;
 
@@ -13,34 +13,34 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.e2e.pages.PostsListPage;
-import org.wordpress.android.e2e.pages.SitePickerPage;
-import org.wordpress.android.support.BaseTest;
-import org.wordpress.android.support.DemoModeEnabler;
-import org.wordpress.android.ui.WPLaunchActivity;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.e2e.pages.PostsListPage;
+import org.sitebay.android.e2e.pages.SitePickerPage;
+import org.sitebay.android.support.BaseTest;
+import org.sitebay.android.support.DemoModeEnabler;
+import org.sitebay.android.ui.WPLaunchActivity;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.util.image.ImageType;
 
-import static org.wordpress.android.support.WPSupportUtils.clickOn;
-import static org.wordpress.android.support.WPSupportUtils.clickOnViewWithTag;
-import static org.wordpress.android.support.WPSupportUtils.getCurrentActivity;
-import static org.wordpress.android.support.WPSupportUtils.getTranslatedString;
-import static org.wordpress.android.support.WPSupportUtils.idleFor;
-import static org.wordpress.android.support.WPSupportUtils.isElementDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.isTabletScreen;
-import static org.wordpress.android.support.WPSupportUtils.pressBackUntilElementIsDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.selectItemWithTitleInTabLayout;
-import static org.wordpress.android.support.WPSupportUtils.setNightMode;
-import static org.wordpress.android.support.WPSupportUtils.swipeDownOnView;
-import static org.wordpress.android.support.WPSupportUtils.swipeLeftOnViewPager;
-import static org.wordpress.android.support.WPSupportUtils.swipeRightOnViewPager;
-import static org.wordpress.android.support.WPSupportUtils.swipeUpOnView;
-import static org.wordpress.android.support.WPSupportUtils.waitForAtLeastOneElementWithIdToBeDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.waitForElementToBeDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.waitForElementToBeDisplayedWithoutFailure;
-import static org.wordpress.android.support.WPSupportUtils.waitForImagesOfTypeWithPlaceholder;
+import static org.sitebay.android.support.WPSupportUtils.clickOn;
+import static org.sitebay.android.support.WPSupportUtils.clickOnViewWithTag;
+import static org.sitebay.android.support.WPSupportUtils.getCurrentActivity;
+import static org.sitebay.android.support.WPSupportUtils.getTranslatedString;
+import static org.sitebay.android.support.WPSupportUtils.idleFor;
+import static org.sitebay.android.support.WPSupportUtils.isElementDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.isTabletScreen;
+import static org.sitebay.android.support.WPSupportUtils.pressBackUntilElementIsDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.selectItemWithTitleInTabLayout;
+import static org.sitebay.android.support.WPSupportUtils.setNightMode;
+import static org.sitebay.android.support.WPSupportUtils.swipeDownOnView;
+import static org.sitebay.android.support.WPSupportUtils.swipeLeftOnViewPager;
+import static org.sitebay.android.support.WPSupportUtils.swipeRightOnViewPager;
+import static org.sitebay.android.support.WPSupportUtils.swipeUpOnView;
+import static org.sitebay.android.support.WPSupportUtils.waitForAtLeastOneElementWithIdToBeDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.waitForElementToBeDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.waitForElementToBeDisplayedWithoutFailure;
+import static org.sitebay.android.support.WPSupportUtils.waitForImagesOfTypeWithPlaceholder;
 
 import tools.fastlane.screengrab.Screengrab;
 import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;
@@ -89,7 +89,7 @@ public class WPScreenshotTest extends BaseTest {
         // Choose "Switch Site"
         clickOn(R.id.switch_site);
 
-        (new SitePickerPage()).chooseSiteWithURL("fourpawsdoggrooming.wordpress.com");
+        (new SitePickerPage()).chooseSiteWithURL("fourpawsdoggrooming.sitebay.com");
 
         // Choose "Blog Posts"
         clickOn(R.id.quick_action_posts_button);
@@ -214,7 +214,7 @@ public class WPScreenshotTest extends BaseTest {
         // Choose "Switch Site"
         clickOn(R.id.switch_site);
 
-        (new SitePickerPage()).chooseSiteWithURL("tricountyrealestate.wordpress.com");
+        (new SitePickerPage()).chooseSiteWithURL("tricountyrealestate.sitebay.com");
 
         waitForElementToBeDisplayedWithoutFailure(R.id.row_blog_posts);
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.app.FragmentManager;
 import android.os.Bundle;
@@ -11,19 +11,19 @@ import org.apache.commons.text.StringEscapeUtils;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteDeleted;
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteRemoved;
-import org.wordpress.android.networking.ConnectionChangeReceiver;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.ToastUtils.Duration;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteDeleted;
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteRemoved;
+import org.sitebay.android.networking.ConnectionChangeReceiver;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.ToastUtils.Duration;
 
 import javax.inject.Inject;
 
@@ -124,7 +124,7 @@ public class BlogPreferencesActivity extends LocaleAwareActivity {
             siteSettingsFragment.setEditingEnabled(event.isConnected());
 
             // TODO: add this back when delete blog is back
-            // https://github.com/wordpress-mobile/WordPress-Android/commit/6a90e3fe46e24ee40abdc4a7f8f0db06f157900c
+            // https://github.com/sitebay-mobile/WordPress-Android/commit/6a90e3fe46e24ee40abdc4a7f8f0db06f157900c
             // Checks for stats widgets that were synched with a blog that could be gone now.
             // StatsWidgetProvider.updateWidgetsOnLogout(this);
         }

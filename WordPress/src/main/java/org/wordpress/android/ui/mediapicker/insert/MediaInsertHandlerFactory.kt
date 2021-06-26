@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.mediapicker.insert
+package org.sitebay.android.ui.mediapicker.insert
 
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup
-import org.wordpress.android.ui.mediapicker.insert.DeviceListInsertUseCase.DeviceListInsertUseCaseFactory
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.DEVICE
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.GIF_LIBRARY
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.STOCK_LIBRARY
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.WP_LIBRARY
-import org.wordpress.android.ui.mediapicker.insert.GifMediaInsertUseCase.GifMediaInsertUseCaseFactory
-import org.wordpress.android.ui.mediapicker.insert.StockMediaInsertUseCase.StockMediaInsertUseCaseFactory
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup
+import org.sitebay.android.ui.mediapicker.insert.DeviceListInsertUseCase.DeviceListInsertUseCaseFactory
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.DEVICE
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.GIF_LIBRARY
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.STOCK_LIBRARY
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.WP_LIBRARY
+import org.sitebay.android.ui.mediapicker.insert.GifMediaInsertUseCase.GifMediaInsertUseCaseFactory
+import org.sitebay.android.ui.mediapicker.insert.StockMediaInsertUseCase.StockMediaInsertUseCaseFactory
 import javax.inject.Inject
 
 class MediaInsertHandlerFactory

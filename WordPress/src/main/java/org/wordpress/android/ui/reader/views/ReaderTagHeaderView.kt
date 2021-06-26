@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.RelativeLayout
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ReaderTagHeaderViewBinding
-import org.wordpress.android.ui.reader.views.ReaderTagHeaderViewUiState.ReaderTagHeaderUiState
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ReaderTagHeaderViewBinding
+import org.sitebay.android.ui.reader.views.ReaderTagHeaderViewUiState.ReaderTagHeaderUiState
+import org.sitebay.android.ui.utils.UiHelpers
 import javax.inject.Inject
 
 /**

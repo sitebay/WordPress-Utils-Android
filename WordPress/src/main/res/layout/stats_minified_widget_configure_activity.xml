@@ -12,7 +12,7 @@
 
         <fragment
             android:id="@+id/fragment_container"
-            android:name="org.wordpress.android.ui.stats.refresh.lists.widget.minified.StatsMinifiedWidgetConfigureFragment"
+            android:name="org.sitebay.android.ui.stats.refresh.lists.widget.minified.StatsMinifiedWidgetConfigureFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/toolbar"

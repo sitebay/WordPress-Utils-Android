@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.quickstart;
+package org.sitebay.android.ui.quickstart;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -10,23 +10,23 @@ import android.os.Bundle;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.store.QuickStartStore;
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask;
-import org.wordpress.android.push.NotificationPushIds;
-import org.wordpress.android.push.NotificationType;
-import org.wordpress.android.push.NotificationsProcessingService;
-import org.wordpress.android.ui.main.MySiteFragment;
-import org.wordpress.android.ui.main.WPMainActivity;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.ui.prefs.AppPrefs;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.store.QuickStartStore;
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask;
+import org.sitebay.android.push.NotificationPushIds;
+import org.sitebay.android.push.NotificationType;
+import org.sitebay.android.push.NotificationsProcessingService;
+import org.sitebay.android.ui.main.MySiteFragment;
+import org.sitebay.android.ui.main.WPMainActivity;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.ui.prefs.AppPrefs;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
+import static org.sitebay.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
 
 public class QuickStartReminderReceiver extends BroadcastReceiver {
     public static final String ARG_QUICK_START_TASK_BATCH = "ARG_QUICK_START_TASK_BATCH";

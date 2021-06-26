@@ -1,22 +1,22 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import android.content.Intent
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.READER_VIEWPOST_INTERCEPTED
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInReader
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenReader
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ViewPostInReader
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.APPLINK_SCHEME
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.HOST_WORDPRESS_COM
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.SITE_DOMAIN
-import org.wordpress.android.ui.reader.ReaderConstants
-import org.wordpress.android.ui.utils.IntentUtils
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.READER_VIEWPOST_INTERCEPTED
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInReader
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenReader
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ViewPostInReader
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.APPLINK_SCHEME
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.HOST_WORDPRESS_COM
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel.Companion.SITE_DOMAIN
+import org.sitebay.android.ui.reader.ReaderConstants
+import org.sitebay.android.ui.utils.IntentUtils
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.viewmodel.Event
 import java.lang.StringBuilder
 import javax.inject.Inject
 
@@ -33,8 +33,8 @@ class ReaderLinkHandler
      * that logic here, we simply check if we can resolve an [Intent] that uses [ReaderConstants.ACTION_VIEW_POST].
      * Since that's a custom action that is only handled by the Reader, we can then assume it supports this URI.
      * Other deeplinks handled:
-     * `wordpress://read`
-     * `wordpress://viewpost?blogId={blogId}&postId={postId}`
+     * `sitebay://read`
+     * `sitebay://viewpost?blogId={blogId}&postId={postId}`
      */
     override fun shouldHandleUrl(uri: UriWrapper): Boolean {
         return DEEP_LINK_HOST_READ == uri.host || DEEP_LINK_HOST_VIEWPOST == uri.host || intentUtils.canResolveWith(
@@ -63,12 +63,12 @@ class ReaderLinkHandler
 
     /**
      * URLs handled here
-     * `wordpress://read`
-     * `wordpress://viewpost?blogId={blogId}&postId={postId}`
-     * wordpress.com/read/feeds/feedId/posts/feedItemId
-     * wordpress.com/read/blogs/feedId/posts/feedItemId
-     * domain.wordpress.com/2.../../../postId
-     * domain.wordpress.com/19../../../postId
+     * `sitebay://read`
+     * `sitebay://viewpost?blogId={blogId}&postId={postId}`
+     * sitebay.com/read/feeds/feedId/posts/feedItemId
+     * sitebay.com/read/blogs/feedId/posts/feedItemId
+     * domain.sitebay.com/2.../../../postId
+     * domain.sitebay.com/19../../../postId
      */
     override fun stripUrl(uri: UriWrapper): String {
         return when (uri.host) {
@@ -95,7 +95,7 @@ class ReaderLinkHandler
             else -> {
                 buildString {
                     val segments = uri.pathSegments
-                    // Handled URLs look like this: http[s]://wordpress.com/read/feeds/{feedId}/posts/{feedItemId}
+                    // Handled URLs look like this: http[s]://sitebay.com/read/feeds/{feedId}/posts/{feedItemId}
                     // with the first segment being 'read'.
                     append(stripHost(uri))
                     if (segments.firstOrNull() == "read") {

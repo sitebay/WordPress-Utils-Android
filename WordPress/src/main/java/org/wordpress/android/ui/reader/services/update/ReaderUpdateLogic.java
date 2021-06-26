@@ -1,31 +1,31 @@
-package org.wordpress.android.ui.reader.services.update;
+package org.sitebay.android.ui.reader.services.update;
 
 import android.content.Context;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderBlogTable;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.models.ReaderBlogList;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.ReaderEvents.InterestTagsFetchEnded;
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.LocaleManager;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderBlogTable;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.models.ReaderBlogList;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.ReaderEvents.InterestTagsFetchEnded;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.LocaleManager;
 
 import java.util.Date;
 import java.util.EnumSet;
@@ -98,7 +98,7 @@ public class ReaderUpdateLogic {
      * they're included in the response
      */
     private void updateTags() {
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 handleUpdateTagsResponse(jsonObject);

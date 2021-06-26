@@ -149,7 +149,7 @@ Language: th
     <string name="stats_insights_all_time">เรื่อง การดูและผู้เยี่ยมชมของเวลาทั้งหมด</string>
     <string name="stats_insights">แบบละเอียด</string>
     <string name="me_btn_login_logout">เข้าสู่ระบบ/ออกจากระบบ</string>
-    <string name="me_connect_to_wordpress_com">เชื่อมต่อกับ WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">เชื่อมต่อกับ WordPress.com</string>
     <string name="me_btn_support">ช่วยเหลือและสนับสนุน</string>
     <string name="site_picker_cant_hide_current_site">ไม่ได้ซ่อน \"%s\" เพราะว่ามันเป็นเว็บปัจจุบัน</string>
     <string name="account_settings">ตั้งค่าบัญชี</string>
@@ -260,7 +260,7 @@ Language: th
     <string name="new_media">ไฟล์สื่อใหม่</string>
     <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
     <string name="image_settings">การตั้งค่ารูปภาพ</string>
-    <string name="wordpress_blog">บล็อกเวิร์ดเพรส</string>
+    <string name="sitebay_blog">บล็อกเวิร์ดเพรส</string>
     <string name="error_blog_hidden">บล็อกนี้ถูกซ่อนและไม่สามารถโหลดได้  ให้เปิดใช้งานมันอีกครั้งในการตั้งค่าและลองดูอีกครั้ง</string>
     <string name="fatal_db_error">มีความผิดพลาดเกิดขึ้นระหว่างการสร้างฐานข้อมูลแอพ  โปรดลองติดตั้งแอพใหม่อีกครั้ง</string>
     <string name="new_post">เรื่องใหม่</string>

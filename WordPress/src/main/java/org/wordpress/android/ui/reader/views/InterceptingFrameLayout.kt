@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
 import android.content.Context
 import android.util.AttributeSet

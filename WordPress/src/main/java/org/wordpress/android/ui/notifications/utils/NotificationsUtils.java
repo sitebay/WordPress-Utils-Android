@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.utils;
+package org.sitebay.android.ui.notifications.utils;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -25,31 +25,31 @@ import androidx.core.app.NotificationManagerCompat;
 
 import com.android.volley.VolleyError;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.datasets.NotificationsTable;
-import org.wordpress.android.fluxc.tools.FormattableContent;
-import org.wordpress.android.fluxc.tools.FormattableContentMapper;
-import org.wordpress.android.fluxc.tools.FormattableMedia;
-import org.wordpress.android.fluxc.tools.FormattableRange;
-import org.wordpress.android.models.Note;
-import org.wordpress.android.push.GCMMessageService;
-import org.wordpress.android.ui.notifications.blocks.NoteBlock;
-import org.wordpress.android.ui.notifications.blocks.NoteBlockClickableSpan;
-import org.wordpress.android.ui.notifications.blocks.NoteBlockLinkMovementMethod;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DeviceUtils;
-import org.wordpress.android.util.PackageUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.image.getters.WPCustomImageGetter;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.datasets.NotificationsTable;
+import org.sitebay.android.fluxc.tools.FormattableContent;
+import org.sitebay.android.fluxc.tools.FormattableContentMapper;
+import org.sitebay.android.fluxc.tools.FormattableMedia;
+import org.sitebay.android.fluxc.tools.FormattableRange;
+import org.sitebay.android.models.Note;
+import org.sitebay.android.push.GCMMessageService;
+import org.sitebay.android.ui.notifications.blocks.NoteBlock;
+import org.sitebay.android.ui.notifications.blocks.NoteBlockClickableSpan;
+import org.sitebay.android.ui.notifications.blocks.NoteBlockLinkMovementMethod;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DeviceUtils;
+import org.sitebay.android.util.PackageUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.image.getters.WPCustomImageGetter;
 
 import java.util.HashMap;
 import java.util.List;

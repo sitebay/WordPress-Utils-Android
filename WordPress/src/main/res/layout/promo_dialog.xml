@@ -32,17 +32,17 @@
         android:orientation="vertical"
         android:padding="@dimen/margin_dialog">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/promo_dialog_title"
             style="@style/PromoDialogTitle"
             tools:text="Promotional Feature" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/promo_dialog_description"
             style="@style/PromoDialogDescription"
             tools:text="This is a short description about the promotional feature." />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/promo_dialog_link"
             style="@style/PromoDialogLink"
             android:clickable="true"

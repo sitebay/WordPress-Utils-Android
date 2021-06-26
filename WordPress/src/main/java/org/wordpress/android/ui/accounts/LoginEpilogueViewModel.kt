@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.viewmodel.Event
 
 import javax.inject.Inject
 

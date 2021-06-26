@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.notifications
+package org.sitebay.android.ui.prefs.notifications
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,11 +15,11 @@ import androidx.annotation.ColorInt
 import androidx.appcompat.widget.SwitchCompat
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.R
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.redirectContextClickToLongPressListener
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.R
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.redirectContextClickToLongPressListener
 
 /**
  * Custom view for main switch in toolbar for preferences.

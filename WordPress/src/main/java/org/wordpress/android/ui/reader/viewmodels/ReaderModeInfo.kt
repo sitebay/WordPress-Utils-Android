@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.reader.viewmodels
+package org.sitebay.android.ui.reader.viewmodels
 
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.ui.reader.ReaderTypes.ReaderPostListType
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.ui.reader.ReaderTypes.ReaderPostListType
+import org.sitebay.android.ui.utils.UiString
 
 data class ReaderModeInfo(
     val tag: ReaderTag?,

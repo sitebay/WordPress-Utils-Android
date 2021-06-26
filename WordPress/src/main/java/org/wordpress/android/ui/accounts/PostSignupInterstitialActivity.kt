@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.button.MaterialButton
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PostSignupInterstitialActivityBinding
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.DISMISS
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CONNECTION_FLOW
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CREATION_FLOW
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PostSignupInterstitialActivityBinding
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.DISMISS
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CONNECTION_FLOW
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CREATION_FLOW
 import javax.inject.Inject
 
 class PostSignupInterstitialActivity : LocaleAwareActivity() {

@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.preview
+package org.sitebay.android.imageeditor.preview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,10 +6,10 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.imageeditor.R
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageData
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageUiState
-import org.wordpress.android.imageeditor.utils.UiHelpers
+import org.sitebay.android.imageeditor.R
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageData
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageUiState
+import org.sitebay.android.imageeditor.utils.UiHelpers
 
 class PreviewImageViewHolder(
     internal val parent: ViewGroup,

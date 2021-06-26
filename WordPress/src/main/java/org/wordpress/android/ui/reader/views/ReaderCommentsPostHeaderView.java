@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,17 +12,17 @@ import androidx.core.graphics.ColorUtils;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.ui.reader.FollowCommentsUiState;
-import org.wordpress.android.ui.reader.FollowCommentsUiStateType;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.ui.reader.FollowCommentsUiState;
+import org.sitebay.android.ui.reader.FollowCommentsUiStateType;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 /**
  * topmost view in reader comment adapter - show info about the post

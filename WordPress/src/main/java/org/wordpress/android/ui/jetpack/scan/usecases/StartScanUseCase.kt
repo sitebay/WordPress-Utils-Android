@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.jetpack.scan.usecases
+package org.sitebay.android.ui.jetpack.scan.usecases
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import org.wordpress.android.fluxc.action.ScanAction.START_SCAN
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.scan.ScanStateModel
-import org.wordpress.android.fluxc.model.scan.ScanStateModel.State.SCANNING
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.fluxc.store.ScanStore.ScanStartPayload
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState.Failure
-import org.wordpress.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState.ScanningStateUpdatedInDb
-import org.wordpress.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.fluxc.action.ScanAction.START_SCAN
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.scan.ScanStateModel
+import org.sitebay.android.fluxc.model.scan.ScanStateModel.State.SCANNING
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.fluxc.store.ScanStore.ScanStartPayload
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState.Failure
+import org.sitebay.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState.ScanningStateUpdatedInDb
+import org.sitebay.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 

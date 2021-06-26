@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.view.ViewCompat;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 public class WPSwitchPreference extends SwitchPreference implements PreferenceHint {
     private String mHint;

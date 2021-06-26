@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import android.content.Context
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.Comment
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.COMMENT
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.SUB_HEADER
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.SubHeader
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.GravatarUtilsWrapper
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.Comment
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.COMMENT
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.SUB_HEADER
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.SubHeader
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.GravatarUtilsWrapper
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class UnifiedCommentListAdapter(context: Context) :

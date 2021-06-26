@@ -117,7 +117,7 @@ Enable developer options by going to Settings > System > Developer Options. Unde
  
  * Each element that’s touch-enabled should have at least 48dp x 48dp in size. 
  * The easiest way to increase this is to utilize the `padding` attribute. 
- * For views where you don’t want to modify the padding, you can utilize the [TouchDelegate](https://developer.android.com/reference/android/view/TouchDelegate) functionality where you can get the current “Hit Rect), which is a rect with the current bounds, and you can modify it to increase the touch area. There is a [function within ViewUtils](https://github.com/wordpress-mobile/WordPress-Android/blob/3f99349887f004a697f6ff6ec4a5d49bd1d9d497/WordPress/src/main/java/org/wordpress/android/util/ViewUtils.kt#L20) that does this well. 
+ * For views where you don’t want to modify the padding, you can utilize the [TouchDelegate](https://developer.android.com/reference/android/view/TouchDelegate) functionality where you can get the current “Hit Rect), which is a rect with the current bounds, and you can modify it to increase the touch area. There is a [function within ViewUtils](https://github.com/sitebay-mobile/WordPress-Android/blob/3f99349887f004a697f6ff6ec4a5d49bd1d9d497/WordPress/src/main/java/org/sitebay/android/util/ViewUtils.kt#L20) that does this well. 
 
 #### Color Contrasts
 

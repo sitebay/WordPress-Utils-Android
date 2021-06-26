@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget
+package org.sitebay.android.ui.stats.refresh.lists.widget
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import org.wordpress.android.WordPress
-import org.wordpress.android.modules.AppComponent
+import org.sitebay.android.WordPress
+import org.sitebay.android.modules.AppComponent
 
 const val IS_WIDE_VIEW_KEY = "show_change_value_key"
 const val SITE_ID_KEY = "site_id_key"

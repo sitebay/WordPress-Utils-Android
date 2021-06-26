@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.usecases
+package org.sitebay.android.ui.sitecreation.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
@@ -13,12 +13,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnSuggestedDomains
-import org.wordpress.android.fluxc.store.SiteStore.SuggestDomainsPayload
-import org.wordpress.android.test
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnSuggestedDomains
+import org.sitebay.android.fluxc.store.SiteStore.SuggestDomainsPayload
+import org.sitebay.android.test
 
 private const val SEARCH_QUERY = "test"
 private const val SEGMENT_ID = 123L

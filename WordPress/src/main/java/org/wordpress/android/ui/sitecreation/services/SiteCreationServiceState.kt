@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.sitecreation.services
+package org.sitebay.android.ui.sitecreation.services
 
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
-import org.wordpress.android.util.AutoForeground
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
+import org.sitebay.android.util.AutoForeground
 
 data class SiteCreationServiceState internal constructor(
     val step: SiteCreationStep,

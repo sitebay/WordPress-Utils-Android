@@ -1,21 +1,21 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flowOn
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksError
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksLoading
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksNotAllowed
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksUserChangedRole
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.UserNotAuthenticated
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksError
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksLoading
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksNotAllowed
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksUserChangedRole
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.UserNotAuthenticated
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 import javax.inject.Named
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.history;
+package org.sitebay.android.ui.history;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,29 +28,29 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.editor.EditorMediaUtils;
-import org.wordpress.android.ui.history.HistoryListItem.Revision;
-import org.wordpress.android.ui.posts.services.AztecImageLoader;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AniUtils.Duration;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.widgets.WPViewPager;
-import org.wordpress.android.widgets.WPViewPagerTransformer;
-import org.wordpress.android.widgets.WPViewPagerTransformer.TransformType;
-import org.wordpress.aztec.AztecText;
-import org.wordpress.aztec.plugins.IAztecPlugin;
-import org.wordpress.aztec.plugins.shortcodes.AudioShortcodePlugin;
-import org.wordpress.aztec.plugins.shortcodes.CaptionShortcodePlugin;
-import org.wordpress.aztec.plugins.shortcodes.VideoShortcodePlugin;
-import org.wordpress.aztec.plugins.wpcomments.HiddenGutenbergPlugin;
-import org.wordpress.aztec.plugins.wpcomments.WordPressCommentsPlugin;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.editor.EditorMediaUtils;
+import org.sitebay.android.ui.history.HistoryListItem.Revision;
+import org.sitebay.android.ui.posts.services.AztecImageLoader;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AniUtils.Duration;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.widgets.WPViewPager;
+import org.sitebay.android.widgets.WPViewPagerTransformer;
+import org.sitebay.android.widgets.WPViewPagerTransformer.TransformType;
+import org.sitebay.aztec.AztecText;
+import org.sitebay.aztec.plugins.IAztecPlugin;
+import org.sitebay.aztec.plugins.shortcodes.AudioShortcodePlugin;
+import org.sitebay.aztec.plugins.shortcodes.CaptionShortcodePlugin;
+import org.sitebay.aztec.plugins.shortcodes.VideoShortcodePlugin;
+import org.sitebay.aztec.plugins.wpcomments.HiddenGutenbergPlugin;
+import org.sitebay.aztec.plugins.wpcomments.WordPressCommentsPlugin;
 
 import java.util.ArrayList;
 
@@ -140,7 +140,7 @@ public class HistoryDetailContainerFragment extends Fragment {
 
         Drawable loadingImagePlaceholder = EditorMediaUtils.getAztecPlaceholderDrawableFromResID(
                 requireContext(),
-                org.wordpress.android.editor.R.drawable.ic_gridicons_image,
+                org.sitebay.android.editor.R.drawable.ic_gridicons_image,
                 EditorMediaUtils.getMaximumThumbnailSizeForEditor(requireContext()));
 
         mVisualContent.setImageGetter(new AztecImageLoader(requireContext(), mImageManager, loadingImagePlaceholder));

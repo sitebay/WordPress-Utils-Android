@@ -1,4 +1,4 @@
-package org.wordpress.android
+package org.sitebay.android
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import org.junit.Rule

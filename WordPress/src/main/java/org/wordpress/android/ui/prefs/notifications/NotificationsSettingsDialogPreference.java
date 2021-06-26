@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.notifications;
+package org.sitebay.android.ui.prefs.notifications;
 
 import android.app.ActionBar;
 import android.app.ActionBar.LayoutParams;
@@ -21,15 +21,15 @@ import androidx.core.content.ContextCompat;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.models.NotificationsSettings;
-import org.wordpress.android.models.NotificationsSettings.Channel;
-import org.wordpress.android.models.NotificationsSettings.Type;
-import org.wordpress.android.ui.prefs.notifications.PrefMainSwitchToolbarView.MainSwitchToolbarListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.ContextUtilsKt;
-import org.wordpress.android.util.JSONUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.models.NotificationsSettings;
+import org.sitebay.android.models.NotificationsSettings.Channel;
+import org.sitebay.android.models.NotificationsSettings.Type;
+import org.sitebay.android.ui.prefs.notifications.PrefMainSwitchToolbarView.MainSwitchToolbarListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.ContextUtilsKt;
+import org.sitebay.android.util.JSONUtils;
 
 import java.util.Iterator;
 

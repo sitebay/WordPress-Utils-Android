@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -18,29 +18,29 @@ import android.view.ViewGroup.MarginLayoutParams
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.core.text.HtmlCompat
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.QuickStartStore
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.CHECK_STATS
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.CREATE_SITE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.EDIT_HOMEPAGE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.ENABLE_POST_SHARING
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.EXPLORE_PLANS
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.FOLLOW_SITE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.PUBLISH_POST
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.REVIEW_PAGES
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.UPDATE_SITE_TITLE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.UPLOAD_SITE_ICON
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.VIEW_SITE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTaskType
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTaskType.UNKNOWN
-import org.wordpress.android.ui.RequestCodes
-import org.wordpress.android.ui.prefs.AppPrefs
-import org.wordpress.android.ui.quickstart.QuickStartReminderReceiver
-import org.wordpress.android.ui.quickstart.QuickStartTaskDetails
-import org.wordpress.android.ui.themes.ThemeBrowserUtils
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.QuickStartStore
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.CHECK_STATS
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.CREATE_SITE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.EDIT_HOMEPAGE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.ENABLE_POST_SHARING
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.EXPLORE_PLANS
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.FOLLOW_SITE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.PUBLISH_POST
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.REVIEW_PAGES
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.UPDATE_SITE_TITLE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.UPLOAD_SITE_ICON
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.VIEW_SITE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTaskType
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTaskType.UNKNOWN
+import org.sitebay.android.ui.RequestCodes
+import org.sitebay.android.ui.prefs.AppPrefs
+import org.sitebay.android.ui.quickstart.QuickStartReminderReceiver
+import org.sitebay.android.ui.quickstart.QuickStartTaskDetails
+import org.sitebay.android.ui.themes.ThemeBrowserUtils
 
 class QuickStartUtils {
     companion object {

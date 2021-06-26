@@ -1,23 +1,23 @@
-package org.wordpress.android.ui.jetpack.scan.history
+package org.sitebay.android.ui.jetpack.scan.history
 
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStoreOwner
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ScanHistoryListFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.ViewPagerFragment
-import org.wordpress.android.ui.jetpack.scan.ScanListItemState
-import org.wordpress.android.ui.jetpack.scan.adapters.ScanAdapter
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.ContentUiState
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.EmptyUiState.EmptyHistory
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ScanHistoryListFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.ViewPagerFragment
+import org.sitebay.android.ui.jetpack.scan.ScanListItemState
+import org.sitebay.android.ui.jetpack.scan.adapters.ScanAdapter
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.ContentUiState
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.EmptyUiState.EmptyHistory
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class ScanHistoryListFragment : ViewPagerFragment(R.layout.scan_history_list_fragment) {

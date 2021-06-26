@@ -1,6 +1,6 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.util.StringUtils;
 
 public class PublicizeService {
     public static final String FACEBOOK_SERVICE_ID = "facebook";

@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config.manual
+package org.sitebay.android.util.config.manual
 
 import android.os.Bundle
 import android.view.View
@@ -7,11 +7,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.android.support.DaggerFragment
-import org.wordpress.android.R
-import org.wordpress.android.databinding.ManualFeatureConfigFragmentBinding
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.RecyclerItemDecoration
+import org.sitebay.android.R
+import org.sitebay.android.databinding.ManualFeatureConfigFragmentBinding
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.RecyclerItemDecoration
 import javax.inject.Inject
 import kotlin.system.exitProcess
 

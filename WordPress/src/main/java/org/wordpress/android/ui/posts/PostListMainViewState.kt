@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import androidx.annotation.DrawableRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.posts.AuthorFilterSelection.EVERYONE
-import org.wordpress.android.ui.posts.AuthorFilterSelection.ME
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.ui.posts.AuthorFilterSelection.EVERYONE
+import org.sitebay.android.ui.posts.AuthorFilterSelection.ME
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 data class PostListMainViewState(
     val isFabVisible: Boolean,

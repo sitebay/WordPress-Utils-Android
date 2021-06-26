@@ -1,14 +1,14 @@
-package org.wordpress.android.viewmodel.domains
+package org.sitebay.android.viewmodel.domains
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.ui.domains.DomainProductDetails
-import org.wordpress.android.ui.domains.DomainRegistrationCompletedEvent
-import org.wordpress.android.ui.domains.DomainRegistrationMainViewModel
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.ui.domains.DomainProductDetails
+import org.sitebay.android.ui.domains.DomainRegistrationCompletedEvent
+import org.sitebay.android.ui.domains.DomainRegistrationMainViewModel
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 class DomainRegistrationMainViewModelTest : BaseUnitTest() {
     @Mock lateinit var tracker: AnalyticsTrackerWrapper
@@ -16,7 +16,7 @@ class DomainRegistrationMainViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: DomainRegistrationMainViewModel
 
     private val testDomainProductDetails = DomainProductDetails(76, "testdomain.blog")
-    private val domainRegisteredEvent = DomainRegistrationCompletedEvent("testdomain.blog", "email@wordpress.org")
+    private val domainRegisteredEvent = DomainRegistrationCompletedEvent("testdomain.blog", "email@sitebay.org")
 
     @Before
     fun setUp() {

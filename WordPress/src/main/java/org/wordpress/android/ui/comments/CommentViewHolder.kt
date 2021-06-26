@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments
+package org.sitebay.android.ui.comments
 
 import android.content.Context
 import android.graphics.Typeface
@@ -12,21 +12,21 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.graphics.ColorUtils
-import org.wordpress.android.R
-import org.wordpress.android.R.attr
-import org.wordpress.android.R.integer
-import org.wordpress.android.R.string
-import org.wordpress.android.fluxc.model.CommentModel
-import org.wordpress.android.fluxc.model.CommentStatus
-import org.wordpress.android.fluxc.model.CommentStatus.UNAPPROVED
-import org.wordpress.android.ui.comments.CommentAdapter.OnCommentPressedListener
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.GravatarUtils
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.util.WPHtml
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
+import org.sitebay.android.R
+import org.sitebay.android.R.attr
+import org.sitebay.android.R.integer
+import org.sitebay.android.R.string
+import org.sitebay.android.fluxc.model.CommentModel
+import org.sitebay.android.fluxc.model.CommentStatus
+import org.sitebay.android.fluxc.model.CommentStatus.UNAPPROVED
+import org.sitebay.android.ui.comments.CommentAdapter.OnCommentPressedListener
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.GravatarUtils
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.util.WPHtml
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
 
 @Deprecated("Comments are being refactored as part of Comments Unification project. If you are adding any" +
         " features or modifying this class, please ping develric or klymyam")

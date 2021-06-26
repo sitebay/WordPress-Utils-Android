@@ -1,4 +1,4 @@
-package org.wordpress.android.push;
+package org.sitebay.android.push;
 
 import android.content.Intent;
 

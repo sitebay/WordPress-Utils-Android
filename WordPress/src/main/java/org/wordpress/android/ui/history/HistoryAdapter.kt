@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.app.Activity
 import android.os.Bundle
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.history.HistoryListItem.Footer
-import org.wordpress.android.ui.history.HistoryListItem.Header
-import org.wordpress.android.ui.history.HistoryListItem.Revision
-import org.wordpress.android.ui.history.HistoryListItem.ViewType
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.history.HistoryListItem.Footer
+import org.sitebay.android.ui.history.HistoryListItem.Header
+import org.sitebay.android.ui.history.HistoryListItem.Revision
+import org.sitebay.android.ui.history.HistoryListItem.ViewType
+import org.sitebay.android.util.image.ImageManager
 import javax.inject.Inject
 
 class HistoryAdapter(

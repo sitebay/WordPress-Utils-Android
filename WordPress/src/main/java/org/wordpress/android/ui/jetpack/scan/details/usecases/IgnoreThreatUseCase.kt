@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.jetpack.scan.details.usecases
+package org.sitebay.android.ui.jetpack.scan.details.usecases
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.fluxc.store.ScanStore.IgnoreThreatPayload
-import org.wordpress.android.modules.IO_THREAD
-import org.wordpress.android.ui.jetpack.scan.details.usecases.IgnoreThreatUseCase.IgnoreThreatState.Failure
-import org.wordpress.android.ui.jetpack.scan.details.usecases.IgnoreThreatUseCase.IgnoreThreatState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.fluxc.store.ScanStore.IgnoreThreatPayload
+import org.sitebay.android.modules.IO_THREAD
+import org.sitebay.android.ui.jetpack.scan.details.usecases.IgnoreThreatUseCase.IgnoreThreatState.Failure
+import org.sitebay.android.ui.jetpack.scan.details.usecases.IgnoreThreatUseCase.IgnoreThreatState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 

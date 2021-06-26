@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh
+package org.sitebay.android.ui.stats.refresh
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,30 +9,30 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_INSIGHTS_ACCESSED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_DAYS_ACCESSED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_MONTHS_ACCESSED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_WEEKS_ACCESSED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_YEARS_ACCESSED
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.refresh.lists.BaseListUseCase
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DAYS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.MONTHS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.WEEKS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.YEARS
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
-import org.wordpress.android.ui.stats.refresh.utils.NewsCardHandler
-import org.wordpress.android.ui.stats.refresh.utils.SelectedSectionManager
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.stats.refresh.utils.trackGranular
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_INSIGHTS_ACCESSED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_DAYS_ACCESSED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_MONTHS_ACCESSED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_WEEKS_ACCESSED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_PERIOD_YEARS_ACCESSED
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.refresh.lists.BaseListUseCase
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DAYS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.MONTHS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.WEEKS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.YEARS
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
+import org.sitebay.android.ui.stats.refresh.utils.NewsCardHandler
+import org.sitebay.android.ui.stats.refresh.utils.SelectedSectionManager
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.stats.refresh.utils.trackGranular
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class StatsViewModelTest : BaseUnitTest() {
     @Mock lateinit var baseListUseCase: BaseListUseCase

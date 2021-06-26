@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.crop
+package org.sitebay.android.imageeditor.crop
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
@@ -11,19 +11,19 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.yalantis.ucrop.UCrop
 import com.yalantis.ucrop.UCrop.Options
-import org.wordpress.android.imageeditor.ImageEditor
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.CropDoneMenuClicked
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.CropOpened
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.CropSuccessful
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.EditorFinishedEditing
-import org.wordpress.android.imageeditor.R
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveFailedState
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveStartState
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveSuccessState
-import org.wordpress.android.imageeditor.crop.CropViewModel.UiState.UiLoadedState
-import org.wordpress.android.imageeditor.crop.CropViewModel.UiState.UiStartLoadingWithBundleState
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.OutputData
-import org.wordpress.android.imageeditor.viewmodel.Event
+import org.sitebay.android.imageeditor.ImageEditor
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.CropDoneMenuClicked
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.CropOpened
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.CropSuccessful
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.EditorFinishedEditing
+import org.sitebay.android.imageeditor.R
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveFailedState
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveStartState
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveSuccessState
+import org.sitebay.android.imageeditor.crop.CropViewModel.UiState.UiLoadedState
+import org.sitebay.android.imageeditor.crop.CropViewModel.UiState.UiStartLoadingWithBundleState
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.OutputData
+import org.sitebay.android.imageeditor.viewmodel.Event
 import java.io.File
 import java.io.Serializable
 

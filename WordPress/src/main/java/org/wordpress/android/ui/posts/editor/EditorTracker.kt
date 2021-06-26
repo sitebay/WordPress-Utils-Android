@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import android.content.Context
 import android.net.Uri
 import dagger.Reusable
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.editor.EditorFragmentAbstract.TrackableEvent
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.editor.media.AddExistingMediaSource
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtils
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.editor.EditorFragmentAbstract.TrackableEvent
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.editor.media.AddExistingMediaSource
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtils
 import javax.inject.Inject
 
 @Reusable

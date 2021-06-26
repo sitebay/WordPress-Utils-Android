@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.activitylog.list
+package org.sitebay.android.ui.activitylog.list
 
 import androidx.annotation.DrawableRes
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Icon.MORE
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.ViewType.EVENT
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.ViewType.FOOTER
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.ViewType.HEADER
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.ViewType.LOADING
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.ViewType.NOTICE
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.ViewType.PROGRESS
-import org.wordpress.android.util.toFormattedDateString
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Icon.MORE
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.ViewType.EVENT
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.ViewType.FOOTER
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.ViewType.HEADER
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.ViewType.LOADING
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.ViewType.NOTICE
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.ViewType.PROGRESS
+import org.sitebay.android.util.toFormattedDateString
 import java.util.Date
 
 sealed class ActivityLogListItem(val type: ViewType) {

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,40 +16,40 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.MediaActionBuilder;
-import org.wordpress.android.fluxc.generated.PostActionBuilder;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.post.PostStatus;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.fluxc.store.MediaStore.UploadMediaPayload;
-import org.wordpress.android.fluxc.store.PostStore;
-import org.wordpress.android.fluxc.store.PostStore.OnPostUploaded;
-import org.wordpress.android.fluxc.store.PostStore.RemotePostPayload;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.ui.posts.PostUtils;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.uploads.AutoSavePostIfNotDraftResult.FetchPostStatusFailed;
-import org.wordpress.android.ui.uploads.AutoSavePostIfNotDraftResult.PostAutoSaveFailed;
-import org.wordpress.android.ui.uploads.AutoSavePostIfNotDraftResult.PostAutoSaved;
-import org.wordpress.android.ui.uploads.AutoSavePostIfNotDraftResult.PostIsDraftInRemote;
-import org.wordpress.android.ui.uploads.PostEvents.PostUploadStarted;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.FluxCUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.SqlUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.MediaActionBuilder;
+import org.sitebay.android.fluxc.generated.PostActionBuilder;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.post.PostStatus;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.fluxc.store.MediaStore.UploadMediaPayload;
+import org.sitebay.android.fluxc.store.PostStore;
+import org.sitebay.android.fluxc.store.PostStore.OnPostUploaded;
+import org.sitebay.android.fluxc.store.PostStore.RemotePostPayload;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.ui.posts.PostUtils;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.uploads.AutoSavePostIfNotDraftResult.FetchPostStatusFailed;
+import org.sitebay.android.ui.uploads.AutoSavePostIfNotDraftResult.PostAutoSaveFailed;
+import org.sitebay.android.ui.uploads.AutoSavePostIfNotDraftResult.PostAutoSaved;
+import org.sitebay.android.ui.uploads.AutoSavePostIfNotDraftResult.PostIsDraftInRemote;
+import org.sitebay.android.ui.uploads.PostEvents.PostUploadStarted;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.FluxCUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.SqlUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.helpers.MediaFile;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -255,7 +255,7 @@ public class PostUploadHandler implements UploadHandler<PostModel>, OnAutoSavePo
             // Get rid of ZERO WIDTH SPACE character that the Visual editor can insert
             // at the beginning of the content.
             // http://www.fileformat.info/info/unicode/char/200b/index.htm
-            // See: https://github.com/wordpress-mobile/WordPress-Android/issues/5009
+            // See: https://github.com/sitebay-mobile/WordPress-Android/issues/5009
             if (content.length() > 0 && content.charAt(0) == '\u200B') {
                 content = content.substring(1, content.length());
             }
@@ -318,7 +318,7 @@ public class PostUploadHandler implements UploadHandler<PostModel>, OnAutoSavePo
             // Other methods (like 'uploadNextPost') synchronize over `sQueuedPostsList` before setting
             // `sCurrentUploadingPostAnalyticsProperties` to null. Make sure racing conditions are avoid here
             // by synchronizing over sQueuedPostsList.
-            // See https://github.com/wordpress-mobile/WordPress-Android/issues/7990
+            // See https://github.com/sitebay-mobile/WordPress-Android/issues/7990
             synchronized (sQueuedPostsList) {
                 // Calculate the words count
                 sCurrentUploadingPostAnalyticsProperties = new HashMap<>();

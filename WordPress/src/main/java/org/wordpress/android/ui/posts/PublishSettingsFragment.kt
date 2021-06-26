@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
@@ -20,16 +20,16 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.parcelize.Parcelize
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel
-import org.wordpress.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
-import org.wordpress.android.util.AccessibilityUtils
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.ToastUtils.Duration.SHORT
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel
+import org.sitebay.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
+import org.sitebay.android.util.AccessibilityUtils
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.ToastUtils.Duration.SHORT
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 abstract class PublishSettingsFragment : Fragment() {

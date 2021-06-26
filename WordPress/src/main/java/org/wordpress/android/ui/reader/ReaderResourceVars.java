@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -6,10 +6,10 @@ import android.graphics.Color;
 
 import androidx.core.content.res.ResourcesCompat;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.HtmlUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.HtmlUtils;
 
 /*
  * class which holds all resource-based variables used when rendering post detail

@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.mediapicker.insert
+package org.sitebay.android.ui.mediapicker.insert
 
 import kotlinx.coroutines.flow.flow
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.LocalUri
-import org.wordpress.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.WPMediaUtilsWrapper
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.LocalUri
+import org.sitebay.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.WPMediaUtilsWrapper
 import javax.inject.Inject
 
 class DeviceListInsertUseCase(

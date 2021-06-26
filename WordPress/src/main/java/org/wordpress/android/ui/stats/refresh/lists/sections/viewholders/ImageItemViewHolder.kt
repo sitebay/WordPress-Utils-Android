@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ImageView.ScaleType.CENTER
 import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ImageItem
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ImageItem
+import org.sitebay.android.util.image.ImageManager
 
 class ImageItemViewHolder(parent: ViewGroup, val imageManager: ImageManager) : BlockListItemViewHolder(
         parent,

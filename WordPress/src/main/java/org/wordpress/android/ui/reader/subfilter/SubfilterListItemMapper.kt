@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.reader.subfilter
+package org.sitebay.android.ui.reader.subfilter
 
 import com.google.gson.Gson
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.models.ReaderTagType
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE_ALL
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Site
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.SiteAll
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Tag
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.models.ReaderTagType
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE_ALL
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Site
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.SiteAll
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Tag
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
 import javax.inject.Inject
 
 private data class MappedSubfilterListItem(

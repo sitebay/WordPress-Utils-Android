@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import androidx.annotation.ColorRes
 import androidx.annotation.IdRes
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.pages.PageItem.Type.DIVIDER
-import org.wordpress.android.ui.pages.PageItem.Type.EMPTY
-import org.wordpress.android.ui.pages.PageItem.Type.PAGE
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState
+import org.sitebay.android.R
+import org.sitebay.android.ui.pages.PageItem.Type.DIVIDER
+import org.sitebay.android.ui.pages.PageItem.Type.EMPTY
+import org.sitebay.android.ui.pages.PageItem.Type.PAGE
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState
 import java.util.Date
 
 sealed class PageItem(open val type: Type) {

@@ -1,4 +1,4 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,16 +10,16 @@ import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
-import com.wordpress.rest.JsonRestRequest;
-import com.wordpress.rest.RestClient;
-import com.wordpress.rest.RestRequest;
-import com.wordpress.rest.RestRequest.ErrorListener;
-import com.wordpress.rest.RestRequest.Listener;
+import com.sitebay.rest.JsonRestRequest;
+import com.sitebay.rest.RestClient;
+import com.sitebay.rest.RestRequest;
+import com.sitebay.rest.RestRequest.ErrorListener;
+import com.sitebay.rest.RestRequest.Listener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.LanguageUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.LanguageUtils;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -95,7 +95,7 @@ public class RestClientUtils {
     /**
      * Get notifications with the provided params.
      * <p/>
-     * https://developer.wordpress.com/docs/api/1/get/notifications/
+     * https://developer.sitebay.com/docs/api/1/get/notifications/
      */
     public void getNotifications(Map<String, String> params, Listener listener, ErrorListener errorListener) {
         get("notifications", params, null, listener, errorListener);
@@ -115,7 +115,7 @@ public class RestClientUtils {
     /**
      * Get the notification identified by ID with default params.
      * <p/>
-     * https://developer.wordpress.com/docs/api/1/get/notifications/%s
+     * https://developer.sitebay.com/docs/api/1/get/notifications/%s
      */
     public void getNotification(String noteId, Listener listener, ErrorListener errorListener) {
         HashMap<String, String> params = new HashMap<>();
@@ -127,7 +127,7 @@ public class RestClientUtils {
     /**
      * Update the seen timestamp.
      * <p/>
-     * https://developer.wordpress.com/docs/api/1/post/notifications/seen
+     * https://developer.sitebay.com/docs/api/1/post/notifications/seen
      */
     public void markNotificationsSeen(String timestamp, Listener listener, ErrorListener errorListener) {
         Map<String, String> params = new HashMap<>();
@@ -140,7 +140,7 @@ public class RestClientUtils {
      * Decrement the unread count for a notification. Key=note_ID, Value=decrement amount.
      *
      * <p/>
-     * https://developer.wordpress.com/docs/api/1/post/notifications/read/
+     * https://developer.sitebay.com/docs/api/1/post/notifications/read/
      */
     public void decrementUnreadCount(String noteId, String decrementAmount,
                                      Listener listener, ErrorListener errorListener) {

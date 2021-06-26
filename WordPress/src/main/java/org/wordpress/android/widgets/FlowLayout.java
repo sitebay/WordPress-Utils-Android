@@ -3,7 +3,7 @@
  * Fixed and tweaked since
  */
 
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import androidx.core.view.ViewCompat;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 public class FlowLayout extends ViewGroup {
     private int mHorizontalSpacing;

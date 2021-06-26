@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 public interface PreferenceHint {
     boolean hasHint();

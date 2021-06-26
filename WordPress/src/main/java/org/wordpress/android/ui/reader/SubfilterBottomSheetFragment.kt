@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import android.content.Context
 import android.content.DialogInterface
@@ -16,14 +16,14 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.tabs.TabLayout
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.reader.subfilter.SubFilterViewModel
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory.SITES
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory.TAGS
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Tag
-import org.wordpress.android.ui.reader.subfilter.SubfilterPagerAdapter
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.reader.subfilter.SubFilterViewModel
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory.SITES
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory.TAGS
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Tag
+import org.sitebay.android.ui.reader.subfilter.SubfilterPagerAdapter
 import javax.inject.Inject
 
 class SubfilterBottomSheetFragment : BottomSheetDialogFragment() {

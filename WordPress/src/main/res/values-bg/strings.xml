@@ -597,9 +597,9 @@ Language: bg
     <string name="stats_insights_today">Статистики от днес</string>
     <string name="stats_insights_all_time">Всички публикации, преглеждания и посетители</string>
     <string name="stats_insights">Данни</string>
-    <string name="me_disconnect_from_wordpress_com">Излизане от WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Излизане от WordPress.com</string>
     <string name="me_btn_login_logout">Вход/Изход</string>
-    <string name="me_connect_to_wordpress_com">Влизане в WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Влизане в WordPress.com</string>
     <string name="me_btn_support">Помощ и поддръжка</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" не беше скрит защото е текущият уебсайт</string>
     <string name="account_settings">Настройки на профила</string>
@@ -754,7 +754,7 @@ Language: bg
     <string name="file_error_create">Грешка при създаване на временния файл. Уверете се че има достатъчно свободно място на вашето устройство.</string>
     <string name="http_authorization_required">Нужна е оторизация</string>
     <string name="privacy_policy">Политика за поверителност</string>
-    <string name="wordpress_blog">Блог от вида WordPress</string>
+    <string name="sitebay_blog">Блог от вида WordPress</string>
     <string name="reader_title_applog">Дневник на приложението</string>
     <string name="notifications_empty_all">Все още няма известявания.</string>
     <string name="invalid_site_url_message">Уверете се че въведения URL адрес на сайт е валиден</string>

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 enum class Organization(val orgId: Int) {
     UNKNOWN(-1),

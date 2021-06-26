@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.sitecreation.services
+package org.sitebay.android.ui.sitecreation.services
 
 import android.app.Notification
 import android.content.Context
-import org.wordpress.android.R
-import org.wordpress.android.util.AutoForegroundNotification
+import org.sitebay.android.R
+import org.sitebay.android.util.AutoForegroundNotification
 
 object SiteCreationServiceNotification {
     private const val channelResId = R.string.notification_channel_normal_id

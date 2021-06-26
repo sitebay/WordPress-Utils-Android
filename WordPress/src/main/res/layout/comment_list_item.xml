@@ -57,7 +57,7 @@
 
         </FrameLayout>
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/title"
             android:includeFontPadding="false"
             android:layout_width="match_parent"
@@ -70,7 +70,7 @@
             android:textAppearance="?attr/textAppearanceSubtitle1"
             tools:text="title" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/comment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

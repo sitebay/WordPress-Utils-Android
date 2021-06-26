@@ -1,50 +1,50 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases
 
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.stats.LimitMode
-import org.wordpress.android.fluxc.model.stats.time.ReferrersModel
-import org.wordpress.android.fluxc.model.stats.time.ReferrersModel.Group
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.fluxc.store.StatsStore.TimeStatsType.REFERRERS
-import org.wordpress.android.fluxc.store.stats.time.ReferrersStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewReferrers
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewUrl
-import org.wordpress.android.ui.stats.refresh.lists.BLOCK_ITEM_COUNT
-import org.wordpress.android.ui.stats.refresh.lists.VIEW_ALL_ITEM_COUNT
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.BLOCK
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.VIEW_ALL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Divider
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ExpandableItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Header
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Link
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.EMPTY_SPACE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.NORMAL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.TextStyle
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.TextStyle.LIGHT
-import org.wordpress.android.ui.utils.ListItemInteraction.Companion.create
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Title
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.GranularStatefulUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.GranularUseCaseFactory
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases.ReferrersUseCase.SelectedGroup
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.ReferrerPopupMenuHandler
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.ui.stats.refresh.utils.trackGranular
-import org.wordpress.android.util.UrlUtils
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.widgets.WPSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.stats.LimitMode
+import org.sitebay.android.fluxc.model.stats.time.ReferrersModel
+import org.sitebay.android.fluxc.model.stats.time.ReferrersModel.Group
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.fluxc.store.StatsStore.TimeStatsType.REFERRERS
+import org.sitebay.android.fluxc.store.stats.time.ReferrersStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewReferrers
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewUrl
+import org.sitebay.android.ui.stats.refresh.lists.BLOCK_ITEM_COUNT
+import org.sitebay.android.ui.stats.refresh.lists.VIEW_ALL_ITEM_COUNT
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.BLOCK
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.VIEW_ALL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Divider
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ExpandableItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Header
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Link
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.EMPTY_SPACE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.NORMAL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.TextStyle
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.TextStyle.LIGHT
+import org.sitebay.android.ui.utils.ListItemInteraction.Companion.create
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Title
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.GranularStatefulUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.GranularUseCaseFactory
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases.ReferrersUseCase.SelectedGroup
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.ReferrerPopupMenuHandler
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.ui.stats.refresh.utils.trackGranular
+import org.sitebay.android.util.UrlUtils
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.widgets.WPSnackbar
 import java.util.Date
 import javax.inject.Inject
 import javax.inject.Named
@@ -202,7 +202,7 @@ class ReferrersUseCase(
         return when {
             spam -> R.drawable.ic_spam_white_24dp
             iconUrl == null -> R.drawable.ic_globe_white_24dp
-            iconUrl == "https://wordpress.com/i/stats/search-engine.png" -> R.drawable.ic_search_white_24dp
+            iconUrl == "https://sitebay.com/i/stats/search-engine.png" -> R.drawable.ic_search_white_24dp
             else -> null
         }
     }

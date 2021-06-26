@@ -40,6 +40,6 @@ READER
 
 בין שנדרש לך בונה אתרים ליצירת האתר שלך ובין שיוצר בלוגים פשוט, השירות של WordPress יעזור לך. בשירות אפשר להשתמש בעיצובים יפים, בתכונות עוצמתיות ובמערכת גמישה כדי לבנות כל מה שרוצים.
 
-אפליקציית WordPress למערכת Android תומכת באתרים באירוח עצמי שבהם מופעלת מערכת WordPress 4.0 ואילך ובכל האתרים ב-WordPress.com. כמו אתר WordPress, גם האפליקציה של WordPress למערכת Android היא מקור פתוח. למידע נוסף ניתן לבקר בכתובת https://wp.me/P7jrAc-tJ.  נדרשת לך עזרה בנוגע לאפליקציה? אפשר לשלוח לנו ציוץ בטוויטר למשתמש ‎@WPAndroid או לבקר בפורומים שלנו בכתובת https://android.forums.wordpress.org/forum/troubleshooting.
+אפליקציית WordPress למערכת Android תומכת באתרים באירוח עצמי שבהם מופעלת מערכת WordPress 4.0 ואילך ובכל האתרים ב-WordPress.com. כמו אתר WordPress, גם האפליקציה של WordPress למערכת Android היא מקור פתוח. למידע נוסף ניתן לבקר בכתובת https://wp.me/P7jrAc-tJ.  נדרשת לך עזרה בנוגע לאפליקציה? אפשר לשלוח לנו ציוץ בטוויטר למשתמש ‎@WPAndroid או לבקר בפורומים שלנו בכתובת https://android.forums.sitebay.org/forum/troubleshooting.
 
 הודעת פרטיות למשתמשים מקליפורניה: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa.

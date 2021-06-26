@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks
+package org.sitebay.android.ui.deeplinks
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
@@ -8,13 +8,13 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenReader
-import org.wordpress.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource
-import org.wordpress.android.ui.deeplinks.handlers.DeepLinkHandlers
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenReader
+import org.sitebay.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource
+import org.sitebay.android.ui.deeplinks.handlers.DeepLinkHandlers
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class DeepLinkTrackingUtilsTest {
@@ -31,9 +31,9 @@ class DeepLinkTrackingUtilsTest {
 
     @Test
     fun `builds tracking data without stripped URL for OpenBrowser event`() {
-        val host = "wordpress.com"
+        val host = "sitebay.com"
         val uri = buildUri(host)
-        val expectedUrl = "wordpress.com/example.com/1234"
+        val expectedUrl = "sitebay.com/example.com/1234"
         whenever(uri.toString()).thenReturn(expectedUrl)
 
         deepLinkTrackingUtils.track(action, OpenInBrowser(uri), uri)
@@ -45,7 +45,7 @@ class DeepLinkTrackingUtilsTest {
     fun `builds tracking data from an applink URL`() {
         val host = "reader"
         val uri = buildUri(host)
-        val expectedUrl = "wordpress://reader"
+        val expectedUrl = "sitebay://reader"
         whenever(deepLinkHandlers.stripUrl(uri)).thenReturn(expectedUrl)
 
         deepLinkTrackingUtils.track(action, OpenReader, uri)
@@ -62,7 +62,7 @@ class DeepLinkTrackingUtilsTest {
         val loginReason = "loginReason"
         whenever(uri.getQueryParameter("login_reason")).thenReturn(loginReason)
         whenever(deepLinkUriUtils.getRedirectUri(uri)).thenReturn(redirectUri)
-        val strippedUrl = "wordpress.com/read"
+        val strippedUrl = "sitebay.com/read"
         whenever(deepLinkHandlers.stripUrl(redirectUri)).thenReturn(strippedUrl)
 
         deepLinkTrackingUtils.track(action, OpenReader, uri)
@@ -80,7 +80,7 @@ class DeepLinkTrackingUtilsTest {
         whenever(deepLinkUriUtils.getRedirectUri(uri)).thenReturn(firstRedirect)
         whenever(deepLinkUriUtils.getRedirectUri(firstRedirect)).thenReturn(secondRedirect)
         whenever(deepLinkUriUtils.isWpLoginUrl(firstRedirect)).thenReturn(true)
-        val strippedUrl = "wordpress.com/read"
+        val strippedUrl = "sitebay.com/read"
         whenever(deepLinkHandlers.stripUrl(secondRedirect)).thenReturn(strippedUrl)
 
         deepLinkTrackingUtils.track(action, OpenReader, uri)

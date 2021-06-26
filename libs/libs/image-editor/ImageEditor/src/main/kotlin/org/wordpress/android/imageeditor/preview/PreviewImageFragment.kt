@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.preview
+package org.sitebay.android.imageeditor.preview
 
 import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK
@@ -26,20 +26,20 @@ import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.tabs.TabLayoutMediator
 import com.yalantis.ucrop.UCrop
 import kotlinx.parcelize.Parcelize
-import org.wordpress.android.imageeditor.EditImageViewModel
-import org.wordpress.android.imageeditor.ImageEditor
-import org.wordpress.android.imageeditor.ImageEditor.RequestListener
-import org.wordpress.android.imageeditor.R
-import org.wordpress.android.imageeditor.databinding.PreviewImageFragmentBinding
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageData
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileFailedState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileIdleState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileSuccessState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageStartLoadingToFileState
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.UiState
-import org.wordpress.android.imageeditor.utils.ToastUtils
-import org.wordpress.android.imageeditor.utils.ToastUtils.Duration
-import org.wordpress.android.imageeditor.utils.UiHelpers
+import org.sitebay.android.imageeditor.EditImageViewModel
+import org.sitebay.android.imageeditor.ImageEditor
+import org.sitebay.android.imageeditor.ImageEditor.RequestListener
+import org.sitebay.android.imageeditor.R
+import org.sitebay.android.imageeditor.databinding.PreviewImageFragmentBinding
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageData
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileFailedState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileIdleState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageLoadToFileSuccessState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageLoadToFileState.ImageStartLoadingToFileState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.UiState
+import org.sitebay.android.imageeditor.utils.ToastUtils
+import org.sitebay.android.imageeditor.utils.ToastUtils.Duration
+import org.sitebay.android.imageeditor.utils.UiHelpers
 import java.io.File
 
 class PreviewImageFragment : Fragment(R.layout.preview_image_fragment) {

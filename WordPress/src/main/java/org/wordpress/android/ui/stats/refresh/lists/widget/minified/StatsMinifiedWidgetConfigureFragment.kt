@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.minified
+package org.sitebay.android.ui.stats.refresh.lists.widget.minified
 
 import android.app.Activity.RESULT_OK
 import android.appwidget.AppWidgetManager
@@ -8,23 +8,23 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerFragment
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_WIDGET_ADDED
-import org.wordpress.android.databinding.StatsWidgetConfigureFragmentBinding
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetColorSelectionDialogFragment
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetDataTypeSelectionDialogFragment
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetSiteSelectionDialogFragment
-import org.wordpress.android.ui.stats.refresh.utils.trackMinifiedWidget
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.mergeNotNull
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_WIDGET_ADDED
+import org.sitebay.android.databinding.StatsWidgetConfigureFragmentBinding
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetColorSelectionDialogFragment
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetDataTypeSelectionDialogFragment
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetSiteSelectionDialogFragment
+import org.sitebay.android.ui.stats.refresh.utils.trackMinifiedWidget
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.mergeNotNull
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class StatsMinifiedWidgetConfigureFragment : DaggerFragment(R.layout.stats_widget_configure_fragment) {

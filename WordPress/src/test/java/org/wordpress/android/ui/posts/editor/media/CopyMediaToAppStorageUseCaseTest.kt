@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.net.Uri
 import com.nhaarman.mockitokotlin2.any
@@ -13,11 +13,11 @@ import org.junit.runner.RunWith
 import org.mockito.AdditionalMatchers.or
 import org.mockito.ArgumentMatchers.anyMap
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.test
-import org.wordpress.android.ui.utils.AuthenticationUtils
-import org.wordpress.android.util.MediaUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.test
+import org.sitebay.android.ui.utils.AuthenticationUtils
+import org.sitebay.android.util.MediaUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 @InternalCoroutinesApi

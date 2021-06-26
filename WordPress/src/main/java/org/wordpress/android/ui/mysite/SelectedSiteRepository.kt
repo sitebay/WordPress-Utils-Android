@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.distinctUntilChanged
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.SiteActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.prefs.SiteSettingsInterfaceWrapper
-import org.wordpress.android.util.map
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.SiteActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.prefs.SiteSettingsInterfaceWrapper
+import org.sitebay.android.util.map
 import javax.inject.Inject
 import javax.inject.Singleton
 

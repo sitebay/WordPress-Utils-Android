@@ -1,8 +1,8 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.push.NotificationPushIds
+import org.sitebay.android.push.NotificationPushIds
 import java.util.concurrent.TimeUnit
 
 data class LocalNotification(

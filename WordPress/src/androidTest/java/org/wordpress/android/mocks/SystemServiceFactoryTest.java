@@ -1,13 +1,13 @@
-package org.wordpress.android.mocks;
+package org.sitebay.android.mocks;
 
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
 
 import org.mockito.stubbing.Answer;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.SystemServiceFactoryAbstract;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.SystemServiceFactoryAbstract;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyInt;

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.Activity
 import com.nhaarman.mockitokotlin2.any
@@ -15,13 +15,13 @@ import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.Mockito.lenient
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncherWrapper
-import org.wordpress.android.ui.WPWebViewUsageCategory
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewHelperFunctions
-import org.wordpress.android.ui.uploads.UploadActionUseCase
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncherWrapper
+import org.sitebay.android.ui.WPWebViewUsageCategory
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewHelperFunctions
+import org.sitebay.android.ui.uploads.UploadActionUseCase
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class RemotePreviewLogicHelperTest {

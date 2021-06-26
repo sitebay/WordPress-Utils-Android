@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.discover.viewholders
+package org.sitebay.android.ui.reader.discover.viewholders
 
 import android.view.ViewGroup
-import org.wordpress.android.databinding.ReaderCardviewWelcomeBannerBinding
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderWelcomeBannerCardUiState
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.ReaderCardviewWelcomeBannerBinding
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderWelcomeBannerCardUiState
+import org.sitebay.android.util.viewBinding
 
 class WelcomeBannerViewHolder(
     parentView: ViewGroup

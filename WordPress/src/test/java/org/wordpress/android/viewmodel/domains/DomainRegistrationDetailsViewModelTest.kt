@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.domains
+package org.sitebay.android.viewmodel.domains
 
 import androidx.lifecycle.Observer
 import com.nhaarman.mockitokotlin2.any
@@ -13,54 +13,54 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.AccountAction
-import org.wordpress.android.fluxc.action.SiteAction
-import org.wordpress.android.fluxc.action.TransactionAction
-import org.wordpress.android.fluxc.action.TransactionAction.FETCH_SUPPORTED_COUNTRIES
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.DomainContactModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.rest.wpcom.site.SupportedStateResponse
-import org.wordpress.android.fluxc.network.rest.wpcom.transactions.SupportedDomainCountry
-import org.wordpress.android.fluxc.network.rest.wpcom.transactions.TransactionsRestClient.CreateShoppingCartResponse
-import org.wordpress.android.fluxc.network.rest.wpcom.transactions.TransactionsRestClient.CreateShoppingCartResponse.Extra
-import org.wordpress.android.fluxc.network.rest.wpcom.transactions.TransactionsRestClient.CreateShoppingCartResponse.Product
-import org.wordpress.android.fluxc.store.AccountStore.DomainContactError
-import org.wordpress.android.fluxc.store.AccountStore.DomainContactErrorType
-import org.wordpress.android.fluxc.store.AccountStore.OnDomainContactFetched
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.DesignatePrimaryDomainError
-import org.wordpress.android.fluxc.store.SiteStore.DesignatePrimaryDomainErrorType
-import org.wordpress.android.fluxc.store.SiteStore.DesignatePrimaryDomainPayload
-import org.wordpress.android.fluxc.store.SiteStore.DomainSupportedStatesError
-import org.wordpress.android.fluxc.store.SiteStore.DomainSupportedStatesErrorType
-import org.wordpress.android.fluxc.store.SiteStore.OnDomainSupportedStatesFetched
-import org.wordpress.android.fluxc.store.SiteStore.OnPrimaryDomainDesignated
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged
-import org.wordpress.android.fluxc.store.SiteStore.SiteError
-import org.wordpress.android.fluxc.store.SiteStore.SiteErrorType
-import org.wordpress.android.fluxc.store.TransactionsStore
-import org.wordpress.android.fluxc.store.TransactionsStore.CreateCartErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.TransactionsStore.CreateShoppingCartError
-import org.wordpress.android.fluxc.store.TransactionsStore.CreateShoppingCartPayload
-import org.wordpress.android.fluxc.store.TransactionsStore.FetchSupportedCountriesError
-import org.wordpress.android.fluxc.store.TransactionsStore.FetchSupportedCountriesErrorType
-import org.wordpress.android.fluxc.store.TransactionsStore.OnShoppingCartCreated
-import org.wordpress.android.fluxc.store.TransactionsStore.OnShoppingCartRedeemed
-import org.wordpress.android.fluxc.store.TransactionsStore.OnSupportedCountriesFetched
-import org.wordpress.android.fluxc.store.TransactionsStore.RedeemShoppingCartError
-import org.wordpress.android.fluxc.store.TransactionsStore.RedeemShoppingCartPayload
-import org.wordpress.android.fluxc.store.TransactionsStore.TransactionErrorType.PHONE
-import org.wordpress.android.test
-import org.wordpress.android.ui.domains.DomainProductDetails
-import org.wordpress.android.ui.domains.DomainRegistrationCompletedEvent
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.domains.DomainRegistrationDetailsViewModel.DomainContactFormModel
-import org.wordpress.android.viewmodel.domains.DomainRegistrationDetailsViewModel.DomainRegistrationDetailsUiState
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.AccountAction
+import org.sitebay.android.fluxc.action.SiteAction
+import org.sitebay.android.fluxc.action.TransactionAction
+import org.sitebay.android.fluxc.action.TransactionAction.FETCH_SUPPORTED_COUNTRIES
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.DomainContactModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.rest.wpcom.site.SupportedStateResponse
+import org.sitebay.android.fluxc.network.rest.wpcom.transactions.SupportedDomainCountry
+import org.sitebay.android.fluxc.network.rest.wpcom.transactions.TransactionsRestClient.CreateShoppingCartResponse
+import org.sitebay.android.fluxc.network.rest.wpcom.transactions.TransactionsRestClient.CreateShoppingCartResponse.Extra
+import org.sitebay.android.fluxc.network.rest.wpcom.transactions.TransactionsRestClient.CreateShoppingCartResponse.Product
+import org.sitebay.android.fluxc.store.AccountStore.DomainContactError
+import org.sitebay.android.fluxc.store.AccountStore.DomainContactErrorType
+import org.sitebay.android.fluxc.store.AccountStore.OnDomainContactFetched
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.DesignatePrimaryDomainError
+import org.sitebay.android.fluxc.store.SiteStore.DesignatePrimaryDomainErrorType
+import org.sitebay.android.fluxc.store.SiteStore.DesignatePrimaryDomainPayload
+import org.sitebay.android.fluxc.store.SiteStore.DomainSupportedStatesError
+import org.sitebay.android.fluxc.store.SiteStore.DomainSupportedStatesErrorType
+import org.sitebay.android.fluxc.store.SiteStore.OnDomainSupportedStatesFetched
+import org.sitebay.android.fluxc.store.SiteStore.OnPrimaryDomainDesignated
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged
+import org.sitebay.android.fluxc.store.SiteStore.SiteError
+import org.sitebay.android.fluxc.store.SiteStore.SiteErrorType
+import org.sitebay.android.fluxc.store.TransactionsStore
+import org.sitebay.android.fluxc.store.TransactionsStore.CreateCartErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.TransactionsStore.CreateShoppingCartError
+import org.sitebay.android.fluxc.store.TransactionsStore.CreateShoppingCartPayload
+import org.sitebay.android.fluxc.store.TransactionsStore.FetchSupportedCountriesError
+import org.sitebay.android.fluxc.store.TransactionsStore.FetchSupportedCountriesErrorType
+import org.sitebay.android.fluxc.store.TransactionsStore.OnShoppingCartCreated
+import org.sitebay.android.fluxc.store.TransactionsStore.OnShoppingCartRedeemed
+import org.sitebay.android.fluxc.store.TransactionsStore.OnSupportedCountriesFetched
+import org.sitebay.android.fluxc.store.TransactionsStore.RedeemShoppingCartError
+import org.sitebay.android.fluxc.store.TransactionsStore.RedeemShoppingCartPayload
+import org.sitebay.android.fluxc.store.TransactionsStore.TransactionErrorType.PHONE
+import org.sitebay.android.test
+import org.sitebay.android.ui.domains.DomainProductDetails
+import org.sitebay.android.ui.domains.DomainRegistrationCompletedEvent
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.domains.DomainRegistrationDetailsViewModel.DomainContactFormModel
+import org.sitebay.android.viewmodel.domains.DomainRegistrationDetailsViewModel.DomainRegistrationDetailsUiState
 
 class DomainRegistrationDetailsViewModelTest : BaseUnitTest() {
     @Mock private lateinit var transactionsStore: TransactionsStore
@@ -103,7 +103,7 @@ class DomainRegistrationDetailsViewModelTest : BaseUnitTest() {
             "First City",
             "CA",
             "US",
-            "email@wordpress.org",
+            "email@sitebay.org",
             "+1.3124567890",
             null
     )
@@ -118,14 +118,14 @@ class DomainRegistrationDetailsViewModelTest : BaseUnitTest() {
             "First City",
             "CA",
             "US",
-            "email@wordpress.org",
+            "email@sitebay.org",
             "1",
             "3124567890"
     )
 
     private val domainRegistrationCompletedEvent = DomainRegistrationCompletedEvent(
             "testdomain.blog",
-            "email@wordpress.org"
+            "email@sitebay.org"
     )
 
     private val shoppingCartCreateError = CreateShoppingCartError(GENERIC_ERROR, "Error Creating Cart")

@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import android.view.ViewGroup
-import org.wordpress.android.databinding.MySiteCategoryHeaderBlockBinding
-import org.wordpress.android.ui.mysite.MySiteItem.CategoryHeader
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.MySiteCategoryHeaderBlockBinding
+import org.sitebay.android.ui.mysite.MySiteItem.CategoryHeader
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.viewBinding
 
 class MySiteCategoryViewHolder(
     parent: ViewGroup,

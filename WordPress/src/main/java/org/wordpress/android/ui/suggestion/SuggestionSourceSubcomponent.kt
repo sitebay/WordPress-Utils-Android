@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import dagger.BindsInstance
 import dagger.Module
 import dagger.Subcomponent
-import org.wordpress.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.SiteModel
 
 @Subcomponent
 interface SuggestionSourceSubcomponent {

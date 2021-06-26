@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.lifecycle.LiveData
 import kotlinx.coroutines.CoroutineScope
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState
 
 interface MySiteSource<T : PartialState> {
     fun buildSource(coroutineScope: CoroutineScope, siteId: Int): LiveData<T>

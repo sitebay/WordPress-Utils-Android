@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation
+package org.sitebay.android.ui.sitecreation
 
 import android.os.Bundle
 import android.view.Menu
@@ -8,8 +8,8 @@ import android.view.View
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import org.wordpress.android.R
-import org.wordpress.android.databinding.SiteCreationFormScreenBinding
+import org.sitebay.android.R
+import org.sitebay.android.databinding.SiteCreationFormScreenBinding
 
 abstract class SiteCreationBaseFormFragment : Fragment(R.layout.site_creation_form_screen) {
     @LayoutRes protected abstract fun getContentLayout(): Int

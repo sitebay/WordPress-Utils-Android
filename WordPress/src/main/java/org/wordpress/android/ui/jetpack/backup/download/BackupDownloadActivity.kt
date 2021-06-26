@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.jetpack.backup.download
+package org.sitebay.android.ui.jetpack.backup.download
 
 import android.R.id
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.databinding.BackupDownloadActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
+import org.sitebay.android.databinding.BackupDownloadActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
 
 class BackupDownloadActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

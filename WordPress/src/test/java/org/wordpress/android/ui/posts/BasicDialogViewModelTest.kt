@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.ui.posts.BasicDialogViewModel.DialogInteraction
-import org.wordpress.android.ui.posts.BasicDialogViewModel.DialogInteraction.Dismissed
-import org.wordpress.android.ui.posts.BasicDialogViewModel.DialogInteraction.Negative
-import org.wordpress.android.ui.posts.BasicDialogViewModel.DialogInteraction.Positive
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.ui.posts.BasicDialogViewModel.DialogInteraction
+import org.sitebay.android.ui.posts.BasicDialogViewModel.DialogInteraction.Dismissed
+import org.sitebay.android.ui.posts.BasicDialogViewModel.DialogInteraction.Negative
+import org.sitebay.android.ui.posts.BasicDialogViewModel.DialogInteraction.Positive
 
 class BasicDialogViewModelTest : BaseUnitTest() {
     private lateinit var interactions: MutableList<DialogInteraction>

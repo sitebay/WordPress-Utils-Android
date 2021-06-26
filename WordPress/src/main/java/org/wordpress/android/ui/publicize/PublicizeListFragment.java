@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -16,27 +16,27 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.ui.ScrollableViewInitializedListener;
-import org.wordpress.android.ui.mysite.QuickStartRepository;
-import org.wordpress.android.ui.publicize.adapters.PublicizeServiceAdapter;
-import org.wordpress.android.ui.publicize.adapters.PublicizeServiceAdapter.OnAdapterLoadedListener;
-import org.wordpress.android.ui.publicize.adapters.PublicizeServiceAdapter.OnServiceClickListener;
-import org.wordpress.android.ui.quickstart.QuickStartEvent;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.QuickStartUtils;
-import org.wordpress.android.util.QuickStartUtilsWrapper;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.config.MySiteImprovementsFeatureConfig;
-import org.wordpress.android.widgets.WPDialogSnackbar;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.ui.ScrollableViewInitializedListener;
+import org.sitebay.android.ui.mysite.QuickStartRepository;
+import org.sitebay.android.ui.publicize.adapters.PublicizeServiceAdapter;
+import org.sitebay.android.ui.publicize.adapters.PublicizeServiceAdapter.OnAdapterLoadedListener;
+import org.sitebay.android.ui.publicize.adapters.PublicizeServiceAdapter.OnServiceClickListener;
+import org.sitebay.android.ui.quickstart.QuickStartEvent;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.QuickStartUtils;
+import org.sitebay.android.util.QuickStartUtilsWrapper;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.config.MySiteImprovementsFeatureConfig;
+import org.sitebay.android.widgets.WPDialogSnackbar;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.ENABLE_POST_SHARING;
+import static org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.ENABLE_POST_SHARING;
 
 public class PublicizeListFragment extends PublicizeBaseFragment {
     public interface PublicizeButtonPrefsListener {

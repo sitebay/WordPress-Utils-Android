@@ -1,11 +1,11 @@
-package org.wordpress.android.viewmodel.quickstart
+package org.sitebay.android.viewmodel.quickstart
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.fluxc.store.QuickStartStore
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.ui.quickstart.QuickStartTaskState
+import org.sitebay.android.fluxc.store.QuickStartStore
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.ui.quickstart.QuickStartTaskState
 import javax.inject.Inject
 
 class QuickStartViewModel @Inject constructor(private val quickStartStore: QuickStartStore) : ViewModel() {

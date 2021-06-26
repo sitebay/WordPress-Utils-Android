@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import android.graphics.Rect
 import android.view.View

@@ -12,12 +12,12 @@ android {
 dependencies {
     implementation 'com.android.volley:volley:1.1.1'
 
-    implementation 'org.wordpress:utils:1.18.1'
+    implementation 'org.sitebay:utils:1.18.1'
     //implementation ('com.automattic:rest:1.0.8') {
-    implementation ('com.github.sitebay:android-wordpress-com-rest:1.0.81') {
+    implementation ('com.github.sitebay:android-sitebay-com-rest:1.0.81') {
         exclude group: 'com.mcxiaoke.volley'
     }
 
-    lintChecks 'org.wordpress:lint:1.0.1'
+    lintChecks 'org.sitebay:lint:1.0.1'
 }
 

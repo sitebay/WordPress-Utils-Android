@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -7,27 +7,27 @@ import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.times
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
-import com.wordpress.stories.compose.frame.StorySaveEvents.StorySaveResult
+import com.sitebay.stories.compose.frame.StorySaveEvents.StorySaveResult
 import kotlinx.coroutines.InternalCoroutinesApi
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.push.NotificationType
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.PostEditorAnalyticsSession
-import org.wordpress.android.ui.posts.PostEditorAnalyticsSessionWrapper
-import org.wordpress.android.ui.posts.SavePostToDbUseCase
-import org.wordpress.android.ui.stories.usecase.SetUntitledStoryTitleIfTitleEmptyUseCase
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.push.NotificationType
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.PostEditorAnalyticsSession
+import org.sitebay.android.ui.posts.PostEditorAnalyticsSessionWrapper
+import org.sitebay.android.ui.posts.SavePostToDbUseCase
+import org.sitebay.android.ui.stories.usecase.SetUntitledStoryTitleIfTitleEmptyUseCase
 
 class StoryComposerViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: StoryComposerViewModel

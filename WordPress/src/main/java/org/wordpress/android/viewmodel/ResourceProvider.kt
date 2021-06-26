@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel
+package org.sitebay.android.viewmodel
 
 import android.graphics.drawable.Drawable
 import androidx.annotation.ColorRes

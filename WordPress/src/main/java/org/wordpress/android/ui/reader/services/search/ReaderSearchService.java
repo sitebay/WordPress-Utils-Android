@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.reader.services.search;
+package org.sitebay.android.ui.reader.services.search;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.StringUtils;
 
 /**
- * service which searches for reader posts on wordpress.com
+ * service which searches for reader posts on sitebay.com
  */
 
 public class ReaderSearchService extends Service implements ServiceCompletionListener {

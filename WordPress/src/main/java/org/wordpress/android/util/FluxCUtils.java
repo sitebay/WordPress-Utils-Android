@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,11 +8,11 @@ import android.webkit.MimeTypeMap;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.helpers.MediaFile;
 
 import java.io.File;
 
@@ -43,7 +43,7 @@ public class FluxCUtils {
         MediaModel mediaModel = new MediaModel();
         mediaModel.setFileName(file.getFileName());
         mediaModel.setFilePath(file.getFilePath());
-        mediaModel.setFileExtension(org.wordpress.android.fluxc.utils.MediaUtils.getExtension(file.getFilePath()));
+        mediaModel.setFileExtension(org.sitebay.android.fluxc.utils.MediaUtils.getExtension(file.getFilePath()));
         mediaModel.setMimeType(file.getMimeType());
         mediaModel.setThumbnailUrl(file.getThumbnailURL());
         mediaModel.setUrl(file.getFileURL());
@@ -76,7 +76,7 @@ public class FluxCUtils {
         mediaFile.setDescription(media.getDescription());
         mediaFile.setCaption(media.getCaption());
         mediaFile.setUploadState(media.getUploadState());
-        mediaFile.setVideo(org.wordpress.android.fluxc.utils.MediaUtils.isVideoMimeType(media.getMimeType()));
+        mediaFile.setVideo(org.sitebay.android.fluxc.utils.MediaUtils.isVideoMimeType(media.getMimeType()));
         mediaFile.setVideoPressShortCode(ShortcodeUtils.getVideoPressShortcodeFromId(media.getVideoPressGuid()));
         mediaFile.setHeight(media.getHeight());
         mediaFile.setWidth(media.getWidth());
@@ -91,7 +91,7 @@ public class FluxCUtils {
     public static MediaModel mediaModelFromLocalUri(@NonNull Context context,
                                                     @NonNull Uri uri,
                                                     @Nullable String mimeType,
-                                                    @NonNull org.wordpress.android.fluxc.store.MediaStore mediaStore,
+                                                    @NonNull org.sitebay.android.fluxc.store.MediaStore mediaStore,
                                                     int localSiteId) {
         String path = MediaUtils.getRealPathFromURI(context, uri);
 
@@ -108,8 +108,8 @@ public class FluxCUtils {
         }
 
         MediaModel media = mediaStore.instantiateMediaModel();
-        String filename = org.wordpress.android.fluxc.utils.MediaUtils.getFileName(path);
-        String fileExtension = org.wordpress.android.fluxc.utils.MediaUtils.getExtension(path);
+        String filename = org.sitebay.android.fluxc.utils.MediaUtils.getFileName(path);
+        String fileExtension = org.sitebay.android.fluxc.utils.MediaUtils.getExtension(path);
 
         if (TextUtils.isEmpty(mimeType)) {
             mimeType = UrlUtils.getUrlMimeType(uri.toString());
@@ -122,7 +122,7 @@ public class FluxCUtils {
             }
         }
 
-        // If file extension is null, upload won't work on wordpress.com
+        // If file extension is null, upload won't work on sitebay.com
         if (fileExtension == null) {
             fileExtension = MimeTypeMap.getSingleton().getExtensionFromMimeType(mimeType);
             filename += "." + fileExtension;

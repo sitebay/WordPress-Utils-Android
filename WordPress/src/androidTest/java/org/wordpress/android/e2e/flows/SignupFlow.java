@@ -1,4 +1,4 @@
-package org.wordpress.android.e2e.flows;
+package org.sitebay.android.e2e.flows;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,8 +6,8 @@ import android.net.Uri;
 import androidx.test.espresso.ViewInteraction;
 import androidx.test.rule.ActivityTestRule;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.accounts.LoginMagicLinkInterceptActivity;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.accounts.LoginMagicLinkInterceptActivity;
 
 import static androidx.test.core.app.ApplicationProvider.getApplicationContext;
 import static androidx.test.espresso.Espresso.onView;
@@ -15,9 +15,9 @@ import static androidx.test.espresso.matcher.ViewMatchers.withHint;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
-import static org.wordpress.android.support.WPSupportUtils.clickOn;
-import static org.wordpress.android.support.WPSupportUtils.populateTextField;
-import static org.wordpress.android.support.WPSupportUtils.waitForElementToBeDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.clickOn;
+import static org.sitebay.android.support.WPSupportUtils.populateTextField;
+import static org.sitebay.android.support.WPSupportUtils.waitForElementToBeDisplayed;
 
 public class SignupFlow {
     public SignupFlow chooseContinueWithWpCom() {
@@ -43,7 +43,7 @@ public class SignupFlow {
         // Intent is invoked directly rather than through a browser as WireMock is unavailable once in the background
         Intent intent = new Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("wordpress://magic-login?token=valid_token&new_user=1")
+                Uri.parse("sitebay://magic-login?token=valid_token&new_user=1")
         ).setPackage(getApplicationContext().getPackageName());
 
         magicLinkActivityTestRule.launchActivity(intent);

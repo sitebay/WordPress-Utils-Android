@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.net.Uri
 import androidx.lifecycle.Observer
@@ -15,25 +15,25 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.mockito.ArgumentMatchers.any
 import org.mockito.ArgumentMatchers.anyBoolean
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.MediaStore.CancelMediaPayload
-import org.wordpress.android.fluxc.store.MediaStore.FetchMediaListPayload
-import org.wordpress.android.test
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.posts.editor.media.EditorMedia.AddMediaToPostUiState
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.MediaUtilsWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.helpers.ToastMessageHolder
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.MediaStore.CancelMediaPayload
+import org.sitebay.android.fluxc.store.MediaStore.FetchMediaListPayload
+import org.sitebay.android.test
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.posts.editor.media.EditorMedia.AddMediaToPostUiState
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.MediaUtilsWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.helpers.ToastMessageHolder
 
 @UseExperimental(InternalCoroutinesApi::class)
 class EditorMediaTest : BaseUnitTest() {

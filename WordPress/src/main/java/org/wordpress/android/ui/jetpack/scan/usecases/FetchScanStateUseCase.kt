@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.usecases
+package org.sitebay.android.ui.jetpack.scan.usecases
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay
@@ -6,18 +6,18 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.scan.ScanStateModel
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.fluxc.store.ScanStore.FetchScanStatePayload
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.jetpack.restore.usecases.DELAY_FACTOR
-import org.wordpress.android.ui.jetpack.restore.usecases.DELAY_MILLIS
-import org.wordpress.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Failure
-import org.wordpress.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Success
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.scan.ScanStateModel
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.fluxc.store.ScanStore.FetchScanStatePayload
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.jetpack.restore.usecases.DELAY_FACTOR
+import org.sitebay.android.ui.jetpack.restore.usecases.DELAY_MILLIS
+import org.sitebay.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Failure
+import org.sitebay.android.ui.jetpack.scan.usecases.FetchScanStateUseCase.FetchScanState.Success
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 import kotlin.math.max

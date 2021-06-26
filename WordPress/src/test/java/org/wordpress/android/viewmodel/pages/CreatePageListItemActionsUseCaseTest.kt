@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
 import com.nhaarman.mockitokotlin2.mock
 import org.assertj.core.api.Assertions.assertThat
@@ -6,25 +6,25 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.SiteHomepageSettings.ShowOnFront
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.SiteModel.ORIGIN_WPCOM_REST
-import org.wordpress.android.ui.pages.PageItem.Action.CANCEL_AUTO_UPLOAD
-import org.wordpress.android.ui.pages.PageItem.Action.COPY
-import org.wordpress.android.ui.pages.PageItem.Action.DELETE_PERMANENTLY
-import org.wordpress.android.ui.pages.PageItem.Action.MOVE_TO_DRAFT
-import org.wordpress.android.ui.pages.PageItem.Action.MOVE_TO_TRASH
-import org.wordpress.android.ui.pages.PageItem.Action.PUBLISH_NOW
-import org.wordpress.android.ui.pages.PageItem.Action.SET_AS_HOMEPAGE
-import org.wordpress.android.ui.pages.PageItem.Action.SET_AS_POSTS_PAGE
-import org.wordpress.android.ui.pages.PageItem.Action.SET_PARENT
-import org.wordpress.android.ui.pages.PageItem.Action.VIEW_PAGE
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadWaitingForConnection
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
-import org.wordpress.android.viewmodel.pages.PageListViewModel.PageListType.DRAFTS
-import org.wordpress.android.viewmodel.pages.PageListViewModel.PageListType.PUBLISHED
-import org.wordpress.android.viewmodel.pages.PageListViewModel.PageListType.SCHEDULED
-import org.wordpress.android.viewmodel.pages.PageListViewModel.PageListType.TRASHED
+import org.sitebay.android.fluxc.model.SiteHomepageSettings.ShowOnFront
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.SiteModel.ORIGIN_WPCOM_REST
+import org.sitebay.android.ui.pages.PageItem.Action.CANCEL_AUTO_UPLOAD
+import org.sitebay.android.ui.pages.PageItem.Action.COPY
+import org.sitebay.android.ui.pages.PageItem.Action.DELETE_PERMANENTLY
+import org.sitebay.android.ui.pages.PageItem.Action.MOVE_TO_DRAFT
+import org.sitebay.android.ui.pages.PageItem.Action.MOVE_TO_TRASH
+import org.sitebay.android.ui.pages.PageItem.Action.PUBLISH_NOW
+import org.sitebay.android.ui.pages.PageItem.Action.SET_AS_HOMEPAGE
+import org.sitebay.android.ui.pages.PageItem.Action.SET_AS_POSTS_PAGE
+import org.sitebay.android.ui.pages.PageItem.Action.SET_PARENT
+import org.sitebay.android.ui.pages.PageItem.Action.VIEW_PAGE
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadWaitingForConnection
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
+import org.sitebay.android.viewmodel.pages.PageListViewModel.PageListType.DRAFTS
+import org.sitebay.android.viewmodel.pages.PageListViewModel.PageListType.PUBLISHED
+import org.sitebay.android.viewmodel.pages.PageListViewModel.PageListType.SCHEDULED
+import org.sitebay.android.viewmodel.pages.PageListViewModel.PageListType.TRASHED
 
 @RunWith(MockitoJUnitRunner::class)
 class CreatePageListItemActionsUseCaseTest {

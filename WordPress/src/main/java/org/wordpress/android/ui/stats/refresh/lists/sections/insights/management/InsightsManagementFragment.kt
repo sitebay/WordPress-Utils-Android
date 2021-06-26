@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.management
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.management
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,10 +11,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.android.support.DaggerFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.InsightsManagementFragmentBinding
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.InsightsManagementFragmentBinding
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
 import javax.inject.Inject
 
 class InsightsManagementFragment : DaggerFragment(R.layout.insights_management_fragment) {

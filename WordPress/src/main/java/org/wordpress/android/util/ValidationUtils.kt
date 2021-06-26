@@ -1,6 +1,6 @@
 @file:JvmName("ValidationUtils")
 
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.util.Patterns
 import java.util.regex.Pattern

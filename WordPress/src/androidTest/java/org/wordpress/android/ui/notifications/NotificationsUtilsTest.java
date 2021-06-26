@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.notifications;
+package org.sitebay.android.ui.notifications;
 
 import android.test.AndroidTestCase;
 import android.text.SpannableStringBuilder;
 
-import org.wordpress.android.ui.notifications.utils.NotificationsUtils;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtils;
 
 public class NotificationsUtilsTest extends AndroidTestCase {
     public void testSpannableHasCharacterAtIndex() {

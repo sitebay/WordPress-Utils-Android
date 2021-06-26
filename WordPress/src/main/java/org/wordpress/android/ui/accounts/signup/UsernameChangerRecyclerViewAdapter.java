@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.signup;
+package org.sitebay.android.ui.accounts.signup;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import java.util.List;
 

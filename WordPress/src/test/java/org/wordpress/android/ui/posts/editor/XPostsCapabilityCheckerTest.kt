@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,12 +8,12 @@ import org.junit.runner.RunWith
 import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.XPostsResult
-import org.wordpress.android.fluxc.store.XPostsResult.Companion
-import org.wordpress.android.fluxc.store.XPostsStore
-import org.wordpress.android.test
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.XPostsResult
+import org.sitebay.android.fluxc.store.XPostsResult.Companion
+import org.sitebay.android.fluxc.store.XPostsStore
+import org.sitebay.android.test
 
 @RunWith(MockitoJUnitRunner::class)
 class XPostsCapabilityCheckerTest : BaseUnitTest() {

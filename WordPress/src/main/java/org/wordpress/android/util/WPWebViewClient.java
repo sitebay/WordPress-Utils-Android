@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 
 import android.net.http.SslError;
@@ -7,9 +7,9 @@ import android.webkit.SslErrorHandler;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.network.MemorizingTrustManager;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.network.MemorizingTrustManager;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -20,7 +20,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.util.SelfSignedSSLUtils.sslCertificateToX509;
+import static org.sitebay.android.util.SelfSignedSSLUtils.sslCertificateToX509;
 
 /**
  * WebViewClient that is capable of handling HTTP authentication requests using the HTTP

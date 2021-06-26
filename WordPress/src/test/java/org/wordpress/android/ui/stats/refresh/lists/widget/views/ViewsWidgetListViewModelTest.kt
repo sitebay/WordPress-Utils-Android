@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.views
+package org.sitebay.android.ui.stats.refresh.lists.widget.views
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -11,23 +11,23 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.stats.LimitMode
-import org.wordpress.android.fluxc.model.stats.time.VisitsAndViewsModel
-import org.wordpress.android.fluxc.model.stats.time.VisitsAndViewsModel.PeriodData
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.DAYS
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.stats.time.VisitsAndViewsStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewMapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.stats.LimitMode
+import org.sitebay.android.fluxc.model.stats.time.VisitsAndViewsModel
+import org.sitebay.android.fluxc.model.stats.time.VisitsAndViewsModel.PeriodData
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.DAYS
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.stats.time.VisitsAndViewsStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewMapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.viewmodel.ResourceProvider
 
 @RunWith(MockitoJUnitRunner::class)
 class ViewsWidgetListViewModelTest {

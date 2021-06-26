@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.plans
+package org.sitebay.android.ui.plans
 
-import org.wordpress.android.fluxc.model.PlanModel
+import org.sitebay.android.fluxc.model.PlanModel
 
 fun getCurrentPlan(plans: List<PlanModel>?): PlanModel? = plans?.find { it.isCurrentPlan }
 

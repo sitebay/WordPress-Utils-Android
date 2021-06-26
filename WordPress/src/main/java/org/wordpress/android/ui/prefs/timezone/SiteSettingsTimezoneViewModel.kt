@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.timezone
+package org.sitebay.android.ui.prefs.timezone
 
 import android.content.Context
 import android.text.TextUtils
@@ -16,15 +16,15 @@ import com.android.volley.toolbox.Volley
 import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
-import org.wordpress.android.Constants
-import org.wordpress.android.R
-import org.wordpress.android.networking.RestClientUtils
-import org.wordpress.android.ui.prefs.timezone.TimezonesList.TimezoneHeader
-import org.wordpress.android.ui.prefs.timezone.TimezonesList.TimezoneItem
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.SETTINGS
-import org.wordpress.android.viewmodel.ResourceProvider
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.Constants
+import org.sitebay.android.R
+import org.sitebay.android.networking.RestClientUtils
+import org.sitebay.android.ui.prefs.timezone.TimezonesList.TimezoneHeader
+import org.sitebay.android.ui.prefs.timezone.TimezonesList.TimezoneItem
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.SETTINGS
+import org.sitebay.android.viewmodel.ResourceProvider
+import org.sitebay.android.viewmodel.SingleLiveEvent
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale

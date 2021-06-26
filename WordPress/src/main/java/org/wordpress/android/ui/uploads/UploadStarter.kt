@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
 import android.content.Context
 import androidx.lifecycle.Lifecycle.Event
@@ -13,24 +13,24 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.UploadActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PageStore
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.IO_THREAD
-import org.wordpress.android.testing.OpenForTesting
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.DO_NOTHING
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.skip
-import org.wordpress.android.viewmodel.helpers.ConnectionStatus
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.UploadActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PageStore
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.IO_THREAD
+import org.sitebay.android.testing.OpenForTesting
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.DO_NOTHING
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.skip
+import org.sitebay.android.viewmodel.helpers.ConnectionStatus
 import javax.inject.Inject
 import javax.inject.Named
 import javax.inject.Singleton
@@ -80,7 +80,7 @@ class UploadStarter @Inject constructor(
     /**
      * Activates the necessary observers for this class to start auto-uploading.
      *
-     * This must be called during [org.wordpress.android.WordPress]' creation like so:
+     * This must be called during [org.sitebay.android.WordPress]' creation like so:
      *
      * ```
      * mUploadStarter.activateAutoUploading(ProcessLifecycleOwner.get())

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,18 +11,18 @@ import androidx.fragment.app.Fragment;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.AccountActionBuilder;
-import org.wordpress.android.fluxc.model.AccountModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.AccountStore.OnAccountChanged;
-import org.wordpress.android.fluxc.store.AccountStore.PushAccountSettingsPayload;
-import org.wordpress.android.ui.TextInputDialogFragment;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.widgets.WPTextView;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.AccountActionBuilder;
+import org.sitebay.android.fluxc.model.AccountModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.AccountStore.OnAccountChanged;
+import org.sitebay.android.fluxc.store.AccountStore.PushAccountSettingsPayload;
+import org.sitebay.android.ui.TextInputDialogFragment;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.widgets.WPTextView;
 
 import java.util.HashMap;
 

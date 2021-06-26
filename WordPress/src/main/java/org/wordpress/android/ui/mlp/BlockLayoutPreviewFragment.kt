@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.mlp
+package org.sitebay.android.ui.mlp
 
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.ui.layoutpicker.LayoutPreviewFragment
-import org.wordpress.android.viewmodel.mlp.ModalLayoutPickerViewModel
+import org.sitebay.android.R
+import org.sitebay.android.ui.layoutpicker.LayoutPreviewFragment
+import org.sitebay.android.viewmodel.mlp.ModalLayoutPickerViewModel
 
 /**
  * Implements the Modal Layout Picker Preview UI

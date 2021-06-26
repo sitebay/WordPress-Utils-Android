@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Header
-import org.wordpress.android.util.RtlUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Header
+import org.sitebay.android.util.RtlUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class ContentDescriptionHelper

@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.plugins
+package org.sitebay.android.ui.plugins
 
-import org.wordpress.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.SiteModel
 import javax.inject.Inject
 
 class PluginUtilsWrapper

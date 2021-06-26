@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
 
 public class ReaderTypes {
     public static final ReaderPostListType DEFAULT_POST_LIST_TYPE = ReaderPostListType.TAG_FOLLOWED;

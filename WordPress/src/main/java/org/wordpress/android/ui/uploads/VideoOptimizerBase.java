@@ -1,25 +1,25 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.FileUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.FileUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import java.io.File;
 import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_VIDEO_OPTIMIZED;
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_VIDEO_OPTIMIZE_ERROR;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_VIDEO_OPTIMIZED;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_VIDEO_OPTIMIZE_ERROR;
 
 public abstract class VideoOptimizerBase implements VideoOptimizerProvider {
     protected final File mCacheDir;

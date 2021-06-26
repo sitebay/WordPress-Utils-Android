@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.DatePickerDialog
 import android.app.Dialog
@@ -7,11 +7,11 @@ import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
-import org.wordpress.android.ui.posts.prepublishing.PrepublishingPublishSettingsViewModel
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
+import org.sitebay.android.ui.posts.prepublishing.PrepublishingPublishSettingsViewModel
 import javax.inject.Inject
 
 class PostDatePickerDialogFragment : DialogFragment() {

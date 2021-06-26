@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats;
+package org.sitebay.android.ui.stats;
 
 /**
  * An enum of the different view types to appear on the stats view.

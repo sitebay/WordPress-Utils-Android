@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories.usecase
+package org.sitebay.android.ui.stories.usecase
 
 import android.net.Uri
 import androidx.lifecycle.Observer
@@ -12,20 +12,20 @@ import kotlinx.coroutines.InternalCoroutinesApi
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.mockito.ArgumentMatchers.anyBoolean
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.test
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.posts.editor.media.AddExistingMediaToPostUseCase
-import org.wordpress.android.ui.posts.editor.media.AddLocalMediaToPostUseCase
-import org.wordpress.android.ui.posts.editor.media.EditorMediaListener
-import org.wordpress.android.ui.stories.media.StoryEditorMedia
-import org.wordpress.android.ui.stories.media.StoryEditorMedia.AddMediaToStoryPostUiState
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.MediaUtilsWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.test
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.posts.editor.media.AddExistingMediaToPostUseCase
+import org.sitebay.android.ui.posts.editor.media.AddLocalMediaToPostUseCase
+import org.sitebay.android.ui.posts.editor.media.EditorMediaListener
+import org.sitebay.android.ui.stories.media.StoryEditorMedia
+import org.sitebay.android.ui.stories.media.StoryEditorMedia.AddMediaToStoryPostUiState
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.MediaUtilsWrapper
+import org.sitebay.android.viewmodel.Event
 
 @UseExperimental(InternalCoroutinesApi::class)
 class StoryEditorMediaTest : BaseUnitTest() {

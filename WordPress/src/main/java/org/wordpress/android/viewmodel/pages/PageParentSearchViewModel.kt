@@ -1,16 +1,16 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.launch
-import org.wordpress.android.R
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.pages.PageItem
-import org.wordpress.android.ui.pages.PageItem.Empty
-import org.wordpress.android.ui.pages.PageItem.ParentPage
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.R
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.pages.PageItem
+import org.sitebay.android.ui.pages.PageItem.Empty
+import org.sitebay.android.ui.pages.PageItem.ParentPage
+import org.sitebay.android.viewmodel.ScopedViewModel
 import javax.inject.Inject
 import javax.inject.Named
 

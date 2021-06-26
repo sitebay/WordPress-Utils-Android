@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.activitylog.list
+package org.sitebay.android.ui.activitylog.list
 
 import android.os.Bundle
 import androidx.recyclerview.widget.DiffUtil
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Event
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.IActionableItem
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Notice
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Progress
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Event
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.IActionableItem
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Notice
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Progress
 
 class ActivityLogDiffCallback(
     private val oldList: List<ActivityLogListItem>,

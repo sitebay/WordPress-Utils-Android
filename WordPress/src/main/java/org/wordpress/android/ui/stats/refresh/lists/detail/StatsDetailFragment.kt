@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import android.os.Bundle
 import android.view.View
@@ -7,13 +7,13 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.StatsDetailFragmentBinding
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.util.WPSwipeToRefreshHelper
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.StatsDetailFragmentBinding
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.util.WPSwipeToRefreshHelper
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper
 import javax.inject.Inject
 
 class StatsDetailFragment : DaggerFragment(R.layout.stats_detail_fragment) {

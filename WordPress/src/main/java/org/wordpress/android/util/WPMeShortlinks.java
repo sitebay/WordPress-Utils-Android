@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 /**
  * Enable WP.me-powered shortlinks for Posts, Pages, and Blogs on WordPress.com or Jetpack powered sites.
@@ -11,10 +11,10 @@ package org.wordpress.android.util;
 
 import android.text.TextUtils;
 
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.post.PostStatus;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.post.PostStatus;
+import org.sitebay.android.util.AppLog.T;
 
 public class WPMeShortlinks {
     /**

@@ -2,7 +2,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context="org.wordpress.android.editor.example.MainExampleActivity">
+                tools:context="org.sitebay.android.editor.example.MainExampleActivity">
 
     <Button
         android:layout_width="wrap_content"

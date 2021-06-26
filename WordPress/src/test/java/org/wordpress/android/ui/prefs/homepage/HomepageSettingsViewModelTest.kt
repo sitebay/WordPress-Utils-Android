@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.homepage
+package org.sitebay.android.ui.prefs.homepage
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -12,26 +12,26 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.SiteHomepageSettings
-import org.wordpress.android.fluxc.model.SiteHomepageSettings.ShowOnFront
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.page.PageModel
-import org.wordpress.android.fluxc.model.page.PageStatus.PUBLISHED
-import org.wordpress.android.fluxc.store.SiteOptionsStore
-import org.wordpress.android.fluxc.store.SiteOptionsStore.HomepageUpdatedPayload
-import org.wordpress.android.fluxc.store.SiteOptionsStore.SiteOptionsError
-import org.wordpress.android.fluxc.store.SiteOptionsStore.SiteOptionsErrorType.API_ERROR
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Data
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Loading
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsSelectorUiState.PageUiModel
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.SiteHomepageSettings
+import org.sitebay.android.fluxc.model.SiteHomepageSettings.ShowOnFront
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.page.PageModel
+import org.sitebay.android.fluxc.model.page.PageStatus.PUBLISHED
+import org.sitebay.android.fluxc.store.SiteOptionsStore
+import org.sitebay.android.fluxc.store.SiteOptionsStore.HomepageUpdatedPayload
+import org.sitebay.android.fluxc.store.SiteOptionsStore.SiteOptionsError
+import org.sitebay.android.fluxc.store.SiteOptionsStore.SiteOptionsErrorType.API_ERROR
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Data
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Loading
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsSelectorUiState.PageUiModel
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 import java.util.Date
 
 class HomepageSettingsViewModelTest : BaseUnitTest() {

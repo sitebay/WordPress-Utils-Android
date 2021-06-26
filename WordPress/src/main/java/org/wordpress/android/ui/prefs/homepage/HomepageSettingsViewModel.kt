@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.homepage
+package org.sitebay.android.ui.prefs.homepage
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,19 +9,19 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.SiteHomepageSettings
-import org.wordpress.android.fluxc.model.SiteHomepageSettings.ShowOnFront
-import org.wordpress.android.fluxc.model.page.PageModel
-import org.wordpress.android.fluxc.store.SiteOptionsStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Data
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.SiteHomepageSettings
+import org.sitebay.android.fluxc.model.SiteHomepageSettings.ShowOnFront
+import org.sitebay.android.fluxc.model.page.PageModel
+import org.sitebay.android.fluxc.store.SiteOptionsStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Data
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ScopedViewModel
 import javax.inject.Inject
 import javax.inject.Named
 

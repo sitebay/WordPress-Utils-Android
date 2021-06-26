@@ -1,11 +1,11 @@
-package org.wordpress.android.support;
+package org.sitebay.android.support;
 
 import android.view.View;
 import android.widget.ImageView;
 
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.util.image.ImageType;
 
 public class PlaceholderImageMatcher extends TypeSafeMatcher<View> {
     private ImageType mImageType;

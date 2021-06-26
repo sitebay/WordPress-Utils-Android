@@ -1,6 +1,6 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
-import org.wordpress.android.BuildConfig
+import org.sitebay.android.BuildConfig
 import javax.inject.Inject
 
 class BuildConfigWrapper @Inject constructor() {

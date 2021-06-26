@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -24,7 +24,7 @@ import androidx.core.view.ViewCompat;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import java.util.Locale;
 

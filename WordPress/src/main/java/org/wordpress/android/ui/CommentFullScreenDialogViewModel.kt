@@ -1,9 +1,9 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 
 class CommentFullScreenDialogViewModel

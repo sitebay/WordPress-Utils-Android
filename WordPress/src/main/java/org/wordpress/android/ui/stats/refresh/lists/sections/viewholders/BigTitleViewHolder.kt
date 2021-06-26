@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.ViewGroup
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BigTitle
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BigTitle
 
 class BigTitleViewHolder(parent: ViewGroup) : BlockListItemViewHolder(
         parent,

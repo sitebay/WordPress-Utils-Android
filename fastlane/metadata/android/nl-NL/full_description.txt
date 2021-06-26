@@ -40,6 +40,6 @@ WordPress is een open source sitemaker, wat inhoudt dat iedereen kan zien hoe he
 
 Of je nu een sitebouwer nodig hebt om je site te maken of een eenvoudige blogmaker, WordPress is het antwoord! Je krijgt mooie designs, krachtige functies en de vrijheid om alles te bouwen wat je maar wilt.
 
-WordPress voor Android ondersteunt zelfgehoste sites met WordPress 4.0 en hoger en alle sites op WordPress.com. Net als WordPress is WordPress voor Android open source. Lees meer op  https://wp.me/P7jrAc-tJ. Heb je hulp nodig met de app? Stuur een tweet naar @WPAndroid, of bezoek onze forums op https://android.forums.wordpress.org/forum/troubleshooting.
+WordPress voor Android ondersteunt zelfgehoste sites met WordPress 4.0 en hoger en alle sites op WordPress.com. Net als WordPress is WordPress voor Android open source. Lees meer op  https://wp.me/P7jrAc-tJ. Heb je hulp nodig met de app? Stuur een tweet naar @WPAndroid, of bezoek onze forums op https://android.forums.sitebay.org/forum/troubleshooting.
 
 California users privacy notice: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa.

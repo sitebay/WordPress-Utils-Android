@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.whatsnew
+package org.sitebay.android.viewmodel.whatsnew
 
 import androidx.lifecycle.Observer
 import com.nhaarman.mockitokotlin2.any
@@ -11,18 +11,18 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.test
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncement
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncementItem
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncementProvider
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncementViewModel
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncementViewModel.FeatureAnnouncementUiModel
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.test
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncement
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncementItem
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncementProvider
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncementViewModel
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncementViewModel.FeatureAnnouncementUiModel
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 class FeatureAnnouncementViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: FeatureAnnouncementViewModel
@@ -41,19 +41,19 @@ class FeatureAnnouncementViewModelTest : BaseUnitTest() {
                     "Test Feature 1",
                     "Test Description 1",
                     "",
-                    "https://wordpress.org/icon1.png"
+                    "https://sitebay.org/icon1.png"
             ),
             FeatureAnnouncementItem(
                     "Test Feature 2",
                     "Test Description 1",
                     "",
-                    "https://wordpress.org/icon2.png"
+                    "https://sitebay.org/icon2.png"
             ),
             FeatureAnnouncementItem(
                     "Test Feature 3",
                     "Test Description 3",
                     "",
-                    "https://wordpress.org/icon3.png"
+                    "https://sitebay.org/icon3.png"
             )
     )
 
@@ -63,7 +63,7 @@ class FeatureAnnouncementViewModelTest : BaseUnitTest() {
             "14.5",
             "14.7",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             testFeatures
     )
@@ -114,7 +114,7 @@ class FeatureAnnouncementViewModelTest : BaseUnitTest() {
     fun `pressing Find Out More triggers request for announcement details with specific URL`() {
         viewModel.start()
         viewModel.onFindMoreButtonPressed()
-        verify(onAnnouncementDetailsRequestedObserver).onChanged("https://wordpress.org/")
+        verify(onAnnouncementDetailsRequestedObserver).onChanged("https://sitebay.org/")
         verify(analyticsTrackerWrapper).track(Stat.FEATURE_ANNOUNCEMENT_FIND_OUT_MORE_TAPPED)
     }
 

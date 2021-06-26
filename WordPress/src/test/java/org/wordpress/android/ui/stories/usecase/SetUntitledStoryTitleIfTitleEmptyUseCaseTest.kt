@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories.usecase
+package org.sitebay.android.ui.stories.usecase
 
 import android.content.Context
 import com.nhaarman.mockitokotlin2.any
@@ -10,10 +10,10 @@ import com.nhaarman.mockitokotlin2.whenever
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.stories.StoryRepositoryWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.stories.StoryRepositoryWrapper
 
 class SetUntitledStoryTitleIfTitleEmptyUseCaseTest : BaseUnitTest() {
     private lateinit var setUntitledStoryTitleIfTitleEmptyUseCase: SetUntitledStoryTitleIfTitleEmptyUseCase

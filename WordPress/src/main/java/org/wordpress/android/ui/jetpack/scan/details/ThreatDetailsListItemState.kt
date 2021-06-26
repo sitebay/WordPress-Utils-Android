@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.jetpack.scan.details
+package org.sitebay.android.ui.jetpack.scan.details
 
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel.ThreatContext.ContextLine
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.ViewType
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel.ThreatContext.ContextLine
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.ViewType
+import org.sitebay.android.ui.utils.UiString
 
 sealed class ThreatDetailsListItemState(override val type: ViewType) : JetpackListItemState(type) {
     data class ThreatContextLinesItemState(val lines: List<ThreatContextLineItemState>) : ThreatDetailsListItemState(

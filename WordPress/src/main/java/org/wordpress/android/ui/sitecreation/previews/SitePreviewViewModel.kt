@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.previews
+package org.sitebay.android.ui.sitecreation.previews
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -16,40 +16,40 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.store.QuickStartStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.sitecreation.SiteCreationState
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationErrorType.INTERNET_UNAVAILABLE_ERROR
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationErrorType.UNKNOWN
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteCreationCompleted
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotCreated
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotInLocalDb
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewContentUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewConnectionErrorUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewGenericErrorUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenProgressUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewLoadingShimmerState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewWebErrorUiState
-import org.wordpress.android.ui.sitecreation.services.FetchWpComSiteUseCase
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceData
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
-import org.wordpress.android.ui.sitecreation.usecases.isWordPressComSubDomain
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.UrlUtilsWrapper
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.store.QuickStartStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.sitecreation.SiteCreationState
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationErrorType.INTERNET_UNAVAILABLE_ERROR
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationErrorType.UNKNOWN
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteCreationCompleted
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotCreated
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotInLocalDb
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewContentUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewConnectionErrorUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewGenericErrorUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenProgressUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewLoadingShimmerState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewWebErrorUiState
+import org.sitebay.android.ui.sitecreation.services.FetchWpComSiteUseCase
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceData
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
+import org.sitebay.android.ui.sitecreation.usecases.isWordPressComSubDomain
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.UrlUtilsWrapper
+import org.sitebay.android.viewmodel.SingleLiveEvent
 import javax.inject.Inject
 import javax.inject.Named
 import kotlin.coroutines.CoroutineContext
@@ -162,7 +162,7 @@ class SitePreviewViewModel @Inject constructor(
         if (networkUtils.isNetworkAvailable()) {
             siteCreationState.apply {
                 // A non-null [segmentId] may invalidate the [siteDesign] selection
-                // https://github.com/wordpress-mobile/WordPress-Android/issues/13749
+                // https://github.com/sitebay-mobile/WordPress-Android/issues/13749
                 val segmentIdentifier = if (siteDesign != null) null else segmentId
                 val serviceData = SiteCreationServiceData(
                         segmentIdentifier,

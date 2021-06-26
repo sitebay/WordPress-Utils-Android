@@ -1,4 +1,4 @@
-package org.wordpress.android.push;
+package org.sitebay.android.push;
 
 import android.os.Bundle;
 
@@ -7,20 +7,20 @@ import androidx.annotation.NonNull;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.support.ZendeskHelper;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.support.ZendeskHelper;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.Map;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.push.GCMMessageHandler.PUSH_TYPE_ZENDESK;
+import static org.sitebay.android.push.GCMMessageHandler.PUSH_TYPE_ZENDESK;
 
 public class GCMMessageService extends FirebaseMessagingService {
     public static final String EXTRA_VOICE_OR_INLINE_REPLY = "extra_voice_or_inline_reply";

@@ -1,11 +1,11 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.aztec.AztecTextFormat;
-import org.wordpress.aztec.ITextFormat;
-import org.wordpress.aztec.toolbar.IToolbarAction;
-import org.wordpress.aztec.toolbar.ToolbarActionType;
+import org.sitebay.aztec.AztecTextFormat;
+import org.sitebay.aztec.ITextFormat;
+import org.sitebay.aztec.toolbar.IToolbarAction;
+import org.sitebay.aztec.toolbar.ToolbarActionType;
 
 import java.util.Collections;
 import java.util.HashSet;

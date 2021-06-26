@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/error_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_chainStyle="packed"
         tools:text="No internet connection" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/error_subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/error_subtitle" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/contact_support"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

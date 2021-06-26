@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -13,24 +13,24 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.WPWebViewActivity;
-import org.wordpress.android.ui.reader.ReaderPostPagerActivity.DirectOperation;
-import org.wordpress.android.ui.reader.ReaderTypes.ReaderPostListType;
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsActivity;
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsFragment.EntryPoint;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.WPUrlUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.WPWebViewActivity;
+import org.sitebay.android.ui.reader.ReaderPostPagerActivity.DirectOperation;
+import org.sitebay.android.ui.reader.ReaderTypes.ReaderPostListType;
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsActivity;
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsFragment.EntryPoint;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.WPUrlUtils;
 
 import java.util.EnumSet;
 
-import static org.wordpress.android.ui.reader.discover.interests.ReaderInterestsFragment.READER_INTEREST_ENTRY_POINT;
+import static org.sitebay.android.ui.reader.discover.interests.ReaderInterestsFragment.READER_INTEREST_ENTRY_POINT;
 
 public class ReaderActivityLauncher {
     /*

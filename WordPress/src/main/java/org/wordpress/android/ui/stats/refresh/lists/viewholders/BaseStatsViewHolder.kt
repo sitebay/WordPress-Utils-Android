@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.viewholders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,11 +6,11 @@ import androidx.annotation.CallSuper
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.LATEST_POST_SUMMARY
-import org.wordpress.android.fluxc.store.StatsStore.ManagementType
-import org.wordpress.android.fluxc.store.StatsStore.StatsType
-import org.wordpress.android.fluxc.store.StatsStore.TimeStatsType.OVERVIEW
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.LATEST_POST_SUMMARY
+import org.sitebay.android.fluxc.store.StatsStore.ManagementType
+import org.sitebay.android.fluxc.store.StatsStore.StatsType
+import org.sitebay.android.fluxc.store.StatsStore.TimeStatsType.OVERVIEW
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
 
 abstract class BaseStatsViewHolder(
     parent: ViewGroup,

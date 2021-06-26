@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.stats.refresh
+package org.sitebay.android.ui.stats.refresh
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.databinding.StatsViewAllActivityBinding
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.stats.StatsViewType
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.databinding.StatsViewAllActivityBinding
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.stats.StatsViewType
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate
 
 class StatsViewAllActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

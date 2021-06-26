@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.stories.intro
+package org.sitebay.android.ui.stories.intro
 
 import androidx.lifecycle.LiveData
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ScopedViewModel
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ScopedViewModel
+import org.sitebay.android.viewmodel.SingleLiveEvent
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -56,8 +56,8 @@ class StoriesIntroViewModel @Inject constructor(
     }
 
     companion object {
-        private const val STORY_URL_1 = "https://wpstories.wordpress.com/2020/12/02/story-demo-01/"
-        private const val STORY_URL_2 = "https://wpstories.wordpress.com/2020/12/02/story-demo-02/"
+        private const val STORY_URL_1 = "https://wpstories.sitebay.com/2020/12/02/story-demo-01/"
+        private const val STORY_URL_2 = "https://wpstories.sitebay.com/2020/12/02/story-demo-02/"
         private const val STORY_FULLSCREEN_URL_PARAMS = "?wp-story-load-in-fullscreen=true&wp-story-play-on-load=true"
     }
 }

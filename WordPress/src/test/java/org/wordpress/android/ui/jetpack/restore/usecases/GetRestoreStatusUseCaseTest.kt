@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.restore.usecases
+package org.sitebay.android.ui.jetpack.restore.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -11,25 +11,25 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.action.ActivityLogAction.FETCH_REWIND_STATE
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.fluxc.model.activity.RewindStatusModel
-import org.wordpress.android.fluxc.model.activity.RewindStatusModel.Rewind
-import org.wordpress.android.fluxc.model.activity.RewindStatusModel.State
-import org.wordpress.android.fluxc.store.ActivityLogStore
-import org.wordpress.android.fluxc.store.ActivityLogStore.OnRewindStatusFetched
-import org.wordpress.android.fluxc.store.ActivityLogStore.RewindStatusError
-import org.wordpress.android.fluxc.store.ActivityLogStore.RewindStatusErrorType.GENERIC_ERROR
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.restore.RestoreRequestState
-import org.wordpress.android.ui.jetpack.restore.RestoreRequestState.AwaitingCredentials
-import org.wordpress.android.ui.jetpack.restore.RestoreRequestState.Complete
-import org.wordpress.android.ui.jetpack.restore.RestoreRequestState.Failure
-import org.wordpress.android.ui.jetpack.restore.RestoreRequestState.Failure.RemoteRequestFailure
-import org.wordpress.android.ui.jetpack.restore.RestoreRequestState.Progress
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.action.ActivityLogAction.FETCH_REWIND_STATE
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.fluxc.model.activity.RewindStatusModel
+import org.sitebay.android.fluxc.model.activity.RewindStatusModel.Rewind
+import org.sitebay.android.fluxc.model.activity.RewindStatusModel.State
+import org.sitebay.android.fluxc.store.ActivityLogStore
+import org.sitebay.android.fluxc.store.ActivityLogStore.OnRewindStatusFetched
+import org.sitebay.android.fluxc.store.ActivityLogStore.RewindStatusError
+import org.sitebay.android.fluxc.store.ActivityLogStore.RewindStatusErrorType.GENERIC_ERROR
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.restore.RestoreRequestState
+import org.sitebay.android.ui.jetpack.restore.RestoreRequestState.AwaitingCredentials
+import org.sitebay.android.ui.jetpack.restore.RestoreRequestState.Complete
+import org.sitebay.android.ui.jetpack.restore.RestoreRequestState.Failure
+import org.sitebay.android.ui.jetpack.restore.RestoreRequestState.Failure.RemoteRequestFailure
+import org.sitebay.android.ui.jetpack.restore.RestoreRequestState.Progress
+import org.sitebay.android.util.NetworkUtilsWrapper
 import java.util.Date
 
 private const val REWIND_ID = "rewindId"

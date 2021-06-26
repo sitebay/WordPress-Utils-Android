@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import androidx.lifecycle.MutableLiveData
 import com.nhaarman.mockitokotlin2.doNothing
@@ -13,13 +13,13 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.XPostSiteModel
-import org.wordpress.android.fluxc.store.XPostsResult
-import org.wordpress.android.fluxc.store.XPostsStore
-import org.wordpress.android.test
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.XPostSiteModel
+import org.sitebay.android.fluxc.store.XPostsResult
+import org.sitebay.android.fluxc.store.XPostsStore
+import org.sitebay.android.test
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
 
 class XPostsSuggestionSourceTest : BaseUnitTest() {
     @Mock lateinit var mockXPostsStore: XPostsStore

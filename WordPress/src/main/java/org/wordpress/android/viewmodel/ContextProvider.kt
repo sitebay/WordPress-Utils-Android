@@ -1,7 +1,7 @@
-package org.wordpress.android.viewmodel
+package org.sitebay.android.viewmodel
 
 import android.content.Context
-import org.wordpress.android.util.LocaleManager
+import org.sitebay.android.util.LocaleManager
 import javax.inject.Inject
 import javax.inject.Singleton
 

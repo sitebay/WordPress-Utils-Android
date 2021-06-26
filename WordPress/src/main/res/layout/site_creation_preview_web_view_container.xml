@@ -39,18 +39,18 @@
                     android:maxLines="1"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?attr/wpColorOnSurfaceMedium"
-                    tools:text="example.wordpress.com" />
+                    tools:text="example.sitebay.com" />
             </FrameLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <org.wordpress.android.widgets.NestedWebView
+        <org.sitebay.android.widgets.NestedWebView
             android:id="@+id/sitePreviewWebView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbarStyle="insideInset"
             tools:visibility="gone" />
 
-        <org.wordpress.android.ui.ActionableEmptyView
+        <org.sitebay.android.ui.ActionableEmptyView
             android:id="@+id/sitePreviewWebError"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

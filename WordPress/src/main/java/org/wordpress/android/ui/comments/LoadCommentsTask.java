@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
 import android.os.AsyncTask;
 
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.CommentStore;
-import org.wordpress.android.models.CommentList;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.CommentStore;
+import org.sitebay.android.models.CommentList;
 
 import java.util.List;
 

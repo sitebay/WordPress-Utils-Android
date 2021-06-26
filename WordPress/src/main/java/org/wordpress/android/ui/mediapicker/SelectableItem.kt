@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.FileItem
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.PhotoItem
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.VideoItem
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.FileItem
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.PhotoItem
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.VideoItem
 
 data class SelectableItem(val isSelected: Boolean, val showOrderCounter: Boolean, val selectedOrder: Int?)
 

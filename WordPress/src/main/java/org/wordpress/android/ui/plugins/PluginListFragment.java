@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.plugins;
+package org.sitebay.android.ui.plugins;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -25,28 +25,28 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.plugin.ImmutablePluginModel;
-import org.wordpress.android.models.networkresource.ListState;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.util.ColorUtils;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
-import org.wordpress.android.viewmodel.plugins.PluginBrowserViewModel;
-import org.wordpress.android.viewmodel.plugins.PluginBrowserViewModel.PluginListType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.plugin.ImmutablePluginModel;
+import org.sitebay.android.models.networkresource.ListState;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.util.ColorUtils;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
+import org.sitebay.android.viewmodel.plugins.PluginBrowserViewModel;
+import org.sitebay.android.viewmodel.plugins.PluginBrowserViewModel.PluginListType;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
+import static org.sitebay.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
 
 public class PluginListFragment extends Fragment {
     public static final String TAG = PluginListFragment.class.getName();

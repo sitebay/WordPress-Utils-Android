@@ -1,4 +1,4 @@
-package org.wordpress.android.e2e;
+package org.sitebay.android.e2e;
 
 import android.Manifest.permission;
 
@@ -9,15 +9,15 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
-import org.wordpress.android.e2e.pages.BlockEditorPage;
-import org.wordpress.android.e2e.pages.MySitesPage;
-import org.wordpress.android.e2e.pages.PostPreviewPage;
-import org.wordpress.android.e2e.pages.SiteSettingsPage;
-import org.wordpress.android.support.BaseTest;
-import org.wordpress.android.ui.WPLaunchActivity;
+import org.sitebay.android.e2e.pages.BlockEditorPage;
+import org.sitebay.android.e2e.pages.MySitesPage;
+import org.sitebay.android.e2e.pages.PostPreviewPage;
+import org.sitebay.android.e2e.pages.SiteSettingsPage;
+import org.sitebay.android.support.BaseTest;
+import org.sitebay.android.ui.WPLaunchActivity;
 
 import static androidx.test.espresso.Espresso.pressBack;
-import static org.wordpress.android.support.WPSupportUtils.sleep;
+import static org.sitebay.android.support.WPSupportUtils.sleep;
 
 public class BlockEditorTests extends BaseTest {
     @Rule

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.usecases
+package org.sitebay.android.ui.sitecreation.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.any
@@ -10,10 +10,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.store.VerticalStore
-import org.wordpress.android.fluxc.store.VerticalStore.OnSegmentsFetched
-import org.wordpress.android.test
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.store.VerticalStore
+import org.sitebay.android.fluxc.store.VerticalStore.OnSegmentsFetched
+import org.sitebay.android.test
 
 @RunWith(MockitoJUnitRunner::class)
 class FetchSegmentsUseCaseTest {

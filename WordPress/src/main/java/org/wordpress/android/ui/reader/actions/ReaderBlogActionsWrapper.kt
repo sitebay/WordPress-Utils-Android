@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.actions
+package org.sitebay.android.ui.reader.actions
 
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateBlogInfoListener
-import org.wordpress.android.ui.reader.actions.ReaderBlogActions.BlockedBlogResult
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateBlogInfoListener
+import org.sitebay.android.ui.reader.actions.ReaderBlogActions.BlockedBlogResult
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
 import javax.inject.Inject
 
 class ReaderBlogActionsWrapper @Inject constructor(

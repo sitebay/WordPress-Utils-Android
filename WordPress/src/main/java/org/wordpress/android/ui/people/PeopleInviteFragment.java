@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people;
+package org.sitebay.android.ui.people;
 
 
 import android.content.Intent;
@@ -32,24 +32,24 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.android.material.textview.MaterialTextView;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.RoleModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.RoleUtils;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.people.PeopleInviteDialogFragment.DialogMode;
-import org.wordpress.android.ui.people.WPEditTextWithChipsOutlined.ItemValidationState;
-import org.wordpress.android.ui.people.WPEditTextWithChipsOutlined.ItemsManagerInterface;
-import org.wordpress.android.ui.people.utils.PeopleUtils;
-import org.wordpress.android.ui.people.utils.PeopleUtils.ValidateUsernameCallback.ValidationResult;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.viewmodel.ContextProvider;
-import org.wordpress.android.widgets.WPSnackbar;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.RoleModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.RoleUtils;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.people.PeopleInviteDialogFragment.DialogMode;
+import org.sitebay.android.ui.people.WPEditTextWithChipsOutlined.ItemValidationState;
+import org.sitebay.android.ui.people.WPEditTextWithChipsOutlined.ItemsManagerInterface;
+import org.sitebay.android.ui.people.utils.PeopleUtils;
+import org.sitebay.android.ui.people.utils.PeopleUtils.ValidateUsernameCallback.ValidationResult;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.viewmodel.ContextProvider;
+import org.sitebay.android.widgets.WPSnackbar;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -68,7 +68,7 @@ import kotlin.Unit;
 
 public class PeopleInviteFragment extends Fragment implements RoleSelectDialogFragment.OnRoleSelectListener,
         PeopleManagementActivity.InvitationSender {
-    private static final String URL_USER_ROLES_DOCUMENTATION = "https://en.support.wordpress.com/user-roles/";
+    private static final String URL_USER_ROLES_DOCUMENTATION = "https://en.support.sitebay.com/user-roles/";
     private static final String FLAG_SUCCESS = "SUCCESS";
     private static final String KEY_USERNAMES = "usernames";
     private static final String KEY_SELECTED_ROLE = "selected-role";

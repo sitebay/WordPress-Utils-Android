@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.databinding.UnifiedCommentActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
+import org.sitebay.android.databinding.UnifiedCommentActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
 
 class UnifiedCommentsActivity : LocaleAwareActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {

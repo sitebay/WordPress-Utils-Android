@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.PostActionBuilder
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PostStore.RemotePostPayload
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.ToastUtils.Duration
-import org.wordpress.android.viewmodel.helpers.ToastMessageHolder
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.PostActionBuilder
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PostStore.RemotePostPayload
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.ToastUtils.Duration
+import org.sitebay.android.viewmodel.helpers.ToastMessageHolder
 
 /**
  * This is a temporary class to make the PostListViewModel more manageable. Please feel free to refactor it any way

@@ -13,7 +13,7 @@
         android:contentDescription="@null"
         android:background="@drawable/reader_tear_repeat" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/text_gap_marker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.recyclerview.widget.DiffUtil
 import org.apache.commons.lang3.NotImplementedException
-import org.wordpress.android.ui.mysite.MySiteItem.CategoryHeader
-import org.wordpress.android.ui.mysite.MySiteItem.DomainRegistrationBlock
-import org.wordpress.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard
-import org.wordpress.android.ui.mysite.MySiteItem.ListItem
-import org.wordpress.android.ui.mysite.MySiteItem.QuickActionsBlock
-import org.wordpress.android.ui.mysite.MySiteItem.SiteInfoBlock
+import org.sitebay.android.ui.mysite.MySiteItem.CategoryHeader
+import org.sitebay.android.ui.mysite.MySiteItem.DomainRegistrationBlock
+import org.sitebay.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard
+import org.sitebay.android.ui.mysite.MySiteItem.ListItem
+import org.sitebay.android.ui.mysite.MySiteItem.QuickActionsBlock
+import org.sitebay.android.ui.mysite.MySiteItem.SiteInfoBlock
 
 class MySiteAdapterDiffCallback(
     private val oldItems: List<MySiteItem>,

@@ -1,10 +1,10 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.wordpress.android.ui.reader.utils.ReaderHtmlUtils
-import org.wordpress.android.ui.reader.utils.SrcsetImage
+import org.sitebay.android.ui.reader.utils.ReaderHtmlUtils
+import org.sitebay.android.ui.reader.utils.SrcsetImage
 
 class ReaderHtmlUtilsTest {
     @Test

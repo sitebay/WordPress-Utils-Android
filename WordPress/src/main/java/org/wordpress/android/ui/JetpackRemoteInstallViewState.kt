@@ -1,13 +1,13 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Type.ERROR
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Type.INSTALLED
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Type.INSTALLING
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Type.START
+import org.sitebay.android.R
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Type.ERROR
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Type.INSTALLED
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Type.INSTALLING
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Type.START
 
 sealed class JetpackRemoteInstallViewState(
     val type: Type,

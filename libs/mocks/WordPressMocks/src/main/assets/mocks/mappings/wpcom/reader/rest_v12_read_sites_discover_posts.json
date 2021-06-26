@@ -28,12 +28,12 @@
                     "date": "2019-05-27T09:00:17-04:00",
                     "modified": "2019-05-21T23:55:05-04:00",
                     "title": "Kelsey Montague Art",
-                    "URL": "https://discover.wordpress.com/2019/05/27/kelsey-montague-art/",
+                    "URL": "https://discover.sitebay.com/2019/05/27/kelsey-montague-art/",
                     "short_URL": "https://wp.me/p3Ca1O-9Gm",
                     "content": "<p>Explore mural artist Kelsey Montague&#8217;s work, stay up-to-date on her latest projects, and shop for prints on her Anything Is Possible-featured website.&nbsp;</p>\r\n\r\n\r\n<p></p>\r\n",
                     "excerpt": "<p>Explore mural artist Kelsey Montague&#8217;s work, stay up-to-date on her latest projects, and shop for prints on her Anything Is Possible-featured website.&nbsp;</p>\n",
                     "slug": "kelsey-montague-art",
-                    "guid": "https://discover.wordpress.com/?p=37222",
+                    "guid": "https://discover.sitebay.com/?p=37222",
                     "status": "publish",
                     "sticky": false,
                     "password": "",
@@ -53,11 +53,11 @@
                     "is_reblogged": false,
                     "is_following": true,
                     "global_ID": "b06fd6b4fd1b95644d71981f34f747f8",
-                    "featured_image": "https://discover.files.wordpress.com/2019/05/img_3760.jpg",
+                    "featured_image": "https://discover.files.sitebay.com/2019/05/img_3760.jpg",
                     "post_thumbnail": {
                         "ID": 37226,
-                        "URL": "https://discover.files.wordpress.com/2019/05/img_3760.jpg",
-                        "guid": "http://discover.files.wordpress.com/2019/05/img_3760.jpg",
+                        "URL": "https://discover.files.sitebay.com/2019/05/img_3760.jpg",
+                        "guid": "http://discover.files.sitebay.com/2019/05/img_3760.jpg",
                         "mime_type": "image/jpeg",
                         "width": 1280,
                         "height": 1706
@@ -436,8 +436,8 @@
                     "attachments": {
                         "37226": {
                             "ID": 37226,
-                            "URL": "https://discover.files.wordpress.com/2019/05/img_3760.jpg",
-                            "guid": "http://discover.files.wordpress.com/2019/05/img_3760.jpg",
+                            "URL": "https://discover.files.sitebay.com/2019/05/img_3760.jpg",
+                            "guid": "http://discover.files.sitebay.com/2019/05/img_3760.jpg",
                             "date": "2019-05-21T23:48:08-04:00",
                             "post_ID": 37222,
                             "author_ID": 47411601,
@@ -449,9 +449,9 @@
                             "description": "",
                             "alt": "Kelsey Montague mural art",
                             "thumbnails": {
-                                "thumbnail": "https://discover.files.wordpress.com/2019/05/img_3760.jpg?w=113",
-                                "medium": "https://discover.files.wordpress.com/2019/05/img_3760.jpg?w=311",
-                                "large": "https://discover.files.wordpress.com/2019/05/img_3760.jpg?w=768"
+                                "thumbnail": "https://discover.files.sitebay.com/2019/05/img_3760.jpg?w=113",
+                                "medium": "https://discover.files.sitebay.com/2019/05/img_3760.jpg?w=311",
+                                "large": "https://discover.files.sitebay.com/2019/05/img_3760.jpg?w=768"
                             },
                             "height": 1706,
                             "width": 1280,
@@ -499,7 +499,7 @@
                         {
                             "id": "130238",
                             "key": "_wpas_mess",
-                            "value": "Visit @kelsmontagueart's website - featured on @wordpressdotcom's #AnythingIsPossible list - for inspiration, prints, and updates on Kelsey's latest mural projects."
+                            "value": "Visit @kelsmontagueart's website - featured on @sitebaydotcom's #AnythingIsPossible list - for inspiration, prints, and updates on Kelsey's latest mural projects."
                         }
                     ],
                     "meta": {
@@ -515,7 +515,7 @@
                                 "ID": 53424024,
                                 "name": "Discover",
                                 "description": "A daily selection of the best content published on WordPress, collected for you by humans who love to read.",
-                                "URL": "https://discover.wordpress.com",
+                                "URL": "https://discover.sitebay.com",
                                 "jetpack": false,
                                 "post_count": 3603,
                                 "subscribers_count": 35192480,
@@ -538,7 +538,7 @@
                                         "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/help",
                                         "posts": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/posts/",
                                         "comments": "{{request.requestLine.baseUrl}}/api/sites/53424024/comments/",
-                                        "xmlrpc": "https://discover.wordpress.com/xmlrpc.php"
+                                        "xmlrpc": "https://discover.sitebay.com/xmlrpc.php"
                                     }
                                 }
                             }
@@ -557,7 +557,7 @@
                             "author_url": "https://kelseymontagueart.com/",
                             "blog_name": "Kelsey Montague Art",
                             "blog_url": "https://kelseymontagueart.com",
-                            "avatar_url": "https://discover.files.wordpress.com/2019/05/kelsey-thumbnail.png?w=100&h=100&crop=true"
+                            "avatar_url": "https://discover.files.sitebay.com/2019/05/kelsey-thumbnail.png?w=100&h=100&crop=true"
                         },
                         "discover_fp_post_formats": [
                             {
@@ -576,11 +576,11 @@
                         }
                     },
                     "feed_ID": 41325786,
-                    "feed_URL": "http://discover.wordpress.com",
+                    "feed_URL": "http://discover.sitebay.com",
                     "pseudo_ID": "b06fd6b4fd1b95644d71981f34f747f8",
                     "is_external": false,
                     "site_name": "Discover",
-                    "site_URL": "https://discover.wordpress.com",
+                    "site_URL": "https://discover.sitebay.com",
                     "site_is_private": false,
                     "featured_media": {},
                     "use_excerpt": false,
@@ -606,12 +606,12 @@
                     "date": "2019-05-26T09:00:58-04:00",
                     "modified": "2019-05-22T17:07:55-04:00",
                     "title": "The Radical Notion of Not Letting Work Define You",
-                    "URL": "https://discover.wordpress.com/2019/05/26/the-radical-notion-of-not-letting-work-define-you/",
+                    "URL": "https://discover.sitebay.com/2019/05/26/the-radical-notion-of-not-letting-work-define-you/",
                     "short_URL": "https://wp.me/p3Ca1O-9FP",
                     "content": "<p>&#8220;Just because something can’t be a career doesn’t have to mean that it can’t be part of your life and identity.&#8221; At <em>Man Repeller</em>, Molly Conway muses on imposter syndrome, work and identity, and being a playwright.</p>\n",
                     "excerpt": "<p>&#8220;Just because something can’t be a career doesn’t have to mean that it can’t be part of your life and identity.&#8221; At Man Repeller, Molly Conway muses on imposter syndrome, work and identity, and being a playwright.</p>\n",
                     "slug": "the-radical-notion-of-not-letting-work-define-you",
-                    "guid": "https://discover.wordpress.com/?p=37189",
+                    "guid": "https://discover.sitebay.com/?p=37189",
                     "status": "publish",
                     "sticky": false,
                     "password": "",
@@ -631,11 +631,11 @@
                     "is_reblogged": false,
                     "is_following": true,
                     "global_ID": "eedec98542f8cbec7df4d4c608c847ef",
-                    "featured_image": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
+                    "featured_image": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
                     "post_thumbnail": {
                         "ID": 37191,
-                        "URL": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
-                        "guid": "http://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
+                        "URL": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
+                        "guid": "http://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
                         "mime_type": "image/png",
                         "width": 1482,
                         "height": 988
@@ -755,13 +755,13 @@
                             "PoweredByWordPress": {
                                 "ID": 76162589,
                                 "name": "PoweredByWordPress",
-                                "slug": "poweredbywordpress",
+                                "slug": "poweredbysitebay",
                                 "description": "",
                                 "post_count": 42,
                                 "meta": {
                                     "links": {
-                                        "self": "{{request.requestLine.baseUrl}}/api/sites/53424024/tags/slug:poweredbywordpress",
-                                        "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/tags/slug:poweredbywordpress/help",
+                                        "self": "{{request.requestLine.baseUrl}}/api/sites/53424024/tags/slug:poweredbysitebay",
+                                        "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/tags/slug:poweredbysitebay/help",
                                         "site": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024"
                                     }
                                 }
@@ -818,17 +818,17 @@
                         "PoweredByWordPress": {
                             "ID": 76162589,
                             "name": "PoweredByWordPress",
-                            "slug": "poweredbywordpress",
+                            "slug": "poweredbysitebay",
                             "description": "",
                             "post_count": 42,
                             "meta": {
                                 "links": {
-                                    "self": "{{request.requestLine.baseUrl}}/api/sites/53424024/tags/slug:poweredbywordpress",
-                                    "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/tags/slug:poweredbywordpress/help",
+                                    "self": "{{request.requestLine.baseUrl}}/api/sites/53424024/tags/slug:poweredbysitebay",
+                                    "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/tags/slug:poweredbysitebay/help",
                                     "site": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024"
                                 }
                             },
-                            "display_name": "poweredbywordpress"
+                            "display_name": "poweredbysitebay"
                         },
                         "writers": {
                             "ID": 16761,
@@ -926,8 +926,8 @@
                     "attachments": {
                         "37191": {
                             "ID": 37191,
-                            "URL": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
-                            "guid": "http://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
+                            "URL": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
+                            "guid": "http://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
                             "date": "2019-05-20T14:50:23-04:00",
                             "post_ID": 37189,
                             "author_ID": 10183950,
@@ -939,9 +939,9 @@
                             "description": "",
                             "alt": "",
                             "thumbnails": {
-                                "thumbnail": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png?w=150",
-                                "medium": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png?w=315",
-                                "large": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png?w=1220"
+                                "thumbnail": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png?w=150",
+                                "medium": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png?w=315",
+                                "large": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png?w=1220"
                             },
                             "height": 988,
                             "width": 1482,
@@ -970,8 +970,8 @@
                         },
                         "37192": {
                             "ID": 37192,
-                            "URL": "https://discover.files.wordpress.com/2019/05/man-repeller-logo.jpg",
-                            "guid": "http://discover.files.wordpress.com/2019/05/man-repeller-logo.jpg",
+                            "URL": "https://discover.files.sitebay.com/2019/05/man-repeller-logo.jpg",
+                            "guid": "http://discover.files.sitebay.com/2019/05/man-repeller-logo.jpg",
                             "date": "2019-05-20T14:50:47-04:00",
                             "post_ID": 37189,
                             "author_ID": 10183950,
@@ -983,9 +983,9 @@
                             "description": "",
                             "alt": "",
                             "thumbnails": {
-                                "thumbnail": "https://discover.files.wordpress.com/2019/05/man-repeller-logo.jpg?w=150",
-                                "medium": "https://discover.files.wordpress.com/2019/05/man-repeller-logo.jpg?w=315",
-                                "large": "https://discover.files.wordpress.com/2019/05/man-repeller-logo.jpg?w=400"
+                                "thumbnail": "https://discover.files.sitebay.com/2019/05/man-repeller-logo.jpg?w=150",
+                                "medium": "https://discover.files.sitebay.com/2019/05/man-repeller-logo.jpg?w=315",
+                                "large": "https://discover.files.sitebay.com/2019/05/man-repeller-logo.jpg?w=400"
                             },
                             "height": 400,
                             "width": 400,
@@ -1049,7 +1049,7 @@
                                 "ID": 53424024,
                                 "name": "Discover",
                                 "description": "A daily selection of the best content published on WordPress, collected for you by humans who love to read.",
-                                "URL": "https://discover.wordpress.com",
+                                "URL": "https://discover.sitebay.com",
                                 "jetpack": false,
                                 "post_count": 3603,
                                 "subscribers_count": 35192480,
@@ -1072,7 +1072,7 @@
                                         "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/help",
                                         "posts": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/posts/",
                                         "comments": "{{request.requestLine.baseUrl}}/api/sites/53424024/comments/",
-                                        "xmlrpc": "https://discover.wordpress.com/xmlrpc.php"
+                                        "xmlrpc": "https://discover.sitebay.com/xmlrpc.php"
                                     }
                                 }
                             }
@@ -1091,7 +1091,7 @@
                             "author_url": "https://www.manrepeller.com/author/molly-conway",
                             "blog_name": "Man Repeller",
                             "blog_url": "https://www.manrepeller.com",
-                            "avatar_url": "https://discover.files.wordpress.com/2019/05/man-repeller-logo.jpg?w=100&h=100&crop=true"
+                            "avatar_url": "https://discover.files.sitebay.com/2019/05/man-repeller-logo.jpg?w=100&h=100&crop=true"
                         },
                         "discover_fp_post_formats": [
                             {
@@ -1110,14 +1110,14 @@
                         }
                     },
                     "feed_ID": 41325786,
-                    "feed_URL": "http://discover.wordpress.com",
+                    "feed_URL": "http://discover.sitebay.com",
                     "pseudo_ID": "eedec98542f8cbec7df4d4c608c847ef",
                     "is_external": false,
                     "site_name": "Discover",
-                    "site_URL": "https://discover.wordpress.com",
+                    "site_URL": "https://discover.sitebay.com",
                     "site_is_private": false,
                     "featured_media": {
-                        "uri": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
+                        "uri": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-20-at-11.50.07-am.png",
                         "width": 1482,
                         "height": 988,
                         "type": "image"
@@ -1145,12 +1145,12 @@
                     "date": "2019-05-25T09:00:36-04:00",
                     "modified": "2019-05-21T23:45:15-04:00",
                     "title": "Barista Hustle",
-                    "URL": "https://discover.wordpress.com/2019/05/25/barista-hustle/",
+                    "URL": "https://discover.sitebay.com/2019/05/25/barista-hustle/",
                     "short_URL": "https://wp.me/p3Ca1O-9G5",
                     "content": "\n<p>The team at <em>Barista Hustle</em>, a leading coffee-education hub, creates resources and shares their extensive knowledge on topics ranging from cutting-edge gear to latte art.</p>\n",
                     "excerpt": "<p>The team at Barista Hustle, a leading coffee-education hub, creates resources and shares their extensive knowledge on topics ranging from cutting-edge gear to latte art.</p>\n",
                     "slug": "barista-hustle",
-                    "guid": "https://discover.wordpress.com/?p=37205",
+                    "guid": "https://discover.sitebay.com/?p=37205",
                     "status": "publish",
                     "sticky": false,
                     "password": "",
@@ -1170,11 +1170,11 @@
                     "is_reblogged": false,
                     "is_following": true,
                     "global_ID": "5344123ea1ee2da1788f11183966d068",
-                    "featured_image": "https://discover.files.wordpress.com/2019/05/bh-home-header-element-wide-final.jpg",
+                    "featured_image": "https://discover.files.sitebay.com/2019/05/bh-home-header-element-wide-final.jpg",
                     "post_thumbnail": {
                         "ID": 37206,
-                        "URL": "https://discover.files.wordpress.com/2019/05/bh-home-header-element-wide-final.jpg",
-                        "guid": "http://discover.files.wordpress.com/2019/05/bh-home-header-element-wide-final.jpg",
+                        "URL": "https://discover.files.sitebay.com/2019/05/bh-home-header-element-wide-final.jpg",
+                        "guid": "http://discover.files.sitebay.com/2019/05/bh-home-header-element-wide-final.jpg",
                         "mime_type": "image/jpeg",
                         "width": 2800,
                         "height": 1500
@@ -1528,7 +1528,7 @@
                                 "ID": 53424024,
                                 "name": "Discover",
                                 "description": "A daily selection of the best content published on WordPress, collected for you by humans who love to read.",
-                                "URL": "https://discover.wordpress.com",
+                                "URL": "https://discover.sitebay.com",
                                 "jetpack": false,
                                 "post_count": 3603,
                                 "subscribers_count": 35192480,
@@ -1551,7 +1551,7 @@
                                         "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/help",
                                         "posts": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/posts/",
                                         "comments": "{{request.requestLine.baseUrl}}/api/sites/53424024/comments/",
-                                        "xmlrpc": "https://discover.wordpress.com/xmlrpc.php"
+                                        "xmlrpc": "https://discover.sitebay.com/xmlrpc.php"
                                     }
                                 }
                             }
@@ -1570,7 +1570,7 @@
                             "author_url": "https://baristahustle.com/",
                             "blog_name": "Barista Hustle",
                             "blog_url": "https://baristahustle.com",
-                            "avatar_url": "https://discover.files.wordpress.com/2019/05/bh-logo-new-512-1-400x400.png?w=100&h=100&crop=true"
+                            "avatar_url": "https://discover.files.sitebay.com/2019/05/bh-logo-new-512-1-400x400.png?w=100&h=100&crop=true"
                         },
                         "discover_fp_post_formats": [
                             {
@@ -1589,11 +1589,11 @@
                         }
                     },
                     "feed_ID": 41325786,
-                    "feed_URL": "http://discover.wordpress.com",
+                    "feed_URL": "http://discover.sitebay.com",
                     "pseudo_ID": "5344123ea1ee2da1788f11183966d068",
                     "is_external": false,
                     "site_name": "Discover",
-                    "site_URL": "https://discover.wordpress.com",
+                    "site_URL": "https://discover.sitebay.com",
                     "site_is_private": false,
                     "featured_media": {},
                     "use_excerpt": false,
@@ -1619,12 +1619,12 @@
                     "date": "2019-05-24T09:00:50-04:00",
                     "modified": "2019-05-22T17:07:30-04:00",
                     "title": "Lonely Planet Kids",
-                    "URL": "https://discover.wordpress.com/2019/05/24/lonely-planet-kids/",
+                    "URL": "https://discover.sitebay.com/2019/05/24/lonely-planet-kids/",
                     "short_URL": "https://wp.me/p3Ca1O-9EL",
                     "content": "<p>Lonely Planet Kids &#8212; an offshoot of the popular travel guide company &#8211;inspires children to be curious about the world. The site features books, activities, family travel posts, and more.</p>\n",
                     "excerpt": "<p>Lonely Planet Kids &#8212; an offshoot of the popular travel guide company &#8211;inspires children to be curious about the world. The site features books, activities, family travel posts, and more.</p>\n",
                     "slug": "lonely-planet-kids",
-                    "guid": "https://discover.wordpress.com/?p=37123",
+                    "guid": "https://discover.sitebay.com/?p=37123",
                     "status": "publish",
                     "sticky": false,
                     "password": "",
@@ -1644,11 +1644,11 @@
                     "is_reblogged": false,
                     "is_following": true,
                     "global_ID": "12ac818a3de41e3b0cf84fea7efa2592",
-                    "featured_image": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
+                    "featured_image": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
                     "post_thumbnail": {
                         "ID": 37125,
-                        "URL": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
-                        "guid": "http://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
+                        "URL": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
+                        "guid": "http://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
                         "mime_type": "image/png",
                         "width": 1434,
                         "height": 808
@@ -2176,8 +2176,8 @@
                     "attachments": {
                         "37125": {
                             "ID": 37125,
-                            "URL": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
-                            "guid": "http://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
+                            "URL": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
+                            "guid": "http://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
                             "date": "2019-05-10T18:53:26-04:00",
                             "post_ID": 37123,
                             "author_ID": 10183950,
@@ -2189,9 +2189,9 @@
                             "description": "",
                             "alt": "",
                             "thumbnails": {
-                                "thumbnail": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png?w=150",
-                                "medium": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png?w=315",
-                                "large": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png?w=1220"
+                                "thumbnail": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png?w=150",
+                                "medium": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png?w=315",
+                                "large": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png?w=1220"
                             },
                             "height": 808,
                             "width": 1434,
@@ -2220,8 +2220,8 @@
                         },
                         "37126": {
                             "ID": 37126,
-                            "URL": "https://discover.files.wordpress.com/2019/05/lonely-planet-kids-logo.png",
-                            "guid": "http://discover.files.wordpress.com/2019/05/lonely-planet-kids-logo.png",
+                            "URL": "https://discover.files.sitebay.com/2019/05/lonely-planet-kids-logo.png",
+                            "guid": "http://discover.files.sitebay.com/2019/05/lonely-planet-kids-logo.png",
                             "date": "2019-05-10T18:53:28-04:00",
                             "post_ID": 37123,
                             "author_ID": 10183950,
@@ -2233,9 +2233,9 @@
                             "description": "",
                             "alt": "",
                             "thumbnails": {
-                                "thumbnail": "https://discover.files.wordpress.com/2019/05/lonely-planet-kids-logo.png?w=150",
-                                "medium": "https://discover.files.wordpress.com/2019/05/lonely-planet-kids-logo.png?w=315",
-                                "large": "https://discover.files.wordpress.com/2019/05/lonely-planet-kids-logo.png?w=400"
+                                "thumbnail": "https://discover.files.sitebay.com/2019/05/lonely-planet-kids-logo.png?w=150",
+                                "medium": "https://discover.files.sitebay.com/2019/05/lonely-planet-kids-logo.png?w=315",
+                                "large": "https://discover.files.sitebay.com/2019/05/lonely-planet-kids-logo.png?w=400"
                             },
                             "height": 400,
                             "width": 400,
@@ -2299,7 +2299,7 @@
                                 "ID": 53424024,
                                 "name": "Discover",
                                 "description": "A daily selection of the best content published on WordPress, collected for you by humans who love to read.",
-                                "URL": "https://discover.wordpress.com",
+                                "URL": "https://discover.sitebay.com",
                                 "jetpack": false,
                                 "post_count": 3603,
                                 "subscribers_count": 35192480,
@@ -2322,7 +2322,7 @@
                                         "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/help",
                                         "posts": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/posts/",
                                         "comments": "{{request.requestLine.baseUrl}}/api/sites/53424024/comments/",
-                                        "xmlrpc": "https://discover.wordpress.com/xmlrpc.php"
+                                        "xmlrpc": "https://discover.sitebay.com/xmlrpc.php"
                                     }
                                 }
                             }
@@ -2341,7 +2341,7 @@
                             "author_url": "https://www.lonelyplanet.com/kids/about/",
                             "blog_name": "Lonely Planet Kids",
                             "blog_url": "https://www.lonelyplanet.com",
-                            "avatar_url": "https://discover.files.wordpress.com/2019/05/lonely-planet-kids-logo.png?w=100&h=100&crop=true"
+                            "avatar_url": "https://discover.files.sitebay.com/2019/05/lonely-planet-kids-logo.png?w=100&h=100&crop=true"
                         },
                         "discover_fp_post_formats": [
                             {
@@ -2357,14 +2357,14 @@
                         ]
                     },
                     "feed_ID": 41325786,
-                    "feed_URL": "http://discover.wordpress.com",
+                    "feed_URL": "http://discover.sitebay.com",
                     "pseudo_ID": "12ac818a3de41e3b0cf84fea7efa2592",
                     "is_external": false,
                     "site_name": "Discover",
-                    "site_URL": "https://discover.wordpress.com",
+                    "site_URL": "https://discover.sitebay.com",
                     "site_is_private": false,
                     "featured_media": {
-                        "uri": "https://discover.files.wordpress.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
+                        "uri": "https://discover.files.sitebay.com/2019/05/screen-shot-2019-05-10-at-3.53.09-pm.png",
                         "width": 1434,
                         "height": 808,
                         "type": "image"

@@ -1,4 +1,4 @@
-package org.wordpress.android.util.analytics;
+package org.sitebay.android.util.analytics;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,31 +15,31 @@ import androidx.annotation.VisibleForTesting;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.analytics.AnalyticsMetadata;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.analytics.AnalyticsTrackerNosara;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.AccountActionBuilder;
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.AccountStore.PushAccountSettingsPayload;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.ui.PagePostCreationSourcesDetail;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.ui.posts.PostListViewLayoutType;
-import org.wordpress.android.ui.posts.PostUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.FluxCUtils;
-import org.wordpress.android.util.ImageUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.VideoUtils;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.analytics.AnalyticsMetadata;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.analytics.AnalyticsTrackerNosara;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.AccountActionBuilder;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.AccountStore.PushAccountSettingsPayload;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.ui.PagePostCreationSourcesDetail;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.ui.posts.PostListViewLayoutType;
+import org.sitebay.android.ui.posts.PostUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.FluxCUtils;
+import org.sitebay.android.util.ImageUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.VideoUtils;
 
 import java.io.File;
 import java.util.HashMap;
@@ -48,8 +48,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import static org.wordpress.android.ui.PagePostCreationSourcesDetail.CREATED_POST_SOURCE_DETAIL_KEY;
-import static org.wordpress.android.ui.posts.EditPostActivity.EXTRA_IS_QUICKPRESS;
+import static org.sitebay.android.ui.PagePostCreationSourcesDetail.CREATED_POST_SOURCE_DETAIL_KEY;
+import static org.sitebay.android.ui.posts.EditPostActivity.EXTRA_IS_QUICKPRESS;
 
 public class AnalyticsUtils {
     private static final String BLOG_ID_KEY = "blog_id";

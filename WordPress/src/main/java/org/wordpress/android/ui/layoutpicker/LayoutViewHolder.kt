@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.databinding.ModalLayoutPickerLayoutsCardBinding
-import org.wordpress.android.networking.MShot
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageManager.RequestListener
-import org.wordpress.android.util.setVisible
+import org.sitebay.android.R
+import org.sitebay.android.databinding.ModalLayoutPickerLayoutsCardBinding
+import org.sitebay.android.networking.MShot
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageManager.RequestListener
+import org.sitebay.android.util.setVisible
 
 /**
  * Renders the Layout card

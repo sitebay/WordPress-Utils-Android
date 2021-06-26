@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -8,22 +8,22 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.model.JetpackCapability;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask;
-import org.wordpress.android.models.PeopleListFilter;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.ActivityId;
-import org.wordpress.android.ui.posts.AuthorFilterSelection;
-import org.wordpress.android.ui.posts.PostListViewLayoutType;
-import org.wordpress.android.ui.reader.tracker.ReaderTab;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.WPMediaUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.model.JetpackCapability;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask;
+import org.sitebay.android.models.PeopleListFilter;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.ActivityId;
+import org.sitebay.android.ui.posts.AuthorFilterSelection;
+import org.sitebay.android.ui.posts.PostListViewLayoutType;
+import org.sitebay.android.ui.reader.tracker.ReaderTab;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.WPMediaUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

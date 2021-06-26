@@ -1,4 +1,4 @@
-package org.wordpress.android.util.analytics.service;
+package org.sitebay.android.util.analytics.service;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,16 +9,16 @@ import com.android.installreferrer.api.InstallReferrerClient.InstallReferrerResp
 import com.android.installreferrer.api.InstallReferrerStateListener;
 import com.android.installreferrer.api.ReferrerDetails;
 
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.wordpress.android.util.analytics.service.InstallationReferrerServiceStarter.ARG_REFERRER;
+import static org.sitebay.android.util.analytics.service.InstallationReferrerServiceStarter.ARG_REFERRER;
 
 /**
  * Background service to retrieve installation referrer information.
@@ -105,7 +105,7 @@ public class InstallationReferrerServiceLogic {
                         AppLog.i(T.UTILS, "installation referrer: service unavailable");
                         break;
                     case InstallReferrerResponse.PERMISSION_ERROR:
-                        // Fix for this issue https://github.com/wordpress-mobile/WordPress-Android/issues/10532 was
+                        // Fix for this issue https://github.com/sitebay-mobile/WordPress-Android/issues/10532 was
                         // added to Referrer Service library, and currently instead of crashing we should get this
                         // response. For now we will ignore it and log for informational purposes.
                         AppLog.i(T.UTILS, "installation referrer: app is not allowed to bind to the Service");

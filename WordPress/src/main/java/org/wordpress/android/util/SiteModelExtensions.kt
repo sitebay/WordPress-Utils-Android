@@ -1,6 +1,6 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
-import org.wordpress.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.SiteModel
 
 val SiteModel.logInformation: String
     get() {

@@ -1,10 +1,10 @@
-package org.wordpress.android.imageeditor
+package org.sitebay.android.imageeditor
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.imageeditor.crop.CropViewModel.CropResult
-import org.wordpress.android.imageeditor.viewmodel.Event
+import org.sitebay.android.imageeditor.crop.CropViewModel.CropResult
+import org.sitebay.android.imageeditor.viewmodel.Event
 
 class EditImageViewModel : ViewModel() {
     private val _cropResult = MutableLiveData<Event<CropResult>>()

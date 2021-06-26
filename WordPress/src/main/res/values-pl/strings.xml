@@ -132,7 +132,7 @@ Language: pl
     <string name="media_picker_soft_ask_permissions_denied">%1$s nie ma dostępu do twoich zdjęć. Aby to naprawić, edytuj uprawnienia i włącz %2$s i %3$s.</string>
     <string name="media_insert_failed">Nie udało się osadzić plików mediów.</string>
     <string name="media_insert_failed_with_reason">Nie udało się osadzić plików mediów: %s</string>
-    <string name="photo_picker_wordpress_media_library">Wybierz z biblioteki mediów WordPressa</string>
+    <string name="photo_picker_sitebay_media_library">Wybierz z biblioteki mediów WordPressa</string>
     <string name="reader_label_toolbar_back">Cofnij</string>
     <string name="reader_discover_empty_button_text">Rozpocznij</string>
     <string name="reader_post_details_header_by_author_name">Autor</string>
@@ -272,7 +272,7 @@ Language: pl
     <string name="login_magic_links_label">Prześlemy tobie odnośnik, który zaloguje ciebie natychmiast, bez konieczności wpisywania hasła.</string>
     <string name="check_email">Sprawdź pocztę</string>
     <string name="get_started">Rozpocznij</string>
-    <string name="enter_email_to_continue_wordpress_com">Wprowadź adres email aby zalogować się albo utworzyć konto WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Wprowadź adres email aby zalogować się albo utworzyć konto WordPress.com.</string>
     <string name="or_type_your_password">Lub wprowadź hasło</string>
     <string name="create_account">Utwórz konto</string>
     <string name="send_link_by_email">Wyślij odnośnik przez email</string>
@@ -552,7 +552,7 @@ Language: pl
     <string name="site_cannot_be_loaded">Nie możemy w tym momencie wyczytać danych dla twojej witryny. Proszę spróbować ponownie później.</string>
     <string name="posts_cannot_be_started">Nie możemy w tym momencie otworzyć wpisów. Proszę spróbować ponownie później</string>
     <string name="reader_filter_tags_title">Tematy</string>
-    <string name="gutenberg_native_wordpress_media_library">Biblioteka mediów WordPressa</string>
+    <string name="gutenberg_native_sitebay_media_library">Biblioteka mediów WordPressa</string>
     <string name="gutenberg_native_unsupported">Niewspierane</string>
     <string name="gutenberg_native_ungroup">Rozgrupuj</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Stuknij aby ukryć klawiaturę</string>
@@ -1004,7 +1004,7 @@ Language: pl
     <string name="stats_follower_label">Obserwujący</string>
     <string name="stats_followers_count_message">Całkowita liczba obserwujących %1$s: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Zarządzaj trendami</string>
     <string name="stats_no_data_yet">Brak danych, jak dotąd</string>
     <string name="stats_empty_insights_title">Brak trendów, jak dotąd</string>
@@ -1456,7 +1456,7 @@ Language: pl
     <string name="plugin_external_link_icon_content_description">Zewnętrzny odnośnik</string>
     <string name="plugin_icon_content_description">Ikona wtyczki</string>
     <string name="plugin_home_page">Strona domowa wtyczki</string>
-    <string name="wordpress_dot_org_plugin_page">Strona wtyczki na WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Strona wtyczki na WordPress.org</string>
     <string name="plugin_remove_dialog_message">Czy na pewno chcesz usunąć %1$s z %2$s?\n\nSpowoduje to wyłączenie wtyczki i usunie wszystkie powiązane pliki i dane.</string>
     <string name="plugin_remove_dialog_title">Usuń wtyczkę</string>
     <string name="plugin_remove_progress_dialog_message">Usuwanie %s…</string>
@@ -1617,7 +1617,7 @@ Language: pl
     <string name="login_text_otp">Wyślij mi zamiast tego kod przez SMS</string>
     <string name="enter_verification_code">Już prawie! Proszę wprowadzić kod weryfikacyjny z aplikacji do Uwierzytelnienia.</string>
     <string name="next">Następny</string>
-    <string name="enter_email_wordpress_com">Zaloguj się do WordPress.com używając adresu email aby zarządzać wszystkimi swoimi witrynami WordPress.</string>
+    <string name="enter_email_sitebay_com">Zaloguj się do WordPress.com używając adresu email aby zarządzać wszystkimi swoimi witrynami WordPress.</string>
     <string name="image_optimization_promo_desc">Optymalizacja obrazów zmniejsza ich rozmiar w celu szybszego przesyłania.\n\nMożesz zmienić to ustawienie później w ustawieniach witryny.</string>
     <string name="image_optimization_promo_title">Włączyć optymalizację obrazków?</string>
     <string name="turn_on">Włącz</string>
@@ -2175,8 +2175,8 @@ Language: pl
     <string name="stats_insights_today">Dzisiejsze statystyki</string>
     <string name="stats_insights_all_time">Wszystkie wpisy, odsłony i odwiedzający</string>
     <string name="stats_insights">Trendy</string>
-    <string name="me_disconnect_from_wordpress_com">Wyloguj się z WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Zaloguj się do WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Wyloguj się z WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Zaloguj się do WordPress.com</string>
     <string name="me_btn_login_logout">Zaloguj/Wyloguj się</string>
     <string name="account_settings">Ustawienia konta</string>
     <string name="me_btn_support">Pomoc i wsparcie</string>
@@ -2310,7 +2310,7 @@ Language: pl
     <string name="privacy_policy">Polityka prywatności</string>
     <string name="local_changes">Zmiany lokalne</string>
     <string name="image_settings">Ustawienia obrazka</string>
-    <string name="wordpress_blog">WordPress blog</string>
+    <string name="sitebay_blog">WordPress blog</string>
     <string name="error_blog_hidden">Ten blog jest ukryty i nie mógł zostać wczytany. Włącz go ponownie w ustawieniach i spróbuj ponownie.</string>
     <string name="fatal_db_error">Wystąpił błąd podczas tworzenia bazy danych. Spróbuj przeinstalować aplikacje.</string>
     <string name="view_in_browser">Zobacz w przeglądarce</string>

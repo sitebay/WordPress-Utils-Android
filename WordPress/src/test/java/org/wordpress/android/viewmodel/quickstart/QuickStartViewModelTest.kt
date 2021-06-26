@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.quickstart
+package org.sitebay.android.viewmodel.quickstart
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.any
@@ -13,10 +13,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.store.QuickStartStore
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.ENABLE_POST_SHARING
-import org.wordpress.android.ui.quickstart.QuickStartTaskState
+import org.sitebay.android.fluxc.store.QuickStartStore
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.ENABLE_POST_SHARING
+import org.sitebay.android.ui.quickstart.QuickStartTaskState
 
 @RunWith(MockitoJUnitRunner::class)
 class QuickStartViewModelTest {

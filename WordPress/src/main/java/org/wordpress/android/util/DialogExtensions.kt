@@ -1,10 +1,10 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.annotation.SuppressLint
 import android.app.Dialog
 import android.os.Build
 import android.view.View
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 @SuppressLint("InlinedApi")
 fun Dialog.getPreferenceDialogContainerView(): View? {

@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -11,17 +11,17 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.list.PagedListWrapper
-import org.wordpress.android.fluxc.model.list.PostListDescriptor.PostListDescriptorForXmlRpcSite
-import org.wordpress.android.fluxc.store.ListStore
-import org.wordpress.android.ui.posts.AuthorFilterSelection
-import org.wordpress.android.ui.posts.PostListType
-import org.wordpress.android.ui.posts.PostListType.DRAFTS
-import org.wordpress.android.ui.posts.PostListType.SEARCH
-import org.wordpress.android.ui.uploads.UploadStarter
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.list.PagedListWrapper
+import org.sitebay.android.fluxc.model.list.PostListDescriptor.PostListDescriptorForXmlRpcSite
+import org.sitebay.android.fluxc.store.ListStore
+import org.sitebay.android.ui.posts.AuthorFilterSelection
+import org.sitebay.android.ui.posts.PostListType
+import org.sitebay.android.ui.posts.PostListType.DRAFTS
+import org.sitebay.android.ui.posts.PostListType.SEARCH
+import org.sitebay.android.ui.uploads.UploadStarter
 
 private const val DEFAULT_PHOTON_DIMENSIONS = -9
 private val DEFAULT_AUTHOR_FILTER = AuthorFilterSelection.EVERYONE

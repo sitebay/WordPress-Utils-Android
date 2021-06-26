@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.observeEvent
 
 object BloggingReminderUtils {
     @JvmStatic

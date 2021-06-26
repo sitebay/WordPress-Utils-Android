@@ -1,9 +1,9 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.view.View
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 abstract class ViewPagerFragment : Fragment {
     constructor() : super()

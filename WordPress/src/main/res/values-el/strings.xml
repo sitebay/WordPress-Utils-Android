@@ -111,7 +111,7 @@ Language: el_GR
     <string name="stats_follower_label">Ακόλουθος</string>
     <string name="stats_followers_count_message">Σύνολο %1$s Ακολούθων: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_comments_author_label">Συγγραφέας</string>
     <string name="stats_comments_authors">Συγγραφείς</string>
     <string name="stats_no_data_yet">Δεν υπάρχουν δεδομένα ακόμη</string>
@@ -365,7 +365,7 @@ Language: el_GR
     <string name="site_settings_traffic_header">Κίνηση</string>
     <string name="delete_yes">Διαγραφή</string>
     <string name="plugin_icon_content_description">Εικονίδιο πρόσθετου</string>
-    <string name="wordpress_dot_org_plugin_page">Σελίδα πρόσθετων WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Σελίδα πρόσθετων WordPress.org</string>
     <string name="plugin_remove_dialog_title">Αφαίρεση Πρόσθετου</string>
     <string name="plugin_remove_progress_dialog_message">Αφαίρεση %s…</string>
     <string name="plugin_disable_progress_dialog_message">Απενεργοποίηση %s…</string>
@@ -966,8 +966,8 @@ Language: el_GR
     <string name="stats_insights_today">Στατιστικά Ημέρας</string>
     <string name="stats_insights_all_time">Συνολικά άρθρα, προβολές και επισκέπτες</string>
     <string name="stats_insights">Insights</string>
-    <string name="me_disconnect_from_wordpress_com">Αποσύνδεση από το WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Συνδεθείτε στο WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Αποσύνδεση από το WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Συνδεθείτε στο WordPress.com</string>
     <string name="me_btn_login_logout">Σύνδεση/Αποσύνδεση</string>
     <string name="account_settings">Ρυθμίσεις Λογαριασμού</string>
     <string name="me_btn_support">Βοήθεια &amp; Υποστήριξη</string>
@@ -1106,7 +1106,7 @@ Language: el_GR
     <string name="page_settings">Ρυθμίσεις σελίδας</string>
     <string name="post_settings">Ρυθμίσεις άρθρου</string>
     <string name="dlg_confirm_trash_comments">Αποστολή στα σκουπίδια;</string>
-    <string name="wordpress_blog">Ιστολόγιο WordPress</string>
+    <string name="sitebay_blog">Ιστολόγιο WordPress</string>
     <string name="mnu_comment_trash">Σκουπίδια</string>
     <string name="remove_account">Αφαίρεση ιστότοπου</string>
     <string name="post_not_found">Προέκυψε σφάλμα κατά τη φόρτωση του άρθρου. Ανανεώστε τα άρθρα σας και δοκιμάστε ξανά.</string>

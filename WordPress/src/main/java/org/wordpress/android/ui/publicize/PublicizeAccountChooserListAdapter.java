@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.PublicizeConnection;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.PublicizeConnection;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.List;
 

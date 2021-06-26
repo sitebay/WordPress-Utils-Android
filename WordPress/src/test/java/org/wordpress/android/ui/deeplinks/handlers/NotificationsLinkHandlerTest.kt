@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import com.nhaarman.mockitokotlin2.mock
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenNotifications
-import org.wordpress.android.ui.deeplinks.buildUri
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenNotifications
+import org.sitebay.android.ui.deeplinks.buildUri
 
 @RunWith(MockitoJUnitRunner::class)
 class NotificationsLinkHandlerTest {
@@ -14,7 +14,7 @@ class NotificationsLinkHandlerTest {
 
     @Test
     fun `handles WPCom notifications URL`() {
-        val uri = buildUri(host = "wordpress.com", "notifications")
+        val uri = buildUri(host = "sitebay.com", "notifications")
 
         val isHandled = notificationsLinkHandler.shouldHandleUrl(uri)
 
@@ -32,7 +32,7 @@ class NotificationsLinkHandlerTest {
 
     @Test
     fun `does not handle WPCom non-notifications URL`() {
-        val uri = buildUri(host = "wordpress.com", "stats")
+        val uri = buildUri(host = "sitebay.com", "stats")
 
         val isHandled = notificationsLinkHandler.shouldHandleUrl(uri)
 
@@ -41,7 +41,7 @@ class NotificationsLinkHandlerTest {
 
     @Test
     fun `does not handle non-WPCom notifications URL`() {
-        val uri = buildUri(host = "wordpress.org", "notifications")
+        val uri = buildUri(host = "sitebay.org", "notifications")
 
         val isHandled = notificationsLinkHandler.shouldHandleUrl(uri)
 
@@ -57,11 +57,11 @@ class NotificationsLinkHandlerTest {
 
     @Test
     fun `deeplink - strip url returns notifications url`() {
-        val uri = buildUri(host = "wordpress.com", "notifications")
+        val uri = buildUri(host = "sitebay.com", "notifications")
 
         val strippedUrl = notificationsLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress.com/notifications")
+        assertThat(strippedUrl).isEqualTo("sitebay.com/notifications")
     }
 
     @Test
@@ -70,6 +70,6 @@ class NotificationsLinkHandlerTest {
 
         val strippedUrl = notificationsLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress://notifications")
+        assertThat(strippedUrl).isEqualTo("sitebay://notifications")
     }
 }

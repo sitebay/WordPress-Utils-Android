@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -6,11 +6,11 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.wordpress.android.R
-import org.wordpress.android.ui.pages.PageItem.ParentPage
-import org.wordpress.android.ui.pages.PageItemViewHolder.EmptyViewHolder
-import org.wordpress.android.ui.pages.PageItemViewHolder.PageDividerViewHolder
-import org.wordpress.android.ui.pages.PageItemViewHolder.PageParentViewHolder
+import org.sitebay.android.R
+import org.sitebay.android.ui.pages.PageItem.ParentPage
+import org.sitebay.android.ui.pages.PageItemViewHolder.EmptyViewHolder
+import org.sitebay.android.ui.pages.PageItemViewHolder.PageDividerViewHolder
+import org.sitebay.android.ui.pages.PageItemViewHolder.PageParentViewHolder
 
 class PageParentAdapter(
     private val onParentSelected: (ParentPage) -> Unit,

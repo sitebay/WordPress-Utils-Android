@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,10 +17,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.util.AniUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.util.AniUtils;
 
 /**
  * Displayed after user selects multiple items from the WP media library to insert into

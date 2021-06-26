@@ -174,8 +174,8 @@ Language: ko_KR
     <string name="backup_item_roots">워드프레스 루터</string>
     <string name="backup_download_details_choose_items_header">이 다운로드에 포함된 항목</string>
     <string name="gutenberg_native_uploading">업로드 중…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">재활용 가능한 블록은 iOS용 WordPress에서 편집할 수 없습니다.</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">재활용 가능한 블록은 Android용 WordPress에서 편집할 수 없습니다.</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">재활용 가능한 블록은 iOS용 WordPress에서 편집할 수 없습니다.</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">재활용 가능한 블록은 Android용 WordPress에서 편집할 수 없습니다.</string>
     <string name="gutenberg_native_replace_file">파일 바꾸기</string>
     <string name="gutenberg_native_replace_audio">오디오 교체</string>
     <string name="gutenberg_native_problem_opening_the_audio">오디오 열기 문제</string>
@@ -486,7 +486,7 @@ Language: ko_KR
     <string name="stories_intro_image_caption_first">이야기 글을 만드는 방법</string>
     <string name="stories_intro_image_caption_second">이야기 제목의 예제</string>
     <string name="stories_intro_title_first">이제 모두를 위한 이야기가 있습니다</string>
-    <string name="photo_picker_wordpress_media_library">워드프레스 미디어 라이브러리에서 선택하기</string>
+    <string name="photo_picker_sitebay_media_library">워드프레스 미디어 라이브러리에서 선택하기</string>
     <string name="media_insert_failed_with_reason">미디어 삽입을 실패했습니다: %s</string>
     <string name="media_insert_failed">미디어 삽입을 실패했습니다.</string>
     <string name="reader_label_toolbar_back">돌아가기</string>
@@ -630,7 +630,7 @@ Language: ko_KR
     <string name="send_link_by_email">이메일로 링크 보내기</string>
     <string name="create_account">계정 만들기</string>
     <string name="or_type_your_password">또는 비밀번호 입력하기</string>
-    <string name="enter_email_to_continue_wordpress_com">이메일 주소를 입력하여 로그인하거나 워드프레스닷컴 계정을 만드세요.</string>
+    <string name="enter_email_to_continue_sitebay_com">이메일 주소를 입력하여 로그인하거나 워드프레스닷컴 계정을 만드세요.</string>
     <string name="get_started">시작하기</string>
     <string name="check_email">이메일 확인하기</string>
     <string name="reader_error_request_failed_title">요청을 처리하는 중에 문제가 있었습니다. 나중에 다시 시도하시기 바랍니다.</string>
@@ -910,7 +910,7 @@ Language: ko_KR
     <string name="reader_my_likes_display_name">좋아요</string>
     <string name="site_cannot_be_loaded">사이트의 데이터를 현재 로드할 수 없습니다. 나중에 다시 시도해 주세요.</string>
     <string name="reader_filter_tags_title">토픽</string>
-    <string name="gutenberg_native_wordpress_media_library">워드프레스 미디어 라이브러리</string>
+    <string name="gutenberg_native_sitebay_media_library">워드프레스 미디어 라이브러리</string>
     <string name="gutenberg_native_ungroup">그룹 해제</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">키보드를 숨기려면 탭</string>
     <string name="gutenberg_native_tap_here_to_show_help">도움말을 보려면 여기를 탭</string>
@@ -1356,7 +1356,7 @@ Language: ko_KR
     <string name="stats_follower_label">팔로워</string>
     <string name="stats_followers_count_message">총 %1$s 팔로워 수: %2$s</string>
     <string name="stats_followers_email">이메일</string>
-    <string name="stats_followers_wordpress_com">워드프레스닷컴</string>
+    <string name="stats_followers_sitebay_com">워드프레스닷컴</string>
     <string name="stats_manage_insights">인사이트 관리</string>
     <string name="stats_empty_insights_title">아직 추가된 인사이트가 없음</string>
     <string name="stats_no_data_yet">아직 데이터 없음</string>
@@ -1808,7 +1808,7 @@ Language: ko_KR
     <string name="plugin_external_link_icon_content_description">외부 링크</string>
     <string name="plugin_icon_content_description">플러그인 아이콘</string>
     <string name="plugin_home_page">플러그인 홈페이지</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org 플러그인 페이지</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org 플러그인 페이지</string>
     <string name="plugin_remove_dialog_message">%1$s을(를)%2$s에서 제거하시겠습니까?\n\n이로 인해 플러그인이 비활성화되고 모든 관련 파일 및 데이터가 삭제됩니다.</string>
     <string name="plugin_remove_dialog_title">플러그인 제거</string>
     <string name="plugin_remove_progress_dialog_message">%s 제거 중…</string>
@@ -1963,7 +1963,7 @@ Language: ko_KR
     <string name="login_text_otp">대신 코드를 문자로 받기</string>
     <string name="enter_verification_code">마지막 부분입니다! 인증 앱의 확인 코드를 입력하세요.</string>
     <string name="next">다음</string>
-    <string name="enter_email_wordpress_com">이메일 주소를 입력하여 워드프레스닷컴에 로그인하고 회원님의 모든 WordPress 사이트를 관리하세요.</string>
+    <string name="enter_email_sitebay_com">이메일 주소를 입력하여 워드프레스닷컴에 로그인하고 회원님의 모든 WordPress 사이트를 관리하세요.</string>
     <string name="image_optimization_promo_desc">이미지 최적화는 빠른 업로드를 위해 이미지를 줄입니다.\n\n사이트 설정에서 언제든지 변경할 수 있습니다.</string>
     <string name="image_optimization_promo_title">이미지 최적화를 켜시겠어요?</string>
     <string name="leave_off">중단</string>
@@ -2515,9 +2515,9 @@ Language: ko_KR
     <string name="stats_insights_today">오늘의 통계</string>
     <string name="stats_insights_all_time">최고 게시글, 조회수 및 방문자</string>
     <string name="stats_insights">인사이트</string>
-    <string name="me_disconnect_from_wordpress_com">WordPress.com에서 로그아웃</string>
+    <string name="me_disconnect_from_sitebay_com">WordPress.com에서 로그아웃</string>
     <string name="me_btn_login_logout">로그인/로그아웃</string>
-    <string name="me_connect_to_wordpress_com">WordPress.com에 로그인</string>
+    <string name="me_connect_to_sitebay_com">WordPress.com에 로그인</string>
     <string name="me_btn_support">도움 및 지원</string>
     <string name="site_picker_cant_hide_current_site">\"%s\"은(는) 현재 사이트이기 때문에 숨길 수 없습니다.</string>
     <string name="account_settings">계정 설정</string>
@@ -2659,7 +2659,7 @@ Language: ko_KR
     <string name="category_name">카테고리 이름</string>
     <string name="file_not_found">올라간 미디어 파일을 찾을 수 없습니다. 삭제 또는 이동 된 것 같습니다.</string>
     <string name="image_settings">이미지 설정</string>
-    <string name="wordpress_blog">WordPress 블로그</string>
+    <string name="sitebay_blog">WordPress 블로그</string>
     <string name="sure_to_cancel_edit_comment">이 코멘트 수정을 취소하시겠습니까?</string>
     <string name="local_changes">로컬 변경</string>
     <string name="content_required">댓글 본문은 필수 항목입니다.</string>

@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.whatsnew
+package org.sitebay.android.ui.whatsnew
 
-import org.wordpress.android.fluxc.model.whatsnew.WhatsNewAnnouncementModel
-import org.wordpress.android.fluxc.store.WhatsNewStore
-import org.wordpress.android.fluxc.store.WhatsNewStore.WhatsNewAppId.WP_ANDROID
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.StringUtils
+import org.sitebay.android.fluxc.model.whatsnew.WhatsNewAnnouncementModel
+import org.sitebay.android.fluxc.store.WhatsNewStore
+import org.sitebay.android.fluxc.store.WhatsNewStore.WhatsNewAppId.WP_ANDROID
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.StringUtils
 import javax.inject.Inject
 
 class FeatureAnnouncementProvider @Inject constructor(

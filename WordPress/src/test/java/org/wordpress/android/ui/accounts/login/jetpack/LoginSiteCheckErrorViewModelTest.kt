@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.accounts.login.jetpack
+package org.sitebay.android.ui.accounts.login.jetpack
 
 import kotlinx.coroutines.InternalCoroutinesApi
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.ui.accounts.LoginNavigationEvents
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowInstructions
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.ui.accounts.LoginNavigationEvents
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowInstructions
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
 
 @InternalCoroutinesApi
 class LoginSiteCheckErrorViewModelTest : BaseUnitTest() {

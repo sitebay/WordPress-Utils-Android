@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -6,8 +6,8 @@ import android.view.MenuItem;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.LocaleAwareActivity;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.LocaleAwareActivity;
 
 public class AccountSettingsActivity extends LocaleAwareActivity {
     @Override

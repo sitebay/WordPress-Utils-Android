@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.flow
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.reader.actions.ReaderPostActionsWrapper
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.BookmarkPostState.PreLoadPostContent
-import org.wordpress.android.ui.reader.usecases.BookmarkPostState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.reader.actions.ReaderPostActionsWrapper
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.BookmarkPostState.PreLoadPostContent
+import org.sitebay.android.ui.reader.usecases.BookmarkPostState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 
 /**

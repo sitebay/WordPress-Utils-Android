@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,18 +8,18 @@ import android.view.Menu;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.login.LoginMode;
-import org.wordpress.android.ui.JetpackConnectionWebViewClient.JetpackConnectionWebViewClientListener;
-import org.wordpress.android.ui.accounts.LoginActivity;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.login.LoginMode;
+import org.sitebay.android.ui.JetpackConnectionWebViewClient.JetpackConnectionWebViewClientListener;
+import org.sitebay.android.ui.accounts.LoginActivity;
 
 import java.util.List;
 
-import static org.wordpress.android.WordPress.SITE;
-import static org.wordpress.android.ui.JetpackConnectionWebViewClient.JETPACK_CONNECTION_DEEPLINK;
-import static org.wordpress.android.ui.RequestCodes.JETPACK_LOGIN;
+import static org.sitebay.android.WordPress.SITE;
+import static org.sitebay.android.ui.JetpackConnectionWebViewClient.JETPACK_CONNECTION_DEEPLINK;
+import static org.sitebay.android.ui.RequestCodes.JETPACK_LOGIN;
 
 /**
  * Activity that opens the Jetpack login flow and returns to StatsActivity when finished.
@@ -45,7 +45,7 @@ public class JetpackConnectionWebViewActivity extends WPWebViewActivity
     }
 
     static void startManualFlow(Context context, JetpackConnectionSource source, SiteModel site, boolean authorized) {
-        String url = "https://wordpress.com/jetpack/connect?"
+        String url = "https://sitebay.com/jetpack/connect?"
                      + "url=" + site.getUrl()
                      + "&mobile_redirect=" + JETPACK_CONNECTION_DEEPLINK
                      + "?source=" + source.toString();

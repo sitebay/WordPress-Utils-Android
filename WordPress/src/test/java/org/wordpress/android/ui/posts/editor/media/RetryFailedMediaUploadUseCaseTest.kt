@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -12,13 +12,13 @@ import com.nhaarman.mockitokotlin2.verify
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
-import org.wordpress.android.test
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
+import org.sitebay.android.test
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class RetryFailedMediaUploadUseCaseTest : BaseUnitTest() {

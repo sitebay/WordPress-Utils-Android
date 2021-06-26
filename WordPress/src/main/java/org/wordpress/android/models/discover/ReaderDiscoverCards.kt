@@ -1,8 +1,8 @@
-package org.wordpress.android.models.discover
+package org.sitebay.android.models.discover
 
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.models.ReaderTagList
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.models.ReaderTagList
 
 data class ReaderDiscoverCards(val cards: List<ReaderDiscoverCard>)
 

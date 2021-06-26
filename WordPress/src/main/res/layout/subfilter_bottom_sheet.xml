@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/title"
         style="@style/SiteTagBottomSheetTitle"
         android:layout_width="match_parent"

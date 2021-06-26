@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,10 +8,10 @@ import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.util.helpers.WebChromeClientWithVideoPoster;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.util.helpers.WebChromeClientWithVideoPoster;
 
 /**
  * Full screen landscape video player for the reader

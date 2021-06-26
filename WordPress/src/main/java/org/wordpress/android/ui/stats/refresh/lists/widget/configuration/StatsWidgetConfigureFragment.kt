@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.configuration
+package org.sitebay.android.ui.stats.refresh.lists.widget.configuration
 
 import android.app.Activity.RESULT_OK
 import android.appwidget.AppWidgetManager
@@ -12,23 +12,23 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerFragment
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_WIDGET_ADDED
-import org.wordpress.android.databinding.StatsWidgetConfigureFragmentBinding
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetUpdater
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.ALL_TIME_VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.TODAY_VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.WEEK_VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.today.TodayWidgetUpdater
-import org.wordpress.android.ui.stats.refresh.lists.widget.views.ViewsWidgetUpdater
-import org.wordpress.android.ui.stats.refresh.utils.trackWithWidgetType
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.merge
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_WIDGET_ADDED
+import org.sitebay.android.databinding.StatsWidgetConfigureFragmentBinding
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetUpdater
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.ALL_TIME_VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.TODAY_VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.WEEK_VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.today.TodayWidgetUpdater
+import org.sitebay.android.ui.stats.refresh.lists.widget.views.ViewsWidgetUpdater
+import org.sitebay.android.ui.stats.refresh.utils.trackWithWidgetType
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.merge
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class StatsWidgetConfigureFragment : DaggerFragment() {

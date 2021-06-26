@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
-import org.wordpress.android.ui.people.AnalyticsInviteLinksActionResult.ERROR
-import org.wordpress.android.ui.people.AnalyticsInviteLinksActionResult.SUCCEEDED
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Failure
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Success
+import org.sitebay.android.ui.people.AnalyticsInviteLinksActionResult.ERROR
+import org.sitebay.android.ui.people.AnalyticsInviteLinksActionResult.SUCCEEDED
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Failure
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Success
 
 private const val INVITE_LINKS_ACTION_RESULT = "invite_links_action_result"
 private const val INVITE_LINKS_ACTION_HAS_LINKS = "invite_links_action_has_links"

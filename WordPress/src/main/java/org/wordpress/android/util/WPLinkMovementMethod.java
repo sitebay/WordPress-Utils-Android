@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.text.style.URLSpan;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 /**
  * Android's LinkMovementMethod crashes on malformed links, including links that have no

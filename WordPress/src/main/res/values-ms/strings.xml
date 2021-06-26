@@ -9,7 +9,7 @@ Language: ms
     <string name="plugin_external_link_icon_content_description">Pautan luaran</string>
     <string name="plugin_icon_content_description">Ikon pemalam</string>
     <string name="plugin_home_page">Laman hadapan pemalam</string>
-    <string name="wordpress_dot_org_plugin_page">Halaman Pemalam WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Halaman Pemalam WordPress.org</string>
     <string name="plugin_remove_progress_dialog_message">Membuang %s…</string>
     <string name="plugin_remove_dialog_title">Buang Pemalam</string>
     <string name="login_empty_password">Sila masukkan kata laluan</string>
@@ -130,7 +130,7 @@ Language: ms
     <string name="password_incorrect">Nampaknya seperti kata laluan ini tidak betul. Sila periksa semula maklumat anda dan cuba lagi.</string>
     <string name="requesting_otp">Memohon ko pengesahan melalui SMS.</string>
     <string name="enter_verification_code">Hampir di sana! Sila masukkan kod pengesahan daripada aplikasi Authenticator anda.</string>
-    <string name="enter_email_wordpress_com">Log masuk ke WordPress.com menggunakan alamat emel untuk mengurus semua laman WordPress anda.</string>
+    <string name="enter_email_sitebay_com">Log masuk ke WordPress.com menggunakan alamat emel untuk mengurus semua laman WordPress anda.</string>
     <string name="next">Seterusnya</string>
     <string name="image_optimization_promo_desc">Pengoptimuman imej menecutkan imej untuk muat naik yang lebih laju.\n\nAnda boleh mengubahnya bila-bila masa dalam tetapan laman.</string>
     <string name="image_optimization_promo_title">Hidupkan pengoptimuman imej?</string>
@@ -657,9 +657,9 @@ Language: ms
     <string name="stats_insights_today">Statistik Hari Ini</string>
     <string name="stats_insights_all_time">Kiriman, pandangan, dan pelawat sepanjang masa</string>
     <string name="stats_insights">Wawasan</string>
-    <string name="me_disconnect_from_wordpress_com">Log keluar dari WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Log keluar dari WordPress.com</string>
     <string name="me_btn_login_logout">Log Masuk/Log Keluar</string>
-    <string name="me_connect_to_wordpress_com">Log masuk ke WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Log masuk ke WordPress.com</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" tidak disembunyikan kerana ianya laman semasa</string>
     <string name="account_settings">Tetapan Akaun</string>
     <string name="me_btn_support">Bantuan &amp; Sokongan</string>
@@ -797,7 +797,7 @@ Language: ms
     <string name="category_name">Nama kategori</string>
     <string name="privacy_policy">Polisi privasi</string>
     <string name="local_changes">Perubahan setempat</string>
-    <string name="wordpress_blog">Blog WordPress</string>
+    <string name="sitebay_blog">Blog WordPress</string>
     <string name="fatal_db_error">Ralat berlaku semasa mencipta pangkalan data aplikasi. Cuba memasangnya semula.</string>
     <string name="reader_title_applog">Log aplikasi</string>
     <string name="http_authorization_required">Kebenaran diperlukan</string>

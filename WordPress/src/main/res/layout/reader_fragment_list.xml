@@ -9,14 +9,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <org.wordpress.android.ui.reader.views.ReaderRecyclerView
+    <org.sitebay.android.ui.reader.views.ReaderRecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         tools:listitem="@layout/reader_listitem_tag" />
 
-    <org.wordpress.android.ui.ActionableEmptyView
+    <org.sitebay.android.ui.ActionableEmptyView
         android:id="@+id/actionable_empty_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

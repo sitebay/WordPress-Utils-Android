@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import android.content.ContentResolver
 import android.content.Context
@@ -10,14 +10,14 @@ import android.provider.MediaStore.Images.Media
 import android.provider.MediaStore.MediaColumns
 import android.provider.MediaStore.Video
 import android.webkit.MimeTypeMap
-import org.wordpress.android.fluxc.utils.MimeTypes
-import org.wordpress.android.ui.mediapicker.MediaType
-import org.wordpress.android.ui.mediapicker.MediaType.AUDIO
-import org.wordpress.android.ui.mediapicker.MediaType.IMAGE
-import org.wordpress.android.ui.mediapicker.MediaType.VIDEO
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.SqlUtils
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.fluxc.utils.MimeTypes
+import org.sitebay.android.ui.mediapicker.MediaType
+import org.sitebay.android.ui.mediapicker.MediaType.AUDIO
+import org.sitebay.android.ui.mediapicker.MediaType.IMAGE
+import org.sitebay.android.ui.mediapicker.MediaType.VIDEO
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.SqlUtils
+import org.sitebay.android.util.UriWrapper
 import java.io.File
 import javax.inject.Inject
 

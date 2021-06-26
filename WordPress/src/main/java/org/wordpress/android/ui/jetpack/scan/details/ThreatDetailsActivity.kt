@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.jetpack.scan.details
+package org.sitebay.android.ui.jetpack.scan.details
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import org.wordpress.android.databinding.ThreatDetailsActivityBinding
+import org.sitebay.android.databinding.ThreatDetailsActivityBinding
 
 class ThreatDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

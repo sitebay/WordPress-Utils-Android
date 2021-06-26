@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -7,8 +7,8 @@ import android.view.MotionEvent;
 
 import androidx.viewpager.widget.ViewPager;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 /**
  * Custom ViewPager which resolves the "pointer index out of range" bug in the compatibility library

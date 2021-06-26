@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.eq
@@ -12,22 +12,22 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyBoolean
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.page.PageStatus.DRAFT
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.PENDING
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
-import org.wordpress.android.fluxc.model.post.PostStatus.PUBLISHED
-import org.wordpress.android.fluxc.model.post.PostStatus.SCHEDULED
-import org.wordpress.android.fluxc.store.MediaStore.MediaError
-import org.wordpress.android.fluxc.store.MediaStore.MediaErrorType.AUTHORIZATION_REQUIRED
-import org.wordpress.android.fluxc.store.PostStore.PostError
-import org.wordpress.android.fluxc.store.PostStore.PostErrorType
-import org.wordpress.android.fluxc.store.UploadStore.UploadError
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.page.PageStatus.DRAFT
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.PENDING
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.fluxc.model.post.PostStatus.PUBLISHED
+import org.sitebay.android.fluxc.model.post.PostStatus.SCHEDULED
+import org.sitebay.android.fluxc.store.MediaStore.MediaError
+import org.sitebay.android.fluxc.store.MediaStore.MediaErrorType.AUTHORIZATION_REQUIRED
+import org.sitebay.android.fluxc.store.PostStore.PostError
+import org.sitebay.android.fluxc.store.PostStore.PostErrorType
+import org.sitebay.android.fluxc.store.UploadStore.UploadError
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
 
 @RunWith(MockitoJUnitRunner::class)
 class CreatePageListItemLabelsUseCaseTest {

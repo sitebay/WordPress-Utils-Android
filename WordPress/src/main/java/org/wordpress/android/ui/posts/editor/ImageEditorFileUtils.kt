@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.withContext

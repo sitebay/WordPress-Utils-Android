@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class EditPostPublishSettingsViewModel @Inject constructor(

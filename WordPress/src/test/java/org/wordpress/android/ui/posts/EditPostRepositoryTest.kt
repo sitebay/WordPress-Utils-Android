@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -11,18 +11,18 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostLocation
-import org.wordpress.android.fluxc.model.post.PostStatus.DRAFT
-import org.wordpress.android.fluxc.model.post.PostStatus.PENDING
-import org.wordpress.android.fluxc.model.post.PostStatus.PUBLISHED
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.posts.EditPostRepository.UpdatePostResult
-import org.wordpress.android.util.LocaleManagerWrapper
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostLocation
+import org.sitebay.android.fluxc.model.post.PostStatus.DRAFT
+import org.sitebay.android.fluxc.model.post.PostStatus.PENDING
+import org.sitebay.android.fluxc.model.post.PostStatus.PUBLISHED
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.posts.EditPostRepository.UpdatePostResult
+import org.sitebay.android.util.LocaleManagerWrapper
 import java.util.Calendar
 import java.util.TimeZone
 

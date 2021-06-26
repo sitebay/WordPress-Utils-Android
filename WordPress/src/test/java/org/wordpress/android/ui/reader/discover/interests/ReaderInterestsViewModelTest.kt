@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.discover.interests
+package org.sitebay.android.ui.reader.discover.interests
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.any
@@ -17,27 +17,27 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.MainCoroutineScopeRule
-import org.wordpress.android.R
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagList
-import org.wordpress.android.models.ReaderTagType
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsFragment.EntryPoint
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState.DoneButtonDisabledUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState.DoneButtonEnabledUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState.DoneButtonHiddenUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ContentUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ErrorUiState.ConnectionErrorUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ErrorUiState.RequestFailedErrorUiState
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Error.RemoteRequestFailure
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Success
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.SuccessWithData
-import org.wordpress.android.ui.reader.repository.ReaderTagRepository
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.viewmodels.ReaderViewModel
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.MainCoroutineScopeRule
+import org.sitebay.android.R
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagList
+import org.sitebay.android.models.ReaderTagType
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsFragment.EntryPoint
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState.DoneButtonDisabledUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState.DoneButtonEnabledUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState.DoneButtonHiddenUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ContentUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ErrorUiState.ConnectionErrorUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ErrorUiState.RequestFailedErrorUiState
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Error.RemoteRequestFailure
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Success
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.SuccessWithData
+import org.sitebay.android.ui.reader.repository.ReaderTagRepository
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.viewmodels.ReaderViewModel
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 private const val CURRENT_LANGUAGE = "en"
 

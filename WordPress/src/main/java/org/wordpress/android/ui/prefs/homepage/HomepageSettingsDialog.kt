@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.homepage
+package org.sitebay.android.ui.prefs.homepage
 
 import android.app.Dialog
 import android.content.Context
@@ -15,13 +15,13 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.SiteSettingsHomepageDialogBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.getColorResIdFromAttribute
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.SiteSettingsHomepageDialogBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.getColorResIdFromAttribute
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class HomepageSettingsDialog : DialogFragment() {

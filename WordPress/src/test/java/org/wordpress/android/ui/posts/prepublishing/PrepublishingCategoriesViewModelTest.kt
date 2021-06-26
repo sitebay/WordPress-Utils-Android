@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.prepublishing
+package org.sitebay.android.ui.posts.prepublishing
 
 import android.os.Bundle
 import com.nhaarman.mockitokotlin2.any
@@ -18,29 +18,29 @@ import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.ArgumentMatchers.anyString
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.TermModel
-import org.wordpress.android.fluxc.store.TaxonomyStore
-import org.wordpress.android.fluxc.store.TaxonomyStore.TaxonomyError
-import org.wordpress.android.fluxc.store.TaxonomyStore.TaxonomyErrorType.GENERIC_ERROR
-import org.wordpress.android.models.CategoryNode
-import org.wordpress.android.test
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.posts.AddCategoryUseCase
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.GetCategoriesUseCase
-import org.wordpress.android.ui.posts.PrepublishingAddCategoryRequest
-import org.wordpress.android.ui.posts.PrepublishingCategoriesViewModel
-import org.wordpress.android.ui.posts.PrepublishingCategoriesViewModel.UiState
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.TermModel
+import org.sitebay.android.fluxc.store.TaxonomyStore
+import org.sitebay.android.fluxc.store.TaxonomyStore.TaxonomyError
+import org.sitebay.android.fluxc.store.TaxonomyStore.TaxonomyErrorType.GENERIC_ERROR
+import org.sitebay.android.models.CategoryNode
+import org.sitebay.android.test
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.posts.AddCategoryUseCase
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.GetCategoriesUseCase
+import org.sitebay.android.ui.posts.PrepublishingAddCategoryRequest
+import org.sitebay.android.ui.posts.PrepublishingCategoriesViewModel
+import org.sitebay.android.ui.posts.PrepublishingCategoriesViewModel.UiState
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.Event
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

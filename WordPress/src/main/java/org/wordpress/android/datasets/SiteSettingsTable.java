@@ -1,4 +1,4 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -7,12 +7,12 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.collection.SparseArrayCompat;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.CategoryModel;
-import org.wordpress.android.models.SiteSettingsModel;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.CategoryModel;
+import org.sitebay.android.models.SiteSettingsModel;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.SqlUtils;
 
 public final class SiteSettingsTable {
     private static final String CATEGORIES_TABLE_NAME = "site_categories";

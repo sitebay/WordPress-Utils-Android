@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import androidx.recyclerview.widget.DiffUtil
-import org.wordpress.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.COUNT_CHANGE
-import org.wordpress.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.SELECTION_CHANGE
+import org.sitebay.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.COUNT_CHANGE
+import org.sitebay.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.SELECTION_CHANGE
 
 @Deprecated("This class is being refactored, if you implement any change, please also update " +
-        "{@link org.wordpress.android.ui.mediapicker.MedaPickerAdapterDiffCallback}")
+        "{@link org.sitebay.android.ui.mediapicker.MedaPickerAdapterDiffCallback}")
 class PhotoPickerAdapterDiffCallback(
     private val oldItems: List<PhotoPickerUiItem>,
     private val updatedItems: List<PhotoPickerUiItem>

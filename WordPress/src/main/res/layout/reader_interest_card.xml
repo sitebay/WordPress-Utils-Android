@@ -22,7 +22,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/interests_you_may_like_header" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             style="@style/ReaderTextView.Card.Header"
             android:id="@+id/interests_you_may_like_header"
             android:text="@string/reader_discover_interests_header"

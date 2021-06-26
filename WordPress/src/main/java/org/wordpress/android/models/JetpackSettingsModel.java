@@ -1,4 +1,4 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import java.util.ArrayList;
 import java.util.HashSet;

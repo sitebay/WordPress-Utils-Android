@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import androidx.recyclerview.widget.DiffUtil.Callback
 

@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.reader.subfilter.viewholders
+package org.sitebay.android.ui.reader.subfilter.viewholders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.getColorFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.getColorFromAttribute
 
 open class SubfilterListItemViewHolder(
     internal val parent: ViewGroup,

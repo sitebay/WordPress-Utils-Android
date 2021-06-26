@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
-import org.wordpress.android.util.UrlUtils
+import org.sitebay.android.util.UrlUtils
 import javax.inject.Inject
 
 class UrlUtilsWrapper

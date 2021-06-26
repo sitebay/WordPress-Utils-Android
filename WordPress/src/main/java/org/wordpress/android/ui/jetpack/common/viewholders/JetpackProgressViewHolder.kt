@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.jetpack.common.viewholders
+package org.sitebay.android.ui.jetpack.common.viewholders
 
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams
-import org.wordpress.android.databinding.JetpackListProgressItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState.ProgressState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.setVisible
+import org.sitebay.android.databinding.JetpackListProgressItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState.ProgressState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.setVisible
 
 class JetpackProgressViewHolder(
     private val uiHelpers: UiHelpers,

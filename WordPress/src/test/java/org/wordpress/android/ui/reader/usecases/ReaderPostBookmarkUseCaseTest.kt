@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.verify
@@ -14,13 +14,13 @@ import org.mockito.ArgumentMatchers.anyBoolean
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.actions.ReaderPostActionsWrapper
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.BookmarkPostState.PreLoadPostContent
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.actions.ReaderPostActionsWrapper
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.BookmarkPostState.PreLoadPostContent
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 private const val SOURCE = "source"
 

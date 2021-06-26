@@ -10,4 +10,4 @@
 * WordPress Android: 
 * WordPress iOS: 
 
-cc @wordpress-mobile/platform-9 
+cc @sitebay-mobile/platform-9 

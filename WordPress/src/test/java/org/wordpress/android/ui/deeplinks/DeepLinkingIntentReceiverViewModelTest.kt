@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks
+package org.sitebay.android.ui.deeplinks
 
 import android.net.Uri
 import com.nhaarman.mockitokotlin2.eq
@@ -11,17 +11,17 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.StartCreateSiteFlow
-import org.wordpress.android.ui.deeplinks.handlers.DeepLinkHandlers
-import org.wordpress.android.ui.deeplinks.handlers.ServerTrackingHandler
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.StartCreateSiteFlow
+import org.sitebay.android.ui.deeplinks.handlers.DeepLinkHandlers
+import org.sitebay.android.ui.deeplinks.handlers.ServerTrackingHandler
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
 
 class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
     @Mock lateinit var deepLinkHandlers: DeepLinkHandlers
@@ -63,7 +63,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
 
     @Test
     fun `does not navigate and finishes on WPcom URL`() {
-        val uri = buildUri("wordpress.com")
+        val uri = buildUri("sitebay.com")
 
         viewModel.start(null, uri)
 
@@ -143,7 +143,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
     @Test
     fun `tracks deeplink when action not null and URL not null`() {
         val action = "VIEW"
-        val host = "wordpress.com"
+        val host = "sitebay.com"
         val uriWrapper = buildUri(host)
         val mockedUri = mock<Uri>()
         whenever(uriWrapper.uri).thenReturn(mockedUri)
@@ -170,7 +170,7 @@ class DeepLinkingIntentReceiverViewModelTest : BaseUnitTest() {
     }
 
     private fun initWpLoginUri(redirectTo: UriWrapper? = null): UriWrapper {
-        val uri = initRedirectUri("wordpress.com", redirectTo)
+        val uri = initRedirectUri("sitebay.com", redirectTo)
         whenever(deepLinkUriUtils.isWpLoginUrl(uri)).thenReturn(true)
         return uri
     }

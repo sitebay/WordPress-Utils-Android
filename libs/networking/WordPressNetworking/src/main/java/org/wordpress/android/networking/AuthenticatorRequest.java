@@ -1,10 +1,10 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.Oauth;
-import com.wordpress.rest.RestClient;
-import com.wordpress.rest.RestRequest;
-import com.wordpress.rest.RestRequest.ErrorListener;
+import com.sitebay.rest.Oauth;
+import com.sitebay.rest.RestClient;
+import com.sitebay.rest.RestRequest;
+import com.sitebay.rest.RestRequest.ErrorListener;
 
 /**
  * Encapsulates the behaviour for asking the Authenticator for an access token. This

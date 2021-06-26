@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.stats.refresh.BLOCK_DETAIL_USE_CASE
-import org.wordpress.android.ui.stats.refresh.lists.BaseListUseCase
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DETAIL
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateSelector
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.stats.refresh.BLOCK_DETAIL_USE_CASE
+import org.sitebay.android.ui.stats.refresh.lists.BaseListUseCase
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DETAIL
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateSelector
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 import javax.inject.Inject
 import javax.inject.Named
 

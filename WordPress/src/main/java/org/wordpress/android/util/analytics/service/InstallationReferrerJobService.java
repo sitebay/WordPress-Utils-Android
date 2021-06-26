@@ -1,12 +1,12 @@
-package org.wordpress.android.util.analytics.service;
+package org.sitebay.android.util.analytics.service;
 
 import android.annotation.TargetApi;
 import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.os.Bundle;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 /**
  * Background service to connect to Google Play Store's Install Referrer API to

@@ -1,8 +1,8 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.reader.utils.SiteAccessibilityInfo
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.reader.utils.SiteAccessibilityInfo
 import javax.inject.Inject
 
 /**

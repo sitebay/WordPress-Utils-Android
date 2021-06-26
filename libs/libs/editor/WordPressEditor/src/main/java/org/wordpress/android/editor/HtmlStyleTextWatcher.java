@@ -1,11 +1,11 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.text.Editable;
 import android.text.Spannable;
 import android.text.TextWatcher;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 public class HtmlStyleTextWatcher implements TextWatcher {
     private enum Operation {

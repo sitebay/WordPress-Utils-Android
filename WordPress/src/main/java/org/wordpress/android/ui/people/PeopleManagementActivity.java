@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people;
+package org.sitebay.android.ui.people;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -15,23 +15,23 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.datasets.PeopleTable;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore.OnUserRolesChanged;
-import org.wordpress.android.models.PeopleListFilter;
-import org.wordpress.android.models.Person;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.people.utils.PeopleUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.datasets.PeopleTable;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore.OnUserRolesChanged;
+import org.sitebay.android.models.PeopleListFilter;
+import org.sitebay.android.models.Person;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.people.utils.PeopleUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import java.util.List;
 

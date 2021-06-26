@@ -9,7 +9,7 @@
     android:paddingEnd="@dimen/margin_large"
     android:paddingBottom="@dimen/margin_extra_large">
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/learn_more_caption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

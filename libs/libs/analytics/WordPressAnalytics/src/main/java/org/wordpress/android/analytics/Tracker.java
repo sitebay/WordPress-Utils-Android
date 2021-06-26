@@ -1,11 +1,11 @@
-package org.wordpress.android.analytics;
+package org.sitebay.android.analytics;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.util.AppLog;
 
 import java.util.Map;
 import java.util.UUID;

@@ -370,7 +370,7 @@ Language: cy_GB
     <string name="stats_insights_all_time">Cofnodion, golygon ac ymwelwyr erioed</string>
     <string name="stats_insights">Mewnwelediadau</string>
     <string name="me_btn_login_logout">Mewngofnodi/Allgofnodi</string>
-    <string name="me_connect_to_wordpress_com">Mewngofnodwch i WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Mewngofnodwch i WordPress.com</string>
     <string name="me_btn_support">Cymorth a Chefnogaeth</string>
     <string name="site_picker_cant_hide_current_site">Nid oedd \"%s\" wedi ei guddio gan taw hi yw\'r wefan gyfredol</string>
     <string name="account_settings">Gosodiadau\'r Cyfrif</string>
@@ -521,7 +521,7 @@ Language: cy_GB
     <string name="privacy_policy">Polisi preifatrwydd</string>
     <string name="local_changes">Newidiadau lleol</string>
     <string name="image_settings">Gosodiadau delweddau</string>
-    <string name="wordpress_blog">Blog WordPress</string>
+    <string name="sitebay_blog">Blog WordPress</string>
     <string name="error_blog_hidden">Mae\'r blog hwn yn gudd ac nid oes modd ei lwytho. Galluogwch y blog eto o fewn y gosodiadau a cheisiwch eto.</string>
     <string name="fatal_db_error">Digwyddodd gwall wrth greu cronfa ddata\'r ap. Ceisiwch ailosod yr ap.</string>
     <string name="reader_title_applog">Cofnod yr ap</string>

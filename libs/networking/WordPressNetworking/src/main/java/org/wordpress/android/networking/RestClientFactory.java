@@ -1,7 +1,7 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import com.android.volley.RequestQueue;
-import com.wordpress.rest.RestClient;
+import com.sitebay.rest.RestClient;
 
 public class RestClientFactory {
     private static RestClientFactoryAbstract sFactory;

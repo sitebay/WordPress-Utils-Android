@@ -1,4 +1,4 @@
-package org.wordpress.android.mocks;
+package org.sitebay.android.mocks;
 
 import android.content.Context;
 
@@ -6,14 +6,14 @@ import com.android.volley.NetworkResponse;
 import com.android.volley.Request.Method;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestClient;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestClient;
+import com.sitebay.rest.RestRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.TestUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.TestUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -95,7 +95,7 @@ public class RestClientCustomizableMock extends RestClient {
         AppLog.v(T.TESTS, this.getClass() + ": makeRequest(" + url + ")");
         RestRequest dummyReturnValue = new RestRequest(method, url, params, listener, errorListener);
         // URL example: https://mytest.sitebay.org/rest/v1/me
-        // Filename: default-public-api-wordpress-com-rest-v1-me.json
+        // Filename: default-public-api-sitebay-com-rest-v1-me.json
         String filename = mPrefix + "-" + url.replace("https://", "").replace("/", "-").replace(".", "-").replace("?",
                                                                                                                   "-")
                           + ".json";

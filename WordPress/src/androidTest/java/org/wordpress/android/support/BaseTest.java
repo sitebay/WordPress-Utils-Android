@@ -1,4 +1,4 @@
-package org.wordpress.android.support;
+package org.sitebay.android.support;
 
 import android.app.Instrumentation;
 
@@ -22,16 +22,16 @@ import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Rule;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.e2e.flows.LoginFlow;
-import org.wordpress.android.e2e.pages.MePage;
-import org.wordpress.android.e2e.pages.MySitesPage;
-import org.wordpress.android.mocks.AndroidNotifier;
-import org.wordpress.android.mocks.AssetFileSource;
-import org.wordpress.android.modules.AppComponentTest;
-import org.wordpress.android.modules.DaggerAppComponentTest;
-import org.wordpress.android.ui.WPLaunchActivity;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.e2e.flows.LoginFlow;
+import org.sitebay.android.e2e.pages.MePage;
+import org.sitebay.android.e2e.pages.MySitesPage;
+import org.sitebay.android.mocks.AndroidNotifier;
+import org.sitebay.android.mocks.AssetFileSource;
+import org.sitebay.android.modules.AppComponentTest;
+import org.sitebay.android.modules.DaggerAppComponentTest;
+import org.sitebay.android.ui.WPLaunchActivity;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -44,10 +44,10 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 import static com.google.android.apps.common.testing.accessibility.framework.AccessibilityCheckResultUtils.matchesTypes;
 import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.is;
-import static org.wordpress.android.BuildConfig.E2E_SELF_HOSTED_USER_SITE_ADDRESS;
-import static org.wordpress.android.BuildConfig.E2E_WP_COM_USER_EMAIL;
-import static org.wordpress.android.BuildConfig.E2E_WP_COM_USER_PASSWORD;
-import static org.wordpress.android.support.WPSupportUtils.isElementDisplayed;
+import static org.sitebay.android.BuildConfig.E2E_SELF_HOSTED_USER_SITE_ADDRESS;
+import static org.sitebay.android.BuildConfig.E2E_WP_COM_USER_EMAIL;
+import static org.sitebay.android.BuildConfig.E2E_WP_COM_USER_PASSWORD;
+import static org.sitebay.android.support.WPSupportUtils.isElementDisplayed;
 
 public class BaseTest {
     protected WordPress mAppContext;

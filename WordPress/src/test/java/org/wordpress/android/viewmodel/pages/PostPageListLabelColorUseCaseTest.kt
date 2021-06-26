@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
 import com.nhaarman.mockitokotlin2.mock
 import org.assertj.core.api.Assertions.assertThat
@@ -6,10 +6,10 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadQueued
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadQueued
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
 
 @RunWith(MockitoJUnitRunner::class)
 class PostPageListLabelColorUseCaseTest {

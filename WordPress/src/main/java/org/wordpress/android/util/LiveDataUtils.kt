@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
@@ -8,7 +8,7 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.wordpress.android.viewmodel.SingleMediatorLiveEvent
+import org.sitebay.android.viewmodel.SingleMediatorLiveEvent
 
 /**
  * A helper function that merges sources into a single LiveData object

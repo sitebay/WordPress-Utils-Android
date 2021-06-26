@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login;
+package org.sitebay.android.ui.accounts.login;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,24 +15,24 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.AccountModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.login.LoginBaseFormFragment;
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker;
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Click;
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Step;
-import org.wordpress.android.ui.main.SitePickerAdapter;
-import org.wordpress.android.ui.main.SitePickerAdapter.SiteList;
-import org.wordpress.android.ui.main.SitePickerAdapter.SitePickerMode;
-import org.wordpress.android.ui.main.SitePickerAdapter.ViewHolderHandler;
-import org.wordpress.android.util.BuildConfigWrapper;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.image.ImageManager;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.AccountModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.login.LoginBaseFormFragment;
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker;
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Click;
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Step;
+import org.sitebay.android.ui.main.SitePickerAdapter;
+import org.sitebay.android.ui.main.SitePickerAdapter.SiteList;
+import org.sitebay.android.ui.main.SitePickerAdapter.SitePickerMode;
+import org.sitebay.android.ui.main.SitePickerAdapter.ViewHolderHandler;
+import org.sitebay.android.util.BuildConfigWrapper;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.image.ImageManager;
 
 import java.util.ArrayList;
 

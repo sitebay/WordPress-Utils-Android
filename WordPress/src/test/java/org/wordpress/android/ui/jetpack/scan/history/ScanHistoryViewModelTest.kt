@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.history
+package org.sitebay.android.ui.jetpack.scan.history
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -11,18 +11,18 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.ALL
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.FIXED
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.IGNORED
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ContentUiState
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ErrorUiState.NoConnection
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ErrorUiState.RequestFailed
-import org.wordpress.android.ui.jetpack.scan.usecases.FetchScanHistoryUseCase
-import org.wordpress.android.util.analytics.ScanTracker
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.ALL
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.FIXED
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.IGNORED
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ContentUiState
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ErrorUiState.NoConnection
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ErrorUiState.RequestFailed
+import org.sitebay.android.ui.jetpack.scan.usecases.FetchScanHistoryUseCase
+import org.sitebay.android.util.analytics.ScanTracker
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

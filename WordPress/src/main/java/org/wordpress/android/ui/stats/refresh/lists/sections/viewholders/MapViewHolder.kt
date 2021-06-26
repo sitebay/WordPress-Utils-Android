@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -20,11 +20,11 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.wordpress.android.R
-import org.wordpress.android.R.attr
-import org.wordpress.android.R.color
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.MapItem
-import org.wordpress.android.util.getColorFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.R.attr
+import org.sitebay.android.R.color
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.MapItem
+import org.sitebay.android.util.getColorFromAttribute
 
 class MapViewHolder(parent: ViewGroup) : BlockListItemViewHolder(
         parent,

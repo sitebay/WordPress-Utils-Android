@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -9,17 +9,17 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.JetpackRemoteInstallFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.login.LoginMode
-import org.wordpress.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.CONNECT
-import org.wordpress.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.LOGIN
-import org.wordpress.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.MANUAL_INSTALL
-import org.wordpress.android.ui.RequestCodes.JETPACK_LOGIN
-import org.wordpress.android.ui.accounts.LoginActivity
-import org.wordpress.android.util.AppLog
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.JetpackRemoteInstallFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.login.LoginMode
+import org.sitebay.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.CONNECT
+import org.sitebay.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.LOGIN
+import org.sitebay.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.MANUAL_INSTALL
+import org.sitebay.android.ui.RequestCodes.JETPACK_LOGIN
+import org.sitebay.android.ui.accounts.LoginActivity
+import org.sitebay.android.util.AppLog
 import javax.inject.Inject
 
 class JetpackRemoteInstallFragment : Fragment(R.layout.jetpack_remote_install_fragment) {

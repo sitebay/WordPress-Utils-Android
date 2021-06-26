@@ -1,11 +1,11 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.app.Activity
 import android.content.Context
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType
 import javax.inject.Inject
 
 /**

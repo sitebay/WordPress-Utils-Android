@@ -6,7 +6,7 @@
         {
           "group": "Search Engines",
           "name": "Search Engines",
-          "icon": "https://wordpress.com/i/stats/search-engine.png",
+          "icon": "https://sitebay.com/i/stats/search-engine.png",
           "total": 480,
           "follow_data": null,
           "results": [
@@ -176,7 +176,7 @@
         {
           "group": "WordPress.com Reader",
           "name": "WordPress.com Reader",
-          "url": "https://wordpress.com/read/",
+          "url": "https://sitebay.com/read/",
           "icon": "https://secure.gravatar.com/blavatar/236c008da9dc0edb4b3464ecebb3fc1d?s=48",
           "total": 138,
           "follow_data": null,
@@ -185,65 +185,65 @@
           }
         },
         {
-          "group": "en.wordpress.com",
-          "name": "en.wordpress.com",
+          "group": "en.sitebay.com",
+          "name": "en.sitebay.com",
           "icon": "https://secure.gravatar.com/blavatar/d6777146f78461ee95d5aed3b81fb852?s=48",
           "total": 130,
           "follow_data": null,
           "results": [
             {
-              "name": "en.wordpress.com/tos/",
-              "url": "http://en.wordpress.com/tos/",
+              "name": "en.sitebay.com/tos/",
+              "url": "http://en.sitebay.com/tos/",
               "views": 41
             },
             {
-              "name": "en.wordpress.com/about/",
-              "url": "http://en.wordpress.com/about/",
+              "name": "en.sitebay.com/about/",
+              "url": "http://en.sitebay.com/about/",
               "views": 19
             },
             {
-              "name": "en.wordpress.com/complaints/",
-              "url": "http://en.wordpress.com/complaints/",
+              "name": "en.sitebay.com/complaints/",
+              "url": "http://en.sitebay.com/complaints/",
               "views": 4
             },
             {
-              "name": "en.wordpress.com/features/",
-              "url": "http://en.wordpress.com/features/",
+              "name": "en.sitebay.com/features/",
+              "url": "http://en.sitebay.com/features/",
               "views": 4
             },
             {
-              "name": "en.wordpress.com/typo/?subdomain=jadesexyx",
-              "url": "http://en.wordpress.com/typo/?subdomain=jadesexyx",
+              "name": "en.sitebay.com/typo/?subdomain=jadesexyx",
+              "url": "http://en.sitebay.com/typo/?subdomain=jadesexyx",
               "views": 4
             },
             {
-              "name": "en.wordpress.com/typo/?subdomain=giustizieredellarete",
-              "url": "http://en.wordpress.com/typo/?subdomain=giustizieredellarete",
+              "name": "en.sitebay.com/typo/?subdomain=giustizieredellarete",
+              "url": "http://en.sitebay.com/typo/?subdomain=giustizieredellarete",
               "views": 3
             },
             {
-              "name": "en.wordpress.com/typo/?subdomain=abchudasama",
-              "url": "http://en.wordpress.com/typo/?subdomain=abchudasama",
+              "name": "en.sitebay.com/typo/?subdomain=abchudasama",
+              "url": "http://en.sitebay.com/typo/?subdomain=abchudasama",
               "views": 2
             },
             {
-              "name": "en.wordpress.com/typo/?subdomain=mp3",
-              "url": "http://en.wordpress.com/typo/?subdomain=mp3",
+              "name": "en.sitebay.com/typo/?subdomain=mp3",
+              "url": "http://en.sitebay.com/typo/?subdomain=mp3",
               "views": 2
             },
             {
-              "name": "en.wordpress.com/typo/?subdomain=kried202",
-              "url": "http://en.wordpress.com/typo/?subdomain=kried202",
+              "name": "en.sitebay.com/typo/?subdomain=kried202",
+              "url": "http://en.sitebay.com/typo/?subdomain=kried202",
               "views": 2
             },
             {
-              "name": "en.wordpress.com/typo/?subdomain=madameghamrauoi",
-              "url": "http://en.wordpress.com/typo/?subdomain=madameghamrauoi",
+              "name": "en.sitebay.com/typo/?subdomain=madameghamrauoi",
+              "url": "http://en.sitebay.com/typo/?subdomain=madameghamrauoi",
               "views": 2
             },
             {
-              "name": "en.wordpress.com/typo/?subdomain=nephitestalentcenteq",
-              "url": "http://en.wordpress.com/typo/?subdomain=nephitestalentcenteq",
+              "name": "en.sitebay.com/typo/?subdomain=nephitestalentcenteq",
+              "url": "http://en.sitebay.com/typo/?subdomain=nephitestalentcenteq",
               "views": 1
             }
           ]
@@ -251,7 +251,7 @@
         {
           "group": "WordPress Dashboard",
           "name": "WordPress Dashboard",
-          "url": "https://wordpress.com/",
+          "url": "https://sitebay.com/",
           "icon": "https://secure.gravatar.com/blavatar/4cdb265b8260a6a032a1ed197e39b92d?s=48",
           "total": 129,
           "follow_data": null,
@@ -324,8 +324,8 @@
           ]
         },
         {
-          "group": "vip.wordpress.com",
-          "name": "vip.wordpress.com",
+          "group": "vip.sitebay.com",
+          "name": "vip.sitebay.com",
           "icon": "https://secure.gravatar.com/blavatar/c0a70310ea07fb03e415f74916b37b35?s=48",
           "total": 66,
           "follow_data": {
@@ -334,8 +334,8 @@
               "follow-text": "Follow",
               "following-text": "Following",
               "following-hover-text": "Unfollow",
-              "blog_domain": "vip.wordpress.com",
-              "blog_url": "http://vip.wordpress.com",
+              "blog_domain": "vip.sitebay.com",
+              "blog_url": "http://vip.sitebay.com",
               "blog_id": 2235322,
               "site_id": 2235322,
               "blog_title": "WordPress.com VIP",
@@ -345,58 +345,58 @@
           },
           "results": [
             {
-              "name": "vip.wordpress.com",
-              "url": "http://vip.wordpress.com/",
+              "name": "vip.sitebay.com",
+              "url": "http://vip.sitebay.com/",
               "views": 38
             },
             {
-              "name": "vip.wordpress.com/our-services/",
-              "url": "http://vip.wordpress.com/our-services/",
+              "name": "vip.sitebay.com/our-services/",
+              "url": "http://vip.sitebay.com/our-services/",
               "views": 7
             },
             {
-              "name": "vip.wordpress.com/contact/",
-              "url": "http://vip.wordpress.com/contact/",
+              "name": "vip.sitebay.com/contact/",
+              "url": "http://vip.sitebay.com/contact/",
               "views": 6
             },
             {
-              "name": "vip.wordpress.com/2014/11/06/code-for-the-people/",
-              "url": "http://vip.wordpress.com/2014/11/06/code-for-the-people/",
+              "name": "vip.sitebay.com/2014/11/06/code-for-the-people/",
+              "url": "http://vip.sitebay.com/2014/11/06/code-for-the-people/",
               "views": 3
             },
             {
-              "name": "vip.wordpress.com/partners/",
-              "url": "http://vip.wordpress.com/partners/",
+              "name": "vip.sitebay.com/partners/",
+              "url": "http://vip.sitebay.com/partners/",
               "views": 3
             },
             {
-              "name": "vip.wordpress.com/spotlight/",
-              "url": "http://vip.wordpress.com/spotlight/",
+              "name": "vip.sitebay.com/spotlight/",
+              "url": "http://vip.sitebay.com/spotlight/",
               "views": 2
             },
             {
-              "name": "vip.wordpress.com/why-vip/",
-              "url": "http://vip.wordpress.com/why-vip/",
+              "name": "vip.sitebay.com/why-vip/",
+              "url": "http://vip.sitebay.com/why-vip/",
               "views": 1
             },
             {
-              "name": "vip.wordpress.com/clients/",
-              "url": "http://vip.wordpress.com/clients/",
+              "name": "vip.sitebay.com/clients/",
+              "url": "http://vip.sitebay.com/clients/",
               "views": 1
             },
             {
-              "name": "vip.wordpress.com/2014/09/03/big-media-enterprise-talks-wordpresstv/",
-              "url": "http://vip.wordpress.com/2014/09/03/big-media-enterprise-talks-wordpresstv/",
+              "name": "vip.sitebay.com/2014/09/03/big-media-enterprise-talks-sitebaytv/",
+              "url": "http://vip.sitebay.com/2014/09/03/big-media-enterprise-talks-sitebaytv/",
               "views": 1
             },
             {
-              "name": "vip.wordpress.com/stats/",
-              "url": "http://vip.wordpress.com/stats/",
+              "name": "vip.sitebay.com/stats/",
+              "url": "http://vip.sitebay.com/stats/",
               "views": 1
             },
             {
-              "name": "vip.wordpress.com/events/",
-              "url": "http://vip.wordpress.com/events/",
+              "name": "vip.sitebay.com/events/",
+              "url": "http://vip.sitebay.com/events/",
               "views": 1
             }
           ]
@@ -495,40 +495,40 @@
           ]
         },
         {
-          "group": "wordpress.tv",
-          "name": "wordpress.tv",
+          "group": "sitebay.tv",
+          "name": "sitebay.tv",
           "icon": null,
           "total": 46,
           "follow_data": null,
           "results": [
             {
-              "name": "wordpress.tv",
-              "url": "http://wordpress.tv/",
+              "name": "sitebay.tv",
+              "url": "http://sitebay.tv/",
               "views": 39
             },
             {
-              "name": "wordpress.tv/2014/10/26/matt-mullenweg-state-of-the-word-2014-qa/",
-              "url": "http://wordpress.tv/2014/10/26/matt-mullenweg-state-of-the-word-2014-qa/",
+              "name": "sitebay.tv/2014/10/26/matt-mullenweg-state-of-the-word-2014-qa/",
+              "url": "http://sitebay.tv/2014/10/26/matt-mullenweg-state-of-the-word-2014-qa/",
               "views": 3
             },
             {
-              "name": "wordpress.tv/2014/11/05/luke-wroblewski-from-the-front-lines-of-multi-device-web-design/",
-              "url": "http://wordpress.tv/2014/11/05/luke-wroblewski-from-the-front-lines-of-multi-device-web-design/",
+              "name": "sitebay.tv/2014/11/05/luke-wroblewski-from-the-front-lines-of-multi-device-web-design/",
+              "url": "http://sitebay.tv/2014/11/05/luke-wroblewski-from-the-front-lines-of-multi-device-web-design/",
               "views": 1
             },
             {
-              "name": "wordpress.tv/2014/11/05/luca-sartoni-growth-tips-for-any-wordpress-site/",
-              "url": "http://wordpress.tv/2014/11/05/luca-sartoni-growth-tips-for-any-wordpress-site/",
+              "name": "sitebay.tv/2014/11/05/luca-sartoni-growth-tips-for-any-sitebay-site/",
+              "url": "http://sitebay.tv/2014/11/05/luca-sartoni-growth-tips-for-any-sitebay-site/",
               "views": 1
             },
             {
-              "name": "wordpress.tv/2014/11/05/petya-raykovska-translators/",
-              "url": "http://wordpress.tv/2014/11/05/petya-raykovska-translators/",
+              "name": "sitebay.tv/2014/11/05/petya-raykovska-translators/",
+              "url": "http://sitebay.tv/2014/11/05/petya-raykovska-translators/",
               "views": 1
             },
             {
-              "name": "wordpress.tv/2014/09/24/jonathan-daggerhart-introduction-to-wordpress-plugin-development/",
-              "url": "http://wordpress.tv/2014/09/24/jonathan-daggerhart-introduction-to-wordpress-plugin-development/",
+              "name": "sitebay.tv/2014/09/24/jonathan-daggerhart-introduction-to-sitebay-plugin-development/",
+              "url": "http://sitebay.tv/2014/09/24/jonathan-daggerhart-introduction-to-sitebay-plugin-development/",
               "views": 1
             }
           ]

@@ -1,22 +1,22 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 import javax.inject.Named
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flowOn
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Failure
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowCommentsNotAllowed
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowStateChanged
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Loading
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.UserNotAuthenticated
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Failure
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowCommentsNotAllowed
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowStateChanged
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Loading
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.UserNotAuthenticated
 
 class ReaderFollowCommentsHandler @Inject constructor(
     private val readerCommentsFollowUseCase: ReaderCommentsFollowUseCase,

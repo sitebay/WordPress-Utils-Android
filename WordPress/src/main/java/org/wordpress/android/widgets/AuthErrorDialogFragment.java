@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -9,9 +9,9 @@ import androidx.fragment.app.DialogFragment;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.ui.ActivityLauncher;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.ui.ActivityLauncher;
 
 /**
  * An alert dialog fragment for XML-RPC authentication failures

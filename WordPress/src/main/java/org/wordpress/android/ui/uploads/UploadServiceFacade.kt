@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
 import android.content.Context
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
 import java.util.ArrayList
 import javax.inject.Inject
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts;
+package org.sitebay.android.ui.accounts;
 
 import android.os.Bundle;
 
@@ -6,18 +6,18 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.CloseWithResultOk;
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites;
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowPostSignupInterstitialScreen;
-import org.wordpress.android.ui.accounts.login.LoginEpilogueFragment;
-import org.wordpress.android.ui.accounts.login.LoginEpilogueListener;
-import org.wordpress.android.ui.accounts.login.jetpack.LoginNoSitesFragment;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.CloseWithResultOk;
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites;
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowPostSignupInterstitialScreen;
+import org.sitebay.android.ui.accounts.login.LoginEpilogueFragment;
+import org.sitebay.android.ui.accounts.login.LoginEpilogueListener;
+import org.sitebay.android.ui.accounts.login.jetpack.LoginNoSitesFragment;
 
 import java.util.ArrayList;
 

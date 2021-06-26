@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import dagger.Reusable
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 import javax.inject.Inject
 
 @Reusable

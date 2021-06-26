@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
-import org.wordpress.android.fluxc.model.DynamicCardType
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.CurrentAvatarUrl
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.DomainCreditAvailable
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.DynamicCardsUpdate
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.JetpackCapabilities
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.QuickStartUpdate
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.SelectedSite
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.ShowSiteIconProgressBar
-import org.wordpress.android.ui.mysite.QuickStartRepository.QuickStartCategory
+import org.sitebay.android.fluxc.model.DynamicCardType
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.CurrentAvatarUrl
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.DomainCreditAvailable
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.DynamicCardsUpdate
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.JetpackCapabilities
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.QuickStartUpdate
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.SelectedSite
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.ShowSiteIconProgressBar
+import org.sitebay.android.ui.mysite.QuickStartRepository.QuickStartCategory
 
 data class MySiteUiState(
     val currentAvatarUrl: String? = null,

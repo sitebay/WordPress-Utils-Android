@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.whatsnew
+package org.sitebay.android.ui.whatsnew
 
 import android.text.TextUtils
 import androidx.lifecycle.LiveData
@@ -6,13 +6,13 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.launch
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ScopedViewModel
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ScopedViewModel
+import org.sitebay.android.viewmodel.SingleLiveEvent
 import javax.inject.Inject
 import javax.inject.Named
 

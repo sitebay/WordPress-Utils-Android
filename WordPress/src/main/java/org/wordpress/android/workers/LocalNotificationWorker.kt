@@ -1,4 +1,4 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import android.app.PendingIntent
 import android.content.Context
@@ -11,8 +11,8 @@ import androidx.work.ListenableWorker
 import androidx.work.WorkerFactory
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
-import org.wordpress.android.R
-import org.wordpress.android.workers.LocalNotification.Type
+import org.sitebay.android.R
+import org.sitebay.android.workers.LocalNotification.Type
 
 class LocalNotificationWorker(
     val context: Context,

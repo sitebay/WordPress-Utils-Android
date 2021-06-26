@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -6,21 +6,21 @@ import android.text.TextUtils;
 import androidx.annotation.NonNull;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.datasets.SiteSettingsTable;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.models.CategoryModel;
-import org.wordpress.android.models.JetpackSettingsModel;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.datasets.SiteSettingsTable;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.models.CategoryModel;
+import org.sitebay.android.models.JetpackSettingsModel;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -700,7 +700,7 @@ class WPComSiteSettings extends SiteSettingsInterface {
         String remoteGmtOffset = settingsObject.optString(GMT_OFFSET_KEY, "");
         // UTC-7 comes back as gmt_offset: -7, UTC+7 as just gmt_offset: 7 without the +, hence adding prefix
         String remoteGmtTimezone = remoteGmtOffset.startsWith("-") ? "UTC" + remoteGmtOffset : "UTC+" + remoteGmtOffset;
-        
+
         mRemoteSettings.timezone = !TextUtils.isEmpty(remoteTimezone) ? remoteTimezone : remoteGmtTimezone;
 
         mRemoteSettings.postsPerPage = settingsObject.optInt(POSTS_PER_PAGE_KEY, 0);

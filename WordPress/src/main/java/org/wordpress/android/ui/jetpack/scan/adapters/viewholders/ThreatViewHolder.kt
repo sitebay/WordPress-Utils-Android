@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.jetpack.scan.adapters.viewholders
+package org.sitebay.android.ui.jetpack.scan.adapters.viewholders
 
 import android.view.ViewGroup
-import org.wordpress.android.databinding.ScanListThreatItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackViewHolder
-import org.wordpress.android.ui.jetpack.scan.ScanListItemState.ThreatItemState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.setVisible
+import org.sitebay.android.databinding.ScanListThreatItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackViewHolder
+import org.sitebay.android.ui.jetpack.scan.ScanListItemState.ThreatItemState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.setVisible
 
 class ThreatViewHolder(
     private val uiHelpers: UiHelpers,

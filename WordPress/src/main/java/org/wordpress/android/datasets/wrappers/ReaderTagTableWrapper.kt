@@ -1,9 +1,9 @@
-package org.wordpress.android.datasets.wrappers
+package org.sitebay.android.datasets.wrappers
 
 import dagger.Reusable
-import org.wordpress.android.datasets.ReaderTagTable
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagList
+import org.sitebay.android.datasets.ReaderTagTable
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagList
 import javax.inject.Inject
 
 @Reusable

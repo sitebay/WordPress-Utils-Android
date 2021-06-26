@@ -40,6 +40,6 @@ WordPress è un creatore di siti web open source, il che significa che chiunque 
 
 Sia che tu abbia bisogno di un costruttore di siti web o di un semplice creatore di blog, WordPress può esserti utile. Ti fornisce meravigliosi design, potenti funzionalità e la libertà di costruire tutto ciò che desideri.
 
-WordPress per Android supporta siti ospitati personalmente che utilizzano WordPress 4.0 e versioni successive, nonché tutti i siti su WordPress.com. Proprio come WordPress, WordPress per Android è open source. Scopri di più su https://wp.me/P7jrAc-tJ.  Hai bisogno di aiuto con l'app? Inviaci un tweet su @WPAndroid oppure visita i nostri forum su https://android.forums.wordpress.org/forum/troubleshooting.
+WordPress per Android supporta siti ospitati personalmente che utilizzano WordPress 4.0 e versioni successive, nonché tutti i siti su WordPress.com. Proprio come WordPress, WordPress per Android è open source. Scopri di più su https://wp.me/P7jrAc-tJ.  Hai bisogno di aiuto con l'app? Inviaci un tweet su @WPAndroid oppure visita i nostri forum su https://android.forums.sitebay.org/forum/troubleshooting.
 
 Nota sulla privacy per utenti in California: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa.

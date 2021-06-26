@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import androidx.recyclerview.widget.DiffUtil
-import org.wordpress.android.ui.mediapicker.MediaPickerAdapterDiffCallback.Payload.COUNT_CHANGE
-import org.wordpress.android.ui.mediapicker.MediaPickerAdapterDiffCallback.Payload.SELECTION_CHANGE
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.FileItem
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.NextPageLoader
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.PhotoItem
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.VideoItem
+import org.sitebay.android.ui.mediapicker.MediaPickerAdapterDiffCallback.Payload.COUNT_CHANGE
+import org.sitebay.android.ui.mediapicker.MediaPickerAdapterDiffCallback.Payload.SELECTION_CHANGE
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.FileItem
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.NextPageLoader
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.PhotoItem
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.VideoItem
 
 class MediaPickerAdapterDiffCallback(
     private val oldItems: List<MediaPickerUiItem>,

@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
-import org.wordpress.android.R
-import org.wordpress.android.R.attr
+import org.sitebay.android.R
+import org.sitebay.android.R.attr
 
 /**
  * The category list item

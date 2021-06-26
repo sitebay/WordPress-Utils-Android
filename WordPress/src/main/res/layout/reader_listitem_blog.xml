@@ -31,7 +31,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/text_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:textAppearance="?attr/textAppearanceSubtitle1"
             tools:text="text_title" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/text_url"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
 
     </LinearLayout>
 
-    <org.wordpress.android.ui.reader.views.ReaderFollowButton
+    <org.sitebay.android.ui.reader.views.ReaderFollowButton
         android:id="@+id/follow_button"
         style="@style/Reader.Follow.Button.Icon"
         android:layout_width="wrap_content"

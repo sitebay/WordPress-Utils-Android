@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.configuration
+package org.sitebay.android.ui.stats.refresh.lists.widget.configuration
 
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.Dispatchers
@@ -6,14 +6,14 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
+import org.sitebay.android.viewmodel.Event
 
 class StatsSiteSelectionViewModelTest : BaseUnitTest() {
     @Mock private lateinit var siteStore: SiteStore
@@ -27,7 +27,7 @@ class StatsSiteSelectionViewModelTest : BaseUnitTest() {
     private val siteName = "WordPress"
     private val jetpackSiteName = "Jetpack"
     private val nonJetpackSiteName = "Non-Jetpack"
-    private val siteUrl = "wordpress.com"
+    private val siteUrl = "sitebay.com"
     private val iconUrl = "icon.jpg"
     @Before
     fun setUp() {

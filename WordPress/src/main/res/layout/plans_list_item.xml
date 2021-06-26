@@ -26,7 +26,7 @@
         android:layout_toEndOf="@id/plan_image"
         android:orientation="vertical">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/plan_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             android:textAppearance="?attr/textAppearanceSubtitle1"
             tools:text="Free Plan" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/plan_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

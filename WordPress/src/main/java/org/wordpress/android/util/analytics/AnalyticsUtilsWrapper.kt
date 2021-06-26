@@ -1,14 +1,14 @@
-package org.wordpress.android.util.analytics
+package org.sitebay.android.util.analytics
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import dagger.Reusable
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.util.UriWrapper
 import javax.inject.Inject
 
 /**

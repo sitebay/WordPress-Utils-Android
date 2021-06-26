@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.view.ViewGroup
 import android.widget.TextView
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 class HeaderItemViewHolder(parent: ViewGroup) : HistoryViewHolder(parent, R.layout.history_list_header) {
     private val header: TextView = itemView.findViewById(R.id.header_text)

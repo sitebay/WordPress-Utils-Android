@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.themes;
+package org.sitebay.android.ui.themes;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -23,26 +23,26 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.elevation.ElevationOverlayProvider;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.ThemeModel;
-import org.wordpress.android.fluxc.store.QuickStartStore;
-import org.wordpress.android.fluxc.store.ThemeStore;
-import org.wordpress.android.ui.ActionableEmptyView;
-import org.wordpress.android.ui.plans.PlansConstants;
-import org.wordpress.android.ui.quickstart.QuickStartEvent;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.QuickStartUtils;
-import org.wordpress.android.util.QuickStartUtilsWrapper;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.widgets.HeaderGridView;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.ThemeModel;
+import org.sitebay.android.fluxc.store.QuickStartStore;
+import org.sitebay.android.fluxc.store.ThemeStore;
+import org.sitebay.android.ui.ActionableEmptyView;
+import org.sitebay.android.ui.plans.PlansConstants;
+import org.sitebay.android.ui.quickstart.QuickStartEvent;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.QuickStartUtils;
+import org.sitebay.android.util.QuickStartUtilsWrapper;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.widgets.HeaderGridView;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -50,7 +50,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
+import static org.sitebay.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
 
 /**
  * A fragment display the themes on a grid view.

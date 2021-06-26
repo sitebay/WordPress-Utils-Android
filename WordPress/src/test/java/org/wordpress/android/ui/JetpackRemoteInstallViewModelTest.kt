@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
@@ -16,25 +16,25 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.JetpackAction
-import org.wordpress.android.fluxc.action.JetpackAction.INSTALL_JETPACK
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.fluxc.store.JetpackStore
-import org.wordpress.android.fluxc.store.JetpackStore.JetpackInstallError
-import org.wordpress.android.fluxc.store.JetpackStore.JetpackInstallErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.JetpackStore.OnJetpackInstalled
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData
-import org.wordpress.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.CONNECT
-import org.wordpress.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.MANUAL_INSTALL
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Error
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Installed
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Installing
-import org.wordpress.android.ui.JetpackRemoteInstallViewState.Start
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.JetpackAction
+import org.sitebay.android.fluxc.action.JetpackAction.INSTALL_JETPACK
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.fluxc.store.JetpackStore
+import org.sitebay.android.fluxc.store.JetpackStore.JetpackInstallError
+import org.sitebay.android.fluxc.store.JetpackStore.JetpackInstallErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.JetpackStore.OnJetpackInstalled
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData
+import org.sitebay.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.CONNECT
+import org.sitebay.android.ui.JetpackRemoteInstallViewModel.JetpackResultActionData.Action.MANUAL_INSTALL
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Error
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Installed
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Installing
+import org.sitebay.android.ui.JetpackRemoteInstallViewState.Start
 
 @RunWith(MockitoJUnitRunner::class)
 class JetpackRemoteInstallViewModelTest {

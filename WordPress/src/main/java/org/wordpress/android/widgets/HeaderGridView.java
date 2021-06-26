@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.content.Context;
 import android.database.DataSetObservable;

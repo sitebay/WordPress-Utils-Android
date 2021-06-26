@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors
 
 import org.assertj.core.api.Assertions
 import org.junit.Test
-import org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_CAPTURES
+import org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_CAPTURES
 
 const val blockType = "image"
 const val blockJson = """{"url":"file:///image.png","id":123,someObject:{a:1,b:2},someArray:[1,2,3]}"""

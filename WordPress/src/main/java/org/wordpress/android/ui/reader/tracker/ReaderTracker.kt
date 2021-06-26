@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.reader.tracker
+package org.sitebay.android.ui.reader.tracker
 
 import android.net.Uri
 import androidx.annotation.MainThread
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.reader.ReaderTypes.ReaderPostListType
-import org.wordpress.android.ui.reader.utils.DateProvider
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.reader.ReaderTypes.ReaderPostListType
+import org.sitebay.android.ui.reader.utils.DateProvider
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -182,7 +182,7 @@ class ReaderTracker @Inject constructor(
     }
 
     /**
-     * The [org.wordpress.android.models.ReaderBlog.fromJson] method within this model class has a logic where it
+     * The [org.sitebay.android.models.ReaderBlog.fromJson] method within this model class has a logic where it
      * checks whether the blogs 'blogId' is 0, if it is, then it checks whether the 'feedId' is not 0. If both
      * conditions are met then it assigns the 'feedId' to 'blogId'. It does that in order to keep consistency with the
      * '/read/' endpoints.

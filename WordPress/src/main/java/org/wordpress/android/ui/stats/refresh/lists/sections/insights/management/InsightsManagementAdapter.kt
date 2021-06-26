@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.management
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.management
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.DiffUtil.Callback
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightModelDiffCallback.Payload
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewHolder.HeaderViewHolder
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewHolder.InsightViewHolder
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Header
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel.Status.ADDED
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Type
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Type.HEADER
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Type.INSIGHT
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightModelDiffCallback.Payload
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewHolder.HeaderViewHolder
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewHolder.InsightViewHolder
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Header
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel.Status.ADDED
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Type
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Type.HEADER
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Type.INSIGHT
 
 class InsightsManagementAdapter : Adapter<InsightsManagementViewHolder>() {
     private var items = ArrayList<InsightListItem>()

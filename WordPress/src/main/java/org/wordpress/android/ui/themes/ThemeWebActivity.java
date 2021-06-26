@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.themes;
+package org.sitebay.android.ui.themes;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,14 +9,14 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.ThemeModel;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.WPWebViewActivity;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.ThemeModel;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.WPWebViewActivity;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UrlUtils;
 
 public class ThemeWebActivity extends WPWebViewActivity {
     public static final String IS_CURRENT_THEME = "is_current_theme";
@@ -27,9 +27,9 @@ public class ThemeWebActivity extends WPWebViewActivity {
 
     private static final String THEME_DOMAIN_PUBLIC = "pub";
     private static final String THEME_DOMAIN_PREMIUM = "premium";
-    private static final String THEME_URL_PREVIEW = "https://wordpress.com/customize/%s?theme=%s/%s&hide_close=true";
-    private static final String THEME_URL_SUPPORT = "https://wordpress.com/theme/%s/support/?preview=true&iframe=true";
-    private static final String THEME_URL_DETAILS = "https://wordpress.com/theme/%s/?preview=true&iframe=true";
+    private static final String THEME_URL_PREVIEW = "https://sitebay.com/customize/%s?theme=%s/%s&hide_close=true";
+    private static final String THEME_URL_SUPPORT = "https://sitebay.com/theme/%s/support/?preview=true&iframe=true";
+    private static final String THEME_URL_DETAILS = "https://sitebay.com/theme/%s/?preview=true&iframe=true";
     private static final String THEME_URL_DEMO_PARAMETER = "demo=true&iframe=true&theme_preview=true";
 
     enum ThemeWebActivityType {
@@ -64,7 +64,7 @@ public class ThemeWebActivity extends WPWebViewActivity {
             // Do not open the Customizer with the in-app browser.
             // Customizer may need to access local files (mostly pictures) on the device storage,
             // and our internal webview doesn't handle this feature yet.
-            // Ref: https://github.com/wordpress-mobile/WordPress-Android/issues/4934
+            // Ref: https://github.com/sitebay-mobile/WordPress-Android/issues/4934
             ActivityLauncher.openUrlExternal(activity, url);
         } else {
             openWPCOMURL(activity, url, theme, site);

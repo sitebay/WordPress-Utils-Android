@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
 import android.app.Dialog
 import android.os.Bundle
@@ -7,11 +7,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStoreOwner
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.people.PeopleInviteDialogFragment.DialogMode.DISABLE_INVITE_LINKS_CONFIRMATION
-import org.wordpress.android.ui.people.PeopleInviteDialogFragment.DialogMode.INVITE_LINKS_ROLE_SELECTION
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.people.PeopleInviteDialogFragment.DialogMode.DISABLE_INVITE_LINKS_CONFIRMATION
+import org.sitebay.android.ui.people.PeopleInviteDialogFragment.DialogMode.INVITE_LINKS_ROLE_SELECTION
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 /**

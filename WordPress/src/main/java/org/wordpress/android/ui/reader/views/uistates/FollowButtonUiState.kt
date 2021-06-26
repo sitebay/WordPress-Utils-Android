@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views.uistates
+package org.sitebay.android.ui.reader.views.uistates
 
 data class FollowButtonUiState(
     val onFollowButtonClicked: (() -> Unit)?,

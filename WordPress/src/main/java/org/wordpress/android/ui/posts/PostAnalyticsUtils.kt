@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 private const val VIA = "via"
 private const val POST_SETTINGS = "settings"

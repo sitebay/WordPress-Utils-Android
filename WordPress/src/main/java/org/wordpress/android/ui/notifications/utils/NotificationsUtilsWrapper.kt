@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.notifications.utils
+package org.sitebay.android.ui.notifications.utils
 
 import android.text.SpannableStringBuilder
 import android.widget.TextView
 import org.json.JSONObject
-import org.wordpress.android.fluxc.tools.FormattableContent
-import org.wordpress.android.fluxc.tools.FormattableContentMapper
-import org.wordpress.android.fluxc.tools.FormattableRange
-import org.wordpress.android.ui.notifications.blocks.NoteBlock
+import org.sitebay.android.fluxc.tools.FormattableContent
+import org.sitebay.android.fluxc.tools.FormattableContentMapper
+import org.sitebay.android.fluxc.tools.FormattableRange
+import org.sitebay.android.ui.notifications.blocks.NoteBlock
 import javax.inject.Inject
 import javax.inject.Singleton
 

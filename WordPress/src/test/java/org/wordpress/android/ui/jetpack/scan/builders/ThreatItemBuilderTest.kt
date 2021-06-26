@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.builders
+package org.sitebay.android.ui.jetpack.scan.builders
 
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.mock
@@ -9,24 +9,24 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.GenericThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus.CURRENT
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus.FIXED
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus.IGNORED
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel.Extension.ExtensionType
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.scan.TEST_FILE_NAME
-import org.wordpress.android.ui.jetpack.scan.TEST_SIGNATURE
-import org.wordpress.android.ui.jetpack.scan.TEST_VULNERABLE_THREAT_SLUG
-import org.wordpress.android.ui.jetpack.scan.TEST_VULNERABLE_THREAT_VERSION
-import org.wordpress.android.ui.jetpack.scan.ThreatTestData
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.DateFormatWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.GenericThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus.CURRENT
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus.FIXED
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus.IGNORED
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel.Extension.ExtensionType
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.scan.TEST_FILE_NAME
+import org.sitebay.android.ui.jetpack.scan.TEST_SIGNATURE
+import org.sitebay.android.ui.jetpack.scan.TEST_VULNERABLE_THREAT_SLUG
+import org.sitebay.android.ui.jetpack.scan.TEST_VULNERABLE_THREAT_VERSION
+import org.sitebay.android.ui.jetpack.scan.ThreatTestData
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.DateFormatWrapper
 import java.text.DateFormat
 
 private const val TEST_FIXED_ON_DATE = "2 January, 2020"

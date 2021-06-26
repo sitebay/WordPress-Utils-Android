@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.net.Uri
 import dagger.Reusable
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.posts.editor.EditorTracker
-import org.wordpress.android.util.MediaUtilsWrapper
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.posts.editor.EditorTracker
+import org.sitebay.android.util.MediaUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -48,7 +48,7 @@ class OptimizeMediaUseCase @Inject constructor(
         /**
          * If the user enabled the optimize images feature, the image gets rotated in mediaUtils.getOptimizedMedia.
          * If the user haven't enabled it, WPCom server takes care of rotating the image, however we need to rotate it
-         * manually on self-hosted sites. (https://github.com/wordpress-mobile/WordPress-Android/issues/5737)
+         * manually on self-hosted sites. (https://github.com/sitebay-mobile/WordPress-Android/issues/5737)
          */
         val updatedMediaUri: Uri = mediaUtilsWrapper.getOptimizedMedia(path, isVideo)
                 ?: if (!site.isWPCom) {

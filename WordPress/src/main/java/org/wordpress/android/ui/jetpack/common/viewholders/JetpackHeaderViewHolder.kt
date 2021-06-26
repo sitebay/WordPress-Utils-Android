@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.jetpack.common.viewholders
+package org.sitebay.android.ui.jetpack.common.viewholders
 
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
-import org.wordpress.android.databinding.JetpackListHeaderItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState.HeaderState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.getColorResIdFromAttribute
+import org.sitebay.android.databinding.JetpackListHeaderItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState.HeaderState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.getColorResIdFromAttribute
 
 class JetpackHeaderViewHolder(
     private val uiHelpers: UiHelpers,

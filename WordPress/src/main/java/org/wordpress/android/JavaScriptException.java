@@ -1,4 +1,4 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
 public class JavaScriptException extends Throwable {
     String mFile;

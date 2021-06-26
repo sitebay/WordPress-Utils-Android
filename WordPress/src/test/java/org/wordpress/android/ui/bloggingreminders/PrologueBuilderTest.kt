@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.HighEmphasisText
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Illustration
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Title
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersViewModel.UiState.PrimaryButton
-import org.wordpress.android.ui.utils.ListItemInteraction.Companion
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.HighEmphasisText
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Illustration
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Title
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersViewModel.UiState.PrimaryButton
+import org.sitebay.android.ui.utils.ListItemInteraction.Companion
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 @RunWith(MockitoJUnitRunner::class)
 class PrologueBuilderTest {

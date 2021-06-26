@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,12 +8,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.InsightsLatestPostModel
-import org.wordpress.android.ui.stats.StatsUtilsWrapper
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.InsightsLatestPostModel
+import org.sitebay.android.ui.stats.StatsUtilsWrapper
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Date
 
 @RunWith(MockitoJUnitRunner::class)

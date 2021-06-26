@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mlp
+package org.sitebay.android.ui.mlp
 
 import android.content.Context
 import android.os.Bundle
@@ -10,25 +10,25 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ModalLayoutPickerFragmentBinding
-import org.wordpress.android.ui.FullscreenBottomSheetDialogFragment
-import org.wordpress.android.ui.PreviewModeSelectorPopup
-import org.wordpress.android.ui.layoutpicker.ButtonsUiState
-import org.wordpress.android.ui.layoutpicker.CategoriesAdapter
-import org.wordpress.android.ui.layoutpicker.LayoutCategoryAdapter
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState.Content
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState.Error
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState.Loading
-import org.wordpress.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Dismiss
-import org.wordpress.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Show
-import org.wordpress.android.ui.mlp.BlockLayoutPreviewFragment.Companion.BLOCK_LAYOUT_PREVIEW_TAG
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.util.setVisible
-import org.wordpress.android.viewmodel.mlp.ModalLayoutPickerViewModel
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ModalLayoutPickerFragmentBinding
+import org.sitebay.android.ui.FullscreenBottomSheetDialogFragment
+import org.sitebay.android.ui.PreviewModeSelectorPopup
+import org.sitebay.android.ui.layoutpicker.ButtonsUiState
+import org.sitebay.android.ui.layoutpicker.CategoriesAdapter
+import org.sitebay.android.ui.layoutpicker.LayoutCategoryAdapter
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState.Content
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState.Error
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState.Loading
+import org.sitebay.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Dismiss
+import org.sitebay.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Show
+import org.sitebay.android.ui.mlp.BlockLayoutPreviewFragment.Companion.BLOCK_LAYOUT_PREVIEW_TAG
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.util.setVisible
+import org.sitebay.android.viewmodel.mlp.ModalLayoutPickerViewModel
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 /**

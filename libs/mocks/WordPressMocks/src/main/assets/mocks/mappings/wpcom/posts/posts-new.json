@@ -30,7 +30,7 @@
             "date": "2019-03-12T15:00:53+00:00",
             "modified": "2019-03-12T15:00:53+00:00",
             "title": "{{jsonPath request.body '$.title'}}",
-            "URL": "https://lowtestingmobile.wordpress.com/2019/03/12/title-33/",
+            "URL": "https://lowtestingmobile.sitebay.com/2019/03/12/title-33/",
             "short_URL": "https://e/paIC9Y-1r",
             "content": "<!-- wp:paragraph -->\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue efficitur leo eget porta.<\/p>\n<!-- \/wp:paragraph -->",
             "excerpt": "",
@@ -73,9 +73,9 @@
                         "parent": 0,
                         "meta": {
                             "links": {
-                                "self": "https://ic-api.wordpress.com/api/sites/106707880/categories/slug:uncategorized",
-                                "help": "https://ic-api.wordpress.com/rest/v1.2/sites/106707880/categories/slug:uncategorized/help",
-                                "site": "https://ic-api.wordpress.com/rest/v1.2/sites/106707880"
+                                "self": "https://ic-api.sitebay.com/api/sites/106707880/categories/slug:uncategorized",
+                                "help": "https://ic-api.sitebay.com/rest/v1.2/sites/106707880/categories/slug:uncategorized/help",
+                                "site": "https://ic-api.sitebay.com/rest/v1.2/sites/106707880"
                             }
                         }
                     }
@@ -95,9 +95,9 @@
                     "parent": 0,
                     "meta": {
                         "links": {
-                            "self": "https://ic-api.wordpress.com/api/sites/106707880/categories/slug:uncategorized",
-                            "help": "https://ic-api.wordpress.com/rest/v1.2/sites/106707880/categories/slug:uncategorized/help",
-                            "site": "https://ic-api.wordpress.com/rest/v1.2/sites/106707880"
+                            "self": "https://ic-api.sitebay.com/api/sites/106707880/categories/slug:uncategorized",
+                            "help": "https://ic-api.sitebay.com/rest/v1.2/sites/106707880/categories/slug:uncategorized/help",
+                            "site": "https://ic-api.sitebay.com/rest/v1.2/sites/106707880"
                         }
                     }
                 }
@@ -113,11 +113,11 @@
             ],
             "meta": {
                 "links": {
-                    "self": "https://ic-api.wordpress.com/api/sites/106707880/posts/5",
-                    "help": "https://ic-api.wordpress.com/rest/v1.2/sites/106707880/posts/5/help",
-                    "site": "https://ic-api.wordpress.com/rest/v1.2/sites/106707880",
-                    "replies": "https://ic-api.wordpress.com/api/sites/106707880/posts/5/replies/",
-                    "likes": "https://ic-api.wordpress.com/api/sites/106707880/posts/5/likes/"
+                    "self": "https://ic-api.sitebay.com/api/sites/106707880/posts/5",
+                    "help": "https://ic-api.sitebay.com/rest/v1.2/sites/106707880/posts/5/help",
+                    "site": "https://ic-api.sitebay.com/rest/v1.2/sites/106707880",
+                    "replies": "https://ic-api.sitebay.com/api/sites/106707880/posts/5/replies/",
+                    "likes": "https://ic-api.sitebay.com/api/sites/106707880/posts/5/likes/"
                 }
             },
             "capabilities": {

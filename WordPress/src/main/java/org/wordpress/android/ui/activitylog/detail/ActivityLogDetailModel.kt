@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.activitylog.detail
+package org.sitebay.android.ui.activitylog.detail
 
-import org.wordpress.android.fluxc.tools.FormattableContent
+import org.sitebay.android.fluxc.tools.FormattableContent
 
 data class ActivityLogDetailModel(
     val activityID: String,

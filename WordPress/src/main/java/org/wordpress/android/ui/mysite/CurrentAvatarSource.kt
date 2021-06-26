@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineScope
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.mysite.MySiteSource.SiteIndependentSource
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.CurrentAvatarUrl
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.mysite.MySiteSource.SiteIndependentSource
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.CurrentAvatarUrl
 import javax.inject.Inject
 import javax.inject.Singleton
 

@@ -1,13 +1,13 @@
-package org.wordpress.android.util.analytics
+package org.sitebay.android.util.analytics
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Assert
 import org.junit.Test
 import org.mockito.Mockito
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.util.SiteUtils
-import org.wordpress.android.util.analytics.AnalyticsUtils.AnalyticsSiteType
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.util.SiteUtils
+import org.sitebay.android.util.analytics.AnalyticsUtils.AnalyticsSiteType
 import java.util.ArrayList
 
 class AnalyticsUtilsTest {

@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config.manual
+package org.sitebay.android.util.config.manual
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,11 +9,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.DISABLED
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.ENABLED
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.UNKNOWN
+import org.sitebay.android.R
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.DISABLED
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.ENABLED
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.UNKNOWN
 
 sealed class FeatureItemViewHolder(
     parent: ViewGroup,

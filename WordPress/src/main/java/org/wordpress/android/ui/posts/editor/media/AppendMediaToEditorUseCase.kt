@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.FluxCUtilsWrapper
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.FluxCUtilsWrapper
 import javax.inject.Inject
 
 /**

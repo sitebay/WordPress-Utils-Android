@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import android.content.Context;
 import android.net.Uri;
@@ -9,21 +9,21 @@ import androidx.annotation.NonNull;
 
 import org.apache.commons.text.StringEscapeUtils;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.datasets.ReaderCommentTable;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.FilteredRecyclerView;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.services.update.TagUpdateClientUtilsProvider;
-import org.wordpress.android.util.FormatUtils;
-import org.wordpress.android.util.LocaleManager;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.datasets.ReaderCommentTable;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.FilteredRecyclerView;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.services.update.TagUpdateClientUtilsProvider;
+import org.sitebay.android.util.FormatUtils;
+import org.sitebay.android.util.LocaleManager;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.UrlUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -203,11 +203,11 @@ public class ReaderUtils {
      * native blog preview for that blog
      */
     public static String makeBlogPreviewUrl(long blogId) {
-        return "wordpress://blogpreview?blogId=" + Long.toString(blogId);
+        return "sitebay://blogpreview?blogId=" + Long.toString(blogId);
     }
 
     public static boolean isBlogPreviewUrl(String url) {
-        return (url != null && url.startsWith("wordpress://blogpreview"));
+        return (url != null && url.startsWith("sitebay://blogpreview"));
     }
 
     public static long getBlogIdFromBlogPreviewUrl(String url) {
@@ -504,7 +504,7 @@ public class ReaderUtils {
     }
 
     public static String getReportPostUrl(String blogUrl) {
-        return "https://wordpress.com/abuse/?report_url=" + blogUrl;
+        return "https://sitebay.com/abuse/?report_url=" + blogUrl;
     }
 
     public static boolean postExists(long blogId, long postId) {

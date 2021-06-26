@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.actions;
+package org.sitebay.android.ui.reader.actions;
 
 import android.os.Handler;
 import android.text.TextUtils;
@@ -10,38 +10,38 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderLikeTable;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.datasets.ReaderUserTable;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderPostList;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.models.ReaderUserIdList;
-import org.wordpress.android.models.ReaderUserList;
-import org.wordpress.android.networking.RestClientUtils;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener;
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResult;
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResultListener;
-import org.wordpress.android.ui.reader.models.ReaderSimplePost;
-import org.wordpress.android.ui.reader.models.ReaderSimplePostList;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.VolleyUtils;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderLikeTable;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.datasets.ReaderUserTable;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderPostList;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.models.ReaderUserIdList;
+import org.sitebay.android.models.ReaderUserList;
+import org.sitebay.android.networking.RestClientUtils;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener;
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResult;
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResultListener;
+import org.sitebay.android.ui.reader.models.ReaderSimplePost;
+import org.sitebay.android.ui.reader.models.ReaderSimplePostList;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.VolleyUtils;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -49,7 +49,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class ReaderPostActions {
-    private static final String TRACKING_REFERRER = "https://wordpress.com/";
+    private static final String TRACKING_REFERRER = "https://sitebay.com/";
     private static final Random RANDOM = new Random();
 
     private static final int NUM_RELATED_POSTS_TO_REQUEST = 2;
@@ -106,7 +106,7 @@ public class ReaderPostActions {
             path += "mine/delete";
         }
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 AppLog.d(T.READER, String.format("post %s succeeded", actionName));
@@ -145,7 +145,7 @@ public class ReaderPostActions {
                                   final UpdateResultListener resultListener) {
         String path = "read/sites/" + localPost.blogId + "/posts/" + localPost.postId + "/?meta=site,likes";
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 handleUpdatePostResponse(localPost, jsonObject, resultListener);
@@ -200,7 +200,7 @@ public class ReaderPostActions {
                     // copy changes over to the local post - this is done instead of simply overwriting
                     // the local post with the server post because the server post was retrieved using
                     // the read/sites/$siteId/posts/$postId endpoint which is missing some information
-                    // https://github.com/wordpress-mobile/WordPress-Android/issues/3164
+                    // https://github.com/sitebay-mobile/WordPress-Android/issues/3164
                     localPost.numReplies = serverPost.numReplies;
                     localPost.numLikes = serverPost.numLikes;
                     localPost.isFollowedByCurrentUser = serverPost.isFollowedByCurrentUser;
@@ -289,7 +289,7 @@ public class ReaderPostActions {
 
     private static void requestPost(RestClientUtils restClientUtils, String path, final ReaderActions
             .OnRequestListener<String> requestListener) {
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 ReaderPost post = ReaderPost.fromJson(jsonObject);

@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.fluxc.store.StatsStore.PostDetailType
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.stats.StatsConstants.ITEM_TYPE_ATTACHMENT
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewAttachment
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewPost
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.utils.ListItemInteraction.Companion
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ReferredItem
-import org.wordpress.android.ui.stats.refresh.utils.StatsPostProvider
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.fluxc.store.StatsStore.PostDetailType
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.stats.StatsConstants.ITEM_TYPE_ATTACHMENT
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewAttachment
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewPost
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.utils.ListItemInteraction.Companion
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ReferredItem
+import org.sitebay.android.ui.stats.refresh.utils.StatsPostProvider
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 import javax.inject.Inject
 import javax.inject.Named
 

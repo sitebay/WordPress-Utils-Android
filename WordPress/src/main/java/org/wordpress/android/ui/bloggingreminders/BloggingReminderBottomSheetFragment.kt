@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import android.content.Context
 import android.os.Bundle
@@ -12,10 +12,10 @@ import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.RecyclerViewPrimaryButtonBottomSheetBinding
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.RecyclerViewPrimaryButtonBottomSheetBinding
+import org.sitebay.android.ui.utils.UiHelpers
 import javax.inject.Inject
 
 class BloggingReminderBottomSheetFragment : BottomSheetDialogFragment() {

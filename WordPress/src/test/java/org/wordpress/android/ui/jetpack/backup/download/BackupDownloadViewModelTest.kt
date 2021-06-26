@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.backup.download
+package org.sitebay.android.ui.jetpack.backup.download
 
 import android.os.Bundle
 import com.nhaarman.mockitokotlin2.any
@@ -13,41 +13,41 @@ import org.junit.Test
 import org.mockito.Mock
 import org.mockito.Mockito.clearInvocations
 import org.mockito.Mockito.verify
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.DownloadFile
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.ShareLink
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadUiState.ContentState.CompleteState
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadUiState.ContentState.DetailsState
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadUiState.ContentState.ProgressState
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadUiState.ErrorState
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCanceled
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCompleted
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadInProgress
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.CompleteToolbarState
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.DetailsToolbarState
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.ErrorToolbarState
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.ProgressToolbarState
-import org.wordpress.android.ui.jetpack.backup.download.builders.BackupDownloadStateListItemBuilder
-import org.wordpress.android.ui.jetpack.backup.download.usecases.GetBackupDownloadStatusUseCase
-import org.wordpress.android.ui.jetpack.backup.download.usecases.PostBackupDownloadUseCase
-import org.wordpress.android.ui.jetpack.common.CheckboxSpannableLabel
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState.ActionButtonState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState.CheckboxState
-import org.wordpress.android.ui.jetpack.common.providers.JetpackAvailableItemsProvider
-import org.wordpress.android.ui.jetpack.usecases.GetActivityLogItemUseCase
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.wizard.WizardManager
-import org.wordpress.android.util.wizard.WizardNavigationTarget
-import org.wordpress.android.viewmodel.ResourceProvider
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.DownloadFile
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.ShareLink
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadUiState.ContentState.CompleteState
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadUiState.ContentState.DetailsState
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadUiState.ContentState.ProgressState
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadUiState.ErrorState
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCanceled
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCompleted
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadInProgress
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.CompleteToolbarState
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.DetailsToolbarState
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.ErrorToolbarState
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.ProgressToolbarState
+import org.sitebay.android.ui.jetpack.backup.download.builders.BackupDownloadStateListItemBuilder
+import org.sitebay.android.ui.jetpack.backup.download.usecases.GetBackupDownloadStatusUseCase
+import org.sitebay.android.ui.jetpack.backup.download.usecases.PostBackupDownloadUseCase
+import org.sitebay.android.ui.jetpack.common.CheckboxSpannableLabel
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState.ActionButtonState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState.CheckboxState
+import org.sitebay.android.ui.jetpack.common.providers.JetpackAvailableItemsProvider
+import org.sitebay.android.ui.jetpack.usecases.GetActivityLogItemUseCase
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.wizard.WizardManager
+import org.sitebay.android.util.wizard.WizardNavigationTarget
+import org.sitebay.android.viewmodel.ResourceProvider
+import org.sitebay.android.viewmodel.SingleLiveEvent
 import java.util.Date
 
 @InternalCoroutinesApi
@@ -264,7 +264,7 @@ class BackupDownloadViewModelTest : BaseUnitTest() {
     @Test
     fun `given in complete step, when onBackPressed, then invokes wizard finished with BackupDownloadCompleted`() {
         val wizardFinishedObserver = initObservers().wizardFinishedObserver
-        startViewModelForComplete(backupDownloadState = backupDownloadState.copy(url = "www.wordpress.com"))
+        startViewModelForComplete(backupDownloadState = backupDownloadState.copy(url = "www.sitebay.com"))
         clearInvocations(wizardManager)
 
         whenever(wizardManager.currentStep).thenReturn(BackupDownloadStep.COMPLETE.id)
@@ -341,7 +341,7 @@ class BackupDownloadViewModelTest : BaseUnitTest() {
     fun `given showStep for complete is invoked, then state reflects complete`() = test {
         val uiStates = initObservers().uiStates
 
-        startViewModelForComplete(backupDownloadState = backupDownloadState.copy(url = "www.wordpress.com"))
+        startViewModelForComplete(backupDownloadState = backupDownloadState.copy(url = "www.sitebay.com"))
         viewModel.showStep(WizardNavigationTarget(BackupDownloadStep.COMPLETE, backupDownloadState))
 
         assertThat(uiStates.last()).isInstanceOf(CompleteState::class.java)

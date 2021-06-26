@@ -1,9 +1,9 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import android.content.Context
 import android.content.Intent
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.fluxc.store.SiteStore
 import javax.inject.Inject
 
 class CreateSiteNotificationHandler @Inject constructor(

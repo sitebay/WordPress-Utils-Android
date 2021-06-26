@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.mysite.dynamiccards
+package org.sitebay.android.ui.mysite.dynamiccards
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.fluxc.model.DynamicCardType
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Hide
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Pin
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Remove
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Unpin
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.fluxc.model.DynamicCardType
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Hide
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Pin
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Remove
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Unpin
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 
 class DynamicCardMenuViewModel

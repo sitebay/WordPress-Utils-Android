@@ -37,7 +37,7 @@
                 android:layout_toEndOf="@id/person_avatar"
                 android:orientation="vertical">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/person_display_name"
                     style="@style/PersonTextView"
                     android:fontFamily="sans-serif-light"
@@ -46,7 +46,7 @@
                     android:textStyle="bold"
                     tools:text="display_name" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/person_username"
                     style="@style/PersonTextView"
                     android:textColor="?attr/colorOnPrimarySurface"
@@ -69,7 +69,7 @@
         android:paddingStart="@dimen/margin_extra_large"
         android:paddingEnd="@dimen/margin_extra_large">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/person_role_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             android:textAppearance="?attr/textAppearanceBody1"
             tools:text="@string/role" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/person_role"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
         android:paddingStart="@dimen/margin_extra_large"
         android:paddingEnd="@dimen/margin_extra_large">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/subscribed_date_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
             android:textAppearance="?attr/textAppearanceBody1"
             tools:text="@string/title_follower" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/subscribed_date_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,23 +1,23 @@
-package org.wordpress.android.ui.jetpack.common.adapters
+package org.sitebay.android.ui.jetpack.common.adapters
 
 import android.view.ViewGroup
 import androidx.annotation.MainThread
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.ViewType
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackBackupRestoreBulletViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackBackupRestoreFootnoteViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackBackupRestoreSubHeaderViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackButtonViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackCheckboxViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackDescriptionViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackHeaderViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackIconViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackProgressViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackViewHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.ViewType
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackBackupRestoreBulletViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackBackupRestoreFootnoteViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackBackupRestoreSubHeaderViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackButtonViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackCheckboxViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackDescriptionViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackHeaderViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackIconViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackProgressViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackViewHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
 
 class JetpackBackupRestoreAdapter(
     private val imageManager: ImageManager,

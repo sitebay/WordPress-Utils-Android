@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.test.InstrumentationTestCase;
 
@@ -8,16 +8,16 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 public class WPUrlUtilsTest extends InstrumentationTestCase {
-    private static final String WPCOM_ADDRESS_1 = "http://wordpress.com/xmlrpc.php";
-    private static final String WPCOM_ADDRESS_2 = "http://wordpress.com#.b.com/test";
-    private static final String WPCOM_ADDRESS_3 = "http://wordpress.com/xmlrpc.php";
-    private static final String WPCOM_ADDRESS_4 = "https://wordpress.com";
-    private static final String WPCOM_ADDRESS_5 = "https://wordpress.com/test#test";
-    private static final String WPCOM_ADDRESS_6 = "https://developer.wordpress.com";
+    private static final String WPCOM_ADDRESS_1 = "http://sitebay.com/xmlrpc.php";
+    private static final String WPCOM_ADDRESS_2 = "http://sitebay.com#.b.com/test";
+    private static final String WPCOM_ADDRESS_3 = "http://sitebay.com/xmlrpc.php";
+    private static final String WPCOM_ADDRESS_4 = "https://sitebay.com";
+    private static final String WPCOM_ADDRESS_5 = "https://sitebay.com/test#test";
+    private static final String WPCOM_ADDRESS_6 = "https://developer.sitebay.com";
     private static final String NOT_WPCOM_ADDRESS_1 =
-            "http://i2.wp.com.eritreo.it#.files.wordpress.com/testpicture.gif?strip=all&quality=100&resize=1024,768";
-    private static final String NOT_WPCOM_ADDRESS_2 = "wordpress.com";
-    private static final String NOT_WPCOM_ADDRESS_3 = "https://thisisnotwordpress.com";
+            "http://i2.wp.com.eritreo.it#.files.sitebay.com/testpicture.gif?strip=all&quality=100&resize=1024,768";
+    private static final String NOT_WPCOM_ADDRESS_2 = "sitebay.com";
+    private static final String NOT_WPCOM_ADDRESS_3 = "https://thisisnotsitebay.com";
 
 
     public void testSafeToAddAuthToken1() {

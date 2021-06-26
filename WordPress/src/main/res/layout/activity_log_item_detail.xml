@@ -43,7 +43,7 @@
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/activityActorName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                     android:textAppearance="?attr/textAppearanceSubtitle2"
                     tools:text="John Smith" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/activityActorRole"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                 android:gravity="end"
                 android:orientation="vertical">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/activityCreatedDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                     tools:ignore="RelativeOverlap"
                     tools:text="January 8, 2018" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/activityCreatedTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             android:layout_marginTop="32dp"
             android:orientation="vertical">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/activityType"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -107,7 +107,7 @@
                 android:textColor="?attr/wpColorOnSurfaceMedium"
                 tools:text="Plugin autoupdated" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/activityMessage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -137,7 +137,7 @@
                 android:src="@drawable/ic_history_white_24dp"
                 app:tint="?attr/colorPrimary" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -167,7 +167,7 @@
                 android:src="@drawable/ic_download_white_24dp"
                 app:tint="?attr/colorPrimary" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"

@@ -170,8 +170,8 @@ Language: zh_TW
     <string name="backup_item_roots">WordPress 根目錄</string>
     <string name="backup_download_details_choose_items_header">包含在這次下載中的項目</string>
     <string name="gutenberg_native_uploading">上傳中…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">可重複使用區塊無法在 iOS 版 WordPress 中編輯</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">可重複使用區塊無法在 Android 版 WordPress 中編輯</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">可重複使用區塊無法在 iOS 版 WordPress 中編輯</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">可重複使用區塊無法在 Android 版 WordPress 中編輯</string>
     <string name="gutenberg_native_replace_file">取代檔案</string>
     <string name="gutenberg_native_replace_audio">替換音訊</string>
     <string name="gutenberg_native_problem_opening_the_audio">開啟音訊時發生問題</string>
@@ -493,7 +493,7 @@ Language: zh_TW
     <string name="media_picker_soft_ask_permissions_denied">%1$s 存取你的相片時遭拒絕。 若要解決此問題，請編輯存取權限並開啟 %2$s 和 %3$s。</string>
     <string name="media_insert_failed">媒體插入失敗。</string>
     <string name="media_insert_failed_with_reason">媒體插入失敗：%s</string>
-    <string name="photo_picker_wordpress_media_library">從 WordPress 媒體庫選擇</string>
+    <string name="photo_picker_sitebay_media_library">從 WordPress 媒體庫選擇</string>
     <string name="reader_label_toolbar_back">返回</string>
     <string name="reader_discover_empty_button_text">開始使用</string>
     <string name="reader_post_details_header_by_author_name">發表者：</string>
@@ -633,7 +633,7 @@ Language: zh_TW
     <string name="login_magic_links_label">我們會透過電子郵件傳送連結給你，讓你不必輸入密碼就能立刻登入。</string>
     <string name="check_email">檢查電子郵件</string>
     <string name="get_started">開始使用</string>
-    <string name="enter_email_to_continue_wordpress_com">請輸入你的電子郵件地址以登入或建立 WordPress.com 帳號。</string>
+    <string name="enter_email_to_continue_sitebay_com">請輸入你的電子郵件地址以登入或建立 WordPress.com 帳號。</string>
     <string name="or_type_your_password">或輸入你的密碼</string>
     <string name="create_account">建立帳號</string>
     <string name="send_link_by_email">以電子郵件傳送連結</string>
@@ -915,7 +915,7 @@ Language: zh_TW
     <string name="site_cannot_be_loaded">目前無法載入你的網站資料。請稍後再試一次</string>
     <string name="reader_filter_tags_title">主題</string>
     <string name="suffix_1_000">%sK</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress 媒體庫</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress 媒體庫</string>
     <string name="gutenberg_native_ungroup">取消群組</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">點選即可隱藏鍵盤</string>
     <string name="gutenberg_native_tap_here_to_show_help">點選此處顯示說明</string>
@@ -1367,7 +1367,7 @@ Language: zh_TW
     <string name="stats_follower_label">關注者</string>
     <string name="stats_followers_count_message">%1$s 關注者總數：%2$s</string>
     <string name="stats_followers_email">電子郵件</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">管理洞察報告</string>
     <string name="stats_empty_insights_title">尚未新增任何洞察報告</string>
     <string name="stats_no_data_yet">尚無資料</string>
@@ -1815,7 +1815,7 @@ Language: zh_TW
     <string name="plugin_external_link_icon_content_description">外部連結</string>
     <string name="plugin_icon_content_description">外掛程式圖示</string>
     <string name="plugin_home_page">外掛程式首頁</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org 外掛程式頁面</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org 外掛程式頁面</string>
     <string name="plugin_remove_dialog_message">確定要將 %1$s 從 %2$s 移除？\n\n這將會停用外掛程式，並刪除所有相關的檔案及資料。</string>
     <string name="plugin_remove_dialog_title">移除外掛程式</string>
     <string name="plugin_remove_progress_dialog_message">正在移除 %s…</string>
@@ -1976,7 +1976,7 @@ Language: zh_TW
     <string name="login_text_otp">請改用簡訊傳送驗證碼給我</string>
     <string name="enter_verification_code">快完成了！請輸入驗證器應用程式上的驗證碼。</string>
     <string name="next">下一篇</string>
-    <string name="enter_email_wordpress_com">使用電子郵件地址登入 WordPress.com，即可管理你的所有 WordPress 網站。</string>
+    <string name="enter_email_sitebay_com">使用電子郵件地址登入 WordPress.com，即可管理你的所有 WordPress 網站。</string>
     <string name="image_optimization_promo_desc">圖片最佳化會壓縮圖片，以加快上傳速度。\n\n你可以隨時在網站設定變更此設定。</string>
     <string name="image_optimization_promo_title">開啟圖片最佳化？</string>
     <string name="leave_off">保持關閉</string>
@@ -2534,8 +2534,8 @@ Language: zh_TW
     <string name="stats_insights_today">本日統計</string>
     <string name="stats_insights_all_time">有史以來的文章數、瀏覽次數與訪客數</string>
     <string name="stats_insights">Insights</string>
-    <string name="me_disconnect_from_wordpress_com">中斷與 WordPress.com 的連線</string>
-    <string name="me_connect_to_wordpress_com">連線 WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">中斷與 WordPress.com 的連線</string>
+    <string name="me_connect_to_sitebay_com">連線 WordPress.com</string>
     <string name="me_btn_login_logout">登入/登出</string>
     <string name="me_btn_support">說明與客戶服務</string>
     <string name="site_picker_cant_hide_current_site">由於「%s」是目前的網站，因此並未隱藏</string>
@@ -2704,7 +2704,7 @@ Language: zh_TW
     <string name="privacy_policy">隱私權政策</string>
     <string name="local_changes">本機變更</string>
     <string name="image_settings">圖片設定</string>
-    <string name="wordpress_blog">WordPress 網誌</string>
+    <string name="sitebay_blog">WordPress 網誌</string>
     <string name="error_blog_hidden">此網誌已隱藏，無法載入。請在設定中啟用網誌，然後再試一次。</string>
     <string name="fatal_db_error">建立應用程式資料庫時發生錯誤。請嘗試重新安裝應用程式。</string>
     <string name="reader_title_applog">應用程式記錄檔</string>

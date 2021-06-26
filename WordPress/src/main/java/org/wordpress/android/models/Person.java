@@ -1,13 +1,13 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import androidx.annotation.Nullable;
 
 import org.apache.commons.text.StringEscapeUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.StringUtils;
 
 public class Person {
     public enum PersonType {
@@ -40,7 +40,7 @@ public class Person {
             return null;
         }
 
-        // Response parameters are in: https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/users/%24user_id/
+        // Response parameters are in: https://developer.sitebay.com/docs/api/1.1/get/sites/%24site/users/%24user_id/
         try {
             long personID = Long.parseLong(json.getString("ID"));
             Person person = new Person(personID, localTableBlogId);
@@ -67,7 +67,7 @@ public class Person {
             return null;
         }
 
-        // Response parameters are in: https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/stats/followers/
+        // Response parameters are in: https://developer.sitebay.com/docs/api/1.1/get/sites/%24site/stats/followers/
         try {
             long personID = Long.parseLong(json.getString("ID"));
             Person person = new Person(personID, localTableBlogId);
@@ -92,7 +92,7 @@ public class Person {
         }
 
         // Similar response parameters in:
-        // https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/users/%24user_id/
+        // https://developer.sitebay.com/docs/api/1.1/get/sites/%24site/users/%24user_id/
         try {
             long personID = Long.parseLong(json.getString("ID"));
             Person person = new Person(personID, localTableBlogId);

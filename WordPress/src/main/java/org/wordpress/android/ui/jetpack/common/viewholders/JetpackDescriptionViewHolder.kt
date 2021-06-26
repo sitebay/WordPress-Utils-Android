@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.common.viewholders
+package org.sitebay.android.ui.jetpack.common.viewholders
 
 import android.text.SpannableString
 import android.text.Spanned
@@ -6,11 +6,11 @@ import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
 import android.view.ViewGroup
-import org.wordpress.android.databinding.JetpackListDescriptionItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState.DescriptionState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState.DescriptionState.ClickableTextInfo
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.databinding.JetpackListDescriptionItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState.DescriptionState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState.DescriptionState.ClickableTextInfo
+import org.sitebay.android.ui.utils.UiHelpers
 
 class JetpackDescriptionViewHolder(
     private val uiHelpers: UiHelpers,

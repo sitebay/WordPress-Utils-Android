@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.people.utils;
+package org.sitebay.android.ui.people.utils;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.models.Person;
-import org.wordpress.android.ui.people.utils.PeopleUtils.ValidateUsernameCallback.ValidationResult;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.models.Person;
+import org.sitebay.android.ui.people.utils.PeopleUtils.ValidateUsernameCallback.ValidationResult;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.ArrayList;
 import java.util.HashMap;

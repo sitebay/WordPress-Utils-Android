@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.jetpack.common.viewholders
+package org.sitebay.android.ui.jetpack.common.viewholders
 
 import android.view.ViewGroup
 import android.view.ViewGroup.MarginLayoutParams
-import org.wordpress.android.databinding.JetpackBackupRestoreListBulletItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackBackupRestoreListItemState.BulletState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ColorUtils
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.databinding.JetpackBackupRestoreListBulletItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackBackupRestoreListItemState.BulletState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ColorUtils
+import org.sitebay.android.util.image.ImageManager
 
 class JetpackBackupRestoreBulletViewHolder(
     private val imageManager: ImageManager,

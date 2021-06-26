@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.jetpack.common
+package org.sitebay.android.ui.jetpack.common
 
 import android.view.View
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorRes
 import androidx.annotation.DimenRes
 import androidx.annotation.DrawableRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.jetpack.common.providers.JetpackAvailableItemsProvider.JetpackAvailableItemType
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.R
+import org.sitebay.android.ui.jetpack.common.providers.JetpackAvailableItemsProvider.JetpackAvailableItemType
+import org.sitebay.android.ui.utils.UiString
 
 open class JetpackListItemState(open val type: ViewType) {
     open fun longId(): Long = hashCode().toLong()

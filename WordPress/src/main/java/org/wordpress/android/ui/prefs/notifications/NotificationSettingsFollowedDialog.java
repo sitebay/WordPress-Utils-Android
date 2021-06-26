@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.notifications;
+package org.sitebay.android.ui.prefs.notifications;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -18,8 +18,8 @@ import androidx.appcompat.widget.SwitchCompat;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.store.AccountStore.UpdateSubscriptionPayload.SubscriptionFrequency;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.store.AccountStore.UpdateSubscriptionPayload.SubscriptionFrequency;
 
 /**
  * A {@link DialogFragment} displaying notification settings for followed blogs.

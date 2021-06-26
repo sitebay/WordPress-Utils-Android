@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.reader.actions
+package org.sitebay.android.ui.reader.actions
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener
 import javax.inject.Inject
 
 @Reusable

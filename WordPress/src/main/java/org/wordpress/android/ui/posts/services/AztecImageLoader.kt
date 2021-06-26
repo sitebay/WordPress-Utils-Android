@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.services
+package org.sitebay.android.ui.posts.services
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -11,8 +11,8 @@ import com.bumptech.glide.request.target.BaseTarget
 import com.bumptech.glide.request.target.SizeReadyCallback
 import com.bumptech.glide.request.transition.Transition
 
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.aztec.Html
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.aztec.Html
 
 import java.lang.ref.WeakReference
 import java.util.ArrayList

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.signup;
+package org.sitebay.android.ui.accounts.signup;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,19 +27,19 @@ import com.google.android.material.textfield.TextInputEditText;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.AccountActionBuilder;
-import org.wordpress.android.fluxc.store.AccountStore.FetchUsernameSuggestionsPayload;
-import org.wordpress.android.fluxc.store.AccountStore.OnUsernameSuggestionsFetched;
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogContent;
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogController;
-import org.wordpress.android.ui.accounts.signup.UsernameChangerRecyclerViewAdapter.OnUsernameSelectedListener;
-import org.wordpress.android.util.ActivityUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.R;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.AccountActionBuilder;
+import org.sitebay.android.fluxc.store.AccountStore.FetchUsernameSuggestionsPayload;
+import org.sitebay.android.fluxc.store.AccountStore.OnUsernameSuggestionsFetched;
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogContent;
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogController;
+import org.sitebay.android.ui.accounts.signup.UsernameChangerRecyclerViewAdapter.OnUsernameSelectedListener;
+import org.sitebay.android.util.ActivityUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.ArrayList;
 import java.util.List;

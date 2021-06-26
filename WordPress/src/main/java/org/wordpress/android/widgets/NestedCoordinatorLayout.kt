@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,7 +8,7 @@ import androidx.annotation.AttrRes
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.NestedScrollingChild3
 import androidx.core.view.NestedScrollingChildHelper
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 // Coordinator Layout that can be nested inside another Coordinator Layout and propagate
 // its scroll state to it

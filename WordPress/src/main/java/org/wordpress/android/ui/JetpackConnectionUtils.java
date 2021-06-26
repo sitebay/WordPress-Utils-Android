@@ -1,6 +1,6 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
-import org.wordpress.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker;
 
 import java.util.HashMap;
 

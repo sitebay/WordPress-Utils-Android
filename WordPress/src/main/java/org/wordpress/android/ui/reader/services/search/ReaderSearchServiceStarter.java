@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.services.search;
+package org.sitebay.android.ui.reader.services.search;
 
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -10,12 +10,12 @@ import android.os.PersistableBundle;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.util.AppLog;
 
-import static org.wordpress.android.JobServiceId.JOB_READER_SEARCH_SERVICE_ID;
+import static org.sitebay.android.JobServiceId.JOB_READER_SEARCH_SERVICE_ID;
 
 /**
- * service which searches for reader posts on wordpress.com
+ * service which searches for reader posts on sitebay.com
  */
 
 public class ReaderSearchServiceStarter {

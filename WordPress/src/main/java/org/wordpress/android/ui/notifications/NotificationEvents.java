@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.notifications;
+package org.sitebay.android.ui.notifications;
 
 import com.android.volley.VolleyError;
 
-import org.wordpress.android.models.Note;
+import org.sitebay.android.models.Note;
 
 import java.util.List;
 

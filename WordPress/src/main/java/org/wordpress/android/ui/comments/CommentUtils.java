@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -9,9 +9,9 @@ import android.text.style.LeadingMarginSpan;
 import android.text.util.Linkify;
 import android.widget.TextView;
 
-import org.wordpress.android.util.EmoticonsUtils;
-import org.wordpress.android.util.HtmlUtils;
-import org.wordpress.android.util.image.getters.WPCustomImageGetter;
+import org.sitebay.android.util.EmoticonsUtils;
+import org.sitebay.android.util.HtmlUtils;
+import org.sitebay.android.util.image.getters.WPCustomImageGetter;
 
 /**
  * @deprecated

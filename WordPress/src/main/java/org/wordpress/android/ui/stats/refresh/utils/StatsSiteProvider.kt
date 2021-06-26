@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.SiteActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged
-import org.wordpress.android.ui.prefs.AppPrefs
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult.NotConnectedJetpackSite
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult.SiteConnected
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.SiteActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged
+import org.sitebay.android.ui.prefs.AppPrefs
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult.NotConnectedJetpackSite
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult.SiteConnected
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 import javax.inject.Singleton
 

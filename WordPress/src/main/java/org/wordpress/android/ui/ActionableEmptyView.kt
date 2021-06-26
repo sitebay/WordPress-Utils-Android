@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.content.Context
 import android.text.TextUtils
@@ -8,9 +8,9 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatButton
-import org.wordpress.android.R
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.widgets.WPTextView
+import org.sitebay.android.R
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.widgets.WPTextView
 
 /**
  * View shown when screen is in an empty state.  It contains the following:

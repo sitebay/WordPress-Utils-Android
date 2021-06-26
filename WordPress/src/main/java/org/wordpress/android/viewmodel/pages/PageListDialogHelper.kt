@@ -1,17 +1,17 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.UNPUBLISHED_REVISION_DIALOG_LOAD_LOCAL_VERSION_CLICKED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.UNPUBLISHED_REVISION_DIALOG_LOAD_UNPUBLISHED_VERSION_CLICKED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.UNPUBLISHED_REVISION_DIALOG_SHOWN
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.ui.posts.PostUtils
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.helpers.DialogHolder
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.UNPUBLISHED_REVISION_DIALOG_LOAD_LOCAL_VERSION_CLICKED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.UNPUBLISHED_REVISION_DIALOG_LOAD_UNPUBLISHED_VERSION_CLICKED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.UNPUBLISHED_REVISION_DIALOG_SHOWN
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.ui.posts.PostUtils
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.helpers.DialogHolder
 import java.lang.NullPointerException
 
 private const val CONFIRM_ON_AUTOSAVE_REVISION_DIALOG_TAG = "CONFIRM_ON_AUTOSAVE_REVISION_DIALOG_TAG"

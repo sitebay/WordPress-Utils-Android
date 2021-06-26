@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.backup.download
+package org.sitebay.android.ui.jetpack.backup.download
 
 enum class BackupDownloadErrorTypes constructor(val id: Int) {
     NetworkUnavailable(0), RemoteRequestFailure(1), GenericFailure(2);

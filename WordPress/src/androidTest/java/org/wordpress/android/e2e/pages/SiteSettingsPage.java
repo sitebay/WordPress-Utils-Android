@@ -1,17 +1,17 @@
-package org.wordpress.android.e2e.pages;
+package org.sitebay.android.e2e.pages;
 
 import androidx.test.espresso.ViewInteraction;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
-import static org.wordpress.android.support.BetterScrollToAction.scrollTo;
+import static org.sitebay.android.support.BetterScrollToAction.scrollTo;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.PreferenceMatchers.withTitle;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static org.wordpress.android.support.WPSupportUtils.ensureSwitchPreferenceIsChecked;
+import static org.sitebay.android.support.WPSupportUtils.ensureSwitchPreferenceIsChecked;
 
 public class SiteSettingsPage {
     private static ViewInteraction settings = onView(withText(R.string.site_settings_title_title));

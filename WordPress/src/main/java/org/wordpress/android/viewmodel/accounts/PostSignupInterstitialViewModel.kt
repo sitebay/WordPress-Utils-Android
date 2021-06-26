@@ -1,19 +1,19 @@
-package org.wordpress.android.viewmodel.accounts
+package org.sitebay.android.viewmodel.accounts
 
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_ADD_SELF_HOSTED_SITE_TAPPED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_CREATE_NEW_SITE_TAPPED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_DISMISSED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_SHOWN
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Click
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Step.SUCCESS
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.SingleLiveEvent
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.DISMISS
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CONNECTION_FLOW
-import org.wordpress.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CREATION_FLOW
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_ADD_SELF_HOSTED_SITE_TAPPED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_CREATE_NEW_SITE_TAPPED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_DISMISSED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.WELCOME_NO_SITES_INTERSTITIAL_SHOWN
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Click
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Step.SUCCESS
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.DISMISS
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CONNECTION_FLOW
+import org.sitebay.android.viewmodel.accounts.PostSignupInterstitialViewModel.NavigationAction.START_SITE_CREATION_FLOW
 import javax.inject.Inject
 
 class PostSignupInterstitialViewModel

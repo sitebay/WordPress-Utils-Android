@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.Dispatchers
@@ -7,19 +7,19 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.StatsConstants
-import org.wordpress.android.ui.stats.refresh.NavigationTarget
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewAttachment
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewPost
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ReferredItem
-import org.wordpress.android.ui.stats.refresh.utils.StatsPostProvider
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.StatsConstants
+import org.sitebay.android.ui.stats.refresh.NavigationTarget
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewAttachment
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewPost
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ReferredItem
+import org.sitebay.android.ui.stats.refresh.utils.StatsPostProvider
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 class PostHeaderUseCaseTest : BaseUnitTest() {
     @Mock lateinit var statsPostProvider: StatsPostProvider

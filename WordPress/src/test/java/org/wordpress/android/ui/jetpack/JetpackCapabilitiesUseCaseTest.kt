@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack
+package org.sitebay.android.ui.jetpack
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.any
@@ -13,16 +13,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.JetpackCapability
-import org.wordpress.android.fluxc.model.JetpackCapability.BACKUP
-import org.wordpress.android.fluxc.model.JetpackCapability.BACKUP_DAILY
-import org.wordpress.android.fluxc.model.JetpackCapability.BACKUP_REALTIME
-import org.wordpress.android.fluxc.model.JetpackCapability.SCAN
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnJetpackCapabilitiesFetched
-import org.wordpress.android.test
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.JetpackCapability
+import org.sitebay.android.fluxc.model.JetpackCapability.BACKUP
+import org.sitebay.android.fluxc.model.JetpackCapability.BACKUP_DAILY
+import org.sitebay.android.fluxc.model.JetpackCapability.BACKUP_REALTIME
+import org.sitebay.android.fluxc.model.JetpackCapability.SCAN
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnJetpackCapabilitiesFetched
+import org.sitebay.android.test
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
 
 private const val SITE_ID = 1L
 

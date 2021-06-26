@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,15 +13,15 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.TermModel;
-import org.wordpress.android.fluxc.store.TaxonomyStore;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.EditTextUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.TermModel;
+import org.sitebay.android.fluxc.store.TaxonomyStore;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.EditTextUtils;
+import org.sitebay.android.util.StringUtils;
 
-import static org.wordpress.android.ui.reader.utils.ReaderUtils.sanitizeWithDashes;
+import static org.sitebay.android.ui.reader.utils.ReaderUtils.sanitizeWithDashes;
 
 /**
  * A fragment for editing a tag

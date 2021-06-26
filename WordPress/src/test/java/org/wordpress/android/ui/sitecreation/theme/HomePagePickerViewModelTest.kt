@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.theme
+package org.sitebay.android.ui.sitecreation.theme
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
@@ -14,22 +14,22 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.network.rest.wpcom.theme.StarterDesign
-import org.wordpress.android.fluxc.network.rest.wpcom.theme.StarterDesignCategory
-import org.wordpress.android.fluxc.store.ThemeStore.OnStarterDesignsFetched
-import org.wordpress.android.fluxc.store.ThemeStore.ThemeErrorType
-import org.wordpress.android.fluxc.store.ThemeStore.ThemesError
-import org.wordpress.android.test
-import org.wordpress.android.ui.PreviewMode
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction
-import org.wordpress.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Show
-import org.wordpress.android.ui.sitecreation.theme.HomePagePickerViewModel.DesignSelectionAction
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState
-import org.wordpress.android.ui.sitecreation.usecases.FetchHomePageLayoutsUseCase
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.network.rest.wpcom.theme.StarterDesign
+import org.sitebay.android.fluxc.network.rest.wpcom.theme.StarterDesignCategory
+import org.sitebay.android.fluxc.store.ThemeStore.OnStarterDesignsFetched
+import org.sitebay.android.fluxc.store.ThemeStore.ThemeErrorType
+import org.sitebay.android.fluxc.store.ThemeStore.ThemesError
+import org.sitebay.android.test
+import org.sitebay.android.ui.PreviewMode
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction
+import org.sitebay.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Show
+import org.sitebay.android.ui.sitecreation.theme.HomePagePickerViewModel.DesignSelectionAction
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState
+import org.sitebay.android.ui.sitecreation.usecases.FetchHomePageLayoutsUseCase
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
 
 private const val mockedDesignSlug = "mockedDesignSlug"
 private const val mockedDesignSegmentId = 1L

@@ -1,10 +1,10 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.text.TextUtils;
 
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.util.SqlUtils;
 
 /**
  * stores thumbnail urls for videos embedded in Reader posts

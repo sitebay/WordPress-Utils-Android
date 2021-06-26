@@ -1,4 +1,4 @@
-package org.wordpress.android.analytics;
+package org.sitebay.android.analytics;
 
 import android.content.Context;
 import android.content.SharedPreferences;

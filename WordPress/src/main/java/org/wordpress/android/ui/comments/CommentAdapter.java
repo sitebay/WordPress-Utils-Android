@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,21 +12,21 @@ import androidx.recyclerview.widget.DiffUtil.DiffResult;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.AccountModel;
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.CommentStore;
-import org.wordpress.android.models.CommentList;
-import org.wordpress.android.ui.comments.CommentListItem.Comment;
-import org.wordpress.android.ui.comments.CommentListItem.CommentListItemType;
-import org.wordpress.android.ui.comments.CommentListItem.SubHeader;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.image.ImageManager;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.AccountModel;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.CommentStore;
+import org.sitebay.android.models.CommentList;
+import org.sitebay.android.ui.comments.CommentListItem.Comment;
+import org.sitebay.android.ui.comments.CommentListItem.CommentListItemType;
+import org.sitebay.android.ui.comments.CommentListItem.SubHeader;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.image.ImageManager;
 
 import java.util.ArrayList;
 import java.util.Collections;

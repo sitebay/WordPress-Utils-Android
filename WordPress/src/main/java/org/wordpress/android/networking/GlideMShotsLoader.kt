@@ -1,4 +1,4 @@
-package org.wordpress.android.networking
+package org.sitebay.android.networking
 
 import com.android.volley.DefaultRetryPolicy
 import com.android.volley.DefaultRetryPolicy.DEFAULT_BACKOFF_MULT

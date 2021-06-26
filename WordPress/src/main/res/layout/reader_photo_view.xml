@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/reader_photo_view_desc"/>
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/text_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

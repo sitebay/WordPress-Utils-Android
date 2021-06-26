@@ -1,6 +1,6 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.util.UrlUtils;
 
 import java.util.HashSet;
 

@@ -18,7 +18,7 @@
  * /TextDrawable.java
  *
  */
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.content.res.Resources;
 import android.graphics.Canvas;

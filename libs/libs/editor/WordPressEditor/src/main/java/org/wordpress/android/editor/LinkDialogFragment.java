@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.app.Dialog;
 import android.content.DialogInterface;

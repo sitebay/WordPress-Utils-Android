@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.main.utils
+package org.sitebay.android.ui.main.utils
 
 import android.graphics.drawable.Drawable
 import android.widget.ImageView
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.GravatarUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageManager.RequestListener
-import org.wordpress.android.util.image.ImageType
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.GravatarUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageManager.RequestListener
+import org.sitebay.android.util.image.ImageType
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 import javax.inject.Singleton
 

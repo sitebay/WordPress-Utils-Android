@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,13 +11,13 @@ import android.widget.TextView;
 import androidx.core.view.ViewCompat;
 
 import org.apache.commons.text.StringEscapeUtils;
-import org.wordpress.android.R;
-import org.wordpress.android.models.CategoryNode;
-import org.wordpress.android.util.DisplayUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.models.CategoryNode;
+import org.sitebay.android.util.DisplayUtils;
 
 import java.util.List;
 
-import static org.wordpress.android.WordPress.getContext;
+import static org.sitebay.android.WordPress.getContext;
 
 public class ParentCategorySpinnerAdapter extends BaseAdapter implements SpinnerAdapter {
     private int mResourceId;

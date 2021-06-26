@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import android.content.ActivityNotFoundException;
 import android.text.Layout;
@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher.PhotoViewerOption;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher.PhotoViewerOption;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.StringUtils;
 
 import java.util.EnumSet;
 

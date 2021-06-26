@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.granular
+package org.sitebay.android.ui.stats.refresh.lists.sections.granular
 
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.fluxc.store.StatsStore.StatsType
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.stats.refresh.utils.toStatsSection
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.fluxc.store.StatsStore.StatsType
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.stats.refresh.utils.toStatsSection
 import java.util.Date
 
 abstract class GranularStatelessUseCase<DOMAIN_MODEL>(

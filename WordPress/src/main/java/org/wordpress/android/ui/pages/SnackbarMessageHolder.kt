@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString
 
 data class SnackbarMessageHolder(
     val message: UiString,

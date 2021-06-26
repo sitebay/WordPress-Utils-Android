@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.sitecreation.domains
+package org.sitebay.android.ui.sitecreation.domains
 
 import android.view.ViewGroup
 import androidx.annotation.MainThread
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainViewHolder.DomainSuggestionErrorViewHolder
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainViewHolder.DomainSuggestionItemViewHolder
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsFetchSuggestionsErrorUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainViewHolder.DomainSuggestionErrorViewHolder
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainViewHolder.DomainSuggestionItemViewHolder
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsFetchSuggestionsErrorUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState
+import org.sitebay.android.ui.utils.UiHelpers
 
 private const val suggestionItemViewType: Int = 1
 private const val suggestionErrorViewType: Int = 2

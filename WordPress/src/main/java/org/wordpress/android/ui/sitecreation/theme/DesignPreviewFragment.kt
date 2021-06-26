@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.sitecreation.theme
+package org.sitebay.android.ui.sitecreation.theme
 
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.ui.layoutpicker.LayoutPreviewFragment
+import org.sitebay.android.R
+import org.sitebay.android.ui.layoutpicker.LayoutPreviewFragment
 
 /**
  * Implements the Home Page Picker Design Preview UI

@@ -33,7 +33,7 @@
                 app:tint="@color/neutral_70"
                 tools:src="@drawable/ic_pages_white_24dp" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/media_item_filetype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 android:textStyle="bold"
                 tools:text="PDF" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/media_item_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

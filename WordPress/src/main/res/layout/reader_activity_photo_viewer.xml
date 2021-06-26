@@ -7,12 +7,12 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/black">
 
-    <org.wordpress.android.widgets.WPViewPager
+    <org.sitebay.android.widgets.WPViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

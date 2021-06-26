@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.repository
+package org.sitebay.android.ui.reader.repository
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
@@ -12,28 +12,28 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.MainCoroutineScopeRule
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.models.discover.ReaderDiscoverCard.ReaderPostCard
-import org.wordpress.android.models.discover.ReaderDiscoverCards
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.ReaderEvents.FetchDiscoverCardsEnded
-import org.wordpress.android.ui.reader.ReaderEvents.FollowedTagsChanged
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResult.FAILED
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResult.HAS_NEW
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResult.UNCHANGED
-import org.wordpress.android.ui.reader.repository.ReaderDiscoverCommunication.Error.RemoteRequestFailure
-import org.wordpress.android.ui.reader.repository.ReaderDiscoverCommunication.Started
-import org.wordpress.android.ui.reader.repository.ReaderDiscoverCommunication.Success
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryEvent.ReaderPostTableActionEnded
-import org.wordpress.android.ui.reader.repository.usecases.FetchDiscoverCardsUseCase
-import org.wordpress.android.ui.reader.repository.usecases.GetDiscoverCardsUseCase
-import org.wordpress.android.ui.reader.repository.usecases.ShouldAutoUpdateTagUseCase
-import org.wordpress.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks.REQUEST_FIRST_PAGE
-import org.wordpress.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks.REQUEST_MORE
-import org.wordpress.android.ui.reader.utils.ReaderTagWrapper
-import org.wordpress.android.util.EventBusWrapper
+import org.sitebay.android.MainCoroutineScopeRule
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.models.discover.ReaderDiscoverCard.ReaderPostCard
+import org.sitebay.android.models.discover.ReaderDiscoverCards
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.ReaderEvents.FetchDiscoverCardsEnded
+import org.sitebay.android.ui.reader.ReaderEvents.FollowedTagsChanged
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResult.FAILED
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResult.HAS_NEW
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResult.UNCHANGED
+import org.sitebay.android.ui.reader.repository.ReaderDiscoverCommunication.Error.RemoteRequestFailure
+import org.sitebay.android.ui.reader.repository.ReaderDiscoverCommunication.Started
+import org.sitebay.android.ui.reader.repository.ReaderDiscoverCommunication.Success
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryEvent.ReaderPostTableActionEnded
+import org.sitebay.android.ui.reader.repository.usecases.FetchDiscoverCardsUseCase
+import org.sitebay.android.ui.reader.repository.usecases.GetDiscoverCardsUseCase
+import org.sitebay.android.ui.reader.repository.usecases.ShouldAutoUpdateTagUseCase
+import org.sitebay.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks.REQUEST_FIRST_PAGE
+import org.sitebay.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks.REQUEST_MORE
+import org.sitebay.android.ui.reader.utils.ReaderTagWrapper
+import org.sitebay.android.util.EventBusWrapper
 
 private const val NUMBER_OF_ITEMS = 10L
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import android.graphics.drawable.Drawable
 import android.net.Uri
@@ -6,16 +6,16 @@ import android.widget.ImageView
 import android.widget.ImageView.ScaleType
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import org.wordpress.android.WordPress
-import org.wordpress.android.imageeditor.ImageEditor
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.CropSuccessful
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.EditorCancelled
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.EditorFinishedEditing
-import org.wordpress.android.imageeditor.crop.CropViewModel.Companion.MEDIA_EDITING
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageManager.RequestListener
-import org.wordpress.android.util.image.ImageType.IMAGE
+import org.sitebay.android.WordPress
+import org.sitebay.android.imageeditor.ImageEditor
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.CropSuccessful
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.EditorCancelled
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.EditorFinishedEditing
+import org.sitebay.android.imageeditor.crop.CropViewModel.Companion.MEDIA_EDITING
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageManager.RequestListener
+import org.sitebay.android.util.image.ImageType.IMAGE
 import java.io.File
 
 class ImageEditorInitializer {

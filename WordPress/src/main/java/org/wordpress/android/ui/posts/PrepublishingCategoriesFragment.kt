@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.os.Bundle
@@ -10,21 +10,21 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode.MAIN
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PrepublishingCategoriesFragmentBinding
-import org.wordpress.android.databinding.PrepublishingToolbarBinding
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged
-import org.wordpress.android.fluxc.store.TaxonomyStore.OnTermUploaded
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ActionType.ADD_CATEGORY
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.ToastUtils.Duration.SHORT
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PrepublishingCategoriesFragmentBinding
+import org.sitebay.android.databinding.PrepublishingToolbarBinding
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged
+import org.sitebay.android.fluxc.store.TaxonomyStore.OnTermUploaded
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ActionType.ADD_CATEGORY
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.ToastUtils.Duration.SHORT
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class PrepublishingCategoriesFragment : Fragment(R.layout.prepublishing_categories_fragment) {

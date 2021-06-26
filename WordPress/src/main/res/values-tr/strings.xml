@@ -170,8 +170,8 @@ Language: tr
     <string name="backup_item_roots">WordPress kök dizini</string>
     <string name="backup_download_details_choose_items_header">Bu indirmeye dahil olan öğeler</string>
     <string name="gutenberg_native_uploading">Yükleniyor…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Yeniden kullanılabilir bloklar iOS için WordPress\'te düzenlenemez</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Yeniden kullanılabilir bloklar Android için WordPress\'te düzenlenemez</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Yeniden kullanılabilir bloklar iOS için WordPress\'te düzenlenemez</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Yeniden kullanılabilir bloklar Android için WordPress\'te düzenlenemez</string>
     <string name="gutenberg_native_replace_file">Dosyayı değiştir</string>
     <string name="gutenberg_native_replace_audio">Sesi değiştir</string>
     <string name="gutenberg_native_problem_opening_the_audio">Sesi açma sorunu</string>
@@ -494,7 +494,7 @@ Language: tr
     <string name="media_picker_soft_ask_permissions_denied">%1$s fotoğraflarınıza erişimi reddedildi. Bunu düzeltmek için izinlerinizi düzenleyip %2$s ve %3$s özelliklerini açın.</string>
     <string name="media_insert_failed">Medya eklenemedi.</string>
     <string name="media_insert_failed_with_reason">Medya eklenemedi: %s</string>
-    <string name="photo_picker_wordpress_media_library">WordPress Ortam Kütüphanesi\'nden seçin</string>
+    <string name="photo_picker_sitebay_media_library">WordPress Ortam Kütüphanesi\'nden seçin</string>
     <string name="reader_label_toolbar_back">Geri</string>
     <string name="reader_discover_empty_button_text">Başlayın</string>
     <string name="reader_discover_empty_subtitle">Yeni bloglar keşfetmek için konular takip edin</string>
@@ -634,7 +634,7 @@ Language: tr
     <string name="login_magic_links_label">Size anında giriş yapacağınız bir bağlantıyı e-posta ile göndereceğiz, hiç bir parolaya gerek yok.</string>
     <string name="check_email">E-postayı kontrol et</string>
     <string name="get_started">Başlayın</string>
-    <string name="enter_email_to_continue_wordpress_com">Giriş yapmak veya bir WordPress.com hesabı oluşturmak için e-posta adresinizi girin.</string>
+    <string name="enter_email_to_continue_sitebay_com">Giriş yapmak veya bir WordPress.com hesabı oluşturmak için e-posta adresinizi girin.</string>
     <string name="or_type_your_password">Veya parolanızı yazın</string>
     <string name="create_account">Hesap oluştur</string>
     <string name="send_link_by_email">Bağlantıyı e-postayla gönder</string>
@@ -916,7 +916,7 @@ Language: tr
     <string name="suffix_1_000">%sK</string>
     <string name="posts_cannot_be_started">Şu anda gönderileri açamıyoruz. Lütfen daha sonra tekrar deneyin</string>
     <string name="site_cannot_be_loaded">Şu anda siteniz için veri yüklemesi yapamıyoruz. Lütfen daha sonra tekrar deneyin</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress Ortam Kütüphanesi</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress Ortam Kütüphanesi</string>
     <string name="gutenberg_native_unsupported">Desteklenmeyen</string>
     <string name="gutenberg_native_ungroup">Gruplamayı Kaldır</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Klavyeyi gizlemek için dokunun</string>
@@ -1370,7 +1370,7 @@ Language: tr
     <string name="stats_follower_label">Takipçi</string>
     <string name="stats_followers_count_message">Toplam %1$s takipçisi: %2$s</string>
     <string name="stats_followers_email">E-posta</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Yönelimleri yönet</string>
     <string name="stats_empty_insights_title">Henüz yönelim eklenmedi</string>
     <string name="stats_no_data_yet">Henüz veri yok</string>
@@ -1822,7 +1822,7 @@ Language: tr
     <string name="plugin_external_link_icon_content_description">Harici bağlantı</string>
     <string name="plugin_icon_content_description">Eklenti simgesi</string>
     <string name="plugin_home_page">Eklenti ana sayfası</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org eklenti sayfası</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org eklenti sayfası</string>
     <string name="plugin_remove_dialog_message">%1$s içinden %2$s eklentisini kaldırmak istediğinizden emin misiniz?\n\nBu eklentiyi devre dışı bırakır ve tüm ilişkili dosyaları ve verileri siler.</string>
     <string name="plugin_remove_dialog_title">Eklentiyi kaldır</string>
     <string name="plugin_remove_progress_dialog_message">Kaldırılıyor %s…</string>
@@ -1983,7 +1983,7 @@ Language: tr
     <string name="login_text_otp">Bunun yerine bana SMS ile bir kod gönder</string>
     <string name="enter_verification_code">Neredeyse tamam. Lütfen kimlik doğrulayıcı uygulamanızdan doğrulama kodunu girin.</string>
     <string name="next">Sonraki</string>
-    <string name="enter_email_wordpress_com">Tüm WordPress sitelerinizi yönetmek için bir e-posta adresi kullanarak WordPress.com\'a oturum açın.</string>
+    <string name="enter_email_sitebay_com">Tüm WordPress sitelerinizi yönetmek için bir e-posta adresi kullanarak WordPress.com\'a oturum açın.</string>
     <string name="image_optimization_promo_desc">Görsel optimizasyonu daha hızlı yükleme için görselleri küçültür\n\nSite ayarlarından bu ayarı istediğiniz zaman değiştirebilirsiniz.</string>
     <string name="image_optimization_promo_title">Görsel optimizasyonu etkinleştirilsin mi?</string>
     <string name="leave_off">Kapalı bırak</string>
@@ -2541,8 +2541,8 @@ Language: tr
     <string name="stats_insights_today">Bugünün istatistikleri</string>
     <string name="stats_insights_all_time">Tüm zamanlardaki yazılar, görüntülemeler ve ziyaretçiler</string>
     <string name="stats_insights">Yönelimler</string>
-    <string name="me_disconnect_from_wordpress_com">WordPress.com hesabından çıkış yap</string>
-    <string name="me_connect_to_wordpress_com">WordPress.com hesabına giriş yap</string>
+    <string name="me_disconnect_from_sitebay_com">WordPress.com hesabından çıkış yap</string>
+    <string name="me_connect_to_sitebay_com">WordPress.com hesabına giriş yap</string>
     <string name="me_btn_login_logout">Giriş/Çıkış</string>
     <string name="me_btn_support">Yardım ve destek</string>
     <string name="account_settings">Hesap ayarları</string>
@@ -2675,7 +2675,7 @@ Language: tr
     <string name="fatal_db_error">Uygulama veritabanı oluşturulurken hata meydana geldi. Uygulamayı tekrar yüklemeyi deneyin.</string>
     <string name="error_blog_hidden">Bu blog gizli ve yüklenemedi. Ayarlardan yeniden etkinleştirin ve yeniden deneyin.</string>
     <string name="error_refresh_media">Ortam dosyaları şu an yenilenemiyor</string>
-    <string name="wordpress_blog">WordPress blog</string>
+    <string name="sitebay_blog">WordPress blog</string>
     <string name="image_settings">Görsel ayarları</string>
     <string name="local_changes">Yerel değişiklikler</string>
     <string name="privacy_policy">Gizlilik politikası</string>

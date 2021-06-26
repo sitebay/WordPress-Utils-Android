@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
-import org.wordpress.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
 
 public class PostEvents {
     public static class PostUploadStarted {

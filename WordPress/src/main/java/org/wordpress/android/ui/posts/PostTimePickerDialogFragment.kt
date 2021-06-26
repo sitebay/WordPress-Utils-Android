@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.Dialog
 import android.app.TimePickerDialog
@@ -8,11 +8,11 @@ import android.os.Bundle
 import android.text.format.DateFormat
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
 
-import org.wordpress.android.ui.posts.prepublishing.PrepublishingPublishSettingsViewModel
+import org.sitebay.android.ui.posts.prepublishing.PrepublishingPublishSettingsViewModel
 import javax.inject.Inject
 
 class PostTimePickerDialogFragment : DialogFragment() {

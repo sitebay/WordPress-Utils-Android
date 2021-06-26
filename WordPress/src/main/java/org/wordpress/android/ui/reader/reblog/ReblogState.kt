@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.reader.reblog
+package org.sitebay.android.ui.reader.reblog
 
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.models.ReaderPost
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.models.ReaderPost
 
 sealed class ReblogState {
     class MultipleSites(val defaultSite: SiteModel, val post: ReaderPost) : ReblogState()

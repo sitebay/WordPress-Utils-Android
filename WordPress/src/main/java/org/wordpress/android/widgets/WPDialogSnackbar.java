@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.snackbar.Snackbar.SnackbarLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.AccessibilityUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.util.AccessibilityUtils;
 
 /**
  * {@link Snackbar} with {@link android.app.Dialog}-like layout mimicking the updated design pattern defined in the

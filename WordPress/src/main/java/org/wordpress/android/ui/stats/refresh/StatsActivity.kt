@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.stats.refresh
+package org.sitebay.android.ui.stats.refresh
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.StatsListActivityBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.stats.StatsTimeframe
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.StatsListActivityBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.stats.StatsTimeframe
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
 import javax.inject.Inject
 
 class StatsActivity : LocaleAwareActivity() {

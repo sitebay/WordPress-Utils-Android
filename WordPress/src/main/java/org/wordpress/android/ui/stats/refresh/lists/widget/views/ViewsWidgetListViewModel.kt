@@ -1,25 +1,25 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.views
+package org.sitebay.android.ui.stats.refresh.lists.widget.views
 
 import androidx.annotation.LayoutRes
 import kotlinx.coroutines.runBlocking
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.LimitMode
-import org.wordpress.android.fluxc.model.stats.LimitMode.Top
-import org.wordpress.android.fluxc.model.stats.time.VisitsAndViewsModel.PeriodData
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.DAYS
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.stats.time.VisitsAndViewsStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases.OVERVIEW_ITEMS_TO_LOAD
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewMapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
-import org.wordpress.android.ui.stats.refresh.utils.MILLION
-import org.wordpress.android.ui.stats.refresh.utils.ONE_THOUSAND
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.LimitMode
+import org.sitebay.android.fluxc.model.stats.LimitMode.Top
+import org.sitebay.android.fluxc.model.stats.time.VisitsAndViewsModel.PeriodData
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.DAYS
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.stats.time.VisitsAndViewsStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases.OVERVIEW_ITEMS_TO_LOAD
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewMapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.utils.MILLION
+import org.sitebay.android.ui.stats.refresh.utils.ONE_THOUSAND
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 const val LIST_ITEM_COUNT = 7

@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.deeplinks
+package org.sitebay.android.ui.deeplinks
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.util.UriWrapper
 
 fun buildUri(host: String?, vararg path: String): UriWrapper {
     val uri = mock<UriWrapper>()

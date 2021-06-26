@@ -1,7 +1,7 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState
 
 /**
  * This enum could be expanded to allow to re-use the WPWebViewActivity (including the direct usage of actionable empty view)

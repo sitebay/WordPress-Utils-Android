@@ -1,16 +1,16 @@
-package org.wordpress.android.models
+package org.sitebay.android.models
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.models.wrappers.RoleUtilsWrapper
-import org.wordpress.android.models.wrappers.SimpleDateFormatWrapper
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
-import org.wordpress.android.ui.people.InviteLinksUiItem
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.DateTimeUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.models.wrappers.RoleUtilsWrapper
+import org.sitebay.android.models.wrappers.SimpleDateFormatWrapper
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
+import org.sitebay.android.ui.people.InviteLinksUiItem
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 @Reusable

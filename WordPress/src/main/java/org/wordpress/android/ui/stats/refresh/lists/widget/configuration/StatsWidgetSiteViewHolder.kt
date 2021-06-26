@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.configuration
+package org.sitebay.android.ui.stats.refresh.lists.widget.configuration
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.databinding.StatsWidgetSiteSelectorItemBinding
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.BLAVATAR
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.R
+import org.sitebay.android.databinding.StatsWidgetSiteSelectorItemBinding
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.BLAVATAR
+import org.sitebay.android.util.viewBinding
 
 class StatsWidgetSiteViewHolder(
     parent: ViewGroup,

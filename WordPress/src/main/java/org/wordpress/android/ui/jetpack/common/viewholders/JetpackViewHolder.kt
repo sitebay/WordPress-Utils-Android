@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.jetpack.common.viewholders
+package org.sitebay.android.ui.jetpack.common.viewholders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
 
 abstract class JetpackViewHolder<T : ViewBinding>(
     parent: ViewGroup,

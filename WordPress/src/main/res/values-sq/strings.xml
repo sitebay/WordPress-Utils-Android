@@ -170,8 +170,8 @@ Language: sq_AL
     <string name="backup_item_roots">Rrënjë WordPress-i</string>
     <string name="backup_download_details_choose_items_header">Elementë të përfshirë në këtë shkarkim</string>
     <string name="gutenberg_native_uploading">Po ngarkohet…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Blloqet e ripërdorshëm s’janë të përpunueshëm në WordPress për iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Blloqet e ripërdorshëm s’janë të përpunueshëm në WordPress për Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Blloqet e ripërdorshëm s’janë të përpunueshëm në WordPress për iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Blloqet e ripërdorshëm s’janë të përpunueshëm në WordPress për Android</string>
     <string name="gutenberg_native_replace_file">Zëvendësoni kartelë</string>
     <string name="gutenberg_native_replace_audio">Zëvendësoni audio</string>
     <string name="gutenberg_native_problem_opening_the_audio">Problem me hapjen e audios</string>
@@ -493,7 +493,7 @@ Language: sq_AL
     <string name="media_picker_soft_ask_permissions_denied">%1$s-it iu mohua hyrja te fotot tuaj. Që të ndreqet kjo, përpunoni lejet tuaj dhe aktivizoni %2$s dhe %3$s.</string>
     <string name="media_insert_failed">Dështoi futje medie.</string>
     <string name="media_insert_failed_with_reason">Dështoi futje medie: %s</string>
-    <string name="photo_picker_wordpress_media_library">Zgjidhni prej Mediatekës WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Zgjidhni prej Mediatekës WordPress</string>
     <string name="reader_label_toolbar_back">Mbrapsht</string>
     <string name="reader_discover_empty_button_text">Fillojani</string>
     <string name="reader_discover_empty_subtitle">Ndiqni tema, që të zbuloni blogje të rinj</string>
@@ -633,7 +633,7 @@ Language: sq_AL
     <string name="login_magic_links_label">Do t’ju dërgojmë me email një lidhje që do t’ju fusë menjëherë, pa qenë nevoja për fjalëkalim.</string>
     <string name="check_email">Kontrolloni email-in</string>
     <string name="get_started">Fillojani</string>
-    <string name="enter_email_to_continue_wordpress_com">Që të bëni hyrjen ose të krijoni një llogari te WordPress.com, jepni adresën tuaj email.</string>
+    <string name="enter_email_to_continue_sitebay_com">Që të bëni hyrjen ose të krijoni një llogari te WordPress.com, jepni adresën tuaj email.</string>
     <string name="or_type_your_password">Ose shtypni fjalëkalimin tuaj</string>
     <string name="create_account">Krijo llogari</string>
     <string name="send_link_by_email">Dërgoje lidhjen me email</string>
@@ -915,7 +915,7 @@ Language: sq_AL
     <string name="suffix_1_000">%sK</string>
     <string name="posts_cannot_be_started">S’i hapim dot postimet tani. Ju lutemi, riprovoni më vonë</string>
     <string name="site_cannot_be_loaded">S’ngarkojmë dot të dhënat për sajtin tuaj tani. Ju lutemi, riprovoni më vonë</string>
-    <string name="gutenberg_native_wordpress_media_library">Mediatekë WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">Mediatekë WordPress</string>
     <string name="gutenberg_native_unsupported">E pambuluar</string>
     <string name="gutenberg_native_ungroup">Hiqi Grupin</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Prekeni që të fshihet tastiera</string>
@@ -1369,7 +1369,7 @@ Language: sq_AL
     <string name="stats_follower_label">Pasues</string>
     <string name="stats_followers_count_message">%1$s Ndjekës Gjithsej: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Administroni Tendenca</string>
     <string name="stats_empty_insights_title">S’janë shtuar ende tendenca</string>
     <string name="stats_no_data_yet">Ende pa të dhëna</string>
@@ -1821,7 +1821,7 @@ Language: sq_AL
     <string name="plugin_external_link_icon_content_description">Lidhje e jashtme</string>
     <string name="plugin_icon_content_description">Ikonë shtojce</string>
     <string name="plugin_home_page">Faqe hyrëse e shtojcës</string>
-    <string name="wordpress_dot_org_plugin_page">Faqja e Shtojcës në WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Faqja e Shtojcës në WordPress.org</string>
     <string name="plugin_remove_dialog_message">Jeni të sigurt se doni të hiqet %1$s nga %2$s?\n\nKjo do të çaktivizojë shtojcën dhe do të fshijë krejt kartelat dhe të dhënat përshoqëruara asaj.</string>
     <string name="plugin_remove_dialog_title">Hiqe Shtojcën</string>
     <string name="plugin_remove_progress_dialog_message">Po hiqet %s…</string>
@@ -1982,7 +1982,7 @@ Language: sq_AL
     <string name="login_text_otp">Më mirë më dërgoni kod me tekst</string>
     <string name="enter_verification_code">Thuajse arritëm! Ju lutemi, jepni kodin e verifikimit prej aplikacionit tuaj Authenticator.</string>
     <string name="next">Pasuesi</string>
-    <string name="enter_email_wordpress_com">Që të administroni krejt sajtet tuaj WordPress, bëni hyrjen te WordPress.com.</string>
+    <string name="enter_email_sitebay_com">Që të administroni krejt sajtet tuaj WordPress, bëni hyrjen te WordPress.com.</string>
     <string name="image_optimization_promo_desc">Optimizimi i figurave i mpak figurat, për ngarkim më të shpejtë.\n\nKëtë mund ta ndryshoni kurdo, te rregullimet e sajtit.</string>
     <string name="image_optimization_promo_title">Të aktivizohet optimizimi i figurave?</string>
     <string name="leave_off">Lëre joaktive</string>
@@ -2540,8 +2540,8 @@ Language: sq_AL
     <string name="stats_insights_today">Statistikat e Sotme</string>
     <string name="stats_insights_all_time">Postimet, parjet dhe vizitorët gjatë gjithë kohës</string>
     <string name="stats_insights">Tendenca</string>
-    <string name="me_disconnect_from_wordpress_com">Dil nga WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Hyni te WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Dil nga WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Hyni te WordPress.com</string>
     <string name="me_btn_login_logout">Hyrje/Dalje</string>
     <string name="me_btn_support">Ndihmë &amp; Asistencë</string>
     <string name="account_settings">Rregullime Llogarie</string>
@@ -2674,7 +2674,7 @@ Language: sq_AL
     <string name="fatal_db_error">Ndodhi një gabim gjatë krijimit të bazës së të dhënave për aplikacionin. Provoni të riinstaloni aplikacionin.</string>
     <string name="error_blog_hidden">Ky blog është i fshehur dhe s’u ngarkua dot. Aktivizojeni sërish te rregullimet dhe riprovoni.</string>
     <string name="error_refresh_media">Media s’u rifreskua dot tani</string>
-    <string name="wordpress_blog">Blog WordPress</string>
+    <string name="sitebay_blog">Blog WordPress</string>
     <string name="image_settings">Rregullime figurash</string>
     <string name="local_changes">Ndryshime vendore</string>
     <string name="privacy_policy">Rregulla privatësie</string>

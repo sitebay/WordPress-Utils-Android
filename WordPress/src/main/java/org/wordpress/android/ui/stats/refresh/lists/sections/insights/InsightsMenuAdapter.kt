@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.InsightsMenuAdapter.InsightsMenuItem.DOWN
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.InsightsMenuAdapter.InsightsMenuItem.REMOVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.InsightsMenuAdapter.InsightsMenuItem.UP
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.InsightsMenuAdapter.InsightsMenuItem.DOWN
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.InsightsMenuAdapter.InsightsMenuItem.REMOVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.InsightsMenuAdapter.InsightsMenuItem.UP
 
 class InsightsMenuAdapter(context: Context, isUpVisible: Boolean, isDownVisible: Boolean) : BaseAdapter() {
     private val mInflater: LayoutInflater = LayoutInflater.from(context)

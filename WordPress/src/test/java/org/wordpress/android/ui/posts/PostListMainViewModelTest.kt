@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import androidx.lifecycle.MutableLiveData
 import com.nhaarman.mockitokotlin2.any
@@ -14,17 +14,17 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.PostListViewLayoutType.COMPACT
-import org.wordpress.android.ui.posts.PostListViewLayoutType.STANDARD
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.uploads.UploadStarter
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.PostListViewLayoutType.COMPACT
+import org.sitebay.android.ui.posts.PostListViewLayoutType.STANDARD
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.uploads.UploadStarter
+import org.sitebay.android.viewmodel.Event
 
 class PostListMainViewModelTest : BaseUnitTest() {
     @Mock lateinit var site: SiteModel

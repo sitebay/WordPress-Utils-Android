@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.notifications;
+package org.sitebay.android.ui.notifications;
 
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import org.wordpress.android.util.SystemServiceFactory;
+import org.sitebay.android.util.SystemServiceFactory;
 
 public class ShareAndDismissNotificationReceiver extends BroadcastReceiver {
     public static final String NOTIFICATION_ID_KEY = "NOTIFICATION_ID_KEY";

@@ -1,9 +1,9 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 public enum Shortcut {
-    OPEN_STATS("stats", "org.wordpress.android.ui.ShortcutsNavigator.OPEN_STATS"),
-    CREATE_NEW_POST("notifications", "org.wordpress.android.ui.ShortcutsNavigator.CREATE_NEW_POST"),
-    OPEN_NOTIFICATIONS("new_post", "org.wordpress.android.ui.ShortcutsNavigator.OPEN_NOTIFICATIONS");
+    OPEN_STATS("stats", "org.sitebay.android.ui.ShortcutsNavigator.OPEN_STATS"),
+    CREATE_NEW_POST("notifications", "org.sitebay.android.ui.ShortcutsNavigator.CREATE_NEW_POST"),
+    OPEN_NOTIFICATIONS("new_post", "org.sitebay.android.ui.ShortcutsNavigator.OPEN_NOTIFICATIONS");
 
     public String mAction;
     public String mId;

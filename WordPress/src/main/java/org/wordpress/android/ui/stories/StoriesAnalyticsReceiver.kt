@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
-import com.wordpress.stories.compose.StoriesAnalyticsListener
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
+import com.sitebay.stories.compose.StoriesAnalyticsListener
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
 
 /**
  * Receives tracker-agnostic analytics events from the Stories library and forwards them to [AnalyticsTracker].

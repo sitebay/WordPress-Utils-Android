@@ -27,7 +27,7 @@
                 android:focusableInTouchMode="true"
                 app:theme="@style/WordPress.ActionBar" />
 
-            <org.wordpress.android.ui.prefs.notifications.PrefMainSwitchToolbarView
+            <org.sitebay.android.ui.prefs.notifications.PrefMainSwitchToolbarView
                 android:id="@+id/main_switch"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/toolbar_height"
@@ -93,7 +93,7 @@
             android:visibility="gone"
             tools:visibility="invisible">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/notifications_settings_message"
                 style="@style/WordPress.EmptyList.Title"
                 android:layout_width="match_parent"

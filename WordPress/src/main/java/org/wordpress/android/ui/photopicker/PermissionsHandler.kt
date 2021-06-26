@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.Manifest.permission
 import android.content.Context

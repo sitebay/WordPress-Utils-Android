@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.view.ViewGroup
 import androidx.annotation.MainThread
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.ui.posts.PrepublishingCategoriesViewHolder.PrepublishingCategoriesListItemViewHolder
-import org.wordpress.android.ui.posts.PrepublishingCategoriesViewModel.PrepublishingCategoriesListItemUiState
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.posts.PrepublishingCategoriesViewHolder.PrepublishingCategoriesListItemViewHolder
+import org.sitebay.android.ui.posts.PrepublishingCategoriesViewModel.PrepublishingCategoriesListItemUiState
+import org.sitebay.android.ui.utils.UiHelpers
 
 class PrepublishingCategoriesAdapter(private val uiHelpers: UiHelpers) :
         RecyclerView.Adapter<PrepublishingCategoriesViewHolder<*>>() {

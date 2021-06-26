@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.content.Context
 import android.text.Spannable
@@ -7,11 +7,11 @@ import android.text.style.BackgroundColorSpan
 import android.text.style.StrikethroughSpan
 import android.util.AttributeSet
 import com.google.android.material.textview.MaterialTextView
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.revisions.Diff
-import org.wordpress.android.fluxc.model.revisions.DiffOperations.ADD
-import org.wordpress.android.fluxc.model.revisions.DiffOperations.DELETE
-import org.wordpress.android.util.getColorFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.revisions.Diff
+import org.sitebay.android.fluxc.model.revisions.DiffOperations.ADD
+import org.sitebay.android.fluxc.model.revisions.DiffOperations.DELETE
+import org.sitebay.android.util.getColorFromAttribute
 
 class DiffView : MaterialTextView {
     constructor(context: Context) : super(context)

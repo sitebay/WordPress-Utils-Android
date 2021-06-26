@@ -1,17 +1,17 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.login.LoginMode;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.accounts.LoginActivity;
-import org.wordpress.android.widgets.AuthErrorDialogFragment;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.login.LoginMode;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.accounts.LoginActivity;
+import org.sitebay.android.widgets.AuthErrorDialogFragment;
 
 public class AuthenticationDialogUtils {
     public static void showAuthErrorView(AppCompatActivity activity, SiteStore siteStore, SiteModel site) {

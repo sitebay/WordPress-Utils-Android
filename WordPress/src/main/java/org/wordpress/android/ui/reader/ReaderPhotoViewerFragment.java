@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.app.Activity;
 import android.graphics.Point;
@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.reader.views.ReaderPhotoView;
-import org.wordpress.android.ui.reader.views.ReaderPhotoView.PhotoViewListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DisplayUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.reader.views.ReaderPhotoView;
+import org.sitebay.android.ui.reader.views.ReaderPhotoView.PhotoViewListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DisplayUtils;
 
 public class ReaderPhotoViewerFragment extends Fragment {
     private String mImageUrl;

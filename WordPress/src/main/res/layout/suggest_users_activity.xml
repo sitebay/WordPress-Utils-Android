@@ -25,7 +25,7 @@
         android:layout_height="1dp"
         android:layout_width="match_parent" />
 
-    <org.wordpress.android.widgets.SuggestionAutoCompleteText
+    <org.sitebay.android.widgets.SuggestionAutoCompleteText
         android:id="@+id/autocompleteText"
         android:layout_width="match_parent"
         android:layout_height="44dp"

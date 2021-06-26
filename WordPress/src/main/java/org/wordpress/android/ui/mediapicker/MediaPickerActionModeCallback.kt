@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import android.view.Menu
 import android.view.MenuItem
@@ -13,10 +13,10 @@ import androidx.lifecycle.Lifecycle.Event.ON_STOP
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LifecycleRegistry
 import androidx.lifecycle.Observer
-import org.wordpress.android.R
-import org.wordpress.android.ui.mediapicker.MediaPickerViewModel.ActionModeUiModel
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.R
+import org.sitebay.android.ui.mediapicker.MediaPickerViewModel.ActionModeUiModel
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 class MediaPickerActionModeCallback(private val viewModel: MediaPickerViewModel) : Callback,
         LifecycleOwner {

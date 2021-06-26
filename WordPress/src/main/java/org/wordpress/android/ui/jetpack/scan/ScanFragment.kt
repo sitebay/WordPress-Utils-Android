@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan
+package org.sitebay.android.ui.jetpack.scan
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,26 +8,26 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ScanFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.accounts.HelpActivity.Origin.SCAN_SCREEN_HELP
-import org.wordpress.android.ui.jetpack.scan.ScanNavigationEvents.OpenFixThreatsConfirmationDialog
-import org.wordpress.android.ui.jetpack.scan.ScanNavigationEvents.ShowContactSupport
-import org.wordpress.android.ui.jetpack.scan.ScanNavigationEvents.ShowJetpackSettings
-import org.wordpress.android.ui.jetpack.scan.ScanNavigationEvents.ShowThreatDetails
-import org.wordpress.android.ui.jetpack.scan.ScanViewModel.UiState.ContentUiState
-import org.wordpress.android.ui.jetpack.scan.ScanViewModel.UiState.ErrorUiState
-import org.wordpress.android.ui.jetpack.scan.ScanViewModel.UiState.FullScreenLoadingUiState
-import org.wordpress.android.ui.jetpack.scan.adapters.HorizontalMarginItemDecoration
-import org.wordpress.android.ui.jetpack.scan.adapters.ScanAdapter
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.WPSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ScanFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.accounts.HelpActivity.Origin.SCAN_SCREEN_HELP
+import org.sitebay.android.ui.jetpack.scan.ScanNavigationEvents.OpenFixThreatsConfirmationDialog
+import org.sitebay.android.ui.jetpack.scan.ScanNavigationEvents.ShowContactSupport
+import org.sitebay.android.ui.jetpack.scan.ScanNavigationEvents.ShowJetpackSettings
+import org.sitebay.android.ui.jetpack.scan.ScanNavigationEvents.ShowThreatDetails
+import org.sitebay.android.ui.jetpack.scan.ScanViewModel.UiState.ContentUiState
+import org.sitebay.android.ui.jetpack.scan.ScanViewModel.UiState.ErrorUiState
+import org.sitebay.android.ui.jetpack.scan.ScanViewModel.UiState.FullScreenLoadingUiState
+import org.sitebay.android.ui.jetpack.scan.adapters.HorizontalMarginItemDecoration
+import org.sitebay.android.ui.jetpack.scan.adapters.ScanAdapter
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.WPSnackbar
 import javax.inject.Inject
 
 class ScanFragment : Fragment(R.layout.scan_fragment) {

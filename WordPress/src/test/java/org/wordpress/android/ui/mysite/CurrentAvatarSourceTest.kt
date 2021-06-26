@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.AccountModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.test
-import org.wordpress.android.testScope
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.CurrentAvatarUrl
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.AccountModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.test
+import org.sitebay.android.testScope
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.CurrentAvatarUrl
 
 class CurrentAvatarSourceTest : BaseUnitTest() {
     @Mock lateinit var accountStore: AccountStore

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.INSTALL_JETPACK_CANCELLED
-import org.wordpress.android.databinding.JetpackRemoteInstallActivityBinding
-import org.wordpress.android.ui.JetpackConnectionUtils.trackWithSource
-import org.wordpress.android.ui.JetpackRemoteInstallFragment.Companion.TRACKING_SOURCE_KEY
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.INSTALL_JETPACK_CANCELLED
+import org.sitebay.android.databinding.JetpackRemoteInstallActivityBinding
+import org.sitebay.android.ui.JetpackConnectionUtils.trackWithSource
+import org.sitebay.android.ui.JetpackRemoteInstallFragment.Companion.TRACKING_SOURCE_KEY
 
 class JetpackRemoteInstallActivity : LocaleAwareActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {

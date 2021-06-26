@@ -193,8 +193,8 @@ Language: ru
     <string name="backup_item_roots">Корневая папка WordPress</string>
     <string name="backup_download_details_choose_items_header">Элементы включенные для скачивания</string>
     <string name="gutenberg_native_uploading">Загрузка…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">\"Мои блоки\" нельзя редактировать в приложении WordPress для iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">\"Мои блоки\" нельзя редактировать в приложении WordPress для Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">\"Мои блоки\" нельзя редактировать в приложении WordPress для iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">\"Мои блоки\" нельзя редактировать в приложении WordPress для Android</string>
     <string name="gutenberg_native_replace_file">Заменить файл</string>
     <string name="gutenberg_native_replace_audio">Заменить аудиофайл</string>
     <string name="gutenberg_native_problem_opening_the_audio">Проблема с открытием аудио</string>
@@ -518,7 +518,7 @@ Language: ru
     <string name="media_picker_soft_ask_permissions_denied">%1$s было отказано в доступе к вашим фотографиям. Чтобы исправить это, измените настройки доступа и включите %2$s и %3$s.</string>
     <string name="media_insert_failed">Вставка мультимедиа не удалась.</string>
     <string name="media_insert_failed_with_reason">Вставка мультимедиа не удалась: %s</string>
-    <string name="photo_picker_wordpress_media_library">Выберите из медиатеки WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Выберите из медиатеки WordPress</string>
     <string name="reader_label_toolbar_back">Назад</string>
     <string name="reader_discover_empty_button_text">Начните</string>
     <string name="reader_discover_empty_subtitle">Подписывайтесь на темы для того, чтобы найти новые блоги</string>
@@ -658,7 +658,7 @@ Language: ru
     <string name="login_magic_links_label">Мы пришлём вам ссылку для входа, которая позволит вам сразу войти без пароля.</string>
     <string name="check_email">Проверка почты</string>
     <string name="get_started">Начать </string>
-    <string name="enter_email_to_continue_wordpress_com">Введите ваш адрес электронной почты чтобы войти или создать учётную запись WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Введите ваш адрес электронной почты чтобы войти или создать учётную запись WordPress.com.</string>
     <string name="or_type_your_password">или введите ваш пароль</string>
     <string name="create_account">Создать учётную запись</string>
     <string name="send_link_by_email">Прислать ссылку по электронной почте</string>
@@ -940,7 +940,7 @@ Language: ru
     <string name="suffix_1_000">%sк</string>
     <string name="posts_cannot_be_started">Сейчас невозможно загрузить записи вашего сайта. Попробуйте позже.</string>
     <string name="site_cannot_be_loaded">Сейчас невозможно загрузить данные для вашего сайта. Попробуйте позже.</string>
-    <string name="gutenberg_native_wordpress_media_library">Медиатека WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">Медиатека WordPress</string>
     <string name="gutenberg_native_unsupported">Не поддерживается</string>
     <string name="gutenberg_native_ungroup">Разгруппировать</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Нажмите, чтобы скрыть клавиатуру</string>
@@ -1394,7 +1394,7 @@ Language: ru
     <string name="stats_follower_label">Подписчик</string>
     <string name="stats_followers_count_message">Всего %1$s Подписчики: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Настроить статистику</string>
     <string name="stats_empty_insights_title">Еще нет статистики</string>
     <string name="stats_no_data_yet">Пока нет данных</string>
@@ -1846,7 +1846,7 @@ Language: ru
     <string name="plugin_external_link_icon_content_description">Внешняя ссылка</string>
     <string name="plugin_icon_content_description">Значок плагина</string>
     <string name="plugin_home_page">Домашняя страница плагина</string>
-    <string name="wordpress_dot_org_plugin_page">Страница плагина на WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Страница плагина на WordPress.org</string>
     <string name="plugin_remove_dialog_message">Вы точно хотите удалить %1$s с %2$s?\n\nЭто деактивирует плагин и удалит все ассоциированные файлы и данные.</string>
     <string name="plugin_remove_dialog_title">Удаление плагина</string>
     <string name="plugin_remove_progress_dialog_message">Удаление %s…</string>
@@ -2007,7 +2007,7 @@ Language: ru
     <string name="login_text_otp">Пришлите мне сообщение с кодом.</string>
     <string name="enter_verification_code">Почти готово! Введите проверочный код из приложения Authenticator.</string>
     <string name="next">Вперед</string>
-    <string name="enter_email_wordpress_com">Для управления всеми своими сайтами WordPress войдите в систему WordPress.com с помощью адреса электронной почты.</string>
+    <string name="enter_email_sitebay_com">Для управления всеми своими сайтами WordPress войдите в систему WordPress.com с помощью адреса электронной почты.</string>
     <string name="image_optimization_promo_desc">Средство оптимизации изображений сжимает их для ускорения загрузки.\n\nВы в любой момент можете изменить это в настройках сайта.</string>
     <string name="image_optimization_promo_title">Включить оптимизацию изображений?</string>
     <string name="leave_off">Не включать</string>
@@ -2565,8 +2565,8 @@ Language: ru
     <string name="stats_insights_today">Cтатистические данные на сегодня</string>
     <string name="stats_insights_all_time">Записи, просмотры и посетители за все время</string>
     <string name="stats_insights">Тенденции</string>
-    <string name="me_disconnect_from_wordpress_com">Отключение от WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Подключение к WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Отключение от WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Подключение к WordPress.com</string>
     <string name="me_btn_login_logout">Вход/выход</string>
     <string name="me_btn_support">Помощь и техническая поддержка</string>
     <string name="account_settings">Настройки учётной записи</string>
@@ -2699,7 +2699,7 @@ Language: ru
     <string name="fatal_db_error">Произошла ошибка при создании базы данных приложения- попробуйте его переустановить.</string>
     <string name="error_blog_hidden">Этот блог является скрытым и не может быть загружен. Откройте его через настройки и попробуйте снова.</string>
     <string name="error_refresh_media">В данный момент не удалось обновить медиафайлы.</string>
-    <string name="wordpress_blog">Блог WordPress</string>
+    <string name="sitebay_blog">Блог WordPress</string>
     <string name="image_settings">Настройки изображений</string>
     <string name="local_changes">Локальные изменения</string>
     <string name="privacy_policy">Политика конфиденциальности</string>

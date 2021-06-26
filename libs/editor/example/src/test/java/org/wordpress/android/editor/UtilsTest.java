@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -21,13 +21,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.wordpress.android.editor.Utils.buildMapFromKeyValuePairs;
-import static org.wordpress.android.editor.Utils.decodeHtml;
-import static org.wordpress.android.editor.Utils.escapeHtml;
-import static org.wordpress.android.editor.Utils.getChangeMapFromSets;
-import static org.wordpress.android.editor.Utils.getUrlFromClipboard;
-import static org.wordpress.android.editor.Utils.splitDelimitedString;
-import static org.wordpress.android.editor.Utils.splitValuePairDelimitedString;
+import static org.sitebay.android.editor.Utils.buildMapFromKeyValuePairs;
+import static org.sitebay.android.editor.Utils.decodeHtml;
+import static org.sitebay.android.editor.Utils.escapeHtml;
+import static org.sitebay.android.editor.Utils.getChangeMapFromSets;
+import static org.sitebay.android.editor.Utils.getUrlFromClipboard;
+import static org.sitebay.android.editor.Utils.splitDelimitedString;
+import static org.sitebay.android.editor.Utils.splitValuePairDelimitedString;
 
 @Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)
@@ -45,7 +45,7 @@ public class UtilsTest {
         assertEquals(null, decodeHtml(null));
 
         // Test normal usage
-        assertEquals("http://www.wordpress.com/", decodeHtml("http%3A%2F%2Fwww.wordpress.com%2F"));
+        assertEquals("http://www.sitebay.com/", decodeHtml("http%3A%2F%2Fwww.sitebay.com%2F"));
     }
 
     @Test
@@ -67,7 +67,7 @@ public class UtilsTest {
     public void testSplitValuePairDelimitedString() {
         // Test usage with a URL containing the delimiter
         Set<String> keyValueSet = new HashSet<>();
-        keyValueSet.add("url=http://www.wordpress.com/~user");
+        keyValueSet.add("url=http://www.sitebay.com/~user");
         keyValueSet.add("title=I'm a link!");
 
         List<String> identifiers = new ArrayList<>();
@@ -75,13 +75,13 @@ public class UtilsTest {
         identifiers.add("title");
 
         assertEquals(keyValueSet, splitValuePairDelimitedString(
-                "url=http://www.wordpress.com/~user~title=I'm a link!", "~", identifiers));
+                "url=http://www.sitebay.com/~user~title=I'm a link!", "~", identifiers));
 
         // Test usage with a matching identifier but no delimiters
         keyValueSet.clear();
-        keyValueSet.add("url=http://www.wordpress.com/");
+        keyValueSet.add("url=http://www.sitebay.com/");
 
-        assertEquals(keyValueSet, splitValuePairDelimitedString("url=http://www.wordpress.com/", "~", identifiers));
+        assertEquals(keyValueSet, splitValuePairDelimitedString("url=http://www.sitebay.com/", "~", identifiers));
 
         // Test usage with no matching identifier and no delimiters
         keyValueSet.clear();
@@ -117,11 +117,11 @@ public class UtilsTest {
         // Test multiple '=' (should split at the first `=` and treat the rest of them as part of the string)
         keyValueSet.clear();
         keyValueSet.add("id=test");
-        keyValueSet.add("contents=some text\n<a href=\"http://wordpress.com\">WordPress</a>");
+        keyValueSet.add("contents=some text\n<a href=\"http://sitebay.com\">WordPress</a>");
 
         expectedMap.clear();
         expectedMap.put("id", "test");
-        expectedMap.put("contents", "some text\n<a href=\"http://wordpress.com\">WordPress</a>");
+        expectedMap.put("contents", "some text\n<a href=\"http://sitebay.com\">WordPress</a>");
 
         assertEquals(expectedMap, buildMapFromKeyValuePairs(keyValueSet));
 

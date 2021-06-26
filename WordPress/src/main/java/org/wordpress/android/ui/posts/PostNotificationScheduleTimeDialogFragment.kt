@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.Dialog
 import android.content.Context
@@ -7,16 +7,16 @@ import android.widget.RadioGroup
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.TEN_MINUTES
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.WHEN_PUBLISHED
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
-import org.wordpress.android.ui.posts.prepublishing.PrepublishingPublishSettingsViewModel
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.TEN_MINUTES
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.WHEN_PUBLISHED
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.EDIT_POST
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
+import org.sitebay.android.ui.posts.prepublishing.PrepublishingPublishSettingsViewModel
 import javax.inject.Inject
 
 class PostNotificationScheduleTimeDialogFragment : DialogFragment() {

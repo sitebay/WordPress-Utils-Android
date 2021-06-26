@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.reader
+package org.sitebay.android.viewmodel.reader
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.whenever
@@ -9,20 +9,20 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.R.string
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.reader.ReaderSubsActivity
-import org.wordpress.android.ui.reader.subfilter.ActionType.OpenLoginPage
-import org.wordpress.android.ui.reader.subfilter.ActionType.OpenSubsAtPage
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.HiddenEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.VisibleEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory.SITES
-import org.wordpress.android.ui.reader.subfilter.SubfilterCategory.TAGS
-import org.wordpress.android.ui.reader.viewmodels.SubfilterPageViewModel
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.R.string
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.reader.ReaderSubsActivity
+import org.sitebay.android.ui.reader.subfilter.ActionType.OpenLoginPage
+import org.sitebay.android.ui.reader.subfilter.ActionType.OpenSubsAtPage
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.HiddenEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.VisibleEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory.SITES
+import org.sitebay.android.ui.reader.subfilter.SubfilterCategory.TAGS
+import org.sitebay.android.ui.reader.viewmodels.SubfilterPageViewModel
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 @RunWith(MockitoJUnitRunner::class)
 class SubfilterPageViewModelTest {

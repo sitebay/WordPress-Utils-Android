@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.plans
+package org.sitebay.android.ui.plans
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,16 +9,16 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PlansListFragmentBinding
-import org.wordpress.android.fluxc.model.plans.PlanOffersModel
-import org.wordpress.android.ui.plans.PlansViewModel.PlansListStatus.ERROR
-import org.wordpress.android.ui.plans.PlansViewModel.PlansListStatus.ERROR_WITH_CACHE
-import org.wordpress.android.ui.plans.PlansViewModel.PlansListStatus.FETCHING
-import org.wordpress.android.util.NetworkUtils
-import org.wordpress.android.util.WPSwipeToRefreshHelper
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PlansListFragmentBinding
+import org.sitebay.android.fluxc.model.plans.PlanOffersModel
+import org.sitebay.android.ui.plans.PlansViewModel.PlansListStatus.ERROR
+import org.sitebay.android.ui.plans.PlansViewModel.PlansListStatus.ERROR_WITH_CACHE
+import org.sitebay.android.ui.plans.PlansViewModel.PlansListStatus.FETCHING
+import org.sitebay.android.util.NetworkUtils
+import org.sitebay.android.util.WPSwipeToRefreshHelper
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper
 import javax.inject.Inject
 
 class PlansListFragment : Fragment() {

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.R
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
 
 class RevisionItemViewHolder(
     parent: ViewGroup,

@@ -1,28 +1,28 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
 import androidx.annotation.NonNull;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.MediaActionBuilder;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore.CancelMediaPayload;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaUploaded;
-import org.wordpress.android.fluxc.store.MediaStore.UploadMediaPayload;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.WPMediaUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.config.Mp4ComposerVideoOptimizationFeatureConfig;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.MediaActionBuilder;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore.CancelMediaPayload;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaUploaded;
+import org.sitebay.android.fluxc.store.MediaStore.UploadMediaPayload;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.WPMediaUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.config.Mp4ComposerVideoOptimizationFeatureConfig;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -431,14 +431,14 @@ public class MediaUploadHandler implements UploadHandler<MediaModel>, VideoOptim
             local image. We decided to check whether the image belongs to the same post so we can be sure the local
             path gets replaced with the url.
 
-            More info can be found here - https://github.com/wordpress-mobile/WordPress-Android/pull/10204.
+            More info can be found here - https://github.com/sitebay-mobile/WordPress-Android/pull/10204.
 
             We also need to check the `markedLocallyAsFeatured` flag is equal as we might lose it otherwise. If the
             user adds an image into the post content and they set the same image as featured image, we need to enqueue
             both uploads. Otherwise, we could lose the information what we need to update - the featured image or post
             content.
 
-            Issue with a proper fix - https://github.com/wordpress-mobile/WordPress-Android/issues/10210
+            Issue with a proper fix - https://github.com/sitebay-mobile/WordPress-Android/issues/10210
          */
         return (media1.getLocalSiteId() == media2.getLocalSiteId()
                 && media1.getLocalPostId() == media2.getLocalPostId()

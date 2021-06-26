@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.annotation.StringRes
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 sealed class SiteDialogModel(
     val tag: String,

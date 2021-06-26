@@ -1,4 +1,4 @@
-package org.wordpress.android.models.wrappers
+package org.sitebay.android.models.wrappers
 
 import dagger.Reusable
 import java.text.DateFormat

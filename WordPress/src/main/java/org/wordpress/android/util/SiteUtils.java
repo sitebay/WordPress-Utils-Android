@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -7,27 +7,27 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.DesignateMobileEditorForAllSitesPayload;
-import org.wordpress.android.fluxc.store.SiteStore.DesignateMobileEditorPayload;
-import org.wordpress.android.fluxc.store.SiteStore.FetchSitesPayload;
-import org.wordpress.android.fluxc.store.SiteStore.SiteFilter;
-import org.wordpress.android.ui.plans.PlansConstants;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.utils.SiteAccessibilityInfo;
-import org.wordpress.android.ui.reader.utils.SiteVisibility;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils.BlockEditorEnabledSource;
-import org.wordpress.android.util.helpers.Version;
-import org.wordpress.android.util.image.BlavatarShape;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.DesignateMobileEditorForAllSitesPayload;
+import org.sitebay.android.fluxc.store.SiteStore.DesignateMobileEditorPayload;
+import org.sitebay.android.fluxc.store.SiteStore.FetchSitesPayload;
+import org.sitebay.android.fluxc.store.SiteStore.SiteFilter;
+import org.sitebay.android.ui.plans.PlansConstants;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.utils.SiteAccessibilityInfo;
+import org.sitebay.android.ui.reader.utils.SiteVisibility;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils.BlockEditorEnabledSource;
+import org.sitebay.android.util.helpers.Version;
+import org.sitebay.android.util.image.BlavatarShape;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -380,7 +380,7 @@ public class SiteUtils {
     }
 
     public static boolean hasCustomDomain(@NonNull SiteModel site) {
-        return !site.getUrl().contains(".wordpress.com") && !site.getUrl().contains(".wpcomstaging.com");
+        return !site.getUrl().contains(".sitebay.com") && !site.getUrl().contains(".wpcomstaging.com");
     }
 
     public static boolean hasFullAccessToContent(@Nullable SiteModel site) {

@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.reader.subfilter
+package org.sitebay.android.ui.reader.subfilter
 
-import org.wordpress.android.R
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.DIVIDER
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SECTION_TITLE
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE_ALL
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.R
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.DIVIDER
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SECTION_TITLE
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE_ALL
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 sealed class SubfilterListItem(val type: ItemType, val isTrackedItem: Boolean = false) {
     open var isSelected: Boolean = false

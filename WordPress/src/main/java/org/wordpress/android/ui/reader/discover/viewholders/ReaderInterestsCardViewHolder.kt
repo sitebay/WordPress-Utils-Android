@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.discover.viewholders
+package org.sitebay.android.ui.reader.discover.viewholders
 
 import android.view.GestureDetector
 import android.view.MotionEvent
@@ -6,12 +6,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
-import org.wordpress.android.databinding.ReaderInterestCardBinding
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState
-import org.wordpress.android.ui.reader.discover.ReaderInterestAdapter
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.ReaderInterestCardBinding
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState
+import org.sitebay.android.ui.reader.discover.ReaderInterestAdapter
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.viewBinding
 
 private const val Y_BUFFER = 10
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters;
+package org.sitebay.android.ui.reader.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,26 +12,26 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderBlogTable;
-import org.wordpress.android.models.ReaderBlog;
-import org.wordpress.android.models.ReaderBlogList;
-import org.wordpress.android.ui.reader.ReaderInterfaces;
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener;
-import org.wordpress.android.ui.reader.actions.ReaderBlogActions;
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask;
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateServiceStarter;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.reader.views.ReaderFollowButton;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderBlogTable;
+import org.sitebay.android.models.ReaderBlog;
+import org.sitebay.android.models.ReaderBlogList;
+import org.sitebay.android.ui.reader.ReaderInterfaces;
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener;
+import org.sitebay.android.ui.reader.actions.ReaderBlogActions;
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask;
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateServiceStarter;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.reader.views.ReaderFollowButton;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.Collections;
 import java.util.Comparator;

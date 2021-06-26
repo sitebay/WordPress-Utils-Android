@@ -104,12 +104,12 @@
         android:orientation="vertical"
         android:visibility="invisible">
 
-        <org.wordpress.android.ui.prefs.EmptyViewRecyclerView
+        <org.sitebay.android.ui.prefs.EmptyViewRecyclerView
             android:id="@+id/domain_suggestions_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <org.wordpress.android.ui.ActionableEmptyView
+        <org.sitebay.android.ui.ActionableEmptyView
             android:id="@+id/actionableEmptyView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

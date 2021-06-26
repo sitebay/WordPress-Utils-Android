@@ -8,7 +8,7 @@
 
     <include layout="@layout/preference_dialog_title" />
 
-    <org.wordpress.android.ui.prefs.notifications.PrefMainSwitchToolbarView
+    <org.sitebay.android.ui.prefs.notifications.PrefMainSwitchToolbarView
         android:id="@+id/main_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

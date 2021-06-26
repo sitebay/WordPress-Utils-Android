@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
-import org.wordpress.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel
 
 interface VideoOptimizerProvider {
     fun start()

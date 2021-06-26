@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
 /**
  * A class that represents a feature configuration which enables the feature to be remotely turned on or off.

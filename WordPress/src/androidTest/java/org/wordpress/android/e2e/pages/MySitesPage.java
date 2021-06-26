@@ -1,4 +1,4 @@
-package org.wordpress.android.e2e.pages;
+package org.sitebay.android.e2e.pages;
 
 import android.view.View;
 import android.widget.TextView;
@@ -7,7 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.test.espresso.ViewInteraction;
 
 import org.hamcrest.Matcher;
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -19,10 +19,10 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withParent;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
-import static org.wordpress.android.support.BetterScrollToAction.scrollTo;
-import static org.wordpress.android.support.WPSupportUtils.clickOn;
-import static org.wordpress.android.support.WPSupportUtils.isElementDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.longClickOn;
+import static org.sitebay.android.support.BetterScrollToAction.scrollTo;
+import static org.sitebay.android.support.WPSupportUtils.clickOn;
+import static org.sitebay.android.support.WPSupportUtils.isElementDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.longClickOn;
 
 public class MySitesPage {
     private static ViewInteraction chooseSiteLabel =

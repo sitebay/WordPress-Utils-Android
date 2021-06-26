@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,16 +10,16 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.SiteActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore.OnPlansFetched
-import org.wordpress.android.fluxc.utils.AppLogWrapper
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.DomainCreditAvailable
-import org.wordpress.android.ui.plans.isDomainCreditAvailable
-import org.wordpress.android.util.AppLog.T.DOMAIN_REGISTRATION
-import org.wordpress.android.util.SiteUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.SiteActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore.OnPlansFetched
+import org.sitebay.android.fluxc.utils.AppLogWrapper
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.DomainCreditAvailable
+import org.sitebay.android.ui.plans.isDomainCreditAvailable
+import org.sitebay.android.util.AppLog.T.DOMAIN_REGISTRATION
+import org.sitebay.android.util.SiteUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 import kotlin.coroutines.resume

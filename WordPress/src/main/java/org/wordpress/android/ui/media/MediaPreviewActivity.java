@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media;
+package org.sitebay.android.ui.media;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,17 +27,17 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.widgets.WPViewPagerTransformer;
-import org.wordpress.android.widgets.WPViewPagerTransformer.TransformType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.widgets.WPViewPagerTransformer;
+import org.sitebay.android.widgets.WPViewPagerTransformer.TransformType;
 
 import java.util.ArrayList;
 

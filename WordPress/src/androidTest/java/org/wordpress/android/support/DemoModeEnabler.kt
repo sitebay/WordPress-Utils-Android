@@ -1,4 +1,4 @@
-package org.wordpress.android.support
+package org.sitebay.android.support
 
 import android.os.ParcelFileDescriptor
 import android.os.ParcelFileDescriptor.AutoCloseInputStream

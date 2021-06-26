@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks;
+package org.sitebay.android.ui.deeplinks;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,20 +7,20 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModelProvider;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UriWrapper;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UriWrapper;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.WordPress.getContext;
+import static org.sitebay.android.WordPress.getContext;
 
 /**
  * An activity to handle deep linking and intercepting links like:
  * <p>
- * wordpress://viewpost?blogId={blogId}&postId={postId}
+ * sitebay://viewpost?blogId={blogId}&postId={postId}
  * <p>
  * Redirects users to the reader activity along with IDs passed in the intent
  */

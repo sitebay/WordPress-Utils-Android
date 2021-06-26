@@ -379,8 +379,8 @@ Language: vi_VN
     <string name="stats_insights_today">Thống kê hôm nay</string>
     <string name="stats_insights_all_time">Tất cả bài viết, lượt xem và khách</string>
     <string name="stats_insights">Phân tích</string>
-    <string name="me_disconnect_from_wordpress_com">Thoát tài khoản tại WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Kết nối đến Wordpress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Thoát tài khoản tại WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Kết nối đến Wordpress.com</string>
     <string name="me_btn_login_logout">Đăng nhập/Đăng xuất</string>
     <string name="me_btn_support">Giúp đỡ &amp; Hỗ trợ</string>
     <string name="account_settings">Cài đặt tài khoản</string>
@@ -515,7 +515,7 @@ Language: vi_VN
     <string name="new_post">Bài viết mới</string>
     <string name="new_media">Media mới</string>
     <string name="image_settings">Thiết đặt ảnh</string>
-    <string name="wordpress_blog">Blog WordPress</string>
+    <string name="sitebay_blog">Blog WordPress</string>
     <string name="error_blog_hidden">Blog này bị ẩn và không thể tải được. Bật nó lên trong thiết đặt và thử lại.</string>
     <string name="fatal_db_error">Một lỗi đã xảy ra trong khi tạo cơ sở dữ liệu ứng dụng. Thử cài đặt lại ứng dụng.</string>
     <string name="reader_title_applog">Nhật kí ứng dụng</string>

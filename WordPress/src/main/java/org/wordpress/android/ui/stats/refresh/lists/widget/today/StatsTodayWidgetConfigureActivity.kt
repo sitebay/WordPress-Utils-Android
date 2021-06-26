@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.today
+package org.sitebay.android.ui.stats.refresh.lists.widget.today
 
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.databinding.StatsTodayWidgetConfigureActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
+import org.sitebay.android.databinding.StatsTodayWidgetConfigureActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
 
 class StatsTodayWidgetConfigureActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

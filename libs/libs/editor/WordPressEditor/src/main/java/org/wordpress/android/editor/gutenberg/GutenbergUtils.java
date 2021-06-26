@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.gutenberg;
+package org.sitebay.android.editor.gutenberg;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

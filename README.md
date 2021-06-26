@@ -1,16 +1,16 @@
 # WordPress for Android #
 
-[![CircleCI](https://circleci.com/gh/wordpress-mobile/WordPress-Android.svg?style=svg)](https://circleci.com/gh/wordpress-mobile/WordPress-Android)
+[![CircleCI](https://circleci.com/gh/sitebay-mobile/WordPress-Android.svg?style=svg)](https://circleci.com/gh/sitebay-mobile/WordPress-Android)
 
 If you're just looking to install WordPress for Android, you can find
-it on [Google Play](https://play.google.com/store/apps/details?id=org.wordpress.android&referrer=utm_source%3Dgithub%26utm_medium%3Dwebsite). If you're a developer wanting to contribute, read on.
+it on [Google Play](https://play.google.com/store/apps/details?id=org.sitebay.android&referrer=utm_source%3Dgithub%26utm_medium%3Dwebsite). If you're a developer wanting to contribute, read on.
 
 
 ## Build Instructions ##
 
 1. Make sure you've installed [Android Studio](https://developer.android.com/studio/index.html).
-1. Install npm using [Node Version Manager](https://github.com/nvm-sh/nvm)(nvm), as described in step one from the [Block Editor Quickstart guide](https://developer.wordpress.org/block-editor/tutorials/devenv/#quickstart)
-1. `git clone --recurse-submodules git@github.com:wordpress-mobile/WordPress-Android.git` in the folder of your preference.
+1. Install npm using [Node Version Manager](https://github.com/nvm-sh/nvm)(nvm), as described in step one from the [Block Editor Quickstart guide](https://developer.sitebay.org/block-editor/tutorials/devenv/#quickstart)
+1. `git clone --recurse-submodules git@github.com:sitebay-mobile/WordPress-Android.git` in the folder of your preference.
 Or if you already have the project cloned, initialize and update the submodules:
     ```
     git submodule init
@@ -51,7 +51,7 @@ in development builds of the app, only in the official release.
 
 Note that credentials created with our [WordPress.com applications manager][5]
 allow login only and not signup. New accounts must be created using the [official app][1]
-or [on the web](https://wordpress.com/start). Login is restricted to the WordPress.com
+or [on the web](https://sitebay.com/start). Login is restricted to the WordPress.com
 account with which the credentials were created. In other words, if the credentials
 were created with foo@email.com, you will only be able to login with foo@email.com.
 Using another account like bar@email.com will cause the `Client cannot use "password" grant_type` error.
@@ -106,7 +106,7 @@ If you happen to find a security vulnerability, we would appreciate you letting 
 
 ## Getting in Touch
 
-If you have questions or just want to say hi, join the [WordPress Slack](https://chat.wordpress.org) and drop a message on the `#mobile` channel.
+If you have questions or just want to say hi, join the [WordPress Slack](https://chat.sitebay.org) and drop a message on the `#mobile` channel.
 
 ## Documentation
 
@@ -118,8 +118,8 @@ Please read the [docs](docs/) for more.
 
 ## Resources
 
-- [WordPress Mobile Blog](http://make.wordpress.org/mobile)
-- [WordPress Mobile Handbook](http://make.wordpress.org/mobile/handbook/)
+- [WordPress Mobile Blog](http://make.sitebay.org/mobile)
+- [WordPress Mobile Handbook](http://make.sitebay.org/mobile/handbook/)
 
 ## License ##
 
@@ -128,10 +128,10 @@ WordPress for Android is an Open Source project covered by the
 in the `libs/` directory comes from external libraries, which might
 be covered by a different license compatible with the GPLv2.
 
-[1]: https://play.google.com/store/apps/details?id=org.wordpress.android
+[1]: https://play.google.com/store/apps/details?id=org.sitebay.android
 [3]: http://developer.android.com/sdk/installing/studio.html
-[4]: https://make.wordpress.org/chat/
-[5]: https://developer.wordpress.com/apps/
-[6]: https://developer.wordpress.com/docs/oauth2/
-[7]: https://developer.wordpress.com/docs/api/
+[4]: https://make.sitebay.org/chat/
+[5]: https://developer.sitebay.com/apps/
+[6]: https://developer.sitebay.com/docs/oauth2/
+[7]: https://developer.sitebay.com/docs/api/
 [8]: https://developers.google.com/identity/

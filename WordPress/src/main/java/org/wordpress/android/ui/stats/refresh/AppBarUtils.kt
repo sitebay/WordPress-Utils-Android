@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.stats.refresh
+package org.sitebay.android.ui.stats.refresh
 
 import android.animation.StateListAnimator
 import com.google.android.material.appbar.AppBarLayout
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 private const val DELAY: Long = 100
 

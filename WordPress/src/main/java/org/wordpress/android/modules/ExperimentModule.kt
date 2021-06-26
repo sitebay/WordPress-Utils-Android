@@ -1,8 +1,8 @@
-package org.wordpress.android.modules
+package org.sitebay.android.modules
 
 import dagger.Module
 import dagger.multibindings.Multibinds
-import org.wordpress.android.util.experiments.Experiment
+import org.sitebay.android.util.experiments.Experiment
 
 @Module
 interface ExperimentModule {

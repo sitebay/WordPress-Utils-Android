@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -14,8 +14,8 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.annotation.DrawableRes
 import androidx.appcompat.widget.AppCompatImageView
-import org.wordpress.android.R
-import org.wordpress.android.util.DisplayUtils
+import org.sitebay.android.R
+import org.sitebay.android.util.DisplayUtils
 
 /**
  * A ImageView that can draw a badge at the corner of its view.

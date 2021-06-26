@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
@@ -6,8 +6,8 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.util.PhotonUtilsWrapper
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.util.PhotonUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class FeaturedImageUtilsTest {
@@ -22,7 +22,7 @@ class FeaturedImageUtilsTest {
 
     @Test
     fun `does not show the same featured image twice`() {
-        val image = "https://wordpress.com/image.png"
+        val image = "https://sitebay.com/image.png"
         val readerPost = initReaderPost(image, image)
 
         val result = featuredImageUtils.showFeaturedImage(readerPost.featuredImage, readerPost.text)
@@ -45,8 +45,8 @@ class FeaturedImageUtilsTest {
 
     @Test
     fun `shows featured image with a different name with dashes`() {
-        val featuredImage = "https://wordpress.com/image.png"
-        val bodyImage = "https://wordpress.com/image-dog-10.png"
+        val featuredImage = "https://sitebay.com/image.png"
+        val bodyImage = "https://sitebay.com/image-dog-10.png"
         val readerPost = initReaderPost(bodyImage, featuredImage)
 
         val result = featuredImageUtils.showFeaturedImage(readerPost.featuredImage, readerPost.text)
@@ -56,8 +56,8 @@ class FeaturedImageUtilsTest {
 
     @Test
     fun `shows featured image with different name`() {
-        val featuredImage = "https://wordpress.com/image.png"
-        val bodyImage = "https://wordpress.com/image2.png"
+        val featuredImage = "https://sitebay.com/image.png"
+        val bodyImage = "https://sitebay.com/image2.png"
         val readerPost = initReaderPost(bodyImage, featuredImage)
 
         val result = featuredImageUtils.showFeaturedImage(readerPost.featuredImage, readerPost.text)
@@ -67,8 +67,8 @@ class FeaturedImageUtilsTest {
 
     @Test
     fun `shows featured image with different name and non-last path segment containing a dash`() {
-        val featuredImage = "https://wordpress.com/wp-content/image1.png"
-        val bodyImage = "https://wordpress.com/wp-content/image2.png"
+        val featuredImage = "https://sitebay.com/wp-content/image1.png"
+        val bodyImage = "https://sitebay.com/wp-content/image2.png"
         val readerPost = initReaderPost(bodyImage, featuredImage)
 
         val result = featuredImageUtils.showFeaturedImage(readerPost.featuredImage, readerPost.text)
@@ -78,8 +78,8 @@ class FeaturedImageUtilsTest {
 
     @Test
     fun `shows featured image with the same name from different host`() {
-        val featuredImage = "https://wordpress.com/image.png"
-        val bodyImage = "https://wordpress2.com/image.png"
+        val featuredImage = "https://sitebay.com/image.png"
+        val bodyImage = "https://sitebay2.com/image.png"
         val readerPost = initReaderPost(bodyImage, featuredImage)
 
         val result = featuredImageUtils.showFeaturedImage(readerPost.featuredImage, readerPost.text)

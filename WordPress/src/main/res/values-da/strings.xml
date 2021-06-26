@@ -65,8 +65,8 @@ Language: da_DK
     <string name="stats_insights_today">Dagens statistikker</string>
     <string name="stats_insights_all_time">Totale indlæg, visninger og besøgende</string>
     <string name="stats_insights">Indsigt</string>
-    <string name="me_disconnect_from_wordpress_com">Afbryd forbindelse til WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Forbind til WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Afbryd forbindelse til WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Forbind til WordPress.com</string>
     <string name="me_btn_login_logout">Log ind/ud</string>
     <string name="account_settings">Kontoindstillinger</string>
     <string name="me_btn_support">Hjælp &amp; Support</string>
@@ -201,7 +201,7 @@ Language: da_DK
     <string name="new_post">Nyt indlæg</string>
     <string name="new_media">Nyt medie</string>
     <string name="privacy_policy">Privatlivspolitik</string>
-    <string name="wordpress_blog">WordPress-blog</string>
+    <string name="sitebay_blog">WordPress-blog</string>
     <string name="image_settings">Billedeindstillinger</string>
     <string name="content_required">Kommentar er påkrævet</string>
     <string name="toast_comment_unedited">Kommentar er ikke ændret</string>

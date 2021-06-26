@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import com.nhaarman.mockitokotlin2.verify
 import kotlinx.coroutines.InternalCoroutinesApi
@@ -6,10 +6,10 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.WordPress
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.WordPress
+import org.sitebay.android.viewmodel.Event
 
 @InternalCoroutinesApi
 class MeViewModelTest : BaseUnitTest() {

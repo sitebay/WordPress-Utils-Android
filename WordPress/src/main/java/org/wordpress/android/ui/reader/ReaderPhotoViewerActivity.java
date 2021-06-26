@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,16 +17,16 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.reader.models.ReaderImageList;
-import org.wordpress.android.ui.reader.utils.ReaderImageScanner;
-import org.wordpress.android.ui.reader.views.ReaderPhotoView.PhotoViewListener;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.widgets.WPViewPager;
-import org.wordpress.android.widgets.WPViewPagerTransformer;
-import org.wordpress.android.widgets.WPViewPagerTransformer.TransformType;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.reader.models.ReaderImageList;
+import org.sitebay.android.ui.reader.utils.ReaderImageScanner;
+import org.sitebay.android.ui.reader.views.ReaderPhotoView.PhotoViewListener;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.widgets.WPViewPager;
+import org.sitebay.android.widgets.WPViewPagerTransformer;
+import org.sitebay.android.widgets.WPViewPagerTransformer.TransformType;
 
 /**
  * Full-screen photo viewer - uses a ViewPager to enable scrolling between images in a blog

@@ -1,12 +1,12 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.net.Uri;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
 
 import java.util.Collection;
 import java.util.LinkedHashSet;
@@ -85,7 +85,7 @@ public class URLFilteredWebViewClient extends ErrorManagedWebViewClient {
         } else {
             // show "links are disabled" message.
             Context ctx = WordPress.getContext();
-            int linksDisabledMessageResId = org.wordpress.android.R.string.preview_screen_links_disabled;
+            int linksDisabledMessageResId = org.sitebay.android.R.string.preview_screen_links_disabled;
             Toast.makeText(ctx, ctx.getText(linksDisabledMessageResId), Toast.LENGTH_SHORT).show();
         }
         return true;

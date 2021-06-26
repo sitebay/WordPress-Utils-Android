@@ -25,7 +25,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <org.wordpress.android.ui.prefs.EmptyViewRecyclerView
+        <org.sitebay.android.ui.prefs.EmptyViewRecyclerView
             android:id="@+id/tags_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -44,7 +44,7 @@
             app:borderWidth="0dp"
             tools:visibility="visible" />
 
-        <org.wordpress.android.ui.ActionableEmptyView
+        <org.sitebay.android.ui.ActionableEmptyView
             android:id="@+id/actionable_empty_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

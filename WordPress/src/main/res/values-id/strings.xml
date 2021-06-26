@@ -171,8 +171,8 @@ Language: id
     <string name="backup_item_roots">Root WordPress</string>
     <string name="backup_download_details_choose_items_header">Item yang disertakan di unduhan ini</string>
     <string name="gutenberg_native_uploading">Mengunggah…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Blok pakai ulang tidak dapat disunting di WordPress untuk iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Blok pakai ulang tidak dapat disunting di WordPress untuk Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Blok pakai ulang tidak dapat disunting di WordPress untuk iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Blok pakai ulang tidak dapat disunting di WordPress untuk Android</string>
     <string name="gutenberg_native_replace_file">Ganti file</string>
     <string name="gutenberg_native_replace_audio">Ganti audio</string>
     <string name="gutenberg_native_problem_opening_the_audio">Terjadi masalah saat membuka audio</string>
@@ -493,7 +493,7 @@ Language: id
     <string name="media_picker_soft_ask_permissions_denied">%1$s ditolak untuk mengakses foto Anda. Untuk memperbaiki ini, edit perizinan Anda dan aktifkan %2$s dan %3$s.</string>
     <string name="media_insert_failed">Penyisipan media gagal.</string>
     <string name="media_insert_failed_with_reason">Penyisipan media gagal: %s</string>
-    <string name="photo_picker_wordpress_media_library">Pilih dari Pustaka Media WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Pilih dari Pustaka Media WordPress</string>
     <string name="reader_label_toolbar_back">Kembali</string>
     <string name="reader_discover_empty_button_text">Memulai</string>
     <string name="reader_discover_empty_subtitle">Ikuti topik untuk menemukan blog baru</string>
@@ -633,7 +633,7 @@ Language: id
     <string name="login_magic_links_label">Kami akan mengirimkan email berisi tautan yang bisa Anda gunakan untuk login dalam sekejap, tanpa kata sandi.</string>
     <string name="check_email">Periksa email</string>
     <string name="get_started">Memulai</string>
-    <string name="enter_email_to_continue_wordpress_com">Masukkan alamat email Anda untuk login atau membuat akun WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Masukkan alamat email Anda untuk login atau membuat akun WordPress.com.</string>
     <string name="or_type_your_password">Atau ketik kata sandi Anda</string>
     <string name="create_account">Buat akun</string>
     <string name="send_link_by_email">Kirim tautan lewat email</string>
@@ -915,7 +915,7 @@ Language: id
     <string name="suffix_1_000">%sK</string>
     <string name="posts_cannot_be_started">Kami saat ini tidak dapat membuka pos. Harap coba lagi nanti</string>
     <string name="site_cannot_be_loaded">Kami saat ini tidak dapat memuat data untuk situs Anda. Harap coba lagi nanti</string>
-    <string name="gutenberg_native_wordpress_media_library">Pustaka Media WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">Pustaka Media WordPress</string>
     <string name="gutenberg_native_unsupported">Tidak didukung</string>
     <string name="gutenberg_native_ungroup">Batalkan pengelompokan</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Ketuk untuk menyembunyikan keyboard</string>
@@ -1369,7 +1369,7 @@ Language: id
     <string name="stats_follower_label">Pengikut</string>
     <string name="stats_followers_count_message">Total %1$s Pengikut: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Kelola Insights</string>
     <string name="stats_empty_insights_title">Belum ada informasi yang ditambahkan</string>
     <string name="stats_no_data_yet">Belum ada data</string>
@@ -1821,7 +1821,7 @@ Language: id
     <string name="plugin_external_link_icon_content_description">Tautan eksternal</string>
     <string name="plugin_icon_content_description">Ikon plugin</string>
     <string name="plugin_home_page">Beranda plugin</string>
-    <string name="wordpress_dot_org_plugin_page">Halaman Plugin WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Halaman Plugin WordPress.org</string>
     <string name="plugin_remove_dialog_message">Anda yakin ingin menghapus %1$s dari %2$s?\n\nTindakan ini akan menonaktifkan plugin dan menghapus semua file dan data terkait.</string>
     <string name="plugin_remove_dialog_title">Hapus Plugin</string>
     <string name="plugin_remove_progress_dialog_message">Menghapus %s…</string>
@@ -1982,7 +1982,7 @@ Language: id
     <string name="login_text_otp">Kirimi saya kode saja</string>
     <string name="enter_verification_code">Hampir selesai! Masukkan kode verifikasi dari aplikasi Pengautentikasi.</string>
     <string name="next">Selanjutnya</string>
-    <string name="enter_email_wordpress_com">Login ke WordPress.com dengan alamat email untuk mengelola semua situs WordPress Anda.</string>
+    <string name="enter_email_sitebay_com">Login ke WordPress.com dengan alamat email untuk mengelola semua situs WordPress Anda.</string>
     <string name="image_optimization_promo_desc">Pengoptimalan gambar mengecilkan gambar agar pengunggahan lebih cepat.\n\nAnda dapat mengubahnya kapan saja di pengaturan situs.</string>
     <string name="image_optimization_promo_title">Aktifkan pengoptimalan gambar?</string>
     <string name="leave_off">Nonaktifkan</string>
@@ -2540,8 +2540,8 @@ Language: id
     <string name="stats_insights_today">Statistik Hari Ini</string>
     <string name="stats_insights_all_time">Pos, tampilan, dan pengunjung sepanjang waktu</string>
     <string name="stats_insights">Wawasan</string>
-    <string name="me_disconnect_from_wordpress_com">Logout dari WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Log in ke WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Logout dari WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Log in ke WordPress.com</string>
     <string name="me_btn_login_logout">Log masuk/keluar</string>
     <string name="me_btn_support">Bantuan &amp; Dukungan</string>
     <string name="account_settings">Pengaturan Akun</string>
@@ -2674,7 +2674,7 @@ Language: id
     <string name="fatal_db_error">Terjadi gagal ketika membuat basis data app. Coba instal ulang app.</string>
     <string name="error_blog_hidden">Blog ini tersembunyi dan tak bisa dimuat. Aktifkan lagi melalui pengaturan dan coba lagi.</string>
     <string name="error_refresh_media">Media tidak bisa disegarkan saat ini</string>
-    <string name="wordpress_blog">Blog WordPress</string>
+    <string name="sitebay_blog">Blog WordPress</string>
     <string name="image_settings">Pengaturan gambar</string>
     <string name="local_changes">Perubahan lokal</string>
     <string name="privacy_policy">Kebijakan privasi</string>

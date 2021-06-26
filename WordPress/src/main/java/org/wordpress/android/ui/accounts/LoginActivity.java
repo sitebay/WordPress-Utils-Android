@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts;
+package org.sitebay.android.ui.accounts;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -19,63 +19,63 @@ import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListe
 import com.google.android.material.snackbar.Snackbar;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.network.MemorizingTrustManager;
-import org.wordpress.android.fluxc.store.AccountStore.AuthEmailPayloadScheme;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.ConnectSiteInfoPayload;
-import org.wordpress.android.login.AuthOptions;
-import org.wordpress.android.login.GoogleFragment;
-import org.wordpress.android.login.GoogleFragment.GoogleListener;
-import org.wordpress.android.login.Login2FaFragment;
-import org.wordpress.android.login.LoginAnalyticsListener;
-import org.wordpress.android.login.LoginEmailFragment;
-import org.wordpress.android.login.LoginEmailPasswordFragment;
-import org.wordpress.android.login.LoginGoogleFragment;
-import org.wordpress.android.login.LoginListener;
-import org.wordpress.android.login.LoginMagicLinkRequestFragment;
-import org.wordpress.android.login.LoginMagicLinkSentFragment;
-import org.wordpress.android.login.LoginMode;
-import org.wordpress.android.login.LoginSiteAddressFragment;
-import org.wordpress.android.login.LoginUsernamePasswordFragment;
-import org.wordpress.android.login.SignupConfirmationFragment;
-import org.wordpress.android.login.SignupGoogleFragment;
-import org.wordpress.android.login.SignupMagicLinkFragment;
-import org.wordpress.android.support.ZendeskExtraTags;
-import org.wordpress.android.support.ZendeskHelper;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.JetpackConnectionSource;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.accounts.HelpActivity.Origin;
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites;
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowSiteAddressError;
-import org.wordpress.android.ui.accounts.SmartLockHelper.Callback;
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Click;
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Flow;
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Source;
-import org.wordpress.android.ui.accounts.login.jetpack.LoginNoSitesFragment;
-import org.wordpress.android.ui.accounts.login.LoginPrologueFragment;
-import org.wordpress.android.ui.accounts.login.LoginPrologueListener;
-import org.wordpress.android.ui.accounts.login.jetpack.LoginSiteCheckErrorFragment;
-import org.wordpress.android.ui.main.SitePickerActivity;
-import org.wordpress.android.ui.notifications.services.NotificationsUpdateServiceStarter;
-import org.wordpress.android.ui.posts.BasicFragmentDialog;
-import org.wordpress.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateLogic;
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateServiceStarter;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.SelfSignedSSLUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.WPActivityUtils;
-import org.wordpress.android.util.WPUrlUtils;
-import org.wordpress.android.widgets.WPSnackbar;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.network.MemorizingTrustManager;
+import org.sitebay.android.fluxc.store.AccountStore.AuthEmailPayloadScheme;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.ConnectSiteInfoPayload;
+import org.sitebay.android.login.AuthOptions;
+import org.sitebay.android.login.GoogleFragment;
+import org.sitebay.android.login.GoogleFragment.GoogleListener;
+import org.sitebay.android.login.Login2FaFragment;
+import org.sitebay.android.login.LoginAnalyticsListener;
+import org.sitebay.android.login.LoginEmailFragment;
+import org.sitebay.android.login.LoginEmailPasswordFragment;
+import org.sitebay.android.login.LoginGoogleFragment;
+import org.sitebay.android.login.LoginListener;
+import org.sitebay.android.login.LoginMagicLinkRequestFragment;
+import org.sitebay.android.login.LoginMagicLinkSentFragment;
+import org.sitebay.android.login.LoginMode;
+import org.sitebay.android.login.LoginSiteAddressFragment;
+import org.sitebay.android.login.LoginUsernamePasswordFragment;
+import org.sitebay.android.login.SignupConfirmationFragment;
+import org.sitebay.android.login.SignupGoogleFragment;
+import org.sitebay.android.login.SignupMagicLinkFragment;
+import org.sitebay.android.support.ZendeskExtraTags;
+import org.sitebay.android.support.ZendeskHelper;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.JetpackConnectionSource;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.accounts.HelpActivity.Origin;
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites;
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowSiteAddressError;
+import org.sitebay.android.ui.accounts.SmartLockHelper.Callback;
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Click;
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Flow;
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Source;
+import org.sitebay.android.ui.accounts.login.jetpack.LoginNoSitesFragment;
+import org.sitebay.android.ui.accounts.login.LoginPrologueFragment;
+import org.sitebay.android.ui.accounts.login.LoginPrologueListener;
+import org.sitebay.android.ui.accounts.login.jetpack.LoginSiteCheckErrorFragment;
+import org.sitebay.android.ui.main.SitePickerActivity;
+import org.sitebay.android.ui.notifications.services.NotificationsUpdateServiceStarter;
+import org.sitebay.android.ui.posts.BasicFragmentDialog;
+import org.sitebay.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateLogic;
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateServiceStarter;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.SelfSignedSSLUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.WPActivityUtils;
+import org.sitebay.android.util.WPUrlUtils;
+import org.sitebay.android.widgets.WPSnackbar;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -88,7 +88,7 @@ import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasAndroidInjector;
 
-import static org.wordpress.android.util.ActivityUtils.hideKeyboard;
+import static org.sitebay.android.util.ActivityUtils.hideKeyboard;
 
 public class LoginActivity extends LocaleAwareActivity implements ConnectionCallbacks, OnConnectionFailedListener,
         Callback, LoginListener, GoogleListener, LoginPrologueListener,
@@ -395,7 +395,7 @@ public class LoginActivity extends LocaleAwareActivity implements ConnectionCall
 
     private void jumpToUsernamePassword(String username, String password) {
         LoginUsernamePasswordFragment loginUsernamePasswordFragment =
-                LoginUsernamePasswordFragment.newInstance("wordpress.com", "wordpress.com", username, password, true);
+                LoginUsernamePasswordFragment.newInstance("sitebay.com", "sitebay.com", username, password, true);
         slideInFragment(loginUsernamePasswordFragment, true, LoginUsernamePasswordFragment.TAG);
     }
 
@@ -753,14 +753,14 @@ public class LoginActivity extends LocaleAwareActivity implements ConnectionCall
         if (getLoginMode() == LoginMode.SELFHOSTED_ONLY) {
             // bail if we are on the selfhosted flow since we haven't initialized SmartLock-for-Passwords for it.
             // Otherwise, logging in to WPCOM via the site-picker flow (for example) results in a crash.
-            // See https://github.com/wordpress-mobile/WordPress-Android/issues/7182#issuecomment-362791364
+            // See https://github.com/sitebay-mobile/WordPress-Android/issues/7182#issuecomment-362791364
             // There might be more circumstances that lead to this crash though. Not all crash reports seem to
             // originate from the site-picker.
             return;
         }
 
         if (mSmartLockHelper == null) {
-            // log some data to help us debug https://github.com/wordpress-mobile/WordPress-Android/issues/7182
+            // log some data to help us debug https://github.com/sitebay-mobile/WordPress-Android/issues/7182
             final String loginModeStr = "LoginMode: " + (getLoginMode() != null ? getLoginMode().name() : "null");
             AppLog.w(AppLog.T.NUX, "Internal inconsistency error! mSmartLockHelper found null!" + loginModeStr);
 
@@ -878,7 +878,7 @@ public class LoginActivity extends LocaleAwareActivity implements ConnectionCall
             BasicFragmentDialog dialog = new BasicFragmentDialog();
             dialog.initialize(GOOGLE_ERROR_DIALOG_TAG, getString(R.string.error),
                     msg,
-                    getString(org.wordpress.android.login.R.string.login_error_button),
+                    getString(org.sitebay.android.login.R.string.login_error_button),
                     null,
                     null);
             dialog.show(getSupportFragmentManager(), GOOGLE_ERROR_DIALOG_TAG);

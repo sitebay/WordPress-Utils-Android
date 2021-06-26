@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh
+package org.sitebay.android.ui.stats.refresh
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,26 +15,26 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import com.google.android.material.tabs.TabLayout.Tab
 import dagger.android.support.DaggerFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.StatsFragmentBinding
-import org.wordpress.android.ui.ScrollableViewInitializedListener
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.stats.refresh.lists.StatsListFragment
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.ANNUAL_STATS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DAYS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DETAIL
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.MONTHS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.WEEKS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.YEARS
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.WPSwipeToRefreshHelper
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.WPSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.StatsFragmentBinding
+import org.sitebay.android.ui.ScrollableViewInitializedListener
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.stats.refresh.lists.StatsListFragment
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.ANNUAL_STATS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DAYS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DETAIL
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.MONTHS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.WEEKS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.YEARS
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.WPSwipeToRefreshHelper
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.WPSnackbar
 import javax.inject.Inject
 
 private val statsSections = listOf(INSIGHTS, DAYS, WEEKS, MONTHS, YEARS)

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.main;
+package org.sitebay.android.ui.main;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,21 +17,21 @@ import androidx.annotation.NonNull;
 import androidx.core.graphics.ColorUtils;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ViewUtilsKt;
-import org.wordpress.android.util.image.BlavatarShape;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ViewUtilsKt;
+import org.sitebay.android.util.image.BlavatarShape;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.ArrayList;
 import java.util.Collections;

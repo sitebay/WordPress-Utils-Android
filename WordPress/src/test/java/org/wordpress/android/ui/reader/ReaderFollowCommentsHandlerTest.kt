@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.whenever
@@ -11,12 +11,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.test
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.test
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

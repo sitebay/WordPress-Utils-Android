@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ShowSignInFlow
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.StartCreateSiteFlow
-import org.wordpress.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ShowSignInFlow
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.StartCreateSiteFlow
+import org.sitebay.android.ui.deeplinks.DeepLinkingIntentReceiverViewModel
+import org.sitebay.android.util.UriWrapper
 import javax.inject.Inject
 
 class StartLinkHandler
 @Inject constructor(private val accountStore: AccountStore) : DeepLinkHandler {
     /**
-     * Returns true if the URI looks like `wordpress.com/start`
+     * Returns true if the URI looks like `sitebay.com/start`
      */
     override fun shouldHandleUrl(uri: UriWrapper): Boolean {
         return uri.host == DeepLinkingIntentReceiverViewModel.HOST_WORDPRESS_COM &&

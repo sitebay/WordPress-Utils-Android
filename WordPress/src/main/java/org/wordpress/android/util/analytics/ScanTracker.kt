@@ -1,12 +1,12 @@
-package org.wordpress.android.util.analytics
+package org.sitebay.android.util.analytics
 
 import dagger.Reusable
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel
 import javax.inject.Inject
 import javax.inject.Named
 

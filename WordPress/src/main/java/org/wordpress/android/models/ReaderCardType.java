@@ -1,10 +1,10 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.utils.ReaderImageScanner;
-import org.wordpress.android.util.HtmlUtils;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.utils.ReaderImageScanner;
+import org.sitebay.android.util.HtmlUtils;
 
 /**
  * Used by the reader stream view to determine which type of "card" to use

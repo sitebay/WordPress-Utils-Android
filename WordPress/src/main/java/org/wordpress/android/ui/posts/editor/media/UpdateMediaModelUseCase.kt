@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.MediaActionBuilder
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState
-import org.wordpress.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.MediaActionBuilder
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState
+import org.sitebay.android.fluxc.model.PostImmutableModel
 import javax.inject.Inject
 
 /**

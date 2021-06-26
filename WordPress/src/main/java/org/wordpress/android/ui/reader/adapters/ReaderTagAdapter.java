@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters;
+package org.sitebay.android.ui.reader.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,21 +12,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.ui.reader.ReaderInterfaces;
-import org.wordpress.android.ui.reader.actions.ReaderActions;
-import org.wordpress.android.ui.reader.actions.ReaderTagActions;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.ViewUtilsKt;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.ui.reader.ReaderInterfaces;
+import org.sitebay.android.ui.reader.actions.ReaderActions;
+import org.sitebay.android.ui.reader.actions.ReaderTagActions;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.ViewUtilsKt;
 
 import java.lang.ref.WeakReference;
 

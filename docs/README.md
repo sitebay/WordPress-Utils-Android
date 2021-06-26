@@ -7,7 +7,7 @@
 - [Localization](localization.md)
 - [Pull Request Guidelines](pull-request-guidelines.md) - branch naming and how to write good pull requests
 - [Subtree'd Library Projects](subtreed-library-projects.md) - how to deal with subtree dependencies
-- [UI Tests](../WordPress/src/androidTest/java/org/wordpress/android/e2e/)
+- [UI Tests](../WordPress/src/androidTest/java/org/sitebay/android/e2e/)
 
 ## Accessibility
 
@@ -22,9 +22,9 @@
 
 ## Further Reading
 
-- [Handbook: Git Branching Guidelines](https://make.wordpress.org/mobile/handbook/general-guides/git-branching/)
+- [Handbook: Git Branching Guidelines](https://make.sitebay.org/mobile/handbook/general-guides/git-branching/)
 
-## External Resources 
+## External Resources
 
-- [WordPress Mobile Blog](http://make.wordpress.org/mobile)
-- [WordPress Mobile Handbook](http://make.wordpress.org/mobile/handbook/)
+- [WordPress Mobile Blog](http://make.sitebay.org/mobile)
+- [WordPress Mobile Handbook](http://make.sitebay.org/mobile/handbook/)

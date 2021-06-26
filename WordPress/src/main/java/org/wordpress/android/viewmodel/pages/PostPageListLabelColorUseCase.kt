@@ -1,17 +1,17 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
 import androidx.annotation.ColorRes
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.PENDING
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadFailed
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadQueued
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadWaitingForConnection
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingMedia
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.PENDING
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadFailed
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadQueued
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadWaitingForConnection
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingMedia
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
 import javax.inject.Inject
 
 const val ERROR_COLOR = R.color.error

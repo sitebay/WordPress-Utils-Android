@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.discover.interests
+package org.sitebay.android.ui.reader.discover.interests
 
 data class TagUiState(
     val title: String,

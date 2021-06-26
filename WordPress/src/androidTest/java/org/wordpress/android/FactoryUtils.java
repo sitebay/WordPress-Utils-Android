@@ -1,11 +1,11 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
-import org.wordpress.android.mocks.RestClientFactoryTest;
-import org.wordpress.android.mocks.SystemServiceFactoryTest;
-import org.wordpress.android.networking.RestClientFactory;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.SystemServiceFactory;
+import org.sitebay.android.mocks.RestClientFactoryTest;
+import org.sitebay.android.mocks.SystemServiceFactoryTest;
+import org.sitebay.android.networking.RestClientFactory;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.SystemServiceFactory;
 
 import java.lang.reflect.Field;
 

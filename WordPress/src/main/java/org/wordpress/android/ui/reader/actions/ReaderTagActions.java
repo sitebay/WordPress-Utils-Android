@@ -1,24 +1,24 @@
-package org.wordpress.android.ui.reader.actions;
+package org.sitebay.android.ui.reader.actions;
 
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.VolleyUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.VolleyUtils;
 
 import java.util.HashMap;
 import java.util.List;
@@ -59,7 +59,7 @@ public class ReaderTagActions {
         final String tagNameForApi = ReaderUtils.sanitizeWithDashes(tag.getTagSlug());
         final String path = "read/tags/" + tagNameForApi + "/mine/delete";
 
-        com.wordpress.rest.RestRequest.Listener listener = jsonObject -> {
+        com.sitebay.rest.RestRequest.Listener listener = jsonObject -> {
             AppLog.i(T.READER, "delete tag succeeded");
             ReaderActions.callActionListener(actionListener, true);
         };

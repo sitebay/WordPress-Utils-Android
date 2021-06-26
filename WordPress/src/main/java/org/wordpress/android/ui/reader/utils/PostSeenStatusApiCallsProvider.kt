@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
-import com.wordpress.rest.RestRequest.ErrorListener
-import com.wordpress.rest.RestRequest.Listener
+import com.sitebay.rest.RestRequest.ErrorListener
+import com.sitebay.rest.RestRequest.Listener
 import org.json.JSONArray
 import org.json.JSONObject
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Failure
-import org.wordpress.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Success
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Failure
+import org.sitebay.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Success
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
 import android.animation.Animator
 import android.content.Context
@@ -29,10 +29,10 @@ import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
-import org.wordpress.android.R
-import org.wordpress.android.databinding.WpEditTextWithChipsOutlinedBinding
-import org.wordpress.android.util.RtlUtils
-import org.wordpress.android.util.getColorResIdFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.databinding.WpEditTextWithChipsOutlinedBinding
+import org.sitebay.android.util.RtlUtils
+import org.sitebay.android.util.getColorResIdFromAttribute
 import java.util.LinkedHashMap
 
 /**

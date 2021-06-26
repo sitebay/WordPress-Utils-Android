@@ -26,7 +26,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.45" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/title_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintWidth_max="@dimen/post_signup_interstitial_max_width" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/subtitle_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

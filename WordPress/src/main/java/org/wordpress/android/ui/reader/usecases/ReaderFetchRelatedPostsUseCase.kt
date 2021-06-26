@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import kotlinx.coroutines.suspendCancellableCoroutine
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.reader.ReaderEvents.RelatedPostsUpdated
-import org.wordpress.android.ui.reader.actions.ReaderPostActionsWrapper
-import org.wordpress.android.ui.reader.models.ReaderSimplePostList
-import org.wordpress.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.AlreadyRunning
-import org.wordpress.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Failed.NoNetwork
-import org.wordpress.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Failed.RequestFailed
-import org.wordpress.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.reader.ReaderEvents.RelatedPostsUpdated
+import org.sitebay.android.ui.reader.actions.ReaderPostActionsWrapper
+import org.sitebay.android.ui.reader.models.ReaderSimplePostList
+import org.sitebay.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.AlreadyRunning
+import org.sitebay.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Failed.NoNetwork
+import org.sitebay.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Failed.RequestFailed
+import org.sitebay.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 import kotlin.coroutines.Continuation
 import kotlin.coroutines.resume

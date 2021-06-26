@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import kotlinx.coroutines.CoroutineScope
-import org.wordpress.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.COUNT_CHANGE
-import org.wordpress.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.SELECTION_CHANGE
-import org.wordpress.android.ui.photopicker.PhotoPickerUiItem.PhotoItem
-import org.wordpress.android.ui.photopicker.PhotoPickerUiItem.Type
-import org.wordpress.android.ui.photopicker.PhotoPickerUiItem.VideoItem
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.COUNT_CHANGE
+import org.sitebay.android.ui.photopicker.PhotoPickerAdapterDiffCallback.Payload.SELECTION_CHANGE
+import org.sitebay.android.ui.photopicker.PhotoPickerUiItem.PhotoItem
+import org.sitebay.android.ui.photopicker.PhotoPickerUiItem.Type
+import org.sitebay.android.ui.photopicker.PhotoPickerUiItem.VideoItem
+import org.sitebay.android.util.image.ImageManager
 
 @Deprecated(
         "This class is being refactored, if you implement any change, please also update " +
-                "{@link org.wordpress.android.ui.mediapicker.MedaPickerAdapter}"
+                "{@link org.sitebay.android.ui.mediapicker.MedaPickerAdapter}"
 )
 class PhotoPickerAdapter internal constructor(
     private val imageManager: ImageManager,

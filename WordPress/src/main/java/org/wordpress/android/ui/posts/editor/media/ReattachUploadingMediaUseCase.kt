@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
-import org.wordpress.android.editor.EditorMediaUploadListener
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.uploads.UploadServiceFacade
+import org.sitebay.android.editor.EditorMediaUploadListener
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.uploads.UploadServiceFacade
 import javax.inject.Inject
 
 class ReattachUploadingMediaUseCase @Inject constructor(

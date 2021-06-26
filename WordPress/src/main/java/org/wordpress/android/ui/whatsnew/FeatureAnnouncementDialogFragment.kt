@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.whatsnew
+package org.sitebay.android.ui.whatsnew
 
 import android.app.Dialog
 import android.content.Context
@@ -15,12 +15,12 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.R.attr
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.WPWebViewActivity
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.isDarkTheme
+import org.sitebay.android.R
+import org.sitebay.android.R.attr
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.WPWebViewActivity
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.isDarkTheme
 import javax.inject.Inject
 
 class FeatureAnnouncementDialogFragment : DialogFragment() {

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments
+package org.sitebay.android.ui.comments
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

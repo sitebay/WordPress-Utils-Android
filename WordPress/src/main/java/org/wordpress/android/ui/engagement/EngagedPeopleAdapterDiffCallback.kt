@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import androidx.recyclerview.widget.DiffUtil
-import org.wordpress.android.ui.engagement.EngageItem.LikedItem
-import org.wordpress.android.ui.engagement.EngageItem.Liker
-import org.wordpress.android.ui.engagement.EngageItem.NextLikesPageLoader
+import org.sitebay.android.ui.engagement.EngageItem.LikedItem
+import org.sitebay.android.ui.engagement.EngageItem.Liker
+import org.sitebay.android.ui.engagement.EngageItem.NextLikesPageLoader
 
 class EngagedPeopleAdapterDiffCallback(
     private val oldItems: List<EngageItem>,

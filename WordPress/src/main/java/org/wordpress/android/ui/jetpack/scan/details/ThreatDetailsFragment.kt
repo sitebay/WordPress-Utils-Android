@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.details
+package org.sitebay.android.ui.jetpack.scan.details
 
 import android.os.Bundle
 import android.view.View
@@ -7,24 +7,24 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ThreatDetailsFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.jetpack.scan.ScanFragment.Companion.ARG_THREAT_ID
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.OpenThreatActionDialog
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowGetFreeEstimate
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowJetpackSettings
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowUpdatedFixState
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowUpdatedScanStateWithMessage
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsViewModel.UiState.Content
-import org.wordpress.android.ui.jetpack.scan.details.adapters.ThreatDetailsAdapter
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.WPSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ThreatDetailsFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.jetpack.scan.ScanFragment.Companion.ARG_THREAT_ID
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.OpenThreatActionDialog
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowGetFreeEstimate
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowJetpackSettings
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowUpdatedFixState
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsNavigationEvents.ShowUpdatedScanStateWithMessage
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsViewModel.UiState.Content
+import org.sitebay.android.ui.jetpack.scan.details.adapters.ThreatDetailsAdapter
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.WPSnackbar
 import javax.inject.Inject
 
 class ThreatDetailsFragment : Fragment(R.layout.threat_details_fragment) {

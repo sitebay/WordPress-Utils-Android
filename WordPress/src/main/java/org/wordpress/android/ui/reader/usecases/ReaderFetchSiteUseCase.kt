@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateBlogInfoListener
-import org.wordpress.android.ui.reader.actions.ReaderBlogActionsWrapper
-import org.wordpress.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.AlreadyRunning
-import org.wordpress.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.Failed.NoNetwork
-import org.wordpress.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.Failed.RequestFailed
-import org.wordpress.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateBlogInfoListener
+import org.sitebay.android.ui.reader.actions.ReaderBlogActionsWrapper
+import org.sitebay.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.AlreadyRunning
+import org.sitebay.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.Failed.NoNetwork
+import org.sitebay.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.Failed.RequestFailed
+import org.sitebay.android.ui.reader.usecases.ReaderFetchSiteUseCase.FetchSiteState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 import kotlin.coroutines.Continuation
 import kotlin.coroutines.resume

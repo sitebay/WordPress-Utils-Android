@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.storage
+package org.sitebay.android.viewmodel.storage
 
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Observer
@@ -9,11 +9,11 @@ import kotlinx.coroutines.InternalCoroutinesApi
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.util.StorageUtilsProvider
-import org.wordpress.android.util.StorageUtilsProvider.Source
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.util.StorageUtilsProvider
+import org.sitebay.android.util.StorageUtilsProvider.Source
+import org.sitebay.android.viewmodel.Event
 
 @InternalCoroutinesApi
 class StorageUtilsViewModelTest : BaseUnitTest() {

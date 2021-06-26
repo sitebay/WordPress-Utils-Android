@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.jetpack.scan.details
+package org.sitebay.android.ui.jetpack.scan.details
 
 import androidx.annotation.StringRes
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
-import org.wordpress.android.R
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.R
+import org.sitebay.android.ui.utils.UiString
 
 private const val CODEABLE_GET_FREE_ESTIMATE_FIREBASE_KEY = "codeable_get_free_estimate_url"
 

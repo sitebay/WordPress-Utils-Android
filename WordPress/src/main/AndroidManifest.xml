@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="org.wordpress.android"
+<manifest package="org.sitebay.android"
           xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           android:installLocation="auto">
@@ -52,7 +52,7 @@
     <meta-data android:name="fontProviderRequests" android:value="Noto Color Emoji Compat"/>
 
     <application
-        android:name=".WordPress"
+        android:name=".SiteBay"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_scheme"
         android:hardwareAccelerated="true"
@@ -330,7 +330,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data
                     android:host="jetpack-connection"
-                    android:scheme="wordpress" />
+                    android:scheme="sitebay" />
             </intent-filter>
         </activity>
         <activity
@@ -383,19 +383,19 @@
 
                 <data
                     android:host="viewpost"
-                    android:scheme="wordpress" />
+                    android:scheme="sitebay" />
                 <data
                     android:host="stats"
-                    android:scheme="wordpress" />
+                    android:scheme="sitebay" />
                 <data
                     android:host="read"
-                    android:scheme="wordpress" />
+                    android:scheme="sitebay" />
                 <data
                     android:host="post"
-                    android:scheme="wordpress" />
+                    android:scheme="sitebay" />
                 <data
                     android:host="notifications"
-                    android:scheme="wordpress" />
+                    android:scheme="sitebay" />
             </intent-filter>
 
             <intent-filter>
@@ -526,7 +526,7 @@
                     android:scheme="http" >
                 </data>
 
-                <action android:name="org.wordpress.android.action.VIEW_POST" />
+                <action android:name="org.sitebay.android.action.VIEW_POST" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />

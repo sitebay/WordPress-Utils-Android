@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.blocks;
+package org.sitebay.android.ui.notifications.blocks;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -12,10 +12,10 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.tools.FormattableRange;
-import org.wordpress.android.fluxc.tools.FormattableRangeType;
-import org.wordpress.android.util.ContextExtensionsKt;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.tools.FormattableRange;
+import org.sitebay.android.fluxc.tools.FormattableRangeType;
+import org.sitebay.android.util.ContextExtensionsKt;
 
 import java.util.List;
 

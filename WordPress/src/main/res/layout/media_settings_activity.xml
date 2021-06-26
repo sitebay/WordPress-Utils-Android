@@ -71,7 +71,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <org.wordpress.android.widgets.WPNestedScrollView
+    <org.sitebay.android.widgets.WPNestedScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -495,7 +495,7 @@
 
         </LinearLayout>
 
-    </org.wordpress.android.widgets.WPNestedScrollView>
+    </org.sitebay.android.widgets.WPNestedScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_button"

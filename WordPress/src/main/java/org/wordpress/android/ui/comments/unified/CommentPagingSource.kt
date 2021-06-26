@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import org.wordpress.android.fluxc.model.CommentModel
-import org.wordpress.android.fluxc.model.CommentStatus
-import org.wordpress.android.util.DateTimeUtils
+import org.sitebay.android.fluxc.model.CommentModel
+import org.sitebay.android.fluxc.model.CommentStatus
+import org.sitebay.android.util.DateTimeUtils
 import java.util.Date
 
 class CommentPagingSource : PagingSource<Int, CommentModel>() {
@@ -35,7 +35,7 @@ class CommentPagingSource : PagingSource<Int, CommentModel>() {
             commentModel.remoteCommentId = i.toLong()
             commentModel.postTitle = "Post $i"
             commentModel.authorName = "Author $i"
-            commentModel.authorEmail = "authors_email$i@wordpress.org"
+            commentModel.authorEmail = "authors_email$i@sitebay.org"
             commentModel.content = "Generated <b>Comment</b> <i>Content</i> for Comment with remote ID $i"
             startTimestamp -= 30000
             commentModel.publishedTimestamp = startTimestamp

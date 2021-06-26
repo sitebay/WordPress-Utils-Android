@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 class FileThumbnailViewHolder(parent: ViewGroup, private val mediaThumbnailViewUtils: MediaThumbnailViewUtils) :
         ThumbnailViewHolder(parent, R.layout.media_picker_file_item) {

@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions
 import org.junit.Before
 import org.junit.Test
-import org.wordpress.android.util.helpers.MediaFile
+import org.sitebay.android.util.helpers.MediaFile
 
 class FileBlockProcessorTest {
     private val mediaFile: MediaFile = mock()

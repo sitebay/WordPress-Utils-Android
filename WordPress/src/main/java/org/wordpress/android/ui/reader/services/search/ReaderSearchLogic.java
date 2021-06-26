@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.reader.services.search;
+package org.sitebay.android.ui.reader.services.search;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.models.ReaderPostList;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.models.ReaderPostList;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.UrlUtils;
 
-import static org.wordpress.android.ui.reader.utils.ReaderUtils.getTagForSearchQuery;
+import static org.sitebay.android.ui.reader.utils.ReaderUtils.getTagForSearchQuery;
 
 public class ReaderSearchLogic {
     private ServiceCompletionListener mCompletionListener;

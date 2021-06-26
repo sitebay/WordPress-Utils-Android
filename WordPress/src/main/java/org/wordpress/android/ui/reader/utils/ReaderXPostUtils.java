@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import android.net.Uri;
 import android.text.Html;
@@ -6,7 +6,7 @@ import android.text.Spanned;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderPost;
 
 /**
  * Reader cross-post utility routines

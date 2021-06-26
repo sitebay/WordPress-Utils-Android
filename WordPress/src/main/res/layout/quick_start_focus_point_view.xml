@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.wordpress.android.widgets.QuickStartFocusPoint
+<org.sitebay.android.widgets.QuickStartFocusPoint
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/quick_start_focus_point"

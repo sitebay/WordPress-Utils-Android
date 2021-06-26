@@ -704,7 +704,7 @@ Language: sr_RS
     <string name="stats_follower_label">Пратилац</string>
     <string name="stats_followers_count_message">Укупно %1$s пратилаца: %2$s</string>
     <string name="stats_followers_email">Електронска пошта</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Управљај увидима</string>
     <string name="stats_no_data_yet">Још нема података</string>
     <string name="stats_empty_insights_title">Ниједан увид још увек није додан </string>
@@ -1100,7 +1100,7 @@ Language: sr_RS
     <string name="plugin_external_link_icon_content_description">Спољна веза</string>
     <string name="plugin_icon_content_description">Иконица додатка</string>
     <string name="plugin_home_page">Почетна страница додатка</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org страница додатка</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org страница додатка</string>
     <string name="plugin_remove_dialog_title">Уклони додатак</string>
     <string name="plugin_remove_progress_dialog_message">Уклања се %s…</string>
     <string name="plugin_disable_progress_dialog_message">Онемогућава се %s…</string>
@@ -1678,9 +1678,9 @@ Language: sr_RS
     <string name="stats_insights_today">Данашња статистика</string>
     <string name="stats_insights_all_time">Чланци, прегледи и посетиоци за све време</string>
     <string name="stats_insights">Увиди</string>
-    <string name="me_disconnect_from_wordpress_com">Одјави се са WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Одјави се са WordPress.com</string>
     <string name="me_btn_login_logout">Пријава/одјава</string>
-    <string name="me_connect_to_wordpress_com">Пријави се на WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Пријави се на WordPress.com</string>
     <string name="me_btn_support">Помоћ и подршка</string>
     <string name="site_picker_cant_hide_current_site">„%s“ није сакривен зато што је тренутно веб место</string>
     <string name="account_settings">Подешавања налога</string>
@@ -1838,7 +1838,7 @@ Language: sr_RS
     <string name="link_enter_url_text">Текст везе (опционо)</string>
     <string name="local_draft">Локални нацрт</string>
     <string name="post_settings">Подешавања чланка</string>
-    <string name="wordpress_blog">Вордпрес блог</string>
+    <string name="sitebay_blog">Вордпрес блог</string>
     <string name="add_new_category">Додај нову категорију</string>
     <string name="category_name">Име категорије</string>
     <string name="file_error_create">Није могуће направити привремену датотеку за отпремање медија. Потврдите да имате довољно слободног простора за складиштење на свом уређају.</string>

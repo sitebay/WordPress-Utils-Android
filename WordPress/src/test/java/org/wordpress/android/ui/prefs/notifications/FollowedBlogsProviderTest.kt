@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.notifications
+package org.sitebay.android.ui.prefs.notifications
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,12 +7,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.fluxc.model.SubscriptionModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel
-import org.wordpress.android.ui.utils.UrlUtilsWrapper
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.fluxc.model.SubscriptionModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel
+import org.sitebay.android.ui.utils.UrlUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class FollowedBlogsProviderTest {

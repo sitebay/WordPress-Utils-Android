@@ -1,8 +1,8 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 
-import org.wordpress.android.Constants;
+import org.sitebay.android.Constants;
 
 import java.net.URI;
 import java.net.URL;
@@ -25,21 +25,21 @@ public class WPUrlUtils {
     }
 
     public static boolean isWordPressCom(String url) {
-        return UrlUtils.getHost(url).endsWith(".wordpress.com") || UrlUtils.getHost(url).equals("wordpress.com");
+        return UrlUtils.getHost(url).endsWith(".sitebay.com") || UrlUtils.getHost(url).equals("sitebay.com");
     }
 
     public static boolean isWordPressCom(URL url) {
         if (url == null) {
             return false;
         }
-        return url.getHost().endsWith(".wordpress.com") || url.getHost().equals("wordpress.com");
+        return url.getHost().endsWith(".sitebay.com") || url.getHost().equals("sitebay.com");
     }
 
     public static boolean isWordPressCom(URI uri) {
         if (uri == null || uri.getHost() == null) {
             return false;
         }
-        return uri.getHost().endsWith(".wordpress.com") || uri.getHost().equals("wordpress.com");
+        return uri.getHost().endsWith(".sitebay.com") || uri.getHost().equals("sitebay.com");
     }
 
     public static boolean isGravatar(URL url) {

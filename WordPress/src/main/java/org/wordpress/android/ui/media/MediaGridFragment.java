@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media;
+package org.sitebay.android.ui.media;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,33 +23,33 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.MediaActionBuilder;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.fluxc.store.MediaStore.FetchMediaListPayload;
-import org.wordpress.android.fluxc.store.MediaStore.MediaErrorType;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaListFetched;
-import org.wordpress.android.fluxc.utils.MimeType;
-import org.wordpress.android.ui.ActionableEmptyView;
-import org.wordpress.android.ui.EmptyViewMessageType;
-import org.wordpress.android.ui.media.MediaGridAdapter.MediaGridAdapterCallback;
-import org.wordpress.android.ui.media.services.MediaDeleteService;
-import org.wordpress.android.ui.prefs.EmptyViewRecyclerView;
-import org.wordpress.android.util.AccessibilityUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ListUtils;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.WPMediaUtils;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper.RefreshListener;
-import org.wordpress.android.util.widgets.CustomSwipeRefreshLayout;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.MediaActionBuilder;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.fluxc.store.MediaStore.FetchMediaListPayload;
+import org.sitebay.android.fluxc.store.MediaStore.MediaErrorType;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaListFetched;
+import org.sitebay.android.fluxc.utils.MimeType;
+import org.sitebay.android.ui.ActionableEmptyView;
+import org.sitebay.android.ui.EmptyViewMessageType;
+import org.sitebay.android.ui.media.MediaGridAdapter.MediaGridAdapterCallback;
+import org.sitebay.android.ui.media.services.MediaDeleteService;
+import org.sitebay.android.ui.prefs.EmptyViewRecyclerView;
+import org.sitebay.android.util.AccessibilityUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ListUtils;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.WPMediaUtils;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper.RefreshListener;
+import org.sitebay.android.util.widgets.CustomSwipeRefreshLayout;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -58,11 +58,11 @@ import java.util.List;
 import javax.inject.Inject;
 
 import static android.app.Activity.RESULT_OK;
-import static org.wordpress.android.fluxc.utils.MimeType.Type.APPLICATION;
-import static org.wordpress.android.fluxc.utils.MimeType.Type.AUDIO;
-import static org.wordpress.android.fluxc.utils.MimeType.Type.IMAGE;
-import static org.wordpress.android.fluxc.utils.MimeType.Type.VIDEO;
-import static org.wordpress.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
+import static org.sitebay.android.fluxc.utils.MimeType.Type.APPLICATION;
+import static org.sitebay.android.fluxc.utils.MimeType.Type.AUDIO;
+import static org.sitebay.android.fluxc.utils.MimeType.Type.IMAGE;
+import static org.sitebay.android.fluxc.utils.MimeType.Type.VIDEO;
+import static org.sitebay.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
 
 /**
  * The grid displaying the media items.
@@ -349,7 +349,7 @@ public class MediaGridFragment extends Fragment implements MediaGridAdapterCallb
 
                 // remove local media that no longer exists
                 if (media.getFilePath() != null
-                    && org.wordpress.android.util.MediaUtils.isLocalFile(media.getUploadState())) {
+                    && org.sitebay.android.util.MediaUtils.isLocalFile(media.getUploadState())) {
                     File file = new File(media.getFilePath());
                     if (!file.exists()) {
                         AppLog.w(AppLog.T.MEDIA, "removing nonexistent local media " + media.getFilePath());

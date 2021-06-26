@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters;
+package org.sitebay.android.ui.reader.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -14,8 +14,8 @@ import androidx.cursoradapter.widget.CursorAdapter;
 
 import com.google.android.material.elevation.ElevationOverlayProvider;
 
-import org.wordpress.android.R;
-import org.wordpress.android.datasets.ReaderSearchTable;
+import org.sitebay.android.R;
+import org.sitebay.android.datasets.ReaderSearchTable;
 
 public class ReaderSearchSuggestionAdapter extends CursorAdapter {
     private static final int MAX_SUGGESTIONS = 5;

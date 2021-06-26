@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.comments
+package org.sitebay.android.ui.comments
 
-import org.wordpress.android.fluxc.model.CommentModel
-import org.wordpress.android.models.CommentList
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.READER
+import org.sitebay.android.fluxc.model.CommentModel
+import org.sitebay.android.models.CommentList
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.READER
 import java.util.ArrayList
 
 /**

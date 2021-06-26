@@ -335,9 +335,9 @@ Language: hr
     <string name="stats_insights_today">Današnja statistika</string>
     <string name="stats_insights_all_time">Sve objave, pregledi i posjetitelji</string>
     <string name="stats_insights">Uvid</string>
-    <string name="me_disconnect_from_wordpress_com">Odjava sa WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Odjava sa WordPress.com</string>
     <string name="me_btn_login_logout">Prijava/Odjava</string>
-    <string name="me_connect_to_wordpress_com">Spoji se u WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Spoji se u WordPress.com</string>
     <string name="me_btn_support">Pomoć i podrška</string>
     <string name="account_settings">Postavke računa</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" nije skriven jer je to trenutna web-stranica.</string>
@@ -501,7 +501,7 @@ Language: hr
     <string name="new_media">Novi medijski zapis</string>
     <string name="local_changes">Lokalne promjene</string>
     <string name="image_settings">Postavke slike</string>
-    <string name="wordpress_blog">WordPress blog</string>
+    <string name="sitebay_blog">WordPress blog</string>
     <string name="post_not_found">Dogodila se greška tijekom učitavanja objave. Osvježite objave i pokušajte ponovno.</string>
     <string name="file_not_found">Nije moguće pronaći medijski zapis za prijenos. Jeli obrisan ili premješten?</string>
     <string name="file_error_create">Nije moguće kreirati privremeni zapis za prijenos medijskog zapisa. Provjerite da ima dovoljno slobodnog mjesta na vašem uređaju.</string>

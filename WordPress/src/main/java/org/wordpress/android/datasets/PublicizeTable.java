@@ -1,4 +1,4 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -6,12 +6,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.text.TextUtils;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.PublicizeConnection;
-import org.wordpress.android.models.PublicizeConnectionList;
-import org.wordpress.android.models.PublicizeService;
-import org.wordpress.android.models.PublicizeServiceList;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.PublicizeConnection;
+import org.sitebay.android.models.PublicizeConnectionList;
+import org.sitebay.android.models.PublicizeService;
+import org.sitebay.android.models.PublicizeServiceList;
+import org.sitebay.android.util.SqlUtils;
 
 public class PublicizeTable {
     private static final String SERVICES_TABLE = "tbl_publicize_services";

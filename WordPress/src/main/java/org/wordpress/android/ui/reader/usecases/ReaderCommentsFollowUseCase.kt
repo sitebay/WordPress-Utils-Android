@@ -1,25 +1,25 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsAction.FOLLOW_COMMENTS
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsAction.UNFOLLOW_COMMENTS
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsActionResult.ERROR
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsActionResult.SUCCEEDED
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsGenericError.NO_NETWORK
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.UserNotAuthenticated
-import org.wordpress.android.ui.reader.utils.PostSubscribersApiCallsProvider
-import org.wordpress.android.ui.reader.utils.PostSubscribersApiCallsProvider.PostSubscribersCallResult.Failure
-import org.wordpress.android.ui.reader.utils.PostSubscribersApiCallsProvider.PostSubscribersCallResult.Success
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsAction.FOLLOW_COMMENTS
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsAction.UNFOLLOW_COMMENTS
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsActionResult.ERROR
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsActionResult.SUCCEEDED
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.AnalyticsFollowCommentsGenericError.NO_NETWORK
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.UserNotAuthenticated
+import org.sitebay.android.ui.reader.utils.PostSubscribersApiCallsProvider
+import org.sitebay.android.ui.reader.utils.PostSubscribersApiCallsProvider.PostSubscribersCallResult.Failure
+import org.sitebay.android.ui.reader.utils.PostSubscribersApiCallsProvider.PostSubscribersCallResult.Success
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 
 class ReaderCommentsFollowUseCase @Inject constructor(

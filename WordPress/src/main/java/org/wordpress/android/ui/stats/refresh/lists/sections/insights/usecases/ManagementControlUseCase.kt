@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.store.StatsStore.ManagementType
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewInsightsManagement
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.utils.ListItemInteraction.Companion
-import org.wordpress.android.ui.stats.refresh.utils.NewsCardHandler
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.store.StatsStore.ManagementType
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewInsightsManagement
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.StatelessUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.utils.ListItemInteraction.Companion
+import org.sitebay.android.ui.stats.refresh.utils.NewsCardHandler
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 import javax.inject.Named
 

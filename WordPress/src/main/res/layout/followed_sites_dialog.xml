@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<org.wordpress.android.widgets.WPScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<org.sitebay.android.widgets.WPScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -31,7 +31,7 @@
             android:textAppearance="?attr/textAppearanceSubtitle1"
             tools:checked="true" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/notifications_new_posts_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -130,4 +130,4 @@
 
     </LinearLayout>
 
-</org.wordpress.android.widgets.WPScrollView>
+</org.sitebay.android.widgets.WPScrollView>

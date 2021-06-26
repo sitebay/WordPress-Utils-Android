@@ -1,8 +1,8 @@
-package org.wordpress.android.e2e.pages;
+package org.sitebay.android.e2e.pages;
 
 import androidx.test.espresso.ViewInteraction;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;

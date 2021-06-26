@@ -1,25 +1,25 @@
-package org.wordpress.android.ui.reader.services.post;
+package org.sitebay.android.ui.reader.services.post;
 
 import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.os.PersistableBundle;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.util.AppLog;
 
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_ACTION;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_BLOG_ID;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_FEED_ID;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_DISPLAY_NAME;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_ENDPOINT;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_SLUG;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_TAGTYPE;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_TITLE;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_ACTION;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_BLOG_ID;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_FEED_ID;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_DISPLAY_NAME;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_ENDPOINT;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_SLUG;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_TAGTYPE;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG_PARAM_TITLE;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
 
 /**
  * service which updates posts with specific tags or in specific blogs/feeds - relies on

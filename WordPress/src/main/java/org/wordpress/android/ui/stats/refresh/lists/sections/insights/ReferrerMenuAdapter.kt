@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.ReferrerMenuAdapter.ReferrerMenuItem.MARK_AS_NOT_SPAM
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.ReferrerMenuAdapter.ReferrerMenuItem.MARK_AS_SPAM
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.ReferrerMenuAdapter.ReferrerMenuItem.OPEN_WEBSITE
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.ReferrerMenuAdapter.ReferrerMenuItem.MARK_AS_NOT_SPAM
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.ReferrerMenuAdapter.ReferrerMenuItem.MARK_AS_SPAM
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.ReferrerMenuAdapter.ReferrerMenuItem.OPEN_WEBSITE
 
 class ReferrerMenuAdapter(context: Context, spam: Boolean?) : BaseAdapter() {
     private val mInflater: LayoutInflater = LayoutInflater.from(context)

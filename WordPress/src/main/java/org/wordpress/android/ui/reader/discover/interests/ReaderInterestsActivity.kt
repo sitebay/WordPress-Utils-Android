@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.reader.discover.interests
+package org.sitebay.android.ui.reader.discover.interests
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import org.wordpress.android.databinding.ReaderInterestsActivityBinding
+import org.sitebay.android.databinding.ReaderInterestsActivityBinding
 
 class ReaderInterestsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

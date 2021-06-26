@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.backup.download
+package org.sitebay.android.ui.jetpack.backup.download
 
 import android.app.Activity.RESULT_CANCELED
 import android.app.Activity.RESULT_OK
@@ -10,26 +10,26 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.JetpackBackupRestoreFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.DownloadFile
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.ShareLink
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCanceled
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCompleted
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadInProgress
-import org.wordpress.android.ui.jetpack.common.JetpackBackupDownloadActionState
-import org.wordpress.android.ui.jetpack.common.adapters.JetpackBackupRestoreAdapter
-import org.wordpress.android.ui.jetpack.scan.adapters.HorizontalMarginItemDecoration
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.WPSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.JetpackBackupRestoreFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.DownloadFile
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadNavigationEvents.ShareLink
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCanceled
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadCompleted
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModel.BackupDownloadWizardState.BackupDownloadInProgress
+import org.sitebay.android.ui.jetpack.common.JetpackBackupDownloadActionState
+import org.sitebay.android.ui.jetpack.common.adapters.JetpackBackupRestoreAdapter
+import org.sitebay.android.ui.jetpack.scan.adapters.HorizontalMarginItemDecoration
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.WPSnackbar
 import javax.inject.Inject
 
 const val KEY_BACKUP_DOWNLOAD_REWIND_ID = "key_backup_download_rewind_id"

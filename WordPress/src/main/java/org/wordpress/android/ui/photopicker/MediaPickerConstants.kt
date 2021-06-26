@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 object MediaPickerConstants {
     const val EXTRA_MEDIA_URIS = "media_uris"

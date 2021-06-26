@@ -25,7 +25,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <org.wordpress.android.ui.ActionableEmptyView
+        <org.sitebay.android.ui.ActionableEmptyView
             android:id="@+id/actionable_empty_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,7 +34,7 @@
             app:aevTitle="@string/people_empty_list_filtered_followers"
             tools:visibility="visible" />
 
-        <org.wordpress.android.ui.FilteredRecyclerView
+        <org.sitebay.android.ui.FilteredRecyclerView
             android:id="@+id/filtered_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

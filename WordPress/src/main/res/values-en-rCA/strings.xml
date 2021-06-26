@@ -193,8 +193,8 @@ Language: en_CA
     <string name="backup_item_roots">WordPress root</string>
     <string name="backup_download_details_choose_items_header">Items included in this download</string>
     <string name="gutenberg_native_uploading">Uploading…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Reusable blocks aren\'t editable on WordPress for iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Reusable blocks aren\'t editable on WordPress for Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Reusable blocks aren\'t editable on WordPress for iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Reusable blocks aren\'t editable on WordPress for Android</string>
     <string name="gutenberg_native_replace_file">Replace file</string>
     <string name="gutenberg_native_replace_audio">Replace audio</string>
     <string name="gutenberg_native_problem_opening_the_audio">Problem opening the audio</string>
@@ -518,7 +518,7 @@ Language: en_CA
     <string name="media_picker_soft_ask_permissions_denied">%1$s was denied access to your photos. To fix this, edit your permissions and turn on %2$s and %3$s.</string>
     <string name="media_insert_failed">Media insert failed.</string>
     <string name="media_insert_failed_with_reason">Media insert failed: %s</string>
-    <string name="photo_picker_wordpress_media_library">Choose from WordPress Media Library</string>
+    <string name="photo_picker_sitebay_media_library">Choose from WordPress Media Library</string>
     <string name="reader_label_toolbar_back">Back</string>
     <string name="reader_discover_empty_button_text">Get Started</string>
     <string name="reader_discover_empty_subtitle">Follow topics to discover new blogs</string>
@@ -658,7 +658,7 @@ Language: en_CA
     <string name="login_magic_links_label">We\'ll email you a link that\'ll log you in instantly, no password needed.</string>
     <string name="check_email">Check email</string>
     <string name="get_started">Get Started</string>
-    <string name="enter_email_to_continue_wordpress_com">Enter your email address to log in or create a WordPress.com account.</string>
+    <string name="enter_email_to_continue_sitebay_com">Enter your email address to log in or create a WordPress.com account.</string>
     <string name="or_type_your_password">Or type your password</string>
     <string name="create_account">Create account</string>
     <string name="send_link_by_email">Send link by email</string>
@@ -940,7 +940,7 @@ Language: en_CA
     <string name="suffix_1_000">%sK</string>
     <string name="posts_cannot_be_started">We cannot open the posts right now. Please try again later</string>
     <string name="site_cannot_be_loaded">We cannot load the data for your site right now. Please try again later</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress Media Library</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress Media Library</string>
     <string name="gutenberg_native_unsupported">Unsupported</string>
     <string name="gutenberg_native_ungroup">Ungroup</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Tap to hide the keyboard</string>
@@ -1394,7 +1394,7 @@ Language: en_CA
     <string name="stats_follower_label">Follower</string>
     <string name="stats_followers_count_message">Total %1$s Followers: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Manage Insights</string>
     <string name="stats_empty_insights_title">No insights added yet</string>
     <string name="stats_no_data_yet">No data yet</string>
@@ -1846,7 +1846,7 @@ Language: en_CA
     <string name="plugin_external_link_icon_content_description">External link</string>
     <string name="plugin_icon_content_description">Plugin icon</string>
     <string name="plugin_home_page">Plugin homepage</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org Plugin page</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org Plugin page</string>
     <string name="plugin_remove_dialog_message">Are you sure you want to remove %1$s from %2$s?\n\nThis will deactivate the plugin and delete all associated files and data.</string>
     <string name="plugin_remove_dialog_title">Remove Plugin</string>
     <string name="plugin_remove_progress_dialog_message">Removing %s…</string>
@@ -2007,7 +2007,7 @@ Language: en_CA
     <string name="login_text_otp">Text me a code instead</string>
     <string name="enter_verification_code">Almost there! Please enter the verification code from your Authenticator app.</string>
     <string name="next">Next</string>
-    <string name="enter_email_wordpress_com">Log in to WordPress.com using an email address to manage all your WordPress sites.</string>
+    <string name="enter_email_sitebay_com">Log in to WordPress.com using an email address to manage all your WordPress sites.</string>
     <string name="image_optimization_promo_desc">Image optimization shrinks images for quicker uploading.\n\nYou can change this any time in site settings.</string>
     <string name="image_optimization_promo_title">Turn on image optimization?</string>
     <string name="leave_off">Leave off</string>
@@ -2565,8 +2565,8 @@ Language: en_CA
     <string name="stats_insights_today">Today\'s Stats</string>
     <string name="stats_insights_all_time">All-time posts, views, and visitors</string>
     <string name="stats_insights">Insights</string>
-    <string name="me_disconnect_from_wordpress_com">Log out of WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Log in to WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Log out of WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Log in to WordPress.com</string>
     <string name="me_btn_login_logout">Login/Logout</string>
     <string name="me_btn_support">Help &amp; Support</string>
     <string name="account_settings">Account Settings</string>
@@ -2699,7 +2699,7 @@ Language: en_CA
     <string name="fatal_db_error">An error occurred while creating the app database. Try reinstalling the app.</string>
     <string name="error_blog_hidden">This blog is hidden and couldn\'t be loaded. Enable it again in settings and try again.</string>
     <string name="error_refresh_media">Media couldn\'t be refreshed at this time</string>
-    <string name="wordpress_blog">WordPress blog</string>
+    <string name="sitebay_blog">WordPress blog</string>
     <string name="image_settings">Image settings</string>
     <string name="local_changes">Local changes</string>
     <string name="privacy_policy">Privacy policy</string>

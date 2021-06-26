@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus
 
 @RunWith(MockitoJUnitRunner::class)
 class EditorActionsProviderTest {

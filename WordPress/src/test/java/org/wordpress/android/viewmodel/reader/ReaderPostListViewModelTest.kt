@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.reader
+package org.sitebay.android.viewmodel.reader
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import kotlinx.coroutines.InternalCoroutinesApi
@@ -8,12 +8,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.ui.reader.discover.ReaderPostCardActionsHandler
-import org.wordpress.android.ui.reader.reblog.ReblogUseCase
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase
-import org.wordpress.android.ui.reader.viewmodels.ReaderPostListViewModel
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.ui.reader.discover.ReaderPostCardActionsHandler
+import org.sitebay.android.ui.reader.reblog.ReblogUseCase
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase
+import org.sitebay.android.ui.reader.viewmodels.ReaderPostListViewModel
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

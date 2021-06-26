@@ -25,7 +25,7 @@
 
                 <include layout="@layout/login_include_epilogue_header" />
 
-                <org.wordpress.android.login.widgets.WPLoginInputRow
+                <org.sitebay.android.login.widgets.WPLoginInputRow
                     android:id="@+id/signup_epilogue_input_display"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                     android:imeOptions="actionDone"
                     android:inputType="textPersonName" />
 
-                <org.wordpress.android.login.widgets.WPLoginInputRow
+                <org.sitebay.android.login.widgets.WPLoginInputRow
                     android:id="@+id/signup_epilogue_input_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                     android:hint="@string/signup_epilogue_hint_username"
                     android:inputType="none" />
 
-                <org.wordpress.android.login.widgets.WPLoginInputRow
+                <org.sitebay.android.login.widgets.WPLoginInputRow
                     android:id="@+id/signup_epilogue_input_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
                     app:passwordToggleEnabled="true"
                     tools:visibility="visible" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/signup_epilogue_input_password_detail"
                     style="@style/Widget.LoginFlow.TextView.Footnote"
                     android:layout_width="match_parent"

@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
-import org.wordpress.android.R
-import org.wordpress.android.ui.posts.ProgressDialogUiState
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.ui.posts.ProgressDialogUiState
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 enum class PostLoadingState(
     val value: Int,

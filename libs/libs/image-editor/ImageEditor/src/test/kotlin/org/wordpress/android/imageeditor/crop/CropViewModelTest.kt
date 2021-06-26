@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.crop
+package org.sitebay.android.imageeditor.crop
 
 import android.app.Activity
 import android.content.Intent
@@ -10,10 +10,10 @@ import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveFailedState
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveStartState
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveSuccessState
-import org.wordpress.android.imageeditor.crop.CropViewModel.UiState.UiStartLoadingWithBundleState
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveFailedState
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveStartState
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveSuccessState
+import org.sitebay.android.imageeditor.crop.CropViewModel.UiState.UiStartLoadingWithBundleState
 import java.io.File
 
 private const val TEST_INPUT_IMAGE_PATH = "/input/file/path"

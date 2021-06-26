@@ -1,11 +1,11 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
 import android.content.Context;
 import android.test.InstrumentationTestCase;
 import android.test.RenamingDelegatingContext;
 
-import org.wordpress.android.mocks.RestClientFactoryTest;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.mocks.RestClientFactoryTest;
+import org.sitebay.android.util.AppLog;
 
 public class DefaultMocksInstrumentationTestCase extends InstrumentationTestCase {
     protected Context mTargetContext;

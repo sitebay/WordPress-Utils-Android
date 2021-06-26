@@ -1,13 +1,13 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.main.WPMainActivity;
-import org.wordpress.android.util.ProfilingUtils;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.main.WPMainActivity;
+import org.sitebay.android.util.ProfilingUtils;
+import org.sitebay.android.util.ToastUtils;
 
 public class WPLaunchActivity extends LocaleAwareActivity {
     /*

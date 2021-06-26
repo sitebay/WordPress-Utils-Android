@@ -1,4 +1,4 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.os.Handler;
 import android.test.InstrumentationTestCase;
@@ -7,9 +7,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader.ImageContainer;
 import com.android.volley.toolbox.ImageLoader.ImageListener;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
@@ -25,7 +25,7 @@ public class WPNetworkImageViewTest extends InstrumentationTestCase {
         super.tearDown();
     }
 
-    // https://github.com/wordpress-mobile/WordPress-Android/issues/1549
+    // https://github.com/sitebay-mobile/WordPress-Android/issues/1549
     public void testVolleyImageLoaderGetNullHost() throws InterruptedException {
         Handler mainLooperHandler = new Handler(WordPress.getContext().getMainLooper());
         final CountDownLatch countDownLatch = new CountDownLatch(1);

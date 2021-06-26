@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 /**
  * Holds the available preview/thumbnail modes

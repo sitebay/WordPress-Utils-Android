@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media;
+package org.sitebay.android.ui.media;
 
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
@@ -21,22 +21,22 @@ import androidx.fragment.app.Fragment;
 import com.github.chrisbanes.photoview.PhotoView;
 import com.github.chrisbanes.photoview.PhotoViewAttacher;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.ui.utils.AuthenticationUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageManager.RequestListener;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.ui.utils.AuthenticationUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageManager.RequestListener;
+import org.sitebay.android.util.image.ImageType;
 
 import javax.inject.Inject;
 

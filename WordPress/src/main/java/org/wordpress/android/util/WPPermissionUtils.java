@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.Manifest;
 import android.app.Activity;
@@ -17,10 +17,10 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.viewmodel.ResourceProvider;
+import org.sitebay.android.R;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.viewmodel.ResourceProvider;
 
 import java.util.HashMap;
 import java.util.Map;

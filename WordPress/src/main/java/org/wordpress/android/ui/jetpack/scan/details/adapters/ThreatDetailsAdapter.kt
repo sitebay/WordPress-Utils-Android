@@ -1,21 +1,21 @@
-package org.wordpress.android.ui.jetpack.scan.details.adapters
+package org.sitebay.android.ui.jetpack.scan.details.adapters
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.ViewType
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackButtonViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackDescriptionViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackHeaderViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackIconViewHolder
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackViewHolder
-import org.wordpress.android.ui.jetpack.scan.adapters.viewholders.ScanFootnoteViewHolder
-import org.wordpress.android.ui.jetpack.scan.details.adapters.viewholders.ThreatContextLinesViewHolder
-import org.wordpress.android.ui.jetpack.scan.details.adapters.viewholders.ThreatDetailHeaderViewHolder
-import org.wordpress.android.ui.jetpack.scan.details.adapters.viewholders.ThreatFileNameViewHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.ViewType
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackButtonViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackDescriptionViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackHeaderViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackIconViewHolder
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackViewHolder
+import org.sitebay.android.ui.jetpack.scan.adapters.viewholders.ScanFootnoteViewHolder
+import org.sitebay.android.ui.jetpack.scan.details.adapters.viewholders.ThreatContextLinesViewHolder
+import org.sitebay.android.ui.jetpack.scan.details.adapters.viewholders.ThreatDetailHeaderViewHolder
+import org.sitebay.android.ui.jetpack.scan.details.adapters.viewholders.ThreatFileNameViewHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
 
 class ThreatDetailsAdapter(
     private val imageManager: ImageManager,

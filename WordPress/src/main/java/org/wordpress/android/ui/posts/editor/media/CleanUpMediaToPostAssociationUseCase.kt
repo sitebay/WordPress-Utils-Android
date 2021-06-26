@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import dagger.Reusable
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.UploadActionBuilder
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.store.UploadStore
-import org.wordpress.android.fluxc.store.UploadStore.ClearMediaPayload
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.posts.PostUtilsWrapper
-import org.wordpress.android.ui.posts.editor.AztecEditorFragmentStaticWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.UploadActionBuilder
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.store.UploadStore
+import org.sitebay.android.fluxc.store.UploadStore.ClearMediaPayload
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.posts.PostUtilsWrapper
+import org.sitebay.android.ui.posts.editor.AztecEditorFragmentStaticWrapper
 import javax.inject.Inject
 import javax.inject.Named
 

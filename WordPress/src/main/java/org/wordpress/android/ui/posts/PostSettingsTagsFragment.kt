@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.os.Bundle
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.model.SiteModel
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.model.SiteModel
 
 class PostSettingsTagsFragment : TagsFragment() {
     override fun getContentLayout() = R.layout.fragment_post_settings_tags

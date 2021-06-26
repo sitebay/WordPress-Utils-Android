@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters;
+package org.sitebay.android.ui.reader.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.datasets.ReaderSearchTable;
-import org.wordpress.android.ui.reader.adapters.ReaderSearchSuggestionRecyclerAdapter.SearchSuggestionHolder;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.datasets.ReaderSearchTable;
+import org.sitebay.android.ui.reader.adapters.ReaderSearchSuggestionRecyclerAdapter.SearchSuggestionHolder;
+import org.sitebay.android.util.SqlUtils;
 
 public class ReaderSearchSuggestionRecyclerAdapter extends RecyclerView.Adapter<SearchSuggestionHolder> {
     private static final int MAX_SUGGESTIONS = 5;

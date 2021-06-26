@@ -1,13 +1,13 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.NetworkUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.NetworkUtils;
 
 /*
  * global network connection change receiver - declared in the manifest to monitor

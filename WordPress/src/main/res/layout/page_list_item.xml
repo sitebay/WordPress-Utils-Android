@@ -17,7 +17,7 @@
         android:minHeight="@dimen/page_list_row_min_height"
         android:background="?selectableItemBackground">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/page_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             app:layout_constraintVertical_chainStyle="packed"
             tools:text="Porro totam quia architecto ducimus laudantium minus autem"/>
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/page_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             tools:ignore="ContentDescription"
             tools:src="@drawable/ic_posts_16dp" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/page_subtitle_suffix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/labels"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

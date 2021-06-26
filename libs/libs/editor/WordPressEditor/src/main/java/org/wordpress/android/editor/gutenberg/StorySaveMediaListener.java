@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.gutenberg;
+package org.sitebay.android.editor.gutenberg;
 
 public interface StorySaveMediaListener {
     void onMediaSaveReattached(String localId, float currentProgress);

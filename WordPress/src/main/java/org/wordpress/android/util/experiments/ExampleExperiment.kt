@@ -1,4 +1,4 @@
-package org.wordpress.android.util.experiments
+package org.sitebay.android.util.experiments
 
 import javax.inject.Inject
 

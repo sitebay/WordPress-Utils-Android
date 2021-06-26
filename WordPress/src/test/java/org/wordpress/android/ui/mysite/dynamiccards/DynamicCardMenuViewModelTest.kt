@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.mysite.dynamiccards
+package org.sitebay.android.ui.mysite.dynamiccards
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.DynamicCardType.CUSTOMIZE_QUICK_START
-import org.wordpress.android.fluxc.model.DynamicCardType.GROW_QUICK_START
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Hide
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Pin
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Remove
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Unpin
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.DynamicCardType.CUSTOMIZE_QUICK_START
+import org.sitebay.android.fluxc.model.DynamicCardType.GROW_QUICK_START
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Hide
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Pin
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Remove
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuViewModel.DynamicCardMenuInteraction.Unpin
 
 @RunWith(MockitoJUnitRunner::class)
 class DynamicCardMenuViewModelTest : BaseUnitTest() {

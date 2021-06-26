@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -6,12 +6,12 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagList
-import org.wordpress.android.models.ReaderTagType.BOOKMARKED
-import org.wordpress.android.models.ReaderTagType.DEFAULT
-import org.wordpress.android.models.ReaderTagType.FOLLOWED
-import org.wordpress.android.ui.FilteredRecyclerView
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagList
+import org.sitebay.android.models.ReaderTagType.BOOKMARKED
+import org.sitebay.android.models.ReaderTagType.DEFAULT
+import org.sitebay.android.models.ReaderTagType.FOLLOWED
+import org.sitebay.android.ui.FilteredRecyclerView
 
 @RunWith(MockitoJUnitRunner::class)
 class ReaderUtilsTest {

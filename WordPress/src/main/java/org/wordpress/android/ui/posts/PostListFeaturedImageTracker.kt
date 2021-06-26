@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.annotation.SuppressLint
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.MediaActionBuilder
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.fluxc.store.MediaStore.MediaPayload
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.MediaActionBuilder
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.fluxc.store.MediaStore.MediaPayload
 
 /**
  * This is a temporary class to make the PostListViewModel more manageable. Please feel free to refactor it any way
@@ -19,7 +19,7 @@ class PostListFeaturedImageTracker(private val dispatcher: Dispatcher, private v
     `SparseArray` is actually not objectively better than using a `HashMap` and in this case `HashMap` should perform
     better due to higher number of items.
 
-    https://github.com/wordpress-mobile/WordPress-Android/issues/11487
+    https://github.com/sitebay-mobile/WordPress-Android/issues/11487
      */
     @SuppressLint("UseSparseArrays")
     private val featuredImageMap = HashMap<Long, String>()

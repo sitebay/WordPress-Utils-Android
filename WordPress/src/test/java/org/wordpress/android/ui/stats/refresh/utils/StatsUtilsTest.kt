@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,9 +8,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Locale
 
 @RunWith(MockitoJUnitRunner::class)

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.repository
+package org.sitebay.android.ui.reader.repository
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -10,19 +10,19 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagList
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.ReaderEvents.InterestTagsFetchEnded
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Error.RemoteRequestFailure
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.SuccessWithData
-import org.wordpress.android.ui.reader.repository.usecases.tags.FetchInterestTagsUseCase
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask.INTEREST_TAGS
-import org.wordpress.android.ui.reader.services.update.wrapper.ReaderUpdateServiceStarterWrapper
-import org.wordpress.android.util.EventBusWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagList
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.ReaderEvents.InterestTagsFetchEnded
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Error.RemoteRequestFailure
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.SuccessWithData
+import org.sitebay.android.ui.reader.repository.usecases.tags.FetchInterestTagsUseCase
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask.INTEREST_TAGS
+import org.sitebay.android.ui.reader.services.update.wrapper.ReaderUpdateServiceStarterWrapper
+import org.sitebay.android.util.EventBusWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 import java.util.EnumSet
 
 @RunWith(MockitoJUnitRunner::class)

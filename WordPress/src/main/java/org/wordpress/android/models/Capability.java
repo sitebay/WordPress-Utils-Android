@@ -1,8 +1,8 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 /**
  * Used to decide what can the current user do in a particular blog
- * A list of capabilities can be found in: https://codex.wordpress.org/Roles_and_Capabilities#Capabilities
+ * A list of capabilities can be found in: https://codex.sitebay.org/Roles_and_Capabilities#Capabilities
  */
 public enum Capability {
     LIST_USERS("list_users"), // Check if user can visit People page

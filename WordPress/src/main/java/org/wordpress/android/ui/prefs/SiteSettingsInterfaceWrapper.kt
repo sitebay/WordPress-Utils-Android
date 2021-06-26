@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.prefs
+package org.sitebay.android.ui.prefs
 
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 class SiteSettingsInterfaceWrapper(private val siteSettingsInterface: SiteSettingsInterface) {

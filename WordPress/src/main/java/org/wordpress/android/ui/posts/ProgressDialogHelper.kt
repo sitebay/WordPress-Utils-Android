@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.ProgressDialog
 import android.content.Context
 import dagger.Reusable
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.utils.UiHelpers
 import javax.inject.Inject
 
 /**

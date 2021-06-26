@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.accounts;
+package org.sitebay.android.ui.accounts;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.FragmentTransaction;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.accounts.signup.SignupEpilogueFragment;
-import org.wordpress.android.ui.accounts.signup.SignupEpilogueListener;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.accounts.signup.SignupEpilogueFragment;
+import org.sitebay.android.ui.accounts.signup.SignupEpilogueListener;
 
 import javax.inject.Inject;
 

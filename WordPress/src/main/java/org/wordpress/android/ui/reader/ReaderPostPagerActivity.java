@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -22,51 +22,51 @@ import androidx.viewpager.widget.ViewPager;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.PostStore;
-import org.wordpress.android.fluxc.store.PostStore.OnPostUploaded;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.WPLaunchActivity;
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInReader;
-import org.wordpress.android.ui.deeplinks.DeepLinkTrackingUtils;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.ReaderTypes.ReaderPostListType;
-import org.wordpress.android.ui.reader.actions.ReaderActions;
-import org.wordpress.android.ui.reader.actions.ReaderPostActions;
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostId;
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostIdList;
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.reader.tracker.ReaderTrackerType;
-import org.wordpress.android.ui.reader.utils.ReaderPostSeenStatusWrapper;
-import org.wordpress.android.ui.uploads.UploadActionUseCase;
-import org.wordpress.android.ui.uploads.UploadUtils;
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper;
-import org.wordpress.android.util.ActivityUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UriWrapper;
-import org.wordpress.android.util.UrlUtilsWrapper;
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper;
-import org.wordpress.android.util.config.SeenUnseenWithCounterFeatureConfig;
-import org.wordpress.android.widgets.WPSwipeSnackbar;
-import org.wordpress.android.widgets.WPViewPager;
-import org.wordpress.android.widgets.WPViewPagerTransformer;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.PostStore;
+import org.sitebay.android.fluxc.store.PostStore.OnPostUploaded;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.WPLaunchActivity;
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInReader;
+import org.sitebay.android.ui.deeplinks.DeepLinkTrackingUtils;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.ReaderTypes.ReaderPostListType;
+import org.sitebay.android.ui.reader.actions.ReaderActions;
+import org.sitebay.android.ui.reader.actions.ReaderPostActions;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostId;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostIdList;
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.reader.tracker.ReaderTrackerType;
+import org.sitebay.android.ui.reader.utils.ReaderPostSeenStatusWrapper;
+import org.sitebay.android.ui.uploads.UploadActionUseCase;
+import org.sitebay.android.ui.uploads.UploadUtils;
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper;
+import org.sitebay.android.util.ActivityUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UriWrapper;
+import org.sitebay.android.util.UrlUtilsWrapper;
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper;
+import org.sitebay.android.util.config.SeenUnseenWithCounterFeatureConfig;
+import org.sitebay.android.widgets.WPSwipeSnackbar;
+import org.sitebay.android.widgets.WPViewPager;
+import org.sitebay.android.widgets.WPViewPagerTransformer;
 
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
@@ -85,9 +85,9 @@ import javax.inject.Inject;
  *
  * It also displays intercepted WordPress.com URls in the following forms
  *
- * http[s]://wordpress.com/read/blogs/{blogId}/posts/{postId}
- * http[s]://wordpress.com/read/feeds/{feedId}/posts/{feedItemId}
- * http[s]://{username}.wordpress.com/{year}/{month}/{day}/{postSlug}
+ * http[s]://sitebay.com/read/blogs/{blogId}/posts/{postId}
+ * http[s]://sitebay.com/read/feeds/{feedId}/posts/{feedItemId}
+ * http[s]://{username}.sitebay.com/{year}/{month}/{day}/{postSlug}
  *
  * Will also handle jumping to the comments section, liking a commend and liking a post directly
  */
@@ -263,7 +263,7 @@ public class ReaderPostPagerActivity extends LocaleAwareActivity {
 
         List<String> segments = uri.getPathSegments();
 
-        // Handled URLs look like this: http[s]://wordpress.com/read/feeds/{feedId}/posts/{feedItemId}
+        // Handled URLs look like this: http[s]://sitebay.com/read/feeds/{feedId}/posts/{feedItemId}
         // with the first segment being 'read'.
         if (segments != null) {
             // Builds stripped URI for tracking purposes
@@ -373,7 +373,7 @@ public class ReaderPostPagerActivity extends LocaleAwareActivity {
 
                                         // getBlogPost utilizes the primaryBlogIdentifier instead of blogIdentifier
                                         // since
-                                        // the custom and *.wordpress.com domains need to be used interchangeably since
+                                        // the custom and *.sitebay.com domains need to be used interchangeably since
                                         // they can both be used as the primary domain when identifying the blog_url
                                         // in the ReaderPostTable query.
                                         ReaderPost post =

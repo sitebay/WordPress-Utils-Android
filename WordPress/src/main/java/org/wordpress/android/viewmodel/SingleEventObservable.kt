@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel
+package org.sitebay.android.viewmodel
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData

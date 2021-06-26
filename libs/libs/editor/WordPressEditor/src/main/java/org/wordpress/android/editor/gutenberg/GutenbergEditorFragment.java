@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.gutenberg;
+package org.sitebay.android.editor.gutenberg;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -35,43 +35,43 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.gson.Gson;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.editor.BuildConfig;
-import org.wordpress.android.editor.EditorEditMediaListener;
-import org.wordpress.android.editor.EditorFragmentAbstract;
-import org.wordpress.android.editor.EditorFragmentActivity;
-import org.wordpress.android.editor.EditorImagePreviewListener;
-import org.wordpress.android.editor.EditorMediaUploadListener;
-import org.wordpress.android.editor.EditorThemeUpdateListener;
-import org.wordpress.android.editor.LiveTextWatcher;
-import org.wordpress.android.editor.R;
-import org.wordpress.android.editor.WPGutenbergWebViewActivity;
-import org.wordpress.android.editor.gutenberg.GutenbergDialogFragment.GutenbergDialogPositiveClickInterface;
-import org.wordpress.android.editor.gutenberg.GutenbergDialogFragment.GutenbergDialogNegativeClickInterface;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.PermissionUtils;
-import org.wordpress.android.util.ProfilingUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.android.util.helpers.MediaGallery;
-import org.wordpress.aztec.IHistoryListener;
-import org.wordpress.mobile.WPAndroidGlue.Media;
-import org.wordpress.mobile.WPAndroidGlue.MediaOption;
-import org.wordpress.mobile.WPAndroidGlue.ShowSuggestionsUtil;
-import org.wordpress.mobile.WPAndroidGlue.UnsupportedBlock;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnContentInfoReceivedListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnEditorMountListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnFocalPointPickerTooltipShownEventListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGetContentTimeout;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidRequestUnsupportedBlockFallbackListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidSendButtonPressedActionListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaFilesCollectionBasedBlockEditorListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaLibraryButtonListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaSavingQueryListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaUploadQueryListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnSetFeaturedImageListener;
+import org.sitebay.android.editor.BuildConfig;
+import org.sitebay.android.editor.EditorEditMediaListener;
+import org.sitebay.android.editor.EditorFragmentAbstract;
+import org.sitebay.android.editor.EditorFragmentActivity;
+import org.sitebay.android.editor.EditorImagePreviewListener;
+import org.sitebay.android.editor.EditorMediaUploadListener;
+import org.sitebay.android.editor.EditorThemeUpdateListener;
+import org.sitebay.android.editor.LiveTextWatcher;
+import org.sitebay.android.editor.R;
+import org.sitebay.android.editor.WPGutenbergWebViewActivity;
+import org.sitebay.android.editor.gutenberg.GutenbergDialogFragment.GutenbergDialogPositiveClickInterface;
+import org.sitebay.android.editor.gutenberg.GutenbergDialogFragment.GutenbergDialogNegativeClickInterface;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.PermissionUtils;
+import org.sitebay.android.util.ProfilingUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaGallery;
+import org.sitebay.aztec.IHistoryListener;
+import org.sitebay.mobile.WPAndroidGlue.Media;
+import org.sitebay.mobile.WPAndroidGlue.MediaOption;
+import org.sitebay.mobile.WPAndroidGlue.ShowSuggestionsUtil;
+import org.sitebay.mobile.WPAndroidGlue.UnsupportedBlock;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnContentInfoReceivedListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnEditorMountListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnFocalPointPickerTooltipShownEventListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGetContentTimeout;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidRequestUnsupportedBlockFallbackListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidSendButtonPressedActionListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaFilesCollectionBasedBlockEditorListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaLibraryButtonListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaSavingQueryListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaUploadQueryListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnSetFeaturedImageListener;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -81,7 +81,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.wordpress.mobile.WPAndroidGlue.Media.createRNMediaUsingMimeType;
+import static org.sitebay.mobile.WPAndroidGlue.Media.createRNMediaUsingMimeType;
 
 public class GutenbergEditorFragment extends EditorFragmentAbstract implements
         EditorMediaUploadListener,
@@ -129,7 +129,7 @@ public class GutenbergEditorFragment extends EditorFragmentAbstract implements
 
     // pointer (to the Gutenberg container fragment) that outlives this fragment's Android lifecycle. The retained
     //  fragment can be alive and accessible even before it gets attached to an activity.
-    //  See discussion at https://github.com/wordpress-mobile/WordPress-Android/pull/9030#issuecomment-459447537 and on.
+    //  See discussion at https://github.com/sitebay-mobile/WordPress-Android/pull/9030#issuecomment-459447537 and on.
     GutenbergContainerFragment mRetainedGutenbergContainerFragment;
 
     private ConcurrentHashMap<String, Float> mUploadingMediaProgressMax = new ConcurrentHashMap<>();
@@ -1193,7 +1193,7 @@ public class GutenbergEditorFragment extends EditorFragmentAbstract implements
         if (getActivity() == null) {
             // appendMediaFile may be called from a background thread (example: EditPostActivity.java#L2165) and
             // Activity may have already be gone.
-            // Ticket: https://github.com/wordpress-mobile/WordPress-Android/issues/7386
+            // Ticket: https://github.com/sitebay-mobile/WordPress-Android/issues/7386
             AppLog.d(T.MEDIA, "appendMediaFiles() called but Activity is null!");
             return;
         }

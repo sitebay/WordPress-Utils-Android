@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.timezone
+package org.sitebay.android.ui.prefs.timezone
 
 import android.content.Context
 import org.assertj.core.api.Assertions
@@ -6,8 +6,8 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class SiteSettingsTimezoneViewModelTest : BaseUnitTest() {
     @Mock lateinit var resourceProvider: ResourceProvider

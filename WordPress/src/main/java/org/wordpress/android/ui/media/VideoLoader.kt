@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.media
+package org.sitebay.android.ui.media
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.wordpress.android.fluxc.utils.AppLogWrapper
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.utils.AuthenticationUtils
-import org.wordpress.android.util.AppLog.T
+import org.sitebay.android.fluxc.utils.AppLogWrapper
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.utils.AuthenticationUtils
+import org.sitebay.android.util.AppLog.T
 import java.io.IOException
 import java.net.URL
 import javax.inject.Inject

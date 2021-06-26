@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.domains
+package org.sitebay.android.ui.sitecreation.domains
 
 import android.content.Context
 import android.os.Bundle
@@ -15,20 +15,20 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nulabinc.zxcvbn.Zxcvbn
-import org.wordpress.android.databinding.SiteCreationLoginDetailsScreenBinding
-import org.wordpress.android.R
-import org.wordpress.android.R.string
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.SiteCreationFormScreenBinding
-import org.wordpress.android.ui.accounts.HelpActivity
-import org.wordpress.android.ui.sitecreation.SiteCreationBaseFormFragment
-import org.wordpress.android.ui.sitecreation.misc.OnHelpClickedListener
-import org.wordpress.android.ui.sitecreation.misc.SearchInputWithHeader
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationHeaderUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.DisplayUtilsWrapper
-import org.wordpress.android.util.ToastUtils
+import org.sitebay.android.databinding.SiteCreationLoginDetailsScreenBinding
+import org.sitebay.android.R
+import org.sitebay.android.R.string
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.SiteCreationFormScreenBinding
+import org.sitebay.android.ui.accounts.HelpActivity
+import org.sitebay.android.ui.sitecreation.SiteCreationBaseFormFragment
+import org.sitebay.android.ui.sitecreation.misc.OnHelpClickedListener
+import org.sitebay.android.ui.sitecreation.misc.SearchInputWithHeader
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationHeaderUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.DisplayUtilsWrapper
+import org.sitebay.android.util.ToastUtils
 
 import javax.inject.Inject
 

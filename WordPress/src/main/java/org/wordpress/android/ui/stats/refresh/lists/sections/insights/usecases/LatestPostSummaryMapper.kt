@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import org.apache.commons.text.StringEscapeUtils
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.InsightsLatestPostModel
-import org.wordpress.android.ui.stats.StatsUtilsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Text
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Text.Clickable
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases.LatestPostSummaryUseCase.LinkClickParams
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.InsightsLatestPostModel
+import org.sitebay.android.ui.stats.StatsUtilsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Text
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Text.Clickable
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases.LatestPostSummaryUseCase.LinkClickParams
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class LatestPostSummaryMapper

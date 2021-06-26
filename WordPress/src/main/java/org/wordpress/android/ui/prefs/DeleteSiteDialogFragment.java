@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -19,7 +19,7 @@ import androidx.appcompat.app.AlertDialog;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import java.util.Locale;
 
@@ -117,7 +117,7 @@ public class DeleteSiteDialogFragment extends DialogFragment implements TextWatc
 
     private void retrieveSiteDomain() {
         Bundle args = getArguments();
-        mSiteDomain = getString(R.string.wordpress_dot_com).toLowerCase(Locale.ROOT);
+        mSiteDomain = getString(R.string.sitebay_dot_com).toLowerCase(Locale.ROOT);
         if (args != null) {
             mSiteDomain = args.getString(SITE_DOMAIN_KEY);
         }

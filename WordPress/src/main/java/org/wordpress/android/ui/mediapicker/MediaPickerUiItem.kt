@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.Type.FILE
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.Type.NEXT_PAGE_LOADER
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.Type.PHOTO
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.Type.VIDEO
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.Type.FILE
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.Type.NEXT_PAGE_LOADER
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.Type.PHOTO
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.Type.VIDEO
 
 sealed class MediaPickerUiItem(
     val type: Type,

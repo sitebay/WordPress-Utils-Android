@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.text.TextUtils
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.MediaActionBuilder
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.uploads.UploadServiceFacade
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.MediaUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.MediaActionBuilder
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.uploads.UploadServiceFacade
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.MediaUtilsWrapper
 import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Named

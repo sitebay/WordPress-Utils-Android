@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login
+package org.sitebay.android.ui.accounts.login
 
 import android.os.Bundle
 import android.text.Html
@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
-import org.wordpress.android.R
-import org.wordpress.android.databinding.LoginIntroTemplateViewBinding
+import org.sitebay.android.R
+import org.sitebay.android.databinding.LoginIntroTemplateViewBinding
 import kotlin.math.min
 
 class LoginProloguePageFragment : Fragment(R.layout.login_intro_template_view) {

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import android.content.Context
 import android.text.SpannableStringBuilder
@@ -16,12 +16,12 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyInt
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.tools.FormattableContent
-import org.wordpress.android.models.Note
-import org.wordpress.android.ui.engagement.ListScenarioType.LOAD_POST_LIKES
-import org.wordpress.android.ui.notifications.blocks.NoteBlockClickableSpan
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.fluxc.tools.FormattableContent
+import org.sitebay.android.models.Note
+import org.sitebay.android.ui.engagement.ListScenarioType.LOAD_POST_LIKES
+import org.sitebay.android.ui.notifications.blocks.NoteBlockClickableSpan
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper
+import org.sitebay.android.util.image.ImageManager
 
 @RunWith(MockitoJUnitRunner::class)
 class ListScenarioUtilsTest {

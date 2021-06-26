@@ -193,8 +193,8 @@ Language: nl
     <string name="backup_download_details_choose_items_header">Items opgenomen in deze download</string>
     <string name="backup_item_roots">WordPress root</string>
     <string name="backup_item_contents">WP-content folder</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Herbruikbare blokken zijn niet bewerkbaar in WordPress voor Android</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Herbruikbare blokken zijn niet bewerkbaar in WordPress voor IOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Herbruikbare blokken zijn niet bewerkbaar in WordPress voor Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Herbruikbare blokken zijn niet bewerkbaar in WordPress voor IOS</string>
     <string name="gutenberg_native_double_tap_to_select_an_audio_file">Twee keer tikken om een audiobestand te selecteren</string>
     <string name="gutenberg_native_failed_to_insert_audio_file_please_tap_for_options">Invoegen van audiobestand mislukt. Tik voor opties.</string>
     <string name="gutenberg_native_lock_icon">Slot-pictogram</string>
@@ -516,7 +516,7 @@ Language: nl
     <string name="stories_intro_title_first">Nu zijn verhalen voor iedereen</string>
     <string name="stories_intro_image_caption_first">Hoe maak je een verhaal</string>
     <string name="stories_intro_main_title">Introductie verhalen</string>
-    <string name="photo_picker_wordpress_media_library">Kies uit WordPress mediabibliotheek</string>
+    <string name="photo_picker_sitebay_media_library">Kies uit WordPress mediabibliotheek</string>
     <string name="media_insert_failed_with_reason">Invoegen media mislukt: %s</string>
     <string name="media_insert_failed">Media invoegen mislukt.</string>
     <string name="reader_label_toolbar_back">Terug</string>
@@ -660,7 +660,7 @@ Language: nl
     <string name="send_link_by_email">Link per e-mail verzenden</string>
     <string name="create_account">Account aanmaken</string>
     <string name="or_type_your_password">Of typ je wachtwoord</string>
-    <string name="enter_email_to_continue_wordpress_com">Voer je e-mailadres in om in te loggen of maak een WordPress.com account aan.</string>
+    <string name="enter_email_to_continue_sitebay_com">Voer je e-mailadres in om in te loggen of maak een WordPress.com account aan.</string>
     <string name="get_started">Begin</string>
     <string name="check_email">E-mail controleren</string>
     <string name="reader_error_request_failed_title">Er is een probleem opgetreden bij het verwerken van de aanvraag. Probeer het later opnieuw.</string>
@@ -940,7 +940,7 @@ Language: nl
     <string name="site_cannot_be_loaded">We kunnen op dit moment geen gegevens voor je site laden. Probeer het later opnieuw</string>
     <string name="reader_filter_tags_title">Onderwerpen</string>
     <string name="suffix_1_000">%sK</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress-mediabibliotheek</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress-mediabibliotheek</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Tik om toetsenbord te verbergen</string>
     <string name="gutenberg_native_unsupported">Niet-ondersteund</string>
     <string name="gutenberg_native_ungroup">Groep opheffen</string>
@@ -1387,7 +1387,7 @@ Language: nl
     <string name="stats_follower_label">Volger</string>
     <string name="stats_followers_count_message">Totaal %1$s volgers: %2$s</string>
     <string name="stats_followers_email">E-mail</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_tags_and_categories_title_label">Titel</string>
     <string name="stats_category_folded_name">%1$s | %2$s</string>
     <string name="stats_publicize_followers_label">Volgers</string>
@@ -1845,7 +1845,7 @@ Language: nl
     <string name="delete_yes">Verwijder</string>
     <string name="plugin_external_link_icon_content_description">Externe link</string>
     <string name="plugin_icon_content_description">Plugin pictogram</string>
-    <string name="wordpress_dot_org_plugin_page">Pluginpagina WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Pluginpagina WordPress.org</string>
     <string name="plugin_home_page">Plugin homepage</string>
     <string name="plugin_remove_dialog_message">Weet je zeker dat je %1$s wilt verwijderen uit %2$s?\n\nHierdoor wordt de plugin gedeactiveerd en worden alle bijbehorende bestanden en gegevens verwijderd.</string>
     <string name="plugin_remove_dialog_title">Plugin verwijderen</string>
@@ -2007,7 +2007,7 @@ Language: nl
     <string name="login_text_otp">Sms  mij een code in plaats daarvan</string>
     <string name="enter_verification_code">Bijna klaar! Voer de verificatiecode uit je Authenticator-app in.</string>
     <string name="next">Volgende</string>
-    <string name="enter_email_wordpress_com">Log in op WordPress.com met behulp van een e-mailadres om al je WordPress-sites te beheren.</string>
+    <string name="enter_email_sitebay_com">Log in op WordPress.com met behulp van een e-mailadres om al je WordPress-sites te beheren.</string>
     <string name="image_optimization_promo_desc">Afbeeldingoptimalisatie maakt afbeeldingen kleiner, zodat ze sneller geüpload kunnen worden.\n\nJe kunt deze optie op elk moment wijzigen in de site-instellingen.</string>
     <string name="image_optimization_promo_title">Afbeeldingoptimalisatie aanzetten?</string>
     <string name="leave_off">Uit laten staan</string>
@@ -2565,9 +2565,9 @@ Language: nl
     <string name="stats_insights_today">De statistieken van vandaag.</string>
     <string name="stats_insights_all_time">Alle berichten, weergaven en bezoekers</string>
     <string name="stats_insights">Inzichten</string>
-    <string name="me_disconnect_from_wordpress_com">Uitloggen van WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Uitloggen van WordPress.com</string>
     <string name="me_btn_login_logout">Inloggen/uitloggen</string>
-    <string name="me_connect_to_wordpress_com">Inloggen op WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Inloggen op WordPress.com</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" was niet verborgen omdat het de huidige site is</string>
     <string name="account_settings">Accountinstellingen</string>
     <string name="me_btn_support">Help &amp; ondersteuning</string>
@@ -2735,7 +2735,7 @@ Language: nl
     <string name="privacy_policy">Privacybeleid</string>
     <string name="local_changes">Lokale wijzigingen</string>
     <string name="image_settings">Afbeeldingsinstellingen</string>
-    <string name="wordpress_blog">WordPress-blog</string>
+    <string name="sitebay_blog">WordPress-blog</string>
     <string name="error_blog_hidden">Dit blog is verborgen en kan niet worden geladen. Schakel het blog in instellingen in en probeer het opnieuw.</string>
     <string name="fatal_db_error">Er heeft zich een fout voorgedaan bij het aanmaken van de database van de app. Probeer de app opnieuw te installeren.</string>
     <string name="reader_title_applog">Applicatielogboek</string>

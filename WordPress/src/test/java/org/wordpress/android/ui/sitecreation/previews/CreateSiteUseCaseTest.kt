@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.previews
+package org.sitebay.android.ui.sitecreation.previews
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.any
@@ -12,17 +12,17 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.SiteAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.NewSitePayload
-import org.wordpress.android.fluxc.store.SiteStore.OnNewSiteCreated
-import org.wordpress.android.fluxc.store.SiteStore.SiteVisibility
-import org.wordpress.android.test
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceData
-import org.wordpress.android.ui.sitecreation.usecases.CreateSiteUseCase
-import org.wordpress.android.util.UrlUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.SiteAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.NewSitePayload
+import org.sitebay.android.fluxc.store.SiteStore.OnNewSiteCreated
+import org.sitebay.android.fluxc.store.SiteStore.SiteVisibility
+import org.sitebay.android.test
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceData
+import org.sitebay.android.ui.sitecreation.usecases.CreateSiteUseCase
+import org.sitebay.android.util.UrlUtilsWrapper
 
 private val DUMMY_SITE_DATA: SiteCreationServiceData = SiteCreationServiceData(
         123,

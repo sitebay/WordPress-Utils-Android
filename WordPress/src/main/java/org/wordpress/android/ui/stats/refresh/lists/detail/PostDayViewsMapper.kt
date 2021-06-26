@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel.Day
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.DAYS
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem.Bar
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State
-import org.wordpress.android.ui.stats.refresh.utils.HUNDRED_THOUSAND
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel.Day
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.DAYS
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem.Bar
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State
+import org.sitebay.android.ui.stats.refresh.utils.HUNDRED_THOUSAND
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class PostDayViewsMapper

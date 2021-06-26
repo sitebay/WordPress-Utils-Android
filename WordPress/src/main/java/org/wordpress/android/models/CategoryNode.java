@@ -1,8 +1,8 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.util.LongSparseArray;
 
-import org.wordpress.android.fluxc.model.TermModel;
+import org.sitebay.android.fluxc.model.TermModel;
 
 import java.util.ArrayList;
 import java.util.Comparator;

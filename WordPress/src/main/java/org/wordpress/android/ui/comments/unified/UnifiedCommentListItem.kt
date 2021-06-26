@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.COMMENT
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.SUB_HEADER
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.COMMENT
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.CommentListItemType.SUB_HEADER
 
 sealed class UnifiedCommentListItem(val type: CommentListItemType) {
     abstract val id: Long

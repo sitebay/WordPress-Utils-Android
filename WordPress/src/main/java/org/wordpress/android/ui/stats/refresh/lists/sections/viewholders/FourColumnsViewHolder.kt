@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.BlockDiffCallback.BlockListPayload.COLUMNS_VALUE_CHANGED
-import org.wordpress.android.ui.stats.refresh.BlockDiffCallback.BlockListPayload.SELECTED_COLUMN_CHANGED
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Columns
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.BlockDiffCallback.BlockListPayload.COLUMNS_VALUE_CHANGED
+import org.sitebay.android.ui.stats.refresh.BlockDiffCallback.BlockListPayload.SELECTED_COLUMN_CHANGED
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Columns
 
 class FourColumnsViewHolder(parent: ViewGroup) : BlockListItemViewHolder(
         parent,

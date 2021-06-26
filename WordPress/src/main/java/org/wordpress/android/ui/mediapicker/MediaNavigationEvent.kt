@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier
-import org.wordpress.android.ui.mediapicker.MediaPickerFragment.MediaPickerAction
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier
+import org.sitebay.android.ui.mediapicker.MediaPickerFragment.MediaPickerAction
+import org.sitebay.android.util.UriWrapper
 
 sealed class MediaNavigationEvent {
     data class PreviewUrl(val url: String) : MediaNavigationEvent()

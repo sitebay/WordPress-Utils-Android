@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.stories.usecase
+package org.sitebay.android.ui.stories.usecase
 
 import android.net.Uri
-import com.wordpress.stories.compose.story.StoryFrameItem
-import com.wordpress.stories.compose.story.StoryIndex
-import com.wordpress.stories.compose.story.StoryRepository
+import com.sitebay.stories.compose.story.StoryFrameItem
+import com.sitebay.stories.compose.story.StoryIndex
+import com.sitebay.stories.compose.story.StoryRepository
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.ui.stories.SaveStoryGutenbergBlockUseCase.Companion.TEMPORARY_ID_PREFIX
-import org.wordpress.android.ui.stories.StoryRepositoryWrapper
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs.TempId
-import org.wordpress.android.util.StringUtils
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.ui.stories.SaveStoryGutenbergBlockUseCase.Companion.TEMPORARY_ID_PREFIX
+import org.sitebay.android.ui.stories.StoryRepositoryWrapper
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs.TempId
+import org.sitebay.android.util.StringUtils
 import java.util.ArrayList
 import java.util.HashMap
 import javax.inject.Inject
@@ -124,7 +124,7 @@ class LoadStoryFromStoriesPrefsUseCase @Inject constructor(
         )
 
         // now look for a Story in the StoryRepository that has all these frames and, if not found, let's
-        // just build the Story object ourselves to match the order in which the media files were passed. 
+        // just build the Story object ourselves to match the order in which the media files were passed.
         var storyIndex = storyRepositoryWrapper.findStoryContainingStoryFrameItemsByIds(mediaIds)
         if (storyIndex == StoryRepository.DEFAULT_NONE_SELECTED) {
             // the StoryRepository didn't have it but we have editable serialized slides so,

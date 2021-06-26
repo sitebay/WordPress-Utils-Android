@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.configuration
+package org.sitebay.android.ui.stats.refresh.lists.widget.configuration
 
 import android.app.Dialog
 import android.content.Context
@@ -9,13 +9,13 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.android.support.AndroidSupportInjection
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.COMMENTS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.LIKES
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VISITORS
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.COMMENTS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.LIKES
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VISITORS
+import org.sitebay.android.util.image.ImageManager
 import javax.inject.Inject
 
 class StatsWidgetDataTypeSelectionDialogFragment : AppCompatDialogFragment() {

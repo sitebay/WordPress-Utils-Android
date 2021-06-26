@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import android.content.Context
 import androidx.lifecycle.LiveData
@@ -8,12 +8,12 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import org.greenrobot.eventbus.Subscribe
-import org.wordpress.android.datasets.UserSuggestionTable
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.suggestion.service.SuggestionEvents.SuggestionNameListUpdated
-import org.wordpress.android.ui.suggestion.util.SuggestionServiceConnectionManager
-import org.wordpress.android.util.EventBusWrapper
+import org.sitebay.android.datasets.UserSuggestionTable
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.suggestion.service.SuggestionEvents.SuggestionNameListUpdated
+import org.sitebay.android.ui.suggestion.util.SuggestionServiceConnectionManager
+import org.sitebay.android.util.EventBusWrapper
 import javax.inject.Inject
 import javax.inject.Named
 import kotlin.coroutines.CoroutineContext

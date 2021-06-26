@@ -18,12 +18,12 @@ include ':libs:WordPressProcessors'
 include ':libs:WordPressAnnotations'
 
 include ':WordPressMocks'
-project(':WordPressMocks').projectDir = new File(rootProject.projectDir, properties.getOrDefault('wp.wordpress_mocks_path', 'libs/mocks') + '/WordPressMocks')
+project(':WordPressMocks').projectDir = new File(rootProject.projectDir, properties.getOrDefault('wp.sitebay_mocks_path', 'libs/mocks') + '/WordPressMocks')
 
 gradle.ext.fluxCBinaryPath = "com.github.sitebay.WordPress-FluxC-Android"
-gradle.ext.wputilsBinaryPath = "org.wordpress:utils"
-gradle.ext.gutenbergMobileBinaryPath = "org.wordpress-mobile.gutenberg-mobile:react-native-gutenberg-bridge"
-gradle.ext.loginFlowBinaryPath = "org.wordpress:login"
+gradle.ext.wputilsBinaryPath = "org.sitebay:utils"
+gradle.ext.gutenbergMobileBinaryPath = "org.sitebay-mobile.gutenberg-mobile:react-native-gutenberg-bridge"
+gradle.ext.loginFlowBinaryPath = "org.sitebay:login"
 gradle.ext.includedBuildGutenbergMobilePath = null
 
 def localBuilds = new File('local-builds.gradle')

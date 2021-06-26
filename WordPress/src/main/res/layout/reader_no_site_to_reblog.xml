@@ -8,7 +8,7 @@
         android:id="@+id/include_toolbar_main"
         layout="@layout/toolbar_main" />
 
-    <org.wordpress.android.ui.ActionableEmptyView
+    <org.sitebay.android.ui.ActionableEmptyView
         android:id="@+id/noSiteToReblogView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.signup
+package org.sitebay.android.ui.accounts.signup
 
 import java.util.Locale
 import javax.inject.Inject

@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.posts.prepublishing
+package org.sitebay.android.ui.posts.prepublishing
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.PostSettingsUtils
-import org.wordpress.android.ui.posts.PublishSettingsViewModel
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.PostSettingsUtils
+import org.sitebay.android.ui.posts.PublishSettingsViewModel
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class PrepublishingPublishSettingsViewModel @Inject constructor(

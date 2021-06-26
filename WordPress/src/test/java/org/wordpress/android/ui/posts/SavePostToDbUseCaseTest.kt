@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
@@ -13,21 +13,21 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.DRAFT
-import org.wordpress.android.fluxc.model.post.PostStatus.PENDING
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
-import org.wordpress.android.fluxc.model.post.PostStatus.PUBLISHED
-import org.wordpress.android.fluxc.model.post.PostStatus.SCHEDULED
-import org.wordpress.android.fluxc.model.post.PostStatus.TRASHED
-import org.wordpress.android.fluxc.model.post.PostStatus.UNKNOWN
-import org.wordpress.android.ui.notifications.utils.PendingDraftsNotificationsUtilsWrapper
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper
-import org.wordpress.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.DRAFT
+import org.sitebay.android.fluxc.model.post.PostStatus.PENDING
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.fluxc.model.post.PostStatus.PUBLISHED
+import org.sitebay.android.fluxc.model.post.PostStatus.SCHEDULED
+import org.sitebay.android.fluxc.model.post.PostStatus.TRASHED
+import org.sitebay.android.fluxc.model.post.PostStatus.UNKNOWN
+import org.sitebay.android.ui.notifications.utils.PendingDraftsNotificationsUtilsWrapper
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper
+import org.sitebay.android.util.DateTimeUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class SavePostToDbUseCaseTest {

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media;
+package org.sitebay.android.ui.media;
 
 import android.Manifest;
 import android.app.Activity;
@@ -42,50 +42,50 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.MediaActionBuilder;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.fluxc.store.MediaStore.CancelMediaPayload;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaChanged;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaListFetched;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaUploaded;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged;
-import org.wordpress.android.push.NotificationType;
-import org.wordpress.android.ui.ActivityId;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.media.MediaGridFragment.MediaFilter;
-import org.wordpress.android.ui.media.MediaGridFragment.MediaGridListener;
-import org.wordpress.android.ui.media.services.MediaDeleteService;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.ui.photopicker.MediaPickerConstants;
-import org.wordpress.android.ui.photopicker.MediaPickerLauncher;
-import org.wordpress.android.ui.plans.PlansConstants;
-import org.wordpress.android.ui.uploads.UploadService;
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper;
-import org.wordpress.android.util.ActivityUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.FluxCUtils;
-import org.wordpress.android.util.FormatUtils;
-import org.wordpress.android.util.ListUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.PermissionUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.WPMediaUtils;
-import org.wordpress.android.util.WPPermissionUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.widgets.AppRatingDialog;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.MediaActionBuilder;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.fluxc.store.MediaStore.CancelMediaPayload;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaChanged;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaListFetched;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaUploaded;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged;
+import org.sitebay.android.push.NotificationType;
+import org.sitebay.android.ui.ActivityId;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.media.MediaGridFragment.MediaFilter;
+import org.sitebay.android.ui.media.MediaGridFragment.MediaGridListener;
+import org.sitebay.android.ui.media.services.MediaDeleteService;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.ui.photopicker.MediaPickerConstants;
+import org.sitebay.android.ui.photopicker.MediaPickerLauncher;
+import org.sitebay.android.ui.plans.PlansConstants;
+import org.sitebay.android.ui.uploads.UploadService;
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper;
+import org.sitebay.android.util.ActivityUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.FluxCUtils;
+import org.sitebay.android.util.FormatUtils;
+import org.sitebay.android.util.ListUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.PermissionUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.WPMediaUtils;
+import org.sitebay.android.util.WPPermissionUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.widgets.AppRatingDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -94,8 +94,8 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.APP_REVIEWS_EVENT_INCREMENTED_BY_UPLOADING_MEDIA;
-import static org.wordpress.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.APP_REVIEWS_EVENT_INCREMENTED_BY_UPLOADING_MEDIA;
+import static org.sitebay.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
 
 /**
  * The main activity in which the user can browse their media.
@@ -998,7 +998,7 @@ public class MediaBrowserActivity extends LocaleAwareActivity implements MediaGr
             return optimizedMedia;
         } else {
             // Optimization is OFF. Make sure the picture is in portrait for .org site
-            // Fix for the rotation issue https://github.com/wordpress-mobile/WordPress-Android/issues/5737
+            // Fix for the rotation issue https://github.com/sitebay-mobile/WordPress-Android/issues/5737
             if (!mSite.isWPCom()) {
                 // If it's not wpcom we must rotate the picture locally
                 Uri rotatedMedia = WPMediaUtils.fixOrientationIssue(this, filePath, false);

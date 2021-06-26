@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
 import com.nhaarman.mockitokotlin2.argumentCaptor
@@ -8,12 +8,12 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.MediaAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState
-import org.wordpress.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.MediaAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState
+import org.sitebay.android.fluxc.model.PostImmutableModel
 
 @RunWith(MockitoJUnitRunner::class)
 class UpdateMediaModelUseCaseTest {

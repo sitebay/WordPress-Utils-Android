@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.reader.services.update;
+package org.sitebay.android.ui.reader.services.update;
 
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.LocaleManager;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.LocaleManager;
 
 import java.util.EnumSet;
 
-import static org.wordpress.android.ui.reader.services.update.ReaderUpdateServiceStarter.ARG_UPDATE_TASKS;
+import static org.sitebay.android.ui.reader.services.update.ReaderUpdateServiceStarter.ARG_UPDATE_TASKS;
 
 
 public class ReaderUpdateService extends Service implements ServiceCompletionListener {

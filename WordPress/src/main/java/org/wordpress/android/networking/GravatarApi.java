@@ -1,10 +1,10 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.os.Handler;
 import android.os.Looper;
 
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.util.AppLog;
 
 import java.io.File;
 import java.io.IOException;

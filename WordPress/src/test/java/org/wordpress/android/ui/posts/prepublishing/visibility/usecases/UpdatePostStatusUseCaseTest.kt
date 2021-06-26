@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.prepublishing.visibility.usecases
+package org.sitebay.android.ui.posts.prepublishing.visibility.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
@@ -8,14 +8,14 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.PostUtilsWrapper
-import org.wordpress.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.PostUtilsWrapper
+import org.sitebay.android.util.DateTimeUtilsWrapper
 
 class UpdatePostStatusUseCaseTest : BaseUnitTest() {
     private lateinit var editPostRepository: EditPostRepository

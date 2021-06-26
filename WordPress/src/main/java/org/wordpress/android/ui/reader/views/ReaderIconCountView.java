@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -12,7 +12,7 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.content.ContextCompat;
 import androidx.core.widget.ImageViewCompat;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 /*
  * used when showing comment + comment count, like + like count

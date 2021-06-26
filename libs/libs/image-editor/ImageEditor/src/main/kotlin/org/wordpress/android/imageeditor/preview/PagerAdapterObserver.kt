@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.preview
+package org.sitebay.android.imageeditor.preview
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2

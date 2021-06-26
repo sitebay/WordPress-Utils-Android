@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
 import androidx.annotation.StringRes
 

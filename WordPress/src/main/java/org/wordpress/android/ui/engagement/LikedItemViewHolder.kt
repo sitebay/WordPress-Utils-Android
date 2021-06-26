@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import android.text.TextUtils
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.R.string
-import org.wordpress.android.ui.engagement.EngageItem.LikedItem
-import org.wordpress.android.ui.engagement.AuthorName.AuthorNameCharSequence
-import org.wordpress.android.ui.engagement.AuthorName.AuthorNameString
-import org.wordpress.android.util.GravatarUtils
-import org.wordpress.android.util.getDrawableResIdFromAttribute
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.R
+import org.sitebay.android.R.string
+import org.sitebay.android.ui.engagement.EngageItem.LikedItem
+import org.sitebay.android.ui.engagement.AuthorName.AuthorNameCharSequence
+import org.sitebay.android.ui.engagement.AuthorName.AuthorNameString
+import org.sitebay.android.util.GravatarUtils
+import org.sitebay.android.util.getDrawableResIdFromAttribute
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
 
 class LikedItemViewHolder(
     parent: ViewGroup,

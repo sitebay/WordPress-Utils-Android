@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -14,100 +14,100 @@ import androidx.annotation.StringRes;
 import androidx.core.app.TaskStackBuilder;
 import androidx.fragment.app.Fragment;
 
-import com.wordpress.stories.compose.frame.FrameSaveNotifier;
-import com.wordpress.stories.compose.frame.StorySaveEvents.StorySaveResult;
+import com.sitebay.stories.compose.frame.FrameSaveNotifier;
+import com.sitebay.stories.compose.frame.StorySaveEvents.StorySaveResult;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.page.PageModel;
-import org.wordpress.android.fluxc.network.utils.StatsGranularity;
-import org.wordpress.android.imageeditor.EditImageActivity;
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData;
-import org.wordpress.android.login.LoginMode;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.networking.SSLCertsViewActivity;
-import org.wordpress.android.ui.accounts.HelpActivity;
-import org.wordpress.android.ui.accounts.HelpActivity.Origin;
-import org.wordpress.android.ui.accounts.LoginActivity;
-import org.wordpress.android.ui.accounts.LoginEpilogueActivity;
-import org.wordpress.android.ui.accounts.PostSignupInterstitialActivity;
-import org.wordpress.android.ui.accounts.SignupEpilogueActivity;
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailActivity;
-import org.wordpress.android.ui.activitylog.list.ActivityLogListActivity;
-import org.wordpress.android.ui.comments.CommentsActivity;
-import org.wordpress.android.ui.comments.unified.UnifiedCommentsActivity;
-import org.wordpress.android.ui.domains.DomainRegistrationActivity;
-import org.wordpress.android.ui.domains.DomainRegistrationActivity.DomainRegistrationPurpose;
-import org.wordpress.android.ui.engagement.EngagedPeopleListActivity;
-import org.wordpress.android.ui.engagement.EngagementNavigationSource;
-import org.wordpress.android.ui.engagement.HeaderData;
-import org.wordpress.android.ui.engagement.ListScenario;
-import org.wordpress.android.ui.engagement.ListScenarioType;
-import org.wordpress.android.ui.history.HistoryDetailActivity;
-import org.wordpress.android.ui.history.HistoryDetailContainerFragment;
-import org.wordpress.android.ui.history.HistoryListItem.Revision;
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadActivity;
-import org.wordpress.android.ui.jetpack.restore.RestoreActivity;
-import org.wordpress.android.ui.jetpack.scan.ScanActivity;
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsActivity;
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryActivity;
-import org.wordpress.android.ui.main.MeActivity;
-import org.wordpress.android.ui.main.SitePickerActivity;
-import org.wordpress.android.ui.main.SitePickerAdapter.SitePickerMode;
-import org.wordpress.android.ui.main.WPMainActivity;
-import org.wordpress.android.ui.media.MediaBrowserActivity;
-import org.wordpress.android.ui.media.MediaBrowserType;
-import org.wordpress.android.ui.pages.PageParentActivity;
-import org.wordpress.android.ui.pages.PagesActivity;
-import org.wordpress.android.ui.people.PeopleManagementActivity;
-import org.wordpress.android.ui.photopicker.MediaPickerConstants;
-import org.wordpress.android.ui.photopicker.PhotoPickerActivity;
-import org.wordpress.android.ui.plans.PlansActivity;
-import org.wordpress.android.ui.plugins.PluginBrowserActivity;
-import org.wordpress.android.ui.plugins.PluginDetailActivity;
-import org.wordpress.android.ui.plugins.PluginUtils;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.ui.posts.JetpackSecuritySettingsActivity;
-import org.wordpress.android.ui.posts.PostUtils;
-import org.wordpress.android.ui.posts.PostsListActivity;
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType;
-import org.wordpress.android.ui.prefs.AccountSettingsActivity;
-import org.wordpress.android.ui.prefs.AppSettingsActivity;
-import org.wordpress.android.ui.prefs.BlogPreferencesActivity;
-import org.wordpress.android.ui.prefs.MyProfileActivity;
-import org.wordpress.android.ui.prefs.categories.CategoriesListActivity;
-import org.wordpress.android.ui.prefs.notifications.NotificationsSettingsActivity;
-import org.wordpress.android.ui.publicize.PublicizeListActivity;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.sitecreation.SiteCreationActivity;
-import org.wordpress.android.ui.stats.StatsConnectJetpackActivity;
-import org.wordpress.android.ui.stats.StatsConstants;
-import org.wordpress.android.ui.stats.StatsTimeframe;
-import org.wordpress.android.ui.stats.StatsViewType;
-import org.wordpress.android.ui.stats.refresh.StatsActivity;
-import org.wordpress.android.ui.stats.refresh.StatsViewAllActivity;
-import org.wordpress.android.ui.stats.refresh.lists.detail.StatsDetailActivity;
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate;
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementActivity;
-import org.wordpress.android.ui.stockmedia.StockMediaPickerActivity;
-import org.wordpress.android.ui.stories.StoryComposerActivity;
-import org.wordpress.android.ui.suggestion.SuggestionActivity;
-import org.wordpress.android.ui.suggestion.SuggestionType;
-import org.wordpress.android.ui.themes.ThemeBrowserActivity;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.WPActivityUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.page.PageModel;
+import org.sitebay.android.fluxc.network.utils.StatsGranularity;
+import org.sitebay.android.imageeditor.EditImageActivity;
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData;
+import org.sitebay.android.login.LoginMode;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.networking.SSLCertsViewActivity;
+import org.sitebay.android.ui.accounts.HelpActivity;
+import org.sitebay.android.ui.accounts.HelpActivity.Origin;
+import org.sitebay.android.ui.accounts.LoginActivity;
+import org.sitebay.android.ui.accounts.LoginEpilogueActivity;
+import org.sitebay.android.ui.accounts.PostSignupInterstitialActivity;
+import org.sitebay.android.ui.accounts.SignupEpilogueActivity;
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailActivity;
+import org.sitebay.android.ui.activitylog.list.ActivityLogListActivity;
+import org.sitebay.android.ui.comments.CommentsActivity;
+import org.sitebay.android.ui.comments.unified.UnifiedCommentsActivity;
+import org.sitebay.android.ui.domains.DomainRegistrationActivity;
+import org.sitebay.android.ui.domains.DomainRegistrationActivity.DomainRegistrationPurpose;
+import org.sitebay.android.ui.engagement.EngagedPeopleListActivity;
+import org.sitebay.android.ui.engagement.EngagementNavigationSource;
+import org.sitebay.android.ui.engagement.HeaderData;
+import org.sitebay.android.ui.engagement.ListScenario;
+import org.sitebay.android.ui.engagement.ListScenarioType;
+import org.sitebay.android.ui.history.HistoryDetailActivity;
+import org.sitebay.android.ui.history.HistoryDetailContainerFragment;
+import org.sitebay.android.ui.history.HistoryListItem.Revision;
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadActivity;
+import org.sitebay.android.ui.jetpack.restore.RestoreActivity;
+import org.sitebay.android.ui.jetpack.scan.ScanActivity;
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsActivity;
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryActivity;
+import org.sitebay.android.ui.main.MeActivity;
+import org.sitebay.android.ui.main.SitePickerActivity;
+import org.sitebay.android.ui.main.SitePickerAdapter.SitePickerMode;
+import org.sitebay.android.ui.main.WPMainActivity;
+import org.sitebay.android.ui.media.MediaBrowserActivity;
+import org.sitebay.android.ui.media.MediaBrowserType;
+import org.sitebay.android.ui.pages.PageParentActivity;
+import org.sitebay.android.ui.pages.PagesActivity;
+import org.sitebay.android.ui.people.PeopleManagementActivity;
+import org.sitebay.android.ui.photopicker.MediaPickerConstants;
+import org.sitebay.android.ui.photopicker.PhotoPickerActivity;
+import org.sitebay.android.ui.plans.PlansActivity;
+import org.sitebay.android.ui.plugins.PluginBrowserActivity;
+import org.sitebay.android.ui.plugins.PluginDetailActivity;
+import org.sitebay.android.ui.plugins.PluginUtils;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.ui.posts.JetpackSecuritySettingsActivity;
+import org.sitebay.android.ui.posts.PostUtils;
+import org.sitebay.android.ui.posts.PostsListActivity;
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType;
+import org.sitebay.android.ui.prefs.AccountSettingsActivity;
+import org.sitebay.android.ui.prefs.AppSettingsActivity;
+import org.sitebay.android.ui.prefs.BlogPreferencesActivity;
+import org.sitebay.android.ui.prefs.MyProfileActivity;
+import org.sitebay.android.ui.prefs.categories.CategoriesListActivity;
+import org.sitebay.android.ui.prefs.notifications.NotificationsSettingsActivity;
+import org.sitebay.android.ui.publicize.PublicizeListActivity;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.sitecreation.SiteCreationActivity;
+import org.sitebay.android.ui.stats.StatsConnectJetpackActivity;
+import org.sitebay.android.ui.stats.StatsConstants;
+import org.sitebay.android.ui.stats.StatsTimeframe;
+import org.sitebay.android.ui.stats.StatsViewType;
+import org.sitebay.android.ui.stats.refresh.StatsActivity;
+import org.sitebay.android.ui.stats.refresh.StatsViewAllActivity;
+import org.sitebay.android.ui.stats.refresh.lists.detail.StatsDetailActivity;
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate;
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementActivity;
+import org.sitebay.android.ui.stockmedia.StockMediaPickerActivity;
+import org.sitebay.android.ui.stories.StoryComposerActivity;
+import org.sitebay.android.ui.suggestion.SuggestionActivity;
+import org.sitebay.android.ui.suggestion.SuggestionType;
+import org.sitebay.android.ui.themes.ThemeBrowserActivity;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.WPActivityUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -116,29 +116,29 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.wordpress.stories.util.BundleUtilsKt.KEY_STORY_INDEX;
-import static com.wordpress.stories.util.BundleUtilsKt.KEY_STORY_SAVE_RESULT;
-import static org.wordpress.android.analytics.AnalyticsTracker.ACTIVITY_LOG_ACTIVITY_ID_KEY;
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.POST_LIST_ACCESS_ERROR;
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.READER_ARTICLE_DETAIL_REBLOGGED;
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.READER_ARTICLE_REBLOGGED;
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_ACCESS_ERROR;
-import static org.wordpress.android.editor.gutenberg.GutenbergEditorFragment.ARG_STORY_BLOCK_ID;
-import static org.wordpress.android.imageeditor.preview.PreviewImageFragment.ARG_EDIT_IMAGE_DATA;
-import static org.wordpress.android.login.LoginMode.JETPACK_LOGIN_ONLY;
-import static org.wordpress.android.login.LoginMode.WPCOM_LOGIN_ONLY;
-import static org.wordpress.android.ui.WPWebViewActivity.ENCODING_UTF8;
-import static org.wordpress.android.ui.jetpack.backup.download.BackupDownloadViewModelKt.KEY_BACKUP_DOWNLOAD_ACTIVITY_ID_KEY;
-import static org.wordpress.android.ui.jetpack.restore.RestoreViewModelKt.KEY_RESTORE_ACTIVITY_ID_KEY;
-import static org.wordpress.android.ui.jetpack.scan.ScanFragment.ARG_THREAT_ID;
-import static org.wordpress.android.ui.media.MediaBrowserActivity.ARG_BROWSER_TYPE;
-import static org.wordpress.android.ui.pages.PagesActivityKt.EXTRA_PAGE_REMOTE_ID_KEY;
-import static org.wordpress.android.ui.stories.StoryComposerActivity.KEY_ALL_UNFLATTENED_LOADED_SLIDES;
-import static org.wordpress.android.ui.stories.StoryComposerActivity.KEY_LAUNCHED_FROM_GUTENBERG;
-import static org.wordpress.android.ui.stories.StoryComposerActivity.KEY_POST_LOCAL_ID;
-import static org.wordpress.android.viewmodel.activitylog.ActivityLogDetailViewModelKt.ACTIVITY_LOG_ARE_BUTTONS_VISIBLE_KEY;
-import static org.wordpress.android.viewmodel.activitylog.ActivityLogDetailViewModelKt.ACTIVITY_LOG_ID_KEY;
-import static org.wordpress.android.viewmodel.activitylog.ActivityLogViewModelKt.ACTIVITY_LOG_REWINDABLE_ONLY_KEY;
+import static com.sitebay.stories.util.BundleUtilsKt.KEY_STORY_INDEX;
+import static com.sitebay.stories.util.BundleUtilsKt.KEY_STORY_SAVE_RESULT;
+import static org.sitebay.android.analytics.AnalyticsTracker.ACTIVITY_LOG_ACTIVITY_ID_KEY;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.POST_LIST_ACCESS_ERROR;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.READER_ARTICLE_DETAIL_REBLOGGED;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.READER_ARTICLE_REBLOGGED;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_ACCESS_ERROR;
+import static org.sitebay.android.editor.gutenberg.GutenbergEditorFragment.ARG_STORY_BLOCK_ID;
+import static org.sitebay.android.imageeditor.preview.PreviewImageFragment.ARG_EDIT_IMAGE_DATA;
+import static org.sitebay.android.login.LoginMode.JETPACK_LOGIN_ONLY;
+import static org.sitebay.android.login.LoginMode.WPCOM_LOGIN_ONLY;
+import static org.sitebay.android.ui.WPWebViewActivity.ENCODING_UTF8;
+import static org.sitebay.android.ui.jetpack.backup.download.BackupDownloadViewModelKt.KEY_BACKUP_DOWNLOAD_ACTIVITY_ID_KEY;
+import static org.sitebay.android.ui.jetpack.restore.RestoreViewModelKt.KEY_RESTORE_ACTIVITY_ID_KEY;
+import static org.sitebay.android.ui.jetpack.scan.ScanFragment.ARG_THREAT_ID;
+import static org.sitebay.android.ui.media.MediaBrowserActivity.ARG_BROWSER_TYPE;
+import static org.sitebay.android.ui.pages.PagesActivityKt.EXTRA_PAGE_REMOTE_ID_KEY;
+import static org.sitebay.android.ui.stories.StoryComposerActivity.KEY_ALL_UNFLATTENED_LOADED_SLIDES;
+import static org.sitebay.android.ui.stories.StoryComposerActivity.KEY_LAUNCHED_FROM_GUTENBERG;
+import static org.sitebay.android.ui.stories.StoryComposerActivity.KEY_POST_LOCAL_ID;
+import static org.sitebay.android.viewmodel.activitylog.ActivityLogDetailViewModelKt.ACTIVITY_LOG_ARE_BUTTONS_VISIBLE_KEY;
+import static org.sitebay.android.viewmodel.activitylog.ActivityLogDetailViewModelKt.ACTIVITY_LOG_ID_KEY;
+import static org.sitebay.android.viewmodel.activitylog.ActivityLogViewModelKt.ACTIVITY_LOG_REWINDABLE_ONLY_KEY;
 
 public class ActivityLauncher {
     public static final String SOURCE_TRACK_EVENT_PROPERTY_KEY = "source";
@@ -206,7 +206,7 @@ public class ActivityLauncher {
     }
 
     /**
-     * Use {@link org.wordpress.android.ui.photopicker.MediaPickerLauncher::showPhotoPickerForResult}  instead
+     * Use {@link org.sitebay.android.ui.photopicker.MediaPickerLauncher::showPhotoPickerForResult}  instead
      */
     @Deprecated
     public static void showPhotoPickerForResult(Activity activity,
@@ -233,7 +233,7 @@ public class ActivityLauncher {
     }
 
     /**
-     * Use {@link org.wordpress.android.ui.photopicker.MediaPickerLauncher::showStockMediaPickerForResult}  instead
+     * Use {@link org.sitebay.android.ui.photopicker.MediaPickerLauncher::showStockMediaPickerForResult}  instead
      */
     @Deprecated
     public static void showStockMediaPickerForResult(Activity activity,
@@ -1110,7 +1110,7 @@ public class ActivityLauncher {
             // This is necessary because links are disabled in the webview, but WP removes "?preview=true"
             // from the passed URL, and internally redirects to it. EX:Published posts on a site with Plain
             // permalink structure settings.
-            // Ref: https://github.com/wordpress-mobile/WordPress-Android/issues/4873
+            // Ref: https://github.com/sitebay-mobile/WordPress-Android/issues/4873
             WPWebViewActivity.openUrlByUsingBlogCredentials(
                     context,
                     site,
@@ -1451,7 +1451,7 @@ public class ActivityLauncher {
     }
 
     public static void openStatsUrl(Context context, @NonNull String url) {
-        if (url.startsWith("https://wordpress.com/my-stats") || url.startsWith("http://wordpress.com/my-stats")) {
+        if (url.startsWith("https://sitebay.com/my-stats") || url.startsWith("http://sitebay.com/my-stats")) {
             // make sure to load the no-chrome version of Stats over https
             url = UrlUtils.makeHttps(url);
             if (url.contains("?")) {

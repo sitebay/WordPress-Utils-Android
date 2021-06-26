@@ -1,4 +1,4 @@
-package org.wordpress.android.util.experiments
+package org.sitebay.android.util.experiments
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -14,16 +14,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.experiments.Assignments
-import org.wordpress.android.fluxc.model.experiments.Variation
-import org.wordpress.android.fluxc.model.experiments.Variation.Control
-import org.wordpress.android.fluxc.model.experiments.Variation.Treatment
-import org.wordpress.android.fluxc.store.ExperimentStore
-import org.wordpress.android.fluxc.store.ExperimentStore.OnAssignmentsFetched
-import org.wordpress.android.fluxc.utils.AppLogWrapper
-import org.wordpress.android.test
-import org.wordpress.android.testScope
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.experiments.Assignments
+import org.sitebay.android.fluxc.model.experiments.Variation
+import org.sitebay.android.fluxc.model.experiments.Variation.Control
+import org.sitebay.android.fluxc.model.experiments.Variation.Treatment
+import org.sitebay.android.fluxc.store.ExperimentStore
+import org.sitebay.android.fluxc.store.ExperimentStore.OnAssignmentsFetched
+import org.sitebay.android.fluxc.utils.AppLogWrapper
+import org.sitebay.android.test
+import org.sitebay.android.testScope
 import java.util.Date
 
 @RunWith(MockitoJUnitRunner::class)

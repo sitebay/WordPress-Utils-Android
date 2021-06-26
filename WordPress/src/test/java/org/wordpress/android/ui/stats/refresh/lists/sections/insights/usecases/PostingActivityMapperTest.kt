@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -8,12 +8,12 @@ import org.mockito.ArgumentMatchers.anyInt
 import org.mockito.ArgumentMatchers.anyString
 import org.mockito.ArgumentMatchers.eq
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.insights.PostingActivityModel.Month
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.insights.PostingActivityModel.Month
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Calendar
 import java.util.Locale
 

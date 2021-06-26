@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.content.Context
 import android.view.ViewGroup
@@ -18,13 +18,13 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem.Bar
-import org.wordpress.android.ui.stats.refresh.utils.BarChartAccessibilityHelper
-import org.wordpress.android.ui.stats.refresh.utils.BarChartAccessibilityHelper.BarChartAccessibilityEvent
-import org.wordpress.android.ui.stats.refresh.utils.LargeValueFormatter
-import org.wordpress.android.util.DisplayUtils
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem.Bar
+import org.sitebay.android.ui.stats.refresh.utils.BarChartAccessibilityHelper
+import org.sitebay.android.ui.stats.refresh.utils.BarChartAccessibilityHelper.BarChartAccessibilityEvent
+import org.sitebay.android.ui.stats.refresh.utils.LargeValueFormatter
+import org.sitebay.android.util.DisplayUtils
 
 private const val MIN_COLUMN_COUNT = 5
 private const val MIN_VALUE = 4f

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stockmedia;
+package org.sitebay.android.ui.stockmedia;
 
 import android.os.Bundle;
 
@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import org.wordpress.android.fluxc.model.StockMediaModel;
+import org.sitebay.android.fluxc.model.StockMediaModel;
 
 import java.util.ArrayList;
 import java.util.List;

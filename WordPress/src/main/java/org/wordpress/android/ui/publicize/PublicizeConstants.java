@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 public class PublicizeConstants {
     public static final String ARG_SERVICE_ID = "service_id";
@@ -11,7 +11,7 @@ public class PublicizeConstants {
     public static final String LINKEDIN_ID = "linkedin";
 
     public static final String PUBLICIZE_FACEBOOK_SHARING_SUPPORT_LINK =
-            "https://en.support.wordpress.com/publicize/#facebook-pages";
+            "https://en.support.sitebay.com/publicize/#facebook-pages";
 
     public enum ConnectAction {
         CONNECT,

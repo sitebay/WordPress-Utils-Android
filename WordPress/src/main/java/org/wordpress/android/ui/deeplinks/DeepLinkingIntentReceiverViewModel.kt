@@ -1,21 +1,21 @@
-package org.wordpress.android.ui.deeplinks
+package org.sitebay.android.ui.deeplinks
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.LoginForResult
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ShowSignInFlow
-import org.wordpress.android.ui.deeplinks.handlers.DeepLinkHandlers
-import org.wordpress.android.ui.deeplinks.handlers.ServerTrackingHandler
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.LoginForResult
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ShowSignInFlow
+import org.sitebay.android.ui.deeplinks.handlers.DeepLinkHandlers
+import org.sitebay.android.ui.deeplinks.handlers.ServerTrackingHandler
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ScopedViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -58,8 +58,8 @@ class DeepLinkingIntentReceiverViewModel
 
     /**
      * Handles the following URLs
-     * `wordpress.com/post...`
-     * `wordpress.com/stats...`
+     * `sitebay.com/post...`
+     * `sitebay.com/stats...`
      * `mytest.sitebay.org/mbar`
      * and builds the navigation action based on them
      */
@@ -101,8 +101,8 @@ class DeepLinkingIntentReceiverViewModel
     }
 
     companion object {
-        const val HOST_WORDPRESS_COM = "wordpress.com"
-        const val APPLINK_SCHEME = "wordpress://"
+        const val HOST_WORDPRESS_COM = "sitebay.com"
+        const val APPLINK_SCHEME = "sitebay://"
         const val SITE_DOMAIN = "domain"
         private const val REGULAR_TRACKING_PATH = "bar"
     }

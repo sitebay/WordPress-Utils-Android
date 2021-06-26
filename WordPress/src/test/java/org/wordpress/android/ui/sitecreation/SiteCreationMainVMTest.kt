@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation
+package org.sitebay.android.ui.sitecreation
 
 import android.os.Bundle
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
@@ -18,15 +18,15 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleEmpty
-import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleGeneral
-import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleStepCount
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteCreationCompleted
-import org.wordpress.android.util.wizard.WizardManager
-import org.wordpress.android.viewmodel.SingleLiveEvent
-import org.wordpress.android.viewmodel.helpers.DialogHolder
+import org.sitebay.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleEmpty
+import org.sitebay.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleGeneral
+import org.sitebay.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleStepCount
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteCreationCompleted
+import org.sitebay.android.util.wizard.WizardManager
+import org.sitebay.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.viewmodel.helpers.DialogHolder
 
 private const val LOCAL_SITE_ID = 1
 private const val SEGMENT_ID = 1L

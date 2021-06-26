@@ -1,4 +1,4 @@
-package org.wordpress.android.util.coroutines
+package org.sitebay.android.util.coroutines
 
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.suspendCancellableCoroutine

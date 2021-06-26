@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
 import androidx.annotation.NonNull
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.PhotonUtilsWrapper
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.PhotonUtilsWrapper
 import java.net.MalformedURLException
 import java.net.URL
 import javax.inject.Inject

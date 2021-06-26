@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.services.discover
+package org.sitebay.android.ui.reader.services.discover
 
 import android.app.job.JobParameters
 import android.app.job.JobService
@@ -6,12 +6,12 @@ import android.content.Context
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener
-import org.wordpress.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.READER
-import org.wordpress.android.util.LocaleManager
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener
+import org.sitebay.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.READER
+import org.sitebay.android.util.LocaleManager
 import javax.inject.Inject
 import javax.inject.Named
 import kotlin.coroutines.CoroutineContext

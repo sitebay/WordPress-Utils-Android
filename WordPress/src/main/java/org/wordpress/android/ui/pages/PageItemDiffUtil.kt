@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import androidx.recyclerview.widget.DiffUtil.Callback
-import org.wordpress.android.ui.pages.PageItem.Page
-import org.wordpress.android.ui.pages.PageItem.ParentPage
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState.Determinate
+import org.sitebay.android.ui.pages.PageItem.Page
+import org.sitebay.android.ui.pages.PageItem.ParentPage
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState.Determinate
 
 class PageItemDiffUtil(val items: List<PageItem>, val result: List<PageItem>) : Callback() {
     override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {

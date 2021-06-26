@@ -1,9 +1,9 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

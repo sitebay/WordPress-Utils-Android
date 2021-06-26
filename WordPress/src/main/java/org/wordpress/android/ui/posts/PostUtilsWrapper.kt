@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.ui.reader.utils.DateProvider
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.ui.reader.utils.DateProvider
 import javax.inject.Inject
 
 /**

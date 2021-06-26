@@ -1,4 +1,4 @@
-package org.wordpress.android.analytics;
+package org.sitebay.android.analytics;
 
 public class AnalyticsMetadata {
     private boolean mIsUserConnected;

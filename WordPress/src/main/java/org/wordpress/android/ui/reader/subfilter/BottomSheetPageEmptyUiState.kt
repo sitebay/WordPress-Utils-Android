@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.reader.subfilter
+package org.sitebay.android.ui.reader.subfilter
 
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 sealed class SubfilterBottomSheetEmptyUiState {
     object HiddenEmptyUiState : SubfilterBottomSheetEmptyUiState()

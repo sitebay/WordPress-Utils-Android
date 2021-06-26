@@ -1,18 +1,18 @@
-package org.wordpress.android.util.crashlogging
+package org.sitebay.android.util.crashlogging
 
 import android.content.SharedPreferences
 import com.automattic.android.tracks.crashlogging.CrashLoggingDataProvider
 import com.automattic.android.tracks.crashlogging.CrashLoggingUser
 import com.automattic.android.tracks.crashlogging.EventLevel
 import com.automattic.android.tracks.crashlogging.ExtraKnownKey
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.EncryptedLogging
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.LogFileProviderWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.EncryptedLogging
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.LogFileProviderWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Locale
 import javax.inject.Inject
 

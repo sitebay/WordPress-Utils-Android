@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -9,13 +9,13 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Started
-import org.wordpress.android.ui.reader.services.post.wrapper.ReaderPostServiceStarterWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Started
+import org.sitebay.android.ui.reader.services.post.wrapper.ReaderPostServiceStarterWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 
 @RunWith(MockitoJUnitRunner::class)
 class FetchPostsForTagUseCaseTest {

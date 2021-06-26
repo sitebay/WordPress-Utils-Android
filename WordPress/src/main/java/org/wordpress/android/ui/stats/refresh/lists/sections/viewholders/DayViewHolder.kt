@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.HIGH
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.INVISIBLE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.LOW
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.MEDIUM
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_HIGH
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_LOW
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.HIGH
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.INVISIBLE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.LOW
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.MEDIUM
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_HIGH
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_LOW
 
 class DayViewHolder(parent: ViewGroup) : ViewHolder(
         LayoutInflater.from(parent.context).inflate(

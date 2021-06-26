@@ -7,13 +7,13 @@
     android:paddingEnd="@dimen/site_creation_segments_content_padding_horizontal"
     android:paddingBottom="@dimen/site_creation_segments_content_padding_vertical">
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/title"
         style="@style/ModalLayoutPickerTitle"
         app:fixWidowWords="true"
         tools:text="What's the focus of your business?" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/subtitle"
         style="@style/ModalLayoutPickerSubtitle"
         app:fixWidowWords="true"

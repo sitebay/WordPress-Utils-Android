@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,14 +7,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.FRIDAY
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.MONDAY
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.SATURDAY
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.SUNDAY
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.THURSDAY
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.TUESDAY
-import org.wordpress.android.fluxc.model.BloggingRemindersModel.Day.WEDNESDAY
-import org.wordpress.android.ui.reader.utils.DateProvider
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.FRIDAY
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.MONDAY
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.SATURDAY
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.SUNDAY
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.THURSDAY
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.TUESDAY
+import org.sitebay.android.fluxc.model.BloggingRemindersModel.Day.WEDNESDAY
+import org.sitebay.android.ui.reader.utils.DateProvider
 import java.util.Calendar
 
 @RunWith(MockitoJUnitRunner::class)

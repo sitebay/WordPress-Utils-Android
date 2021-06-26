@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,22 +11,22 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
-import org.wordpress.android.R
-import org.wordpress.android.R.string
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ReaderFragmentLayoutBinding
-import org.wordpress.android.models.ReaderTagList
-import org.wordpress.android.ui.ScrollableViewInitializedListener
-import org.wordpress.android.ui.reader.ReaderTypes.ReaderPostListType
-import org.wordpress.android.ui.reader.discover.ReaderDiscoverFragment
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsFragment
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask.FOLLOWED_BLOGS
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask.TAGS
-import org.wordpress.android.ui.reader.services.update.ReaderUpdateServiceStarter
-import org.wordpress.android.ui.reader.viewmodels.ReaderViewModel
-import org.wordpress.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState.ContentUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.R.string
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ReaderFragmentLayoutBinding
+import org.sitebay.android.models.ReaderTagList
+import org.sitebay.android.ui.ScrollableViewInitializedListener
+import org.sitebay.android.ui.reader.ReaderTypes.ReaderPostListType
+import org.sitebay.android.ui.reader.discover.ReaderDiscoverFragment
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsFragment
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask.FOLLOWED_BLOGS
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateLogic.UpdateTask.TAGS
+import org.sitebay.android.ui.reader.services.update.ReaderUpdateServiceStarter
+import org.sitebay.android.ui.reader.viewmodels.ReaderViewModel
+import org.sitebay.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState.ContentUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.viewmodel.observeEvent
 import java.util.EnumSet
 import javax.inject.Inject
 

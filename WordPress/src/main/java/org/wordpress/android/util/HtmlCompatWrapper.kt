@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import androidx.core.text.HtmlCompat
 import javax.inject.Inject

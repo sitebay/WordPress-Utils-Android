@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.blocks;
+package org.sitebay.android.ui.notifications.blocks;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,15 +12,15 @@ import android.widget.TextView;
 
 import androidx.core.view.ViewCompat;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.tools.FormattableContent;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.tools.FormattableContent;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 // A user block with slightly different formatting for display in a comment detail
 public class CommentUserNoteBlock extends UserNoteBlock {

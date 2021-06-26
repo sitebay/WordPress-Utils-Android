@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -36,29 +36,29 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.ToastUtils;
 
 import java.util.Arrays;
 import java.util.Locale;
 
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_ALIGN;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_ALT;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_CAPTION;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_DIMEN_HEIGHT;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_DIMEN_WIDTH;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_ID_ATTACHMENT;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_ID_IMAGE_REMOTE;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_SRC;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_TITLE;
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_URL_LINK;
-import static org.wordpress.android.editor.EditorFragmentAbstract.EXTRA_ENABLED_AZTEC;
-import static org.wordpress.android.editor.EditorFragmentAbstract.EXTRA_FEATURED;
-import static org.wordpress.android.editor.EditorFragmentAbstract.EXTRA_IMAGE_FEATURED;
-import static org.wordpress.android.editor.EditorFragmentAbstract.EXTRA_IMAGE_META;
-import static org.wordpress.android.editor.EditorFragmentAbstract.EXTRA_MAX_WIDTH;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_ALIGN;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_ALT;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_CAPTION;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_DIMEN_HEIGHT;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_DIMEN_WIDTH;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_ID_ATTACHMENT;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_ID_IMAGE_REMOTE;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_SRC;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_TITLE;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_URL_LINK;
+import static org.sitebay.android.editor.EditorFragmentAbstract.EXTRA_ENABLED_AZTEC;
+import static org.sitebay.android.editor.EditorFragmentAbstract.EXTRA_FEATURED;
+import static org.sitebay.android.editor.EditorFragmentAbstract.EXTRA_IMAGE_FEATURED;
+import static org.sitebay.android.editor.EditorFragmentAbstract.EXTRA_IMAGE_META;
+import static org.sitebay.android.editor.EditorFragmentAbstract.EXTRA_MAX_WIDTH;
 
 /**
  * A full-screen DialogFragment with image settings.

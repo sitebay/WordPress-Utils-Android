@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.R.color
 import android.annotation.SuppressLint
@@ -12,10 +12,10 @@ import android.util.StateSet
 import android.view.View
 import androidx.core.content.ContextCompat
 import com.google.android.material.elevation.ElevationOverlayProvider
-import org.wordpress.android.R
-import org.wordpress.android.R.attr
-import org.wordpress.android.util.RtlUtils
-import org.wordpress.android.util.getColorFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.R.attr
+import org.sitebay.android.util.RtlUtils
+import org.sitebay.android.util.getColorFromAttribute
 
 class AppBarFadingEdgeView @JvmOverloads constructor(
     context: Context,

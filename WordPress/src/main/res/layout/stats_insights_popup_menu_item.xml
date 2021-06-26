@@ -17,7 +17,7 @@
         app:tint="?attr/wpColorOnSurfaceMedium"
         tools:src="@drawable/ic_arrow_up_grey_dark_24dp" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

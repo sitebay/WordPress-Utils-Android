@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.configuration
+package org.sitebay.android.ui.stats.refresh.lists.widget.configuration
 
 import android.app.Dialog
 import android.content.Context
@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.android.support.AndroidSupportInjection
-import org.wordpress.android.R
-import org.wordpress.android.databinding.StatsWidgetSiteSelectorBinding
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.databinding.StatsWidgetSiteSelectorBinding
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class StatsWidgetSiteSelectionDialogFragment : AppCompatDialogFragment() {

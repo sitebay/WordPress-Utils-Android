@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.distinctUntilChanged
 import androidx.lifecycle.switchMap
 import kotlinx.coroutines.CoroutineScope
-import org.wordpress.android.ui.mysite.MySiteSource.SiteIndependentSource
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.SelectedSite
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.ShowSiteIconProgressBar
-import org.wordpress.android.util.filter
-import org.wordpress.android.util.map
+import org.sitebay.android.ui.mysite.MySiteSource.SiteIndependentSource
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.SelectedSite
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.ShowSiteIconProgressBar
+import org.sitebay.android.util.filter
+import org.sitebay.android.util.map
 
 class MySiteStateProvider(
     private val coroutineScope: CoroutineScope,

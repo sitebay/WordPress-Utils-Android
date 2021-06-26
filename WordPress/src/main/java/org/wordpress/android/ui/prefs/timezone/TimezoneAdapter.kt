@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.prefs.timezone
+package org.sitebay.android.ui.prefs.timezone
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.ui.prefs.timezone.TimezonesList.TimezoneHeader
-import org.wordpress.android.ui.prefs.timezone.TimezonesList.TimezoneItem
+import org.sitebay.android.R
+import org.sitebay.android.ui.prefs.timezone.TimezonesList.TimezoneHeader
+import org.sitebay.android.ui.prefs.timezone.TimezonesList.TimezoneItem
 
 class TimezoneAdapter(
     private val onClick: (timezone: TimezoneItem) -> Unit

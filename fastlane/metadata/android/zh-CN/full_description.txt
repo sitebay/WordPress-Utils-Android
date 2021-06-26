@@ -40,6 +40,6 @@ WordPress 是一个开源建站工具，这表示任何人都能看到它是如�
 
 无论您是需要网站生成器来创建网站还是需要简单的博客创建器，WordPress 都能提供帮助。 它不仅带给您精美的设计和强大的功能，还能让您按照心中所想来自由建站。
 
-Android 版 WordPress 支持运行 WordPress 4.0 和更高版本的自托管站点，而且所有站点均位于 WordPress.com 上。 Android 版 WordPress 是开源软件，就像 WordPress 一样。 如需了解更多信息，请访问 https://wp.me/P7jrAc-tJ。  需要应用方面的帮助？ 请向我们发送推文 (@WPAndroid)，或者访问我们的论坛：https://android.forums.wordpress.org/forum/troubleshooting。
+Android 版 WordPress 支持运行 WordPress 4.0 和更高版本的自托管站点，而且所有站点均位于 WordPress.com 上。 Android 版 WordPress 是开源软件，就像 WordPress 一样。 如需了解更多信息，请访问 https://wp.me/P7jrAc-tJ。  需要应用方面的帮助？ 请向我们发送推文 (@WPAndroid)，或者访问我们的论坛：https://android.forums.sitebay.org/forum/troubleshooting。
 
 加州用户隐私声明：https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa。

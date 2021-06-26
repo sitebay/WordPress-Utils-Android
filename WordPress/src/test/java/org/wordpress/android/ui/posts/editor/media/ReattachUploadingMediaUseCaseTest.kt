@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.times
@@ -8,10 +8,10 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.editor.EditorMediaUploadListener
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.uploads.UploadServiceFacade
+import org.sitebay.android.editor.EditorMediaUploadListener
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.uploads.UploadServiceFacade
 
 @RunWith(MockitoJUnitRunner::class)
 class ReattachUploadingMediaUseCaseTest {

@@ -23,7 +23,7 @@
                                 <member>
                                     <name>value</name>
                                     <value>
-                                        <string>http://tataliwut.wordpress.com</string>
+                                        <string>http://tataliwut.sitebay.com</string>
                                     </value>
                                 </member>
                             </struct>
@@ -98,7 +98,7 @@
                                 <member>
                                     <name>value</name>
                                     <value>
-                                        <string>https://tataliwut.wordpress.com/wp-login.php</string>
+                                        <string>https://tataliwut.sitebay.com/wp-login.php</string>
                                     </value>
                                 </member>
                             </struct>
@@ -123,7 +123,7 @@
                                 <member>
                                     <name>value</name>
                                     <value>
-                                        <string>https://tataliwut.wordpress.com/wp-admin/</string>
+                                        <string>https://tataliwut.sitebay.com/wp-admin/</string>
                                     </value>
                                 </member>
                             </struct>

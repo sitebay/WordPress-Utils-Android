@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
 import com.nhaarman.mockitokotlin2.eq
 import com.nhaarman.mockitokotlin2.verify
@@ -7,16 +7,16 @@ import org.assertj.core.api.Assertions
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.main.MainActionListItem.ActionType
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_POST
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_STORY
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.NO_ACTION
-import org.wordpress.android.ui.main.MainActionListItem.CreateAction
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.main.MainActionListItem.ActionType
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_POST
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_STORY
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.NO_ACTION
+import org.sitebay.android.ui.main.MainActionListItem.CreateAction
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 class PostListCreateMenuViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: PostListCreateMenuViewModel

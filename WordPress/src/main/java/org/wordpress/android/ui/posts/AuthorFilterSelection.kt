@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 enum class AuthorFilterSelection(val id: Long) {
     ME(id = 0), EVERYONE(id = 1);

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
@@ -14,23 +14,23 @@ import org.mockito.ArgumentMatchers.anyInt
 import org.mockito.ArgumentMatchers.anyList
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.models.InvitePeopleUtils
-import org.wordpress.android.test
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
-import org.wordpress.android.ui.people.InviteLinksUiStateType.HIDDEN
-import org.wordpress.android.ui.people.InviteLinksUiStateType.LOADING
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.INITIALIZING
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.DateTimeUtilsWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.models.InvitePeopleUtils
+import org.sitebay.android.test
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
+import org.sitebay.android.ui.people.InviteLinksUiStateType.HIDDEN
+import org.sitebay.android.ui.people.InviteLinksUiStateType.LOADING
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.INITIALIZING
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
+import org.sitebay.android.viewmodel.Event
 
 @InternalCoroutinesApi
 class PeopleInviteViewModelTest : BaseUnitTest() {

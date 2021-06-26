@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.photopicker;
+package org.sitebay.android.ui.photopicker;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,25 +15,25 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.media.MediaBrowserActivity;
-import org.wordpress.android.ui.media.MediaBrowserType;
-import org.wordpress.android.ui.posts.FeaturedImageHelper;
-import org.wordpress.android.ui.posts.FeaturedImageHelper.EnqueueFeaturedImageResult;
-import org.wordpress.android.ui.posts.editor.ImageEditorTracker;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ListUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.WPMediaUtils;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.media.MediaBrowserActivity;
+import org.sitebay.android.ui.media.MediaBrowserType;
+import org.sitebay.android.ui.posts.FeaturedImageHelper;
+import org.sitebay.android.ui.posts.FeaturedImageHelper.EnqueueFeaturedImageResult;
+import org.sitebay.android.ui.posts.editor.ImageEditorTracker;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ListUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.WPMediaUtils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -42,13 +42,13 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.ui.RequestCodes.IMAGE_EDITOR_EDIT_IMAGE;
-import static org.wordpress.android.ui.media.MediaBrowserActivity.ARG_BROWSER_TYPE;
-import static org.wordpress.android.ui.posts.FeaturedImageHelperKt.EMPTY_LOCAL_POST_ID;
+import static org.sitebay.android.ui.RequestCodes.IMAGE_EDITOR_EDIT_IMAGE;
+import static org.sitebay.android.ui.media.MediaBrowserActivity.ARG_BROWSER_TYPE;
+import static org.sitebay.android.ui.posts.FeaturedImageHelperKt.EMPTY_LOCAL_POST_ID;
 
 /**
  * This class is being refactored, if you implement any change, please also update
- * {@link org.wordpress.android.ui.mediapicker.MediaPickerActivity}
+ * {@link org.sitebay.android.ui.mediapicker.MediaPickerActivity}
  */
 @Deprecated
 public class PhotoPickerActivity extends LocaleAwareActivity

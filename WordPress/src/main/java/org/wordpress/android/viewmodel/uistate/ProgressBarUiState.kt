@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.uistate
+package org.sitebay.android.viewmodel.uistate
 
 sealed class ProgressBarUiState(val visibility: Boolean) {
     object Hidden : ProgressBarUiState(visibility = false)

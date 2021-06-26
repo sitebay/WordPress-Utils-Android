@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import androidx.lifecycle.LiveData
-import org.wordpress.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.SiteModel
 
 interface SuggestionSource {
     val site: SiteModel

@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
-import org.wordpress.android.fluxc.model.XPostSiteModel
-import org.wordpress.android.models.UserSuggestion
+import org.sitebay.android.fluxc.model.XPostSiteModel
+import org.sitebay.android.models.UserSuggestion
 
 data class Suggestion(val avatarUrl: String, val value: String, val displayValue: String) {
     companion object {

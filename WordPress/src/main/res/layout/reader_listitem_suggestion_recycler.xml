@@ -18,7 +18,7 @@
         android:src="@drawable/ic_history_white_24dp"
         app:tint="?attr/wpColorOnSurfaceMedium" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/text_suggestion"
         android:layout_width="0dp"
         android:layout_height="match_parent"

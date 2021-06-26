@@ -1,9 +1,9 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import androidx.work.DelegatingWorkerFactory
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.uploads.UploadStarter
-import org.wordpress.android.util.UploadWorker
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.uploads.UploadStarter
+import org.sitebay.android.util.UploadWorker
 import javax.inject.Inject
 
 class WordPressWorkersFactory @Inject constructor(

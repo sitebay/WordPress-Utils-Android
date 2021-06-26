@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.jetpack.scan.adapters.viewholders
+package org.sitebay.android.ui.jetpack.scan.adapters.viewholders
 
 import android.text.method.LinkMovementMethod
 import android.view.View
 import android.view.ViewGroup
 
-import org.wordpress.android.databinding.ScanListFootnoteItemBinding
+import org.sitebay.android.databinding.ScanListFootnoteItemBinding
 
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackViewHolder
-import org.wordpress.android.ui.jetpack.scan.ScanListItemState.FootnoteState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ColorUtils
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackViewHolder
+import org.sitebay.android.ui.jetpack.scan.ScanListItemState.FootnoteState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ColorUtils
+import org.sitebay.android.util.image.ImageManager
 
 class ScanFootnoteViewHolder(
     private val imageManager: ImageManager,

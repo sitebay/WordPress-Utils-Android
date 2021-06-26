@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats;
+package org.sitebay.android.ui.stats;
 
 import android.content.Context;
 import android.util.AttributeSet;

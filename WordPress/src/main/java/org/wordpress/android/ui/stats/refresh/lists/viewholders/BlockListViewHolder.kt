@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.stats.refresh.lists.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.viewholders
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.StatsStore.StatsType
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListAdapter
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.utils.WrappingLinearLayoutManager
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.StatsStore.StatsType
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListAdapter
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.utils.WrappingLinearLayoutManager
+import org.sitebay.android.util.image.ImageManager
 
 open class BlockListViewHolder(parent: ViewGroup, val imageManager: ImageManager) : BaseStatsViewHolder(
         parent,

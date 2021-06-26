@@ -1,4 +1,4 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,7 +8,7 @@ import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.util.DateTimeUtils;
+import org.sitebay.android.util.DateTimeUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,7 +27,7 @@ import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
 
 public class TestUtils {
-    private static final String DATABASE_NAME = "wordpress";
+    private static final String DATABASE_NAME = "sitebay";
 
     public static SQLiteDatabase loadDBFromDump(Context targetContext, Context testContext, String filename) {
         targetContext.deleteDatabase(DATABASE_NAME);

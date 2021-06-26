@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -6,11 +6,11 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.PublicizeModel.Service
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Header
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.PublicizeModel.Service
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Header
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class ServiceMapperTest : BaseUnitTest() {
     @Mock lateinit var resourceProvider: ResourceProvider

@@ -7,12 +7,12 @@ public class URITest extends InstrumentationTestCase {
     public void testGetHost1() {
         URI uri = null;
         try {
-            uri = new URI("https://wordpress.com");
+            uri = new URI("https://sitebay.com");
         } catch (URISyntaxException e) {
         }
         assertNotNull(uri);
 
-        assertEquals("wordpress.com", uri.getHost());
+        assertEquals("sitebay.com", uri.getHost());
     }
 
     public void testGetHost2() {

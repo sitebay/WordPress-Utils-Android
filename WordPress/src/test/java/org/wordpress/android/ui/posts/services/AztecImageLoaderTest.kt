@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.services
+package org.sitebay.android.ui.posts.services
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -12,8 +12,8 @@ import com.nhaarman.mockitokotlin2.whenever
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.aztec.Html.ImageGetter
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.aztec.Html.ImageGetter
 
 class AztecImageLoaderTest {
     private lateinit var imageLoader: AztecImageLoader

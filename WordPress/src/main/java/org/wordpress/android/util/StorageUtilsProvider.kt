@@ -1,14 +1,14 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.content.Intent
 import android.provider.Settings
 import androidx.fragment.app.FragmentManager
-import org.wordpress.android.R
-import org.wordpress.android.R.string
-import org.wordpress.android.ui.prefs.AppPrefs
-import org.wordpress.android.viewmodel.ContextProvider
-import org.wordpress.android.widgets.StorageNotificationDialogFragment
-import org.wordpress.android.widgets.StorageNotificationDialogFragment.DialogLabels
+import org.sitebay.android.R
+import org.sitebay.android.R.string
+import org.sitebay.android.ui.prefs.AppPrefs
+import org.sitebay.android.viewmodel.ContextProvider
+import org.sitebay.android.widgets.StorageNotificationDialogFragment
+import org.sitebay.android.widgets.StorageNotificationDialogFragment.DialogLabels
 import javax.inject.Inject
 import javax.inject.Singleton
 

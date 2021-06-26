@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.reader.adapters
+package org.sitebay.android.ui.reader.adapters
 
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.engagement.EngageItem
-import org.wordpress.android.ui.engagement.EngageItem.EngageItemType.LIKER
-import org.wordpress.android.ui.engagement.EngageItem.Liker
-import org.wordpress.android.ui.engagement.EngagedPeopleAdapterDiffCallback
-import org.wordpress.android.ui.engagement.EngagedPeopleViewHolder
-import org.wordpress.android.ui.reader.viewholders.PostLikerViewHolder
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.engagement.EngageItem
+import org.sitebay.android.ui.engagement.EngageItem.EngageItemType.LIKER
+import org.sitebay.android.ui.engagement.EngageItem.Liker
+import org.sitebay.android.ui.engagement.EngagedPeopleAdapterDiffCallback
+import org.sitebay.android.ui.engagement.EngagedPeopleViewHolder
+import org.sitebay.android.ui.reader.viewholders.PostLikerViewHolder
+import org.sitebay.android.util.image.ImageManager
 
 class ReaderPostLikersAdapter(
     private val imageManager: ImageManager,

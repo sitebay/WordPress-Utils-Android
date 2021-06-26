@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 enum class PostListViewLayoutType(val id: Long) {
     STANDARD(id = 0),

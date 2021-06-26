@@ -1,23 +1,23 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
 import android.os.Bundle
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.R
-import org.wordpress.android.R.string
-import org.wordpress.android.ui.PreviewMode
-import org.wordpress.android.ui.PreviewMode.MOBILE
-import org.wordpress.android.ui.PreviewMode.TABLET
-import org.wordpress.android.ui.PreviewMode.valueOf
-import org.wordpress.android.ui.PreviewModeHandler
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState.Content
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState.Error
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ScopedViewModel
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.R
+import org.sitebay.android.R.string
+import org.sitebay.android.ui.PreviewMode
+import org.sitebay.android.ui.PreviewMode.MOBILE
+import org.sitebay.android.ui.PreviewMode.TABLET
+import org.sitebay.android.ui.PreviewMode.valueOf
+import org.sitebay.android.ui.PreviewModeHandler
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState.Content
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState.Error
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ScopedViewModel
+import org.sitebay.android.viewmodel.SingleLiveEvent
 
 private const val FETCHED_LAYOUTS = "FETCHED_LAYOUTS"
 private const val FETCHED_CATEGORIES = "FETCHED_CATEGORIES"

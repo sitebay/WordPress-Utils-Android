@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.isNull
@@ -11,18 +11,18 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.test
-import org.wordpress.android.ui.mediapicker.MediaItem
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier
-import org.wordpress.android.ui.mediapicker.MediaType.IMAGE
-import org.wordpress.android.ui.mediapicker.MediaType.VIDEO
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.DomainModel
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.LoadAction
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.test
+import org.sitebay.android.ui.mediapicker.MediaItem
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier
+import org.sitebay.android.ui.mediapicker.MediaType.IMAGE
+import org.sitebay.android.ui.mediapicker.MediaType.VIDEO
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.DomainModel
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.LoadAction
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 class MediaLoaderTest : BaseUnitTest() {
     @Mock lateinit var mediaSource: MediaSource

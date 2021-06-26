@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.history
+package org.sitebay.android.viewmodel.history
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.argWhere
@@ -14,13 +14,13 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.PostAction
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.fluxc.store.PostStore.FetchRevisionsPayload
-import org.wordpress.android.viewmodel.history.HistoryViewModel.HistoryListStatus
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.PostAction
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.fluxc.store.PostStore.FetchRevisionsPayload
+import org.sitebay.android.viewmodel.history.HistoryViewModel.HistoryListStatus
 
 @RunWith(MockitoJUnitRunner::class)
 class HistoryViewModelTest {

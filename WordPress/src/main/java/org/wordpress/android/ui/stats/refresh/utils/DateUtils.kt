@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import android.text.format.DateFormat
 import android.text.format.DateUtils
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.capitalizeWithLocaleWithoutLint
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.capitalizeWithLocaleWithoutLint
+import org.sitebay.android.viewmodel.ContextProvider
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Formatter

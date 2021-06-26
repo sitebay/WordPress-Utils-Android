@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.domains
+package org.sitebay.android.ui.sitecreation.domains
 
 import java.util.Locale
 import javax.inject.Inject

@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.content.Context;
 
-import org.wordpress.android.datasets.SiteSettingsTable;
-import org.wordpress.android.fluxc.model.SiteModel;
+import org.sitebay.android.datasets.SiteSettingsTable;
+import org.sitebay.android.fluxc.model.SiteModel;
 
 class SelfHostedSiteSettings extends SiteSettingsInterface {
     /**

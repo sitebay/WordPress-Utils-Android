@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.reader.subfilter.viewholders
+package org.sitebay.android.ui.reader.subfilter.viewholders
 
 import androidx.recyclerview.widget.DiffUtil.Callback
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.DIVIDER
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SECTION_TITLE
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE_ALL
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Site
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Tag
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.DIVIDER
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SECTION_TITLE
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE_ALL
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Site
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Tag
 
 class SubFilterDiffCallback(
     private val oldList: List<SubfilterListItem>,

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters
+package org.sitebay.android.ui.reader.adapters
 
 interface OnSuggestionClickListener {
     fun onSuggestionClicked(query: String?)

@@ -1,7 +1,7 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import dagger.Reusable
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 @Reusable

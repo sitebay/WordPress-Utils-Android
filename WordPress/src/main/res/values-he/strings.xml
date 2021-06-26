@@ -172,8 +172,8 @@ Language: he_IL
     <string name="backup_item_roots">בסיס של WordPress</string>
     <string name="backup_download_details_choose_items_header">הפריטים שכלולים בהורדה זו</string>
     <string name="gutenberg_native_uploading">מעלה…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">לא ניתן לערוך בלוקים לשימוש חוזר ב-WordPress ל-iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">לא ניתן לערוך בלוקים לשימוש חוזר ב-WordPress ל-Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">לא ניתן לערוך בלוקים לשימוש חוזר ב-WordPress ל-iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">לא ניתן לערוך בלוקים לשימוש חוזר ב-WordPress ל-Android</string>
     <string name="gutenberg_native_replace_file">להחליף את הקובץ</string>
     <string name="gutenberg_native_replace_audio">להחליף אודיו</string>
     <string name="gutenberg_native_problem_opening_the_audio">בעיה בפתיחת האודיו</string>
@@ -493,7 +493,7 @@ Language: he_IL
     <string name="media_picker_soft_ask_permissions_denied">הגישה של ⁦%1$s⁩ אל תמונות שלך נדחתה. כדי לתקן זאת, יש לערוך את ההרשאות ולהפעיל את ⁦%2$s⁩ ואת ⁦%3$s⁩.</string>
     <string name="media_insert_failed">הכנסת המדיה נכשלה.</string>
     <string name="media_insert_failed_with_reason">הכנסת המדיה נכשלה: %s</string>
-    <string name="photo_picker_wordpress_media_library">לבחור מתוך ספריית המדיה של WordPress</string>
+    <string name="photo_picker_sitebay_media_library">לבחור מתוך ספריית המדיה של WordPress</string>
     <string name="reader_label_toolbar_back">חזרה</string>
     <string name="reader_discover_empty_button_text">מתחילים כאן</string>
     <string name="reader_discover_empty_subtitle">לעקוב אחר נושאים כדי לגלות בלוגים חדשים</string>
@@ -633,7 +633,7 @@ Language: he_IL
     <string name="login_magic_links_label">נשלח לך קישור להתחברות מיידית, ללא צורך בסיסמה.</string>
     <string name="check_email">יש לבדוק את האימייל</string>
     <string name="get_started">מתחילים כאן</string>
-    <string name="enter_email_to_continue_wordpress_com">יש להזין את כתובת האימייל שלך כדי להתחבר או ליצור חשבון ב-WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">יש להזין את כתובת האימייל שלך כדי להתחבר או ליצור חשבון ב-WordPress.com.</string>
     <string name="or_type_your_password">או להקליד את הסיסמה שלך</string>
     <string name="create_account">ליצור חשבון</string>
     <string name="send_link_by_email">לשלוח את הקישור באימייל</string>
@@ -915,7 +915,7 @@ Language: he_IL
     <string name="site_cannot_be_loaded">אין לנו אפשרות לטעון את הנתונים של האתר שלך כרגע. יש לנסות שוב מאוחר יותר</string>
     <string name="reader_filter_tags_title">נושאים</string>
     <string name="suffix_1_000">‎%sK</string>
-    <string name="gutenberg_native_wordpress_media_library">ספריית המדיה של WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">ספריית המדיה של WordPress</string>
     <string name="gutenberg_native_ungroup">לפרק קבוצה</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">יש להקיש כדי להסתיר את המקלדת</string>
     <string name="gutenberg_native_tap_here_to_show_help">יש להקיש כאן כי להציג את העזרה</string>
@@ -1369,7 +1369,7 @@ Language: he_IL
     <string name="stats_follower_label">עוקב</string>
     <string name="stats_followers_count_message">סך הכול %1$s עוקבים: %2$s</string>
     <string name="stats_followers_email">אימייל</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">ניהול תובנות</string>
     <string name="stats_empty_insights_title">עדיין לא נוספו תובנות</string>
     <string name="stats_no_data_yet">עדיין אין נתונים</string>
@@ -1821,7 +1821,7 @@ Language: he_IL
     <string name="plugin_external_link_icon_content_description">קישור חיצוני</string>
     <string name="plugin_icon_content_description">סמל תוסף</string>
     <string name="plugin_home_page">עמוד הבית של התוסף</string>
-    <string name="wordpress_dot_org_plugin_page">עמוד התוספים של WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">עמוד התוספים של WordPress.org</string>
     <string name="plugin_remove_dialog_message">בחרת להסיר את %1$s מ-%2$s - האם ההחלטה סופית?\n\nפעולה זו תשבית את התוסף ותמחק את כל הקבצים והנתונים שמשויכים לו.</string>
     <string name="plugin_remove_dialog_title">הסרת התוסף</string>
     <string name="plugin_remove_progress_dialog_message">מסיר את %s…</string>
@@ -1981,7 +1981,7 @@ Language: he_IL
     <string name="requesting_otp">שולח קוד אימות באמצעות SMS.</string>
     <string name="login_text_otp">שליחת קוד במקום</string>
     <string name="enter_verification_code">כמעט סיימת! יש להזין את קוד האימות מאפליקציית האימות.</string>
-    <string name="enter_email_wordpress_com">התחברות ל-WordPress.com באמצעות כתובת אימייל כדי לנהל את האתרים שלך ב-WordPress.</string>
+    <string name="enter_email_sitebay_com">התחברות ל-WordPress.com באמצעות כתובת אימייל כדי לנהל את האתרים שלך ב-WordPress.</string>
     <string name="next">הבא</string>
     <string name="image_optimization_promo_desc">מיטוב התמונות מכווץ כעת תמונות להעלאה מהירה יותר.\n\nאפשר לשנות את האפשרות הזו בכל עת דרך הגדרות האתר.</string>
     <string name="image_optimization_promo_title">להפעיל את מיטוב התמונות?</string>
@@ -2540,9 +2540,9 @@ Language: he_IL
     <string name="stats_insights_today">הנתונים הסטטיסטיים של היום</string>
     <string name="stats_insights_all_time">פוסטים, צפיות ומבקרים מההתחלה ועד היום</string>
     <string name="stats_insights">תובנות</string>
-    <string name="me_disconnect_from_wordpress_com">התנתקות מוורדפרס.קום</string>
+    <string name="me_disconnect_from_sitebay_com">התנתקות מוורדפרס.קום</string>
     <string name="me_btn_login_logout">כניסה/יציאה</string>
-    <string name="me_connect_to_wordpress_com">התחברות לוורדפרס.קום</string>
+    <string name="me_connect_to_sitebay_com">התחברות לוורדפרס.קום</string>
     <string name="account_settings">הגדרות חשבון</string>
     <string name="me_btn_support">עזרה ותמיכה</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" לא הוסתר מכיוון שזהו האתר הנוכחי</string>
@@ -2715,7 +2715,7 @@ Language: he_IL
     <string name="reader_title_applog">יומן יישום</string>
     <string name="error_blog_hidden">זה אתר סמוי ולא ניתן לטעון אותו. אפשר אותו שוב בהגדרות ונסה שנית.</string>
     <string name="remove_account">הסר אתר</string>
-    <string name="wordpress_blog">אתר ב-WordPress</string>
+    <string name="sitebay_blog">אתר ב-WordPress</string>
     <string name="notifications_empty_all">אין התראות… עדיין.</string>
     <string name="invalid_site_url_message">יש לוודא שכתובת ה-URL של האתר שהוזנה תקפה</string>
     <string name="error_refresh_media">לא ניתן לרענן את פריטי המדיה כעת</string>

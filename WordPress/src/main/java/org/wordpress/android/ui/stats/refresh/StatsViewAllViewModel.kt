@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh
+package org.sitebay.android.ui.stats.refresh
 
 import androidx.annotation.StringRes
 import androidx.lifecycle.LiveData
@@ -6,24 +6,24 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.R
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.LOADING
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateSelector
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.map
-import org.wordpress.android.util.mapNullable
-import org.wordpress.android.util.throttle
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.R
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.LOADING
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateSelector
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.map
+import org.sitebay.android.util.mapNullable
+import org.sitebay.android.util.throttle
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ScopedViewModel
 
 class StatsViewAllViewModel(
     val mainDispatcher: CoroutineDispatcher,

@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import android.view.View
-import org.wordpress.android.databinding.StatsListFragmentBinding
-import org.wordpress.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
+import org.sitebay.android.databinding.StatsListFragmentBinding
+import org.sitebay.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
 
 fun StatsListFragmentBinding.drawDateSelector(dateSelectorUiModel: DateSelectorUiModel?) {
     val dateSelectorVisibility = if (dateSelectorUiModel?.isVisible == true) View.VISIBLE else View.GONE

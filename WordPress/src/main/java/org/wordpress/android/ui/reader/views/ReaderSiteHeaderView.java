@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,25 +8,25 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderBlogTable;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.models.ReaderBlog;
-import org.wordpress.android.ui.reader.ReaderInterfaces.OnFollowListener;
-import org.wordpress.android.ui.reader.actions.ReaderActions;
-import org.wordpress.android.ui.reader.actions.ReaderBlogActions;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.LocaleManager;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.PhotonUtils.Quality;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.image.BlavatarShape;
-import org.wordpress.android.util.image.ImageManager;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderBlogTable;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.models.ReaderBlog;
+import org.sitebay.android.ui.reader.ReaderInterfaces.OnFollowListener;
+import org.sitebay.android.ui.reader.actions.ReaderActions;
+import org.sitebay.android.ui.reader.actions.ReaderBlogActions;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.LocaleManager;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.PhotonUtils.Quality;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.image.BlavatarShape;
+import org.sitebay.android.util.image.ImageManager;
 
 import javax.inject.Inject;
 

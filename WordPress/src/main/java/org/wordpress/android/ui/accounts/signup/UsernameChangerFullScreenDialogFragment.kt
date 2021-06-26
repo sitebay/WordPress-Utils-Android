@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.accounts.signup
+package org.sitebay.android.ui.accounts.signup
 
 import android.os.Bundle
 import android.text.Html
 import android.text.Spanned
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.SIGNUP_SOCIAL_EPILOGUE_USERNAME_SUGGESTIONS_FAILED
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogController
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.SIGNUP_SOCIAL_EPILOGUE_USERNAME_SUGGESTIONS_FAILED
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogController
 
 /**
  * Implements functionality specific to the Username Changer functionality in the sign-up flow.

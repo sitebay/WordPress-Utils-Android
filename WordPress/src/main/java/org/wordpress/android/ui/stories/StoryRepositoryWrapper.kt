@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
-import com.wordpress.stories.compose.story.StoryFrameItem
-import com.wordpress.stories.compose.story.StoryIndex
-import com.wordpress.stories.compose.story.StoryRepository
+import com.sitebay.stories.compose.story.StoryFrameItem
+import com.sitebay.stories.compose.story.StoryIndex
+import com.sitebay.stories.compose.story.StoryRepository
 import javax.inject.Inject
 
 class StoryRepositoryWrapper @Inject constructor() {

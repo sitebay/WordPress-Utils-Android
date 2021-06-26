@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -6,11 +6,11 @@ import android.view.MenuItem;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.ui.LocaleAwareActivity;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.ui.LocaleAwareActivity;
 
 import javax.inject.Inject;
 

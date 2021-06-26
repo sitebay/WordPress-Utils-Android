@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.mock
@@ -14,14 +14,14 @@ import org.mockito.ArgumentMatchers.any
 import org.mockito.ArgumentMatchers.anyInt
 import org.mockito.ArgumentMatchers.anyString
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.uploads.UploadServiceFacade
-import org.wordpress.android.util.MediaUtilsWrapper
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.uploads.UploadServiceFacade
+import org.sitebay.android.util.MediaUtilsWrapper
 
 private const val DUMMY_MEDIA_ID = "1"
 

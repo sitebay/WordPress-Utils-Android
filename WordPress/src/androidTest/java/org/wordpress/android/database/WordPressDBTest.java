@@ -1,4 +1,4 @@
-package org.wordpress.android.database;
+package org.sitebay.android.database;
 
 import android.content.Context;
 import android.test.InstrumentationTestCase;

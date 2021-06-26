@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
 
 class MonthActivityAdapter : Adapter<DayViewHolder>() {
     private var items: List<Box> = listOf()

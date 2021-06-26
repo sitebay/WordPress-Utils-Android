@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.misc
+package org.sitebay.android.ui.sitecreation.misc
 
 import android.content.Context
 import android.os.Handler
@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ActivityUtils
+import org.sitebay.android.R
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ActivityUtils
 
 class SearchInputWithHeader(private val uiHelpers: UiHelpers, rootView: View, onClear: () -> Unit) {
     private val headerLayout = rootView.findViewById<ViewGroup>(R.id.site_creation_header_item)

@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.MediaActionBuilder
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.fluxc.store.MediaStore.MediaPayload
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.MediaActionBuilder
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.fluxc.store.MediaStore.MediaPayload
 import javax.inject.Inject
 
 class PostMediaHandler

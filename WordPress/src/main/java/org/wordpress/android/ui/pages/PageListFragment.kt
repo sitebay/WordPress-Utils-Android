@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import android.os.Bundle
 import android.os.Parcelable
@@ -12,21 +12,21 @@ import androidx.recyclerview.widget.RecyclerView
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PagesListFragmentBinding
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.ui.ViewPagerFragment
-import org.wordpress.android.ui.quickstart.QuickStartEvent
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.util.QuickStartUtilsWrapper
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.pages.PageListViewModel
-import org.wordpress.android.viewmodel.pages.PageListViewModel.PageListType
-import org.wordpress.android.viewmodel.pages.PagesViewModel
-import org.wordpress.android.widgets.RecyclerItemDecoration
-import org.wordpress.android.widgets.WPDialogSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PagesListFragmentBinding
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.ui.ViewPagerFragment
+import org.sitebay.android.ui.quickstart.QuickStartEvent
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.util.QuickStartUtilsWrapper
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.pages.PageListViewModel
+import org.sitebay.android.viewmodel.pages.PageListViewModel.PageListType
+import org.sitebay.android.viewmodel.pages.PagesViewModel
+import org.sitebay.android.widgets.RecyclerItemDecoration
+import org.sitebay.android.widgets.WPDialogSnackbar
 import javax.inject.Inject
 
 class PageListFragment : ViewPagerFragment(R.layout.pages_list_fragment) {

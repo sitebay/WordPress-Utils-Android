@@ -16,14 +16,14 @@ repositories {
     maven {
         url "https://a8c-libs.s3.amazonaws.com/android"
         content {
-            includeGroup "org.wordpress"
-            includeGroup "org.wordpress-mobile.gutenberg-mobile"
+            includeGroup "org.sitebay"
+            includeGroup "org.sitebay-mobile.gutenberg-mobile"
         }
     }
     maven {
         url "https://a8c-libs.s3.amazonaws.com/android/hermes-mirror"
         content {
-            includeGroup "org.wordpress-mobile"
+            includeGroup "org.sitebay-mobile"
         }
     }
     // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
@@ -62,7 +62,7 @@ detekt {
 
 allOpen {
     // allows mocking for classes w/o directly opening them for release builds
-    annotation 'org.wordpress.android.testing.OpenClassAnnotation'
+    annotation 'org.sitebay.android.testing.OpenClassAnnotation'
 }
 
 android {
@@ -79,7 +79,7 @@ android {
     compileSdkVersion rootProject.compileSdkVersion
 
     defaultConfig {
-        applicationId "org.wordpress.android"
+        applicationId "org.sitebay.android"
         archivesBaseName = "$applicationId"
 
         // Allow versionName to be overridden with property. e.g. -PversionName=1234
@@ -95,7 +95,7 @@ android {
         multiDexEnabled true
 
         vectorDrawables.useSupportLibrary = true
-        testInstrumentationRunner 'org.wordpress.android.WordPressTestRunner'
+        testInstrumentationRunner 'org.sitebay.android.WordPressTestRunner'
 
         buildConfigField "boolean", "OFFER_GUTENBERG", "true"
         buildConfigField "long", "REMOTE_CONFIG_FETCH_INTERVAL", "10"
@@ -108,13 +108,13 @@ android {
         buildConfigField "boolean", "LIKES_ENHANCEMENTS", "false"
         buildConfigField "boolean", "IS_JETPACK_APP", "false"
         buildConfigField "String", "TRACKS_EVENT_PREFIX", '"wpandroid_"'
-        buildConfigField "String", "PUSH_NOTIFICATIONS_APP_KEY", '"org.wordpress.android"'
+        buildConfigField "String", "PUSH_NOTIFICATIONS_APP_KEY", '"org.sitebay.android"'
         buildConfigField "boolean", "UNIFIED_COMMENTS_LIST", "false"
         buildConfigField "boolean", "MP4_COMPOSER_VIDEO_OPTIMIZATION", "false"
         buildConfigField "boolean", "BLOGGING_REMINDERS", "false"
         buildConfigField "boolean", "MANAGE_CATEGORIES", "false"
 
-        manifestPlaceholders = [magicLinkScheme:"wordpress"]
+        manifestPlaceholders = [magicLinkScheme:"sitebay"]
     }
 
     // Gutenberg's dependency - react-native-video is using
@@ -127,15 +127,15 @@ android {
     flavorDimensions "app", "buildType"
 
     productFlavors {
-        wordpress {
+        sitebay {
             isDefault true
             dimension "app"
-            applicationId "org.wordpress.android"
+            applicationId "org.sitebay.android"
             buildConfigField "boolean", "IS_JETPACK_APP", "false"
             buildConfigField "String", "TRACKS_EVENT_PREFIX", '"wpandroid_"'
-            buildConfigField "String", "PUSH_NOTIFICATIONS_APP_KEY", '"org.wordpress.android"'
+            buildConfigField "String", "PUSH_NOTIFICATIONS_APP_KEY", '"org.sitebay.android"'
 
-            manifestPlaceholders = [magicLinkScheme:"wordpress"]
+            manifestPlaceholders = [magicLinkScheme:"sitebay"]
         }
 
         jetpack {
@@ -191,7 +191,7 @@ android {
 
         debug {
             minifyEnabled false
-            buildConfigField "String", "APP_PN_KEY", "\"org.wordpress.android.debug.build\""
+            buildConfigField "String", "APP_PN_KEY", "\"org.sitebay.android.debug.build\""
         }
     }
 
@@ -294,13 +294,13 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'org.greenrobot:eventbus:3.2.0'
     // REPLACE AUTOMATTIC
-    implementation ('com.github.sitebay:android-wordpress-com-rest:1.0.81') {
+    implementation ('com.github.sitebay:android-sitebay-com-rest:1.0.81') {
     //implementation ('com.automattic:rest:1.0.8') {
         exclude group: 'com.mcxiaoke.volley'
     }
-    implementation 'org.wordpress:graphview:3.4.0'
-    implementation 'org.wordpress:persistentedittext:1.0.2'
-    implementation 'org.wordpress:emailchecker2:1.1.0'
+    implementation 'org.sitebay:graphview:3.4.0'
+    implementation 'org.sitebay:persistentedittext:1.0.2'
+    implementation 'org.sitebay:emailchecker2:1.1.0'
     implementation "com.github.sitebay:Automattic-Tracks-Android:$tracksVersion"
     implementation 'com.squareup.okio:okio:2.8.0'
     implementation 'org.apache.commons:commons-text:1.1'
@@ -378,7 +378,7 @@ dependencies {
 
     implementation("$gradle.ext.fluxCBinaryPath:fluxc:$fluxCVersion") {
         exclude group: "com.android.volley"
-        exclude group: 'org.wordpress', module: 'utils'
+        exclude group: 'org.sitebay', module: 'utils'
     }
 
     implementation ('com.github.indexos.media-for-mobile:android:43a9026f0973a2f0a74fa813132f6a16f7499c3a')
@@ -388,19 +388,19 @@ dependencies {
     debugImplementation "$gradle.ext.wputilsBinaryPath:$wordPressUtilsVersion"
     implementation (project(path:':libs:networking:WordPressNetworking')) {
         exclude group: "com.android.volley"
-        exclude group: 'org.wordpress', module: 'utils'
+        exclude group: 'org.sitebay', module: 'utils'
     }
     implementation (project(path:':libs:analytics:WordPressAnalytics')) {
-        exclude group: 'org.wordpress', module: 'utils'
+        exclude group: 'org.sitebay', module: 'utils'
     }
     implementation (project(path:':libs:editor:WordPressEditor')) {
-        exclude group: 'org.wordpress', module: 'utils'
+        exclude group: 'org.sitebay', module: 'utils'
     }
 
     implementation ("$gradle.ext.loginFlowBinaryPath:$wordPressLoginVersion") {
         exclude group: "com.github.sitebay.WordPress-FluxC-Android", module: "fluxc"
         exclude group: 'com.github.bumptech.glide'
-        exclude group: 'org.wordpress', module: 'utils'
+        exclude group: 'org.sitebay', module: 'utils'
     }
 
     implementation (group: 'com.zendesk', name: 'support', version: '5.0.2') {
@@ -410,7 +410,7 @@ dependencies {
 
     implementation 'com.github.Tenor-Inc:tenor-android-core:0.5.1'
 
-    lintChecks 'org.wordpress:lint:1.0.1'
+    lintChecks 'org.sitebay:lint:1.0.1'
 
     // Firebase
     implementation 'com.google.firebase:firebase-config:20.0.3'
@@ -436,9 +436,9 @@ dependencies {
 }
 
 configurations.all {
-    // Exclude packaged wordpress sub projects, force the use of the source project
-    // (eg. use :libs:utils:WordPressUtils instead of 'org.wordpress:utils')
-    exclude group: 'org.wordpress', module: 'analytics'
+    // Exclude packaged sitebay sub projects, force the use of the source project
+    // (eg. use :libs:utils:WordPressUtils instead of 'org.sitebay:utils')
+    exclude group: 'org.sitebay', module: 'analytics'
 }
 
 android.buildTypes.all { buildType ->
@@ -474,7 +474,7 @@ android.buildTypes.all { buildType ->
 }
 
 task violationCommentsToGitHub(type: se.bjurr.violations.comments.github.plugin.gradle.ViolationCommentsToGitHubTask) {
-    repositoryOwner = "wordpress-mobile"
+    repositoryOwner = "sitebay-mobile"
     repositoryName = "WordPress-Android"
     pullRequestId = System.properties['GITHUB_PULLREQUESTID']
     username = System.properties['GITHUB_USERNAME']

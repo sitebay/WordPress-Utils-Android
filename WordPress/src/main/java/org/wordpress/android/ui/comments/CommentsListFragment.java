@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -24,34 +24,34 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.action.CommentAction;
-import org.wordpress.android.fluxc.generated.CommentActionBuilder;
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.CommentStore;
-import org.wordpress.android.fluxc.store.CommentStore.FetchCommentsPayload;
-import org.wordpress.android.fluxc.store.CommentStore.OnCommentChanged;
-import org.wordpress.android.models.CommentList;
-import org.wordpress.android.models.FilterCriteria;
-import org.wordpress.android.ui.ActionableEmptyView;
-import org.wordpress.android.ui.EmptyViewMessageType;
-import org.wordpress.android.ui.ViewPagerFragment;
-import org.wordpress.android.ui.comments.CommentListItem.Comment;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.SmartToast;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper;
-import org.wordpress.android.util.widgets.CustomSwipeRefreshLayout;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.action.CommentAction;
+import org.sitebay.android.fluxc.generated.CommentActionBuilder;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.CommentStore;
+import org.sitebay.android.fluxc.store.CommentStore.FetchCommentsPayload;
+import org.sitebay.android.fluxc.store.CommentStore.OnCommentChanged;
+import org.sitebay.android.models.CommentList;
+import org.sitebay.android.models.FilterCriteria;
+import org.sitebay.android.ui.ActionableEmptyView;
+import org.sitebay.android.ui.EmptyViewMessageType;
+import org.sitebay.android.ui.ViewPagerFragment;
+import org.sitebay.android.ui.comments.CommentListItem.Comment;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.SmartToast;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper;
+import org.sitebay.android.util.widgets.CustomSwipeRefreshLayout;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
+import static org.sitebay.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
 
 /**
  * @deprecated

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.services;
+package org.sitebay.android.ui.reader.services;
 
 import android.app.Service;
 import android.content.Context;
@@ -6,26 +6,26 @@ import android.content.Intent;
 import android.os.IBinder;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderCommentTable;
-import org.wordpress.android.datasets.ReaderDatabase;
-import org.wordpress.android.datasets.ReaderLikeTable;
-import org.wordpress.android.datasets.ReaderUserTable;
-import org.wordpress.android.models.ReaderComment;
-import org.wordpress.android.models.ReaderCommentList;
-import org.wordpress.android.models.ReaderUserList;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.actions.ReaderActions;
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResult;
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResultListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.JSONUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderCommentTable;
+import org.sitebay.android.datasets.ReaderDatabase;
+import org.sitebay.android.datasets.ReaderLikeTable;
+import org.sitebay.android.datasets.ReaderUserTable;
+import org.sitebay.android.models.ReaderComment;
+import org.sitebay.android.models.ReaderCommentList;
+import org.sitebay.android.models.ReaderUserList;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.actions.ReaderActions;
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResult;
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResultListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.JSONUtils;
 
 public class ReaderCommentService extends Service {
     private static final String ARG_POST_ID = "post_id";

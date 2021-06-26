@@ -1,4 +1,4 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.content.ContentValues;
 import android.database.Cursor;

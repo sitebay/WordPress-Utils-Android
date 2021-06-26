@@ -62,7 +62,7 @@
                 android:layout_toEndOf="@+id/image_blavatar"
                 tools:text="52 followers" />
 
-            <org.wordpress.android.ui.reader.views.ReaderFollowButton
+            <org.sitebay.android.ui.reader.views.ReaderFollowButton
                 android:id="@+id/follow_button"
                 style="@style/Reader.Follow.Button.New"
                 android:layout_width="wrap_content"

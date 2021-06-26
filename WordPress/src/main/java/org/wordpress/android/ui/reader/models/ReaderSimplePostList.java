@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.models;
+package org.sitebay.android.ui.reader.models;
 
 import androidx.annotation.NonNull;
 

@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:clipChildren="false">
 
-        <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+        <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
             android:id="@+id/pullToRefresh"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-        </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+        </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
         <FrameLayout
             android:id="@+id/searchFrame"
@@ -72,7 +72,7 @@
                     tools:paddingEnd="0dp"
                     tools:paddingStart="@dimen/page_list_tab_layout_fading_edge_width" />
 
-                <org.wordpress.android.widgets.AppBarFadingEdgeView
+                <org.sitebay.android.widgets.AppBarFadingEdgeView
                     android:id="@+id/pages_tab_layout_fading_edge"
                     android:layout_width="@dimen/page_list_tab_layout_fading_edge_width"
                     android:layout_height="match_parent"

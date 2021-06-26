@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 /**
  * This exception gets sent off to Sentry, and we are using distinct nested classes to make sure

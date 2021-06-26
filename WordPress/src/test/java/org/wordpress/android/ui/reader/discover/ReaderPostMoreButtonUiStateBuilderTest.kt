@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.discover
+package org.sitebay.android.ui.reader.discover
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -12,16 +12,16 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.discover.ReaderPostCardAction.SecondaryAction
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.config.SeenUnseenWithCounterFeatureConfig
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.discover.ReaderPostCardAction.SecondaryAction
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.config.SeenUnseenWithCounterFeatureConfig
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

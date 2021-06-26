@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import android.graphics.Typeface
 import android.view.LayoutInflater
@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.R.dimen
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.NO_ACTION
-import org.wordpress.android.ui.main.MainActionListItem.CreateAction
-import org.wordpress.android.util.QuickStartUtils
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.R
+import org.sitebay.android.R.dimen
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.NO_ACTION
+import org.sitebay.android.ui.main.MainActionListItem.CreateAction
+import org.sitebay.android.util.QuickStartUtils
+import org.sitebay.android.util.image.ImageManager
 
 class ActionListItemViewHolder(
     internal val parent: ViewGroup,

@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.DAYS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.MONTHS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.WEEKS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.YEARS
-import org.wordpress.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate
-import org.wordpress.android.util.perform
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.DAYS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.MONTHS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.WEEKS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.YEARS
+import org.sitebay.android.ui.stats.refresh.StatsViewModel.DateSelectorUiModel
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider.SelectedDate
+import org.sitebay.android.util.perform
 import javax.inject.Inject
 
 class StatsDateSelector

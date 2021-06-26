@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.example;
+package org.sitebay.android.editor.example;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,18 +12,18 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.wordpress.android.editor.AztecEditorFragment;
-import org.wordpress.android.editor.EditorFragmentAbstract;
-import org.wordpress.android.editor.EditorFragmentAbstract.EditorDragAndDropListener;
-import org.wordpress.android.editor.EditorFragmentAbstract.EditorFragmentListener;
-import org.wordpress.android.editor.EditorFragmentAbstract.TrackableEvent;
-import org.wordpress.android.editor.EditorMediaUploadListener;
-import org.wordpress.android.editor.GutenbergEditorFragment;
-import org.wordpress.android.editor.ImageSettingsDialogFragment;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.aztec.Html.ImageGetter;
-import org.wordpress.aztec.Html.VideoThumbnailGetter;
+import org.sitebay.android.editor.AztecEditorFragment;
+import org.sitebay.android.editor.EditorFragmentAbstract;
+import org.sitebay.android.editor.EditorFragmentAbstract.EditorDragAndDropListener;
+import org.sitebay.android.editor.EditorFragmentAbstract.EditorFragmentListener;
+import org.sitebay.android.editor.EditorFragmentAbstract.TrackableEvent;
+import org.sitebay.android.editor.EditorMediaUploadListener;
+import org.sitebay.android.editor.GutenbergEditorFragment;
+import org.sitebay.android.editor.ImageSettingsDialogFragment;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.aztec.Html.ImageGetter;
+import org.sitebay.aztec.Html.VideoThumbnailGetter;
 
 import java.util.ArrayList;
 import java.util.HashMap;

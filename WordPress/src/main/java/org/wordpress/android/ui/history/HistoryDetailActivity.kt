@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.os.Bundle
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.databinding.HistoryDetailActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.history.HistoryListItem.Revision
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.databinding.HistoryDetailActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.history.HistoryListItem.Revision
 
 class HistoryDetailActivity : LocaleAwareActivity() {
     companion object {

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.reader.discover
+package org.sitebay.android.ui.reader.discover
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.DiffUtil.Callback
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState.ReaderInterestUiState
-import org.wordpress.android.ui.reader.discover.viewholders.ReaderInterestViewHolder
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState.ReaderInterestUiState
+import org.sitebay.android.ui.reader.discover.viewholders.ReaderInterestViewHolder
+import org.sitebay.android.ui.utils.UiHelpers
 
 class ReaderInterestAdapter(
     private val uiHelpers: UiHelpers

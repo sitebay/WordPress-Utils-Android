@@ -314,7 +314,7 @@
 
     <!-- Smart Lock for Passwords -->
     <string name="asset_statements" translatable="false">
-        [{\"include\": \"https://wordpress.com/.well-known/assetlinks.json\"}]
+        [{\"include\": \"https://sitebay.com/.well-known/assetlinks.json\"}]
     </string>
 
     <string-array name="post_format_keys" translatable="false">
@@ -331,7 +331,7 @@
     </string-array>
 
 
-    <string name="wordpresscom_sample_post" translatable="false">https://en.blog.wordpress.com/2016/09/26/the-best-of-wordpress-september-2016/</string>
+    <string name="sitebaycom_sample_post" translatable="false">https://en.blog.sitebay.com/2016/09/26/the-best-of-sitebay-september-2016/</string>
 
     <!-- Preference Entries -->
     <string-array name="site_settings_image_max_size_entries" translatable="false">

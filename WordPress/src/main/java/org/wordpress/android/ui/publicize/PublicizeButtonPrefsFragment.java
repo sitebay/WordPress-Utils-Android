@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,20 +13,20 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.models.PublicizeButton;
-import org.wordpress.android.ui.ScrollableViewInitializedListener;
-import org.wordpress.android.ui.prefs.SiteSettingsInterface;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.widgets.WPPrefView;
-import org.wordpress.android.widgets.WPPrefView.PrefListItem;
-import org.wordpress.android.widgets.WPPrefView.PrefListItems;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.models.PublicizeButton;
+import org.sitebay.android.ui.ScrollableViewInitializedListener;
+import org.sitebay.android.ui.prefs.SiteSettingsInterface;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.widgets.WPPrefView;
+import org.sitebay.android.widgets.WPPrefView.PrefListItem;
+import org.sitebay.android.widgets.WPPrefView.PrefListItems;
 
 import java.util.ArrayList;
 

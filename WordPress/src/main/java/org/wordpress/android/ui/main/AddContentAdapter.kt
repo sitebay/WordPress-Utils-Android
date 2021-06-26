@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.main.MainActionListItem.CreateAction
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.main.MainActionListItem.CreateAction
+import org.sitebay.android.util.image.ImageManager
 import javax.inject.Inject
 
 class AddContentAdapter(context: Context) : Adapter<ActionListItemViewHolder>() {

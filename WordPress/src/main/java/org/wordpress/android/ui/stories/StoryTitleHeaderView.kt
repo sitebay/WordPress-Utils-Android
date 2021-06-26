@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
 import android.content.Context
 import android.text.Editable
@@ -6,13 +6,13 @@ import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout
-import org.wordpress.android.R
-import org.wordpress.android.databinding.PrepublishingStoryTitleListItemBinding
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.StoryTitleUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.focusAndShowKeyboard
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.R
+import org.sitebay.android.databinding.PrepublishingStoryTitleListItemBinding
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.StoryTitleUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.focusAndShowKeyboard
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
 
 class StoryTitleHeaderView @JvmOverloads constructor(
     context: Context,

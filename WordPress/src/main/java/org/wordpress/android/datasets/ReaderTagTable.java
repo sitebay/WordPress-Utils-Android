@@ -1,4 +1,4 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.database.Cursor;
 import android.database.SQLException;
@@ -8,14 +8,14 @@ import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.SqlUtils;
 
 import java.util.Date;
 

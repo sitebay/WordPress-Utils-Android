@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.notifications;
+package org.sitebay.android.ui.prefs.notifications;
 
 import android.app.FragmentManager;
 import android.content.SharedPreferences;
@@ -18,11 +18,11 @@ import androidx.preference.PreferenceManager;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.notifications.NotificationEvents;
-import org.wordpress.android.ui.prefs.notifications.PrefMainSwitchToolbarView.MainSwitchToolbarListener;
+import org.sitebay.android.R;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.notifications.NotificationEvents;
+import org.sitebay.android.ui.prefs.notifications.PrefMainSwitchToolbarView.MainSwitchToolbarListener;
 
 // Simple wrapper activity for NotificationsSettingsFragment
 public class NotificationsSettingsActivity extends LocaleAwareActivity

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.reader.adapters
+package org.sitebay.android.ui.reader.adapters
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.reader.discover.viewholders.ReaderRelatedPostViewHolder
-import org.wordpress.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.RelatedPostsUiState.ReaderRelatedPostUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.reader.discover.viewholders.ReaderRelatedPostViewHolder
+import org.sitebay.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.RelatedPostsUiState.ReaderRelatedPostUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
 
 class ReaderRelatedPostsAdapter(
     private val uiHelpers: UiHelpers,

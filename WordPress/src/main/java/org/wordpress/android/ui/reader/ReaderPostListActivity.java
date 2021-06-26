@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -18,29 +18,29 @@ import com.google.android.material.appbar.AppBarLayout;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.datasets.ReaderBlogTable;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.PostStore;
-import org.wordpress.android.fluxc.store.PostStore.OnPostUploaded;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.ReaderBlog;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.ReaderTypes.ReaderPostListType;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.uploads.UploadActionUseCase;
-import org.wordpress.android.ui.uploads.UploadUtils;
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.datasets.ReaderBlogTable;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.PostStore;
+import org.sitebay.android.fluxc.store.PostStore.OnPostUploaded;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.ReaderBlog;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.ReaderTypes.ReaderPostListType;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.uploads.UploadActionUseCase;
+import org.sitebay.android.ui.uploads.UploadUtils;
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper;
+import org.sitebay.android.util.ToastUtils;
 
 import javax.inject.Inject;
 

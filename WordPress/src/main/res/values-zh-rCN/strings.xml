@@ -193,8 +193,8 @@ Language: zh_CN
     <string name="backup_item_roots">WordPress 根</string>
     <string name="backup_download_details_choose_items_header">此下载包含的项目</string>
     <string name="gutenberg_native_uploading">正在上传…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">可重用区块在 iOS 版 WordPress 上不可编辑</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">可重用区块在 Android 版 WordPress 上不可编辑</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">可重用区块在 iOS 版 WordPress 上不可编辑</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">可重用区块在 Android 版 WordPress 上不可编辑</string>
     <string name="gutenberg_native_replace_file">替换文件</string>
     <string name="gutenberg_native_replace_audio">替换音频</string>
     <string name="gutenberg_native_problem_opening_the_audio">打开音频时出现问题</string>
@@ -518,7 +518,7 @@ Language: zh_CN
     <string name="media_picker_soft_ask_permissions_denied">%1$s 已被拒绝访问您的照片。 要解决此问题，请编辑您的权限，然后启用“%2$s”和“%3$s”。</string>
     <string name="media_insert_failed">媒体插入失败。</string>
     <string name="media_insert_failed_with_reason">媒体插入失败： %s</string>
-    <string name="photo_picker_wordpress_media_library">从 WordPress 媒体库中选择</string>
+    <string name="photo_picker_sitebay_media_library">从 WordPress 媒体库中选择</string>
     <string name="reader_label_toolbar_back">返回</string>
     <string name="reader_discover_empty_button_text">开始</string>
     <string name="reader_discover_empty_subtitle">关注话题以发现新博客</string>
@@ -658,7 +658,7 @@ Language: zh_CN
     <string name="login_magic_links_label">我们将通过电子邮件向您发送一个链接，无需密码即可登录。</string>
     <string name="check_email">查收电子邮件</string>
     <string name="get_started">开始</string>
-    <string name="enter_email_to_continue_wordpress_com">输入您的电子邮箱地址以登录或创建 WordPress.com 帐户。</string>
+    <string name="enter_email_to_continue_sitebay_com">输入您的电子邮箱地址以登录或创建 WordPress.com 帐户。</string>
     <string name="or_type_your_password">或者输入您的密码</string>
     <string name="create_account">创建帐户</string>
     <string name="send_link_by_email">通过电子邮件发送链接</string>
@@ -940,7 +940,7 @@ Language: zh_CN
     <string name="suffix_1_000">%sK</string>
     <string name="posts_cannot_be_started">我们现在无法打开文章。请稍后重试</string>
     <string name="site_cannot_be_loaded">我们现在无法为您的站点加载数据。请稍后重试</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress 媒体库</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress 媒体库</string>
     <string name="gutenberg_native_unsupported">不受支持</string>
     <string name="gutenberg_native_ungroup">取消分组</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">轻按可隐藏键盘</string>
@@ -1394,7 +1394,7 @@ Language: zh_CN
     <string name="stats_follower_label">粉丝</string>
     <string name="stats_followers_count_message">共 %1$s 位粉丝：%2$s</string>
     <string name="stats_followers_email">电子邮件</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">管理见解</string>
     <string name="stats_empty_insights_title">尚未添加任何见解</string>
     <string name="stats_no_data_yet">尚无数据</string>
@@ -1846,7 +1846,7 @@ Language: zh_CN
     <string name="plugin_external_link_icon_content_description">外部链接</string>
     <string name="plugin_icon_content_description">插件图标</string>
     <string name="plugin_home_page">插件主页</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org 插件页面</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org 插件页面</string>
     <string name="plugin_remove_dialog_message">是否确定要从 %2$s 中删除 %1$s？\n\n此操作将停用此插件，并删除所有相关文件和数据。</string>
     <string name="plugin_remove_dialog_title">删除插件</string>
     <string name="plugin_remove_progress_dialog_message">正在删除 %s…</string>
@@ -2007,7 +2007,7 @@ Language: zh_CN
     <string name="login_text_otp">通过短信向我发送代码</string>
     <string name="enter_verification_code">马上就好！请输入验证器应用中的验证码。</string>
     <string name="next">下一步</string>
-    <string name="enter_email_wordpress_com">使用电子邮件地址登录 WordPress.com 以便管理您的所有 WordPress 站点。</string>
+    <string name="enter_email_sitebay_com">使用电子邮件地址登录 WordPress.com 以便管理您的所有 WordPress 站点。</string>
     <string name="image_optimization_promo_desc">图片优化可缩小图片以便更快地上传。\n\n您可以随时在站点设置中更改此选项。</string>
     <string name="image_optimization_promo_title">打开图片优化？</string>
     <string name="leave_off">停止</string>
@@ -2565,8 +2565,8 @@ Language: zh_CN
     <string name="stats_insights_today">今日统计</string>
     <string name="stats_insights_all_time">全时段的文章篇数、阅读次数和访客人数</string>
     <string name="stats_insights">见解</string>
-    <string name="me_disconnect_from_wordpress_com">退出 WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">登录 WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">退出 WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">登录 WordPress.com</string>
     <string name="me_btn_login_logout">登录/退出</string>
     <string name="me_btn_support">帮助与支持</string>
     <string name="account_settings">帐户设置</string>
@@ -2699,7 +2699,7 @@ Language: zh_CN
     <string name="fatal_db_error">创建程序数据库时出错，请重新安装程序.</string>
     <string name="error_blog_hidden">这个博客是隐藏的，无法加载。在设置中重新启用它并再次尝试。</string>
     <string name="error_refresh_media">此时无法刷新媒体</string>
-    <string name="wordpress_blog">WordPress 博客</string>
+    <string name="sitebay_blog">WordPress 博客</string>
     <string name="image_settings">图片设置</string>
     <string name="local_changes">本地修改</string>
     <string name="privacy_policy">隐私政策</string>

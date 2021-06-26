@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.activitylog.list
+package org.sitebay.android.ui.activitylog.list
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,12 +8,12 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
-import org.wordpress.android.R
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction.DOWNLOAD_BACKUP
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction.RESTORE
-import org.wordpress.android.util.ColorUtils.setImageResourceWithTint
-import org.wordpress.android.util.getColorResIdFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction.DOWNLOAD_BACKUP
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction.RESTORE
+import org.sitebay.android.util.ColorUtils.setImageResourceWithTint
+import org.sitebay.android.util.getColorResIdFromAttribute
 
 class ActivityLogListItemMenuAdapter(
     context: Context

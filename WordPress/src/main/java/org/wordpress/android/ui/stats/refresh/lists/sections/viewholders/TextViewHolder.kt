@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.content.Context
 import android.graphics.Typeface
@@ -11,9 +11,9 @@ import android.text.style.StyleSpan
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Text
-import org.wordpress.android.util.getColorFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Text
+import org.sitebay.android.util.getColorFromAttribute
 
 class TextViewHolder(parent: ViewGroup) : BlockListItemViewHolder(
         parent,

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.activitylog.list.filter
+package org.sitebay.android.ui.activitylog.list.filter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,11 +6,11 @@ import android.widget.CheckBox
 import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.ActivityType
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.SectionHeader
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.R
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.ActivityType
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.SectionHeader
+import org.sitebay.android.ui.utils.UiHelpers
 
 sealed class ActivityLogTypeFilterViewHolder(internal val parent: ViewGroup, @LayoutRes layout: Int) :
         RecyclerView.ViewHolder(LayoutInflater.from(parent.context).inflate(layout, parent, false)) {

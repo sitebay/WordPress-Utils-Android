@@ -1,4 +1,4 @@
-package org.wordpress.android.push;
+package org.sitebay.android.push;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,18 +11,18 @@ import androidx.core.app.JobIntentService;
 
 import com.google.firebase.messaging.FirebaseMessaging;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.support.ZendeskHelper;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.support.ZendeskHelper;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.UUID;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.JobServiceId.JOB_GCM_REG_SERVICE_ID;
+import static org.sitebay.android.JobServiceId.JOB_GCM_REG_SERVICE_ID;
 
 public class GCMRegistrationIntentService extends JobIntentService {
     @Inject AccountStore mAccountStore;

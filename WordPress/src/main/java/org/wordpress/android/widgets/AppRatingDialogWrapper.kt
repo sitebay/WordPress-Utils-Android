@@ -1,6 +1,6 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
-import org.wordpress.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker
 import javax.inject.Inject
 
 /**

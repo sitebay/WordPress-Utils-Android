@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.accounts;
+package org.sitebay.android.ui.accounts;
 
-import org.wordpress.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.SiteModel;
 
 public interface JetpackCallbacks {
     boolean isJetpackAuth();

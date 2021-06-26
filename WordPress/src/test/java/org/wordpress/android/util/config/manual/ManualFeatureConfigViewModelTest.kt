@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config.manual
+package org.sitebay.android.util.config.manual
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.verify
@@ -8,18 +8,18 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.util.config.RemoteConfig
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Button
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.DISABLED
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.ENABLED
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.UNKNOWN
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Header
-import org.wordpress.android.util.config.manual.ManualFeatureConfigViewModel.UiState
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.util.config.RemoteConfig
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Button
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.DISABLED
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.ENABLED
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Feature.State.UNKNOWN
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.FeatureUiItem.Header
+import org.sitebay.android.util.config.manual.ManualFeatureConfigViewModel.UiState
+import org.sitebay.android.viewmodel.Event
 
 class ManualFeatureConfigViewModelTest : BaseUnitTest() {
     @Mock lateinit var manualFeatureConfig: ManualFeatureConfig

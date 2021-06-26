@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors;
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors;
 
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaFile;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.AUDIO;
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.COVER;
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.FILE;
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.GALLERY;
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.IMAGE;
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.MEDIA_TEXT;
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.VIDEO;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.AUDIO;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.COVER;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.FILE;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.GALLERY;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.IMAGE;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.MEDIA_TEXT;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaBlockType.VIDEO;
 
 class BlockProcessorFactory {
     private final MediaUploadCompletionProcessor mMediaUploadCompletionProcessor;

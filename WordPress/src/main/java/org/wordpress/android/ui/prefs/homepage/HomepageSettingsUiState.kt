@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.prefs.homepage
+package org.sitebay.android.ui.prefs.homepage
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Error
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Loading
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Data
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsUiState.ValidityResult.Invalid
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsUiState.ValidityResult.Valid
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Error
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Loading
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDataLoader.LoadingResult.Data
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsUiState.ValidityResult.Invalid
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsUiState.ValidityResult.Valid
 
 data class HomepageSettingsUiState(
     val isClassicBlogState: Boolean,

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 const val INSTRUCTIONS_URL = "https://jetpack.com/support/getting-started-with-jetpack/"
 

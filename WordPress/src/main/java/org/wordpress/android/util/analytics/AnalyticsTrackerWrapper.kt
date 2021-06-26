@@ -1,12 +1,12 @@
-package org.wordpress.android.util.analytics
+package org.sitebay.android.util.analytics
 
 import dagger.Reusable
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.util.config.AppConfig.FeatureState
-import org.wordpress.android.util.config.ExperimentConfig
-import org.wordpress.android.util.config.FeatureConfig
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.util.config.AppConfig.FeatureState
+import org.sitebay.android.util.config.ExperimentConfig
+import org.sitebay.android.util.config.FeatureConfig
 import javax.inject.Inject
 
 @Reusable

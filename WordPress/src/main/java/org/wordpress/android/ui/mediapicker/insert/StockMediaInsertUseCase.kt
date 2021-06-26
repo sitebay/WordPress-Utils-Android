@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.mediapicker.insert
+package org.sitebay.android.ui.mediapicker.insert
 
 import kotlinx.coroutines.flow.flow
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STOCK_MEDIA_UPLOADED
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.StockMediaStore
-import org.wordpress.android.fluxc.store.StockMediaUploadItem
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.StockMediaIdentifier
-import org.wordpress.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.MEDIA
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STOCK_MEDIA_UPLOADED
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.StockMediaStore
+import org.sitebay.android.fluxc.store.StockMediaUploadItem
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.StockMediaIdentifier
+import org.sitebay.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.MEDIA
 import java.util.HashMap
 import javax.inject.Inject
 

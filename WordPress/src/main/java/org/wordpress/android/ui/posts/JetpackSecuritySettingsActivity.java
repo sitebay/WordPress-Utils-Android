@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,7 +8,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 public class JetpackSecuritySettingsActivity extends AppCompatActivity {
     public static final int JETPACK_SECURITY_SETTINGS_REQUEST_CODE = 101;

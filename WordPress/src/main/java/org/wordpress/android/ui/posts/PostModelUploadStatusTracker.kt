@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.annotation.SuppressLint
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.UploadStore
-import org.wordpress.android.ui.uploads.UploadActionUseCase
-import org.wordpress.android.ui.uploads.UploadService
-import org.wordpress.android.viewmodel.posts.PostListItemUploadStatus
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.UploadStore
+import org.sitebay.android.ui.uploads.UploadActionUseCase
+import org.sitebay.android.ui.uploads.UploadService
+import org.sitebay.android.viewmodel.posts.PostListItemUploadStatus
 import kotlin.math.roundToInt
 import javax.inject.Inject
 
@@ -24,7 +24,7 @@ class PostModelUploadStatusTracker @Inject constructor(
     `SparseArray` is actually not objectively better than using a `HashMap` and in this case `HashMap` should perform
     better due to higher number of items.
 
-    https://github.com/wordpress-mobile/WordPress-Android/issues/11487
+    https://github.com/sitebay-mobile/WordPress-Android/issues/11487
      */
     @SuppressLint("UseSparseArrays")
     private val uploadStatusMap = HashMap<Int, PostListItemUploadStatus>()

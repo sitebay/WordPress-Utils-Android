@@ -1,11 +1,11 @@
-package org.wordpress.android.imageeditor
+package org.sitebay.android.imageeditor
 
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.widget.ImageView
 import android.widget.ImageView.ScaleType
-import org.wordpress.android.imageeditor.crop.CropViewModel.CropResult
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.OutputData
+import org.sitebay.android.imageeditor.crop.CropViewModel.CropResult
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData.OutputData
 import java.io.File
 
 class ImageEditor private constructor(

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.wordpress.android.widgets.WPTextView
+<org.sitebay.android.widgets.WPTextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/text"
@@ -11,4 +11,4 @@
     android:textColor="?attr/colorOnSurface"
     tools:ignore="RtlHardcoded"
     tools:text="spinner item" >
-</org.wordpress.android.widgets.WPTextView>
+</org.sitebay.android.widgets.WPTextView>

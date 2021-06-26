@@ -5,7 +5,7 @@
     android:layout_height="@dimen/one_line_list_item_height"
     android:background="?selectableItemBackground">
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/footer_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

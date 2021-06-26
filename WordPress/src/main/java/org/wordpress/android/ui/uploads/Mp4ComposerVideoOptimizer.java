@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
 import androidx.annotation.NonNull;
 
@@ -6,16 +6,16 @@ import com.daasuu.mp4compose.composer.ComposerInterface;
 import com.daasuu.mp4compose.composer.Listener;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.WPVideoUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.WPVideoUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import java.util.Map;
 
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_VIDEO_CANT_OPTIMIZE;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_VIDEO_CANT_OPTIMIZE;
 
 public class Mp4ComposerVideoOptimizer extends VideoOptimizerBase implements Listener {
     public Mp4ComposerVideoOptimizer(

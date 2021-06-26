@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.jetpack.restore
+package org.sitebay.android.ui.jetpack.restore
 
-import org.wordpress.android.util.wizard.WizardStep
+import org.sitebay.android.util.wizard.WizardStep
 import javax.inject.Inject
 import javax.inject.Singleton
 

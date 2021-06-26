@@ -1,23 +1,23 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.text.TextUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.ui.Organization;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostId;
-import org.wordpress.android.ui.reader.utils.ReaderIframeScanner;
-import org.wordpress.android.ui.reader.utils.ReaderImageScanner;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.DateTimeUtilsWrapper;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.HtmlUtils;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.ui.Organization;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostId;
+import org.sitebay.android.ui.reader.utils.ReaderIframeScanner;
+import org.sitebay.android.ui.reader.utils.ReaderImageScanner;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.DateTimeUtilsWrapper;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.HtmlUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.UrlUtils;
 
 import java.text.BreakIterator;
 import java.util.Iterator;
@@ -423,7 +423,7 @@ public class ReaderPost {
         this.mExcerpt = StringUtils.notNullStr(excerpt);
     }
 
-    // https://codex.wordpress.org/Post_Formats
+    // https://codex.sitebay.org/Post_Formats
     public String getFormat() {
         return StringUtils.notNullStr(mFormat);
     }

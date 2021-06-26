@@ -1,12 +1,12 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
 import androidx.annotation.ColorRes
-import org.wordpress.android.fluxc.model.LocalOrRemoteId
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.viewmodel.posts.PostListItemIdentifier.LocalPostId
-import org.wordpress.android.viewmodel.posts.PostListItemIdentifier.RemotePostId
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState
-import org.wordpress.android.widgets.PostListButtonType
+import org.sitebay.android.fluxc.model.LocalOrRemoteId
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.viewmodel.posts.PostListItemIdentifier.LocalPostId
+import org.sitebay.android.viewmodel.posts.PostListItemIdentifier.RemotePostId
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState
+import org.sitebay.android.widgets.PostListButtonType
 
 sealed class PostListItemType {
     class PostListItemUiState(

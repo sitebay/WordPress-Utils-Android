@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import dagger.Reusable
 import org.greenrobot.eventbus.EventBus

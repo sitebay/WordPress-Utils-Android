@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.helpers
+package org.sitebay.android.viewmodel.helpers
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -14,8 +14,8 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.wordpress.android.viewmodel.helpers.ConnectionStatus.AVAILABLE
-import org.wordpress.android.viewmodel.helpers.ConnectionStatus.UNAVAILABLE
+import org.sitebay.android.viewmodel.helpers.ConnectionStatus.AVAILABLE
+import org.sitebay.android.viewmodel.helpers.ConnectionStatus.UNAVAILABLE
 
 class ConnectionStatusLiveDataTest {
     @get:Rule val rule = InstantTaskExecutorRule()

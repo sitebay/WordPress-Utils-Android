@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <org.wordpress.android.ui.reader.views.ReaderExpandableTagsView
+    <org.sitebay.android.ui.reader.views.ReaderExpandableTagsView
         android:id="@+id/expandable_tags_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toStartOf="@id/header_follow_button"
         app:layout_constraintTop_toBottomOf="@id/text_title" />
 
-    <org.wordpress.android.ui.reader.views.ReaderFollowButton
+    <org.sitebay.android.ui.reader.views.ReaderFollowButton
         android:id="@+id/header_follow_button"
         style="@style/Reader.Follow.Button.PostDetail"
         android:layout_width="wrap_content"

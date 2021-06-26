@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagType
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagType
 
 class TagInfo(
     val tagType: ReaderTagType,

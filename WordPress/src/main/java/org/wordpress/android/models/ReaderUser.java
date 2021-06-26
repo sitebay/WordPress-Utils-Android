@@ -1,11 +1,11 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.text.TextUtils;
 
 import org.json.JSONObject;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.UrlUtils;
 
 public class ReaderUser {
     public long userId;

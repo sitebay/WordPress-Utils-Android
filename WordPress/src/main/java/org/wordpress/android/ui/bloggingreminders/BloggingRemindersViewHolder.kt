@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import android.graphics.Typeface
 import android.text.Spannable
@@ -9,26 +9,26 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import org.wordpress.android.databinding.BloggingRemindersCaptionBinding
-import org.wordpress.android.databinding.BloggingRemindersDayButtonsBinding
-import org.wordpress.android.databinding.BloggingRemindersIllustrationBinding
-import org.wordpress.android.databinding.BloggingRemindersTextHighEmphasisBinding
-import org.wordpress.android.databinding.BloggingRemindersTextMediumEmphasisBinding
-import org.wordpress.android.databinding.BloggingRemindersTipBinding
-import org.wordpress.android.databinding.BloggingRemindersTitleBinding
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Caption
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersDiffCallback.DayButtonsPayload
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons.DayItem
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.EmphasizedText
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.HighEmphasisText
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Illustration
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.MediumEmphasisText
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Tip
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Title
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.BloggingRemindersCaptionBinding
+import org.sitebay.android.databinding.BloggingRemindersDayButtonsBinding
+import org.sitebay.android.databinding.BloggingRemindersIllustrationBinding
+import org.sitebay.android.databinding.BloggingRemindersTextHighEmphasisBinding
+import org.sitebay.android.databinding.BloggingRemindersTextMediumEmphasisBinding
+import org.sitebay.android.databinding.BloggingRemindersTipBinding
+import org.sitebay.android.databinding.BloggingRemindersTitleBinding
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Caption
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersDiffCallback.DayButtonsPayload
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons.DayItem
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.EmphasizedText
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.HighEmphasisText
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Illustration
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.MediumEmphasisText
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Tip
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Title
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.util.viewBinding
 
 sealed class BloggingRemindersViewHolder<T : ViewBinding>(protected val binding: T) :
         RecyclerView.ViewHolder(binding.root) {

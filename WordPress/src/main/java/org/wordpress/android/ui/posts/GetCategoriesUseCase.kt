@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import dagger.Reusable
 import org.apache.commons.text.StringEscapeUtils
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.TaxonomyActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.TermModel
-import org.wordpress.android.fluxc.store.TaxonomyStore
-import org.wordpress.android.fluxc.utils.AppLogWrapper
-import org.wordpress.android.models.CategoryNode
-import org.wordpress.android.models.wrappers.CategoryNodeWrapper
-import org.wordpress.android.util.AppLog.T.PREPUBLISHING_NUDGES
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.TaxonomyActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.TermModel
+import org.sitebay.android.fluxc.store.TaxonomyStore
+import org.sitebay.android.fluxc.utils.AppLogWrapper
+import org.sitebay.android.models.CategoryNode
+import org.sitebay.android.models.wrappers.CategoryNodeWrapper
+import org.sitebay.android.util.AppLog.T.PREPUBLISHING_NUDGES
 import java.util.ArrayList
 import javax.inject.Inject
 

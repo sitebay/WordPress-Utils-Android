@@ -1,10 +1,10 @@
-package org.wordpress.android.util.analytics
+package org.sitebay.android.util.analytics
 
 import androidx.core.util.Pair
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ACTIVITY_LOG_FILTER_BAR_ACTIVITY_TYPE_SELECTED
-import org.wordpress.android.fluxc.model.activity.ActivityTypeModel
-import org.wordpress.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ACTIVITY_LOG_FILTER_BAR_ACTIVITY_TYPE_SELECTED
+import org.sitebay.android.fluxc.model.activity.ActivityTypeModel
+import org.sitebay.android.util.DateTimeUtilsWrapper
 import java.util.Date
 import javax.inject.Inject
 import javax.inject.Singleton

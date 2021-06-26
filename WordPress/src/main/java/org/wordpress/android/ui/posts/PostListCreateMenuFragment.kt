@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.os.Bundle
@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.RecyclerViewBottomSheetBinding
-import org.wordpress.android.ui.main.AddContentAdapter
-import org.wordpress.android.viewmodel.posts.PostListCreateMenuViewModel
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.RecyclerViewBottomSheetBinding
+import org.sitebay.android.ui.main.AddContentAdapter
+import org.sitebay.android.viewmodel.posts.PostListCreateMenuViewModel
 import javax.inject.Inject
 
 class PostListCreateMenuFragment : BottomSheetDialogFragment() {

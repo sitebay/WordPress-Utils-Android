@@ -4,7 +4,7 @@ Library for handling Analytics tracking in WordPress Android.
 
 Part of the [WordPress-Android] project.
 
-[WordPress-Android]: https://github.com/wordpress-mobile/WordPress-Android
+[WordPress-Android]: https://github.com/sitebay-mobile/WordPress-Android
 
 ## Publish it to bintray
 

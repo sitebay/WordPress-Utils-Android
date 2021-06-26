@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.quickstart;
+package org.sitebay.android.ui.quickstart;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask;
 
 /**
  * Static data that represents user facing description of quick start tasks.

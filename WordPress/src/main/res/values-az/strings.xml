@@ -146,7 +146,7 @@ Language: az
     <string name="privacy_policy">Gizlilik siyasəti</string>
     <string name="local_changes">Yerli dəyişikliklər</string>
     <string name="image_settings">Təsvir parametrləri</string>
-    <string name="wordpress_blog">WordPress bloqu</string>
+    <string name="sitebay_blog">WordPress bloqu</string>
     <string name="error_blog_hidden">Bu bloq gizlidir və yüklənmədi. Parametrlərdən yenidən aktivləşdirin və təkrar yoxlayın.</string>
     <string name="fatal_db_error">Proqram üçün verilənlər bazası yaradılarkən bir xəta baş verdi. Proqramı təkrar qurmağa cəhd edin.</string>
     <string name="http_authorization_required">Qeydiyyat gərəklidir</string>

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
@@ -6,19 +6,19 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MY_SITE_ICON_UPLOADED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MY_SITE_ICON_UPLOAD_UNSUCCESSFUL
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.mysite.SiteIconUploadHandler.ItemUploadedModel
-import org.wordpress.android.ui.mysite.SiteIconUploadHandler.ItemUploadedModel.MediaUploaded
-import org.wordpress.android.ui.mysite.SiteIconUploadHandler.ItemUploadedModel.PostUploaded
-import org.wordpress.android.ui.uploads.UploadService.UploadErrorEvent
-import org.wordpress.android.ui.uploads.UploadService.UploadMediaSuccessEvent
-import org.wordpress.android.util.EventBusWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MY_SITE_ICON_UPLOADED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MY_SITE_ICON_UPLOAD_UNSUCCESSFUL
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.mysite.SiteIconUploadHandler.ItemUploadedModel
+import org.sitebay.android.ui.mysite.SiteIconUploadHandler.ItemUploadedModel.MediaUploaded
+import org.sitebay.android.ui.mysite.SiteIconUploadHandler.ItemUploadedModel.PostUploaded
+import org.sitebay.android.ui.uploads.UploadService.UploadErrorEvent
+import org.sitebay.android.ui.uploads.UploadService.UploadMediaSuccessEvent
+import org.sitebay.android.util.EventBusWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 
 class SiteIconUploadHandlerTest : BaseUnitTest() {
     @Mock lateinit var selectedSiteRepository: SelectedSiteRepository

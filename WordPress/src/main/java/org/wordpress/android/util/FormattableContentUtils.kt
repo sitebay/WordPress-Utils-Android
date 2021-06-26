@@ -1,8 +1,8 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
-import org.wordpress.android.fluxc.tools.FormattableContent
-import org.wordpress.android.fluxc.tools.FormattableMedia
-import org.wordpress.android.fluxc.tools.FormattableRange
+import org.sitebay.android.fluxc.tools.FormattableContent
+import org.sitebay.android.fluxc.tools.FormattableMedia
+import org.sitebay.android.fluxc.tools.FormattableRange
 
 fun FormattableContent?.getTextOrEmpty(): String {
     return this?.text ?: ""

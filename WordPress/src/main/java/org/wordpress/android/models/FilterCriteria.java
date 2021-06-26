@@ -1,4 +1,4 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 public interface FilterCriteria {
     String getLabel();

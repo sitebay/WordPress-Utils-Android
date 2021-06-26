@@ -1,28 +1,28 @@
-package org.wordpress.android.ui.engagement.utils
+package org.sitebay.android.ui.engagement.utils
 
-import org.wordpress.android.fluxc.model.LikeModel
-import org.wordpress.android.fluxc.model.LikeModel.LikeType
-import org.wordpress.android.fluxc.model.LikeModel.LikeType.COMMENT_LIKE
-import org.wordpress.android.fluxc.model.LikeModel.LikeType.POST_LIKE
-import org.wordpress.android.ui.engagement.EngageItem
-import org.wordpress.android.ui.engagement.EngageItem.LikedItem
-import org.wordpress.android.ui.engagement.EngageItem.Liker
-import org.wordpress.android.ui.engagement.EngagementNavigationSource.LIKE_NOTIFICATION_LIST
-import org.wordpress.android.ui.engagement.EngagementNavigationSource.LIKE_READER_LIST
-import org.wordpress.android.ui.engagement.GetLikesUseCase.FailureType.GENERIC
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure.EmptyStateData
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState.LikesData
-import org.wordpress.android.ui.engagement.ListScenario
-import org.wordpress.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_1
-import org.wordpress.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_2
-import org.wordpress.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_3
-import org.wordpress.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_4
-import org.wordpress.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_5
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.fluxc.model.LikeModel
+import org.sitebay.android.fluxc.model.LikeModel.LikeType
+import org.sitebay.android.fluxc.model.LikeModel.LikeType.COMMENT_LIKE
+import org.sitebay.android.fluxc.model.LikeModel.LikeType.POST_LIKE
+import org.sitebay.android.ui.engagement.EngageItem
+import org.sitebay.android.ui.engagement.EngageItem.LikedItem
+import org.sitebay.android.ui.engagement.EngageItem.Liker
+import org.sitebay.android.ui.engagement.EngagementNavigationSource.LIKE_NOTIFICATION_LIST
+import org.sitebay.android.ui.engagement.EngagementNavigationSource.LIKE_READER_LIST
+import org.sitebay.android.ui.engagement.GetLikesUseCase.FailureType.GENERIC
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure.EmptyStateData
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState.LikesData
+import org.sitebay.android.ui.engagement.ListScenario
+import org.sitebay.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_1
+import org.sitebay.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_2
+import org.sitebay.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_3
+import org.sitebay.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_4
+import org.sitebay.android.ui.engagement.utils.GetLikesTestConfig.TEST_CONFIG_5
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 fun getDefaultLikers(numLikers: Int, likedItemType: LikeType, siteId: Long, itemId: Long): List<LikeModel> {
     val likersList = mutableListOf<LikeModel>()
@@ -41,8 +41,8 @@ fun getDefaultLikers(numLikers: Int, likedItemType: LikeType, siteId: Long, item
             likerId = 100L + i * 1000L
             preferredBlogId = 10L + i * 100L
             preferredBlogName = "Liker $i preferred blog name"
-            preferredBlogUrl = "https://liker$i-preferred-blog.wordpress.com"
-            preferredBlogBlavatarUrl = "https://liker$i-preferred-blog.wordpress.com/avatar.jpg"
+            preferredBlogUrl = "https://liker$i-preferred-blog.sitebay.com"
+            preferredBlogBlavatarUrl = "https://liker$i-preferred-blog.sitebay.com/avatar.jpg"
         })
     }
 

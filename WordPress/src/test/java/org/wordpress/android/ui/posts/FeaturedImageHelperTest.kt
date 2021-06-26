@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
 import com.nhaarman.mockitokotlin2.any
@@ -17,23 +17,23 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyInt
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.MediaAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.fluxc.store.UploadStore
-import org.wordpress.android.ui.posts.FeaturedImageHelper.EnqueueFeaturedImageResult
-import org.wordpress.android.ui.posts.FeaturedImageHelper.FeaturedImageState
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
-import org.wordpress.android.ui.reader.utils.SiteAccessibilityInfo
-import org.wordpress.android.ui.uploads.UploadServiceFacade
-import org.wordpress.android.util.FluxCUtilsWrapper
-import org.wordpress.android.util.SiteUtilsWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.MediaAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.fluxc.store.UploadStore
+import org.sitebay.android.ui.posts.FeaturedImageHelper.EnqueueFeaturedImageResult
+import org.sitebay.android.ui.posts.FeaturedImageHelper.FeaturedImageState
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.ui.reader.utils.SiteAccessibilityInfo
+import org.sitebay.android.ui.uploads.UploadServiceFacade
+import org.sitebay.android.util.FluxCUtilsWrapper
+import org.sitebay.android.util.SiteUtilsWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 
 @RunWith(MockitoJUnitRunner::class)
 class FeaturedImageHelperTest {

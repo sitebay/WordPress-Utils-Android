@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.prefs.timezone
+package org.sitebay.android.ui.prefs.timezone
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.databinding.SiteSettingsTimezoneBottomSheetListItemBinding
-import org.wordpress.android.ui.prefs.timezone.TimezonesList.TimezoneItem
+import org.sitebay.android.databinding.SiteSettingsTimezoneBottomSheetListItemBinding
+import org.sitebay.android.ui.prefs.timezone.TimezonesList.TimezoneItem
 
 class TimezoneViewHolder(
     private val binding: SiteSettingsTimezoneBottomSheetListItemBinding

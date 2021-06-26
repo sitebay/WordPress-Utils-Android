@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.reader.subfilter.viewholders
+package org.sitebay.android.ui.reader.subfilter.viewholders
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Tag
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.R
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Tag
+import org.sitebay.android.ui.utils.UiHelpers
 
 class TagViewHolder(
     parent: ViewGroup

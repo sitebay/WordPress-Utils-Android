@@ -1,11 +1,11 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.text.TextUtils
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.preference.PreferenceManager
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 class AppThemeUtils {
     companion object {

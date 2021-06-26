@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.isNull
@@ -9,31 +9,31 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel.Day
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel.Week
-import org.wordpress.android.fluxc.model.stats.PostDetailStatsModel.Year
-import org.wordpress.android.fluxc.store.StatsStore.OnStatsFetched
-import org.wordpress.android.fluxc.store.StatsStore.PostDetailType
-import org.wordpress.android.fluxc.store.StatsStore.StatsError
-import org.wordpress.android.fluxc.store.StatsStore.StatsErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.stats.PostDetailStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsPostProvider
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel.Day
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel.Week
+import org.sitebay.android.fluxc.model.stats.PostDetailStatsModel.Year
+import org.sitebay.android.fluxc.store.StatsStore.OnStatsFetched
+import org.sitebay.android.fluxc.store.StatsStore.PostDetailType
+import org.sitebay.android.fluxc.store.StatsStore.StatsError
+import org.sitebay.android.fluxc.store.StatsStore.StatsErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.stats.PostDetailStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsPostProvider
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class PostDayViewsUseCaseTest : BaseUnitTest() {
     @Mock lateinit var store: PostDetailStore
@@ -110,9 +110,9 @@ class PostDayViewsUseCaseTest : BaseUnitTest() {
 
     /**
      * Note that this test covers an edge condition tracked in GitHub issue
-     * https://github.com/wordpress-mobile/WordPress-Android/issues/10830
+     * https://github.com/sitebay-mobile/WordPress-Android/issues/10830
      * For some context see
-     * See https://github.com/wordpress-mobile/WordPress-Android/pull/10850#issuecomment-559555035
+     * See https://github.com/sitebay-mobile/WordPress-Android/pull/10850#issuecomment-559555035
      */
     @Test
     fun `manage edge condition with data available but empty list`() = test {

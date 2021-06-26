@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -7,14 +7,14 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.ui.reader.utils.DateProvider
-import org.wordpress.android.ui.stats.refresh.utils.DateUtils
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.ui.reader.utils.DateProvider
+import org.sitebay.android.ui.stats.refresh.utils.DateUtils
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class PostSettingsUtilsTest : BaseUnitTest() {
     @Mock lateinit var resourceProvider: ResourceProvider

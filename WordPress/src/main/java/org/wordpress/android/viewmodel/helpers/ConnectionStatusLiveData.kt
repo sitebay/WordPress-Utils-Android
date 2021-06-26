@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.helpers
+package org.sitebay.android.viewmodel.helpers
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -6,10 +6,10 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
 import androidx.lifecycle.LiveData
-import org.wordpress.android.util.distinct
-import org.wordpress.android.viewmodel.helpers.ConnectionStatus.AVAILABLE
-import org.wordpress.android.viewmodel.helpers.ConnectionStatus.UNAVAILABLE
-import org.wordpress.android.viewmodel.helpers.ConnectionStatusLiveData.Factory
+import org.sitebay.android.util.distinct
+import org.sitebay.android.viewmodel.helpers.ConnectionStatus.AVAILABLE
+import org.sitebay.android.viewmodel.helpers.ConnectionStatus.UNAVAILABLE
+import org.sitebay.android.viewmodel.helpers.ConnectionStatusLiveData.Factory
 import javax.inject.Inject
 
 enum class ConnectionStatus {

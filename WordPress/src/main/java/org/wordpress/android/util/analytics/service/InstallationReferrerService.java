@@ -1,11 +1,11 @@
-package org.wordpress.android.util.analytics.service;
+package org.sitebay.android.util.analytics.service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 
 /**

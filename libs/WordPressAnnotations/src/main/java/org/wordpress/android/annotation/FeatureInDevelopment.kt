@@ -1,4 +1,4 @@
-package org.wordpress.android.annotation
+package org.sitebay.android.annotation
 
 @Target(AnnotationTarget.CLASS)
 @Retention(AnnotationRetention.SOURCE)

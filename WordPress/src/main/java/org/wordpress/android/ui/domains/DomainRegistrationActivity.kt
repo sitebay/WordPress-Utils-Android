@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.domains
+package org.sitebay.android.ui.domains
 
 import android.app.Activity
 import android.content.Intent
@@ -6,12 +6,12 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.DomainSuggestionsActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.ScrollableViewInitializedListener
-import org.wordpress.android.ui.domains.DomainRegistrationActivity.DomainRegistrationPurpose.CTA_DOMAIN_CREDIT_REDEMPTION
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.DomainSuggestionsActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.ScrollableViewInitializedListener
+import org.sitebay.android.ui.domains.DomainRegistrationActivity.DomainRegistrationPurpose.CTA_DOMAIN_CREDIT_REDEMPTION
 import javax.inject.Inject
 
 class DomainRegistrationActivity : LocaleAwareActivity(), ScrollableViewInitializedListener {

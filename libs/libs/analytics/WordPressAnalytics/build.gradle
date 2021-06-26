@@ -11,9 +11,9 @@ repositories {
 
 dependencies {
     implementation "com.github.sitebay:Automattic-Tracks-Android:$tracksVersion"
-    implementation 'org.wordpress:utils:1.19.0'
+    implementation 'org.sitebay:utils:1.19.0'
 
-    lintChecks 'org.wordpress:lint:1.0.1'
+    lintChecks 'org.sitebay:lint:1.0.1'
 }
 
 android {

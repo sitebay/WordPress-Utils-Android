@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 enum class ReaderFollowButtonType(
     val value: Int,

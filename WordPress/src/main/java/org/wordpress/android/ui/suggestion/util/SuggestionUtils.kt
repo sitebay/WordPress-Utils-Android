@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.suggestion.util
+package org.sitebay.android.ui.suggestion.util
 
 import android.content.Context
-import org.wordpress.android.datasets.UserSuggestionTable
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.models.UserSuggestion
-import org.wordpress.android.ui.suggestion.Suggestion
-import org.wordpress.android.ui.suggestion.adapters.SuggestionAdapter
-import org.wordpress.android.util.SiteUtils
+import org.sitebay.android.datasets.UserSuggestionTable
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.models.UserSuggestion
+import org.sitebay.android.ui.suggestion.Suggestion
+import org.sitebay.android.ui.suggestion.adapters.SuggestionAdapter
+import org.sitebay.android.util.SiteUtils
 
 object SuggestionUtils {
     @JvmStatic

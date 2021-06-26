@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 enum class PagePostCreationSourcesDetail(val label: String) {
     // post created from android shortcut long pressing on app icon

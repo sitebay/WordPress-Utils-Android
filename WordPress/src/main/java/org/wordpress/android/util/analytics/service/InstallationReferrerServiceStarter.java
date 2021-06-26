@@ -1,4 +1,4 @@
-package org.wordpress.android.util.analytics.service;
+package org.sitebay.android.util.analytics.service;
 
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -8,9 +8,9 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.PersistableBundle;
 
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.util.AppLog;
 
-import static org.wordpress.android.JobServiceId.JOB_INSTALL_REFERRER_SERVICE_ID;
+import static org.sitebay.android.JobServiceId.JOB_INSTALL_REFERRER_SERVICE_ID;
 
 public class InstallationReferrerServiceStarter {
     public static final String ARG_REFERRER = "arg_referrer";

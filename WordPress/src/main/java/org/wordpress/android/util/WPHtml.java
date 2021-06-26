@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 /*
  * Copyright (C) 2007 The Android Open Source Project
@@ -37,12 +37,12 @@ import android.text.style.URLSpan;
 
 import org.ccil.cowan.tagsoup.HTMLSchema;
 import org.ccil.cowan.tagsoup.Parser;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.android.util.helpers.MediaGallery;
-import org.wordpress.android.util.helpers.MediaGalleryImageSpan;
-import org.wordpress.android.util.helpers.WPImageSpan;
-import org.wordpress.android.util.helpers.WPUnderlineSpan;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaGallery;
+import org.sitebay.android.util.helpers.MediaGalleryImageSpan;
+import org.sitebay.android.util.helpers.WPImageSpan;
+import org.sitebay.android.util.helpers.WPUnderlineSpan;
 import org.xml.sax.XMLReader;
 
 import java.util.Locale;

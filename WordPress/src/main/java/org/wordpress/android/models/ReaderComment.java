@@ -1,12 +1,12 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.text.TextUtils;
 
 import org.json.JSONObject;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.HtmlUtils;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.HtmlUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.StringUtils;
 
 public class ReaderComment {
     public long commentId;

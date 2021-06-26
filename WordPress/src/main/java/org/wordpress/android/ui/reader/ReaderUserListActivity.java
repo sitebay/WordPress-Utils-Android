@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,18 +9,18 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.material.appbar.AppBarLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.datasets.ReaderCommentTable;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.ReaderUserTable;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderUserList;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.reader.adapters.ReaderUserAdapter;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.ui.reader.views.ReaderRecyclerView;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.widgets.RecyclerItemDecoration;
+import org.sitebay.android.R;
+import org.sitebay.android.datasets.ReaderCommentTable;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.ReaderUserTable;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderUserList;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.reader.adapters.ReaderUserAdapter;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.ui.reader.views.ReaderRecyclerView;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.widgets.RecyclerItemDecoration;
 
 /*
  * displays a list of users who like a specific reader post

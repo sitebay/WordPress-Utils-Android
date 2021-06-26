@@ -3,7 +3,7 @@
     <background android:drawable="@color/gray_10"/>
     <foreground>
         <inset
-            android:drawable="@drawable/ic_bell_blue_wordpress_48dp"
+            android:drawable="@drawable/ic_bell_blue_sitebay_48dp"
             android:inset="20%" />
     </foreground>
 </adaptive-icon>

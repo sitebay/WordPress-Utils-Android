@@ -1,10 +1,10 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.viewmodel.Event
 
 class CommentFullScreenDialogViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: CommentFullScreenDialogViewModel

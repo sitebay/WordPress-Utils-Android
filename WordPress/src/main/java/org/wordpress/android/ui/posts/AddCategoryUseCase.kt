@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.TaxonomyActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.TermModel
-import org.wordpress.android.fluxc.store.TaxonomyStore
-import org.wordpress.android.fluxc.store.TaxonomyStore.RemoteTermPayload
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.TaxonomyActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.TermModel
+import org.sitebay.android.fluxc.store.TaxonomyStore
+import org.sitebay.android.fluxc.store.TaxonomyStore.RemoteTermPayload
 import javax.inject.Inject
 
 @Reusable

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.backup.download.usecases
+package org.sitebay.android.ui.jetpack.backup.download.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -9,23 +9,23 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.action.ActivityLogAction.FETCH_BACKUP_DOWNLOAD_STATE
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.fluxc.model.activity.BackupDownloadStatusModel
-import org.wordpress.android.fluxc.store.ActivityLogStore
-import org.wordpress.android.fluxc.store.ActivityLogStore.BackupDownloadStatusError
-import org.wordpress.android.fluxc.store.ActivityLogStore.BackupDownloadStatusErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.ActivityLogStore.OnBackupDownloadStatusFetched
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Complete
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Empty
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.RemoteRequestFailure
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Progress
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.action.ActivityLogAction.FETCH_BACKUP_DOWNLOAD_STATE
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.fluxc.model.activity.BackupDownloadStatusModel
+import org.sitebay.android.fluxc.store.ActivityLogStore
+import org.sitebay.android.fluxc.store.ActivityLogStore.BackupDownloadStatusError
+import org.sitebay.android.fluxc.store.ActivityLogStore.BackupDownloadStatusErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.ActivityLogStore.OnBackupDownloadStatusFetched
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Complete
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Empty
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.RemoteRequestFailure
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Progress
+import org.sitebay.android.util.NetworkUtilsWrapper
 import java.util.Calendar
 import java.util.Date
 
@@ -268,7 +268,7 @@ class GetBackupDownloadStatusUseCaseTest : BaseUnitTest() {
     }
 
     private val rewindId = "rewindId"
-    private val url = "www.wordpress.com"
+    private val url = "www.sitebay.com"
     private val downloadId = 100L
     private val progress = 50
     private val published = Date()

@@ -1,8 +1,8 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
-import org.wordpress.android.annotation.Experiment
-import org.wordpress.android.util.config.ExampleExperimentConfig.Companion.CONTROL_GROUP
-import org.wordpress.android.util.config.ExampleExperimentConfig.Companion.EXAMPLE_EXPERIMENT_REMOTE_FIELD
+import org.sitebay.android.annotation.Experiment
+import org.sitebay.android.util.config.ExampleExperimentConfig.Companion.CONTROL_GROUP
+import org.sitebay.android.util.config.ExampleExperimentConfig.Companion.EXAMPLE_EXPERIMENT_REMOTE_FIELD
 import javax.inject.Inject
 
 /**

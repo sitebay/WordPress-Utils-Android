@@ -1,4 +1,4 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.reader.subfilter.viewholders
+package org.sitebay.android.ui.reader.subfilter.viewholders
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Site
-import org.wordpress.android.ui.stats.refresh.utils.ONE_THOUSAND
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.UrlUtils
+import org.sitebay.android.R
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Site
+import org.sitebay.android.ui.stats.refresh.utils.ONE_THOUSAND
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.UrlUtils
 
 class SiteViewHolder(
     parent: ViewGroup

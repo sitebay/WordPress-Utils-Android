@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.fluxc.store.AccountStore.AuthEmailPayloadScheme
-import org.wordpress.android.fluxc.store.SiteStore.ConnectSiteInfoPayload
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowSiteAddressError
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.fluxc.store.AccountStore.AuthEmailPayloadScheme
+import org.sitebay.android.fluxc.store.SiteStore.ConnectSiteInfoPayload
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowSiteAddressError
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 import kotlin.text.RegexOption.IGNORE_CASE
 

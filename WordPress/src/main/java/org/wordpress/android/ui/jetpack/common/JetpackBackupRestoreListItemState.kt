@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.jetpack.common
+package org.sitebay.android.ui.jetpack.common
 
 import androidx.annotation.ColorRes
 import androidx.annotation.DimenRes
 import androidx.annotation.DrawableRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.R
+import org.sitebay.android.ui.utils.UiString
 
 sealed class JetpackBackupRestoreListItemState(override val type: ViewType) : JetpackListItemState(type) {
     data class SubHeaderState(

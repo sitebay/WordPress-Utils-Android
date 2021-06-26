@@ -1,10 +1,10 @@
-package org.wordpress.android.modules;
+package org.sitebay.android.modules;
 
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.network.rest.wpcom.auth.AccessToken;
-import org.wordpress.android.networking.OAuthAuthenticator;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.network.rest.wpcom.auth.AccessToken;
+import org.sitebay.android.networking.OAuthAuthenticator;
 
 import javax.inject.Singleton;
 

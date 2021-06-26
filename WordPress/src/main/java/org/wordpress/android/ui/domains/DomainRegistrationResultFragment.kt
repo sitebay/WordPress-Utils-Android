@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.domains
+package org.sitebay.android.ui.domains
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
@@ -7,9 +7,9 @@ import android.view.View
 import androidx.core.text.HtmlCompat
 import androidx.core.text.HtmlCompat.FROM_HTML_MODE_COMPACT
 import androidx.fragment.app.Fragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.DomainRegistrationResultFragmentBinding
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.DomainRegistrationResultFragmentBinding
 
 class DomainRegistrationResultFragment : Fragment(R.layout.domain_registration_result_fragment) {
     private var domainName: String? = null

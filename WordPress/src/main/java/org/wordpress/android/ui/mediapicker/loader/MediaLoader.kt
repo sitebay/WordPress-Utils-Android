@@ -1,24 +1,24 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.flow
-import org.wordpress.android.ui.mediapicker.MediaItem
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.DomainModel.EmptyState
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.LoadAction.ClearFilter
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.LoadAction.Filter
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.LoadAction.NextPage
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.LoadAction.Refresh
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.LoadAction.Retry
-import org.wordpress.android.ui.mediapicker.loader.MediaLoader.LoadAction.Start
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Empty
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Failure
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Success
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.ui.mediapicker.MediaItem
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.DomainModel.EmptyState
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.LoadAction.ClearFilter
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.LoadAction.Filter
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.LoadAction.NextPage
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.LoadAction.Refresh
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.LoadAction.Retry
+import org.sitebay.android.ui.mediapicker.loader.MediaLoader.LoadAction.Start
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Empty
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Failure
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Success
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 data class MediaLoader(
     private val mediaSource: MediaSource,

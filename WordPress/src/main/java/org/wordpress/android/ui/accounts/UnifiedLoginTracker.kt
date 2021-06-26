@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.UNIFIED_LOGIN_FAILURE
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.UNIFIED_LOGIN_INTERACTION
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.UNIFIED_LOGIN_STEP
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Source.DEFAULT
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.MAIN
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.UNIFIED_LOGIN_FAILURE
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.UNIFIED_LOGIN_INTERACTION
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.UNIFIED_LOGIN_STEP
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Source.DEFAULT
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.MAIN
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -119,13 +119,13 @@ class UnifiedLoginTracker
         DEEPLINK("deeplink"),
         REAUTHENTICATION("reauthentication"),
         SELF_HOSTED("self_hosted"),
-        ADD_WORDPRESS_COM_ACCOUNT("add_wordpress_com_account"),
+        ADD_WORDPRESS_COM_ACCOUNT("add_sitebay_com_account"),
         DEFAULT("default")
     }
 
     enum class Flow(val value: String) {
         PROLOGUE("prologue"),
-        WORDPRESS_COM("wordpress_com"),
+        WORDPRESS_COM("sitebay_com"),
         GOOGLE_LOGIN("google_login"),
         SMART_LOCK_LOGIN("smart_lock_login"),
         LOGIN_MAGIC_LINK("login_magic_link"),
@@ -154,7 +154,7 @@ class UnifiedLoginTracker
         SUBMIT("submit"),
         CONTINUE("continue"),
         DISMISS("dismiss"),
-        CONTINUE_WITH_WORDPRESS_COM("continue_with_wordpress_com"),
+        CONTINUE_WITH_WORDPRESS_COM("continue_with_sitebay_com"),
         LOGIN_WITH_SITE_ADDRESS("login_with_site_address"),
         LOGIN_WITH_GOOGLE("login_with_google"),
         FORGOTTEN_PASSWORD("forgotten_password"),

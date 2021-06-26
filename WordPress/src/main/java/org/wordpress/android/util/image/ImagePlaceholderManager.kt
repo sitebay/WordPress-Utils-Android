@@ -1,6 +1,6 @@
-package org.wordpress.android.util.image
+package org.sitebay.android.util.image
 
-import org.wordpress.android.R
+import org.sitebay.android.R
 import javax.inject.Inject
 import javax.inject.Singleton
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.domains
+package org.sitebay.android.viewmodel.domains
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.times
@@ -11,15 +11,15 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.SiteAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore.SuggestDomainsPayload
-import org.wordpress.android.ui.plans.PlansConstants
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.helpers.Debouncer
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.SiteAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore.SuggestDomainsPayload
+import org.sitebay.android.ui.plans.PlansConstants
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.helpers.Debouncer
 
 class DomainSuggestionsViewModelTest : BaseUnitTest() {
     @Mock lateinit var dispatcher: Dispatcher

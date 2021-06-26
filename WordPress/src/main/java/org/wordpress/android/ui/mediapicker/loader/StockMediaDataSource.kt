@@ -1,21 +1,21 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.StockMediaStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.mediapicker.MediaItem
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.StockMediaIdentifier
-import org.wordpress.android.ui.mediapicker.MediaType.IMAGE
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Empty
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Failure
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Success
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.StockMediaStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.mediapicker.MediaItem
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.StockMediaIdentifier
+import org.sitebay.android.ui.mediapicker.MediaType.IMAGE
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Empty
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Failure
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult.Success
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 

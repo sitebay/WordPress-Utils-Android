@@ -19,12 +19,12 @@
             "author": {
                 "ID": 68646169,
                 "login": "thenomadicwordsmith",
-                "email": "thenomadicwordsmith@wordpress.com",
+                "email": "thenomadicwordsmith@sitebay.com",
                 "name": "thenomadicwordsmith",
                 "first_name": "Nomadic",
                 "last_name": "Wordsmith",
                 "nice_name": "thenomadicwordsmith",
-                "URL": "http://thenomadicwordsmith.wordpress.com",
+                "URL": "http://thenomadicwordsmith.sitebay.com",
                 "avatar_URL": "https://0.gravatar.com/avatar/9ba48385fc40dfd9a55a3348d8e7f4d9?s=96&d=identicon&r=G",
                 "profile_URL": "http://en.gravatar.com/thenomadicwordsmith",
                 "site_ID": 71769073
@@ -57,11 +57,11 @@
             "is_reblogged": false,
             "is_following": false,
             "global_ID": "9dc6f7941b6a68fc2323b652c4e9516b",
-            "featured_image": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
+            "featured_image": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
             "post_thumbnail": {
                 "ID": 238,
-                "URL": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
-                "guid": "http://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
+                "URL": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
+                "guid": "http://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
                 "mime_type": "image/jpeg",
                 "width": 4256,
                 "height": 2628
@@ -114,8 +114,8 @@
             "attachments": {
                 "238": {
                     "ID": 238,
-                    "URL": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
-                    "guid": "http://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg",
+                    "URL": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
+                    "guid": "http://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg",
                     "date": "2019-03-20T23:44:49+00:00",
                     "post_ID": 237,
                     "author_ID": 14151046,
@@ -127,9 +127,9 @@
                     "description": "",
                     "alt": "",
                     "thumbnails": {
-                        "thumbnail": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg?w=150",
-                        "medium": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg?w=300",
-                        "large": "https://infocusphotographers.files.wordpress.com/2019/03/art-bright-celebration-1313817.jpg?w=1024"
+                        "thumbnail": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg?w=150",
+                        "medium": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg?w=300",
+                        "large": "https://infocusphotographers.files.sitebay.com/2019/03/art-bright-celebration-1313817.jpg?w=1024"
                     },
                     "height": 2628,
                     "width": 4256,

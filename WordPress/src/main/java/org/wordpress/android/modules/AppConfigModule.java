@@ -1,15 +1,15 @@
-package org.wordpress.android.modules;
+package org.sitebay.android.modules;
 
 import android.content.Context;
 import android.util.Base64;
 
 import com.goterl.lazysodium.utils.Key;
 
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.encryptedlogging.EncryptedLoggingKey;
-import org.wordpress.android.fluxc.network.UserAgent;
-import org.wordpress.android.fluxc.network.rest.wpcom.auth.AppSecrets;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.encryptedlogging.EncryptedLoggingKey;
+import org.sitebay.android.fluxc.network.UserAgent;
+import org.sitebay.android.fluxc.network.rest.wpcom.auth.AppSecrets;
 
 import dagger.Module;
 import dagger.Provides;

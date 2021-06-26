@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import android.content.SharedPreferences
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.DAYS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.MONTHS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.WEEKS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.YEARS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.ANNUAL_STATS
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DETAIL
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.DAYS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.MONTHS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.WEEKS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.YEARS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.ANNUAL_STATS
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.DETAIL
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.INSIGHTS
 import javax.inject.Inject
 
 const val SELECTED_SECTION_KEY = "SELECTED_STATS_SECTION_KEY"

@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config.manual
+package org.sitebay.android.util.config.manual
 
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.verifyZeroInteractions
@@ -9,10 +9,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.config.AppConfig
-import org.wordpress.android.util.config.FeatureConfig
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.config.AppConfig
+import org.sitebay.android.util.config.FeatureConfig
 
 @RunWith(MockitoJUnitRunner::class)
 class ManualFeatureConfigTest {

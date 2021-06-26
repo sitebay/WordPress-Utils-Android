@@ -35,7 +35,7 @@
                 android:contentDescription="@null"
                 android:src="@drawable/ic_checkmark_white_24dp" />
 
-            <org.wordpress.android.util.widgets.AutoResizeTextView
+            <org.sitebay.android.util.widgets.AutoResizeTextView
                 android:id="@+id/btn_moderate_text"
                 style="@style/CommentActionLabel"
                 android:text="@string/mnu_comment_approve" />
@@ -65,7 +65,7 @@
                 android:contentDescription="@null"
                 android:src="@drawable/ic_spam_white_24dp" />
 
-            <org.wordpress.android.util.widgets.AutoResizeTextView
+            <org.sitebay.android.util.widgets.AutoResizeTextView
                 android:id="@+id/btn_spam_text"
                 style="@style/CommentActionLabel"
                 android:text="@string/mnu_comment_spam" />
@@ -94,7 +94,7 @@
                 android:contentDescription="@null"
                 android:src="@drawable/ic_star_outline_white_24dp" />
 
-            <org.wordpress.android.util.widgets.AutoResizeTextView
+            <org.sitebay.android.util.widgets.AutoResizeTextView
                 android:id="@+id/btn_like_text"
                 style="@style/CommentActionLabel"
                 android:text="@string/reader_label_like" />
@@ -124,7 +124,7 @@
                 android:contentDescription="@null"
                 android:src="@drawable/ic_more_horiz_white_24dp" />
 
-            <org.wordpress.android.util.widgets.AutoResizeTextView
+            <org.sitebay.android.util.widgets.AutoResizeTextView
                 android:id="@+id/btn_more_text"
                 style="@style/CommentActionLabel"
                 android:text="@string/more" />

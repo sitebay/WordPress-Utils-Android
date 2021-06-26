@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors
 
 import com.google.gson.JsonObject
 import org.jsoup.nodes.Document
-import org.wordpress.android.util.helpers.MediaFile
+import org.sitebay.android.util.helpers.MediaFile
 
 /**
  * When a File Block's upload is complete, this processor replaces the href pointing to a local file url with a

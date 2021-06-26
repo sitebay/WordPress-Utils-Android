@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.reader.discover
+package org.sitebay.android.ui.reader.discover
 
 import android.text.Spanned
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.reader.discover.ReaderPostCardAction.PrimaryAction
-import org.wordpress.android.ui.reader.discover.ReaderPostCardActionType.SPACER_NO_ACTION
-import org.wordpress.android.ui.reader.discover.interests.TagUiState
-import org.wordpress.android.ui.reader.models.ReaderImageList
-import org.wordpress.android.ui.reader.views.uistates.ReaderBlogSectionUiState
-import org.wordpress.android.ui.utils.UiDimen
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.R
+import org.sitebay.android.ui.reader.discover.ReaderPostCardAction.PrimaryAction
+import org.sitebay.android.ui.reader.discover.ReaderPostCardActionType.SPACER_NO_ACTION
+import org.sitebay.android.ui.reader.discover.interests.TagUiState
+import org.sitebay.android.ui.reader.models.ReaderImageList
+import org.sitebay.android.ui.reader.views.uistates.ReaderBlogSectionUiState
+import org.sitebay.android.ui.utils.UiDimen
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.image.ImageType
 
 sealed class ReaderCardUiState {
     data class ReaderWelcomeBannerCardUiState(@StringRes val titleRes: Int) : ReaderCardUiState()

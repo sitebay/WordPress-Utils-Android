@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections
+package org.sitebay.android.ui.stats.refresh.lists.sections
 
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.Dispatchers
@@ -8,16 +8,16 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.ALL_TIME_STATS
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Text
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Title
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.ALL_TIME_STATS
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Text
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Title
 import javax.inject.Provider
 
 @InternalCoroutinesApi

@@ -53,7 +53,7 @@ Language: hu
     <string name="notifications_empty_list">Nincsenek értesítések</string>
     <string name="email_invalid">Adjunk meg egy valós e-mail címet</string>
     <string name="mnu_comment_spam">Spam</string>
-    <string name="wordpress_blog">WordPress blog</string>
+    <string name="sitebay_blog">WordPress blog</string>
     <string name="comment_status_spam">Spam</string>
     <string name="mnu_comment_trash">Lomtár</string>
     <string name="media_error_no_permission">Nincs elég jogosultság a médiatár megtekitéséhez</string>

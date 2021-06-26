@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
 import android.content.Context
 import androidx.annotation.ColorRes
-import org.wordpress.android.util.HtmlUtils
+import org.sitebay.android.util.HtmlUtils
 import javax.inject.Inject
 
 class HtmlUtilsWrapper @Inject constructor() {

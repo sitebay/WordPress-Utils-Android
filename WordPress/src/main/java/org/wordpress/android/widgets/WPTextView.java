@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 
 import com.google.android.material.textview.MaterialTextView;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 /**
  * Custom TextView - with an option to auto fix widow words.

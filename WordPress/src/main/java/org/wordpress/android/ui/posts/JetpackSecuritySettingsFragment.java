@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,12 +7,12 @@ import android.preference.PreferenceFragment;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.ui.prefs.SiteSettingsInterface;
-import org.wordpress.android.ui.prefs.WPSwitchPreference;
-import org.wordpress.android.util.WPPrefUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.ui.prefs.SiteSettingsInterface;
+import org.sitebay.android.ui.prefs.WPSwitchPreference;
+import org.sitebay.android.util.WPPrefUtils;
 
 @SuppressWarnings("deprecation")
 public class JetpackSecuritySettingsFragment extends PreferenceFragment

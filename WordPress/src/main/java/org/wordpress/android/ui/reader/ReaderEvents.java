@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.ui.reader.actions.ReaderActions;
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateResult;
-import org.wordpress.android.ui.reader.models.ReaderSimplePostList;
-import org.wordpress.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks;
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.ui.reader.actions.ReaderActions;
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateResult;
+import org.sitebay.android.ui.reader.models.ReaderSimplePostList;
+import org.sitebay.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks;
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter;
+import org.sitebay.android.util.StringUtils;
 
 /**
  * Reader-related EventBus event classes

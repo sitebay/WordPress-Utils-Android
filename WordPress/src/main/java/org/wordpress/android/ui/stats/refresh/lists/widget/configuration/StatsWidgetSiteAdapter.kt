@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.configuration
+package org.sitebay.android.ui.stats.refresh.lists.widget.configuration
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
+import org.sitebay.android.util.image.ImageManager
 
 class StatsWidgetSiteAdapter(
     val imageManager: ImageManager

@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
-import org.wordpress.android.ui.mediapicker.MediaItem
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.ui.mediapicker.MediaItem
+import org.sitebay.android.ui.utils.UiString
 
 interface MediaSource {
     suspend fun load(

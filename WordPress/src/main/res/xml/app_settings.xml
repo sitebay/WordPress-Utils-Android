@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="@string/pref_key_app_settings_root">
 
-    <org.wordpress.android.ui.prefs.DetailListPreference
+    <org.sitebay.android.ui.prefs.DetailListPreference
         android:key="@string/pref_key_language"
         android:title="@string/interface_language" />
 
@@ -22,38 +22,38 @@
         android:key="@string/pref_key_privacy_settings"
         android:title="@string/preference_privacy_settings">
 
-        <org.wordpress.android.ui.prefs.WPSwitchPreference
+        <org.sitebay.android.ui.prefs.WPSwitchPreference
             android:defaultValue="true"
             android:icon="@drawable/ic_stats_white_24dp"
             android:key="@string/pref_key_send_usage"
             android:title="@string/preference_collect_information"
             app:iconTint="?attr/wpColorOnSurfaceMedium" />
 
-        <org.wordpress.android.ui.prefs.LearnMorePreference
+        <org.sitebay.android.ui.prefs.LearnMorePreference
             android:title="@string/cookie_policy_learn_more_header"
             app:button="@string/learn_more"
             app:caption="@string/cookie_policy_learn_more_caption"
             app:url="https://www.automattic.com/cookies" />
 
-        <org.wordpress.android.ui.prefs.LearnMorePreference
+        <org.sitebay.android.ui.prefs.LearnMorePreference
             android:title="@string/privacy_policy_learn_more_header"
             app:button="@string/privacy_policy_read"
             app:caption="@string/privacy_policy_learn_more_caption"
             app:url="https://www.automattic.com/privacy" />
 
-        <org.wordpress.android.ui.prefs.LearnMorePreference
+        <org.sitebay.android.ui.prefs.LearnMorePreference
             android:title="@string/ccpa_privacy_notice_header"
             app:button="@string/ccpa_privacy_notice_read"
             app:caption="@string/ccpa_privacy_notice_caption"
             app:url="https://automattic.com/privacy/#california-consumer-privacy-act-ccpa" />
 
-        <org.wordpress.android.ui.prefs.LearnMorePreference
+        <org.sitebay.android.ui.prefs.LearnMorePreference
             android:title="@string/third_party_policy_learn_more_header"
             app:button="@string/learn_more"
             app:caption="@string/third_party_policy_learn_more_caption"
             app:url="https://www.automattic.com/cookies" />
 
-        <org.wordpress.android.ui.prefs.WPSwitchPreference
+        <org.sitebay.android.ui.prefs.WPSwitchPreference
             android:defaultValue="true"
             android:icon="@drawable/ic_bug_white_24dp"
             android:key="@string/pref_key_send_crash"
@@ -76,13 +76,13 @@
         android:key="@string/pref_key_optimize_media"
         android:title="@string/media">
 
-        <org.wordpress.android.ui.prefs.WPSwitchPreference
+        <org.sitebay.android.ui.prefs.WPSwitchPreference
             android:id="@+id/pref_optimize_image"
             android:key="@string/pref_key_optimize_image"
             android:summary="@string/site_settings_optimize_images_summary"
             android:title="@string/site_settings_optimize_images" />
 
-        <org.wordpress.android.ui.prefs.DetailListPreference
+        <org.sitebay.android.ui.prefs.DetailListPreference
             android:id="@+id/pref_default_image_width"
             android:dependency="@string/pref_key_optimize_image"
             android:entries="@array/site_settings_image_max_size_entries"
@@ -91,7 +91,7 @@
             android:title="@string/site_settings_default_image_width_title"
             app:longClickHint="@string/site_settings_image_width_hint" />
 
-        <org.wordpress.android.ui.prefs.DetailListPreference
+        <org.sitebay.android.ui.prefs.DetailListPreference
             android:id="@+id/pref_default_image_quality"
             android:dependency="@string/pref_key_optimize_image"
             android:entries="@array/site_settings_image_quality_entries"
@@ -100,19 +100,19 @@
             android:title="@string/site_settings_default_image_quality_title"
             app:longClickHint="@string/site_settings_image_quality_hint" />
 
-        <org.wordpress.android.ui.prefs.WPSwitchPreference
+        <org.sitebay.android.ui.prefs.WPSwitchPreference
             android:id="@+id/pref_strip_image_location"
             android:defaultValue="false"
             android:key="@string/pref_key_strip_image_location"
             android:title="@string/preference_strip_image_location" />
 
-        <org.wordpress.android.ui.prefs.WPSwitchPreference
+        <org.sitebay.android.ui.prefs.WPSwitchPreference
             android:id="@+id/pref_optimize_video"
             android:key="@string/pref_key_optimize_video"
             android:summary="@string/site_settings_optimize_video_summary"
             android:title="@string/site_settings_optimize_videos" />
 
-        <org.wordpress.android.ui.prefs.DetailListPreference
+        <org.sitebay.android.ui.prefs.DetailListPreference
             android:id="@+id/pref_default_video_size"
             android:dependency="@string/pref_key_optimize_video"
             android:entries="@array/site_settings_video_width_entries"
@@ -121,7 +121,7 @@
             android:title="@string/site_settings_default_video_width_title"
             app:longClickHint="@string/site_settings_video_width_hint" />
 
-        <org.wordpress.android.ui.prefs.DetailListPreference
+        <org.sitebay.android.ui.prefs.DetailListPreference
             android:id="@+id/pref_default_video_quality"
             android:dependency="@string/pref_key_optimize_video"
             android:entries="@array/site_settings_video_bitrate_entries"

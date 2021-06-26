@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.net.Uri
 import com.nhaarman.mockitokotlin2.any
@@ -11,16 +11,16 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.utils.AuthenticationUtils
-import org.wordpress.android.util.FileProvider
-import org.wordpress.android.util.FluxCUtilsWrapper
-import org.wordpress.android.util.MediaUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.utils.AuthenticationUtils
+import org.sitebay.android.util.FileProvider
+import org.sitebay.android.util.FluxCUtilsWrapper
+import org.sitebay.android.util.MediaUtilsWrapper
 import java.io.File
 
 @RunWith(MockitoJUnitRunner::class)

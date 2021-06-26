@@ -189,7 +189,7 @@ Language: gd_GB
     <string name="privacy_policy">Am poileasaidh prìobhaideachd</string>
     <string name="local_changes">Atharraichean ionadail</string>
     <string name="image_settings">Roghainnean an deilbh</string>
-    <string name="wordpress_blog">Bloga WordPress</string>
+    <string name="sitebay_blog">Bloga WordPress</string>
     <string name="error_blog_hidden">’S e bloga falaichte a tha ann is cha b’ urrainn dhuinn a luchdadh. Cuir an comas e sna roghainnean is feuch ris a-rithist.</string>
     <string name="fatal_db_error">Thachair mearachd fhad ’s a bha sinn a’ cruthachadh stòr-dàta nan aplacaidean. Feuch is stàlaich an aplacaid às ùr.</string>
     <string name="reader_title_applog">Loga na h-aplacaid</string>

@@ -25,7 +25,7 @@
                 android:focusable="true"
                 android:orientation="vertical">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/current_theme"
@@ -33,7 +33,7 @@
                     android:textAppearance="?attr/textAppearanceCaption"
                     android:textStyle="bold" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/header_theme_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                         android:src="@drawable/ic_customize_white_24dp"
                         app:tint="?attr/wpColorOnSurfaceMedium" />
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -103,7 +103,7 @@
                         android:src="@drawable/ic_info_outline_white_24dp"
                         app:tint="?attr/wpColorOnSurfaceMedium" />
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
@@ -135,7 +135,7 @@
                         android:src="@drawable/ic_help_outline_white_24dp"
                         app:tint="?attr/wpColorOnSurfaceMedium" />
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"

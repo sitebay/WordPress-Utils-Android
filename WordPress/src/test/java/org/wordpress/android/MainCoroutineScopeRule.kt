@@ -1,4 +1,4 @@
-package org.wordpress.android
+package org.sitebay.android
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

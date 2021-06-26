@@ -40,6 +40,6 @@ WordPress adalah kreator situs web sumber terbuka, yang berarti siapa pun bisa m
 
 Entah Anda membutuhkan pembuat situs web untuk menghasilkan situs web atau sebagai pembuat blog sederhana, WordPress bisa membantu. Memberikan desain yang indah, fitur yang hebat, dan kebebasan membuat apa pun yang Anda inginkan.
 
-WordPress untuk Android mendukung situs yang di-hosting sendiri yang menjalankan WordPress 4.0 dan yang lebih baru, serta mendukung semua situs yang ada di WordPress.com. Sama seperti WordPress, WordPress untuk Android merupakan sumber terbuka. Pelajari selengkapnya di https://wp.me/P7jrAc-tJ.  Memerlukan bantuan berkaitan dengan aplikasi? Kirim tweet ke kami di @WPAndroid, atau kunjungi forum kami di https://android.forums.wordpress.org/forum/troubleshooting.
+WordPress untuk Android mendukung situs yang di-hosting sendiri yang menjalankan WordPress 4.0 dan yang lebih baru, serta mendukung semua situs yang ada di WordPress.com. Sama seperti WordPress, WordPress untuk Android merupakan sumber terbuka. Pelajari selengkapnya di https://wp.me/P7jrAc-tJ.  Memerlukan bantuan berkaitan dengan aplikasi? Kirim tweet ke kami di @WPAndroid, atau kunjungi forum kami di https://android.forums.sitebay.org/forum/troubleshooting.
 
 Pemberitahuan privasi pengguna di California: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa.

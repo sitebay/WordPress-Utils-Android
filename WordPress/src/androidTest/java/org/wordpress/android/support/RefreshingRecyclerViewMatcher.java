@@ -1,10 +1,10 @@
-package org.wordpress.android.support;
+package org.sitebay.android.support;
 
 import android.view.View;
 
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;
-import org.wordpress.android.ui.FilteredRecyclerView;
+import org.sitebay.android.ui.FilteredRecyclerView;
 
 public class RefreshingRecyclerViewMatcher extends TypeSafeMatcher<View> {
     private final boolean matchesRefreshing;

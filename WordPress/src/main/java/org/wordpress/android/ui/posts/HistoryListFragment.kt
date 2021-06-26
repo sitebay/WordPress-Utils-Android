@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.os.Bundle
@@ -9,17 +9,17 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.HistoryListFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.history.HistoryAdapter
-import org.wordpress.android.ui.history.HistoryListItem
-import org.wordpress.android.ui.history.HistoryListItem.Revision
-import org.wordpress.android.util.WPSwipeToRefreshHelper
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper
-import org.wordpress.android.viewmodel.history.HistoryViewModel
-import org.wordpress.android.viewmodel.history.HistoryViewModel.HistoryListStatus
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.HistoryListFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.history.HistoryAdapter
+import org.sitebay.android.ui.history.HistoryListItem
+import org.sitebay.android.ui.history.HistoryListItem.Revision
+import org.sitebay.android.util.WPSwipeToRefreshHelper
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper
+import org.sitebay.android.viewmodel.history.HistoryViewModel
+import org.sitebay.android.viewmodel.history.HistoryViewModel.HistoryListStatus
 import javax.inject.Inject
 
 class HistoryListFragment : Fragment(R.layout.history_list_fragment) {

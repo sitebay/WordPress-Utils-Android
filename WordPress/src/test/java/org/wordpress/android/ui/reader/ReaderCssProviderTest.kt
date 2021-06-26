@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
@@ -8,9 +8,9 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.reader.utils.DateProvider
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.reader.utils.DateProvider
+import org.sitebay.android.util.NetworkUtilsWrapper
 import java.util.Date
 import java.util.concurrent.TimeUnit
 

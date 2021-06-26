@@ -1,6 +1,6 @@
-package org.wordpress.android.models
+package org.sitebay.android.models
 
-import org.wordpress.android.R
+import org.sitebay.android.R
 import javax.inject.Inject
 
 class NoticonUtils

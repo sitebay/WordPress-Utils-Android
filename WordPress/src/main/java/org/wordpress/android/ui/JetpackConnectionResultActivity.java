@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,30 +8,30 @@ import android.text.TextUtils;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.login.LoginMode;
-import org.wordpress.android.ui.accounts.LoginActivity;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.login.LoginMode;
+import org.sitebay.android.ui.accounts.LoginActivity;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.WordPress.SITE;
-import static org.wordpress.android.ui.RequestCodes.JETPACK_LOGIN;
+import static org.sitebay.android.WordPress.SITE;
+import static org.sitebay.android.ui.RequestCodes.JETPACK_LOGIN;
 
 /**
  * An activity to handle result of Jetpack connection
  * <p>
- * wordpress://jetpack-connection?reason={error}
+ * sitebay://jetpack-connection?reason={error}
  * <p>
  * Redirects users to the stats activity if the jetpack connection was succesful
  */

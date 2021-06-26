@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
@@ -9,15 +9,15 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.config.AppConfig.FeatureState
-import org.wordpress.android.util.config.AppConfig.FeatureState.BuildConfigValue
-import org.wordpress.android.util.config.AppConfig.FeatureState.DefaultValue
-import org.wordpress.android.util.config.AppConfig.FeatureState.ManuallyOverriden
-import org.wordpress.android.util.config.AppConfig.FeatureState.RemoteValue
-import org.wordpress.android.util.config.AppConfig.FeatureState.StaticValue
-import org.wordpress.android.util.config.manual.ManualFeatureConfig
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.config.AppConfig.FeatureState
+import org.sitebay.android.util.config.AppConfig.FeatureState.BuildConfigValue
+import org.sitebay.android.util.config.AppConfig.FeatureState.DefaultValue
+import org.sitebay.android.util.config.AppConfig.FeatureState.ManuallyOverriden
+import org.sitebay.android.util.config.AppConfig.FeatureState.RemoteValue
+import org.sitebay.android.util.config.AppConfig.FeatureState.StaticValue
+import org.sitebay.android.util.config.manual.ManualFeatureConfig
 
 @RunWith(Parameterized::class)
 class AppConfigParametrizedTest(

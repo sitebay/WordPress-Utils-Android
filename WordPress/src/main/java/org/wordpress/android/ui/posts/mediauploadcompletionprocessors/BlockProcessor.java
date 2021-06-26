@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors;
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -6,12 +6,12 @@ import com.google.gson.JsonParser;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Document.OutputSettings;
-import org.wordpress.android.editor.Utils;
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.editor.Utils;
+import org.sitebay.android.util.helpers.MediaFile;
 
 import java.util.regex.Matcher;
 
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_CAPTURES;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_CAPTURES;
 
 /**
  * Abstract class to be extended for each enumerated {@link MediaBlockType}.
@@ -44,7 +44,7 @@ public abstract class BlockProcessor {
     BlockProcessor(String localId, MediaFile mediaFile) {
         mLocalId = localId;
         mRemoteId = mediaFile.getMediaId();
-        mRemoteUrl = org.wordpress.android.util.StringUtils.notNullStr(Utils.escapeQuotes(mediaFile.getFileURL()));
+        mRemoteUrl = org.sitebay.android.util.StringUtils.notNullStr(Utils.escapeQuotes(mediaFile.getFileURL()));
     }
 
     private JsonObject parseJson(String blockJson) {

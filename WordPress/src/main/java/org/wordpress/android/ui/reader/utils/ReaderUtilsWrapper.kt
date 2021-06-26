@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
 import android.content.Context
 import dagger.Reusable
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagType
-import org.wordpress.android.ui.reader.services.update.TagUpdateClientUtilsProvider
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagType
+import org.sitebay.android.ui.reader.services.update.TagUpdateClientUtilsProvider
 import javax.inject.Inject
 
 /**

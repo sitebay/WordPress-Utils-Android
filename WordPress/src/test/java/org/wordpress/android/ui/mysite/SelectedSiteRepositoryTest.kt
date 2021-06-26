@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.doAnswer
@@ -12,12 +12,12 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.SiteAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.prefs.SiteSettingsInterfaceWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.SiteAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.prefs.SiteSettingsInterfaceWrapper
 
 class SelectedSiteRepositoryTest : BaseUnitTest() {
     @Mock lateinit var dispatcher: Dispatcher

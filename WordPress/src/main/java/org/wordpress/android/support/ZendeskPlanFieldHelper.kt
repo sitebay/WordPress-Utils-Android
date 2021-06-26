@@ -1,8 +1,8 @@
-package org.wordpress.android.support
+package org.sitebay.android.support
 
 import com.automattic.android.tracks.crashlogging.CrashLogging
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.SUPPORT
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.SUPPORT
 
 const val ZENDESK_UNKNOWN_PLAN_IDS_ERROR = "See issue #12064; zendesk-unknown-plan-ids"
 const val UNKNOWN_PLAN = "unknown-plan"

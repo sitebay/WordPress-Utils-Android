@@ -6,7 +6,7 @@
     app:startDestination="@+id/preview_dest">
     <fragment
         android:id="@+id/preview_dest"
-        android:name="org.wordpress.android.imageeditor.preview.PreviewImageFragment"
+        android:name="org.sitebay.android.imageeditor.preview.PreviewImageFragment"
         tools:layout="@layout/preview_image_fragment">
         <action
             android:id="@+id/action_previewFragment_to_cropFragment"
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/crop_dest"
-        android:name="org.wordpress.android.imageeditor.crop.CropFragment">
+        android:name="org.sitebay.android.imageeditor.crop.CropFragment">
         <argument
             android:name="inputFilePath"
             app:argType="string"

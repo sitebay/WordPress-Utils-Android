@@ -7,11 +7,11 @@
         android:shortcutShortLabel="@string/stats">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="org.wordpress.android.ui.main.WPMainActivity"
-            android:targetPackage="org.wordpress.android.prealpha">
+            android:targetClass="org.sitebay.android.ui.main.WPMainActivity"
+            android:targetPackage="org.sitebay.android.prealpha">
             <extra
-                android:name="org.wordpress.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT"
-                android:value="org.wordpress.android.ui.ShortcutsNavigator.OPEN_STATS"/>
+                android:name="org.sitebay.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT"
+                android:value="org.sitebay.android.ui.ShortcutsNavigator.OPEN_STATS"/>
         </intent>
     </shortcut>
     <shortcut
@@ -20,11 +20,11 @@
         android:shortcutShortLabel="@string/notifications_screen_title">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="org.wordpress.android.ui.main.WPMainActivity"
-            android:targetPackage="org.wordpress.android.prealpha">
+            android:targetClass="org.sitebay.android.ui.main.WPMainActivity"
+            android:targetPackage="org.sitebay.android.prealpha">
             <extra
-                android:name="org.wordpress.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT"
-                android:value="org.wordpress.android.ui.ShortcutsNavigator.OPEN_NOTIFICATIONS"/>
+                android:name="org.sitebay.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT"
+                android:value="org.sitebay.android.ui.ShortcutsNavigator.OPEN_NOTIFICATIONS"/>
         </intent>
     </shortcut>
     <shortcut
@@ -33,11 +33,11 @@
         android:shortcutShortLabel="@string/new_post">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="org.wordpress.android.ui.main.WPMainActivity"
-            android:targetPackage="org.wordpress.android.prealpha">
+            android:targetClass="org.sitebay.android.ui.main.WPMainActivity"
+            android:targetPackage="org.sitebay.android.prealpha">
             <extra
-                android:name="org.wordpress.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT"
-                android:value="org.wordpress.android.ui.ShortcutsNavigator.CREATE_NEW_POST"/>
+                android:name="org.sitebay.android.ui.ShortcutsNavigator.ACTION_OPEN_SHORTCUT"
+                android:value="org.sitebay.android.ui.ShortcutsNavigator.CREATE_NEW_POST"/>
         </intent>
     </shortcut>
 </shortcuts>

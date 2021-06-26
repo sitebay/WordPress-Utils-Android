@@ -26,17 +26,17 @@
                 android:paddingStart="@dimen/margin_extra_large"
                 android:paddingEnd="@dimen/margin_extra_large">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     style="@style/DomainRegistrationFormTitle"
                     android:paddingTop="@dimen/margin_large"
                     android:paddingBottom="@dimen/margin_medium"
                     android:text="@string/domain_registration_privacy_protection_title" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     style="@style/DomainRegistrationFormSubTitle"
                     android:text="@string/domain_registration_privacy_protection_description" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/tos_explanation"
                     style="@style/DomainRegistrationFormSubTitle"
                     tools:text="@string/domain_registration_privacy_protection_tos" />
@@ -85,13 +85,13 @@
                 android:paddingEnd="@dimen/margin_extra_large"
                 tools:ignore="UselessParent">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     style="@style/DomainRegistrationFormTitle"
                     android:paddingTop="@dimen/margin_large"
                     android:paddingBottom="@dimen/margin_medium"
                     android:text="@string/domain_contact_information_title" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     style="@style/DomainRegistrationFormSubTitle"
                     android:layout_marginBottom="@dimen/margin_medium"
                     android:text="@string/domain_contact_information_description" />
@@ -141,7 +141,7 @@
                         android:hint="@string/email"
                         android:imeOptions="actionNext"
                         android:inputType="textEmailAddress"
-                        tools:text="email@wordpress.com" />
+                        tools:text="email@sitebay.com" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout style="@style/DomainRegistrationDetailsFormTextInputLayout">

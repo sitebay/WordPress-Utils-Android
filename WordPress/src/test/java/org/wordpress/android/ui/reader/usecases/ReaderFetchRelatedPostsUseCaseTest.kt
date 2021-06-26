@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -13,14 +13,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.MainCoroutineScopeRule
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.ReaderEvents.RelatedPostsUpdated
-import org.wordpress.android.ui.reader.actions.ReaderPostActionsWrapper
-import org.wordpress.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState
-import org.wordpress.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Failed
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.MainCoroutineScopeRule
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.ReaderEvents.RelatedPostsUpdated
+import org.sitebay.android.ui.reader.actions.ReaderPostActionsWrapper
+import org.sitebay.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState
+import org.sitebay.android.ui.reader.usecases.ReaderFetchRelatedPostsUseCase.FetchRelatedPostsState.Failed
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

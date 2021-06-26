@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,7 +11,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
 
-import org.wordpress.android.util.ValidationUtils;
+import org.sitebay.android.util.ValidationUtils;
 
 public class EditTextPreferenceWithValidation extends SummaryEditTextPreference {
     private ValidationType mValidationType = ValidationType.NONE;

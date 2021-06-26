@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,7 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 /*
  * Snackbar used with a ViewPager to indicate to the user they can swipe to see more pages

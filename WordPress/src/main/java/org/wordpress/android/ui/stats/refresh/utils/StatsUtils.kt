@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem.Bar
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BarChartItem.Bar
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.text.DecimalFormat
 import java.util.TreeMap
 import javax.inject.Inject

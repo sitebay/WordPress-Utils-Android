@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding

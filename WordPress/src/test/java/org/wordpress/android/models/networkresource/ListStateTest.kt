@@ -1,4 +1,4 @@
-package org.wordpress.android.models.networkresource
+package org.sitebay.android.models.networkresource
 
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.equalTo

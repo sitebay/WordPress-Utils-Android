@@ -1,24 +1,24 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.PostActionBuilder
-import org.wordpress.android.fluxc.model.LocalOrRemoteId
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.list.PostListDescriptor
-import org.wordpress.android.fluxc.model.list.datasource.ListItemDataSourceInterface
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.fluxc.store.PostStore.FetchPostListPayload
-import org.wordpress.android.ui.posts.PostListType
-import org.wordpress.android.ui.posts.PostListType.TRASHED
-import org.wordpress.android.viewmodel.posts.PostListItemIdentifier.EndListIndicatorIdentifier
-import org.wordpress.android.viewmodel.posts.PostListItemIdentifier.LocalPostId
-import org.wordpress.android.viewmodel.posts.PostListItemIdentifier.RemotePostId
-import org.wordpress.android.viewmodel.posts.PostListItemType.EndListIndicatorItem
-import org.wordpress.android.viewmodel.posts.PostListItemType.LoadingItem
-import org.wordpress.android.viewmodel.posts.PostListItemType.PostListItemUiState
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.PostActionBuilder
+import org.sitebay.android.fluxc.model.LocalOrRemoteId
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.list.PostListDescriptor
+import org.sitebay.android.fluxc.model.list.datasource.ListItemDataSourceInterface
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.fluxc.store.PostStore.FetchPostListPayload
+import org.sitebay.android.ui.posts.PostListType
+import org.sitebay.android.ui.posts.PostListType.TRASHED
+import org.sitebay.android.viewmodel.posts.PostListItemIdentifier.EndListIndicatorIdentifier
+import org.sitebay.android.viewmodel.posts.PostListItemIdentifier.LocalPostId
+import org.sitebay.android.viewmodel.posts.PostListItemIdentifier.RemotePostId
+import org.sitebay.android.viewmodel.posts.PostListItemType.EndListIndicatorItem
+import org.sitebay.android.viewmodel.posts.PostListItemType.LoadingItem
+import org.sitebay.android.viewmodel.posts.PostListItemType.PostListItemUiState
 
 sealed class PostListItemIdentifier {
     data class LocalPostId(val id: LocalId) : PostListItemIdentifier()

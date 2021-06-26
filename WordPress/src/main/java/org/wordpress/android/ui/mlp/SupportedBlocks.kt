@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.mlp
+package org.sitebay.android.ui.mlp
 
-import org.wordpress.android.util.BuildConfig
-import org.wordpress.android.util.parseJsonFromAsset
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.util.BuildConfig
+import org.sitebay.android.util.parseJsonFromAsset
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 private const val defaultAssetFilename = "supported-blocks.json"

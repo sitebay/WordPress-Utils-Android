@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.stats.refresh.lists
+package org.sitebay.android.ui.stats.refresh.lists
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.StatsStore.InsightType
-import org.wordpress.android.fluxc.store.StatsStore.PostDetailType
-import org.wordpress.android.fluxc.store.StatsStore.StatsType
-import org.wordpress.android.fluxc.store.StatsStore.TimeStatsType
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.UiModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.LOADING
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.StatsStore.InsightType
+import org.sitebay.android.fluxc.store.StatsStore.PostDetailType
+import org.sitebay.android.fluxc.store.StatsStore.StatsType
+import org.sitebay.android.fluxc.store.StatsStore.TimeStatsType
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.UiModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.EMPTY
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.ERROR
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.LOADING
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 
 class UiModelMapper

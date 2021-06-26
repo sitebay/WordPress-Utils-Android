@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
 import com.nhaarman.mockitokotlin2.argumentCaptor
@@ -9,15 +9,15 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.SiteAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider.SelectedSiteStorage
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.SiteAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider.SelectedSiteStorage
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider.SiteUpdateResult
 
 class StatsSiteProviderTest : BaseUnitTest() {
     @Mock lateinit var siteStore: SiteStore

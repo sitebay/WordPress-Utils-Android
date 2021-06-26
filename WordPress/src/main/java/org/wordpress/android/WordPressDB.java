@@ -1,18 +1,18 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import org.wordpress.android.datasets.NotificationsTable;
-import org.wordpress.android.datasets.PeopleTable;
-import org.wordpress.android.datasets.PublicizeTable;
-import org.wordpress.android.datasets.SiteSettingsTable;
-import org.wordpress.android.datasets.UserSuggestionTable;
-import org.wordpress.android.models.SiteSettingsModel;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.datasets.NotificationsTable;
+import org.sitebay.android.datasets.PeopleTable;
+import org.sitebay.android.datasets.PublicizeTable;
+import org.sitebay.android.datasets.SiteSettingsTable;
+import org.sitebay.android.datasets.UserSuggestionTable;
+import org.sitebay.android.models.SiteSettingsModel;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -26,7 +26,7 @@ public class WordPressDB {
 
 
     // Warning renaming DATABASE_NAME could break previous App backups (see: xml/backup_scheme.xml)
-    private static final String DATABASE_NAME = "wordpress";
+    private static final String DATABASE_NAME = "sitebay";
     private static final String NOTES_TABLE = "notes";
     private static final String THEMES_TABLE = "themes";
 

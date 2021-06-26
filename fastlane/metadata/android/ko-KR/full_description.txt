@@ -40,6 +40,6 @@
 
 웹사이트를 만드는 웹사이트 구축기가 필요하든지, 단순 블로그 제작기가 필요하든지, 워드프레스는 도울 수 있어요. 아름다운 디자인, 강력한 기능, 그리고 원하는 뭐든 만들 수 있는 자유를 주어요.
 
-안드로이드용 워드프레스는 워드프레스 4.0 또는 그 이후가 실행되는 자체 호스팅 사이트와 모든 워드프레스닷컴에 있는 사이트를 지원해요. 마치 워드프레스와 같이, 안드로이드용 워드프레스는 오픈 소스에요. https://wp.me/P7jrAc-tJ에서 더 알아보세요. 앱에 대해 도움이 필요하세요? @WPAndroid으로 트윗을 보내거나, https://android.forums.wordpress.org/forum/troubleshooting에 있는 포럼에 방문하세요.
+안드로이드용 워드프레스는 워드프레스 4.0 또는 그 이후가 실행되는 자체 호스팅 사이트와 모든 워드프레스닷컴에 있는 사이트를 지원해요. 마치 워드프레스와 같이, 안드로이드용 워드프레스는 오픈 소스에요. https://wp.me/P7jrAc-tJ에서 더 알아보세요. 앱에 대해 도움이 필요하세요? @WPAndroid으로 트윗을 보내거나, https://android.forums.sitebay.org/forum/troubleshooting에 있는 포럼에 방문하세요.
 
 캘리포니아 사용자 개인정보 보호 정책 안내: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa.

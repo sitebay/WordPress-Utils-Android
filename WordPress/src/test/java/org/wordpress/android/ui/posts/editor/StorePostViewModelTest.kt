@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import android.content.Context
 import com.nhaarman.mockitokotlin2.any
@@ -10,27 +10,27 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.editor.gutenberg.DialogVisibility
-import org.wordpress.android.editor.gutenberg.DialogVisibility.Hidden
-import org.wordpress.android.editor.gutenberg.DialogVisibility.Showing
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.EditPostRepository.UpdatePostResult
-import org.wordpress.android.ui.posts.PostUtilsWrapper
-import org.wordpress.android.ui.posts.SavePostToDbUseCase
-import org.wordpress.android.ui.posts.editor.StorePostViewModel.ActivityFinishState.SAVED_LOCALLY
-import org.wordpress.android.ui.posts.editor.StorePostViewModel.ActivityFinishState.SAVED_ONLINE
-import org.wordpress.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor
-import org.wordpress.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor.PostFields
-import org.wordpress.android.ui.uploads.UploadServiceFacade
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.editor.gutenberg.DialogVisibility
+import org.sitebay.android.editor.gutenberg.DialogVisibility.Hidden
+import org.sitebay.android.editor.gutenberg.DialogVisibility.Showing
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.EditPostRepository.UpdatePostResult
+import org.sitebay.android.ui.posts.PostUtilsWrapper
+import org.sitebay.android.ui.posts.SavePostToDbUseCase
+import org.sitebay.android.ui.posts.editor.StorePostViewModel.ActivityFinishState.SAVED_LOCALLY
+import org.sitebay.android.ui.posts.editor.StorePostViewModel.ActivityFinishState.SAVED_ONLINE
+import org.sitebay.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor
+import org.sitebay.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor.PostFields
+import org.sitebay.android.ui.uploads.UploadServiceFacade
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.viewmodel.Event
 
 class StorePostViewModelTest : BaseUnitTest() {
     @Mock lateinit var siteStore: SiteStore

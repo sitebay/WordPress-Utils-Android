@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,17 +8,17 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.test
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksError
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.GENERATING_LINKS
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.INITIALIZING
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.MANAGING_AVAILABLE_LINKS
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.test
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksError
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.GENERATING_LINKS
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.INITIALIZING
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.MANAGING_AVAILABLE_LINKS
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 @InternalCoroutinesApi
 class InviteLinksHandlerTest : BaseUnitTest() {

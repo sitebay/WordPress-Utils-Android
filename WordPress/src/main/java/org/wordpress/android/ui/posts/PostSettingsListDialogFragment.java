@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -13,8 +13,8 @@ import androidx.fragment.app.DialogFragment;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.R;
+import org.sitebay.android.util.AppLog;
 
 public class PostSettingsListDialogFragment extends DialogFragment {
     private static final String ARG_DIALOG_TYPE = "dialog_type";

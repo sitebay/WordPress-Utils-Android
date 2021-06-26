@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import android.content.Context
 import com.tenor.android.core.constant.AspectRatioRange
@@ -6,7 +6,7 @@ import com.tenor.android.core.constant.MediaFilter
 import com.tenor.android.core.network.ApiClient
 import com.tenor.android.core.network.IApiClient
 import com.tenor.android.core.response.impl.GifsResponse
-import org.wordpress.android.R
+import org.sitebay.android.R
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

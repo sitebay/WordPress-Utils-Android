@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.view.ViewGroup
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import org.apache.commons.text.StringEscapeUtils
-import org.wordpress.android.databinding.PrepublishingCategoriesRowBinding
-import org.wordpress.android.ui.posts.PrepublishingCategoriesViewModel.PrepublishingCategoriesListItemUiState
-import org.wordpress.android.ui.utils.UiDimen.UIDimenRes
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.PrepublishingCategoriesRowBinding
+import org.sitebay.android.ui.posts.PrepublishingCategoriesViewModel.PrepublishingCategoriesListItemUiState
+import org.sitebay.android.ui.utils.UiDimen.UIDimenRes
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.viewBinding
 
 sealed class PrepublishingCategoriesViewHolder<T : ViewBinding>(
     internal val binding: T

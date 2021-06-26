@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,15 +15,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.ui.main.SitePickerAdapter;
-import org.wordpress.android.ui.main.SitePickerAdapter.SiteList;
-import org.wordpress.android.ui.main.SitePickerAdapter.ViewHolderHandler;
-import org.wordpress.android.ui.media.MediaBrowserActivity;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.util.image.ImageManager;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.ui.main.SitePickerAdapter;
+import org.sitebay.android.ui.main.SitePickerAdapter.SiteList;
+import org.sitebay.android.ui.main.SitePickerAdapter.ViewHolderHandler;
+import org.sitebay.android.ui.media.MediaBrowserActivity;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.util.image.ImageManager;
 
 import javax.inject.Inject;
 

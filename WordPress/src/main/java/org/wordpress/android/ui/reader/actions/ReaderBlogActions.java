@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.actions;
+package org.sitebay.android.ui.reader.actions;
 
 import android.text.TextUtils;
 import android.util.Pair;
@@ -7,26 +7,26 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.datasets.ReaderBlogTable;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.models.ReaderBlog;
-import org.wordpress.android.models.ReaderPostList;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener;
-import org.wordpress.android.ui.reader.actions.ReaderActions.UpdateBlogInfoListener;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.VolleyUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.datasets.ReaderBlogTable;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.models.ReaderBlog;
+import org.sitebay.android.models.ReaderPostList;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener;
+import org.sitebay.android.ui.reader.actions.ReaderActions.UpdateBlogInfoListener;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.VolleyUtils;
 
 import java.net.HttpURLConnection;
 import java.util.Map;
@@ -77,7 +77,7 @@ public class ReaderBlogActions {
         final String actionName = (isAskingToFollow ? "follow" : "unfollow");
         final String path = "sites/" + blogId + "/follows/" + (isAskingToFollow ? "new?source=android" : "mine/delete");
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 boolean success = isFollowActionSuccessful(jsonObject, isAskingToFollow);
@@ -121,7 +121,7 @@ public class ReaderBlogActions {
             return;
         }
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject response) {
                 ReaderActions.callActionListener(actionListener, true);
@@ -267,7 +267,7 @@ public class ReaderBlogActions {
                             + (isAskingToFollow ? "new?source=android&url=" : "delete?url=")
                             + UrlUtils.urlEncode(feedUrl);
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 boolean success = isFollowActionSuccessful(jsonObject, isAskingToFollow);
@@ -515,7 +515,7 @@ public class ReaderBlogActions {
      * can be restored if the user undoes the block
      */
     public static void blockBlogFromReaderRemote(BlockedBlogResult blockResult, final ActionListener actionListener) {
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 ReaderActions.callActionListener(actionListener, true);
@@ -546,7 +546,7 @@ public class ReaderBlogActions {
         }
         undoBlockBlogLocal(blockResult);
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 boolean success = (jsonObject != null && jsonObject.optBoolean("success"));

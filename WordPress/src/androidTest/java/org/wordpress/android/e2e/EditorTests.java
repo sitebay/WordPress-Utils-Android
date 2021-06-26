@@ -1,4 +1,4 @@
-package org.wordpress.android.e2e;
+package org.sitebay.android.e2e;
 
 import android.Manifest.permission;
 
@@ -9,12 +9,12 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
-import org.wordpress.android.R;
-import org.wordpress.android.e2e.pages.EditorPage;
-import org.wordpress.android.e2e.pages.MySitesPage;
-import org.wordpress.android.e2e.pages.SiteSettingsPage;
-import org.wordpress.android.support.BaseTest;
-import org.wordpress.android.ui.WPLaunchActivity;
+import org.sitebay.android.R;
+import org.sitebay.android.e2e.pages.EditorPage;
+import org.sitebay.android.e2e.pages.MySitesPage;
+import org.sitebay.android.e2e.pages.SiteSettingsPage;
+import org.sitebay.android.support.BaseTest;
+import org.sitebay.android.ui.WPLaunchActivity;
 
 import java.time.Instant;
 
@@ -23,9 +23,9 @@ import static androidx.test.espresso.Espresso.pressBack;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static junit.framework.TestCase.assertTrue;
-import static org.wordpress.android.support.WPSupportUtils.checkViewHasText;
-import static org.wordpress.android.support.WPSupportUtils.sleep;
-import static org.wordpress.android.support.WPSupportUtils.waitForElementToNotBeDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.checkViewHasText;
+import static org.sitebay.android.support.WPSupportUtils.sleep;
+import static org.sitebay.android.support.WPSupportUtils.waitForElementToNotBeDisplayed;
 
 public class EditorTests extends BaseTest {
     @Rule
@@ -55,7 +55,7 @@ public class EditorTests extends BaseTest {
         mySitesPage.startNewPost();
     }
 
-    // For more info see Issue: https://github.com/wordpress-mobile/WordPress-Android/issues/14389
+    // For more info see Issue: https://github.com/sitebay-mobile/WordPress-Android/issues/14389
     @Ignore("Classic Editor being deprecated for new posts, test should be adjusted to editing existing classic post")
     @Test
     public void testPublishSimplePost() {
@@ -69,7 +69,7 @@ public class EditorTests extends BaseTest {
         assertTrue(isPublished);
     }
 
-    // For more info see Issue: https://github.com/wordpress-mobile/WordPress-Android/issues/14389
+    // For more info see Issue: https://github.com/sitebay-mobile/WordPress-Android/issues/14389
     @Ignore("Classic Editor being deprecated for new posts, test should be adjusted to editing existing classic post")
     @Test
     public void testPublishFullPost() {

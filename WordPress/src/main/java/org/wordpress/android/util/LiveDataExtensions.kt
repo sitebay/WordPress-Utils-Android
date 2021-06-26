@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 /*
  * Copyright (C) 2017 The Android Open Source Project

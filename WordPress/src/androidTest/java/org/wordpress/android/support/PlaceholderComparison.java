@@ -1,4 +1,4 @@
-package org.wordpress.android.support;
+package org.sitebay.android.support;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,8 +15,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.TransformationUtils;
 
-import org.wordpress.android.util.image.ImagePlaceholderManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.util.image.ImagePlaceholderManager;
+import org.sitebay.android.util.image.ImageType;
 
 import static junit.framework.Assert.fail;
 

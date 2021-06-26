@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.notifications.utils;
+package org.sitebay.android.ui.notifications.utils;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 
-import org.wordpress.android.push.NotificationPushIds;
-import org.wordpress.android.ui.notifications.receivers.NotificationsPendingDraftsReceiver;
-import org.wordpress.android.util.DateTimeUtils;
+import org.sitebay.android.push.NotificationPushIds;
+import org.sitebay.android.ui.notifications.receivers.NotificationsPendingDraftsReceiver;
+import org.sitebay.android.util.DateTimeUtils;
 
 public class PendingDraftsNotificationsUtils {
     // Pending draft notification base request code for alarms

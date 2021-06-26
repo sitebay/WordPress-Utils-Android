@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.view.Menu
 import android.view.MenuItem
@@ -10,14 +10,14 @@ import androidx.lifecycle.Lifecycle.Event.ON_STOP
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LifecycleRegistry
 import androidx.lifecycle.Observer
-import org.wordpress.android.R
-import org.wordpress.android.R.id
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.ActionModeUiModel
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.R
+import org.sitebay.android.R.id
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.ActionModeUiModel
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 @Deprecated("This class is being refactored, if you implement any change, please also update " +
-        "{@link org.wordpress.android.ui.mediapicker.MedaPickerActionModeCallback}")
+        "{@link org.sitebay.android.ui.mediapicker.MedaPickerActionModeCallback}")
 class PhotoPickerActionModeCallback(private val viewModel: PhotoPickerViewModel) : Callback,
         LifecycleOwner {
     private lateinit var lifecycleRegistry: LifecycleRegistry

@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.crop
+package org.sitebay.android.imageeditor.crop
 
 import android.content.Intent
 import android.os.Bundle
@@ -17,18 +17,20 @@ import androidx.navigation.fragment.navArgs
 import com.yalantis.ucrop.UCropFragment
 import com.yalantis.ucrop.UCropFragment.UCropResult
 import com.yalantis.ucrop.UCropFragmentCallback
-import org.wordpress.android.imageeditor.EditImageViewModel
-import org.wordpress.android.imageeditor.ImageEditor
-import org.wordpress.android.imageeditor.R
-import org.wordpress.android.imageeditor.crop.CropViewModel.CropResult
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveFailedState
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveStartState
-import org.wordpress.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveSuccessState
-import org.wordpress.android.imageeditor.crop.CropViewModel.UiState.UiLoadedState
-import org.wordpress.android.imageeditor.crop.CropViewModel.UiState.UiStartLoadingWithBundleState
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.ARG_EDIT_IMAGE_DATA
-import org.wordpress.android.imageeditor.utils.ToastUtils
-import org.wordpress.android.imageeditor.utils.ToastUtils.Duration
+import org.sitebay.android.imageeditor.EditImageViewModel
+import org.sitebay.android.imageeditor.ImageEditor
+import org.sitebay.android.imageeditor.R
+import org.sitebay.android.imageeditor.crop.CropFragmentArgs
+import org.sitebay.android.imageeditor.crop.CropViewModel
+import org.sitebay.android.imageeditor.crop.CropViewModel.CropResult
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveFailedState
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveStartState
+import org.sitebay.android.imageeditor.crop.CropViewModel.ImageCropAndSaveState.ImageCropAndSaveSuccessState
+import org.sitebay.android.imageeditor.crop.CropViewModel.UiState.UiLoadedState
+import org.sitebay.android.imageeditor.crop.CropViewModel.UiState.UiStartLoadingWithBundleState
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.ARG_EDIT_IMAGE_DATA
+import org.sitebay.android.imageeditor.utils.ToastUtils
+import org.sitebay.android.imageeditor.utils.ToastUtils.Duration
 
 /**
  * Container fragment for displaying third party crop fragment and done menu item.

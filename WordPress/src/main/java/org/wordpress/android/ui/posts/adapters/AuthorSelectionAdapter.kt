@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.adapters
+package org.sitebay.android.ui.posts.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,15 +10,15 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.graphics.ColorUtils
 import com.google.android.material.elevation.ElevationOverlayProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.posts.AuthorFilterListItemUIState
-import org.wordpress.android.ui.posts.AuthorFilterSelection
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.GravatarUtils
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.NO_PLACEHOLDER
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.posts.AuthorFilterListItemUIState
+import org.sitebay.android.ui.posts.AuthorFilterSelection
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.GravatarUtils
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.NO_PLACEHOLDER
 import javax.inject.Inject
 
 class AuthorSelectionAdapter(context: Context) : BaseAdapter() {
@@ -102,7 +102,7 @@ class AuthorSelectionAdapter(context: Context) : BaseAdapter() {
         ) {
             /**
              * We can't use error/placeholder drawables as it causes an issue described here
-             * https://github.com/wordpress-mobile/WordPress-Android/issues/9745.
+             * https://github.com/sitebay-mobile/WordPress-Android/issues/9745.
              * It seems getView method always returns convertView == null when used with Spinner. When we invoke
              * imageManager.load..(url..) in the view holder and the 'url' is empty or the requests fails
              * an error/placeholder drawable is used. However, this results in another layout/measure phase

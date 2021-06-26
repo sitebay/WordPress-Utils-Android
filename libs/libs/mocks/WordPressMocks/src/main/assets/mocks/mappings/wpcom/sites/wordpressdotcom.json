@@ -1,7 +1,7 @@
 {
     "request": {
         "method": "GET",
-        "urlPath": "/api/sites/wordpress.com/",
+        "urlPath": "/api/sites/sitebay.com/",
         "queryParameters": {
             "locale": {
                 "matches": "(.*)"

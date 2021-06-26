@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import android.app.DownloadManager
 import android.content.Context
@@ -15,8 +15,8 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.utils.AuthenticationUtils
-import org.wordpress.android.ui.utils.DownloadManagerWrapper
+import org.sitebay.android.ui.utils.AuthenticationUtils
+import org.sitebay.android.ui.utils.DownloadManagerWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class ReaderFileDownloadManagerTest {
@@ -37,7 +37,7 @@ class ReaderFileDownloadManagerTest {
 
     @Test
     fun `enqueues file for download`() {
-        val url = "http://wordpress.com/file_name.pdf"
+        val url = "http://sitebay.com/file_name.pdf"
         val header = "Authentication"
         val headerValue = "token123"
         val fileName = "file_name.pdf"

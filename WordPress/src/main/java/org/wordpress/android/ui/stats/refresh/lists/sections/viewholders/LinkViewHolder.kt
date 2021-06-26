@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Link
-import org.wordpress.android.util.ColorUtils
-import org.wordpress.android.util.getColorResIdFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Link
+import org.sitebay.android.util.ColorUtils
+import org.sitebay.android.util.getColorResIdFromAttribute
 
 class LinkViewHolder(parent: ViewGroup) : BlockListItemViewHolder(
         parent,

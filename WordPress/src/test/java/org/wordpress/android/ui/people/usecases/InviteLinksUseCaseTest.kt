@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people.usecases
+package org.sitebay.android.ui.people.usecases
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,27 +8,27 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R.string
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Failure
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Success
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
-import org.wordpress.android.ui.people.InviteLinksUseCase
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksError
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksLoading
-import org.wordpress.android.ui.people.InviteLinksUseCase.InviteLinksState.UserNotAuthenticated
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.GENERATING_LINKS
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.INITIALIZING
-import org.wordpress.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.MANAGING_AVAILABLE_LINKS
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R.string
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Failure
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Success
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
+import org.sitebay.android.ui.people.InviteLinksUseCase
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksData
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksError
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.InviteLinksLoading
+import org.sitebay.android.ui.people.InviteLinksUseCase.InviteLinksState.UserNotAuthenticated
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.GENERATING_LINKS
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.INITIALIZING
+import org.sitebay.android.ui.people.InviteLinksUseCase.UseCaseScenarioContext.MANAGING_AVAILABLE_LINKS
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
 
 class InviteLinksUseCaseTest : BaseUnitTest() {
     @Mock lateinit var networkUtilsWrapper: NetworkUtilsWrapper

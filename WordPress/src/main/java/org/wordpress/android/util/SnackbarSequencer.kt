@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.app.Activity
 import android.content.Context
@@ -8,10 +8,10 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.widgets.WPSnackbarWrapper
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.widgets.WPSnackbarWrapper
 import java.util.LinkedList
 import java.util.Queue
 import javax.inject.Inject

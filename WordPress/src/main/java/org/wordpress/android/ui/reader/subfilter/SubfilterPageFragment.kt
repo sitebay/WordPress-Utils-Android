@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.subfilter
+package org.sitebay.android.ui.reader.subfilter
 
 import android.content.Context
 import android.os.Bundle
@@ -20,20 +20,20 @@ import androidx.lifecycle.ViewModelStoreOwner
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.android.support.DaggerFragment
-import org.wordpress.android.R
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.HiddenEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.VisibleEmptyUiState
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Site
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Tag
-import org.wordpress.android.ui.reader.subfilter.adapters.SubfilterListAdapter
-import org.wordpress.android.ui.reader.viewmodels.SubfilterPageViewModel
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.config.SeenUnseenWithCounterFeatureConfig
-import org.wordpress.android.widgets.WPTextView
+import org.sitebay.android.R
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.HiddenEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterBottomSheetEmptyUiState.VisibleEmptyUiState
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.SITE
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.ItemType.TAG
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Site
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Tag
+import org.sitebay.android.ui.reader.subfilter.adapters.SubfilterListAdapter
+import org.sitebay.android.ui.reader.viewmodels.SubfilterPageViewModel
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.config.SeenUnseenWithCounterFeatureConfig
+import org.sitebay.android.widgets.WPTextView
 import java.lang.ref.WeakReference
 import javax.inject.Inject
 

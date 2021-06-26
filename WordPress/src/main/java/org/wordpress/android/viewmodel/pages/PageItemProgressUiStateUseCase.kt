@@ -1,11 +1,11 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadQueued
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingMedia
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadQueued
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingMedia
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState.UploadingPost
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState
 import javax.inject.Inject
 
 typealias ShouldShowOverlay = Boolean

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite.dynamiccards
+package org.sitebay.android.ui.mysite.dynamiccards
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,11 +9,11 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.QuickStartMenuFragmentBinding
-import org.wordpress.android.fluxc.model.DynamicCardType
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.QuickStartMenuFragmentBinding
+import org.sitebay.android.fluxc.model.DynamicCardType
+import org.sitebay.android.util.image.ImageManager
 import javax.inject.Inject
 
 class DynamicCardMenuFragment : BottomSheetDialogFragment() {

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.content.DialogInterface
 import android.os.Bundle

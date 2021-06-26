@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login.jetpack
+package org.sitebay.android.ui.accounts.login.jetpack
 
 import android.content.Context
 import android.os.Bundle
@@ -6,16 +6,16 @@ import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.JetpackLoginEmptyViewBinding
-import org.wordpress.android.login.LoginListener
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowInstructions
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Step
-import org.wordpress.android.ui.utils.HtmlMessageUtils
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.JetpackLoginEmptyViewBinding
+import org.sitebay.android.login.LoginListener
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowInstructions
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Step
+import org.sitebay.android.ui.utils.HtmlMessageUtils
 import javax.inject.Inject
 
 @Suppress("TooManyFunctions")

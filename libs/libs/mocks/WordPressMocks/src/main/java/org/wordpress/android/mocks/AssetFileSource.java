@@ -1,4 +1,4 @@
-package org.wordpress.android.mocks;
+package org.sitebay.android.mocks;
 
 import android.content.res.AssetManager;
 

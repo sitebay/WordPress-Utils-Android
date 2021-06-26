@@ -40,7 +40,7 @@
             },
             "is_valid_google_apps_country": true,
             "user_ip_country_code": "IE",
-            "logout_URL": "https://wordpress.com/wp-login.php?action=logout&_wpnonce=2887f970c8&redirect_to=https%3A%2F%2Fwordpress.com%2F",
+            "logout_URL": "https://sitebay.com/wp-login.php?action=logout&_wpnonce=2887f970c8&redirect_to=https%3A%2F%2Fsitebay.com%2F",
             "social_login_connections": null,
             "social_signup_service": null,
             "abtests": {}

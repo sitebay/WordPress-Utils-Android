@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import android.app.Activity
 import android.content.Intent
@@ -20,13 +20,13 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PageParentFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.viewmodel.pages.PageParentViewModel
-import org.wordpress.android.widgets.RecyclerItemDecoration
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PageParentFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.viewmodel.pages.PageParentViewModel
+import org.sitebay.android.widgets.RecyclerItemDecoration
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 

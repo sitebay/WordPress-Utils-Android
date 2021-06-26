@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.content.Context
 import android.graphics.drawable.ColorDrawable
@@ -6,7 +6,7 @@ import android.view.Gravity
 import android.view.View
 import androidx.appcompat.widget.ListPopupWindow
 import com.google.android.material.elevation.ElevationOverlayProvider
-import org.wordpress.android.R.dimen
+import org.sitebay.android.R.dimen
 
 /**
  * Implements the preview mode popup

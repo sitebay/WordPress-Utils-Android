@@ -24,7 +24,7 @@
         android:src="@drawable/ic_stats_alt_white_24dp"
         android:contentDescription="@string/stats"/>
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         app:layout_constraintTop_toBottomOf="@+id/quick_action_stats_button"
         app:layout_constraintStart_toStartOf="@+id/quick_action_stats_button"
         app:layout_constraintEnd_toEndOf="@+id/quick_action_stats_button"
@@ -34,7 +34,7 @@
         android:layout_below="@+id/quick_action_stats_button"
         android:text="@string/stats" />
 
-    <org.wordpress.android.widgets.QuickStartFocusPoint
+    <org.sitebay.android.widgets.QuickStartFocusPoint
         android:id="@+id/quick_start_stats_focus_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         android:src="@drawable/ic_posts_white_24dp"
         android:contentDescription="@string/posts"/>
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         app:layout_constraintTop_toBottomOf="@+id/quick_action_posts_button"
         app:layout_constraintStart_toStartOf="@+id/quick_action_posts_button"
         app:layout_constraintEnd_toEndOf="@+id/quick_action_posts_button"
@@ -80,7 +80,7 @@
         android:src="@drawable/ic_media_white_24dp"
         android:contentDescription="@string/media"/>
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         app:layout_constraintTop_toBottomOf="@+id/quick_action_media_button"
         app:layout_constraintStart_toStartOf="@+id/quick_action_media_button"
         app:layout_constraintEnd_toEndOf="@+id/quick_action_media_button"
@@ -100,7 +100,7 @@
         android:src="@drawable/ic_pages_white_24dp"
         android:contentDescription="@string/pages"/>
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         app:layout_constraintTop_toBottomOf="@+id/quick_action_pages_button"
         app:layout_constraintStart_toStartOf="@+id/quick_action_pages_button"
         app:layout_constraintEnd_toEndOf="@+id/quick_action_pages_button"
@@ -110,7 +110,7 @@
         android:layout_below="@+id/quick_action_pages_button"
         android:text="@string/pages" />
 
-    <org.wordpress.android.widgets.QuickStartFocusPoint
+    <org.sitebay.android.widgets.QuickStartFocusPoint
         android:id="@+id/quick_start_pages_focus_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

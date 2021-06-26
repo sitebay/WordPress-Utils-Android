@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import android.os.Bundle
-import org.wordpress.android.databinding.PagesParentActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
+import org.sitebay.android.databinding.PagesParentActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
 
 class PageParentActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

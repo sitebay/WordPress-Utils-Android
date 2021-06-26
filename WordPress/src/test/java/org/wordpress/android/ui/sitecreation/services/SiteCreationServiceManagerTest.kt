@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.services
+package org.sitebay.android.ui.sitecreation.services
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.argumentCaptor
@@ -13,20 +13,20 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.store.SiteStore.NewSiteError
-import org.wordpress.android.fluxc.store.SiteStore.NewSiteErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.SiteStore.NewSiteErrorType.SITE_NAME_EXISTS
-import org.wordpress.android.fluxc.store.SiteStore.OnNewSiteCreated
-import org.wordpress.android.test
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceManager.SiteCreationServiceManagerListener
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
-import org.wordpress.android.ui.sitecreation.usecases.CreateSiteUseCase
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.store.SiteStore.NewSiteError
+import org.sitebay.android.fluxc.store.SiteStore.NewSiteErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.SiteStore.NewSiteErrorType.SITE_NAME_EXISTS
+import org.sitebay.android.fluxc.store.SiteStore.OnNewSiteCreated
+import org.sitebay.android.test
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceManager.SiteCreationServiceManagerListener
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
+import org.sitebay.android.ui.sitecreation.usecases.CreateSiteUseCase
 
 private const val LANGUAGE_ID = "lang_id"
 private const val NEW_SITE_REMOTE_ID = 1234L

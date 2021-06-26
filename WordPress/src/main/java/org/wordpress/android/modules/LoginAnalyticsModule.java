@@ -1,10 +1,10 @@
-package org.wordpress.android.modules;
+package org.sitebay.android.modules;
 
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.login.LoginAnalyticsListener;
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker;
-import org.wordpress.android.ui.accounts.login.LoginAnalyticsTracker;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.login.LoginAnalyticsListener;
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker;
+import org.sitebay.android.ui.accounts.login.LoginAnalyticsTracker;
 
 import dagger.Module;
 import dagger.Provides;

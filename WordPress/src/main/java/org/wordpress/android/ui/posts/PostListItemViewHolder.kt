@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
@@ -17,23 +17,23 @@ import androidx.annotation.LayoutRes
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.util.expandTouchTargetArea
-import org.wordpress.android.util.getDrawableFromAttribute
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
-import org.wordpress.android.viewmodel.posts.PostListItemAction
-import org.wordpress.android.viewmodel.posts.PostListItemAction.MoreItem
-import org.wordpress.android.viewmodel.posts.PostListItemAction.SingleItem
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState.Determinate
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState.Indeterminate
-import org.wordpress.android.viewmodel.posts.PostListItemType.PostListItemUiState
-import org.wordpress.android.viewmodel.posts.PostListItemUiStateData
-import org.wordpress.android.widgets.PostListButton
-import org.wordpress.android.widgets.WPTextView
+import org.sitebay.android.R
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.util.expandTouchTargetArea
+import org.sitebay.android.util.getDrawableFromAttribute
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
+import org.sitebay.android.viewmodel.posts.PostListItemAction
+import org.sitebay.android.viewmodel.posts.PostListItemAction.MoreItem
+import org.sitebay.android.viewmodel.posts.PostListItemAction.SingleItem
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState.Determinate
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState.Indeterminate
+import org.sitebay.android.viewmodel.posts.PostListItemType.PostListItemUiState
+import org.sitebay.android.viewmodel.posts.PostListItemUiStateData
+import org.sitebay.android.widgets.PostListButton
+import org.sitebay.android.widgets.WPTextView
 import java.util.concurrent.atomic.AtomicBoolean
 
 sealed class PostListItemViewHolder(

@@ -1,22 +1,22 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.networking.ConnectionChangeReceiver.ConnectionChangeEvent
-import org.wordpress.android.ui.suggestion.SuggestionType.Users
-import org.wordpress.android.ui.suggestion.SuggestionType.XPosts
-import org.wordpress.android.ui.suggestion.FinishAttempt.NotExactlyOneAvailable
-import org.wordpress.android.ui.suggestion.FinishAttempt.OnlyOneAvailable
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.SiteUtils
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.networking.ConnectionChangeReceiver.ConnectionChangeEvent
+import org.sitebay.android.ui.suggestion.SuggestionType.Users
+import org.sitebay.android.ui.suggestion.SuggestionType.XPosts
+import org.sitebay.android.ui.suggestion.FinishAttempt.NotExactlyOneAvailable
+import org.sitebay.android.ui.suggestion.FinishAttempt.OnlyOneAvailable
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.SiteUtils
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class SuggestionViewModel @Inject constructor(

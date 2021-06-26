@@ -21,7 +21,7 @@
             android:visibility="gone"
             tools:visibility="visible">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_extra_large"
@@ -31,7 +31,7 @@
                 android:textAppearance="?attr/textAppearanceSubtitle1"
                 android:textColor="?attr/colorPrimary" />
 
-            <org.wordpress.android.ui.reader.views.ReaderRecyclerView
+            <org.sitebay.android.ui.reader.views.ReaderRecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/text_service"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:textColor="?attr/colorPrimary"
                 tools:text="text_service" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/text_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:layout_marginTop="@dimen/margin_extra_large"
                 android:background="?android:attr/listDivider" />
 
-            <org.wordpress.android.ui.publicize.ConnectButton
+            <org.sitebay.android.ui.publicize.ConnectButton
                 android:id="@+id/button_connect"
                 style="@style/PublicizeConnectButton"
                 android:layout_width="wrap_content"

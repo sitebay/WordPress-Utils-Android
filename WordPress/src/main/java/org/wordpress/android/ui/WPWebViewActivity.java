@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -34,37 +34,37 @@ import com.google.android.material.snackbar.Snackbar;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.FetchPrivateAtomicCookiePayload;
-import org.wordpress.android.fluxc.store.SiteStore.OnPrivateAtomicCookieFetched;
-import org.wordpress.android.ui.PrivateAtCookieRefreshProgressDialog.PrivateAtCookieProgressDialogOnDismissListener;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DisplayUtilsWrapper;
-import org.wordpress.android.util.ErrorManagedWebViewClient.ErrorManagedWebViewClientListener;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.URLFilteredWebViewClient;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.WPUrlUtils;
-import org.wordpress.android.util.WPWebViewClient;
-import org.wordpress.android.util.helpers.WPWebChromeClient;
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel;
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.NavBarUiState;
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.PreviewModeSelectorStatus;
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState;
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState;
-import org.wordpress.android.widgets.WPSnackbar;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.FetchPrivateAtomicCookiePayload;
+import org.sitebay.android.fluxc.store.SiteStore.OnPrivateAtomicCookieFetched;
+import org.sitebay.android.ui.PrivateAtCookieRefreshProgressDialog.PrivateAtCookieProgressDialogOnDismissListener;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DisplayUtilsWrapper;
+import org.sitebay.android.util.ErrorManagedWebViewClient.ErrorManagedWebViewClientListener;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.URLFilteredWebViewClient;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.WPUrlUtils;
+import org.sitebay.android.util.WPWebViewClient;
+import org.sitebay.android.util.helpers.WPWebChromeClient;
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel;
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.NavBarUiState;
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.PreviewModeSelectorStatus;
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState;
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState;
+import org.sitebay.android.widgets.WPSnackbar;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -117,7 +117,7 @@ public class WPWebViewActivity extends WebViewActivity implements ErrorManagedWe
     public static final String AUTHENTICATION_PASSWD = "authenticated_passwd";
     public static final String USE_GLOBAL_WPCOM_USER = "USE_GLOBAL_WPCOM_USER";
     public static final String URL_TO_LOAD = "url_to_load";
-    public static final String WPCOM_LOGIN_URL = "https://wordpress.com/wp-login.php";
+    public static final String WPCOM_LOGIN_URL = "https://sitebay.com/wp-login.php";
     public static final String LOCAL_BLOG_ID = "local_blog_id";
     public static final String SHAREABLE_URL = "shareable_url";
     public static final String SHARE_SUBJECT = "share_subject";
@@ -765,12 +765,12 @@ public class WPWebViewActivity extends WebViewActivity implements ErrorManagedWe
             username = mAccountStore.getAccount().getUserName();
 
             // Custom domains are not properly authenticated due to a server side(?) issue, so this gets around that
-            if (!addressToLoad.contains(".wordpress.com")) {
+            if (!addressToLoad.contains(".sitebay.com")) {
                 List<SiteModel> wpComSites = mSiteStore.getWPComSites();
                 for (SiteModel siteModel : wpComSites) {
                     // Only replace the url if we know the unmapped url and if it's a custom domain
                     if (!TextUtils.isEmpty(siteModel.getUnmappedUrl())
-                        && !siteModel.getUrl().contains(".wordpress.com")) {
+                        && !siteModel.getUrl().contains(".sitebay.com")) {
                         addressToLoad = addressToLoad.replace(siteModel.getUrl(), siteModel.getUnmappedUrl());
                     }
                 }
@@ -831,7 +831,7 @@ public class WPWebViewActivity extends WebViewActivity implements ErrorManagedWe
 
             // Add token authorization when signing in to WP.com
             if (WPUrlUtils.safeToAddWordPressComAuthToken(authenticationUrl)
-                && authenticationUrl.contains("wordpress.com/wp-login.php") && !TextUtils.isEmpty(token)) {
+                && authenticationUrl.contains("sitebay.com/wp-login.php") && !TextUtils.isEmpty(token)) {
                 postData += "&authorization=Bearer " + URLEncoder.encode(token, ENCODING_UTF8);
             }
 

@@ -80,7 +80,7 @@ Language: ku_TR
     <string name="media_picker_soft_ask_permissions_denied">Hewla %1$s\'ê ya ji bo bigihîje wêneyên te hat redkirin. Ji bo vêya çareser bikî, destûrên xwe sererast bike, %2$s û %3$s\'ê veke.</string>
     <string name="media_insert_failed">Tevlîkirina medyayê bi ser neket.</string>
     <string name="media_insert_failed_with_reason">Tevlîkirina medyayê bi ser neket: %s</string>
-    <string name="photo_picker_wordpress_media_library">Ji Medyageha WordPressê Hilbijêre</string>
+    <string name="photo_picker_sitebay_media_library">Ji Medyageha WordPressê Hilbijêre</string>
     <string name="reader_label_toolbar_back">Paşve</string>
     <string name="reader_discover_empty_button_text">Dest Pê Bike</string>
     <string name="reader_post_details_header_by_author_name">Ji hêla</string>
@@ -222,7 +222,7 @@ Language: ku_TR
     <string name="create_account">Hesabekî biafirîne</string>
     <string name="reset_your_password">Pêborîna xwe nûsaz bike</string>
     <string name="check_email">Emailê kontrol bike</string>
-    <string name="enter_email_to_continue_wordpress_com">Ji bo têketinê an jî afirandina hesabekî WordPress.com\'ê navnîşana emaila xwe bikevê.</string>
+    <string name="enter_email_to_continue_sitebay_com">Ji bo têketinê an jî afirandina hesabekî WordPress.com\'ê navnîşana emaila xwe bikevê.</string>
     <string name="send_link_by_email">Girêdanê bi emailê re bişîne</string>
     <string name="reader_error_request_failed_title">Di hêrana daxwazê de pirsgirêkek derket. Ji kerema xwe paşê dîsa biceribîne.</string>
     <string name="quick_start_list_update_site_title_title">Sernavê malpera xwe saz bike</string>
@@ -489,7 +489,7 @@ Language: ku_TR
     <string name="site_cannot_be_loaded">Em aniha nikarin daneyan ji bo malpera te bar bikin. Piştre dîsa biceribîne</string>
     <string name="reader_save_for_later_display_name">Hat tomarkirin</string>
     <string name="reader_filter_tags_title">Mijar</string>
-    <string name="gutenberg_native_wordpress_media_library">Medyageha WordPress\'ê</string>
+    <string name="gutenberg_native_sitebay_media_library">Medyageha WordPress\'ê</string>
     <string name="gutenberg_native_start_writing">Dest bi nivîsandinê bike…</string>
     <string name="gutenberg_native_take_a_photo_or_video">Vîdyo an jî Wêne Bikişîne</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Ji bo klavyeyê veşêrî, bitikîne</string>
@@ -925,7 +925,7 @@ Language: ku_TR
     <string name="stats_comments_author_label">Nivîskar</string>
     <string name="stats_comments_authors">Nivîskar</string>
     <string name="stats_follower_label">Şopîner</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Kûrbînan bi rê ve bibe</string>
     <string name="stats_comments_posts_and_pages">Şandî û Rûpel</string>
     <string name="stats_followers_email">Email</string>
@@ -1376,7 +1376,7 @@ Language: ku_TR
     <string name="plugin_external_link_icon_content_description">Girêdana derveyî</string>
     <string name="plugin_icon_content_description">Îkona pêvekê</string>
     <string name="plugin_home_page">Serrûpela Pêvekan</string>
-    <string name="wordpress_dot_org_plugin_page">Rûpela pêvekan a WordPress.org\'ê</string>
+    <string name="sitebay_dot_org_plugin_page">Rûpela pêvekan a WordPress.org\'ê</string>
     <string name="plugin_remove_dialog_message">Tu bi rastî jî dixwazî pêveka %1$s\'ê ji %2$s\'ê rake?\n\nEv ê pêvekê nêçalak bike û hemû dosye û daneyên têkildar jê bibe.</string>
     <string name="plugin_remove_dialog_title">Pêvekê Rake</string>
     <string name="plugin_remove_progress_dialog_message">Tê rakirin %s…</string>
@@ -1530,7 +1530,7 @@ Language: ku_TR
     <string name="login_text_otp">Jê dêvla wê kodekê ji min re bişîne</string>
     <string name="enter_verification_code">Hema hema qediya. Ji kerema xwe, ji sepana xwe ya rastandinê koda pejirandinê têkeve.</string>
     <string name="next">Pêşve</string>
-    <string name="enter_email_wordpress_com">Ji bo ku tu hemû malperên xwe yên WordPressê bi rê ve bibî bi rêya bikaranîna navnîşaneke emailê têkeve WordPress.com\'ê.</string>
+    <string name="enter_email_sitebay_com">Ji bo ku tu hemû malperên xwe yên WordPressê bi rê ve bibî bi rêya bikaranîna navnîşaneke emailê têkeve WordPress.com\'ê.</string>
     <string name="image_optimization_promo_desc">Optîmîzasyona wêneyê ji bo hilxistina bilez, wêneyan biçûk dike.\n\nTu her tim dikarî vê ji sazkariyên malperê biguherînî.</string>
     <string name="image_optimization_promo_title">Bila optîmîzasyona wêneyê vebe?</string>
     <string name="leave_off">Girtî bihêle</string>
@@ -2079,9 +2079,9 @@ Language: ku_TR
     <string name="stats_insights_today">Amarên Îro</string>
     <string name="stats_insights_all_time">Şandî, dîtin û mêvanên hemû deman</string>
     <string name="stats_insights">Kûrbînî</string>
-    <string name="me_disconnect_from_wordpress_com">Ji WordPress.com\'ê derkeve</string>
+    <string name="me_disconnect_from_sitebay_com">Ji WordPress.com\'ê derkeve</string>
     <string name="me_btn_login_logout">Têketin/Derketin</string>
-    <string name="me_connect_to_wordpress_com">Têkeve WordPress.com\'ê</string>
+    <string name="me_connect_to_sitebay_com">Têkeve WordPress.com\'ê</string>
     <string name="me_btn_support">Alîkarî &amp; Piştgirî</string>
     <string name="account_settings">Sazkariyên Hesêb</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" nehat veşartin ji ber ku ew malpera niha ye</string>
@@ -2222,7 +2222,7 @@ Language: ku_TR
     <string name="remove_account">Malperê rake</string>
     <string name="view_in_browser">Di gerokê de bibîne</string>
     <string name="category_name">Navê kategoriyê</string>
-    <string name="wordpress_blog">Bloga WordPressê</string>
+    <string name="sitebay_blog">Bloga WordPressê</string>
     <string name="new_media">Medyaya nû</string>
     <string name="new_post">Şandiya nû</string>
     <string name="open_source_licenses">Lîsansên çavkaniya vekirî</string>

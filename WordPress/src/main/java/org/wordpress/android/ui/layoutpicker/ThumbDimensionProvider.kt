@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
-import org.wordpress.android.R
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.R
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 class ThumbDimensionProvider @Inject constructor(private val contextProvider: ContextProvider) {

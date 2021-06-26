@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.notifications.services;
+package org.sitebay.android.ui.notifications.services;
 
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 
-import org.wordpress.android.ui.notifications.NotificationsListFragment;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.LocaleManager;
+import org.sitebay.android.ui.notifications.NotificationsListFragment;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.LocaleManager;
 
-import static org.wordpress.android.ui.notifications.services.NotificationsUpdateServiceStarter.IS_TAPPED_ON_NOTIFICATION;
+import static org.sitebay.android.ui.notifications.services.NotificationsUpdateServiceStarter.IS_TAPPED_ON_NOTIFICATION;
 
 public class NotificationsUpdateService extends Service implements NotificationsUpdateLogic.ServiceCompletionListener {
     private NotificationsUpdateLogic mNotificationsUpdateLogic;

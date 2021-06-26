@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.prefs.categories
+package org.sitebay.android.ui.prefs.categories
 
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.databinding.SiteSettingsCategoriesListActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
+import org.sitebay.android.databinding.SiteSettingsCategoriesListActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
 
 class CategoriesListActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

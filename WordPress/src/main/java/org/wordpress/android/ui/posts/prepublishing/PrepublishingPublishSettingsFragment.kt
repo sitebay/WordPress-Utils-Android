@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.prepublishing
+package org.sitebay.android.ui.posts.prepublishing
 
 import android.content.Context
 import android.os.Bundle
@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.posts.PrepublishingScreenClosedListener
-import org.wordpress.android.ui.posts.PublishSettingsFragment
-import org.wordpress.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
-import org.wordpress.android.ui.posts.PublishSettingsViewModel
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.posts.PrepublishingScreenClosedListener
+import org.sitebay.android.ui.posts.PublishSettingsFragment
+import org.sitebay.android.ui.posts.PublishSettingsFragmentType.PREPUBLISHING_NUDGES
+import org.sitebay.android.ui.posts.PublishSettingsViewModel
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class PrepublishingPublishSettingsFragment : PublishSettingsFragment() {

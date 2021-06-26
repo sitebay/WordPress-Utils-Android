@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.wordpress.android.ui.ActionableEmptyView
+    <org.sitebay.android.ui.ActionableEmptyView
         android:id="@+id/actionable_empty_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,12 +15,12 @@
         app:aevTitle="@string/themes_empty_list"
         tools:visibility="visible" />
 
-    <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+    <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
         android:id="@+id/ptr_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <org.wordpress.android.widgets.HeaderGridView
+        <org.sitebay.android.widgets.HeaderGridView
             android:id="@+id/theme_listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -31,7 +31,7 @@
             android:numColumns="auto_fit"
             android:scrollbarStyle="outsideOverlay"
             android:stretchMode="columnWidth" />
-    </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+    </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
     <RelativeLayout
         android:id="@+id/empty_view"
@@ -50,7 +50,7 @@
             android:contentDescription="@string/theme_no_search_result_found"
             android:src="@drawable/drake_empty_results_400dp" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/text_empty"
             style="@style/WordPress.EmptyList.Title"
             android:layout_width="wrap_content"

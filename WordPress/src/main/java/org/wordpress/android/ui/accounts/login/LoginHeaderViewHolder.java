@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login;
+package org.sitebay.android.ui.accounts.login;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -8,15 +8,15 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.model.AccountModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.image.ImageManager;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.model.AccountModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.image.ImageManager;
 
-import static org.wordpress.android.util.GravatarUtils.DefaultImage.STATUS_404;
-import static org.wordpress.android.util.image.ImageType.AVATAR_WITHOUT_BACKGROUND;
+import static org.sitebay.android.util.GravatarUtils.DefaultImage.STATUS_404;
+import static org.sitebay.android.util.image.ImageType.AVATAR_WITHOUT_BACKGROUND;
 
 /**
  * ViewHolder for a RecyclerView header used on screens shown after a user logs in.

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.reader.discover.viewholders
+package org.sitebay.android.ui.reader.discover.viewholders
 
 import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources.getColorStateList
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.databinding.ReaderInterestItemBinding
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState.ReaderInterestUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.ReaderInterestItemBinding
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState.ReaderInterestUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.viewBinding
 
 class ReaderInterestViewHolder(
     private val uiHelpers: UiHelpers,

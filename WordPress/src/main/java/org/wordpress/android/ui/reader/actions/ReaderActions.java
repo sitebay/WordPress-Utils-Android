@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.reader.actions;
+package org.sitebay.android.ui.reader.actions;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.models.ReaderBlog;
-import org.wordpress.android.models.ReaderComment;
+import org.sitebay.android.models.ReaderBlog;
+import org.sitebay.android.models.ReaderComment;
 
 /**
  * classes in this package serve as a middleman between local data and server data - used by

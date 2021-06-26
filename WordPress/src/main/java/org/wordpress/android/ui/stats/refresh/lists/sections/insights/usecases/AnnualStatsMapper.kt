@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.YearsInsightsModel.YearInsights
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem.Column
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.YearsInsightsModel.YearInsights
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem.Column
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
 import javax.inject.Inject
 
 class AnnualStatsMapper

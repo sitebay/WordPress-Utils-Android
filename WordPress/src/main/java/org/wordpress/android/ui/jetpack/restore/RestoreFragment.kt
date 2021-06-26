@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.restore
+package org.sitebay.android.ui.jetpack.restore
 
 import android.app.Activity.RESULT_CANCELED
 import android.app.Activity.RESULT_OK
@@ -10,26 +10,26 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
-import org.wordpress.android.R
-import org.wordpress.android.R.dimen
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.JetpackBackupRestoreFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.jetpack.common.adapters.JetpackBackupRestoreAdapter
-import org.wordpress.android.ui.jetpack.restore.RestoreNavigationEvents.ShowJetpackSettings
-import org.wordpress.android.ui.jetpack.restore.RestoreNavigationEvents.VisitSite
-import org.wordpress.android.ui.jetpack.restore.RestoreViewModel.RestoreWizardState.RestoreCanceled
-import org.wordpress.android.ui.jetpack.restore.RestoreViewModel.RestoreWizardState.RestoreCompleted
-import org.wordpress.android.ui.jetpack.restore.RestoreViewModel.RestoreWizardState.RestoreInProgress
-import org.wordpress.android.ui.jetpack.scan.adapters.HorizontalMarginItemDecoration
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.WPSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.R.dimen
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.JetpackBackupRestoreFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.jetpack.common.adapters.JetpackBackupRestoreAdapter
+import org.sitebay.android.ui.jetpack.restore.RestoreNavigationEvents.ShowJetpackSettings
+import org.sitebay.android.ui.jetpack.restore.RestoreNavigationEvents.VisitSite
+import org.sitebay.android.ui.jetpack.restore.RestoreViewModel.RestoreWizardState.RestoreCanceled
+import org.sitebay.android.ui.jetpack.restore.RestoreViewModel.RestoreWizardState.RestoreCompleted
+import org.sitebay.android.ui.jetpack.restore.RestoreViewModel.RestoreWizardState.RestoreInProgress
+import org.sitebay.android.ui.jetpack.scan.adapters.HorizontalMarginItemDecoration
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.WPSnackbar
 import javax.inject.Inject
 
 const val KEY_RESTORE_REWIND_ID = "key_restore_rewind_id"

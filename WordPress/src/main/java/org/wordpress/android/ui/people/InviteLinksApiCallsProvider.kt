@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
-import org.wordpress.android.WordPress
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.WordPress
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
@@ -11,14 +11,14 @@ import com.android.volley.VolleyError
 import com.google.gson.Gson
 import com.google.gson.JsonParseException
 import com.google.gson.reflect.TypeToken
-import com.wordpress.rest.RestRequest.ErrorListener
-import com.wordpress.rest.RestRequest.Listener
+import com.sitebay.rest.RestRequest.ErrorListener
+import com.sitebay.rest.RestRequest.Listener
 import org.json.JSONObject
-import org.wordpress.android.R
-import org.wordpress.android.R.string
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Failure
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Success
-import org.wordpress.android.util.VolleyUtils
+import org.sitebay.android.R
+import org.sitebay.android.R.string
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Failure
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksCallResult.Success
+import org.sitebay.android.util.VolleyUtils
 
 class InviteLinksApiCallsProvider @Inject constructor(
     private val contextProvider: ContextProvider

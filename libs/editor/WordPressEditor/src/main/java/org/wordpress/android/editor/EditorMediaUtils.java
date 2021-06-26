@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,10 +13,10 @@ import android.util.DisplayMetrics;
 import androidx.annotation.DrawableRes;
 import androidx.core.content.ContextCompat;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.ImageUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.ImageUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

@@ -36,7 +36,7 @@
             tools:visibility="visible" />
     </FrameLayout>
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/login_epilogue_header_title"
         style="@style/Widget.LoginFlow.TextView.Headline"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:layout_marginTop="@dimen/margin_large"
         tools:text="Pamela Nguyen" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/login_epilogue_header_subtitle"
         style="@style/Widget.LoginFlow.TextView.Subtitle"
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package org.wordpress.android.processor
+package org.sitebay.android.processor
 
 import com.squareup.kotlinpoet.FileSpec
 import com.squareup.kotlinpoet.ParameterizedTypeName.Companion.parameterizedBy
@@ -27,7 +27,7 @@ class RemoteConfigDefaultsBuilder(private val defaults: Map<String, String>) {
                                 .build()
                 )
                 .build()
-        return FileSpec.builder("org.wordpress.android.util.config", "RemoteConfigDefaults")
+        return FileSpec.builder("org.sitebay.android.util.config", "RemoteConfigDefaults")
                 .addType(remoteConfigDefaults)
                 .addComment("Automatically generated file. DO NOT MODIFY")
                 .indent("    ")

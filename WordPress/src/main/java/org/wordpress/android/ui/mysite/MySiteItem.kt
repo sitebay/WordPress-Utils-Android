@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
-import org.wordpress.android.fluxc.model.DynamicCardType
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.ui.mysite.MySiteItem.Type.CATEGORY_HEADER
-import org.wordpress.android.ui.mysite.MySiteItem.Type.DOMAIN_REGISTRATION_BLOCK
-import org.wordpress.android.ui.mysite.MySiteItem.Type.LIST_ITEM
-import org.wordpress.android.ui.mysite.MySiteItem.Type.QUICK_ACTIONS_BLOCK
-import org.wordpress.android.ui.mysite.MySiteItem.Type.QUICK_START_CARD
-import org.wordpress.android.ui.mysite.MySiteItem.Type.SITE_INFO_BLOCK
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.fluxc.model.DynamicCardType
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.ui.mysite.MySiteItem.Type.CATEGORY_HEADER
+import org.sitebay.android.ui.mysite.MySiteItem.Type.DOMAIN_REGISTRATION_BLOCK
+import org.sitebay.android.ui.mysite.MySiteItem.Type.LIST_ITEM
+import org.sitebay.android.ui.mysite.MySiteItem.Type.QUICK_ACTIONS_BLOCK
+import org.sitebay.android.ui.mysite.MySiteItem.Type.QUICK_START_CARD
+import org.sitebay.android.ui.mysite.MySiteItem.Type.SITE_INFO_BLOCK
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.utils.UiString
 
 sealed class MySiteItem(open val type: Type, open val activeQuickStartItem: Boolean = false) {
     enum class Type {

@@ -1,4 +1,4 @@
-package org.wordpress.android.processor
+package org.sitebay.android.processor
 
 import com.squareup.kotlinpoet.ClassName
 import com.squareup.kotlinpoet.CodeBlock
@@ -30,7 +30,7 @@ class RemoteConfigCheckBuilder(private val remoteFeatures: List<TypeName>) {
                         listOf(
                                 PropertySpec.builder(
                                         "appConfig",
-                                        ClassName.bestGuess("org.wordpress.android.util.config.AppConfig")
+                                        ClassName.bestGuess("org.sitebay.android.util.config.AppConfig")
                                 ).build()
                         )
                 )
@@ -40,7 +40,7 @@ class RemoteConfigCheckBuilder(private val remoteFeatures: List<TypeName>) {
                                 .build()
                 )
                 .build()
-        return FileSpec.builder("org.wordpress.android.util.config", "RemoteConfigCheck")
+        return FileSpec.builder("org.sitebay.android.util.config", "RemoteConfigCheck")
                 .addType(remoteConfigDefaults)
                 .addComment("Automatically generated file. DO NOT MODIFY")
                 .indent("    ")

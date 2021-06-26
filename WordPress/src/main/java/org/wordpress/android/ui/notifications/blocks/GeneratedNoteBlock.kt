@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.blocks
+package org.sitebay.android.ui.notifications.blocks
 
 import android.graphics.Typeface
 import android.text.Spannable
@@ -6,11 +6,11 @@ import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.style.StyleSpan
 import android.view.View
-import org.wordpress.android.fluxc.tools.FormattableContent
-import org.wordpress.android.fluxc.tools.FormattableRange
-import org.wordpress.android.ui.notifications.blocks.BlockType.BASIC
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.fluxc.tools.FormattableContent
+import org.sitebay.android.fluxc.tools.FormattableRange
+import org.sitebay.android.ui.notifications.blocks.BlockType.BASIC
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper
+import org.sitebay.android.util.image.ImageManager
 
 @Deprecated("This should be removed once we start receiving Read the source block from the backend")
 class GeneratedNoteBlock(

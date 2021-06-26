@@ -1,22 +1,22 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
 import android.app.Activity
 import android.content.Intent
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.PagePostCreationSourcesDetail
-import org.wordpress.android.ui.media.MediaBrowserActivity
-import org.wordpress.android.ui.media.MediaBrowserType
-import org.wordpress.android.ui.mysite.SiteNavigationAction
-import org.wordpress.android.ui.mysite.SiteNavigationAction.AddNewStory
-import org.wordpress.android.ui.mysite.SiteNavigationAction.AddNewStoryWithMediaIds
-import org.wordpress.android.ui.mysite.SiteNavigationAction.AddNewStoryWithMediaUris
-import org.wordpress.android.ui.photopicker.MediaPickerConstants
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.UTILS
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.PagePostCreationSourcesDetail
+import org.sitebay.android.ui.media.MediaBrowserActivity
+import org.sitebay.android.ui.media.MediaBrowserType
+import org.sitebay.android.ui.mysite.SiteNavigationAction
+import org.sitebay.android.ui.mysite.SiteNavigationAction.AddNewStory
+import org.sitebay.android.ui.mysite.SiteNavigationAction.AddNewStoryWithMediaIds
+import org.sitebay.android.ui.mysite.SiteNavigationAction.AddNewStoryWithMediaUris
+import org.sitebay.android.ui.photopicker.MediaPickerConstants
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.UTILS
+import org.sitebay.android.viewmodel.Event
 import javax.inject.Inject
 
 class StoriesMediaPickerResultHandler

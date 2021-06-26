@@ -23,7 +23,7 @@
                 android:importantForAccessibility="no"
                 android:src="@drawable/ic_notice_white_24dp" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/my_site_register_domain_text_view"
                 style="@style/MySiteListRowTextView"
                 android:text="@string/register_domain" />

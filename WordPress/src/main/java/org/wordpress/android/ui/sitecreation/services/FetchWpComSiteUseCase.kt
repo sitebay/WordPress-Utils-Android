@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.sitecreation.services
+package org.sitebay.android.ui.sitecreation.services
 
 import kotlinx.coroutines.delay
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.SiteActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.SiteActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged
 import javax.inject.Inject
 import kotlin.coroutines.Continuation
 import kotlin.coroutines.resume

@@ -1,10 +1,10 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
-import org.wordpress.android.fluxc.model.CommentModel
-import org.wordpress.android.ui.comments.CommentLeveler
+import org.sitebay.android.fluxc.model.CommentModel
+import org.sitebay.android.ui.comments.CommentLeveler
 
 class CommentLevelerTest {
     private val firstTopLevelComment = CommentModel().apply {

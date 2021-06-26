@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.example;
+package org.sitebay.android.editor.example;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import org.wordpress.android.editor.Utils;
+import org.sitebay.android.editor.Utils;
 
 public class MainExampleActivity extends Activity {
     private Activity mActivity;

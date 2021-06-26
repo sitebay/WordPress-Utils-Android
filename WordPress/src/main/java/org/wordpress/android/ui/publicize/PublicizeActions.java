@@ -1,26 +1,26 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.PublicizeTable;
-import org.wordpress.android.models.PublicizeConnection;
-import org.wordpress.android.models.PublicizeService;
-import org.wordpress.android.ui.publicize.PublicizeConstants.ConnectAction;
-import org.wordpress.android.ui.publicize.PublicizeEvents.ActionCompleted;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.JSONUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.PublicizeTable;
+import org.sitebay.android.models.PublicizeConnection;
+import org.sitebay.android.models.PublicizeService;
+import org.sitebay.android.ui.publicize.PublicizeConstants.ConnectAction;
+import org.sitebay.android.ui.publicize.PublicizeEvents.ActionCompleted;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.JSONUtils;
 
 import java.util.HashMap;
 import java.util.Locale;

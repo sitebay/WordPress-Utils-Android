@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.timezone
+package org.sitebay.android.ui.prefs.timezone
 
 sealed class TimezonesList {
     abstract val label: String

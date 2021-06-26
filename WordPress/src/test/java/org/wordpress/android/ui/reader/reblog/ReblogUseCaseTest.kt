@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.reblog
+package org.sitebay.android.ui.reader.reblog
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.whenever
@@ -10,14 +10,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.reblog.ReblogState.MultipleSites
-import org.wordpress.android.ui.reader.reblog.ReblogState.NoSite
-import org.wordpress.android.ui.reader.reblog.ReblogState.SingleSite
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.reblog.ReblogState.MultipleSites
+import org.sitebay.android.ui.reader.reblog.ReblogState.NoSite
+import org.sitebay.android.ui.reader.reblog.ReblogState.SingleSite
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

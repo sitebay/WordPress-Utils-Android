@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,13 +7,13 @@ import android.view.View.OnClickListener;
 
 import androidx.appcompat.widget.Toolbar;
 
-import org.wordpress.android.Constants;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.util.WPUrlUtils;
-import org.wordpress.android.widgets.WPTextView;
+import org.sitebay.android.Constants;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.util.WPUrlUtils;
+import org.sitebay.android.widgets.WPTextView;
 
 import java.util.Calendar;
 

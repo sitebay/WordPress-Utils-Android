@@ -1,4 +1,4 @@
-package org.wordpress.android.util.crashlogging
+package org.sitebay.android.util.crashlogging
 
 import android.content.SharedPreferences
 import com.automattic.android.tracks.crashlogging.EventLevel.DEBUG
@@ -15,18 +15,18 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.AccountModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.EncryptedLogging
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.LogFileProviderWrapper
-import org.wordpress.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EVENT_BUS_EXCEPTION
-import org.wordpress.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EVENT_BUS_INVOKING_SUBSCRIBER_FAILED_ERROR
-import org.wordpress.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EVENT_BUS_MODULE
-import org.wordpress.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EXTRA_UUID
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.AccountModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.EncryptedLogging
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.LogFileProviderWrapper
+import org.sitebay.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EVENT_BUS_EXCEPTION
+import org.sitebay.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EVENT_BUS_INVOKING_SUBSCRIBER_FAILED_ERROR
+import org.sitebay.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EVENT_BUS_MODULE
+import org.sitebay.android.util.crashlogging.WPCrashLoggingDataProvider.Companion.EXTRA_UUID
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.io.File
 import java.util.Locale
 

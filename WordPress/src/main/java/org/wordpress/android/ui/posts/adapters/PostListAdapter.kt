@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.adapters
+package org.sitebay.android.ui.posts.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,21 +7,21 @@ import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.ui.posts.PostListItemViewHolder
-import org.wordpress.android.ui.posts.PostListViewLayoutType
-import org.wordpress.android.ui.posts.PostListViewLayoutType.COMPACT
-import org.wordpress.android.ui.posts.PostListViewLayoutType.STANDARD
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.setVisible
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState
-import org.wordpress.android.viewmodel.posts.PostListItemType
-import org.wordpress.android.viewmodel.posts.PostListItemType.EndListIndicatorItem
-import org.wordpress.android.viewmodel.posts.PostListItemType.LoadingItem
-import org.wordpress.android.viewmodel.posts.PostListItemType.PostListItemUiState
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.ui.posts.PostListItemViewHolder
+import org.sitebay.android.ui.posts.PostListViewLayoutType
+import org.sitebay.android.ui.posts.PostListViewLayoutType.COMPACT
+import org.sitebay.android.ui.posts.PostListViewLayoutType.STANDARD
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.setVisible
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState
+import org.sitebay.android.viewmodel.posts.PostListItemType
+import org.sitebay.android.viewmodel.posts.PostListItemType.EndListIndicatorItem
+import org.sitebay.android.viewmodel.posts.PostListItemType.LoadingItem
+import org.sitebay.android.viewmodel.posts.PostListItemType.PostListItemUiState
 
 private const val VIEW_TYPE_POST = 0
 private const val VIEW_TYPE_POST_COMPACT = 1

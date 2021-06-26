@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,16 +7,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Calendar
 
 @RunWith(MockitoJUnitRunner::class)

@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.prefs
+package org.sitebay.android.ui.prefs
 
-import org.wordpress.android.fluxc.model.JetpackCapability
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.ui.posts.AuthorFilterSelection
-import org.wordpress.android.ui.posts.PostListViewLayoutType
-import org.wordpress.android.ui.reader.tracker.ReaderTab
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color.DARK
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color.LIGHT
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.COMMENTS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.LIKES
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VISITORS
+import org.sitebay.android.fluxc.model.JetpackCapability
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.ui.posts.AuthorFilterSelection
+import org.sitebay.android.ui.posts.PostListViewLayoutType
+import org.sitebay.android.ui.reader.tracker.ReaderTab
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color.DARK
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color.LIGHT
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.COMMENTS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.LIKES
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsDataTypeSelectionViewModel.DataType.VISITORS
 import javax.inject.Inject
 import javax.inject.Singleton
 

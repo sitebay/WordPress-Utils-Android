@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,20 +8,20 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.BigTitle
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.DialogButtons
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ImageItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Tag
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Text
-import org.wordpress.android.ui.stats.refresh.utils.NewsCardHandler
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.BigTitle
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.DialogButtons
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ImageItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Tag
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Text
+import org.sitebay.android.ui.stats.refresh.utils.NewsCardHandler
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class ManagementNewsCardUseCaseTest : BaseUnitTest() {
     @Mock private lateinit var resourceProvider: ResourceProvider

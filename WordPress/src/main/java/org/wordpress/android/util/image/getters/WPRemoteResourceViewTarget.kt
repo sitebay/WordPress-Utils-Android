@@ -1,4 +1,4 @@
-package org.wordpress.android.util.image.getters
+package org.sitebay.android.util.image.getters
 
 import android.annotation.SuppressLint
 import android.graphics.Canvas
@@ -13,8 +13,8 @@ import com.bumptech.glide.request.target.SizeReadyCallback
 import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.request.target.ViewTarget
 import com.bumptech.glide.request.transition.Transition
-import org.wordpress.android.ui.WPTextViewDrawableCallback
-import org.wordpress.android.util.ImageUtils
+import org.sitebay.android.ui.WPTextViewDrawableCallback
+import org.sitebay.android.util.ImageUtils
 
 /**
  * A class that we can load a remote resource into. Automatically displays placeholder while the remote img is

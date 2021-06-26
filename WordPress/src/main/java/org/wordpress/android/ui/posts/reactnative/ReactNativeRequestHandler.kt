@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.reactnative
+package org.sitebay.android.ui.posts.reactnative
 
 import android.os.Bundle
 import androidx.core.util.Consumer
@@ -6,14 +6,14 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.BaseRequest
-import org.wordpress.android.fluxc.network.rest.wpcom.WPComGsonRequest
-import org.wordpress.android.fluxc.store.ReactNativeFetchResponse
-import org.wordpress.android.fluxc.store.ReactNativeFetchResponse.Error
-import org.wordpress.android.fluxc.store.ReactNativeFetchResponse.Success
-import org.wordpress.android.fluxc.store.ReactNativeStore
-import org.wordpress.android.modules.BG_THREAD
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.BaseRequest
+import org.sitebay.android.fluxc.network.rest.wpcom.WPComGsonRequest
+import org.sitebay.android.fluxc.store.ReactNativeFetchResponse
+import org.sitebay.android.fluxc.store.ReactNativeFetchResponse.Error
+import org.sitebay.android.fluxc.store.ReactNativeFetchResponse.Success
+import org.sitebay.android.fluxc.store.ReactNativeStore
+import org.sitebay.android.modules.BG_THREAD
 import javax.inject.Inject
 import javax.inject.Named
 

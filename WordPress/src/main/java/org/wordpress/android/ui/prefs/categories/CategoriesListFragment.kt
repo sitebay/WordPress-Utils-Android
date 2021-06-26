@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.prefs.categories
+package org.sitebay.android.ui.prefs.categories
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.SiteSettingsCategoriesListFragmentBinding
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.SiteSettingsCategoriesListFragmentBinding
 import javax.inject.Inject
 
 class CategoriesListFragment : Fragment(R.layout.site_settings_categories_list_fragment) {

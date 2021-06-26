@@ -1,7 +1,7 @@
 /**
  * Note represents a single WordPress.com notification
  */
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.text.Spannable;
 import android.text.TextUtils;
@@ -11,13 +11,13 @@ import org.apache.commons.lang3.time.DateUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Comparator;

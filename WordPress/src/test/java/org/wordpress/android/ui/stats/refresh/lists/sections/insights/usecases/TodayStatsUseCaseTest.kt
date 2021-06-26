@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.times
@@ -10,28 +10,28 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.stats.VisitsModel
-import org.wordpress.android.fluxc.store.StatsStore.InsightType
-import org.wordpress.android.fluxc.store.StatsStore.OnStatsFetched
-import org.wordpress.android.fluxc.store.StatsStore.StatsError
-import org.wordpress.android.fluxc.store.StatsStore.StatsErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.stats.insights.TodayInsightsStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Title
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Type.QUICK_SCAN_ITEM
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Type.TITLE
-import org.wordpress.android.ui.stats.refresh.lists.widget.WidgetUpdater.StatsWidgetUpdaters
-import org.wordpress.android.ui.stats.refresh.utils.ItemPopupMenuHandler
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.stats.VisitsModel
+import org.sitebay.android.fluxc.store.StatsStore.InsightType
+import org.sitebay.android.fluxc.store.StatsStore.OnStatsFetched
+import org.sitebay.android.fluxc.store.StatsStore.StatsError
+import org.sitebay.android.fluxc.store.StatsStore.StatsErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.stats.insights.TodayInsightsStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.QuickScanItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Title
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Type.QUICK_SCAN_ITEM
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Type.TITLE
+import org.sitebay.android.ui.stats.refresh.lists.widget.WidgetUpdater.StatsWidgetUpdaters
+import org.sitebay.android.ui.stats.refresh.utils.ItemPopupMenuHandler
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
 
 class TodayStatsUseCaseTest : BaseUnitTest() {
     @Mock lateinit var insightsStore: TodayInsightsStore

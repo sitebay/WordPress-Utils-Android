@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -7,9 +7,9 @@ import android.text.TextUtils;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.util.StringUtils;
 
-import static org.wordpress.android.editor.EditorFragmentAbstract.ATTR_ALIGN;
+import static org.sitebay.android.editor.EditorFragmentAbstract.ATTR_ALIGN;
 
 public class EditorImageMetaData implements Parcelable {
     public static final String ARG_EDITOR_IMAGE_METADATA = "editor_image_metadata";

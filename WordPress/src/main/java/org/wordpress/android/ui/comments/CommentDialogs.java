@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 /**
  * Dialogs related to comment moderation displayed from CommentsActivity and NotificationsActivity

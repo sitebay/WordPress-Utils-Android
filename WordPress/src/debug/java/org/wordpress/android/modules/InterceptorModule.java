@@ -1,4 +1,4 @@
-package org.wordpress.android.modules;
+package org.sitebay.android.modules;
 
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.wordpress.aztec.toolbar.AztecToolbar
+    <org.sitebay.aztec.toolbar.AztecToolbar
         android:id="@+id/formatting_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <org.wordpress.android.editor.EditTextWithKeyBackListener
+                <org.sitebay.android.editor.EditTextWithKeyBackListener
                     android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <org.wordpress.aztec.AztecText
+                <org.sitebay.aztec.AztecText
                     android:id="@+id/aztec"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -90,7 +90,7 @@
                     aztec:textColor="@color/text"
                     aztec:textColorHint="@color/hint_text" />
 
-                <org.wordpress.aztec.source.SourceViewEditText
+                <org.sitebay.aztec.source.SourceViewEditText
                     android:id="@+id/source"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

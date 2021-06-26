@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -15,9 +15,9 @@ import androidx.fragment.app.DialogFragment;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.widgets.WPTextView;
+import org.sitebay.android.R;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.widgets.WPTextView;
 
 public class TextInputDialogFragment extends DialogFragment {
     private static final String TITLE_TAG = "title";

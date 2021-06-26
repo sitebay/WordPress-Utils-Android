@@ -193,8 +193,8 @@ Language: sv_SE
     <string name="backup_item_roots">WordPress-rot</string>
     <string name="backup_download_details_choose_items_header">Objekt som ingår i denna nedladdning</string>
     <string name="gutenberg_native_uploading">Laddar upp …</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Återanvändbara block kan inte redigeras i WordPress för iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Återanvändbara block kan inte redigeras i WordPress för Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Återanvändbara block kan inte redigeras i WordPress för iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Återanvändbara block kan inte redigeras i WordPress för Android</string>
     <string name="gutenberg_native_replace_file">Ersätt fil</string>
     <string name="gutenberg_native_replace_audio">Ersätt ljudfilen</string>
     <string name="gutenberg_native_problem_opening_the_audio">Problem att öppna ljudet</string>
@@ -518,7 +518,7 @@ Language: sv_SE
     <string name="media_picker_soft_ask_permissions_denied">%1$s nekades åtkomst till dina bilder. Korrigera genom att redigera dina rättigheter och aktivera %2$s och %3$s.</string>
     <string name="media_insert_failed">Infogning av media misslyckades.</string>
     <string name="media_insert_failed_with_reason">Infogning av media misslyckades: %s</string>
-    <string name="photo_picker_wordpress_media_library">Välj ur mediabiblioteket i WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Välj ur mediabiblioteket i WordPress</string>
     <string name="reader_label_toolbar_back">Tillbaka</string>
     <string name="reader_discover_empty_button_text">Kom igång</string>
     <string name="reader_discover_empty_subtitle">Följ ämnen för att upptäcka nya bloggar</string>
@@ -658,7 +658,7 @@ Language: sv_SE
     <string name="login_magic_links_label">Vi skickar en länk som låter dig logga in direkt, utan något lösenord.</string>
     <string name="check_email">Kolla din e-post</string>
     <string name="get_started">Kom igång</string>
-    <string name="enter_email_to_continue_wordpress_com">Ange din e-postadress för att logga in eller skapa ett WordPress.com-konto.</string>
+    <string name="enter_email_to_continue_sitebay_com">Ange din e-postadress för att logga in eller skapa ett WordPress.com-konto.</string>
     <string name="or_type_your_password">Eller skriv ditt lösenord</string>
     <string name="create_account">Skapa konto</string>
     <string name="send_link_by_email">Skicka länk via e-post</string>
@@ -940,7 +940,7 @@ Language: sv_SE
     <string name="suffix_1_000">%s tusen</string>
     <string name="posts_cannot_be_started">Det går inte att öppna inläggen just nu. Försök igen senare</string>
     <string name="site_cannot_be_loaded">Vi lyckas inte hämta uppgifterna för din webbplats just nu. Försök igen senare.</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress mediabibliotek</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress mediabibliotek</string>
     <string name="gutenberg_native_unsupported">Stöds ej</string>
     <string name="gutenberg_native_ungroup">Lös upp grupp</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Tryck för att dölja tangentbordet</string>
@@ -1394,7 +1394,7 @@ Language: sv_SE
     <string name="stats_follower_label">Följare</string>
     <string name="stats_followers_count_message">Totalt antal följare för ”%1$s”: %2$s</string>
     <string name="stats_followers_email">E-post</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Hantera Insikter</string>
     <string name="stats_empty_insights_title">Inga insikter har lagts till än</string>
     <string name="stats_no_data_yet">Inga data insamlade än</string>
@@ -1846,7 +1846,7 @@ Language: sv_SE
     <string name="plugin_external_link_icon_content_description">Extern länk</string>
     <string name="plugin_icon_content_description">Tilläggsikon</string>
     <string name="plugin_home_page">Tilläggets hemsida</string>
-    <string name="wordpress_dot_org_plugin_page">Tilläggets sida på WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Tilläggets sida på WordPress.org</string>
     <string name="plugin_remove_dialog_message">Är du säker på att du vill ta bort %1$s från %2$s?\n\nDetta kommer att inaktivera tillägget och radera alla tillhörande filer och data.</string>
     <string name="plugin_remove_dialog_title">Ta bort tillägg</string>
     <string name="plugin_remove_progress_dialog_message">Tar bort %s…</string>
@@ -2007,7 +2007,7 @@ Language: sv_SE
     <string name="login_text_otp">Skicka mig en kod via SMS istället</string>
     <string name="enter_verification_code">Nästan klart! Skriv in verifieringskoden från din Authenticator-app.</string>
     <string name="next">Nästa</string>
-    <string name="enter_email_wordpress_com">Logga in på WordPress.com med hjälp av en e-postadress för att hantera alla dina WordPress-webbplatser.</string>
+    <string name="enter_email_sitebay_com">Logga in på WordPress.com med hjälp av en e-postadress för att hantera alla dina WordPress-webbplatser.</string>
     <string name="image_optimization_promo_desc">Bildoptimering minskar storleken på blder för snabbare uppladdning.\n\nDu kan när som helst ändra detta i webbplatsinställningarna.</string>
     <string name="image_optimization_promo_title">Aktivera bildoptimering?</string>
     <string name="leave_off">Behåll avstängt</string>
@@ -2565,8 +2565,8 @@ Language: sv_SE
     <string name="stats_insights_today">Dagens statistik </string>
     <string name="stats_insights_all_time">Alla inlägg, visningar och besökare</string>
     <string name="stats_insights">Insikter</string>
-    <string name="me_disconnect_from_wordpress_com">Logga ut från WordPress.com </string>
-    <string name="me_connect_to_wordpress_com">Logga in på WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Logga ut från WordPress.com </string>
+    <string name="me_connect_to_sitebay_com">Logga in på WordPress.com</string>
     <string name="me_btn_login_logout">Logga in/Logga ut</string>
     <string name="me_btn_support">Hjälp och support</string>
     <string name="account_settings">Kontoinställningar</string>
@@ -2699,7 +2699,7 @@ Language: sv_SE
     <string name="fatal_db_error">Ett fel uppstod vid skapandet av app-databasen. Försök återinstallera appen.</string>
     <string name="error_blog_hidden">Den här bloggen är dold och kunde inte laddas. Aktivera den igen i inställningarna och försök igen.</string>
     <string name="error_refresh_media">Det gick inte att förnya medialistan just nu</string>
-    <string name="wordpress_blog">WordPress-blogg</string>
+    <string name="sitebay_blog">WordPress-blogg</string>
     <string name="image_settings">Bildinställningar</string>
     <string name="local_changes">Lokala ändringar</string>
     <string name="privacy_policy">Integritetspolicy</string>

@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.sitecreation.misc
+package org.sitebay.android.ui.sitecreation.misc
 
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString
 
 data class SiteCreationSearchInputUiState(
     val hint: UiString,

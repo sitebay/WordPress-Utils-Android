@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.activitylog.list.filter
+package org.sitebay.android.ui.activitylog.list.filter
 
 import android.content.Context
 import android.os.Bundle
@@ -12,20 +12,20 @@ import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ActivityLogTypeFilterFragmentBinding
-import org.wordpress.android.databinding.ProgressLayoutBinding
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.Content
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.Error
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.FullscreenLoading
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ColorUtils
-import org.wordpress.android.util.getColorResIdFromAttribute
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel
-import org.wordpress.android.viewmodel.activitylog.DateRange
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ActivityLogTypeFilterFragmentBinding
+import org.sitebay.android.databinding.ProgressLayoutBinding
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.Content
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.Error
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.FullscreenLoading
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ColorUtils
+import org.sitebay.android.util.getColorResIdFromAttribute
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel
+import org.sitebay.android.viewmodel.activitylog.DateRange
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 private const val ARG_INITIAL_SELECTION = "arg_initial_selection"

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import android.content.Context
 import android.graphics.Typeface
@@ -9,12 +9,12 @@ import android.text.TextUtils
 import android.text.style.StyleSpan
 import android.view.View
 import androidx.core.graphics.ColorUtils
-import org.wordpress.android.R.attr
-import org.wordpress.android.R.integer
-import org.wordpress.android.R.string
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.util.WPHtml
-import org.wordpress.android.util.getColorFromAttribute
+import org.sitebay.android.R.attr
+import org.sitebay.android.R.integer
+import org.sitebay.android.R.string
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.util.WPHtml
+import org.sitebay.android.util.getColorFromAttribute
 import javax.inject.Inject
 
 class CommentListUiUtils @Inject constructor() {

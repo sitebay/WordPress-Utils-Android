@@ -1,24 +1,24 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
 import com.nhaarman.mockitokotlin2.mock
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.DRAFT
-import org.wordpress.android.fluxc.model.post.PostStatus.PENDING
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
-import org.wordpress.android.fluxc.model.post.PostStatus.PUBLISHED
-import org.wordpress.android.fluxc.model.post.PostStatus.SCHEDULED
-import org.wordpress.android.fluxc.store.PostStore.PostError
-import org.wordpress.android.fluxc.store.PostStore.PostErrorType
-import org.wordpress.android.fluxc.store.PostStore.PostErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.PostStore.PostErrorType.UNAUTHORIZED
-import org.wordpress.android.fluxc.store.PostStore.PostErrorType.UNKNOWN_POST
-import org.wordpress.android.fluxc.store.PostStore.PostErrorType.UNKNOWN_POST_TYPE
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.DRAFT
+import org.sitebay.android.fluxc.model.post.PostStatus.PENDING
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.fluxc.model.post.PostStatus.PUBLISHED
+import org.sitebay.android.fluxc.model.post.PostStatus.SCHEDULED
+import org.sitebay.android.fluxc.store.PostStore.PostError
+import org.sitebay.android.fluxc.store.PostStore.PostErrorType
+import org.sitebay.android.fluxc.store.PostStore.PostErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.PostStore.PostErrorType.UNAUTHORIZED
+import org.sitebay.android.fluxc.store.PostStore.PostErrorType.UNKNOWN_POST
+import org.sitebay.android.fluxc.store.PostStore.PostErrorType.UNKNOWN_POST_TYPE
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 @RunWith(MockitoJUnitRunner::class)
 class UploadUtilsTest {

@@ -1,9 +1,9 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.content.Context
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
-import org.wordpress.android.util.LocaleManager
+import org.sitebay.android.util.LocaleManager
 
 /**
  * Newer versions of the AppCompat library no longer support locale changes at application level,

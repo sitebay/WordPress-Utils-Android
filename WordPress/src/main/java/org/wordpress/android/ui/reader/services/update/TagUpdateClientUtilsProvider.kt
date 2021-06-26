@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.reader.services.update
+package org.sitebay.android.ui.reader.services.update
 
-import org.wordpress.android.WordPress
-import org.wordpress.android.networking.RestClientUtils
+import org.sitebay.android.WordPress
+import org.sitebay.android.networking.RestClientUtils
 import javax.inject.Inject
 
 class TagUpdateClientUtilsProvider @Inject constructor() {

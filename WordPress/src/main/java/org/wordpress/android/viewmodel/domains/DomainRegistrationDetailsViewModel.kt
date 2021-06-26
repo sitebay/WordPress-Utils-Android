@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.domains
+package org.sitebay.android.viewmodel.domains
 
 import android.text.TextUtils
 import androidx.lifecycle.LiveData
@@ -8,38 +8,38 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.TransactionAction.FETCH_SUPPORTED_COUNTRIES
-import org.wordpress.android.fluxc.generated.AccountActionBuilder
-import org.wordpress.android.fluxc.generated.SiteActionBuilder
-import org.wordpress.android.fluxc.generated.TransactionActionBuilder
-import org.wordpress.android.fluxc.model.DomainContactModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.rest.wpcom.site.SupportedStateResponse
-import org.wordpress.android.fluxc.network.rest.wpcom.transactions.SupportedDomainCountry
-import org.wordpress.android.fluxc.store.AccountStore.OnDomainContactFetched
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.DesignatePrimaryDomainPayload
-import org.wordpress.android.fluxc.store.SiteStore.OnDomainSupportedStatesFetched
-import org.wordpress.android.fluxc.store.SiteStore.OnPrimaryDomainDesignated
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged
-import org.wordpress.android.fluxc.store.TransactionsStore
-import org.wordpress.android.fluxc.store.TransactionsStore.CreateShoppingCartPayload
-import org.wordpress.android.fluxc.store.TransactionsStore.OnShoppingCartCreated
-import org.wordpress.android.fluxc.store.TransactionsStore.OnShoppingCartRedeemed
-import org.wordpress.android.fluxc.store.TransactionsStore.OnSupportedCountriesFetched
-import org.wordpress.android.fluxc.store.TransactionsStore.RedeemShoppingCartError
-import org.wordpress.android.fluxc.store.TransactionsStore.RedeemShoppingCartPayload
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.domains.DomainProductDetails
-import org.wordpress.android.ui.domains.DomainRegistrationCompletedEvent
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.DomainPhoneNumberUtils
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ScopedViewModel
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.TransactionAction.FETCH_SUPPORTED_COUNTRIES
+import org.sitebay.android.fluxc.generated.AccountActionBuilder
+import org.sitebay.android.fluxc.generated.SiteActionBuilder
+import org.sitebay.android.fluxc.generated.TransactionActionBuilder
+import org.sitebay.android.fluxc.model.DomainContactModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.rest.wpcom.site.SupportedStateResponse
+import org.sitebay.android.fluxc.network.rest.wpcom.transactions.SupportedDomainCountry
+import org.sitebay.android.fluxc.store.AccountStore.OnDomainContactFetched
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.DesignatePrimaryDomainPayload
+import org.sitebay.android.fluxc.store.SiteStore.OnDomainSupportedStatesFetched
+import org.sitebay.android.fluxc.store.SiteStore.OnPrimaryDomainDesignated
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged
+import org.sitebay.android.fluxc.store.TransactionsStore
+import org.sitebay.android.fluxc.store.TransactionsStore.CreateShoppingCartPayload
+import org.sitebay.android.fluxc.store.TransactionsStore.OnShoppingCartCreated
+import org.sitebay.android.fluxc.store.TransactionsStore.OnShoppingCartRedeemed
+import org.sitebay.android.fluxc.store.TransactionsStore.OnSupportedCountriesFetched
+import org.sitebay.android.fluxc.store.TransactionsStore.RedeemShoppingCartError
+import org.sitebay.android.fluxc.store.TransactionsStore.RedeemShoppingCartPayload
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.domains.DomainProductDetails
+import org.sitebay.android.ui.domains.DomainRegistrationCompletedEvent
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.DomainPhoneNumberUtils
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ScopedViewModel
+import org.sitebay.android.viewmodel.SingleLiveEvent
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -284,7 +284,7 @@ class DomainRegistrationDetailsViewModel @Inject constructor(
         val updatedSite = siteStore.getSiteByLocalId(site.id)
 
         // New domain is not is not reflected in SiteModel yet, try refreshing a site until we get it
-        if (updatedSite?.url?.endsWith(".wordpress.com") == true && siteCheckTries < MAX_SITE_CHECK_TRIES) {
+        if (updatedSite?.url?.endsWith(".sitebay.com") == true && siteCheckTries < MAX_SITE_CHECK_TRIES) {
             AppLog.v(
                     T.DOMAIN_REGISTRATION,
                     "Newly registered domain is still not reflected in site model. Refreshing site model..."

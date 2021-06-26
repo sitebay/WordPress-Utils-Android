@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -16,13 +16,13 @@ import androidx.annotation.Nullable;
 import com.github.chrisbanes.photoview.PhotoView;
 import com.github.chrisbanes.photoview.PhotoViewAttacher;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageManager.RequestListener;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageManager.RequestListener;
+import org.sitebay.android.util.image.ImageType;
 
 /**
  * used by ReaderPhotoViewerActivity to show full-width images - based on Volley's ImageView

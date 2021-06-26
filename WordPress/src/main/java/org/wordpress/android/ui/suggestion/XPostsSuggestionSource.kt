@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
@@ -7,10 +7,10 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.XPostsResult
-import org.wordpress.android.fluxc.store.XPostsStore
-import org.wordpress.android.modules.BG_THREAD
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.XPostsResult
+import org.sitebay.android.fluxc.store.XPostsStore
+import org.sitebay.android.modules.BG_THREAD
 import javax.inject.Inject
 import javax.inject.Named
 import kotlin.coroutines.CoroutineContext

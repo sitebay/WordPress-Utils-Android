@@ -1,36 +1,36 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_ITEM_SELECTED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_ITEM_UNSELECTED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPENED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_DEVICE_LIBRARY
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_GIF_LIBRARY
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_STOCK_LIBRARY
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_WP_MEDIA
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_WP_STORIES_CAPTURE
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_PREVIEW_OPENED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_RECENT_MEDIA_SELECTED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SEARCH_COLLAPSED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SEARCH_EXPANDED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SEARCH_TRIGGERED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SELECTION_CLEARED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SHOW_PERMISSIONS_SCREEN
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.LocalUri
-import org.wordpress.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon
-import org.wordpress.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon.ChooseFromAndroidDevice
-import org.wordpress.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon.SwitchSource
-import org.wordpress.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon.WpStoriesCapture
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.DEVICE
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.GIF_LIBRARY
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.STOCK_LIBRARY
-import org.wordpress.android.ui.mediapicker.MediaPickerSetup.DataSource.WP_LIBRARY
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_ITEM_SELECTED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_ITEM_UNSELECTED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPENED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_DEVICE_LIBRARY
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_GIF_LIBRARY
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_STOCK_LIBRARY
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_WP_MEDIA
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_OPEN_WP_STORIES_CAPTURE
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_PREVIEW_OPENED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_RECENT_MEDIA_SELECTED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SEARCH_COLLAPSED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SEARCH_EXPANDED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SEARCH_TRIGGERED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SELECTION_CLEARED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_SHOW_PERMISSIONS_SCREEN
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.LocalUri
+import org.sitebay.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon
+import org.sitebay.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon.ChooseFromAndroidDevice
+import org.sitebay.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon.SwitchSource
+import org.sitebay.android.ui.mediapicker.MediaPickerFragment.MediaPickerIcon.WpStoriesCapture
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.DEVICE
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.GIF_LIBRARY
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.STOCK_LIBRARY
+import org.sitebay.android.ui.mediapicker.MediaPickerSetup.DataSource.WP_LIBRARY
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -61,7 +61,7 @@ class MediaPickerTracker
                 launch {
                     val isMultiselection = identifiers.size > 1
                     for (identifier in identifiers) {
-                        val isVideo = org.wordpress.android.util.MediaUtils.isVideo(identifier.toString())
+                        val isVideo = org.sitebay.android.util.MediaUtils.isVideo(identifier.toString())
                         val properties = if (identifier is LocalUri) {
                             analyticsUtilsWrapper.getMediaProperties(
                                     isVideo,
@@ -142,7 +142,7 @@ class MediaPickerTracker
     ): MutableMap<String, Any?> {
         this["source"] = when (mediaPickerSetup.primaryDataSource) {
             DEVICE -> "device_media_library"
-            WP_LIBRARY -> "wordpress_media_library"
+            WP_LIBRARY -> "sitebay_media_library"
             STOCK_LIBRARY -> "pexel_image_library"
             GIF_LIBRARY -> "tenor_gif_library"
         }

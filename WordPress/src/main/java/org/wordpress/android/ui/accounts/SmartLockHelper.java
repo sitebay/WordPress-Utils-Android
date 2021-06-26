@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts;
+package org.sitebay.android.ui.accounts;
 
 import android.app.Activity;
 import android.content.IntentSender;
@@ -22,9 +22,9 @@ import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListe
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.lang.ref.WeakReference;
 
@@ -117,7 +117,7 @@ public class SmartLockHelper {
     public void saveCredentialsInSmartLock(@NonNull final String username, @NonNull final String password,
                                            @NonNull final String displayName, @Nullable final Uri profilePicture) {
         // need username and password fields for Smart Lock
-        // https://github.com/wordpress-mobile/WordPress-Android/issues/5850
+        // https://github.com/sitebay-mobile/WordPress-Android/issues/5850
         if (TextUtils.isEmpty(password) || TextUtils.isEmpty(username)) {
             AppLog.i(T.MAIN, String.format(
                     "Cannot save Smart Lock credentials, username (%s) or password (%s) is empty", username, password));

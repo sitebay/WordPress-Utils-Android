@@ -1,9 +1,9 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import androidx.annotation.AttrRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 // PostListButton.java types - from attrs.xml
 enum class PostListButtonType constructor(

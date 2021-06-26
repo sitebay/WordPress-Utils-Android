@@ -1,9 +1,9 @@
-package org.wordpress.android.e2e.pages;
+package org.sitebay.android.e2e.pages;
 
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.ViewInteraction;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -12,11 +12,11 @@ import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
-import static org.wordpress.android.support.WPSupportUtils.clickOn;
-import static org.wordpress.android.support.WPSupportUtils.getCurrentActivity;
-import static org.wordpress.android.support.WPSupportUtils.isElementDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.scrollToThenClickOn;
-import static org.wordpress.android.support.WPSupportUtils.waitForElementToBeDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.clickOn;
+import static org.sitebay.android.support.WPSupportUtils.getCurrentActivity;
+import static org.sitebay.android.support.WPSupportUtils.isElementDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.scrollToThenClickOn;
+import static org.sitebay.android.support.WPSupportUtils.waitForElementToBeDisplayed;
 
 public class MePage {
     // Labels
@@ -66,7 +66,7 @@ public class MePage {
     public void logout() {
         ViewInteraction logOutButton = onView(allOf(
                 withId(R.id.me_login_logout_text_view),
-                withText(getCurrentActivity().getString(R.string.me_disconnect_from_wordpress_com))));
+                withText(getCurrentActivity().getString(R.string.me_disconnect_from_sitebay_com))));
         waitForElementToBeDisplayed(logOutButton);
         while (!isElementDisplayed(android.R.id.button1)) {
             scrollToThenClickOn(logOutButton);

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
 import android.app.DownloadManager
 import android.app.DownloadManager.Query
@@ -12,9 +12,9 @@ import android.net.Uri
 import android.webkit.MimeTypeMap
 import android.webkit.URLUtil
 import androidx.core.content.FileProvider
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton

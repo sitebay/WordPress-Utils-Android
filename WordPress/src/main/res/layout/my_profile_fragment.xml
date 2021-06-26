@@ -14,11 +14,11 @@
             style="@style/MyProfileRow"
             android:layout_marginTop="@dimen/margin_medium">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 style="@style/MyProfileLabel"
                 android:text="@string/first_name" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/first_name"
                 style="@style/MyProfileText"
                 android:text="@string/first_name" />
@@ -31,11 +31,11 @@
             android:id="@+id/last_name_row"
             style="@style/MyProfileRow">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 style="@style/MyProfileLabel"
                 android:text="@string/last_name" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/last_name"
                 style="@style/MyProfileText" />
 
@@ -47,11 +47,11 @@
             android:id="@+id/display_name_row"
             style="@style/MyProfileRow">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 style="@style/MyProfileLabel"
                 android:text="@string/public_display_name" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/display_name"
                 style="@style/MyProfileText" />
 
@@ -63,11 +63,11 @@
             android:id="@+id/about_me_row"
             style="@style/MyProfileRow">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 style="@style/MyProfileLabel"
                 android:text="@string/about_me" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/about_me"
                 style="@style/MyProfileText" />
 

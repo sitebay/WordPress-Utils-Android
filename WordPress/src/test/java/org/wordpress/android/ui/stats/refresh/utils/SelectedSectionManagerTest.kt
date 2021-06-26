@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import android.content.SharedPreferences
 import com.nhaarman.mockitokotlin2.any
@@ -9,9 +9,9 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.MONTHS
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection.MONTHS
 
 class SelectedSectionManagerTest : BaseUnitTest() {
     @Mock lateinit var sharedPreferences: SharedPreferences

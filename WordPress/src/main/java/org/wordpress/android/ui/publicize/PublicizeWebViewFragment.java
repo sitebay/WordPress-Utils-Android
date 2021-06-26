@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,18 +14,18 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.PublicizeTable;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.models.PublicizeConnection;
-import org.wordpress.android.models.PublicizeService;
-import org.wordpress.android.ui.ScrollableViewInitializedListener;
-import org.wordpress.android.ui.WPWebViewActivity;
-import org.wordpress.android.ui.publicize.PublicizeConstants.ConnectAction;
-import org.wordpress.android.util.WebViewUtils;
-import org.wordpress.android.util.helpers.WebChromeClientWithVideoPoster;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.PublicizeTable;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.models.PublicizeConnection;
+import org.sitebay.android.models.PublicizeService;
+import org.sitebay.android.ui.ScrollableViewInitializedListener;
+import org.sitebay.android.ui.WPWebViewActivity;
+import org.sitebay.android.ui.publicize.PublicizeConstants.ConnectAction;
+import org.sitebay.android.util.WebViewUtils;
+import org.sitebay.android.util.helpers.WebChromeClientWithVideoPoster;
 
 import javax.inject.Inject;
 

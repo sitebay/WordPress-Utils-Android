@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.Manifest.permission
 import android.net.Uri
@@ -16,44 +16,44 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PhotoPickerFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.media.MediaBrowserActivity
-import org.wordpress.android.ui.media.MediaBrowserType
-import org.wordpress.android.ui.media.MediaPreviewActivity
-import org.wordpress.android.ui.mediapicker.MediaPickerViewModel.ProgressDialogUiModel
-import org.wordpress.android.ui.mediapicker.MediaPickerViewModel.ProgressDialogUiModel.Visible
-import org.wordpress.android.ui.photopicker.PhotoPickerFragment.PhotoPickerIcon.WP_MEDIA
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.ActionModeUiModel
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar.INSERT_EDIT
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar.MEDIA_SOURCE
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar.NONE
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.FabUiModel
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.PermissionsRequested.CAMERA
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.PermissionsRequested.STORAGE
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.PhotoListUiModel
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.SoftAskViewUiModel
-import org.wordpress.android.util.AccessibilityUtils
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.AniUtils.Duration.MEDIUM
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.POSTS
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.ViewWrapper
-import org.wordpress.android.util.WPMediaUtils
-import org.wordpress.android.util.WPPermissionUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PhotoPickerFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.media.MediaBrowserActivity
+import org.sitebay.android.ui.media.MediaBrowserType
+import org.sitebay.android.ui.media.MediaPreviewActivity
+import org.sitebay.android.ui.mediapicker.MediaPickerViewModel.ProgressDialogUiModel
+import org.sitebay.android.ui.mediapicker.MediaPickerViewModel.ProgressDialogUiModel.Visible
+import org.sitebay.android.ui.photopicker.PhotoPickerFragment.PhotoPickerIcon.WP_MEDIA
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.ActionModeUiModel
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar.INSERT_EDIT
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar.MEDIA_SOURCE
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar.NONE
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.FabUiModel
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.PermissionsRequested.CAMERA
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.PermissionsRequested.STORAGE
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.PhotoListUiModel
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.SoftAskViewUiModel
+import org.sitebay.android.util.AccessibilityUtils
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.AniUtils.Duration.MEDIUM
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.POSTS
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.ViewWrapper
+import org.sitebay.android.util.WPMediaUtils
+import org.sitebay.android.util.WPPermissionUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 @Deprecated(
         "This class is being refactored, if you implement any change, please also update " +
-                "{@link org.wordpress.android.ui.mediapicker.MediaPickerFragment}"
+                "{@link org.sitebay.android.ui.mediapicker.MediaPickerFragment}"
 )
 class PhotoPickerFragment : Fragment(R.layout.photo_picker_fragment) {
     enum class PhotoPickerIcon(private val mRequiresUploadPermission: Boolean) {

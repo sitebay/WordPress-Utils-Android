@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.jetpack.common
+package org.sitebay.android.ui.jetpack.common
 
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import androidx.annotation.StringRes
-import org.wordpress.android.R.color
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R.color
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class CheckboxSpannableLabel @Inject constructor(

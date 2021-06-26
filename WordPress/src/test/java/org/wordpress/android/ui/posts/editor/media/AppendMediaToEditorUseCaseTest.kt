@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argThat
@@ -7,9 +7,9 @@ import com.nhaarman.mockitokotlin2.verify
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.util.FluxCUtilsWrapper
-import org.wordpress.android.util.helpers.MediaFile
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.util.FluxCUtilsWrapper
+import org.sitebay.android.util.helpers.MediaFile
 
 @RunWith(MockitoJUnitRunner::class)
 class AppendMediaToEditorUseCaseTest {

@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.junit.Assert.assertEquals

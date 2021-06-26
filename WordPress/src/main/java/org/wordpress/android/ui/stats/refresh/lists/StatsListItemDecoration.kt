@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists
+package org.sitebay.android.ui.stats.refresh.lists
 
 import android.graphics.Rect
 import android.view.View

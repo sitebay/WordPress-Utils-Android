@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
 import android.annotation.SuppressLint
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import org.wordpress.android.fluxc.network.rest.wpcom.site.GutenbergLayoutCategory
-import org.wordpress.android.fluxc.network.rest.wpcom.theme.StarterDesignCategory
+import org.sitebay.android.fluxc.network.rest.wpcom.site.GutenbergLayoutCategory
+import org.sitebay.android.fluxc.network.rest.wpcom.theme.StarterDesignCategory
 
 @Parcelize
 @SuppressLint("ParcelCreator")

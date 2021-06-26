@@ -1,24 +1,24 @@
-package org.wordpress.android.ui.reader.actions;
+package org.sitebay.android.ui.reader.actions;
 
 import android.text.TextUtils;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderCommentTable;
-import org.wordpress.android.datasets.ReaderLikeTable;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.ReaderUserTable;
-import org.wordpress.android.models.ReaderComment;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderUser;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.VolleyUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderCommentTable;
+import org.sitebay.android.datasets.ReaderLikeTable;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.ReaderUserTable;
+import org.sitebay.android.models.ReaderComment;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderUser;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.VolleyUtils;
 
 import java.util.Date;
 import java.util.HashMap;

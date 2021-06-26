@@ -23,7 +23,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <org.wordpress.android.widgets.WPViewPager
+    <org.sitebay.android.widgets.WPViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             android:paddingEnd="@dimen/margin_medium"
             android:textAlignment="viewStart" />
 
-        <org.wordpress.android.ui.reader.views.ReaderFollowButton
+        <org.sitebay.android.ui.reader.views.ReaderFollowButton
             android:id="@+id/btn_add"
             style="@style/Reader.Follow.Button.Icon"
             android:layout_width="wrap_content"

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import org.junit.Before
@@ -7,9 +7,9 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.reader.actions.ReaderBlogActionsWrapper
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.ui.reader.actions.ReaderBlogActionsWrapper
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @RunWith(MockitoJUnitRunner::class)
 class BlockBlogUseCaseTest {

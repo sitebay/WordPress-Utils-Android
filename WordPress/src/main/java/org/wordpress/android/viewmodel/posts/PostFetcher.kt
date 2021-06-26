@@ -1,18 +1,18 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.PostActionBuilder
-import org.wordpress.android.fluxc.model.CauseOfOnPostChanged.UpdatePost
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PostStore.OnPostChanged
-import org.wordpress.android.fluxc.store.PostStore.RemotePostPayload
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.PostActionBuilder
+import org.sitebay.android.fluxc.model.CauseOfOnPostChanged.UpdatePost
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PostStore.OnPostChanged
+import org.sitebay.android.fluxc.store.PostStore.RemotePostPayload
 
 /**
  * Class which takes care of dispatching fetch post events while ignoring duplicate requests.

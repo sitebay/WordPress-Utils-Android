@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.store.AccountStore.AuthEmailPayloadScheme
-import org.wordpress.android.fluxc.store.SiteStore.ConnectSiteInfoPayload
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowSiteAddressError
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.store.AccountStore.AuthEmailPayloadScheme
+import org.sitebay.android.fluxc.store.SiteStore.ConnectSiteInfoPayload
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowNoJetpackSites
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowSiteAddressError
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class LoginViewModelTest : BaseUnitTest() {
     @Mock lateinit var buildConfigWrapper: BuildConfigWrapper
@@ -35,7 +35,7 @@ class LoginViewModelTest : BaseUnitTest() {
     @Test
     fun `given site is not jetpack, then ShowSiteAddressError navigation event is posted`() {
         val navigationEvents = initObservers().navigationEvents
-        val url = "nojetpack.wordpress.com"
+        val url = "nojetpack.sitebay.com"
 
         val connectSiteInfoPayload = getConnectSiteInfoPayload(url)
         viewModel.onHandleSiteAddressError(connectSiteInfoPayload)
@@ -53,7 +53,7 @@ class LoginViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when magic link scheme is requested, then wordpress scheme is returned`() {
+    fun `given sitebay app, when magic link scheme is requested, then sitebay scheme is returned`() {
         whenever(buildConfigWrapper.isJetpackApp).thenReturn(false)
 
         val scheme = viewModel.getMagicLinkScheme()

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.receivers;
+package org.sitebay.android.ui.notifications.receivers;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -8,29 +8,29 @@ import android.text.TextUtils;
 
 import androidx.core.app.NotificationCompat;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.post.PostStatus;
-import org.wordpress.android.fluxc.store.PostStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.push.NativeNotificationsUtils;
-import org.wordpress.android.push.NotificationType;
-import org.wordpress.android.push.NotificationsProcessingService;
-import org.wordpress.android.ui.main.WPMainActivity;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.ui.notifications.utils.PendingDraftsNotificationsUtils;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DateTimeUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.post.PostStatus;
+import org.sitebay.android.fluxc.store.PostStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.push.NativeNotificationsUtils;
+import org.sitebay.android.push.NotificationType;
+import org.sitebay.android.push.NotificationsProcessingService;
+import org.sitebay.android.ui.main.WPMainActivity;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.ui.notifications.utils.PendingDraftsNotificationsUtils;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DateTimeUtils;
 
 import java.util.List;
 import java.util.Random;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
+import static org.sitebay.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
 
 public class NotificationsPendingDraftsReceiver extends BroadcastReceiver {
     public static final String POST_ID_EXTRA = "postId";

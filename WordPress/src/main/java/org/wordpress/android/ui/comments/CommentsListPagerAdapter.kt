@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.comments
+package org.sitebay.android.ui.comments
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import org.wordpress.android.ui.comments.CommentsListFragment.CommentStatusCriteria
+import org.sitebay.android.ui.comments.CommentsListFragment.CommentStatusCriteria
 import java.lang.ref.WeakReference
 
 @Deprecated("Comments are being refactored as part of Comments Unification project. If you are adding any" +

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
 import android.content.Context
 import com.nhaarman.mockitokotlin2.eq
@@ -9,16 +9,16 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.RoleModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.models.InvitePeopleUtils
-import org.wordpress.android.models.wrappers.RoleUtilsWrapper
-import org.wordpress.android.models.wrappers.SimpleDateFormatWrapper
-import org.wordpress.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
-import org.wordpress.android.util.DateTimeUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.RoleModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.models.InvitePeopleUtils
+import org.sitebay.android.models.wrappers.RoleUtilsWrapper
+import org.sitebay.android.models.wrappers.SimpleDateFormatWrapper
+import org.sitebay.android.ui.people.InviteLinksApiCallsProvider.InviteLinksItem
+import org.sitebay.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 import java.text.DateFormat
 import java.util.Date
 
@@ -49,12 +49,12 @@ class InvitePeopleUtilsTest : BaseUnitTest() {
             InviteLinksItem(
                     role = "administrator",
                     expiry = 0,
-                    link = "https://wordpress.com/linkdata"
+                    link = "https://sitebay.com/linkdata"
             ),
             InviteLinksItem(
                     role = "follower",
                     expiry = 0,
-                    link = "https://wordpress.com/linkdata"
+                    link = "https://sitebay.com/linkdata"
             )
     )
 

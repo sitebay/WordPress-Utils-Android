@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.viewholders
+package org.sitebay.android.ui.stats.refresh.lists.sections.viewholders
 
 import android.view.View
 import android.view.ViewGroup
@@ -6,12 +6,12 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView.LayoutParams
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
-import org.wordpress.android.util.getColorResIdFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEGATIVE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.NEUTRAL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem.State.POSITIVE
+import org.sitebay.android.util.getColorResIdFromAttribute
 
 class ValueViewHolder(parent: ViewGroup) : BlockListItemViewHolder(
         parent,

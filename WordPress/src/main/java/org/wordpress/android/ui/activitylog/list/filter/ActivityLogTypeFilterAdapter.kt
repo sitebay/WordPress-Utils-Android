@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.activitylog.list.filter
+package org.sitebay.android.ui.activitylog.list.filter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.ActivityType
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.SectionHeader
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.ActivityType
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.SectionHeader
+import org.sitebay.android.ui.utils.UiHelpers
 
 private const val headerViewType: Int = 1
 private const val activityViewType: Int = 2

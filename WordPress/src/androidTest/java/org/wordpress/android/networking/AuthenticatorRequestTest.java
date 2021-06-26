@@ -1,10 +1,10 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.test.InstrumentationTestCase;
 
-import com.wordpress.rest.RestClient;
+import com.sitebay.rest.RestClient;
 
-import org.wordpress.android.FactoryUtils;
+import org.sitebay.android.FactoryUtils;
 
 public class AuthenticatorRequestTest extends InstrumentationTestCase {
     RestClient mRestClient;

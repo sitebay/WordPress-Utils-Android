@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.engagement.EngageItem.Liker
-import org.wordpress.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
-import org.wordpress.android.util.GravatarUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.ui.engagement.EngageItem.Liker
+import org.sitebay.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
+import org.sitebay.android.util.GravatarUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class LikerViewHolder(
     parent: ViewGroup,

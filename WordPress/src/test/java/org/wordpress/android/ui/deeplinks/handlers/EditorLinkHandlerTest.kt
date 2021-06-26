@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkUriUtils
-import org.wordpress.android.ui.deeplinks.buildUri
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkUriUtils
+import org.sitebay.android.ui.deeplinks.buildUri
 
 class EditorLinkHandlerTest : BaseUnitTest() {
     @Mock lateinit var deepLinkUriUtils: DeepLinkUriUtils
@@ -40,7 +40,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
     @Test
     fun `handles post URI`() {
-        val postUri = buildUri(host = "wordpress.com", "post")
+        val postUri = buildUri(host = "sitebay.com", "post")
 
         val isEditorUri = editorLinkHandler.shouldHandleUrl(postUri)
 
@@ -58,7 +58,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
     @Test
     fun `does not handle post URI with different host`() {
-        val postUri = buildUri(host = "wordpress.org", "post")
+        val postUri = buildUri(host = "sitebay.org", "post")
 
         val isEditorUri = editorLinkHandler.shouldHandleUrl(postUri)
 
@@ -67,7 +67,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
     @Test
     fun `does not handle URI with different path`() {
-        val postUri = buildUri(host = "wordpress.com", "stats")
+        val postUri = buildUri(host = "sitebay.com", "stats")
 
         val isEditorUri = editorLinkHandler.shouldHandleUrl(postUri)
 
@@ -125,7 +125,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
         val strippedUri = editorLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUri).isEqualTo("wordpress.com/post/domain/postId")
+        assertThat(strippedUri).isEqualTo("sitebay.com/post/domain/postId")
     }
 
     @Test
@@ -134,7 +134,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
         val strippedUri = editorLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUri).isEqualTo("wordpress.com/post/domain")
+        assertThat(strippedUri).isEqualTo("sitebay.com/post/domain")
     }
 
     @Test
@@ -143,7 +143,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
         val strippedUri = editorLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUri).isEqualTo("wordpress.com/post/")
+        assertThat(strippedUri).isEqualTo("sitebay.com/post/")
     }
 
     @Test
@@ -229,7 +229,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
         val strippedUrl = editorLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress://post?blogId=blogId&postId=postId")
+        assertThat(strippedUrl).isEqualTo("sitebay://post?blogId=blogId&postId=postId")
     }
 
     @Test
@@ -241,7 +241,7 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
         val strippedUrl = editorLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress://post?blogId=blogId")
+        assertThat(strippedUrl).isEqualTo("sitebay://post?blogId=blogId")
     }
 
     @Test
@@ -252,6 +252,6 @@ class EditorLinkHandlerTest : BaseUnitTest() {
 
         val strippedUrl = editorLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress://post")
+        assertThat(strippedUrl).isEqualTo("sitebay://post")
     }
 }

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people;
+package org.sitebay.android.ui.people;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -17,11 +17,11 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.greenrobot.eventbus.EventBus;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.RoleModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.SiteStore;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.RoleModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.SiteStore;
 
 import java.util.List;
 

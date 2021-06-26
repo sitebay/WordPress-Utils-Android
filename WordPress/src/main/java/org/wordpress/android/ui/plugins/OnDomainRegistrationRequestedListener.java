@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.plugins;
+package org.sitebay.android.ui.plugins;
 
 public interface OnDomainRegistrationRequestedListener {
     void onDomainRegistrationRequested();

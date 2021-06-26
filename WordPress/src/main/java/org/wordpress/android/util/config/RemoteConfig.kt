@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
 import com.google.android.gms.tasks.Task
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
@@ -6,12 +6,12 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig.VALUE_SOURCE_DEFAUL
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig.VALUE_SOURCE_REMOTE
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig.VALUE_SOURCE_STATIC
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings.Builder
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.UTILS
-import org.wordpress.android.util.config.AppConfig.FeatureState
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.UTILS
+import org.sitebay.android.util.config.AppConfig.FeatureState
 import javax.inject.Inject
 
 /**

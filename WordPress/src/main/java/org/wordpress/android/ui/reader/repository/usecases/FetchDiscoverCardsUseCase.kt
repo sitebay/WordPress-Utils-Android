@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
-import org.wordpress.android.ui.reader.repository.ReaderDiscoverCommunication
-import org.wordpress.android.ui.reader.repository.ReaderDiscoverCommunication.Error.NetworkUnavailable
-import org.wordpress.android.ui.reader.repository.ReaderDiscoverCommunication.Error.ServiceNotStarted
-import org.wordpress.android.ui.reader.repository.ReaderDiscoverCommunication.Started
-import org.wordpress.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks
-import org.wordpress.android.ui.reader.services.discover.ReaderDiscoverServiceStarter
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.ui.reader.repository.ReaderDiscoverCommunication
+import org.sitebay.android.ui.reader.repository.ReaderDiscoverCommunication.Error.NetworkUnavailable
+import org.sitebay.android.ui.reader.repository.ReaderDiscoverCommunication.Error.ServiceNotStarted
+import org.sitebay.android.ui.reader.repository.ReaderDiscoverCommunication.Started
+import org.sitebay.android.ui.reader.services.discover.ReaderDiscoverLogic.DiscoverTasks
+import org.sitebay.android.ui.reader.services.discover.ReaderDiscoverServiceStarter
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 class FetchDiscoverCardsUseCase @Inject constructor(

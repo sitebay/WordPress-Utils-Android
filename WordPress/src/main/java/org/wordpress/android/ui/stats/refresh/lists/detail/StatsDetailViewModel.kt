@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.R
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.stats.refresh.BLOCK_DETAIL_USE_CASE
-import org.wordpress.android.ui.stats.refresh.lists.BaseListUseCase
-import org.wordpress.android.ui.stats.refresh.utils.StatsPostProvider
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.mergeNotNull
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.R
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.stats.refresh.BLOCK_DETAIL_USE_CASE
+import org.sitebay.android.ui.stats.refresh.lists.BaseListUseCase
+import org.sitebay.android.ui.stats.refresh.utils.StatsPostProvider
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.mergeNotNull
+import org.sitebay.android.viewmodel.ScopedViewModel
 import javax.inject.Inject
 import javax.inject.Named
 

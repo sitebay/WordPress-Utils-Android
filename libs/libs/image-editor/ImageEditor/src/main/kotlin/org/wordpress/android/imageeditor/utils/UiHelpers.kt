@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor.utils
+package org.sitebay.android.imageeditor.utils
 
 import android.view.View
 

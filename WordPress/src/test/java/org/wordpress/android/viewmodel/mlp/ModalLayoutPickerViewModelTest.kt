@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.mlp
+package org.sitebay.android.viewmodel.mlp
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
@@ -16,30 +16,30 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.MainCoroutineScopeRule
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.SiteAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.rest.wpcom.site.GutenbergLayout
-import org.wordpress.android.fluxc.network.rest.wpcom.site.GutenbergLayoutCategory
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnBlockLayoutsFetched
-import org.wordpress.android.fluxc.store.SiteStore.SiteError
-import org.wordpress.android.fluxc.store.SiteStore.SiteErrorType.GENERIC_ERROR
-import org.wordpress.android.ui.mlp.SupportedBlocks
-import org.wordpress.android.ui.mlp.SupportedBlocksProvider
-import org.wordpress.android.ui.layoutpicker.ThumbDimensionProvider
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.DisplayUtilsWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
-import org.wordpress.android.util.SiteUtils.GB_EDITOR_NAME
-import org.wordpress.android.viewmodel.mlp.ModalLayoutPickerViewModel.PageRequest.Blank
-import org.wordpress.android.viewmodel.mlp.ModalLayoutPickerViewModel.PageRequest.Create
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState.Content
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState.Error
-import org.wordpress.android.ui.mlp.ModalLayoutPickerTracker
+import org.sitebay.android.MainCoroutineScopeRule
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.SiteAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.rest.wpcom.site.GutenbergLayout
+import org.sitebay.android.fluxc.network.rest.wpcom.site.GutenbergLayoutCategory
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnBlockLayoutsFetched
+import org.sitebay.android.fluxc.store.SiteStore.SiteError
+import org.sitebay.android.fluxc.store.SiteStore.SiteErrorType.GENERIC_ERROR
+import org.sitebay.android.ui.mlp.SupportedBlocks
+import org.sitebay.android.ui.mlp.SupportedBlocksProvider
+import org.sitebay.android.ui.layoutpicker.ThumbDimensionProvider
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.DisplayUtilsWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.util.SiteUtils.GB_EDITOR_NAME
+import org.sitebay.android.viewmodel.mlp.ModalLayoutPickerViewModel.PageRequest.Blank
+import org.sitebay.android.viewmodel.mlp.ModalLayoutPickerViewModel.PageRequest.Create
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState.Content
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState.Error
+import org.sitebay.android.ui.mlp.ModalLayoutPickerTracker
 
 @RunWith(MockitoJUnitRunner::class)
 class ModalLayoutPickerViewModelTest {
@@ -72,9 +72,9 @@ class ModalLayoutPickerViewModelTest {
     private val aboutLayout = GutenbergLayout(
             slug = "about",
             title = "About",
-            previewTablet = "https://headstartdata.files.wordpress.com/2020/01/about-2.png",
-            previewMobile = "https://headstartdata.files.wordpress.com/2020/01/about-2.png",
-            preview = "https://headstartdata.files.wordpress.com/2020/01/about-2.png",
+            previewTablet = "https://headstartdata.files.sitebay.com/2020/01/about-2.png",
+            previewMobile = "https://headstartdata.files.sitebay.com/2020/01/about-2.png",
+            preview = "https://headstartdata.files.sitebay.com/2020/01/about-2.png",
             content = "",
             demoUrl = "",
             categories = listOf(aboutCategory)

@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.insights.PostingActivityModel.Month
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Block
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.HIGH
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.INVISIBLE
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.LOW
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.MEDIUM
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_HIGH
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_LOW
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.insights.PostingActivityModel.Month
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Block
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.HIGH
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.INVISIBLE
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.LOW
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.MEDIUM
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_HIGH
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ActivityItem.Box.VERY_LOW
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Calendar
 import javax.inject.Inject
 

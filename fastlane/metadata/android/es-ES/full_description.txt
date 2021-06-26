@@ -40,6 +40,6 @@ WordPress es un creador de webs de código abierto, lo que significa que cualqui
 
 Tanto si necesitas un constructor de webs para crear tu web, como un simple creador de blogs, WordPress puede ayudarte. Te da bonitos diseños, características poderosas y la libertad de crear lo que quieras.
 
-WordPress para Android es compatible con los sitios autoalojados que ejecutan WordPress 4.0 y posteriores y con todos los sitios de WordPress.com. Al igual que WordPress, WordPress para Android es de código abierto. Obtén más información en https://wp.me/P7jrAc-tJ. ¿Necesitas ayuda con la aplicación? Envíanos un tuit a @WPAndroid, o visita nuestros foros en https://android.forums.wordpress.org/forum/troubleshooting.
+WordPress para Android es compatible con los sitios autoalojados que ejecutan WordPress 4.0 y posteriores y con todos los sitios de WordPress.com. Al igual que WordPress, WordPress para Android es de código abierto. Obtén más información en https://wp.me/P7jrAc-tJ. ¿Necesitas ayuda con la aplicación? Envíanos un tuit a @WPAndroid, o visita nuestros foros en https://android.forums.sitebay.org/forum/troubleshooting.
 
 Aviso de privacidad para los usuarios de California: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa.

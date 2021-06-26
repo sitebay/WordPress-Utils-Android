@@ -1,11 +1,11 @@
-package org.wordpress.android.editor.gutenberg
+package org.sitebay.android.editor.gutenberg
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import org.wordpress.mobile.WPAndroidGlue.GutenbergProps
+import org.sitebay.mobile.WPAndroidGlue.GutenbergProps
 
 @Parcelize
 @SuppressLint("ParcelCreator")

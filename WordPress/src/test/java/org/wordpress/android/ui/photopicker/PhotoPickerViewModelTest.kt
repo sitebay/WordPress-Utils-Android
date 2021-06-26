@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.content.Context
 import com.nhaarman.mockitokotlin2.any
@@ -11,33 +11,33 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_PREVIEW_OPENED
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.test
-import org.wordpress.android.ui.media.MediaBrowserType
-import org.wordpress.android.ui.media.MediaBrowserType.EDITOR_PICKER
-import org.wordpress.android.ui.media.MediaBrowserType.GUTENBERG_IMAGE_PICKER
-import org.wordpress.android.ui.media.MediaBrowserType.GUTENBERG_MEDIA_PICKER
-import org.wordpress.android.ui.media.MediaBrowserType.GUTENBERG_SINGLE_IMAGE_PICKER
-import org.wordpress.android.ui.media.MediaBrowserType.GUTENBERG_SINGLE_VIDEO_PICKER
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.ActionModeUiModel
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.PhotoListUiModel
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.PhotoPickerUiState
-import org.wordpress.android.ui.photopicker.PhotoPickerViewModel.SoftAskViewUiModel
-import org.wordpress.android.ui.posts.editor.media.CopyMediaToAppStorageUseCase
-import org.wordpress.android.ui.posts.editor.media.GetMediaModelUseCase
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.MEDIA_PICKER_PREVIEW_OPENED
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.test
+import org.sitebay.android.ui.media.MediaBrowserType
+import org.sitebay.android.ui.media.MediaBrowserType.EDITOR_PICKER
+import org.sitebay.android.ui.media.MediaBrowserType.GUTENBERG_IMAGE_PICKER
+import org.sitebay.android.ui.media.MediaBrowserType.GUTENBERG_MEDIA_PICKER
+import org.sitebay.android.ui.media.MediaBrowserType.GUTENBERG_SINGLE_IMAGE_PICKER
+import org.sitebay.android.ui.media.MediaBrowserType.GUTENBERG_SINGLE_VIDEO_PICKER
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.ActionModeUiModel
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.BottomBarUiModel.BottomBar
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.PhotoListUiModel
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.PhotoPickerUiState
+import org.sitebay.android.ui.photopicker.PhotoPickerViewModel.SoftAskViewUiModel
+import org.sitebay.android.ui.posts.editor.media.CopyMediaToAppStorageUseCase
+import org.sitebay.android.ui.posts.editor.media.GetMediaModelUseCase
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class PhotoPickerViewModelTest : BaseUnitTest() {
     @Mock lateinit var deviceMediaListBuilder: DeviceMediaListBuilder

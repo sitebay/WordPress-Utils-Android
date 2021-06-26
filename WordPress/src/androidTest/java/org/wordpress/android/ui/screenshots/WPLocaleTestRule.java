@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.screenshots;
+package org.sitebay.android.ui.screenshots;
 
 
 import androidx.test.core.app.ApplicationProvider;
@@ -7,8 +7,8 @@ import androidx.test.platform.app.InstrumentationRegistry;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.util.LocaleManager;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.util.LocaleManager;
 
 public class WPLocaleTestRule implements TestRule {
     private static final String FASTLANE_TEST_LOCALE_KEY = "testLocale";

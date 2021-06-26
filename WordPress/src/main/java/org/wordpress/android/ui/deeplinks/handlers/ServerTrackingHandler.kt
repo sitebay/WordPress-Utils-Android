@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import com.android.volley.Request.Method
 import com.android.volley.RequestQueue
@@ -8,11 +8,11 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import org.wordpress.android.fluxc.utils.AppLogWrapper
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.util.AppLog.T.API
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.fluxc.utils.AppLogWrapper
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.util.AppLog.T.API
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 import javax.inject.Named
 import kotlin.coroutines.CoroutineContext

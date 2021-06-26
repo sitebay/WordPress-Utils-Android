@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories.intro
+package org.sitebay.android.ui.stories.intro
 
 import android.app.Dialog
 import android.content.Context
@@ -12,15 +12,15 @@ import android.view.Window
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.R.attr
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.StoriesIntroDialogFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.photopicker.MediaPickerLauncher
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.isDarkTheme
+import org.sitebay.android.R
+import org.sitebay.android.R.attr
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.StoriesIntroDialogFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.photopicker.MediaPickerLauncher
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.isDarkTheme
 import javax.inject.Inject
 
 class StoriesIntroDialogFragment : DialogFragment() {

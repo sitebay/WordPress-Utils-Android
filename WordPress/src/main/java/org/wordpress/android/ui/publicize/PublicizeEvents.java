@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.publicize;
+package org.sitebay.android.ui.publicize;
 
 import androidx.annotation.Nullable;
 
 import org.json.JSONObject;
-import org.wordpress.android.ui.publicize.PublicizeConstants.ConnectAction;
+import org.sitebay.android.ui.publicize.PublicizeConstants.ConnectAction;
 
 /**
  * Publicize-related EventBus event classes

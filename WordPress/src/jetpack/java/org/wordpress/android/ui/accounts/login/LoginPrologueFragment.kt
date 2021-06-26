@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login
+package org.sitebay.android.ui.accounts.login
 
 import android.content.Context
 import android.os.Bundle
@@ -6,12 +6,12 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.button.MaterialButton
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.JetpackLoginPrologueScreenBinding
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowEmailLoginScreen
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowLoginViaSiteAddressScreen
-import org.wordpress.android.util.WPActivityUtils
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.JetpackLoginPrologueScreenBinding
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowEmailLoginScreen
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowLoginViaSiteAddressScreen
+import org.sitebay.android.util.WPActivityUtils
 import javax.inject.Inject
 
 class LoginPrologueFragment : Fragment(R.layout.jetpack_login_prologue_screen) {

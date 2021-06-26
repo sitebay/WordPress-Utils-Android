@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.any
@@ -13,14 +13,14 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.store.PageStore
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.ui.posts.PostUtilsWrapper
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.store.PageStore
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.ui.posts.PostUtilsWrapper
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.util.NetworkUtilsWrapper
 import java.util.Date
 
 /**

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.insert
+package org.sitebay.android.ui.mediapicker.insert
 
 import android.content.Context
 import kotlinx.coroutines.CancellationException
@@ -11,18 +11,18 @@ import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.yield
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.MediaActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.modules.IO_THREAD
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.GifMediaIdentifier
-import org.wordpress.android.ui.mediapicker.MediaItem.Identifier.LocalId
-import org.wordpress.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel
-import org.wordpress.android.util.FluxCUtilsWrapper
-import org.wordpress.android.util.MimeTypeMapUtilsWrapper
-import org.wordpress.android.util.WPMediaUtilsWrapper
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.MediaActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.modules.IO_THREAD
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.GifMediaIdentifier
+import org.sitebay.android.ui.mediapicker.MediaItem.Identifier.LocalId
+import org.sitebay.android.ui.mediapicker.insert.MediaInsertHandler.InsertModel
+import org.sitebay.android.util.FluxCUtilsWrapper
+import org.sitebay.android.util.MimeTypeMapUtilsWrapper
+import org.sitebay.android.util.WPMediaUtilsWrapper
 import javax.inject.Inject
 import javax.inject.Named
 

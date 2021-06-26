@@ -1,43 +1,43 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import android.view.View
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.fluxc.model.stats.FollowersModel
-import org.wordpress.android.fluxc.model.stats.FollowersModel.FollowerModel
-import org.wordpress.android.fluxc.model.stats.LimitMode
-import org.wordpress.android.fluxc.model.stats.PagedMode
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.FOLLOWERS
-import org.wordpress.android.fluxc.store.stats.insights.FollowersStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.stats.StatsUtilsWrapper
-import org.wordpress.android.ui.stats.refresh.NavigationTarget.ViewFollowersStats
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.BLOCK
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.VIEW_ALL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Header
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Information
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Link
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.AVATAR
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.LoadingItem
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.TabsItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Title
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.InsightUseCaseFactory
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases.FollowersUseCase.FollowersUiState
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.ItemPopupMenuHandler
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.fluxc.model.stats.FollowersModel
+import org.sitebay.android.fluxc.model.stats.FollowersModel.FollowerModel
+import org.sitebay.android.fluxc.model.stats.LimitMode
+import org.sitebay.android.fluxc.model.stats.PagedMode
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.FOLLOWERS
+import org.sitebay.android.fluxc.store.stats.insights.FollowersStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.stats.StatsUtilsWrapper
+import org.sitebay.android.ui.stats.refresh.NavigationTarget.ViewFollowersStats
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.BLOCK
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.VIEW_ALL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Header
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Information
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Link
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.AVATAR
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.LoadingItem
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.TabsItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Title
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.InsightUseCaseFactory
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases.FollowersUseCase.FollowersUiState
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.ItemPopupMenuHandler
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -142,7 +142,7 @@ class FollowersUseCase(
             items.add(
                     TabsItem(
                             listOf(
-                                    R.string.stats_followers_wordpress_com,
+                                    R.string.stats_followers_sitebay_com,
                                     R.string.stats_followers_email
                             ),
                             uiState.selectedTab
@@ -151,7 +151,7 @@ class FollowersUseCase(
                     }
             )
             if (uiState.selectedTab == 0) {
-                items.addAll(buildTab(wpComModel, R.string.stats_followers_wordpress_com))
+                items.addAll(buildTab(wpComModel, R.string.stats_followers_sitebay_com))
             } else {
                 items.addAll(buildTab(emailModel, R.string.stats_followers_email))
             }

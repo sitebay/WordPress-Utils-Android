@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import android.app.DownloadManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.os.Environment
-import org.wordpress.android.ui.utils.AuthenticationUtils
-import org.wordpress.android.ui.utils.DownloadManagerWrapper
+import org.sitebay.android.ui.utils.AuthenticationUtils
+import org.sitebay.android.ui.utils.DownloadManagerWrapper
 import javax.inject.Inject
 
 class ReaderFileDownloadManager

@@ -1,11 +1,11 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.content.Context
 import android.net.Uri
 import dagger.Reusable
-import org.wordpress.android.editor.EditorMediaUtils
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.utils.MimeTypes.Plan
+import org.sitebay.android.editor.EditorMediaUtils
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.utils.MimeTypes.Plan
 import javax.inject.Inject
 
 /**
@@ -32,7 +32,7 @@ class MediaUtilsWrapper @Inject constructor(private val appContext: Context) {
             WPMediaUtils.fixOrientationIssue(appContext, path, isVideo)
 
     fun isVideoMimeType(mimeType: String?): Boolean =
-        org.wordpress.android.fluxc.utils.MediaUtils.isVideoMimeType(mimeType)
+        org.sitebay.android.fluxc.utils.MediaUtils.isVideoMimeType(mimeType)
 
     fun isInMediaStore(mediaUri: Uri?): Boolean =
             MediaUtils.isInMediaStore(mediaUri)

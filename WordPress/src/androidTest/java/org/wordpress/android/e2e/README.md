@@ -8,9 +8,9 @@ signup, and publishing. The tests use mocked network requests with [WireMock](ht
 **Note that due to the mock server setup, tests cannot be run on physical devices right now.**
 
 
-1. Follow the [build instructions](https://github.com/wordpress-mobile/WordPress-Android#build-instructions)
+1. Follow the [build instructions](https://github.com/sitebay-mobile/WordPress-Android#build-instructions)
  (steps 1-7) to clone, build and run the project in Android Studio.
-2. Run the tests in `org.wordpress.android.e2e`
+2. Run the tests in `org.sitebay.android.e2e`
 
 There's no additional steps needed to make the tests run against the mock server -- that's configured by default.
 

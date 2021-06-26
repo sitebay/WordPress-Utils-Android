@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories.usecase
+package org.sitebay.android.ui.stories.usecase
 
 import android.content.Context
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,14 +8,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.MediaStore
-import org.wordpress.android.ui.stories.SaveStoryGutenbergBlockUseCase.Companion.TEMPORARY_ID_PREFIX
-import org.wordpress.android.ui.stories.StoryRepositoryWrapper
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs.TempId
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.MediaStore
+import org.sitebay.android.ui.stories.SaveStoryGutenbergBlockUseCase.Companion.TEMPORARY_ID_PREFIX
+import org.sitebay.android.ui.stories.StoryRepositoryWrapper
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs.TempId
 
 @RunWith(MockitoJUnitRunner::class)
 class LoadStoryFromStoriesPrefsUseCaseTest {
@@ -145,7 +145,7 @@ class LoadStoryFromStoriesPrefsUseCaseTest {
                 for (i in 1..10) {
                     val mediaFile = HashMap<String, Any>()
                     mediaFile["mime"] = "image/jpeg"
-                    mediaFile["link"] = "https://testsite.files.wordpress.com/2020/10/wp-0000000.jpg"
+                    mediaFile["link"] = "https://testsite.files.sitebay.com/2020/10/wp-0000000.jpg"
                     mediaFile["type"] = "image"
                     mediaFile["id"] = i.toString()
                     mediaFiles.add(mediaFile)

@@ -57,7 +57,7 @@
         android:layout_marginBottom="@dimen/negative_margin_medium"
         android:layout_weight="1">
 
-        <org.wordpress.android.widgets.NestedWebView
+        <org.sitebay.android.widgets.NestedWebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -74,7 +74,7 @@
             android:visibility="gone" />
     </FrameLayout>
 
-    <org.wordpress.android.ui.ActionableEmptyView
+    <org.sitebay.android.ui.ActionableEmptyView
         android:id="@+id/errorView"
         android:layout_width="match_parent"
         android:layout_height="0dp"

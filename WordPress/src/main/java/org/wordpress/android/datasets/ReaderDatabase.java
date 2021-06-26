@@ -1,17 +1,17 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.ReaderPostList;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryEvent.ReaderPostTableActionEnded;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.ReaderPostList;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryEvent.ReaderPostTableActionEnded;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

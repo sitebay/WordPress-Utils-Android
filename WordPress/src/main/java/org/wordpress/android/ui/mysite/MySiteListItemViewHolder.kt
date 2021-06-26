@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import android.view.ViewGroup
-import org.wordpress.android.databinding.MySiteItemBlockBinding
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.MySiteItemBlockBinding
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.viewBinding
 
 class MySiteListItemViewHolder(
     parent: ViewGroup,

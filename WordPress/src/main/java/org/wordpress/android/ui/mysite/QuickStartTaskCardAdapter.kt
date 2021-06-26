@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.databinding.QuickStartTaskCardBinding
-import org.wordpress.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard.QuickStartTaskCard
-import org.wordpress.android.ui.mysite.QuickStartTaskCardAdapter.QuickStartTaskCardViewHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.databinding.QuickStartTaskCardBinding
+import org.sitebay.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard.QuickStartTaskCard
+import org.sitebay.android.ui.mysite.QuickStartTaskCardAdapter.QuickStartTaskCardViewHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.viewBinding
 
 class QuickStartTaskCardAdapter(private val uiHelpers: UiHelpers) : Adapter<QuickStartTaskCardViewHolder>() {
     private var items = listOf<QuickStartTaskCard>()

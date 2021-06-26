@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.adapters;
+package org.sitebay.android.ui.notifications.adapters;
 
 import android.content.Context;
 import android.database.Cursor;

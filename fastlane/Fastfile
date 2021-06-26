@@ -90,7 +90,7 @@ import "./ScreenshotFastfile"
 # Environment
 ########################################################################
 Dotenv.load(USER_ENV_FILE_PATH)
-ENV[GHHELPER_REPO="wordpress-mobile/WordPress-Android"]
+ENV[GHHELPER_REPO="sitebay-mobile/WordPress-Android"]
 ENV["PROJECT_ROOT_FOLDER"]=File.dirname(File.expand_path(__dir__)) + "/"
 ENV["PROJECT_NAME"]="WordPress"
 ENV["HAS_ALPHA_VERSION"]="true"
@@ -315,7 +315,7 @@ REPOSITORY_NAME="WordPress-Android"
 
     # Create the file names
     version=android_get_release_version()
-    build_bundle(version: version, app: "wordpress", flavor:"Vanilla", buildType: "release")
+    build_bundle(version: version, app: "sitebay", flavor:"Vanilla", buildType: "release")
 
     upload_build_to_play_store(version: version, track: "production")
 
@@ -368,7 +368,7 @@ REPOSITORY_NAME="WordPress-Android"
 
     # Create the file names
     version=android_get_alpha_version()
-    build_bundle(version: version, app:"wordpress", flavor:"Zalpha", buildType: "release")
+    build_bundle(version: version, app:"sitebay", flavor:"Zalpha", buildType: "release")
 
     if (options[:upload_to_play_store]) then
        upload_build_to_play_store(version: version, track: "alpha")
@@ -399,7 +399,7 @@ REPOSITORY_NAME="WordPress-Android"
 
     # Create the file names
     version=android_get_release_version()
-    build_bundle(version: version, app: "wordpress", flavor:"Vanilla", buildType: "release")
+    build_bundle(version: version, app: "sitebay", flavor:"Vanilla", buildType: "release")
 
     if (options[:upload_to_play_store]) then
        upload_build_to_play_store(version: version, track: "beta")
@@ -429,7 +429,7 @@ REPOSITORY_NAME="WordPress-Android"
 
     if File.exists? aab_file_path then
       upload_to_play_store(
-        package_name: 'org.wordpress.android',
+        package_name: 'org.sitebay.android',
         aab: aab_file_path,
         track: options[:track],
         release_status: 'draft',
@@ -478,7 +478,7 @@ REPOSITORY_NAME="WordPress-Android"
   desc "Upload Screenshots to Play Store and Replaces the existing ones"
   lane :upload_and_replace_screenshots_in_play_store do | options |
     upload_to_play_store(
-      package_name: 'org.wordpress.android',
+      package_name: 'org.sitebay.android',
       skip_upload_apk: true,
       skip_upload_aab: true,
       skip_upload_metadata: true,
@@ -513,7 +513,7 @@ REPOSITORY_NAME="WordPress-Android"
 
     delete_old_changelogs(build: options[:build_number])
     download_path=Dir.pwd + "/metadata/android"
-    gp_downloadmetadata(project_url: "https://translate.wordpress.org/projects/apps/android/release-notes/",
+    gp_downloadmetadata(project_url: "https://translate.sitebay.org/projects/apps/android/release-notes/",
       target_files: files,
       locales: RELEASE_NOTES_LOCALES,
       source_locale: "en-US",
@@ -537,7 +537,7 @@ REPOSITORY_NAME="WordPress-Android"
     {
       name: "Gutenberg Native",
       import_key: "gutenbergMobileVersion",
-      repository: "wordpress-mobile/gutenberg-mobile",
+      repository: "sitebay-mobile/gutenberg-mobile",
       strings_file_path: "bundle/android/strings.xml",
       github_release_prefix: "",
       exclusions: [],
@@ -546,7 +546,7 @@ REPOSITORY_NAME="WordPress-Android"
     {
       name: "Login Library",
       import_key: "wordPressLoginVersion",
-      repository: "wordpress-mobile/WordPress-Login-Flow-Android",
+      repository: "sitebay-mobile/WordPress-Login-Flow-Android",
       strings_file_path: "WordPressLoginFlow/src/main/res/values/strings.xml",
       github_release_prefix: "",
       exclusions: ["default_web_client_id"]
@@ -624,7 +624,7 @@ REPOSITORY_NAME="WordPress-Android"
 
     diff_url = nil
     if (pr_number.nil? == false)
-      diff_url = "https://patch-diff.githubusercontent.com/raw/wordpress-mobile/WordPress-Android/pull/#{pr_number}.diff"
+      diff_url = "https://patch-diff.githubusercontent.com/raw/sitebay-mobile/WordPress-Android/pull/#{pr_number}.diff"
     end
 
     an_validate_lib_strings(app_strings_path: main_strings_path, libs_strings_path: libraries_strings_path, diff_url: diff_url)
@@ -652,7 +652,7 @@ REPOSITORY_NAME="WordPress-Android"
     version=options[:version]
     name="wpandroid-#{version["name"]}.aab"
     apk_name=universal_apk_name(version)
-    aab_file="org.wordpress.android-#{options[:app]}-#{options[:flavor]}-#{options[:buildType]}.aab".downcase
+    aab_file="org.sitebay.android-#{options[:app]}-#{options[:flavor]}-#{options[:buildType]}.aab".downcase
     output_dir="WordPress/build/outputs/bundle/"
     build_dir="build/"
     logfile_path="#{build_dir}build.log"
@@ -697,7 +697,7 @@ REPOSITORY_NAME="WordPress-Android"
     # Adapt the GP project URL and lint_task as needed if testing a project other than WordPress
     android_download_translations(
       res_dir: File.join(ENV['PROJECT_NAME'], 'src', 'main', 'res'),
-      glotpress_url: 'https://translate.wordpress.org/projects/apps/android/dev/',
+      glotpress_url: 'https://translate.sitebay.org/projects/apps/android/dev/',
       locales: ALL_LOCALES,
       lint_task: 'lintWordpressVanillaRelease'
     )
@@ -718,7 +718,7 @@ REPOSITORY_NAME="WordPress-Android"
     translator_locales_map = ALL_LOCALES.select { translator_locales.include?(h[:glotpress]) }
 
     android_download_translations(
-      glotpress_url: 'https://translate.wordpress.com/projects/wporg/apps/android',
+      glotpress_url: 'https://translate.sitebay.com/projects/wporg/apps/android',
       status_filter: ['current', 'waiting', 'fuzzy'],
       locales: translator_locales_map,
       lint_task: nil, skip_commit: true
@@ -748,7 +748,7 @@ REPOSITORY_NAME="WordPress-Android"
   # -----------------------------------------------------------------------------------
   # Notes:
   #   - The CircleCI token can be passed via the CIRCLECI_TOKEN env var instead of as a parameter to the lane call
-  #   - The fork parameter allows us to trigger a build on a fork of WPAndroid instead of the default repo on `wordpress-mobile` org.
+  #   - The fork parameter allows us to trigger a build on a fork of WPAndroid instead of the default repo on `sitebay-mobile` org.
   #####################################################################################
   desc "Trigger a CircleCI Build"
   private_lane :trigger_ci do |options|
@@ -759,7 +759,7 @@ REPOSITORY_NAME="WordPress-Android"
     require 'uri'
     require 'json'
 
-    fork = options[:fork] || 'wordpress-mobile'
+    fork = options[:fork] || 'sitebay-mobile'
     uri = URI.parse("https://circleci.com/api/v2/project/github/#{fork}/WordPress-Android/pipeline")
     headers = {
       'Content-Type' => 'application/json',

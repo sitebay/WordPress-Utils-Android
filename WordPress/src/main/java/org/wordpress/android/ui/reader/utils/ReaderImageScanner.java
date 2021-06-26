@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.ui.reader.models.ReaderImageList;
+import org.sitebay.android.ui.reader.models.ReaderImageList;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

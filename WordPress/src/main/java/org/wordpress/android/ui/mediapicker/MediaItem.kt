@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import android.net.Uri
 import android.os.Parcel
 import android.os.Parcelable
 import android.os.Parcelable.Creator
-import org.wordpress.android.ui.mediapicker.MediaItem.IdentifierType.GIF_MEDIA_IDENTIFIER
-import org.wordpress.android.ui.mediapicker.MediaItem.IdentifierType.LOCAL_ID
-import org.wordpress.android.ui.mediapicker.MediaItem.IdentifierType.LOCAL_URI
-import org.wordpress.android.ui.mediapicker.MediaItem.IdentifierType.REMOTE_ID
-import org.wordpress.android.ui.mediapicker.MediaItem.IdentifierType.STOCK_MEDIA_IDENTIFIER
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.ui.mediapicker.MediaItem.IdentifierType.GIF_MEDIA_IDENTIFIER
+import org.sitebay.android.ui.mediapicker.MediaItem.IdentifierType.LOCAL_ID
+import org.sitebay.android.ui.mediapicker.MediaItem.IdentifierType.LOCAL_URI
+import org.sitebay.android.ui.mediapicker.MediaItem.IdentifierType.REMOTE_ID
+import org.sitebay.android.ui.mediapicker.MediaItem.IdentifierType.STOCK_MEDIA_IDENTIFIER
+import org.sitebay.android.util.UriWrapper
 
 data class MediaItem(
     val identifier: Identifier,

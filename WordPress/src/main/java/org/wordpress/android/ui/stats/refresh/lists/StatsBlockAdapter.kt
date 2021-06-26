@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.stats.refresh.lists
+package org.sitebay.android.ui.stats.refresh.lists
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.fluxc.store.StatsStore.StatsType
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Type.EMPTY
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Type.ERROR
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Type.LOADING
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Type.SUCCESS
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Type.values
-import org.wordpress.android.ui.stats.refresh.lists.viewholders.BaseStatsViewHolder
-import org.wordpress.android.ui.stats.refresh.lists.viewholders.BlockListViewHolder
-import org.wordpress.android.ui.stats.refresh.lists.viewholders.LoadingViewHolder
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.fluxc.store.StatsStore.StatsType
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Type.EMPTY
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Type.ERROR
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Type.LOADING
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Type.SUCCESS
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Type.values
+import org.sitebay.android.ui.stats.refresh.lists.viewholders.BaseStatsViewHolder
+import org.sitebay.android.ui.stats.refresh.lists.viewholders.BlockListViewHolder
+import org.sitebay.android.ui.stats.refresh.lists.viewholders.LoadingViewHolder
+import org.sitebay.android.util.image.ImageManager
 
 class StatsBlockAdapter(val imageManager: ImageManager) : Adapter<BaseStatsViewHolder>() {
     private var items: List<StatsBlock> = listOf()

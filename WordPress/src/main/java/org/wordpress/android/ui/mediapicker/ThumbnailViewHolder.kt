@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

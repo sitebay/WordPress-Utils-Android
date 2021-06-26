@@ -1,18 +1,18 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 
 import com.google.android.material.elevation.ElevationOverlayProvider;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper.RefreshListener;
-import org.wordpress.android.util.widgets.CustomSwipeRefreshLayout;
+import org.sitebay.android.R;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper.RefreshListener;
+import org.sitebay.android.util.widgets.CustomSwipeRefreshLayout;
 
 public class WPSwipeToRefreshHelper {
     /**
-     * Builds a {@link org.wordpress.android.util.helpers.SwipeToRefreshHelper} and returns a new
+     * Builds a {@link org.sitebay.android.util.helpers.SwipeToRefreshHelper} and returns a new
      * instance with colors designated for the WordPress app.
      *
      * @param swipeRefreshLayout {@link CustomSwipeRefreshLayout} for refreshing the contents

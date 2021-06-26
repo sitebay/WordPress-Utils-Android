@@ -7,12 +7,12 @@ public class URLTest extends InstrumentationTestCase {
     public void testGetHost1() {
         URL url = null;
         try {
-            url = new URL("https://wordpress.com");
+            url = new URL("https://sitebay.com");
         } catch (MalformedURLException e) {
         }
         assertNotNull(url);
 
-        assertEquals("wordpress.com", url.getHost());
+        assertEquals("sitebay.com", url.getHost());
     }
 
     public void testGetHost2() {

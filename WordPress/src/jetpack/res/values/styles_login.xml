@@ -2,7 +2,7 @@
 <resources>
     <!-- Login Prologue -->
     <style name="Widget.LoginFlow.Prologue" parent="">
-        <item name="android:background">@color/wordpress_blue_90</item>
+        <item name="android:background">@color/sitebay_blue_90</item>
     </style>
 
     <style name="Widget.LoginFlow.Button.Primary.Prologue" parent="Widget.LoginFlow.Button.Primary">
@@ -33,6 +33,6 @@
     <style name="Widget.LoginFlow.CardView.BottomBar.Prologue" parent="Widget.MaterialComponents.CardView">
         <item name="cardCornerRadius">0dp</item>
         <item name="cardElevation">0dp</item>
-        <item name="cardBackgroundColor">@color/wordpress_blue_90</item>
+        <item name="cardBackgroundColor">@color/sitebay_blue_90</item>
     </style>
 </resources>

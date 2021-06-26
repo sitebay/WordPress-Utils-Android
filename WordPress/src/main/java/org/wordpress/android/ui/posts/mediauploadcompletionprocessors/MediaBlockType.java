@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors;
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_PREFIX;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_PREFIX;
 
 enum MediaBlockType {
     IMAGE("image"),

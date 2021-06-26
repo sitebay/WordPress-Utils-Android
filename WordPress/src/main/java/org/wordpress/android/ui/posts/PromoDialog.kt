@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.Dialog
 import android.os.Bundle
@@ -12,9 +12,9 @@ import android.widget.LinearLayout
 import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatDialog
 import androidx.appcompat.app.AppCompatDialogFragment
-import org.wordpress.android.R
-import org.wordpress.android.util.DisplayUtils
-import org.wordpress.android.widgets.WPTextView
+import org.sitebay.android.R
+import org.sitebay.android.util.DisplayUtils
+import org.sitebay.android.widgets.WPTextView
 
 class PromoDialog : AppCompatDialogFragment() {
     companion object {

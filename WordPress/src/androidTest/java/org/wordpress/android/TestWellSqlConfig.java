@@ -1,4 +1,4 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,10 +7,10 @@ import com.yarolegovich.wellsql.WellSql;
 import com.yarolegovich.wellsql.WellTableManager;
 import com.yarolegovich.wellsql.core.TableClass;
 
-import org.wordpress.android.fluxc.model.AccountModel;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.persistence.WellSqlConfig;
+import org.sitebay.android.fluxc.model.AccountModel;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.persistence.WellSqlConfig;
 
 public class TestWellSqlConfig extends WellSqlConfig {
     private static final Class[] TABLES = {

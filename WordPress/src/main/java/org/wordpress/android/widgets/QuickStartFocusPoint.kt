@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,8 +7,8 @@ import android.view.animation.Animation
 import android.view.animation.Animation.AnimationListener
 import android.view.animation.AnimationUtils
 import android.widget.FrameLayout
-import org.wordpress.android.R
-import org.wordpress.android.R.styleable
+import org.sitebay.android.R
+import org.sitebay.android.R.styleable
 
 /**
  * Perpetually animated quick start focus point (hint)

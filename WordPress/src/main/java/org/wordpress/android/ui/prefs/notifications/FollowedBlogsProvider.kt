@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.prefs.notifications
+package org.sitebay.android.ui.prefs.notifications
 
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel.ClickHandler
-import org.wordpress.android.ui.utils.UrlUtilsWrapper
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.prefs.notifications.FollowedBlogsProvider.PreferenceModel.ClickHandler
+import org.sitebay.android.ui.utils.UrlUtilsWrapper
 import javax.inject.Inject
 
 class FollowedBlogsProvider

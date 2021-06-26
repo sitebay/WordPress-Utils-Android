@@ -1,12 +1,12 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.net.Uri;
 import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ErrorManagedWebViewClient;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ErrorManagedWebViewClient;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -21,12 +21,12 @@ class JetpackConnectionWebViewClient extends ErrorManagedWebViewClient {
     private static final String LOGIN_PATH = "/wp-login.php";
     private static final String ADMIN_PATH = "/wp-admin/admin.php";
     private static final String REDIRECT_PARAMETER = "redirect_to=";
-    private static final String WORDPRESS_COM_HOST = "wordpress.com";
+    private static final String WORDPRESS_COM_HOST = "sitebay.com";
     private static final String WPCOM_LOG_IN_PATH_1 = "/log-in";
     private static final String WPCOM_LOG_IN_PATH_2 = "/log-in/jetpack";
     private static final String JETPACK_PATH = "/jetpack";
-    private static final String WORDPRESS_COM_PREFIX = "https://wordpress.com";
-    static final String JETPACK_CONNECTION_DEEPLINK = "wordpress://jetpack-connection";
+    private static final String WORDPRESS_COM_PREFIX = "https://sitebay.com";
+    static final String JETPACK_CONNECTION_DEEPLINK = "sitebay://jetpack-connection";
     private static final Uri JETPACK_DEEPLINK_URI = Uri.parse(JETPACK_CONNECTION_DEEPLINK);
 
     private final @NonNull JetpackConnectionWebViewClientListener mJetpackConnectionListener;

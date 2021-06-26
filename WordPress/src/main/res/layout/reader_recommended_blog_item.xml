@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/site_icon"
         tools:text="@tools:sample/lorem/random" />
 
-    <org.wordpress.android.ui.reader.views.ReaderFollowButton
+    <org.sitebay.android.ui.reader.views.ReaderFollowButton
         style="@style/Reader.Follow.Button.Icon"
         android:id="@+id/site_follow_icon"
         android:layout_width="wrap_content"

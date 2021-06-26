@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.os.Bundle;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.WebViewActivity;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.WebViewActivity;
 
 /**
  * Display open source licenses for the application.

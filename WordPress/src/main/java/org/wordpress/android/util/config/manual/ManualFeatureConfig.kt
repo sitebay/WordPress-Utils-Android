@@ -1,8 +1,8 @@
-package org.wordpress.android.util.config.manual
+package org.sitebay.android.util.config.manual
 
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.config.FeatureConfig
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.config.FeatureConfig
 import javax.inject.Inject
 
 class ManualFeatureConfig

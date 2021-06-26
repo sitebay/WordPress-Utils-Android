@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <org.wordpress.android.ui.reader.views.ReaderWebView
+    <org.sitebay.android.ui.reader.views.ReaderWebView
         android:id="@+id/reader_webview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -185,8 +185,8 @@ Language: cs_CZ
     <string name="backup_item_roots">WordPress root</string>
     <string name="backup_download_details_choose_items_header">Položky obsažené v tomto stažení</string>
     <string name="gutenberg_native_uploading">Nahrávání…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Opakovaně použitelné bloky nelze upravovat na WordPress pro iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Opakovaně použitelné bloky nelze upravovat na WordPress pro Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Opakovaně použitelné bloky nelze upravovat na WordPress pro iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Opakovaně použitelné bloky nelze upravovat na WordPress pro Android</string>
     <string name="gutenberg_native_lock_icon">Ikona zámku</string>
     <string name="gutenberg_native_replace_file">Nahradit soubor</string>
     <string name="gutenberg_native_replace_audio">Nahradit zvuk</string>
@@ -508,7 +508,7 @@ Language: cs_CZ
     <string name="stories_intro_image_caption_first">Jak vytvořit příběhový příspěvek</string>
     <string name="stories_intro_image_caption_second">Příklad názvu příběhu</string>
     <string name="stories_intro_title_first">Nyní jsou příběhy pro každého</string>
-    <string name="photo_picker_wordpress_media_library">Vyberte si z knihovny médií WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Vyberte si z knihovny médií WordPress</string>
     <string name="media_insert_failed_with_reason">Vložení média se nezdařilo: %s</string>
     <string name="media_insert_failed">Vložení média se nezdařilo.</string>
     <string name="reader_label_toolbar_back">Zpět</string>
@@ -654,7 +654,7 @@ Language: cs_CZ
     <string name="send_link_by_email">Odeslat odkaz e-mailem</string>
     <string name="create_account">Vytvořit účet</string>
     <string name="or_type_your_password">Nebo zadejte své heslo</string>
-    <string name="enter_email_to_continue_wordpress_com">Zadejte svou e-mailovou adresu pro přihlášení nebo vytvořte účet WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Zadejte svou e-mailovou adresu pro přihlášení nebo vytvořte účet WordPress.com.</string>
     <string name="reader_error_request_failed_title">Při zpracování požadavku došlo k problému. Prosím zkuste to znovu později.</string>
     <string name="quick_start_dialog_update_site_title_message_short">Klepnutím na &lt;b&gt;%1$s&lt;/b&gt; nastavíte nový název</string>
     <string name="quick_start_list_update_site_title_title">Zadejte název svého webu</string>
@@ -929,7 +929,7 @@ Language: cs_CZ
     <string name="reader_save_for_later_display_name">Uložené</string>
     <string name="reader_discover_display_name">Objevujte</string>
     <string name="reader_my_likes_display_name">Líbí se</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress knihovna médií</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress knihovna médií</string>
     <string name="gutenberg_native_start_writing">Začněte psát…</string>
     <string name="gutenberg_native_take_a_photo">Vyfoť</string>
     <string name="gutenberg_native_take_a_photo_or_video">Pořiďte fotografii nebo video</string>
@@ -1376,7 +1376,7 @@ Language: cs_CZ
     <string name="stats_comments_label">Komentáře</string>
     <string name="stats_comments_title_label">Název</string>
     <string name="stats_comments_posts_and_pages">Příspěvky a stránky</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_publicize_followers_label">Fanoušci</string>
     <string name="stats_publicize_service_label">Služba</string>
     <string name="stats_follower_since_label">Od té doby</string>
@@ -1834,7 +1834,7 @@ Language: cs_CZ
     <string name="plugin_external_link_icon_content_description">Externí odkaz</string>
     <string name="plugin_icon_content_description">Ikona pluginu</string>
     <string name="plugin_home_page">Domovská stránka pluginu</string>
-    <string name="wordpress_dot_org_plugin_page">Web pluginu na WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Web pluginu na WordPress.org</string>
     <string name="plugin_remove_dialog_message">Opravdu chcete odstranit %1$s z %2$s?\n\nDojde k deaktivaci pluginu a smazání všech přidružených souborů a dat.</string>
     <string name="plugin_remove_dialog_title">Odstranit plugin</string>
     <string name="plugin_remove_progress_dialog_message">Odstraňování %s…</string>
@@ -1995,7 +1995,7 @@ Language: cs_CZ
     <string name="login_text_otp">Pošlete mi raději kód.</string>
     <string name="enter_verification_code">Téměř hotovo! Zadejte ověřovací kód z aplikace Authenticator.</string>
     <string name="next">Další</string>
-    <string name="enter_email_wordpress_com">Přihlaste se na stránku WordPress.com pomocí e-mailové adresy pro správu všech vašich stránek na WordPress.</string>
+    <string name="enter_email_sitebay_com">Přihlaste se na stránku WordPress.com pomocí e-mailové adresy pro správu všech vašich stránek na WordPress.</string>
     <string name="image_optimization_promo_desc">Optimalizace obrazu mírně sníží kvalitu obrázků pro rychlejší nahrávání\n\nToto nastavení můžete kdykoli změnit v nastavení webu.</string>
     <string name="image_optimization_promo_title">Zapnout optimalizaci obrázků?</string>
     <string name="me_profile_photo">Profilová fotka</string>
@@ -2553,8 +2553,8 @@ Language: cs_CZ
     <string name="stats_insights_today">Dnešní statistika</string>
     <string name="stats_insights_all_time">Všechny příspěvky, zobrazení a návštěvníci</string>
     <string name="stats_insights">Přehledy</string>
-    <string name="me_disconnect_from_wordpress_com">Odpojit od WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Připojit k WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Odpojit od WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Připojit k WordPress.com</string>
     <string name="me_btn_login_logout">Přihlášení/Odhlášení</string>
     <string name="account_settings">Uživatelské nastavení</string>
     <string name="me_btn_support">Pomoc a podpora</string>
@@ -2730,7 +2730,7 @@ Language: cs_CZ
     <string name="notifications_empty_all">Doposud nejsou k dispozici žádná oznámení.</string>
     <string name="error_blog_hidden">Tento web je skrytý a proto nemohl být načten. Zpřístupněte jej v nastavení a zkuste to znovu.</string>
     <string name="file_error_create">Nepodařilo se vytvořit soubor temp pro nahrávání. Ujistěte se, že máte na svém zařízení dostatek volného místa.</string>
-    <string name="wordpress_blog">WordPress web</string>
+    <string name="sitebay_blog">WordPress web</string>
     <string name="select_categories">Vyberte rubriku</string>
     <string name="invalid_site_url_message">Zkontrolujte platnost URL adresy stránky</string>
     <string name="error_refresh_media">Média se nepodařilo obnovit</string>

@@ -1,28 +1,28 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors
 
 /* ktlint-disable max-line-length */
 /* ktlint-disable string-template */
 object TestContent {
-    const val siteUrl = "https://wordpress.org"
+    const val siteUrl = "https://sitebay.org"
     const val localImageUrl = "file://Screenshot-1-1.png"
     const val localImageUrl2 = "file://Screenshot-1-2.png"
     const val localAudioUrl = "file://test-song.mp3"
-    const val remoteImageUrl = "https://onetwoonetwothisisjustatesthome.files.wordpress.com/2019/11/pexels-photo-1671668.jpg"
-    const val remoteImageUrl2 = "https://onetwoonetwothisisjustatesthome.files.wordpress.com/2019/12/img_20191202_094944-19.jpg"
-    const val remoteAudioUrl = "https://onetwoonetwothisisjustatesthome.files.wordpress.com/2020/11/test-song.mp3"
+    const val remoteImageUrl = "https://onetwoonetwothisisjustatesthome.files.sitebay.com/2019/11/pexels-photo-1671668.jpg"
+    const val remoteImageUrl2 = "https://onetwoonetwothisisjustatesthome.files.sitebay.com/2019/12/img_20191202_094944-19.jpg"
+    const val remoteAudioUrl = "https://onetwoonetwothisisjustatesthome.files.sitebay.com/2020/11/test-song.mp3"
     private const val remoteImageUrlBlogLink = "http://onetwoonetwothisisjustatest.home.blog/pexels-photo-1671668/"
-    private const val remoteImageUrlWithSize = "https://onetwoonetwothisisjustatesthome.files.wordpress.com/2019/11/pexels-photo-1671668.jpg?w=1024"
+    private const val remoteImageUrlWithSize = "https://onetwoonetwothisisjustatesthome.files.sitebay.com/2019/11/pexels-photo-1671668.jpg?w=1024"
     private const val remoteImageUrl2BlogLink = "http://onetwoonetwothisisjustatest.home.blog/?attachment_id=369"
-    private const val remoteImageUrl2WithSize = "https://onetwoonetwothisisjustatesthome.files.wordpress.com/2019/12/img_20191202_094944-19.jpg?w=768"
+    private const val remoteImageUrl2WithSize = "https://onetwoonetwothisisjustatesthome.files.sitebay.com/2019/12/img_20191202_094944-19.jpg?w=768"
     private const val localVideoUrl = "file://local-video.mov"
-    const val remoteVideoUrl = "https://videos.files.wordpress.com/qeJFeNa2/macintosh-plus-floral-shoppe-02-e383aae382b5e38395e383a9e383b3e382af420-e78fbee4bba3e381aee382b3e383b3e38394e383a5e383bc-1_hd.mp4"
+    const val remoteVideoUrl = "https://videos.files.sitebay.com/qeJFeNa2/macintosh-plus-floral-shoppe-02-e383aae382b5e38395e383a9e383b3e382af420-e78fbee4bba3e381aee382b3e383b3e38394e383a5e383bc-1_hd.mp4"
     const val localMediaId = "112"
     const val localMediaId2 = "113"
     private const val collidingPrefixMediaId = "${localMediaId}42"
     private const val collidingSuffixMediaId = "42${localMediaId}"
     const val remoteMediaId = "97629"
     const val remoteMediaId2 = "97630"
-    const val attachmentPageUrl = "https://wordpress.org?p=${remoteMediaId}"
+    const val attachmentPageUrl = "https://sitebay.org?p=${remoteMediaId}"
 
     const val oldImageBlock = """<!-- wp:image {"id":${localMediaId},"align":"full"} -->
 <figure class="wp-block-image alignfull">
@@ -264,7 +264,7 @@ object TestContent {
 """
 
     const val paragraphBlock = """<!-- wp:paragraph {"align":"center","fontSize":"small","className":"gutenberg-landing\u002d\u002dbutton-disclaimer"} -->
-<p class="has-text-align-center has-small-font-size gutenberg-landing--button-disclaimer"><em>Gutenberg is available as a plugin today, and will be included in version 5.0 of WordPress. The <a href="https://wordpress.org/plugins/classic-editor/">classic editor</a> will be available as a plugin if needed.</em></p>
+<p class="has-text-align-center has-small-font-size gutenberg-landing--button-disclaimer"><em>Gutenberg is available as a plugin today, and will be included in version 5.0 of WordPress. The <a href="https://sitebay.org/plugins/classic-editor/">classic editor</a> will be available as a plugin if needed.</em></p>
 <!-- /wp:paragraph -->
 """"
 

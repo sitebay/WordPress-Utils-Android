@@ -30,7 +30,7 @@
                 android:paddingStart="@dimen/margin_medium"
                 android:paddingEnd="@dimen/margin_medium">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_medium"
@@ -38,19 +38,19 @@
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="?attr/colorPrimary" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_large"
                     android:text="@string/connections_description"
                     android:textAppearance="?attr/textAppearanceCaption" />
 
-                <org.wordpress.android.ui.reader.views.ReaderRecyclerView
+                <org.sitebay.android.ui.reader.views.ReaderRecyclerView
                     android:id="@+id/recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/empty_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 android:paddingEnd="@dimen/margin_medium"
                 android:paddingBottom="@dimen/margin_large">
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/text_manage_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
                         android:src="@drawable/ic_cog_white_24dp"
                         app:tint="?attr/colorPrimary" />
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:id="@+id/text_manage_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

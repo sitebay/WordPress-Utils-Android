@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.usecases
+package org.sitebay.android.ui.jetpack.scan.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.verify
@@ -10,18 +10,18 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.action.ScanAction.START_SCAN
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.scan.ScanStateModel
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.fluxc.store.ScanStore.OnScanStarted
-import org.wordpress.android.fluxc.store.ScanStore.ScanStartError
-import org.wordpress.android.fluxc.store.ScanStore.ScanStartErrorType
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.action.ScanAction.START_SCAN
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.scan.ScanStateModel
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.fluxc.store.ScanStore.OnScanStarted
+import org.sitebay.android.fluxc.store.ScanStore.ScanStartError
+import org.sitebay.android.fluxc.store.ScanStore.ScanStartErrorType
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.scan.usecases.StartScanUseCase.StartScanState
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @InternalCoroutinesApi
 class StartScanUseCaseTest : BaseUnitTest() {

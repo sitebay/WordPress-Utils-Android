@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
 import java.text.DateFormatSymbols
 import java.util.Calendar

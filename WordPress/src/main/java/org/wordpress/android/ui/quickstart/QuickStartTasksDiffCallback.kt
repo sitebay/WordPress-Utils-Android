@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.quickstart
+package org.sitebay.android.ui.quickstart
 
 import androidx.recyclerview.widget.DiffUtil
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
 
 class QuickStartTasksDiffCallback(
     private val oldList: List<QuickStartTask>,

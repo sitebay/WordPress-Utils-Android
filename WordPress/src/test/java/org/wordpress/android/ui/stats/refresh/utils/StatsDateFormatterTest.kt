@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -8,15 +8,15 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.DAYS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.MONTHS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.WEEKS
-import org.wordpress.android.fluxc.network.utils.StatsGranularity.YEARS
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.DAYS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.MONTHS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.WEEKS
+import org.sitebay.android.fluxc.network.utils.StatsGranularity.YEARS
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Calendar
 import java.util.Locale
 import java.util.TimeZone

@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.deeplinks
+package org.sitebay.android.ui.deeplinks
 
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
-import org.wordpress.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource.BANNER
-import org.wordpress.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource.EMAIL
-import org.wordpress.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource.LINK
-import org.wordpress.android.ui.deeplinks.handlers.DeepLinkHandlers
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtilsWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.DEEP_LINKED
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.OpenInBrowser
+import org.sitebay.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource.BANNER
+import org.sitebay.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource.EMAIL
+import org.sitebay.android.ui.deeplinks.DeepLinkTrackingUtils.DeepLinkSource.LINK
+import org.sitebay.android.ui.deeplinks.handlers.DeepLinkHandlers
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtilsWrapper
 import javax.inject.Inject
 
 class DeepLinkTrackingUtils

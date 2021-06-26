@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.stats.refresh
+package org.sitebay.android.ui.stats.refresh
 
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.ui.stats.StatsConstants
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.ui.stats.StatsConstants
 import java.util.Date
 
 sealed class NavigationTarget {

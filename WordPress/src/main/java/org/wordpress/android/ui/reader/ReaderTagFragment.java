@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,13 +9,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import org.wordpress.android.R;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.ui.ActionableEmptyView;
-import org.wordpress.android.ui.reader.adapters.ReaderTagAdapter;
-import org.wordpress.android.ui.reader.views.ReaderRecyclerView;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.WPActivityUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.ui.ActionableEmptyView;
+import org.sitebay.android.ui.reader.adapters.ReaderTagAdapter;
+import org.sitebay.android.ui.reader.views.ReaderRecyclerView;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.WPActivityUtils;
 
 /*
  * fragment hosted by ReaderSubsActivity which shows followed tags

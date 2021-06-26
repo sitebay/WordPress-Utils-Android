@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ReaderSimplePostsContainerViewBinding
-import org.wordpress.android.ui.reader.adapters.ReaderRelatedPostsAdapter
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.RelatedPostsUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ReaderSimplePostsContainerViewBinding
+import org.sitebay.android.ui.reader.adapters.ReaderRelatedPostsAdapter
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.viewmodels.ReaderPostDetailViewModel.UiState.ReaderPostDetailsUiState.RelatedPostsUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
 import javax.inject.Inject
 
 /**

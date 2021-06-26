@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,23 +10,23 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.core.app.TaskStackBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.ui.ShareIntentReceiverFragment.ShareAction;
-import org.wordpress.android.ui.ShareIntentReceiverFragment.ShareIntentFragmentListener;
-import org.wordpress.android.ui.main.WPMainActivity;
-import org.wordpress.android.ui.media.MediaBrowserActivity;
-import org.wordpress.android.ui.media.MediaBrowserType;
-import org.wordpress.android.util.FluxCUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.PermissionUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.WPPermissionUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.ui.ShareIntentReceiverFragment.ShareAction;
+import org.sitebay.android.ui.ShareIntentReceiverFragment.ShareIntentFragmentListener;
+import org.sitebay.android.ui.main.WPMainActivity;
+import org.sitebay.android.ui.media.MediaBrowserActivity;
+import org.sitebay.android.ui.media.MediaBrowserType;
+import org.sitebay.android.util.FluxCUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.PermissionUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.WPPermissionUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.screenshots;
+package org.sitebay.android.ui.screenshots;
 
 import android.provider.Settings;
 
@@ -12,13 +12,13 @@ import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.e2e.pages.MySitesPage;
-import org.wordpress.android.e2e.pages.SitePickerPage;
-import org.wordpress.android.support.BaseTest;
-import org.wordpress.android.support.DemoModeEnabler;
-import org.wordpress.android.ui.WPLaunchActivity;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.e2e.pages.MySitesPage;
+import org.sitebay.android.e2e.pages.SitePickerPage;
+import org.sitebay.android.support.BaseTest;
+import org.sitebay.android.support.DemoModeEnabler;
+import org.sitebay.android.ui.WPLaunchActivity;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
@@ -29,15 +29,15 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.containsString;
-import static org.wordpress.android.support.WPSupportUtils.clickOn;
-import static org.wordpress.android.support.WPSupportUtils.getCurrentActivity;
-import static org.wordpress.android.support.WPSupportUtils.idleFor;
-import static org.wordpress.android.support.WPSupportUtils.isElementDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.pressBackUntilElementIsDisplayed;
-import static org.wordpress.android.support.WPSupportUtils.setNightMode;
-import static org.wordpress.android.support.WPSupportUtils.swipeLeftOnViewPager;
-import static org.wordpress.android.support.WPSupportUtils.swipeRightOnViewPager;
-import static org.wordpress.android.support.WPSupportUtils.waitForElementToBeDisplayedWithoutFailure;
+import static org.sitebay.android.support.WPSupportUtils.clickOn;
+import static org.sitebay.android.support.WPSupportUtils.getCurrentActivity;
+import static org.sitebay.android.support.WPSupportUtils.idleFor;
+import static org.sitebay.android.support.WPSupportUtils.isElementDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.pressBackUntilElementIsDisplayed;
+import static org.sitebay.android.support.WPSupportUtils.setNightMode;
+import static org.sitebay.android.support.WPSupportUtils.swipeLeftOnViewPager;
+import static org.sitebay.android.support.WPSupportUtils.swipeRightOnViewPager;
+import static org.sitebay.android.support.WPSupportUtils.waitForElementToBeDisplayedWithoutFailure;
 
 import tools.fastlane.screengrab.Screengrab;
 import tools.fastlane.screengrab.UiAutomatorScreenshotStrategy;

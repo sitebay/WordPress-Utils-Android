@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.alltime
+package org.sitebay.android.ui.stats.refresh.lists.widget.alltime
 
-import org.wordpress.android.modules.AppComponent
-import org.wordpress.android.ui.stats.refresh.lists.widget.StatsWidget
-import org.wordpress.android.ui.stats.refresh.lists.widget.WidgetUpdater
+import org.sitebay.android.modules.AppComponent
+import org.sitebay.android.ui.stats.refresh.lists.widget.StatsWidget
+import org.sitebay.android.ui.stats.refresh.lists.widget.WidgetUpdater
 import javax.inject.Inject
 
 class StatsAllTimeWidget : StatsWidget() {

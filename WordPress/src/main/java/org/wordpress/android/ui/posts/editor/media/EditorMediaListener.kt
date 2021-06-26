@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.net.Uri
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.ui.posts.EditPostActivity.OnPostUpdatedFromUIListener
-import org.wordpress.android.util.helpers.MediaFile
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.ui.posts.EditPostActivity.OnPostUpdatedFromUIListener
+import org.sitebay.android.util.helpers.MediaFile
 
 interface EditorMediaListener {
     fun appendMediaFiles(mediaFiles: Map<String, MediaFile>)

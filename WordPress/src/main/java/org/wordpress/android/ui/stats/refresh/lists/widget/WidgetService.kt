@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget
+package org.sitebay.android.ui.stats.refresh.lists.widget
 
 import android.content.Intent
 import android.widget.RemoteViewsService
-import org.wordpress.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetBlockListProviderFactory
-import org.wordpress.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetListProvider
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.ALL_TIME_VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.TODAY_VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.WEEK_VIEWS
-import org.wordpress.android.ui.stats.refresh.lists.widget.today.TodayWidgetBlockListProviderFactory
-import org.wordpress.android.ui.stats.refresh.lists.widget.today.TodayWidgetListProvider
-import org.wordpress.android.ui.stats.refresh.lists.widget.utils.getViewType
-import org.wordpress.android.ui.stats.refresh.lists.widget.views.ViewsWidgetListProvider
+import org.sitebay.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetBlockListProviderFactory
+import org.sitebay.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetListProvider
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.ALL_TIME_VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.TODAY_VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType.WEEK_VIEWS
+import org.sitebay.android.ui.stats.refresh.lists.widget.today.TodayWidgetBlockListProviderFactory
+import org.sitebay.android.ui.stats.refresh.lists.widget.today.TodayWidgetListProvider
+import org.sitebay.android.ui.stats.refresh.lists.widget.utils.getViewType
+import org.sitebay.android.ui.stats.refresh.lists.widget.views.ViewsWidgetListProvider
 
 class WidgetService : RemoteViewsService() {
     override fun onGetViewFactory(intent: Intent): RemoteViewsFactory {

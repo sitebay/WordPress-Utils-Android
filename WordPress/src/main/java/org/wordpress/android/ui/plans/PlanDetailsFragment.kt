@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.plans
+package org.sitebay.android.ui.plans
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -30,17 +30,17 @@ import com.stripe.android.paymentsheet.PaymentSheet
 import com.stripe.android.paymentsheet.PaymentSheetResult
 import com.stripe.android.paymentsheet.PaymentSheetResultCallback
 import com.stripe.android.paymentsheet.model.PaymentOption
-import com.wordpress.rest.RestRequest
+import com.sitebay.rest.RestRequest
 import org.json.JSONArray
 import org.json.JSONObject
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.model.plans.PlanOffersModel
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogContent
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogController
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.model.plans.PlanOffersModel
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogContent
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogController
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
 import javax.inject.Inject
 
 class PlanDetailsFragment : Fragment(), FullScreenDialogContent {

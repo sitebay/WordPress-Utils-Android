@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.people
+package org.sitebay.android.ui.people
 
-import org.wordpress.android.ui.people.InviteLinksUiStateType.LOADING
+import org.sitebay.android.ui.people.InviteLinksUiStateType.LOADING
 
 data class InviteLinksUiState(
     val type: InviteLinksUiStateType,

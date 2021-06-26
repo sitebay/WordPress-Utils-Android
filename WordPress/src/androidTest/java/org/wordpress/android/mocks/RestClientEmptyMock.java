@@ -1,11 +1,11 @@
-package org.wordpress.android.mocks;
+package org.sitebay.android.mocks;
 
 import com.android.volley.Request.Method;
-import com.wordpress.rest.RestClient;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestClient;
+import com.sitebay.rest.RestRequest;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 public class RestClientEmptyMock extends RestClient {
     public RestClientEmptyMock(com.android.volley.RequestQueue queue) {
@@ -25,29 +25,29 @@ public class RestClientEmptyMock extends RestClient {
         return null;
     }
 
-    public com.wordpress.rest.RestRequest get(java.lang.String path, com.wordpress.rest.RestRequest.Listener listener,
-                                              com.wordpress.rest.RestRequest.ErrorListener errorListener) {
+    public com.sitebay.rest.RestRequest get(java.lang.String path, com.sitebay.rest.RestRequest.Listener listener,
+                                              com.sitebay.rest.RestRequest.ErrorListener errorListener) {
         AppLog.v(T.TESTS, this.getClass() + ": get(" + path + ")");
         return new RestRequest(Method.GET, path, null, listener, errorListener);
     }
 
-    public com.wordpress.rest.RestRequest post(java.lang.String path,
+    public com.sitebay.rest.RestRequest post(java.lang.String path,
                                                java.util.Map<java.lang.String, java.lang.String> body,
-                                               com.wordpress.rest.RestRequest.Listener listener,
-                                               com.wordpress.rest.RestRequest.ErrorListener errorListener) {
+                                               com.sitebay.rest.RestRequest.Listener listener,
+                                               com.sitebay.rest.RestRequest.ErrorListener errorListener) {
         AppLog.v(T.TESTS, this.getClass() + ": post(" + path + ")");
         return new RestRequest(Method.POST, path, body, listener, errorListener);
     }
 
-    public com.wordpress.rest.RestRequest makeRequest(int method, java.lang.String url,
+    public com.sitebay.rest.RestRequest makeRequest(int method, java.lang.String url,
                                                       java.util.Map<java.lang.String, java.lang.String> params,
-                                                      com.wordpress.rest.RestRequest.Listener listener,
-                                                      com.wordpress.rest.RestRequest.ErrorListener errorListener) {
+                                                      com.sitebay.rest.RestRequest.Listener listener,
+                                                      com.sitebay.rest.RestRequest.ErrorListener errorListener) {
         AppLog.v(T.TESTS, this.getClass() + ": makeRequest(" + url + ")");
         return new RestRequest(method, url, params, listener, errorListener);
     }
 
-    public com.wordpress.rest.RestRequest send(com.wordpress.rest.RestRequest request) {
+    public com.sitebay.rest.RestRequest send(com.sitebay.rest.RestRequest request) {
         return request;
     }
 

@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
 
 enum class PostListType(val postStatuses: List<PostStatus>) {
     PUBLISHED(listOf(PostStatus.PUBLISHED, PRIVATE)),

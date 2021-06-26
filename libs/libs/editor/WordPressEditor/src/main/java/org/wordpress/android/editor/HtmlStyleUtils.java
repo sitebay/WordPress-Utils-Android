@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -11,7 +11,7 @@ import android.text.style.StyleSpan;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.util.AppLog;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

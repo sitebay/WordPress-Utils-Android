@@ -1,9 +1,9 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import android.content.Context
 import android.content.Intent
-import org.wordpress.android.workers.LocalNotification.Type
-import org.wordpress.android.workers.LocalNotification.Type.CREATE_SITE
+import org.sitebay.android.workers.LocalNotification.Type
+import org.sitebay.android.workers.LocalNotification.Type.CREATE_SITE
 import javax.inject.Inject
 
 class LocalNotificationHandlerFactory @Inject constructor(

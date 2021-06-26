@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.plans
+package org.sitebay.android.ui.plans
 
 import android.os.Bundle
-import org.wordpress.android.databinding.PlansActivityBinding
-import org.wordpress.android.fluxc.model.plans.PlanOffersModel
-import org.wordpress.android.ui.FullScreenDialogFragment
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.plans.PlansListFragment.PlansListInterface
-import org.wordpress.android.util.StringUtils
+import org.sitebay.android.databinding.PlansActivityBinding
+import org.sitebay.android.fluxc.model.plans.PlanOffersModel
+import org.sitebay.android.ui.FullScreenDialogFragment
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.plans.PlansListFragment.PlansListInterface
+import org.sitebay.android.util.StringUtils
 
 class PlansActivity : LocaleAwareActivity(), PlansListInterface {
     public override fun onCreate(savedInstanceState: Bundle?) {

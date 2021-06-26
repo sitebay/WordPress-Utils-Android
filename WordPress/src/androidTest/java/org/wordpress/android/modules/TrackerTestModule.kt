@@ -1,9 +1,9 @@
-package org.wordpress.android.modules
+package org.sitebay.android.modules
 
 import dagger.Module
 import dagger.Provides
 import org.mockito.Mockito
-import org.wordpress.android.analytics.Tracker
+import org.sitebay.android.analytics.Tracker
 
 @Module
 class TrackerTestModule {

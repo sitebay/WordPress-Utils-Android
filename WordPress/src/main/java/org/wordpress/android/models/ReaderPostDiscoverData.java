@@ -1,4 +1,4 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.content.Context;
 import android.text.Html;
@@ -9,10 +9,10 @@ import androidx.annotation.NonNull;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.StringUtils;
 
 /**
  * additional data for "discover" posts in the reader - these are posts chosen by

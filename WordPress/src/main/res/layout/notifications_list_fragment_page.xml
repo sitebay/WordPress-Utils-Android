@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+    <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
         android:id="@+id/notifications_refresh"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -25,9 +25,9 @@
             tools:listitem="@layout/notifications_list_item">
         </androidx.recyclerview.widget.RecyclerView>
 
-    </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+    </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
-    <org.wordpress.android.ui.ActionableEmptyView
+    <org.sitebay.android.ui.ActionableEmptyView
         android:id="@+id/actionable_empty_view"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         app:aevSubtitle="@string/notifications_empty_action_unread"
         app:aevTitle="@string/notifications_empty_unread"
         tools:visibility="visible">
-    </org.wordpress.android.ui.ActionableEmptyView>
+    </org.sitebay.android.ui.ActionableEmptyView>
 
     <LinearLayout
         android:id="@+id/layout_new_notificatons"
@@ -57,21 +57,21 @@
         android:visibility="gone"
         tools:visibility="visible">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/notifications_label_new_notifications"
             android:textColor="@color/grey_lighten_30"
             android:textSize="@dimen/text_sz_large">
-        </org.wordpress.android.widgets.WPTextView>
+        </org.sitebay.android.widgets.WPTextView>
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/notifications_label_new_notifications_subtitle"
             android:textColor="@color/grey_lighten_30"
             android:textSize="@dimen/text_sz_small">
-        </org.wordpress.android.widgets.WPTextView>
+        </org.sitebay.android.widgets.WPTextView>
 
     </LinearLayout>
 

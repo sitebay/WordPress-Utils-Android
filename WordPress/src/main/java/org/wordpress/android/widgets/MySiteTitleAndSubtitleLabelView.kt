@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,7 +7,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textview.MaterialTextView
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 /**
  * Text View used for a site name and url label on My Site fragment.

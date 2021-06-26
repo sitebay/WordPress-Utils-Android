@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters;
+package org.sitebay.android.ui.reader.adapters;
 
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.datasets.ReaderBlogTable;
-import org.wordpress.android.fluxc.model.ReaderSiteModel;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.views.ReaderSiteSearchResultView;
+import org.sitebay.android.datasets.ReaderBlogTable;
+import org.sitebay.android.fluxc.model.ReaderSiteModel;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.views.ReaderSiteSearchResultView;
 
 import java.util.ArrayList;
 import java.util.List;

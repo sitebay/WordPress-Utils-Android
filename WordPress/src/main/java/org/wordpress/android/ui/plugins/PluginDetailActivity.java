@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.plugins;
+package org.sitebay.android.ui.plugins;
 
 import android.animation.ObjectAnimator;
 import android.app.Activity;
@@ -41,59 +41,59 @@ import com.google.android.material.snackbar.Snackbar;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.PluginActionBuilder;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.plugin.ImmutablePluginModel;
-import org.wordpress.android.fluxc.model.plugin.PluginDirectoryType;
-import org.wordpress.android.fluxc.store.PluginStore;
-import org.wordpress.android.fluxc.store.PluginStore.ConfigureSitePluginPayload;
-import org.wordpress.android.fluxc.store.PluginStore.DeleteSitePluginPayload;
-import org.wordpress.android.fluxc.store.PluginStore.InstallSitePluginPayload;
-import org.wordpress.android.fluxc.store.PluginStore.OnPluginDirectoryFetched;
-import org.wordpress.android.fluxc.store.PluginStore.OnSitePluginConfigured;
-import org.wordpress.android.fluxc.store.PluginStore.OnSitePluginDeleted;
-import org.wordpress.android.fluxc.store.PluginStore.OnSitePluginInstalled;
-import org.wordpress.android.fluxc.store.PluginStore.OnSitePluginUpdated;
-import org.wordpress.android.fluxc.store.PluginStore.OnWPOrgPluginFetched;
-import org.wordpress.android.fluxc.store.PluginStore.UpdateSitePluginPayload;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.InitiateAutomatedTransferPayload;
-import org.wordpress.android.fluxc.store.SiteStore.OnAutomatedTransferEligibilityChecked;
-import org.wordpress.android.fluxc.store.SiteStore.OnAutomatedTransferInitiated;
-import org.wordpress.android.fluxc.store.SiteStore.OnAutomatedTransferStatusChecked;
-import org.wordpress.android.fluxc.store.SiteStore.OnPlansFetched;
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.domains.DomainRegistrationActivity.DomainRegistrationPurpose;
-import org.wordpress.android.ui.domains.DomainRegistrationResultFragment;
-import org.wordpress.android.ui.posts.BasicFragmentDialog;
-import org.wordpress.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.FormatUtils;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.ToastUtils.Duration;
-import org.wordpress.android.util.WPLinkMovementMethod;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
-import org.wordpress.android.widgets.WPSnackbar;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.PluginActionBuilder;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.plugin.ImmutablePluginModel;
+import org.sitebay.android.fluxc.model.plugin.PluginDirectoryType;
+import org.sitebay.android.fluxc.store.PluginStore;
+import org.sitebay.android.fluxc.store.PluginStore.ConfigureSitePluginPayload;
+import org.sitebay.android.fluxc.store.PluginStore.DeleteSitePluginPayload;
+import org.sitebay.android.fluxc.store.PluginStore.InstallSitePluginPayload;
+import org.sitebay.android.fluxc.store.PluginStore.OnPluginDirectoryFetched;
+import org.sitebay.android.fluxc.store.PluginStore.OnSitePluginConfigured;
+import org.sitebay.android.fluxc.store.PluginStore.OnSitePluginDeleted;
+import org.sitebay.android.fluxc.store.PluginStore.OnSitePluginInstalled;
+import org.sitebay.android.fluxc.store.PluginStore.OnSitePluginUpdated;
+import org.sitebay.android.fluxc.store.PluginStore.OnWPOrgPluginFetched;
+import org.sitebay.android.fluxc.store.PluginStore.UpdateSitePluginPayload;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.InitiateAutomatedTransferPayload;
+import org.sitebay.android.fluxc.store.SiteStore.OnAutomatedTransferEligibilityChecked;
+import org.sitebay.android.fluxc.store.SiteStore.OnAutomatedTransferInitiated;
+import org.sitebay.android.fluxc.store.SiteStore.OnAutomatedTransferStatusChecked;
+import org.sitebay.android.fluxc.store.SiteStore.OnPlansFetched;
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.domains.DomainRegistrationActivity.DomainRegistrationPurpose;
+import org.sitebay.android.ui.domains.DomainRegistrationResultFragment;
+import org.sitebay.android.ui.posts.BasicFragmentDialog;
+import org.sitebay.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.FormatUtils;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.ToastUtils.Duration;
+import org.sitebay.android.util.WPLinkMovementMethod;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
+import org.sitebay.android.widgets.WPSnackbar;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -108,8 +108,8 @@ import java.util.TimeZone;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.ui.plans.PlanUtilsKt.isDomainCreditAvailable;
-import static org.wordpress.android.util.DomainRegistrationUtilsKt.requestEmailValidation;
+import static org.sitebay.android.ui.plans.PlanUtilsKt.isDomainCreditAvailable;
+import static org.sitebay.android.util.DomainRegistrationUtilsKt.requestEmailValidation;
 
 public class PluginDetailActivity extends LocaleAwareActivity implements OnDomainRegistrationRequestedListener,
         BasicDialogPositiveClickInterface {
@@ -548,7 +548,7 @@ public class PluginDetailActivity extends LocaleAwareActivity implements OnDomai
     }
 
     private boolean isCustomDomainRequired() {
-        return mSite.getUrl().contains(".wordpress.com");
+        return mSite.getUrl().contains(".sitebay.com");
     }
 
     private void refreshViews() {
@@ -1171,11 +1171,11 @@ public class PluginDetailActivity extends LocaleAwareActivity implements OnDomai
     }
 
     protected String getWpOrgPluginUrl() {
-        return "https://wordpress.org/plugins/" + mSlug;
+        return "https://sitebay.org/plugins/" + mSlug;
     }
 
     protected String getWpOrgReviewsUrl() {
-        return "https://wordpress.org/plugins/" + mSlug + "/#reviews";
+        return "https://sitebay.org/plugins/" + mSlug + "/#reviews";
     }
 
     private String getRemovingPluginMessage() {

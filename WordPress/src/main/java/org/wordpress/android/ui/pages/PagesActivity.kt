@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.PagesActivityBinding
-import org.wordpress.android.push.NotificationType
-import org.wordpress.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker
-import org.wordpress.android.ui.posts.BasicFragmentDialog.BasicDialogNegativeClickInterface
-import org.wordpress.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.PagesActivityBinding
+import org.sitebay.android.push.NotificationType
+import org.sitebay.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker
+import org.sitebay.android.ui.posts.BasicFragmentDialog.BasicDialogNegativeClickInterface
+import org.sitebay.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface
 import javax.inject.Inject
 
 const val EXTRA_PAGE_REMOTE_ID_KEY = "extra_page_remote_id_key"

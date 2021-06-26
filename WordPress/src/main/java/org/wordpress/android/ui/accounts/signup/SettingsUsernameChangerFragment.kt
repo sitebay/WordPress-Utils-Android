@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.signup
+package org.sitebay.android.ui.accounts.signup
 
 import android.app.ProgressDialog
 import android.os.Bundle
@@ -14,19 +14,19 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ACCOUNT_SETTINGS_CHANGE_USERNAME_FAILED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ACCOUNT_SETTINGS_CHANGE_USERNAME_SUCCEEDED
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.ACCOUNT_SETTINGS_CHANGE_USERNAME_SUGGESTIONS_FAILED
-import org.wordpress.android.fluxc.generated.AccountActionBuilder
-import org.wordpress.android.fluxc.store.AccountStore.AccountUsernameActionType.KEEP_OLD_SITE_AND_ADDRESS
-import org.wordpress.android.fluxc.store.AccountStore.OnUsernameChanged
-import org.wordpress.android.fluxc.store.AccountStore.PushUsernamePayload
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogController
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.widgets.WPDialogSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ACCOUNT_SETTINGS_CHANGE_USERNAME_FAILED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ACCOUNT_SETTINGS_CHANGE_USERNAME_SUCCEEDED
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.ACCOUNT_SETTINGS_CHANGE_USERNAME_SUGGESTIONS_FAILED
+import org.sitebay.android.fluxc.generated.AccountActionBuilder
+import org.sitebay.android.fluxc.store.AccountStore.AccountUsernameActionType.KEEP_OLD_SITE_AND_ADDRESS
+import org.sitebay.android.fluxc.store.AccountStore.OnUsernameChanged
+import org.sitebay.android.fluxc.store.AccountStore.PushUsernamePayload
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogController
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.widgets.WPDialogSnackbar
 
 /**
  * Allows the user to change their username from the Account Settings screen.

@@ -28,7 +28,7 @@
                 tool:src="@drawable/img_illustration_empty_results_216dp"
                 tool:visibility="visible" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/title"
                 style="@style/ActionableEmptyStateTitle"
                 android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
                 app:fixWidowWords="true"
                 tool:text="Title" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/subtitle"
                 style="@style/ActionableEmptyStateSubtitle"
                 android:layout_width="wrap_content"

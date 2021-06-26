@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,13 +9,13 @@ import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.HeaderUiState
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.HomeUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.BLAVATAR
+import org.sitebay.android.R
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.HeaderUiState
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.HomeUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.BLAVATAR
 
 sealed class PrepublishingHomeViewHolder(
     internal val parent: ViewGroup,

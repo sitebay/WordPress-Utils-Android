@@ -184,7 +184,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/blue_wordpress"
+        android:backgroundTint="@color/blue_sitebay"
         android:text="Pay Now"
         android:textColor="@android:color/white" />
 

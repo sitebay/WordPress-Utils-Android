@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
@@ -9,12 +9,12 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.annotation.LayoutRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.WPTooltipView.TooltipPosition.ABOVE
-import org.wordpress.android.ui.WPTooltipView.TooltipPosition.BELOW
-import org.wordpress.android.ui.WPTooltipView.TooltipPosition.LEFT
-import org.wordpress.android.ui.WPTooltipView.TooltipPosition.RIGHT
-import org.wordpress.android.util.RtlUtils
+import org.sitebay.android.R
+import org.sitebay.android.ui.WPTooltipView.TooltipPosition.ABOVE
+import org.sitebay.android.ui.WPTooltipView.TooltipPosition.BELOW
+import org.sitebay.android.ui.WPTooltipView.TooltipPosition.LEFT
+import org.sitebay.android.ui.WPTooltipView.TooltipPosition.RIGHT
+import org.sitebay.android.util.RtlUtils
 import java.lang.IllegalArgumentException
 
 /**

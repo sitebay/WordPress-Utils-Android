@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.jetpack.backup.download
+package org.sitebay.android.ui.jetpack.backup.download
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.ui.jetpack.backup.download.StateType.COMPLETE
-import org.wordpress.android.ui.jetpack.backup.download.StateType.DETAILS
-import org.wordpress.android.ui.jetpack.backup.download.StateType.ERROR
-import org.wordpress.android.ui.jetpack.backup.download.StateType.PROGRESS
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.CompleteToolbarState
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.DetailsToolbarState
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.ErrorToolbarState
-import org.wordpress.android.ui.jetpack.backup.download.ToolbarState.ProgressToolbarState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.ui.jetpack.backup.download.StateType.COMPLETE
+import org.sitebay.android.ui.jetpack.backup.download.StateType.DETAILS
+import org.sitebay.android.ui.jetpack.backup.download.StateType.ERROR
+import org.sitebay.android.ui.jetpack.backup.download.StateType.PROGRESS
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.CompleteToolbarState
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.DetailsToolbarState
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.ErrorToolbarState
+import org.sitebay.android.ui.jetpack.backup.download.ToolbarState.ProgressToolbarState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
 import java.util.Date
 
 abstract class BackupDownloadUiState(open val type: StateType) {

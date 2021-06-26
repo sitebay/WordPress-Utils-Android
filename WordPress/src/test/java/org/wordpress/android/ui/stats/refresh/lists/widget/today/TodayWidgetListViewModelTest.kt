@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.today
+package org.sitebay.android.ui.stats.refresh.lists.widget.today
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.verify
@@ -9,16 +9,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.stats.VisitsModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.stats.insights.TodayInsightsStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
-import org.wordpress.android.ui.stats.refresh.lists.widget.today.TodayWidgetListViewModel.TodayItemUiModel
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.stats.VisitsModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.stats.insights.TodayInsightsStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.lists.widget.today.TodayWidgetListViewModel.TodayItemUiModel
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 
 @RunWith(MockitoJUnitRunner::class)
 class TodayWidgetListViewModelTest {

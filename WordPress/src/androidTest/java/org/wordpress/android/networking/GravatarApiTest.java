@@ -1,4 +1,4 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import android.test.InstrumentationTestCase;
 

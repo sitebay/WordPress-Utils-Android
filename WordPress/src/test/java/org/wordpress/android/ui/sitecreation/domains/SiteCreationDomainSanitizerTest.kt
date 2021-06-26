@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.domains
+package org.sitebay.android.ui.sitecreation.domains
 
 import junit.framework.Assert.assertEquals
 import junit.framework.Assert.assertFalse
@@ -9,8 +9,8 @@ class SiteCreationDomainSanitizerTest {
 
     @Test
     fun `Verify everything after the first period is removed`() {
-        val result = domainSanitizer.sanitizeDomainQuery("test.wordpress.com")
-        assertFalse(result.contains("wordpress.com"))
+        val result = domainSanitizer.sanitizeDomainQuery("test.sitebay.com")
+        assertFalse(result.contains("sitebay.com"))
     }
 
     @Test
@@ -21,31 +21,31 @@ class SiteCreationDomainSanitizerTest {
 
     @Test
     fun `Remove https if its present`() {
-        val result = domainSanitizer.sanitizeDomainQuery("https://test.wordpress.com")
+        val result = domainSanitizer.sanitizeDomainQuery("https://test.sitebay.com")
         assertFalse(result.contains("https://"))
     }
 
     @Test
     fun `Remove http if its present`() {
-        val result = domainSanitizer.sanitizeDomainQuery("http://test.wordpress.com")
+        val result = domainSanitizer.sanitizeDomainQuery("http://test.sitebay.com")
         assertFalse(result.contains("http://"))
     }
 
     @Test
     fun `Remove all characters that are not alphanumeric`() {
-        val result = domainSanitizer.sanitizeDomainQuery("test_this-site.wordpress.com")
+        val result = domainSanitizer.sanitizeDomainQuery("test_this-site.sitebay.com")
         assertEquals(result, "testthissite")
     }
 
     @Test
     fun `Get first domain part`() {
-        val result = domainSanitizer.getName("https://test_this-site.wordpress.com")
+        val result = domainSanitizer.getName("https://test_this-site.sitebay.com")
         assertEquals(result, "test_this-site")
     }
 
     @Test
     fun `Get second domain part`() {
-        val result = domainSanitizer.getDomain("https://test_this-site.wordpress.com")
-        assertEquals(result, ".wordpress.com")
+        val result = domainSanitizer.getDomain("https://test_this-site.sitebay.com")
+        assertEquals(result, ".sitebay.com")
     }
 }

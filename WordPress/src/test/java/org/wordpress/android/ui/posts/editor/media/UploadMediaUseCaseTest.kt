@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
 import com.nhaarman.mockitokotlin2.any
@@ -9,11 +9,11 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState.FAILED
-import org.wordpress.android.ui.posts.EditPostActivity.OnPostUpdatedFromUIListener
-import org.wordpress.android.ui.uploads.UploadServiceFacade
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState.FAILED
+import org.sitebay.android.ui.posts.EditPostActivity.OnPostUpdatedFromUIListener
+import org.sitebay.android.ui.uploads.UploadServiceFacade
 
 @RunWith(MockitoJUnitRunner::class)
 class UploadMediaUseCaseTest {

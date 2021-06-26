@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -23,7 +23,7 @@ public class AutolinkUtils {
         PROVIDERS.add(Pattern.compile("(http://i*.photobucket.com/albums/\\S+)", Pattern.CASE_INSENSITIVE));
         PROVIDERS.add(Pattern.compile("(http://gi*.photobucket.com/groups/\\S+)", Pattern.CASE_INSENSITIVE));
         PROVIDERS.add(Pattern.compile("(https?://(www\\.)?scribd\\.com/doc/\\S+)", Pattern.CASE_INSENSITIVE));
-        PROVIDERS.add(Pattern.compile("(https?://wordpress\\.tv/\\S+)", Pattern.CASE_INSENSITIVE));
+        PROVIDERS.add(Pattern.compile("(https?://sitebay\\.tv/\\S+)", Pattern.CASE_INSENSITIVE));
         PROVIDERS.add(Pattern.compile("(https?://(.+\\.)?polldaddy\\.com/\\S+)", Pattern.CASE_INSENSITIVE));
         PROVIDERS.add(Pattern.compile("(https?://poll\\.fm/\\S+)", Pattern.CASE_INSENSITIVE));
         PROVIDERS.add(Pattern.compile("(https?://(www\\.)?funnyordie\\.com/videos/\\S+)", Pattern.CASE_INSENSITIVE));

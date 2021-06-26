@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -27,14 +27,14 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.apache.commons.text.StringEscapeUtils;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.tools.FluxCImageLoader;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.tools.FluxCImageLoader;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,12 +7,12 @@ import android.view.View
 import android.view.ViewTreeObserver.OnPreDrawListener
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.ui.reader.discover.interests.TagUiState
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.ui.reader.discover.interests.TagUiState
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.utils.UiHelpers
 import javax.inject.Inject
 
 class ReaderExpandableTagsView @JvmOverloads constructor(

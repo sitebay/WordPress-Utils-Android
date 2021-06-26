@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.jetpack.common.viewholders
+package org.sitebay.android.ui.jetpack.common.viewholders
 
 import android.view.ViewGroup
 import android.view.ViewGroup.MarginLayoutParams
-import org.wordpress.android.databinding.JetpackBackupRestoreListSubheaderItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackBackupRestoreListItemState.SubHeaderState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.databinding.JetpackBackupRestoreListSubheaderItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackBackupRestoreListItemState.SubHeaderState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.utils.UiHelpers
 
 class JetpackBackupRestoreSubHeaderViewHolder(
     private val uiHelpers: UiHelpers,

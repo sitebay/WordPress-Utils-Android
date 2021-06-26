@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.wordpress.android.widgets.NestedCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<org.sitebay.android.widgets.NestedCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinator"
@@ -40,7 +40,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+        <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
             android:id="@+id/ptr_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -52,9 +52,9 @@
                 android:importantForAccessibility="no"
                 android:scrollbars="vertical" />
 
-        </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+        </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/empty_view"
             style="@style/WordPress.EmptyList.Title"
             android:layout_width="wrap_content"
@@ -83,4 +83,4 @@
             android:layout_marginBottom="@dimen/margin_medium" />
     </RelativeLayout>
 
-</org.wordpress.android.widgets.NestedCoordinatorLayout>
+</org.sitebay.android.widgets.NestedCoordinatorLayout>

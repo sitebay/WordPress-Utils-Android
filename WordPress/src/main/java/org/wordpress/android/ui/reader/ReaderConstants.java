@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 public class ReaderConstants {
     // max # posts to request when updating posts
@@ -20,7 +20,7 @@ public class ReaderConstants {
     // min width for an image to be suitable featured image
     public static final int MIN_FEATURED_IMAGE_WIDTH = 640;
 
-    public static final long DISCOVER_SITE_ID = 53424024; // site id for discover.wordpress.com
+    public static final long DISCOVER_SITE_ID = 53424024; // site id for discover.sitebay.com
 
     // min size for images in post content to be shown in a gallery (thumbnail strip) - matches
     // the Calypso web reader
@@ -29,7 +29,7 @@ public class ReaderConstants {
     public static final int THUMBNAIL_STRIP_IMG_COUNT = 4;
 
     // referrer url for reader posts opened in a browser
-    public static final String HTTP_REFERER_URL = "https://wordpress.com";
+    public static final String HTTP_REFERER_URL = "https://sitebay.com";
 
     // intent arguments / keys
     static final String ARG_SOURCE = "source";
@@ -99,5 +99,5 @@ public class ReaderConstants {
     public static final String RECOMMENDED_FEED_ID = "feed_ID";
 
     // Custom action to handle post deeplinks
-    public static final String ACTION_VIEW_POST = "org.wordpress.android.action.VIEW_POST";
+    public static final String ACTION_VIEW_POST = "org.sitebay.android.action.VIEW_POST";
 }

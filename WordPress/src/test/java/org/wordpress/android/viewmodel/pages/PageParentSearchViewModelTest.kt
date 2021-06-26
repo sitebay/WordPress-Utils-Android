@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
@@ -12,10 +12,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R.string
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.ui.pages.PageItem
-import org.wordpress.android.ui.pages.PageItem.Empty
+import org.sitebay.android.R.string
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.ui.pages.PageItem
+import org.sitebay.android.ui.pages.PageItem.Empty
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

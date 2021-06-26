@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -6,10 +6,10 @@ import org.junit.Before
 
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.util.BuildConfigWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.util.BuildConfigWrapper
 
 class LoginEpilogueViewModelTest : BaseUnitTest() {
     private lateinit var viewModel: LoginEpilogueViewModel

@@ -1,23 +1,23 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.plans.PlansConstants.BLOGGER_PLAN_ONE_YEAR_ID
-import org.wordpress.android.ui.plans.PlansConstants.BLOGGER_PLAN_TWO_YEARS_ID
-import org.wordpress.android.ui.plans.PlansConstants.FREE_PLAN_ID
-import org.wordpress.android.ui.plans.PlansConstants.PREMIUM_PLAN_ID
-import org.wordpress.android.util.image.BlavatarShape.CIRCULAR
-import org.wordpress.android.util.image.BlavatarShape.SQUARE
-import org.wordpress.android.util.image.BlavatarShape.SQUARE_WITH_ROUNDED_CORNERES
-import org.wordpress.android.util.image.ImageType.BLAVATAR
-import org.wordpress.android.util.image.ImageType.BLAVATAR_CIRCULAR
-import org.wordpress.android.util.image.ImageType.BLAVATAR_ROUNDED_CORNERS
-import org.wordpress.android.util.image.ImageType.P2_BLAVATAR
-import org.wordpress.android.util.image.ImageType.P2_BLAVATAR_CIRCULAR
-import org.wordpress.android.util.image.ImageType.P2_BLAVATAR_ROUNDED_CORNERS
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.plans.PlansConstants.BLOGGER_PLAN_ONE_YEAR_ID
+import org.sitebay.android.ui.plans.PlansConstants.BLOGGER_PLAN_TWO_YEARS_ID
+import org.sitebay.android.ui.plans.PlansConstants.FREE_PLAN_ID
+import org.sitebay.android.ui.plans.PlansConstants.PREMIUM_PLAN_ID
+import org.sitebay.android.util.image.BlavatarShape.CIRCULAR
+import org.sitebay.android.util.image.BlavatarShape.SQUARE
+import org.sitebay.android.util.image.BlavatarShape.SQUARE_WITH_ROUNDED_CORNERES
+import org.sitebay.android.util.image.ImageType.BLAVATAR
+import org.sitebay.android.util.image.ImageType.BLAVATAR_CIRCULAR
+import org.sitebay.android.util.image.ImageType.BLAVATAR_ROUNDED_CORNERS
+import org.sitebay.android.util.image.ImageType.P2_BLAVATAR
+import org.sitebay.android.util.image.ImageType.P2_BLAVATAR_CIRCULAR
+import org.sitebay.android.util.image.ImageType.P2_BLAVATAR_ROUNDED_CORNERS
 
 class SiteUtilsTest {
     @Test
@@ -48,11 +48,11 @@ class SiteUtilsTest {
     @Test
     fun `hasCustomDomain returns true when site has custom domain`() {
         val site = SiteModel()
-        site.url = "http://wordpress.com"
+        site.url = "http://sitebay.com"
 
         assertTrue(SiteUtils.hasCustomDomain(site))
 
-        site.url = "https://***.wordpress.com"
+        site.url = "https://***.sitebay.com"
         assertFalse(SiteUtils.hasCustomDomain(site))
     }
 

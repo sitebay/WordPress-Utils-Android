@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,15 +7,15 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkUriUtils
-import org.wordpress.android.ui.deeplinks.buildUri
-import org.wordpress.android.ui.stats.StatsTimeframe.DAY
-import org.wordpress.android.ui.stats.StatsTimeframe.INSIGHTS
-import org.wordpress.android.ui.stats.StatsTimeframe.MONTH
-import org.wordpress.android.ui.stats.StatsTimeframe.WEEK
-import org.wordpress.android.ui.stats.StatsTimeframe.YEAR
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkUriUtils
+import org.sitebay.android.ui.deeplinks.buildUri
+import org.sitebay.android.ui.stats.StatsTimeframe.DAY
+import org.sitebay.android.ui.stats.StatsTimeframe.INSIGHTS
+import org.sitebay.android.ui.stats.StatsTimeframe.MONTH
+import org.sitebay.android.ui.stats.StatsTimeframe.WEEK
+import org.sitebay.android.ui.stats.StatsTimeframe.YEAR
 
 @RunWith(MockitoJUnitRunner::class)
 class StatsLinkHandlerTest {
@@ -30,7 +30,7 @@ class StatsLinkHandlerTest {
 
     @Test
     fun `handles stats URI`() {
-        val statsUri = buildUri(host = "wordpress.com", "stats")
+        val statsUri = buildUri(host = "sitebay.com", "stats")
 
         val isStatsUri = statsLinkHandler.shouldHandleUrl(statsUri)
 
@@ -48,7 +48,7 @@ class StatsLinkHandlerTest {
 
     @Test
     fun `does not handle stats URI with different host`() {
-        val statsUri = buildUri(host = "wordpress.org", "stats")
+        val statsUri = buildUri(host = "sitebay.org", "stats")
 
         val isStatsUri = statsLinkHandler.shouldHandleUrl(statsUri)
 
@@ -57,7 +57,7 @@ class StatsLinkHandlerTest {
 
     @Test
     fun `does not handle URI with different path`() {
-        val statsUri = buildUri(host = "wordpress.com", "post")
+        val statsUri = buildUri(host = "sitebay.com", "post")
 
         val isStatsUri = statsLinkHandler.shouldHandleUrl(statsUri)
 
@@ -135,7 +135,7 @@ class StatsLinkHandlerTest {
 
         val strippedUrl = statsLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress://stats/day/domain")
+        assertThat(strippedUrl).isEqualTo("sitebay://stats/day/domain")
     }
 
     @Test
@@ -144,24 +144,24 @@ class StatsLinkHandlerTest {
 
         val strippedUrl = statsLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress://stats")
+        assertThat(strippedUrl).isEqualTo("sitebay://stats")
     }
 
     @Test
     fun `strips deeplink with all params`() {
-        val uri = buildUri(host = "wordpress.com", "stats", "day", "example.com")
+        val uri = buildUri(host = "sitebay.com", "stats", "day", "example.com")
 
         val strippedUrl = statsLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress.com/stats/day/domain")
+        assertThat(strippedUrl).isEqualTo("sitebay.com/stats/day/domain")
     }
 
     @Test
     fun `strips deeplink without params`() {
-        val uri = buildUri(host = "wordpress.com", "stats")
+        val uri = buildUri(host = "sitebay.com", "stats")
 
         val strippedUrl = statsLinkHandler.stripUrl(uri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress.com/stats")
+        assertThat(strippedUrl).isEqualTo("sitebay.com/stats")
     }
 }

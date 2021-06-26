@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.quickstart
+package org.sitebay.android.ui.quickstart
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.util.QuickStartUtils.Companion.ICON_NOT_SET
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.util.QuickStartUtils.Companion.ICON_NOT_SET
 
 /**
  * Static data about initial tutorial prompts you see when selecting one from Quick Start task list

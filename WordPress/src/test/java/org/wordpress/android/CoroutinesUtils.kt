@@ -1,4 +1,4 @@
-package org.wordpress.android
+package org.sitebay.android
 
 import com.nhaarman.mockitokotlin2.KStubbing
 import kotlinx.coroutines.CancellableContinuation

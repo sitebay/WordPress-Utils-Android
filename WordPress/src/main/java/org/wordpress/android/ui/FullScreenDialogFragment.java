@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -32,9 +32,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.appbar.AppBarLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.ColorUtils;
-import org.wordpress.android.util.ContextExtensionsKt;
+import org.sitebay.android.R;
+import org.sitebay.android.util.ColorUtils;
+import org.sitebay.android.util.ContextExtensionsKt;
 
 /**
  * A {@link DialogFragment} implementing the full-screen dialog pattern defined in the

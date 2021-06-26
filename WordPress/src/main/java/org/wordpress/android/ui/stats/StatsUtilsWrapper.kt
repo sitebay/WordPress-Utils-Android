@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.stats
+package org.sitebay.android.ui.stats
 
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Date
 import java.util.Locale
 import javax.inject.Inject

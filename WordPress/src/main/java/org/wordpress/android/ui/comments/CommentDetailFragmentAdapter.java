@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
 import android.os.Parcelable;
 
@@ -6,10 +6,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.models.CommentList;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.models.CommentList;
+import org.sitebay.android.util.AppLog;
 
 /**
  * @deprecated

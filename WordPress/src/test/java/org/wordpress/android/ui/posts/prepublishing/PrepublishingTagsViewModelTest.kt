@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.prepublishing
+package org.sitebay.android.ui.posts.prepublishing
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.doNothing
@@ -10,14 +10,14 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.test
-import org.wordpress.android.ui.posts.PrepublishingTagsViewModel
-import org.wordpress.android.ui.posts.UpdatePostTagsUseCase
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.test
+import org.sitebay.android.ui.posts.PrepublishingTagsViewModel
+import org.sitebay.android.ui.posts.UpdatePostTagsUseCase
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.viewmodel.Event
 
 @InternalCoroutinesApi
 class PrepublishingTagsViewModelTest : BaseUnitTest() {

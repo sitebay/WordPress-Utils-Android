@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -23,23 +23,23 @@ import androidx.core.content.FileProvider;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore.MediaError;
-import org.wordpress.android.fluxc.store.media.MediaErrorSubType;
-import org.wordpress.android.fluxc.store.media.MediaErrorSubType.MalformedMediaArgSubType;
-import org.wordpress.android.fluxc.utils.MimeTypes;
-import org.wordpress.android.fluxc.utils.MimeTypes.Plan;
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment;
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.mediapicker.MediaPickerFragment.ChooserContext;
-import org.wordpress.android.ui.mediapicker.MediaPickerFragment.MediaPickerAction.OpenSystemPicker;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.R;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore.MediaError;
+import org.sitebay.android.fluxc.store.media.MediaErrorSubType;
+import org.sitebay.android.fluxc.store.media.MediaErrorSubType.MalformedMediaArgSubType;
+import org.sitebay.android.fluxc.utils.MimeTypes;
+import org.sitebay.android.fluxc.utils.MimeTypes.Plan;
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment;
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.mediapicker.MediaPickerFragment.ChooserContext;
+import org.sitebay.android.ui.mediapicker.MediaPickerFragment.MediaPickerAction.OpenSystemPicker;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.File;
 import java.io.IOException;
@@ -160,8 +160,8 @@ public class WPMediaUtils {
         };
 
         AlertDialog.Builder builder = new MaterialAlertDialogBuilder(context);
-        builder.setTitle(org.wordpress.android.R.string.image_optimization_promo_title);
-        builder.setMessage(org.wordpress.android.R.string.image_optimization_promo_desc);
+        builder.setTitle(org.sitebay.android.R.string.image_optimization_promo_title);
+        builder.setMessage(org.sitebay.android.R.string.image_optimization_promo_desc);
         builder.setPositiveButton(R.string.turn_on, onClickListener);
         builder.setNegativeButton(R.string.leave_off, onClickListener);
         builder.setOnCancelListener(onCancelListener);
@@ -547,10 +547,10 @@ public class WPMediaUtils {
 
         try {
             // Do not download the file in async task. See
-            // https://github.com/wordpress-mobile/WordPress-Android/issues/5818
+            // https://github.com/sitebay-mobile/WordPress-Android/issues/5818
             return MediaUtils.downloadExternalMedia(context, mediaUri);
         } catch (IllegalStateException e) {
-            // Ref: https://github.com/wordpress-mobile/WordPress-Android/issues/5823
+            // Ref: https://github.com/sitebay-mobile/WordPress-Android/issues/5823
             AppLog.e(AppLog.T.UTILS, "Can't download the image at: " + mediaUri.toString()
                                      + " See issue #5823", e);
 

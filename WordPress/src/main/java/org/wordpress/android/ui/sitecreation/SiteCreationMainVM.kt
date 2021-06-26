@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation
+package org.sitebay.android.ui.sitecreation
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,23 +8,23 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import kotlinx.parcelize.Parcelize
-import org.wordpress.android.R
-import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleEmpty
-import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleGeneral
-import org.wordpress.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleStepCount
-import org.wordpress.android.ui.sitecreation.SiteCreationStep.DOMAINS
-import org.wordpress.android.ui.sitecreation.SiteCreationStep.LOGIN_DETAILS
-import org.wordpress.android.ui.sitecreation.SiteCreationStep.SEGMENTS
-import org.wordpress.android.ui.sitecreation.SiteCreationStep.SITE_PREVIEW
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.util.wizard.WizardManager
-import org.wordpress.android.util.wizard.WizardNavigationTarget
-import org.wordpress.android.util.wizard.WizardState
-import org.wordpress.android.viewmodel.SingleEventObservable
-import org.wordpress.android.viewmodel.SingleLiveEvent
-import org.wordpress.android.viewmodel.helpers.DialogHolder
+import org.sitebay.android.R
+import org.sitebay.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleEmpty
+import org.sitebay.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleGeneral
+import org.sitebay.android.ui.sitecreation.SiteCreationMainVM.SiteCreationScreenTitle.ScreenTitleStepCount
+import org.sitebay.android.ui.sitecreation.SiteCreationStep.DOMAINS
+import org.sitebay.android.ui.sitecreation.SiteCreationStep.LOGIN_DETAILS
+import org.sitebay.android.ui.sitecreation.SiteCreationStep.SEGMENTS
+import org.sitebay.android.ui.sitecreation.SiteCreationStep.SITE_PREVIEW
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.util.wizard.WizardManager
+import org.sitebay.android.util.wizard.WizardNavigationTarget
+import org.sitebay.android.util.wizard.WizardState
+import org.sitebay.android.viewmodel.SingleEventObservable
+import org.sitebay.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.viewmodel.helpers.DialogHolder
 import javax.inject.Inject
 
 const val TAG_WARNING_DIALOG = "back_pressed_warning_dialog"

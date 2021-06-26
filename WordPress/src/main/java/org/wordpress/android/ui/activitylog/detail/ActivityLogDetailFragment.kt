@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.activitylog.detail
+package org.sitebay.android.ui.activitylog.detail
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,26 +6,26 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ActivityLogItemDetailBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.ActivityLauncher.SOURCE_TRACK_EVENT_PROPERTY_KEY
-import org.wordpress.android.ui.RequestCodes
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents.ShowBackupDownload
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents.ShowRestore
-import org.wordpress.android.ui.notifications.blocks.NoteBlockClickableSpan
-import org.wordpress.android.ui.notifications.utils.FormattableContentClickHandler
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
-import org.wordpress.android.viewmodel.activitylog.ACTIVITY_LOG_ARE_BUTTONS_VISIBLE_KEY
-import org.wordpress.android.viewmodel.activitylog.ACTIVITY_LOG_ID_KEY
-import org.wordpress.android.viewmodel.activitylog.ActivityLogDetailViewModel
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ActivityLogItemDetailBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.ActivityLauncher.SOURCE_TRACK_EVENT_PROPERTY_KEY
+import org.sitebay.android.ui.RequestCodes
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents.ShowBackupDownload
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents.ShowRestore
+import org.sitebay.android.ui.notifications.blocks.NoteBlockClickableSpan
+import org.sitebay.android.ui.notifications.utils.FormattableContentClickHandler
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
+import org.sitebay.android.viewmodel.activitylog.ACTIVITY_LOG_ARE_BUTTONS_VISIBLE_KEY
+import org.sitebay.android.viewmodel.activitylog.ACTIVITY_LOG_ID_KEY
+import org.sitebay.android.viewmodel.activitylog.ActivityLogDetailViewModel
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 private const val DETAIL_TRACKING_SOURCE = "detail"

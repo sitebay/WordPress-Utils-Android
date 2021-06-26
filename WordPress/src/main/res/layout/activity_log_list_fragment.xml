@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.wordpress.android.ui.ActionableEmptyView
+    <org.sitebay.android.ui.ActionableEmptyView
         android:id="@+id/actionable_empty_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,17 +15,17 @@
         app:aevTitle="@string/activity_log_empty_title"
         tools:visibility="visible" />
 
-    <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+    <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <org.wordpress.android.ui.prefs.EmptyViewRecyclerView
+        <org.sitebay.android.ui.prefs.EmptyViewRecyclerView
             android:id="@+id/log_list_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
 
-    </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+    </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
 </RelativeLayout>

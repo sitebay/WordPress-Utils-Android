@@ -1,4 +1,4 @@
-package org.wordpress.android.e2e.pages;
+package org.sitebay.android.e2e.pages;
 
 import androidx.test.espresso.ViewInteraction;
 

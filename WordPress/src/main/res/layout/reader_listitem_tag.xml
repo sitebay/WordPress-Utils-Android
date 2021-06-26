@@ -16,7 +16,7 @@
     android:paddingEnd="@dimen/margin_extra_large"
     android:paddingBottom="@dimen/margin_medium">
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/text_topic"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

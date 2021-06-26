@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 sealed class EngagedListNavigationEvent(val closeUserProfileIfOpened: Boolean = true) {
     data class PreviewSiteByUrl(val siteUrl: String, val source: String) : EngagedListNavigationEvent()

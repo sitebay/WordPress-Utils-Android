@@ -26,7 +26,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/post_settings_input_dialog_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

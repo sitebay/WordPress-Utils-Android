@@ -1,22 +1,22 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
 import android.text.TextUtils
 import com.automattic.android.tracks.crashlogging.CrashLogging
 import com.google.gson.Gson
-import com.wordpress.stories.compose.frame.FrameIndex
-import com.wordpress.stories.compose.story.StoryFrameItem
-import com.wordpress.stories.compose.story.StoryIndex
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs.TempId
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.EDITOR
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.util.crashlogging.sendReportWithTag
-import org.wordpress.android.util.helpers.MediaFile
+import com.sitebay.stories.compose.frame.FrameIndex
+import com.sitebay.stories.compose.story.StoryFrameItem
+import com.sitebay.stories.compose.story.StoryIndex
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs.TempId
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.EDITOR
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.util.crashlogging.sendReportWithTag
+import org.sitebay.android.util.helpers.MediaFile
 import javax.inject.Inject
 
 class SaveStoryGutenbergBlockUseCase @Inject constructor(

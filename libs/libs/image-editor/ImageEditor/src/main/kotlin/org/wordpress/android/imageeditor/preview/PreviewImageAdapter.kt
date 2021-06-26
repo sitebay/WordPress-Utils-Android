@@ -1,12 +1,12 @@
-package org.wordpress.android.imageeditor.preview
+package org.sitebay.android.imageeditor.preview
 
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageData
-import org.wordpress.android.imageeditor.preview.PreviewImageViewModel.ImageUiState
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageData
+import org.sitebay.android.imageeditor.preview.PreviewImageViewModel.ImageUiState
 
 class PreviewImageAdapter(
     private val loadIntoImageViewWithResultListener: (ImageData, ImageView, Int) -> Unit

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import androidx.lifecycle.MutableLiveData
 import com.nhaarman.mockitokotlin2.doAnswer
@@ -10,15 +10,15 @@ import org.junit.Test
 import org.mockito.ArgumentMatchers.anyBoolean
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.test
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.reader.FollowCommentsUiStateType.VISIBLE_WITH_STATE
-import org.wordpress.android.ui.reader.ReaderCommentListViewModel.ScrollPosition
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowStateChanged
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.test
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.reader.FollowCommentsUiStateType.VISIBLE_WITH_STATE
+import org.sitebay.android.ui.reader.ReaderCommentListViewModel.ScrollPosition
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowStateChanged
+import org.sitebay.android.viewmodel.Event
 
 @InternalCoroutinesApi
 class ReaderCommentListViewModelTest : BaseUnitTest() {

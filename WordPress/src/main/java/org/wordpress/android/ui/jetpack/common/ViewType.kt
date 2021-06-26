@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.common
+package org.sitebay.android.ui.jetpack.common
 
 enum class ViewType(val id: Int) {
     ICON(0),

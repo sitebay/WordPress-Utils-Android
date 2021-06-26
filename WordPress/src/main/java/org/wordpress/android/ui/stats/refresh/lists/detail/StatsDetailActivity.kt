@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.stats.refresh.lists.detail
+package org.sitebay.android.ui.stats.refresh.lists.detail
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.databinding.StatsDetailActivityBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.stats.refresh.lists.StatsListFragment
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
-import org.wordpress.android.util.analytics.AnalyticsUtils
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.databinding.StatsDetailActivityBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.stats.refresh.lists.StatsListFragment
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.StatsSection
+import org.sitebay.android.util.analytics.AnalyticsUtils
 
 const val POST_ID = "POST_ID"
 const val POST_TYPE = "POST_TYPE"

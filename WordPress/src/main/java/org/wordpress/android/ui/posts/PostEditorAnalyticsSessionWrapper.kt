@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.SiteModel
 import javax.inject.Inject
 
 class PostEditorAnalyticsSessionWrapper @Inject constructor() {

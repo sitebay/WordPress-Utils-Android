@@ -1,4 +1,4 @@
-package org.wordpress.android.push;
+package org.sitebay.android.push;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.content.Intent;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
-import static org.wordpress.android.push.NotificationPushIds.ACTIONS_PROGRESS_NOTIFICATION_ID;
+import static org.sitebay.android.push.NotificationPushIds.ACTIONS_PROGRESS_NOTIFICATION_ID;
 
 public class NativeNotificationsUtils {
     public static void showIntermediateMessageToUser(String message, Context context,

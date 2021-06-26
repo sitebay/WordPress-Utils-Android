@@ -14,7 +14,7 @@
             "ID": 106707880,
             "name": "Tri-County Real Estate",
             "description": "",
-            "URL": "http://tricountyrealestate.wordpress.com",
+            "URL": "http://tricountyrealestate.sitebay.com",
             "capabilities": {
                 "edit_pages": true,
                 "edit_posts": true,
@@ -38,8 +38,8 @@
             },
             "jetpack": false,
             "icon": {
-                "img": "https://tricountyrealestate.files.wordpress.com/2020/08/image-1.jpg?w=96",
-                "ico": "https://tricountyrealestate.files.wordpress.com/2020/08/image-1.jpg?w=96\""
+                "img": "https://tricountyrealestate.files.sitebay.com/2020/08/image-1.jpg?w=96",
+                "ico": "https://tricountyrealestate.files.sitebay.com/2020/08/image-1.jpg?w=96\""
             },
             "visible": true,
             "is_private": false,
@@ -49,11 +49,11 @@
                 "blog_public": 1,
                 "videopress_enabled": false,
                 "upgraded_filetypes_enabled": true,
-                "login_url": "https://infocusphotographers.wordpress.com/wp-login.php",
-                "admin_url": "https://infocusphotographers.wordpress.com/wp-admin/",
+                "login_url": "https://infocusphotographers.sitebay.com/wp-login.php",
+                "admin_url": "https://infocusphotographers.sitebay.com/wp-admin/",
                 "is_mapped_domain": true,
                 "is_redirect": false,
-                "unmapped_url": "https://infocusphotographers.wordpress.com",
+                "unmapped_url": "https://infocusphotographers.sitebay.com",
                 "featured_images_enabled": false,
                 "theme_slug": "pub/edin",
                 "header_image": false,
@@ -279,7 +279,7 @@
                     "help": "{{request.requestLine.baseUrl}}/api/sites/106707880/help",
                     "posts": "{{request.requestLine.baseUrl}}/api/sites/106707880/posts/",
                     "comments": "{{request.requestLine.baseUrl}}/api/sites/106707880/comments/",
-                    "xmlrpc": "https://infocusphotographers.wordpress.com/xmlrpc.php"
+                    "xmlrpc": "https://infocusphotographers.sitebay.com/xmlrpc.php"
                 }
             },
             "quota": {

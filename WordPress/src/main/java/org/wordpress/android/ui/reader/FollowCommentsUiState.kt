@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 data class FollowCommentsUiState(
     val type: FollowCommentsUiStateType,

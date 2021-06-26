@@ -1,14 +1,14 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
-import org.wordpress.android.models.ReaderComment;
-import org.wordpress.android.models.ReaderCommentList;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.models.ReaderComment;
+import org.sitebay.android.models.ReaderCommentList;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.util.SqlUtils;
 
 /**
  * stores comments on reader posts

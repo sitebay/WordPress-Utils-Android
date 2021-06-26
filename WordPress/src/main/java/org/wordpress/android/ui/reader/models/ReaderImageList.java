@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.reader.models;
+package org.sitebay.android.ui.reader.models;
 
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.util.UrlUtils;
 
 import java.util.ArrayList;
 

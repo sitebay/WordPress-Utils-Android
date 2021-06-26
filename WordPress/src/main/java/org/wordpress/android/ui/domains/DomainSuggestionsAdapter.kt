@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.domains
+package org.sitebay.android.ui.domains
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
+import org.sitebay.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
 
 class DomainSuggestionsAdapter(
     private val itemSelectionListener: (DomainSuggestionResponse?, Int) -> Unit

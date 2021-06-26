@@ -1,24 +1,24 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import org.wordpress.android.R.anim
-import org.wordpress.android.R.drawable
-import org.wordpress.android.R.string
-import org.wordpress.android.ui.photopicker.PhotoPickerUiItem.ClickAction
-import org.wordpress.android.ui.photopicker.PhotoPickerUiItem.ToggleAction
-import org.wordpress.android.util.AccessibilityUtils
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.AniUtils.Duration.SHORT
-import org.wordpress.android.util.PhotoPickerUtils
-import org.wordpress.android.util.ViewUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.redirectContextClickToLongPressListener
+import org.sitebay.android.R.anim
+import org.sitebay.android.R.drawable
+import org.sitebay.android.R.string
+import org.sitebay.android.ui.photopicker.PhotoPickerUiItem.ClickAction
+import org.sitebay.android.ui.photopicker.PhotoPickerUiItem.ToggleAction
+import org.sitebay.android.util.AccessibilityUtils
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.AniUtils.Duration.SHORT
+import org.sitebay.android.util.PhotoPickerUtils
+import org.sitebay.android.util.ViewUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.redirectContextClickToLongPressListener
 import java.util.Locale
 
 @Deprecated("This class is being refactored, if you implement any change, please also update " +
-        "{@link org.wordpress.android.ui.mediapicker.ThumbnailViewUtils}")
+        "{@link org.sitebay.android.ui.mediapicker.ThumbnailViewUtils}")
 class ThumbnailViewUtils(val imageManager: ImageManager) {
     fun setupListeners(
         imgThumbnail: ImageView,

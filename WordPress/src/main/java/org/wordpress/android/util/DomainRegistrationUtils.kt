@@ -1,13 +1,13 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.content.Context
 import android.text.TextUtils
 import android.view.Gravity
-import org.wordpress.android.R
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.ToastUtils.Duration
+import org.sitebay.android.R
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.ToastUtils.Duration
 
 fun requestEmailValidation(context: Context, email: String?) {
     val message = if (!TextUtils.isEmpty(email)) {

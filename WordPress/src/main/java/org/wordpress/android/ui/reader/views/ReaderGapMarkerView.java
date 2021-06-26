@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views;
+package org.sitebay.android.ui.reader.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,11 +7,11 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter;
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
-import org.wordpress.android.util.NetworkUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter;
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
+import org.sitebay.android.util.NetworkUtils;
 
 /**
  * marker view between posts indicating a gap in time between them that can be filled in - designed

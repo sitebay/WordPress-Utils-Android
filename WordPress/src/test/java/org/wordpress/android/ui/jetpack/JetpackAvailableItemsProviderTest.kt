@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.jetpack
+package org.sitebay.android.ui.jetpack
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.jetpack.common.providers.JetpackAvailableItemsProvider
+import org.sitebay.android.ui.jetpack.common.providers.JetpackAvailableItemsProvider
 
 @RunWith(MockitoJUnitRunner::class)
 class JetpackAvailableItemsProviderTest {

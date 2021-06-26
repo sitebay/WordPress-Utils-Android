@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.comments
+package org.sitebay.android.ui.comments
 
-import org.wordpress.android.fluxc.model.CommentModel
-import org.wordpress.android.ui.comments.CommentListItem.CommentListItemType.COMMENT
-import org.wordpress.android.ui.comments.CommentListItem.CommentListItemType.HEADER
+import org.sitebay.android.fluxc.model.CommentModel
+import org.sitebay.android.ui.comments.CommentListItem.CommentListItemType.COMMENT
+import org.sitebay.android.ui.comments.CommentListItem.CommentListItemType.HEADER
 
 @Deprecated("Comments are being refactored as part of Comments Unification project. If you are adding any" +
         " features or modifying this class, please ping develric or klymyam")

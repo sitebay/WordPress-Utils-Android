@@ -1,11 +1,11 @@
-package org.wordpress.android.modules
+package org.sitebay.android.modules
 
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import org.wordpress.android.util.helpers.Debouncer
+import org.sitebay.android.util.helpers.Debouncer
 import javax.inject.Named
 
 @Deprecated(message = "Implement CoroutineScope interface and cancel all child coroutines in onCleared/onDestroy/..")

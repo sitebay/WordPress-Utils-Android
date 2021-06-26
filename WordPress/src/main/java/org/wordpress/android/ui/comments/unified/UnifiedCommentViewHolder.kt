@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.comments.unified
+package org.sitebay.android.ui.comments.unified
 
 import android.text.TextUtils
 import android.view.ViewGroup
-import org.wordpress.android.R
-import org.wordpress.android.databinding.CommentListItemBinding
-import org.wordpress.android.ui.comments.unified.UnifiedCommentListItem.Comment
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.GravatarUtils
-import org.wordpress.android.util.GravatarUtilsWrapper
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
-import org.wordpress.android.util.viewBinding
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.databinding.CommentListItemBinding
+import org.sitebay.android.ui.comments.unified.UnifiedCommentListItem.Comment
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.GravatarUtils
+import org.sitebay.android.util.GravatarUtilsWrapper
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
+import org.sitebay.android.util.viewBinding
+import org.sitebay.android.viewmodel.ResourceProvider
 
 class UnifiedCommentViewHolder(
     parent: ViewGroup,

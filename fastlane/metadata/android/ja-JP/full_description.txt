@@ -3,7 +3,7 @@ WordPress for Android では、いつでもどこでもモバイルで Web 公�
 作成
  - すばらしいアイデアに Web 上のホームを作りましょう。 WordPress for Android は Web サイトビルダーとブログメーカーの機能を兼ね備えたソフトウェアです。 サイト作成にご活用ください。
 - 豊富な選択肢のある WordPress テーマから最適な外観を選択し、写真、色、フォントをカスタマイズできるため、非常に個性的なサイトになります。
-- 内蔵のクイックスタートヒントを参考にして、基本のセットアップを済ませ、新しいサイトを成功させましょう。 (WordPress は単なるサイト作成ツールではありません。ユーザーのパートナーであり応援団でもあります) 
+- 内蔵のクイックスタートヒントを参考にして、基本のセットアップを済ませ、新しいサイトを成功させましょう。 (WordPress は単なるサイト作成ツールではありません。ユーザーのパートナーであり応援団でもあります)
 
 統計情報
  - サイトの統計情報をリアルタイムに確認してサイトのアクティビティを管理しましょう。
@@ -40,6 +40,6 @@ WordPress はオープンソース系 Web サイト制作プログラムのた�
 
 サイトを作成する Web サイトビルダーが必要な場合も、シンプルなブログメーカーが必要な場合も、WordPress は役に立ちます。 見事な設計、パワフルな機能、何でも開発できる自由があります。
 
-WordPress for Android は、WordPress 4.0 以降が稼動するインストール型のサイトと WordPress.com 上のあらゆるサイトに対応しています。 WordPress と同様に、WordPress for Android もオープンソースです。 詳細は https://wp.me/P7jrAc-tJ でご確認ください。  アプリに関するサポートが必要ですか ? https://android.forums.wordpress.org/forum/troubleshooting にアクセスするか、@WPAndroid にツイートを送信してください。
+WordPress for Android は、WordPress 4.0 以降が稼動するインストール型のサイトと WordPress.com 上のあらゆるサイトに対応しています。 WordPress と同様に、WordPress for Android もオープンソースです。 詳細は https://wp.me/P7jrAc-tJ でご確認ください。  アプリに関するサポートが必要ですか ? https://android.forums.sitebay.org/forum/troubleshooting にアクセスするか、@WPAndroid にツイートを送信してください。
 
 カリフォルニア州のユーザーのプライバシー通知: https://wp.me/Pe4R-d/#california-consumer-privacy-act-ccpa

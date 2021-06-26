@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors;
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors;
 
 import java.util.regex.Pattern;
 

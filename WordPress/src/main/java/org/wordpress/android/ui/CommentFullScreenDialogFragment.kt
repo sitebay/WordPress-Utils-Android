@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 import android.content.Context
 import android.os.Bundle
@@ -17,16 +17,16 @@ import dagger.android.support.AndroidSupportInjection
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.CollapseFullScreenDialogFragment.CollapseFullScreenDialogContent
-import org.wordpress.android.ui.CollapseFullScreenDialogFragment.CollapseFullScreenDialogController
-import org.wordpress.android.ui.suggestion.util.SuggestionServiceConnectionManager
-import org.wordpress.android.ui.suggestion.util.SuggestionUtils
-import org.wordpress.android.util.SiteUtils
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.SuggestionAutoCompleteText
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.CollapseFullScreenDialogFragment.CollapseFullScreenDialogContent
+import org.sitebay.android.ui.CollapseFullScreenDialogFragment.CollapseFullScreenDialogController
+import org.sitebay.android.ui.suggestion.util.SuggestionServiceConnectionManager
+import org.sitebay.android.ui.suggestion.util.SuggestionUtils
+import org.sitebay.android.util.SiteUtils
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.SuggestionAutoCompleteText
 import javax.inject.Inject
 
 class CommentFullScreenDialogFragment : Fragment(), CollapseFullScreenDialogContent {

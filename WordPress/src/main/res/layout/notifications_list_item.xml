@@ -8,7 +8,7 @@
     android:clipToPadding="false"
     android:orientation="vertical">
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/header_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:clipToPadding="false"
             tools:ignore="UselessParent">
 
-            <org.wordpress.android.widgets.BadgedImageView
+            <org.sitebay.android.widgets.BadgedImageView
                 android:id="@+id/note_avatar"
                 android:layout_width="@dimen/activity_log_icon_size"
                 android:layout_height="@dimen/activity_log_icon_size"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/note_avatar">
 
-                <org.wordpress.android.widgets.NoticonTextView
+                <org.sitebay.android.widgets.NoticonTextView
                     android:id="@+id/note_subject_noticon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -76,7 +76,7 @@
                     android:textColor="?attr/wpColorOnSurfaceMedium"
                     android:textSize="@dimen/text_sz_larger" />
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/note_subject"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
 
             </FrameLayout>
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/note_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

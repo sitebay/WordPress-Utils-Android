@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -17,8 +17,8 @@ import androidx.fragment.app.DialogFragment;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.ActivityUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.util.ActivityUtils;
 
 public class PostSettingsInputDialogFragment extends DialogFragment implements TextWatcher {
     public static final String TAG = "post_settings_input_dialog_fragment";

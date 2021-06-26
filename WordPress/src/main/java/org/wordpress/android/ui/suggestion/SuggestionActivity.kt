@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -11,19 +11,19 @@ import android.view.KeyEvent
 import android.view.inputmethod.EditorInfo
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.SuggestUsersActivityBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.networking.ConnectionChangeReceiver.ConnectionChangeEvent
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.suggestion.FinishAttempt.NotExactlyOneAvailable
-import org.wordpress.android.ui.suggestion.FinishAttempt.OnlyOneAvailable
-import org.wordpress.android.ui.suggestion.adapters.SuggestionAdapter
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.widgets.SuggestionAutoCompleteText
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.SuggestUsersActivityBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.networking.ConnectionChangeReceiver.ConnectionChangeEvent
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.suggestion.FinishAttempt.NotExactlyOneAvailable
+import org.sitebay.android.ui.suggestion.FinishAttempt.OnlyOneAvailable
+import org.sitebay.android.ui.suggestion.adapters.SuggestionAdapter
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.widgets.SuggestionAutoCompleteText
 import javax.inject.Inject
 
 class SuggestionActivity : LocaleAwareActivity() {

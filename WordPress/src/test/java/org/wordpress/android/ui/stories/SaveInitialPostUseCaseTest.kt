@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -11,14 +11,14 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.SavePostToDbUseCase
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.SavePostToDbUseCase
 
 class SaveInitialPostUseCaseTest : BaseUnitTest() {
     private lateinit var editPostRepository: EditPostRepository

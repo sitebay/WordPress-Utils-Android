@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.reader.utils
+package org.sitebay.android.ui.reader.utils
 
 import dagger.Reusable
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase
 import javax.inject.Inject
 import javax.inject.Named
 import kotlinx.coroutines.launch

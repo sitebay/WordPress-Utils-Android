@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -10,13 +10,13 @@ import org.junit.Before
 import org.junit.Test
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.actions.ReaderActions
-import org.wordpress.android.ui.reader.actions.ReaderPostActionsWrapper
-import org.wordpress.android.ui.reader.usecases.ReaderFetchPostUseCase.FetchReaderPostState.Failed
-import org.wordpress.android.ui.reader.usecases.ReaderFetchPostUseCase.FetchReaderPostState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.actions.ReaderActions
+import org.sitebay.android.ui.reader.actions.ReaderPostActionsWrapper
+import org.sitebay.android.ui.reader.usecases.ReaderFetchPostUseCase.FetchReaderPostState.Failed
+import org.sitebay.android.ui.reader.usecases.ReaderFetchPostUseCase.FetchReaderPostState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 import java.net.HttpURLConnection
 
 private const val REQUEST_BLOG_LISTENER_PARAM_POSITION = 2

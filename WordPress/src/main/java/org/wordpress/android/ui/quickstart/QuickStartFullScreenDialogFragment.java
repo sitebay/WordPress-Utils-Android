@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.quickstart;
+package org.sitebay.android.ui.quickstart;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,29 +12,29 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.store.QuickStartStore;
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask;
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTaskType;
-import org.wordpress.android.ui.ActionableEmptyView;
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogContent;
-import org.wordpress.android.ui.FullScreenDialogFragment.FullScreenDialogController;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.quickstart.QuickStartAdapter.OnQuickStartAdapterActionListener;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AniUtils.Duration;
-import org.wordpress.android.util.QuickStartUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.store.QuickStartStore;
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask;
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTaskType;
+import org.sitebay.android.ui.ActionableEmptyView;
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogContent;
+import org.sitebay.android.ui.FullScreenDialogFragment.FullScreenDialogController;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.quickstart.QuickStartAdapter.OnQuickStartAdapterActionListener;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AniUtils.Duration;
+import org.sitebay.android.util.QuickStartUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTaskType.CUSTOMIZE;
-import static org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTaskType.GROW;
+import static org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTaskType.CUSTOMIZE;
+import static org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTaskType.GROW;
 
 public class QuickStartFullScreenDialogFragment extends Fragment implements FullScreenDialogContent,
         OnQuickStartAdapterActionListener {

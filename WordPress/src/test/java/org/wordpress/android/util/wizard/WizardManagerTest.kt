@@ -1,4 +1,4 @@
-package org.wordpress.android.util.wizard
+package org.sitebay.android.util.wizard
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
@@ -11,10 +11,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.sitecreation.SiteCreationStep
-import org.wordpress.android.ui.sitecreation.SiteCreationStep.DOMAINS
-import org.wordpress.android.ui.sitecreation.SiteCreationStep.SEGMENTS
-import org.wordpress.android.ui.sitecreation.SiteCreationStep.SITE_PREVIEW
+import org.sitebay.android.ui.sitecreation.SiteCreationStep
+import org.sitebay.android.ui.sitecreation.SiteCreationStep.DOMAINS
+import org.sitebay.android.ui.sitecreation.SiteCreationStep.SEGMENTS
+import org.sitebay.android.ui.sitecreation.SiteCreationStep.SITE_PREVIEW
 
 private val STEPS = listOf(SEGMENTS, DOMAINS, SITE_PREVIEW)
 private val LAST_STEP_INDEX = STEPS.size - 1

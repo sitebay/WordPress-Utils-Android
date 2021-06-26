@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -13,9 +13,9 @@ import android.view.inputmethod.InputMethodManager;
 
 import androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView;
 
-import org.wordpress.android.ui.suggestion.util.SuggestionTokenizer;
-import org.wordpress.android.util.DeviceUtils;
-import org.wordpress.persistentedittext.PersistentEditTextHelper;
+import org.sitebay.android.ui.suggestion.util.SuggestionTokenizer;
+import org.sitebay.android.util.DeviceUtils;
+import org.sitebay.persistentedittext.PersistentEditTextHelper;
 
 public class SuggestionAutoCompleteText extends AppCompatMultiAutoCompleteTextView {
     PersistentEditTextHelper mPersistentEditTextHelper;

@@ -1,4 +1,4 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -11,22 +11,22 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.ReaderCardType;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderPostList;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagList;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.actions.ReaderActions;
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostId;
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostIdList;
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryEvent.ReaderPostTableActionEnded;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.ReaderCardType;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderPostList;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagList;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.actions.ReaderActions;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostId;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostIdList;
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryEvent.ReaderPostTableActionEnded;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.SqlUtils;
 
 import java.util.LinkedHashMap;
 import java.util.Locale;

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ImageView.ScaleType.FIT_CENTER
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.PHOTO
+import org.sitebay.android.R
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.PHOTO
 
 /*
  * ViewHolder containing a device thumbnail

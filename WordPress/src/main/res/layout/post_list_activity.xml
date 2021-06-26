@@ -42,7 +42,7 @@
                 android:layout_marginBottom="0dp"
                 tools:paddingStart="@dimen/posts_list_tab_layout_fading_edge_width" />
 
-            <org.wordpress.android.widgets.AppBarFadingEdgeView
+            <org.sitebay.android.widgets.AppBarFadingEdgeView
                 android:id="@+id/post_list_tab_layout_fading_edge"
                 android:layout_width="@dimen/posts_list_tab_layout_fading_edge_width"
                 android:layout_height="match_parent"
@@ -95,7 +95,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
-        <org.wordpress.android.ui.WPTooltipView
+        <org.sitebay.android.ui.WPTooltipView
             android:id="@+id/fab_tooltip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

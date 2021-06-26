@@ -1,4 +1,4 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -9,8 +9,8 @@ import android.webkit.WebView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
 
 import java.util.Map;
 

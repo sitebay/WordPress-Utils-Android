@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
 import androidx.annotation.StringRes
 import androidx.core.text.HtmlCompat
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class HtmlMessageUtils

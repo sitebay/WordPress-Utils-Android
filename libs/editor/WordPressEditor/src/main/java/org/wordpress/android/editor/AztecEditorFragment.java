@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -58,52 +58,52 @@ import com.google.gson.Gson;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.editor.MetadataUtils.AttributesWithClass;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.ImageUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.ProfilingUtils;
-import org.wordpress.android.util.ShortcodeUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.android.util.helpers.MediaGallery;
-import org.wordpress.aztec.AlignmentRendering;
-import org.wordpress.aztec.Aztec;
-import org.wordpress.aztec.AztecAttributes;
-import org.wordpress.aztec.AztecContentChangeWatcher.AztecTextChangeObserver;
-import org.wordpress.aztec.AztecExceptionHandler;
-import org.wordpress.aztec.AztecParser;
-import org.wordpress.aztec.AztecText;
-import org.wordpress.aztec.AztecText.EditorHasChanges;
-import org.wordpress.aztec.AztecTextFormat;
-import org.wordpress.aztec.Html;
-import org.wordpress.aztec.Html.ImageGetter.Callbacks;
-import org.wordpress.aztec.IHistoryListener;
-import org.wordpress.aztec.ITextFormat;
-import org.wordpress.aztec.extensions.MediaLinkExtensionsKt;
-import org.wordpress.aztec.plugins.IAztecPlugin;
-import org.wordpress.aztec.plugins.IMediaToolbarButton;
-import org.wordpress.aztec.plugins.shortcodes.AudioShortcodePlugin;
-import org.wordpress.aztec.plugins.shortcodes.CaptionShortcodePlugin;
-import org.wordpress.aztec.plugins.shortcodes.VideoShortcodePlugin;
-import org.wordpress.aztec.plugins.shortcodes.extensions.CaptionExtensionsKt;
-import org.wordpress.aztec.plugins.shortcodes.extensions.VideoPressExtensionsKt;
-import org.wordpress.aztec.plugins.wpcomments.CommentsTextFormat;
-import org.wordpress.aztec.plugins.wpcomments.HiddenGutenbergPlugin;
-import org.wordpress.aztec.plugins.wpcomments.WordPressCommentsPlugin;
-import org.wordpress.aztec.plugins.wpcomments.toolbar.MoreToolbarButton;
-import org.wordpress.aztec.source.Format;
-import org.wordpress.aztec.source.SourceViewEditText;
-import org.wordpress.aztec.spans.AztecMediaSpan;
-import org.wordpress.aztec.spans.IAztecAttributedSpan;
-import org.wordpress.aztec.toolbar.AztecToolbar;
-import org.wordpress.aztec.toolbar.IAztecToolbarClickListener;
-import org.wordpress.aztec.util.AztecLog;
-import org.wordpress.aztec.watchers.EndOfBufferMarkerAdder;
+import org.sitebay.android.editor.MetadataUtils.AttributesWithClass;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.ImageUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.ProfilingUtils;
+import org.sitebay.android.util.ShortcodeUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaGallery;
+import org.sitebay.aztec.AlignmentRendering;
+import org.sitebay.aztec.Aztec;
+import org.sitebay.aztec.AztecAttributes;
+import org.sitebay.aztec.AztecContentChangeWatcher.AztecTextChangeObserver;
+import org.sitebay.aztec.AztecExceptionHandler;
+import org.sitebay.aztec.AztecParser;
+import org.sitebay.aztec.AztecText;
+import org.sitebay.aztec.AztecText.EditorHasChanges;
+import org.sitebay.aztec.AztecTextFormat;
+import org.sitebay.aztec.Html;
+import org.sitebay.aztec.Html.ImageGetter.Callbacks;
+import org.sitebay.aztec.IHistoryListener;
+import org.sitebay.aztec.ITextFormat;
+import org.sitebay.aztec.extensions.MediaLinkExtensionsKt;
+import org.sitebay.aztec.plugins.IAztecPlugin;
+import org.sitebay.aztec.plugins.IMediaToolbarButton;
+import org.sitebay.aztec.plugins.shortcodes.AudioShortcodePlugin;
+import org.sitebay.aztec.plugins.shortcodes.CaptionShortcodePlugin;
+import org.sitebay.aztec.plugins.shortcodes.VideoShortcodePlugin;
+import org.sitebay.aztec.plugins.shortcodes.extensions.CaptionExtensionsKt;
+import org.sitebay.aztec.plugins.shortcodes.extensions.VideoPressExtensionsKt;
+import org.sitebay.aztec.plugins.wpcomments.CommentsTextFormat;
+import org.sitebay.aztec.plugins.wpcomments.HiddenGutenbergPlugin;
+import org.sitebay.aztec.plugins.wpcomments.WordPressCommentsPlugin;
+import org.sitebay.aztec.plugins.wpcomments.toolbar.MoreToolbarButton;
+import org.sitebay.aztec.source.Format;
+import org.sitebay.aztec.source.SourceViewEditText;
+import org.sitebay.aztec.spans.AztecMediaSpan;
+import org.sitebay.aztec.spans.IAztecAttributedSpan;
+import org.sitebay.aztec.toolbar.AztecToolbar;
+import org.sitebay.aztec.toolbar.IAztecToolbarClickListener;
+import org.sitebay.aztec.util.AztecLog;
+import org.sitebay.aztec.watchers.EndOfBufferMarkerAdder;
 import org.xml.sax.Attributes;
 
 import java.util.ArrayList;
@@ -115,7 +115,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import static org.wordpress.android.editor.EditorImageMetaData.ARG_EDITOR_IMAGE_METADATA;
+import static org.sitebay.android.editor.EditorImageMetaData.ARG_EDITOR_IMAGE_METADATA;
 
 @SuppressLint("ClickableViewAccessibility")
 public class AztecEditorFragment extends EditorFragmentAbstract implements
@@ -258,7 +258,7 @@ public class AztecEditorFragment extends EditorFragmentAbstract implements
         mContent.setOnTouchListener(this);
         mSource.setOnTouchListener(this);
 
-        mTitle.setOnImeBackListener(new org.wordpress.android.editor.OnImeBackListener() {
+        mTitle.setOnImeBackListener(new org.sitebay.android.editor.OnImeBackListener() {
             public void onImeBack() {
                 showActionBarIfNeeded();
             }
@@ -1022,7 +1022,7 @@ public class AztecEditorFragment extends EditorFragmentAbstract implements
         if (getActivity() == null) {
             // appendMediaFile may be called from a background thread (example: EditPostActivity.java#L2165) and
             // Activity may have already be gone.
-            // Ticket: https://github.com/wordpress-mobile/WordPress-Android/issues/7386
+            // Ticket: https://github.com/sitebay-mobile/WordPress-Android/issues/7386
             AppLog.d(T.MEDIA, "appendMediaFile() called but Activity is null! mediaUrl: " + mediaUrl);
             return;
         }

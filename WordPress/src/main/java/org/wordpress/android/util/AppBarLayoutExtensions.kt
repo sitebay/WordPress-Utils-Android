@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import androidx.annotation.IdRes
 import com.google.android.material.appbar.AppBarLayout

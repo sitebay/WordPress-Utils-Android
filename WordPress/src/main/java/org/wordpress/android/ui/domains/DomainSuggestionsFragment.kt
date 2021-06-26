@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.domains
+package org.sitebay.android.ui.domains
 
 import android.os.Bundle
 import android.text.Editable
@@ -10,15 +10,15 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.DomainSuggestionsFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
-import org.wordpress.android.models.networkresource.ListState
-import org.wordpress.android.ui.ScrollableViewInitializedListener
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.viewmodel.domains.DomainSuggestionsViewModel
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.DomainSuggestionsFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
+import org.sitebay.android.models.networkresource.ListState
+import org.sitebay.android.ui.ScrollableViewInitializedListener
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.viewmodel.domains.DomainSuggestionsViewModel
 import javax.inject.Inject
 
 class DomainSuggestionsFragment : Fragment(R.layout.domain_suggestions_fragment) {

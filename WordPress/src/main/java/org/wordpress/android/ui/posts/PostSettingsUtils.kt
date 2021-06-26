@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.text.TextUtils
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.ui.stats.refresh.utils.DateUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.ui.stats.refresh.utils.DateUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class PostSettingsUtils

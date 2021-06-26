@@ -193,8 +193,8 @@ Language: gl_ES
     <string name="backup_item_roots">Raíz de WordPress</string>
     <string name="backup_download_details_choose_items_header">Elementos incluídos nesta descarga</string>
     <string name="gutenberg_native_uploading">Subindo…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Os bloques reutilizables non se poden editar en WordPress para iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Os bloques reutilizables non se poden editar en WordPress para Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Os bloques reutilizables non se poden editar en WordPress para iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Os bloques reutilizables non se poden editar en WordPress para Android</string>
     <string name="gutenberg_native_replace_file">Substituír arquivo</string>
     <string name="gutenberg_native_replace_audio">Substituír audio</string>
     <string name="gutenberg_native_problem_opening_the_audio">Problema ao abrir o audio</string>
@@ -518,7 +518,7 @@ Language: gl_ES
     <string name="media_picker_soft_ask_permissions_denied">%1$s denegou o acceso ás túas fotos. Para correxilo, edita os teus permisos e activa %2$s e %3$s.</string>
     <string name="media_insert_failed">Inserción do medio fallida.</string>
     <string name="media_insert_failed_with_reason">Fallou a inserción do medio: %s</string>
-    <string name="photo_picker_wordpress_media_library">Elixe desde a biblioteca de medios de WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Elixe desde a biblioteca de medios de WordPress</string>
     <string name="reader_label_toolbar_back">Volver</string>
     <string name="reader_discover_empty_button_text">Primeiros pasos</string>
     <string name="reader_discover_empty_subtitle">Segue temáticas para descubrir novos blogs</string>
@@ -658,7 +658,7 @@ Language: gl_ES
     <string name="login_magic_links_label">Enviarémosche por correo electrónico un enlace que che fará acceder automaticamente, sen necesidade de contrasinal.</string>
     <string name="check_email">Comprobar o correo electrónico</string>
     <string name="get_started">Primeiros pasos</string>
-    <string name="enter_email_to_continue_wordpress_com">Introduce o teu enderezo de correo electrónico para acceder ou crear unha conta de WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Introduce o teu enderezo de correo electrónico para acceder ou crear unha conta de WordPress.com.</string>
     <string name="or_type_your_password">Ou escribe a túa contrasinal</string>
     <string name="create_account">Crear unha conta</string>
     <string name="send_link_by_email">Enviar o enlace por correo electrónico</string>
@@ -940,7 +940,7 @@ Language: gl_ES
     <string name="suffix_1_000">%sK</string>
     <string name="posts_cannot_be_started">Non podemos abrir as entradas neste momento. Por favor, inténtao de novo máis tarde</string>
     <string name="site_cannot_be_loaded">Non puidemos cargar os datos para o teu sitio neste momento. Por favor, inténtao de novo máis tarde</string>
-    <string name="gutenberg_native_wordpress_media_library">Biblioteca de medios de WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">Biblioteca de medios de WordPress</string>
     <string name="gutenberg_native_unsupported">Non compatible</string>
     <string name="gutenberg_native_ungroup">Desagrupar</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Toca para ocultar o teclado</string>
@@ -1394,7 +1394,7 @@ Language: gl_ES
     <string name="stats_follower_label">Seguidor</string>
     <string name="stats_followers_count_message">Total %1$s seguidores: %2$s</string>
     <string name="stats_followers_email">Correo electrónico</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Xestionar datos</string>
     <string name="stats_empty_insights_title">Aínda non se engadiron impresións</string>
     <string name="stats_no_data_yet">Aínda non hai datos</string>
@@ -1846,7 +1846,7 @@ Language: gl_ES
     <string name="plugin_external_link_icon_content_description">Enlace externo</string>
     <string name="plugin_icon_content_description">Icona do plugin</string>
     <string name="plugin_home_page">Web do plugin</string>
-    <string name="wordpress_dot_org_plugin_page">Páxina do plugin en WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Páxina do plugin en WordPress.org</string>
     <string name="plugin_remove_dialog_message">Estás seguro de querer borrar %1$s de %2$s?\n\nIsto desactivará o plugin e todos os arquivos e datos asociados.</string>
     <string name="plugin_remove_dialog_title">Borrar plugin</string>
     <string name="plugin_remove_progress_dialog_message">Borrando %s…</string>
@@ -2007,7 +2007,7 @@ Language: gl_ES
     <string name="login_text_otp">Envíame un código en texto no seu lugar</string>
     <string name="enter_verification_code">Case o temos! Por favor, introduce un código de verificación desde a túa aplicación Authenticator.</string>
     <string name="next">Seguinte</string>
-    <string name="enter_email_wordpress_com">Accede a WordPress.com usando un enderezo de correo electrónico para xestionar todos os teus sitios WordPress.</string>
+    <string name="enter_email_sitebay_com">Accede a WordPress.com usando un enderezo de correo electrónico para xestionar todos os teus sitios WordPress.</string>
     <string name="image_optimization_promo_desc">A optimización da imaxe reduce as imaxes para que suban máis rápido.\n\nPodes cambiar isto en calquera momento nos axustes do sitio.</string>
     <string name="image_optimization_promo_title">Activar optimización da imaxe?</string>
     <string name="leave_off">Deter</string>
@@ -2565,8 +2565,8 @@ Language: gl_ES
     <string name="stats_insights_today">Estatísticas de hoxe</string>
     <string name="stats_insights_all_time">Entradas, visitas e lectores desde o comezo.</string>
     <string name="stats_insights">Información</string>
-    <string name="me_disconnect_from_wordpress_com">Desconectarse de WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Conectarse a WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Desconectarse de WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Conectarse a WordPress.com</string>
     <string name="me_btn_login_logout">Entrar/Saír</string>
     <string name="me_btn_support">Axuda e soporte</string>
     <string name="account_settings">Configuración da conta</string>
@@ -2699,7 +2699,7 @@ Language: gl_ES
     <string name="fatal_db_error">Houbo un erro mentres se creaba a base de datos da aplicación. Proba a reinstalar a aplicación.</string>
     <string name="error_blog_hidden">Este blogue non se pode cargar porque está oculto. Habilítao de novo na configuración e proba outra vez.</string>
     <string name="error_refresh_media">Non se poden actualizar os medios neste momento</string>
-    <string name="wordpress_blog">Blogue feito con WordPress</string>
+    <string name="sitebay_blog">Blogue feito con WordPress</string>
     <string name="image_settings">Configuración da imaxe</string>
     <string name="local_changes">Cambios locais</string>
     <string name="privacy_policy">Política de privacidade</string>

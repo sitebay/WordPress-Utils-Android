@@ -1,13 +1,13 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.text.TextUtils;
 
 import org.apache.commons.lang3.math.NumberUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.aztec.AztecAttributes;
-import org.wordpress.aztec.plugins.shortcodes.extensions.VideoPressExtensionsKt;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.aztec.AztecAttributes;
+import org.sitebay.aztec.plugins.shortcodes.extensions.VideoPressExtensionsKt;
 import org.xml.sax.Attributes;
 
 import java.util.ArrayList;

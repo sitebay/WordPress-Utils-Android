@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.jetpack.scan.adapters.viewholders
+package org.sitebay.android.ui.jetpack.scan.adapters.viewholders
 
 import android.view.ViewGroup
-import org.wordpress.android.databinding.ScanListThreatsDateItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackViewHolder
-import org.wordpress.android.ui.jetpack.scan.ScanListItemState.ThreatDateItemState
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.databinding.ScanListThreatsDateItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackViewHolder
+import org.sitebay.android.ui.jetpack.scan.ScanListItemState.ThreatDateItemState
+import org.sitebay.android.ui.utils.UiHelpers
 
 class ThreatsDateHeaderViewHolder(
     private val uiHelpers: UiHelpers,

@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.domains
+package org.sitebay.android.ui.domains
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
 import javax.inject.Inject
 
 class DomainRegistrationMainViewModel @Inject constructor(

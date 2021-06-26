@@ -1,21 +1,21 @@
-package org.wordpress.android.ui.suggestion.service;
+package org.sitebay.android.ui.suggestion.service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.UserSuggestionTable;
-import org.wordpress.android.models.UserSuggestion;
-import org.wordpress.android.models.Tag;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.UserSuggestionTable;
+import org.sitebay.android.models.UserSuggestion;
+import org.sitebay.android.models.Tag;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.ArrayList;
 import java.util.List;

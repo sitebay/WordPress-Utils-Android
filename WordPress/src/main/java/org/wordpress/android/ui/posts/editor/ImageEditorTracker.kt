@@ -1,21 +1,21 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import android.content.Context
 import android.net.Uri
 import dagger.Reusable
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.CropDoneMenuClicked
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.CropOpened
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.CropSuccessful
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.EditorCancelled
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.EditorFinishedEditing
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.EditorShown
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.PreviewCropMenuClicked
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.PreviewImageSelected
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.PreviewInsertImagesClicked
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.analytics.AnalyticsUtils
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.CropDoneMenuClicked
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.CropOpened
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.CropSuccessful
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.EditorCancelled
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.EditorFinishedEditing
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.EditorShown
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.PreviewCropMenuClicked
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.PreviewImageSelected
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.PreviewInsertImagesClicked
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.analytics.AnalyticsUtils
 import javax.inject.Inject
 
 @Reusable

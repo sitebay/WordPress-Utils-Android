@@ -193,8 +193,8 @@ Language: es
     <string name="backup_item_roots">Raíz de WordPress</string>
     <string name="gutenberg_native_uploading">Subiendo…</string>
     <string name="backup_download_details_choose_items_header">Elementos incluidos en esta descarga</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">Los bloques reutilizables no se pueden editar en WordPress para iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">Los bloques reutilizables no se pueden editar en WordPress para Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">Los bloques reutilizables no se pueden editar en WordPress para iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">Los bloques reutilizables no se pueden editar en WordPress para Android</string>
     <string name="gutenberg_native_replace_file">Reemplazar archivo</string>
     <string name="gutenberg_native_replace_audio">Reemplazar audio</string>
     <string name="gutenberg_native_problem_opening_the_audio">Problema al abrir el audio</string>
@@ -516,7 +516,7 @@ Language: es
     <string name="stories_intro_image_caption_first">Cómo crear una entrada de historias</string>
     <string name="stories_intro_image_caption_second">Título de la entrada de historia</string>
     <string name="stories_intro_title_first">Ahora las historias son para todos</string>
-    <string name="photo_picker_wordpress_media_library">Elige desde la biblioteca de medios de WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Elige desde la biblioteca de medios de WordPress</string>
     <string name="media_insert_failed_with_reason">Ha fallado la inserción del medio: %s</string>
     <string name="media_insert_failed">Inserción del medio fallida.</string>
     <string name="reader_label_toolbar_back">Volver</string>
@@ -660,7 +660,7 @@ Language: es
     <string name="send_link_by_email">Enviar el enlace por correo electrónico</string>
     <string name="create_account">Crear una cuenta</string>
     <string name="or_type_your_password">O escribe tu contraseña</string>
-    <string name="enter_email_to_continue_wordpress_com">Introduce tu dirección de correo electrónico para acceder o crear una cuenta de WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Introduce tu dirección de correo electrónico para acceder o crear una cuenta de WordPress.com.</string>
     <string name="get_started">Primeros pasos</string>
     <string name="check_email">Comprobar el correo electrónico</string>
     <string name="reader_error_request_failed_title">Ha habido un problema al gestionar la solicitud. Por favor, inténtalo de nuevo más tarde.</string>
@@ -940,7 +940,7 @@ Language: es
     <string name="suffix_1_000_000_000_000_000_000">%sE</string>
     <string name="reader_filter_tags_title">Temas</string>
     <string name="suffix_1_000">%sK</string>
-    <string name="gutenberg_native_wordpress_media_library">Biblioteca de medios de WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">Biblioteca de medios de WordPress</string>
     <string name="gutenberg_native_unsupported">No compatible</string>
     <string name="gutenberg_native_ungroup">Desagrupar</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Toca para ocultar el teclado</string>
@@ -1382,7 +1382,7 @@ Language: es
     <string name="stats_comments_author_label">Autor</string>
     <string name="stats_comments_authors">Autores</string>
     <string name="stats_followers_email">Correo electrónico</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_posts_and_pages_title_label">Título</string>
     <string name="stats_comments_title_label">Título</string>
     <string name="stats_publicize_followers_label">Seguidores</string>
@@ -1846,7 +1846,7 @@ Language: es
     <string name="plugin_external_link_icon_content_description">Enlace externo</string>
     <string name="plugin_icon_content_description">Icono del plugin</string>
     <string name="plugin_home_page">Web del plugin</string>
-    <string name="wordpress_dot_org_plugin_page">Página del plugin en WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Página del plugin en WordPress.org</string>
     <string name="plugin_remove_dialog_message">¿Estás seguro de querer borrar %1$s de %2$s?\n\nEsto desactivará el plugin y todos los archivos y datos asociados.</string>
     <string name="plugin_remove_dialog_title">Borrar plugin</string>
     <string name="plugin_remove_progress_dialog_message">Borrando %s…</string>
@@ -2007,7 +2007,7 @@ Language: es
     <string name="login_text_otp">Envíame un mensaje con un código en su lugar</string>
     <string name="enter_verification_code">¡Casi lo tenemos! Por favor, introduce un código de verificación desde tu aplicación Authenticator.</string>
     <string name="next">Siguiente</string>
-    <string name="enter_email_wordpress_com">Accede a WordPress.com usando una dirección de correo electrónico para gestionar todos tus sitios WordPress.</string>
+    <string name="enter_email_sitebay_com">Accede a WordPress.com usando una dirección de correo electrónico para gestionar todos tus sitios WordPress.</string>
     <string name="image_optimization_promo_desc">La optimización de imagen reduce las imágenes para que suban más rápido.\n\nPuedes cambiar esto en cualquier momento en los ajustes del sitio.</string>
     <string name="image_optimization_promo_title">¿Activar optimización de la imagen?</string>
     <string name="me_profile_photo">Foto de perfil</string>
@@ -2565,9 +2565,9 @@ Language: es
     <string name="stats_insights_today">Estadísticas de hoy</string>
     <string name="stats_insights_all_time">Entradas, vistas y visitantes de todos los tiempos</string>
     <string name="stats_insights">Detalles</string>
-    <string name="me_disconnect_from_wordpress_com">Salir de WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Salir de WordPress.com</string>
     <string name="me_btn_login_logout">Iniciar/Cerrar sesión</string>
-    <string name="me_connect_to_wordpress_com">Acceder a WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Acceder a WordPress.com</string>
     <string name="me_btn_support">Ayuda y soporte</string>
     <string name="site_picker_cant_hide_current_site">«%s» no se ha ocultado porque es el sitio actual</string>
     <string name="account_settings">Ajustes de la cuenta</string>
@@ -2716,7 +2716,7 @@ Language: es
     <string name="category_name">Nombre de la categoría</string>
     <string name="privacy_policy">Política de privacidad</string>
     <string name="local_changes">Cambios locales</string>
-    <string name="wordpress_blog">Blog de WordPress</string>
+    <string name="sitebay_blog">Blog de WordPress</string>
     <string name="page_settings">Ajustes de página</string>
     <string name="image_settings">Ajustes de imagen</string>
     <string name="post_settings">Ajustes de entrada</string>

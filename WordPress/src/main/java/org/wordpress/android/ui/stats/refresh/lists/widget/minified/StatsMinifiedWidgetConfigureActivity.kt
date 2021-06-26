@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.minified
+package org.sitebay.android.ui.stats.refresh.lists.widget.minified
 
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.databinding.StatsMinifiedWidgetConfigureActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
+import org.sitebay.android.databinding.StatsMinifiedWidgetConfigureActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
 
 class StatsMinifiedWidgetConfigureActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.comments
+package org.sitebay.android.ui.comments
 
 import androidx.recyclerview.widget.DiffUtil
-import org.wordpress.android.ui.comments.CommentListItem.Comment
-import org.wordpress.android.ui.comments.CommentListItem.SubHeader
+import org.sitebay.android.ui.comments.CommentListItem.Comment
+import org.sitebay.android.ui.comments.CommentListItem.SubHeader
 
 @Deprecated("Comments are being refactored as part of Comments Unification project. If you are adding any" +
         " features or modifying this class, please ping develric or klymyam")

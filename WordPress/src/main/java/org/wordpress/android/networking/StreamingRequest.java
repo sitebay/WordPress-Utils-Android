@@ -1,4 +1,4 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 import java.io.File;
 import java.io.IOException;

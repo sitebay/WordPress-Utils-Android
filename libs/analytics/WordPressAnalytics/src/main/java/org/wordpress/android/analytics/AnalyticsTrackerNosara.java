@@ -1,4 +1,4 @@
-package org.wordpress.android.analytics;
+package org.sitebay.android.analytics;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -7,8 +7,8 @@ import com.automattic.android.tracks.TracksClient;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -571,7 +571,7 @@ public class AnalyticsTrackerNosara extends Tracker {
             properties.put(WPCOM_USER, metadata.isWordPressComUser());
             properties.put(APP_SCHEME, metadata.getAppScheme());
             // Only add the editor information if it was set before.
-            // See: https://github.com/wordpress-mobile/WordPress-Android/pull/10300#discussion_r309145514
+            // See: https://github.com/sitebay-mobile/WordPress-Android/pull/10300#discussion_r309145514
             if (metadata.isGutenbergEnabledVariableSet()) {
                 properties.put(IS_GUTENBERG_ENABLED, metadata.isGutenbergEnabled());
             }
@@ -1578,7 +1578,7 @@ public class AnalyticsTrackerNosara extends Tracker {
             case MEDIA_PICKER_OPEN_DEVICE_LIBRARY:
                 return "media_picker_device_library_opened";
             case MEDIA_PICKER_OPEN_WP_MEDIA:
-                return "media_picker_wordpress_library_opened";
+                return "media_picker_sitebay_library_opened";
             case MEDIA_PICKER_OPEN_STOCK_LIBRARY:
                 return "media_picker_open_stock_library";
             case MEDIA_PICKER_OPEN_GIF_LIBRARY:

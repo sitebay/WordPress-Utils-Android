@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.Activity
 import android.content.Intent
 import android.view.View
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.uploads.UploadActionUseCase
-import org.wordpress.android.ui.uploads.UploadService
-import org.wordpress.android.ui.uploads.UploadUtils
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.uploads.UploadActionUseCase
+import org.sitebay.android.ui.uploads.UploadService
+import org.sitebay.android.ui.uploads.UploadUtils
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper
 
 sealed class PostUploadAction {
     class EditPostResult(

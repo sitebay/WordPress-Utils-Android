@@ -1,4 +1,4 @@
-package org.wordpress.android.modules
+package org.sitebay.android.modules
 
 import android.content.Context
 import com.automattic.android.tracks.crashlogging.CrashLogging
@@ -7,7 +7,7 @@ import com.automattic.android.tracks.crashlogging.CrashLoggingProvider
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
-import org.wordpress.android.util.crashlogging.WPCrashLoggingDataProvider
+import org.sitebay.android.util.crashlogging.WPCrashLoggingDataProvider
 import javax.inject.Singleton
 
 @Module

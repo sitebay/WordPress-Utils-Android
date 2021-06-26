@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import androidx.fragment.app.FragmentActivity
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.push.NativeNotificationsUtils
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.PagePostCreationSourcesDetail.POST_FROM_POSTS_LIST
-import org.wordpress.android.ui.photopicker.MediaPickerLauncher
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType
-import org.wordpress.android.ui.prefs.AppPrefs
-import org.wordpress.android.ui.stories.intro.StoriesIntroDialogFragment
-import org.wordpress.android.ui.uploads.UploadService
-import org.wordpress.android.viewmodel.helpers.ToastMessageHolder
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.push.NativeNotificationsUtils
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.PagePostCreationSourcesDetail.POST_FROM_POSTS_LIST
+import org.sitebay.android.ui.photopicker.MediaPickerLauncher
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType
+import org.sitebay.android.ui.prefs.AppPrefs
+import org.sitebay.android.ui.stories.intro.StoriesIntroDialogFragment
+import org.sitebay.android.ui.uploads.UploadService
+import org.sitebay.android.viewmodel.helpers.ToastMessageHolder
 
 sealed class PostListAction {
     class EditPost(val site: SiteModel, val post: PostModel, val loadAutoSaveRevision: Boolean) : PostListAction()

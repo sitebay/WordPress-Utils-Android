@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import org.wordpress.android.R
-import org.wordpress.android.ui.history.HistoryListItem.Revision
-import org.wordpress.android.widgets.DiffView
+import org.sitebay.android.R
+import org.sitebay.android.ui.history.HistoryListItem.Revision
+import org.sitebay.android.widgets.DiffView
 
 class HistoryDetailFragment : Fragment() {
     private var mRevision: Revision? = null

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.common.viewholders
+package org.sitebay.android.ui.jetpack.common.viewholders
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,14 +6,14 @@ import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.viewbinding.ViewBinding
 import com.google.android.material.button.MaterialButton
-import org.wordpress.android.R
-import org.wordpress.android.databinding.JetpackListButtonPrimaryItemBinding
-import org.wordpress.android.databinding.JetpackListButtonSecondaryItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState.ActionButtonState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.setVisible
-import org.wordpress.android.widgets.FlowLayout.LayoutParams
+import org.sitebay.android.R
+import org.sitebay.android.databinding.JetpackListButtonPrimaryItemBinding
+import org.sitebay.android.databinding.JetpackListButtonSecondaryItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState.ActionButtonState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.setVisible
+import org.sitebay.android.widgets.FlowLayout.LayoutParams
 
 sealed class JetpackButtonViewHolder<T : ViewBinding>(
     parent: ViewGroup,

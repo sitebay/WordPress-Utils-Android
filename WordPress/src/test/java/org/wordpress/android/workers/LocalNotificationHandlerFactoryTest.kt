@@ -1,4 +1,4 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
@@ -6,7 +6,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.workers.LocalNotification.Type.CREATE_SITE
+import org.sitebay.android.workers.LocalNotification.Type.CREATE_SITE
 
 @RunWith(MockitoJUnitRunner::class)
 class LocalNotificationHandlerFactoryTest {

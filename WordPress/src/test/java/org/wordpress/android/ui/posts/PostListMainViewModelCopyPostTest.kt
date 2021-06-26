@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import androidx.lifecycle.Observer
 import com.nhaarman.mockitokotlin2.any
@@ -13,16 +13,16 @@ import org.junit.Test
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
 import org.mockito.Mockito
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.network.rest.wpcom.post.PostRestClient
-import org.wordpress.android.fluxc.network.xmlrpc.post.PostXMLRPCClient
-import org.wordpress.android.fluxc.persistence.PostSqlUtils
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.ui.posts.PostListAction.EditPost
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.network.rest.wpcom.post.PostRestClient
+import org.sitebay.android.fluxc.network.xmlrpc.post.PostXMLRPCClient
+import org.sitebay.android.fluxc.persistence.PostSqlUtils
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.ui.posts.PostListAction.EditPost
 
 class PostListMainViewModelCopyPostTest : BaseUnitTest() {
     @Mock lateinit var site: SiteModel

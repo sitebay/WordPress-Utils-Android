@@ -1,11 +1,11 @@
-package org.wordpress.android.models.networkresource
+package org.sitebay.android.models.networkresource
 
 import androidx.annotation.StringRes
-import org.wordpress.android.models.networkresource.ListState.Error
-import org.wordpress.android.models.networkresource.ListState.Init
-import org.wordpress.android.models.networkresource.ListState.Loading
-import org.wordpress.android.models.networkresource.ListState.Ready
-import org.wordpress.android.models.networkresource.ListState.Success
+import org.sitebay.android.models.networkresource.ListState.Error
+import org.sitebay.android.models.networkresource.ListState.Init
+import org.sitebay.android.models.networkresource.ListState.Loading
+import org.sitebay.android.models.networkresource.ListState.Ready
+import org.sitebay.android.models.networkresource.ListState.Success
 
 /**
  * ListState aims to give a highly structured and easy to use way to manage any list's state.

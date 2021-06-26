@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.R
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 /**
  * This enum class is used to keep the current Remote Preview state.

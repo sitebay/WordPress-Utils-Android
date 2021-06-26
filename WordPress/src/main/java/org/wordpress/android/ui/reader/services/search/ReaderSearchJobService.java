@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.reader.services.search;
+package org.sitebay.android.ui.reader.services.search;
 
 import android.app.job.JobParameters;
 import android.app.job.JobService;
 
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.util.AppLog;
 
-import static org.wordpress.android.ui.reader.services.search.ReaderSearchServiceStarter.ARG_OFFSET;
-import static org.wordpress.android.ui.reader.services.search.ReaderSearchServiceStarter.ARG_QUERY;
+import static org.sitebay.android.ui.reader.services.search.ReaderSearchServiceStarter.ARG_OFFSET;
+import static org.sitebay.android.ui.reader.services.search.ReaderSearchServiceStarter.ARG_QUERY;
 
 /**
- * service which searches for reader posts on wordpress.com
+ * service which searches for reader posts on sitebay.com
  */
 
 public class ReaderSearchJobService extends JobService implements ServiceCompletionListener {

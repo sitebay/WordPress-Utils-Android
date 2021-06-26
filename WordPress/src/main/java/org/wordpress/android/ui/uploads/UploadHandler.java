@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
 import androidx.annotation.NonNull;
 

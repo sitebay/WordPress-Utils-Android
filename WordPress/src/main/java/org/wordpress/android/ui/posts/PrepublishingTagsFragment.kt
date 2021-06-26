@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.databinding.PrepublishingTagsFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ActivityUtils
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.databinding.PrepublishingTagsFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.EditPostSettingsFragment.EditPostActivityHook
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ActivityUtils
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class PrepublishingTagsFragment : TagsFragment(), TagsSelectedListener {

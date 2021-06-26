@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.stories
+package org.sitebay.android.ui.stories
 
-import com.wordpress.stories.compose.frame.StorySaveEvents.StorySaveResult
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.util.analytics.AnalyticsUtils
+import com.sitebay.stories.compose.frame.StorySaveEvents.StorySaveResult
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.util.analytics.AnalyticsUtils
 import javax.inject.Inject
 
 class StoriesTrackerHelper @Inject constructor() {

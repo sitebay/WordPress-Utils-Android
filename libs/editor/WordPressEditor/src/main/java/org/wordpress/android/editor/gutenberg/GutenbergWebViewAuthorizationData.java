@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.gutenberg;
+package org.sitebay.android.editor.gutenberg;
 
 import android.os.Parcel;
 import android.os.Parcelable;

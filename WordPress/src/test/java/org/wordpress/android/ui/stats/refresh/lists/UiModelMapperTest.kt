@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.stats.refresh.lists
+package org.sitebay.android.ui.stats.refresh.lists
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.FOLLOWER_TOTALS
-import org.wordpress.android.fluxc.store.StatsStore.ManagementType
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Success
-import org.wordpress.android.ui.stats.refresh.lists.StatsListViewModel.UiModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.FOLLOWER_TOTALS
+import org.sitebay.android.fluxc.store.StatsStore.ManagementType
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Success
+import org.sitebay.android.ui.stats.refresh.lists.StatsListViewModel.UiModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 class UiModelMapperTest : BaseUnitTest() {
     @Mock lateinit var networkUtilsWrapper: NetworkUtilsWrapper

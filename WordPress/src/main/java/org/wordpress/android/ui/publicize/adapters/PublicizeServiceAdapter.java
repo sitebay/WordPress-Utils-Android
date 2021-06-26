@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.publicize.adapters;
+package org.sitebay.android.ui.publicize.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,17 +14,17 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.PublicizeTable;
-import org.wordpress.android.models.PublicizeConnection;
-import org.wordpress.android.models.PublicizeConnectionList;
-import org.wordpress.android.models.PublicizeService;
-import org.wordpress.android.models.PublicizeServiceList;
-import org.wordpress.android.ui.publicize.PublicizeConstants;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.PublicizeTable;
+import org.sitebay.android.models.PublicizeConnection;
+import org.sitebay.android.models.PublicizeConnectionList;
+import org.sitebay.android.models.PublicizeService;
+import org.sitebay.android.models.PublicizeServiceList;
+import org.sitebay.android.ui.publicize.PublicizeConstants;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.Collections;
 import java.util.Comparator;

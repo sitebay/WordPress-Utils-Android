@@ -1,4 +1,4 @@
-package org.wordpress.android.editor.gutenberg;
+package org.sitebay.android.editor.gutenberg;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,29 +7,29 @@ import android.view.ViewGroup;
 import androidx.core.util.Consumer;
 import androidx.fragment.app.Fragment;
 
-import org.wordpress.android.editor.BuildConfig;
-import org.wordpress.android.editor.ExceptionLogger;
-import org.wordpress.android.editor.R;
-import org.wordpress.mobile.WPAndroidGlue.ShowSuggestionsUtil;
-import org.wordpress.mobile.WPAndroidGlue.GutenbergProps;
-import org.wordpress.mobile.WPAndroidGlue.RequestExecutor;
-import org.wordpress.mobile.WPAndroidGlue.Media;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnAuthHeaderRequestedListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnContentInfoReceivedListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnEditorAutosaveListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnEditorMountListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGetContentTimeout;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidRequestUnsupportedBlockFallbackListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidSendButtonPressedActionListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnImageFullscreenPreviewListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaSavingQueryListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaUploadQueryListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnFocalPointPickerTooltipShownEventListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaEditorListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaLibraryButtonListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaFilesCollectionBasedBlockEditorListener;
-import org.wordpress.mobile.WPAndroidGlue.WPAndroidGlueCode.OnSetFeaturedImageListener;
+import org.sitebay.android.editor.BuildConfig;
+import org.sitebay.android.editor.ExceptionLogger;
+import org.sitebay.android.editor.R;
+import org.sitebay.mobile.WPAndroidGlue.ShowSuggestionsUtil;
+import org.sitebay.mobile.WPAndroidGlue.GutenbergProps;
+import org.sitebay.mobile.WPAndroidGlue.RequestExecutor;
+import org.sitebay.mobile.WPAndroidGlue.Media;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnAuthHeaderRequestedListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnContentInfoReceivedListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnEditorAutosaveListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnEditorMountListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGetContentTimeout;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidRequestUnsupportedBlockFallbackListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnGutenbergDidSendButtonPressedActionListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnImageFullscreenPreviewListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaSavingQueryListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnReattachMediaUploadQueryListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnFocalPointPickerTooltipShownEventListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaEditorListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaLibraryButtonListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnMediaFilesCollectionBasedBlockEditorListener;
+import org.sitebay.mobile.WPAndroidGlue.WPAndroidGlueCode.OnSetFeaturedImageListener;
 
 import java.util.ArrayList;
 
@@ -228,7 +228,7 @@ public class GutenbergContainerFragment extends Fragment {
 
     public void updateCapabilities(GutenbergPropsBuilder gutenbergPropsBuilder) {
         // We want to make sure that activity isn't null
-        // as it can make this crash to happen: https://github.com/wordpress-mobile/WordPress-Android/issues/13248
+        // as it can make this crash to happen: https://github.com/sitebay-mobile/WordPress-Android/issues/13248
         final Activity activity = getActivity();
         if (activity != null) {
             GutenbergProps gutenbergProps = gutenbergPropsBuilder.build(activity, mHtmlModeEnabled);

@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.jetpack.scan
+package org.sitebay.android.ui.jetpack.scan
 
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
-import org.wordpress.android.R
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.ViewType
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.ViewType
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 sealed class ScanListItemState(override val type: ViewType) : JetpackListItemState(type) {
     data class ThreatsHeaderItemState(val threatsCount: Int) : ScanListItemState(

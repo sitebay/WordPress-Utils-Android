@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
 import android.os.Bundle
@@ -8,20 +8,20 @@ import android.view.View
 import android.widget.AdapterView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.AddCategoryBinding
-import org.wordpress.android.databinding.PrepublishingAddCategoryFragmentBinding
-import org.wordpress.android.databinding.PrepublishingToolbarBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.models.CategoryNode
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.posts.PrepublishingAddCategoryViewModel.SubmitButtonUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.ActivityUtils
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.ToastUtils.Duration.SHORT
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.AddCategoryBinding
+import org.sitebay.android.databinding.PrepublishingAddCategoryFragmentBinding
+import org.sitebay.android.databinding.PrepublishingToolbarBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.models.CategoryNode
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.posts.PrepublishingAddCategoryViewModel.SubmitButtonUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.ActivityUtils
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.ToastUtils.Duration.SHORT
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 class PrepublishingAddCategoryFragment : Fragment(R.layout.prepublishing_add_category_fragment) {

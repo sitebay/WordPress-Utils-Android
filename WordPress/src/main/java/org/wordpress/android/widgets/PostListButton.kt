@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,12 +6,12 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.R
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.ColorUtils
-import org.wordpress.android.util.getColorFromAttribute
-import org.wordpress.android.util.getColorResIdFromAttribute
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.R
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.ColorUtils
+import org.sitebay.android.util.getColorFromAttribute
+import org.sitebay.android.util.getColorResIdFromAttribute
 
 /*
  * buttons in footer of post cards

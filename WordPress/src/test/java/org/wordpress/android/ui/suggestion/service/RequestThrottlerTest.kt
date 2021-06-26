@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion.service
+package org.sitebay.android.ui.suggestion.service
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever

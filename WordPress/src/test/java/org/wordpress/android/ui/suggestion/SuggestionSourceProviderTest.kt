@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
@@ -9,9 +9,9 @@ import org.junit.runner.RunWith
 import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.suggestion.SuggestionType.Users
-import org.wordpress.android.ui.suggestion.SuggestionType.XPosts
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.suggestion.SuggestionType.Users
+import org.sitebay.android.ui.suggestion.SuggestionType.XPosts
 
 @RunWith(MockitoJUnitRunner::class)
 class SuggestionSourceProviderTest {

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media;
+package org.sitebay.android.ui.media;
 
 import android.Manifest;
 import android.app.Activity;
@@ -55,43 +55,43 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.editor.EditorImageMetaData;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.action.MediaAction;
-import org.wordpress.android.fluxc.generated.MediaActionBuilder;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.fluxc.store.MediaStore.MediaPayload;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaChanged;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.media.MediaPreviewActivity.MediaPreviewSwiped;
-import org.wordpress.android.ui.utils.AuthenticationUtils;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.ColorUtils;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.EditTextUtils;
-import org.wordpress.android.util.ImageUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.PermissionUtils;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.ViewUtilsKt;
-import org.wordpress.android.util.WPMediaUtils;
-import org.wordpress.android.util.WPPermissionUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageManager.RequestListener;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.editor.EditorImageMetaData;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.action.MediaAction;
+import org.sitebay.android.fluxc.generated.MediaActionBuilder;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.fluxc.store.MediaStore.MediaPayload;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaChanged;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.media.MediaPreviewActivity.MediaPreviewSwiped;
+import org.sitebay.android.ui.utils.AuthenticationUtils;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.ColorUtils;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.EditTextUtils;
+import org.sitebay.android.util.ImageUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.PermissionUtils;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.ViewUtilsKt;
+import org.sitebay.android.util.WPMediaUtils;
+import org.sitebay.android.util.WPPermissionUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageManager.RequestListener;
+import org.sitebay.android.util.image.ImageType;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -101,7 +101,7 @@ import java.util.Locale;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.editor.EditorImageMetaData.ARG_EDITOR_IMAGE_METADATA;
+import static org.sitebay.android.editor.EditorImageMetaData.ARG_EDITOR_IMAGE_METADATA;
 
 public class MediaSettingsActivity extends LocaleAwareActivity
         implements ActivityCompat.OnRequestPermissionsResultCallback {
@@ -233,7 +233,7 @@ public class MediaSettingsActivity extends LocaleAwareActivity
         mLinkTargetNewWindowView = findViewById(R.id.edit_link_target_new_widnow_checkbox);
         mImageSizeView = findViewById(R.id.image_size_hint);
         mImageSizeSeekBarView = findViewById(R.id.image_size_seekbar);
-        mAlignmentSpinnerView = findViewById(org.wordpress.android.editor.R.id.alignment_spinner);
+        mAlignmentSpinnerView = findViewById(org.sitebay.android.editor.R.id.alignment_spinner);
         mFabView = findViewById(R.id.fab_button);
 
         int mediaId;
@@ -404,7 +404,7 @@ public class MediaSettingsActivity extends LocaleAwareActivity
                     mEditorImageMetaData.getSrc().substring(mEditorImageMetaData.getSrc().lastIndexOf("/") + 1));
         }
         mediaModel.setFileExtension(
-                org.wordpress.android.fluxc.utils.MediaUtils.getExtension(mEditorImageMetaData.getSrc()));
+                org.sitebay.android.fluxc.utils.MediaUtils.getExtension(mEditorImageMetaData.getSrc()));
         mediaModel.setWidth(mEditorImageMetaData.getWidthInt());
         mediaModel.setHeight(mEditorImageMetaData.getHeightInt());
         return mediaModel;

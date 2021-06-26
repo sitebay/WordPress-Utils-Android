@@ -1,4 +1,4 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,8 +7,8 @@ import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.SqlUtils;
 
 import java.util.Date;
 

@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import androidx.fragment.app.FragmentActivity
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType
-import org.wordpress.android.ui.uploads.UploadService
-import org.wordpress.android.util.AppLog
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType
+import org.sitebay.android.ui.uploads.UploadService
+import org.sitebay.android.util.AppLog
 import javax.inject.Inject
 
 @Reusable

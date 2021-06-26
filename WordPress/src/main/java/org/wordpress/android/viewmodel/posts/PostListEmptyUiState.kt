@@ -1,17 +1,17 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
 import androidx.annotation.DrawableRes
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.store.ListStore.ListError
-import org.wordpress.android.fluxc.store.ListStore.ListErrorType.PERMISSION_ERROR
-import org.wordpress.android.ui.posts.PostListType
-import org.wordpress.android.ui.posts.PostListType.DRAFTS
-import org.wordpress.android.ui.posts.PostListType.PUBLISHED
-import org.wordpress.android.ui.posts.PostListType.SCHEDULED
-import org.wordpress.android.ui.posts.PostListType.SEARCH
-import org.wordpress.android.ui.posts.PostListType.TRASHED
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.store.ListStore.ListError
+import org.sitebay.android.fluxc.store.ListStore.ListErrorType.PERMISSION_ERROR
+import org.sitebay.android.ui.posts.PostListType
+import org.sitebay.android.ui.posts.PostListType.DRAFTS
+import org.sitebay.android.ui.posts.PostListType.PUBLISHED
+import org.sitebay.android.ui.posts.PostListType.SCHEDULED
+import org.sitebay.android.ui.posts.PostListType.SEARCH
+import org.sitebay.android.ui.posts.PostListType.TRASHED
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 sealed class PostListEmptyUiState(
     val title: UiString? = null,

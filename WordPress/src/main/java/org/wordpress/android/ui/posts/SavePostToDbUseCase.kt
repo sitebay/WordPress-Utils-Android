@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.content.Context
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.PostActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.ui.notifications.utils.PendingDraftsNotificationsUtilsWrapper
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper
-import org.wordpress.android.util.DateTimeUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.PostActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.ui.notifications.utils.PendingDraftsNotificationsUtilsWrapper
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper
+import org.sitebay.android.util.DateTimeUtilsWrapper
 import javax.inject.Inject
 
 class SavePostToDbUseCase

@@ -39,7 +39,7 @@
                         "space-3G",
                         "banner-ads"
                     ],
-                    "icon": "https://s0.wordpress.com/i/store/mobile/plans-free.png"
+                    "icon": "https://s0.sitebay.com/i/store/mobile/plans-free.png"
                 },
                 {
                     "groups": [
@@ -66,7 +66,7 @@
                         "space-6G",
                         "no-ads"
                     ],
-                    "icon": "https://s0.wordpress.com/i/store/mobile/plans-blogger.png"
+                    "icon": "https://s0.sitebay.com/i/store/mobile/plans-blogger.png"
                 },
                 {
                     "groups": [
@@ -93,7 +93,7 @@
                         "space-6G",
                         "no-ads"
                     ],
-                    "icon": "https://s0.wordpress.com/i/store/mobile/plans-personal.png"
+                    "icon": "https://s0.sitebay.com/i/store/mobile/plans-personal.png"
                 },
                 {
                     "groups": [
@@ -124,7 +124,7 @@
                         "monitization",
                         "videopress"
                     ],
-                    "icon": "https://s0.wordpress.com/i/store/mobile/plans-premium.png"
+                    "icon": "https://s0.sitebay.com/i/store/mobile/plans-premium.png"
                 },
                 {
                     "groups": [
@@ -161,7 +161,7 @@
                         "google-analytics",
                         "no-branding"
                     ],
-                    "icon": "https://s0.wordpress.com/i/store/mobile/plans-business.png"
+                    "icon": "https://s0.sitebay.com/i/store/mobile/plans-business.png"
                 },
                 {
                     "groups": [
@@ -202,14 +202,14 @@
                         "ecommerce-tools",
                         "store-theme"
                     ],
-                    "icon": "https://s0.wordpress.com/i/store/mobile/plans-ecommerce.png"
+                    "icon": "https://s0.sitebay.com/i/store/mobile/plans-ecommerce.png"
                 }
             ],
             "features": [
                 {
                     "id": "subdomain",
                     "name": "WordPress.com Subdomain",
-                    "description": "Your site address will use a WordPress.com subdomain (sitename.wordpress.com)."
+                    "description": "Your site address will use a WordPress.com subdomain (sitename.sitebay.com)."
                 },
                 {
                     "id": "jetpack-essentials",

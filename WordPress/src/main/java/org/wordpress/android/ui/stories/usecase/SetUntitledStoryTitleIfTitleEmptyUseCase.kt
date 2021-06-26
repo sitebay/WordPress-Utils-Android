@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.stories.usecase
+package org.sitebay.android.ui.stories.usecase
 
 import android.content.Context
-import org.wordpress.android.R
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.stories.StoryRepositoryWrapper
+import org.sitebay.android.R
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.stories.StoryRepositoryWrapper
 import javax.inject.Inject
 
 class SetUntitledStoryTitleIfTitleEmptyUseCase @Inject constructor(

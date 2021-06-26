@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.reactnative
+package org.sitebay.android.ui.posts.reactnative
 
 import android.os.Build.VERSION_CODES
 import android.os.Bundle
@@ -16,14 +16,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
-import org.wordpress.android.TestApplication
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.network.BaseRequest.BaseNetworkError
-import org.wordpress.android.fluxc.store.ReactNativeFetchResponse
-import org.wordpress.android.fluxc.store.ReactNativeFetchResponse.Error
-import org.wordpress.android.fluxc.store.ReactNativeStore
-import org.wordpress.android.test
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.TestApplication
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.network.BaseRequest.BaseNetworkError
+import org.sitebay.android.fluxc.store.ReactNativeFetchResponse
+import org.sitebay.android.fluxc.store.ReactNativeFetchResponse.Error
+import org.sitebay.android.fluxc.store.ReactNativeStore
+import org.sitebay.android.test
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
 
 @Config(application = TestApplication::class, sdk = [VERSION_CODES.LOLLIPOP])
 @RunWith(RobolectricTestRunner::class)

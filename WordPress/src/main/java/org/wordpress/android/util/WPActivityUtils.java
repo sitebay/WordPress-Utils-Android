@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.app.Dialog;
 import android.content.ComponentName;
@@ -24,13 +24,13 @@ import androidx.core.view.ViewCompat;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 
-import org.wordpress.android.R;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.R;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.List;
 
 public class WPActivityUtils {
-    public static final String READER_DEEPLINK_ACTIVITY_ALIAS = "org.wordpress.android.WPComPostReaderActivity";
+    public static final String READER_DEEPLINK_ACTIVITY_ALIAS = "org.sitebay.android.WPComPostReaderActivity";
 
     // Hack! PreferenceScreens don't show the toolbar, so we'll manually add one
     // See: http://stackoverflow.com/a/27455363/309558

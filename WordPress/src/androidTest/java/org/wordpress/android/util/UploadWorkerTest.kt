@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.content.Context
 import android.util.Log
@@ -22,9 +22,9 @@ import org.hamcrest.Matchers.`is`
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.uploads.UploadStarter
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.uploads.UploadStarter
 
 @RunWith(AndroidJUnit4::class)
 class UploadWorkerTest {

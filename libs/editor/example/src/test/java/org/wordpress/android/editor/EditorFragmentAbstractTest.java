@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.app.Activity;
 import android.text.Editable;
@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.android.util.helpers.MediaGallery;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaGallery;
 
 @Config(sdk = 18)
 @RunWith(RobolectricTestRunner.class)

@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.jetpack.scan.details.adapters.viewholders
+package org.sitebay.android.ui.jetpack.scan.details.adapters.viewholders
 
 import android.view.ViewGroup
-import org.wordpress.android.databinding.ThreatDetailsListFileNameItemBinding
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.common.viewholders.JetpackViewHolder
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsListItemState.ThreatFileNameState
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.databinding.ThreatDetailsListFileNameItemBinding
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.common.viewholders.JetpackViewHolder
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsListItemState.ThreatFileNameState
+import org.sitebay.android.ui.utils.UiHelpers
 
 class ThreatFileNameViewHolder(
     private val uiHelpers: UiHelpers,

@@ -1,7 +1,7 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
-import org.wordpress.android.annotation.Feature
-import org.wordpress.android.util.config.ExampleRemoteFeature.Companion.EXAMPLE_REMOTE_FEATURE_FIELD
+import org.sitebay.android.annotation.Feature
+import org.sitebay.android.util.config.ExampleRemoteFeature.Companion.EXAMPLE_REMOTE_FEATURE_FIELD
 import javax.inject.Inject
 
 /**

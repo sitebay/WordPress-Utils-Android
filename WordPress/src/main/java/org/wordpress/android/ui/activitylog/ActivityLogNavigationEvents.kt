@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.activitylog
+package org.sitebay.android.ui.activitylog
 
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem
 
 sealed class ActivityLogNavigationEvents {
     data class ShowBackupDownload(val event: ActivityLogListItem.Event) : ActivityLogNavigationEvents()

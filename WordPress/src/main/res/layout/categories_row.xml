@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.wordpress.android.widgets.CheckedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<org.sitebay.android.widgets.CheckedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/categoryRow"
     android:layout_width="match_parent"
@@ -16,4 +16,4 @@
         android:checkMark="?android:attr/listChoiceIndicatorMultiple"
         android:gravity="center_vertical"
         tools:text="Pony Category" />
-</org.wordpress.android.widgets.CheckedLinearLayout>
+</org.sitebay.android.widgets.CheckedLinearLayout>

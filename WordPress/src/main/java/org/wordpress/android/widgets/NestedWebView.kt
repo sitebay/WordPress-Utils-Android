@@ -1,4 +1,4 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.R.attr
 import android.annotation.SuppressLint
@@ -9,7 +9,7 @@ import androidx.core.view.MotionEventCompat
 import androidx.core.view.NestedScrollingChild3
 import androidx.core.view.NestedScrollingChildHelper
 import androidx.core.view.ViewCompat
-import org.wordpress.android.ui.WPWebView
+import org.sitebay.android.ui.WPWebView
 
 /**
  * To make WebView work with AppBar in Coordinator layout we need to put into a NestedScrollView

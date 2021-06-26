@@ -1,4 +1,4 @@
-package org.wordpress.android.support
+package org.sitebay.android.support
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.AccountModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.util.validateEmail
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.AccountModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.util.validateEmail
 
 class SupportHelper {
     /**

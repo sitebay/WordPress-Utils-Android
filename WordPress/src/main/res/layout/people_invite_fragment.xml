@@ -55,7 +55,7 @@
                     android:animateLayoutChanges="true"
                     android:orientation="vertical">
 
-                    <org.wordpress.android.ui.people.WPEditTextWithChipsOutlined
+                    <org.sitebay.android.ui.people.WPEditTextWithChipsOutlined
                         android:id="@+id/user_names_emails"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                         app:wpChipifyEnabled="true"
                         app:wpMaxNumberChips="10"/>
 
-                    <org.wordpress.android.widgets.WPTextView
+                    <org.sitebay.android.widgets.WPTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingStart="@dimen/margin_large"
@@ -146,7 +146,7 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <org.wordpress.android.widgets.WPTextView
+                <org.sitebay.android.widgets.WPTextView
                     android:id="@+id/message_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

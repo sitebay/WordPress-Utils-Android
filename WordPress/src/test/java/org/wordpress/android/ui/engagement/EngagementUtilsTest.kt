@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.LikeModel.LikeType.POST_LIKE
-import org.wordpress.android.ui.engagement.EngageItem.Liker
-import org.wordpress.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
-import org.wordpress.android.ui.engagement.utils.getDefaultLikers
-import org.wordpress.android.ui.engagement.utils.isEqualTo
+import org.sitebay.android.fluxc.model.LikeModel.LikeType.POST_LIKE
+import org.sitebay.android.ui.engagement.EngageItem.Liker
+import org.sitebay.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
+import org.sitebay.android.ui.engagement.utils.getDefaultLikers
+import org.sitebay.android.ui.engagement.utils.isEqualTo
 
 @RunWith(MockitoJUnitRunner::class)
 class EngagementUtilsTest {

@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.os.Bundle;
 
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostId;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostId;
+import org.sitebay.android.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Stack;

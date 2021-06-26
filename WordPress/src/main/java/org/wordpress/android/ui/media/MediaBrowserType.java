@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media;
+package org.sitebay.android.ui.media;
 
 public enum MediaBrowserType {
     BROWSER, // browse & manage media

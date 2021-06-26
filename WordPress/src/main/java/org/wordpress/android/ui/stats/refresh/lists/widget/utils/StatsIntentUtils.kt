@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.utils
+package org.sitebay.android.ui.stats.refresh.lists.widget.utils
 
 import android.content.Intent
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
 
 private const val COLOR_MODE_KEY = "color_mode_key"
 private const val VIEW_TYPE_KEY = "view_type_key"

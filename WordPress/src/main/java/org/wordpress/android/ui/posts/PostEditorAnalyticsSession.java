@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -52,7 +52,7 @@ public class PostEditorAnalyticsSession implements Serializable {
     public enum Outcome {
         CANCEL,
         DISCARD,    // not used in WPAndroid, but kept for parity with iOS
-                    // see https://github.com/wordpress-mobile/gutenberg-mobile/issues/556#issuecomment-462678807
+                    // see https://github.com/sitebay-mobile/gutenberg-mobile/issues/556#issuecomment-462678807
         SAVE,
         PUBLISH
     }

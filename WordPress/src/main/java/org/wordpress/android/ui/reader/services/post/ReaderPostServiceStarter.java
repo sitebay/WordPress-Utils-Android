@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.services.post;
+package org.sitebay.android.ui.reader.services.post;
 
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -8,8 +8,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.PersistableBundle;
 
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.util.AppLog;
 
 public class ReaderPostServiceStarter {
     private static final int JOB_READER_POST_SERVICE_ID_TAG = 4001;

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.widget.TextViewCompat;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 public class WPPreference extends Preference implements PreferenceHint {
     private String mHint;

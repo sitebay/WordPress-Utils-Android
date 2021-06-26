@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.net.Uri
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.editor.media.CopyMediaToAppStorageUseCase.CopyMediaResult
-import org.wordpress.android.ui.posts.editor.media.GetMediaModelUseCase.CreateMediaModelsResult
-import org.wordpress.android.ui.posts.editor.media.OptimizeMediaUseCase.OptimizeMediaResult
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.editor.media.CopyMediaToAppStorageUseCase.CopyMediaResult
+import org.sitebay.android.ui.posts.editor.media.GetMediaModelUseCase.CreateMediaModelsResult
+import org.sitebay.android.ui.posts.editor.media.OptimizeMediaUseCase.OptimizeMediaResult
 import javax.inject.Inject
 
 /**

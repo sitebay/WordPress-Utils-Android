@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,7 +7,7 @@ import android.view.KeyEvent;
 import androidx.appcompat.widget.AppCompatEditText;
 
 /**
- * An EditText with support for {@link org.wordpress.android.editor.OnImeBackListener} and typeface setting
+ * An EditText with support for {@link org.sitebay.android.editor.OnImeBackListener} and typeface setting
  * using a custom XML attribute.
  */
 public class EditTextWithKeyBackListener extends AppCompatEditText {

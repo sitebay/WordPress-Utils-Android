@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.reader.views.uistates
+package org.sitebay.android.ui.reader.views.uistates
 
 import androidx.annotation.AttrRes
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.util.image.ImageType
 
 data class ReaderBlogSectionUiState(
     val postId: Long,

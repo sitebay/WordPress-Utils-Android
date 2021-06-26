@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import androidx.recyclerview.widget.DiffUtil.Callback
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.DayButtons
 
 class BloggingRemindersDiffCallback(
     private val oldList: List<BloggingRemindersItem>,

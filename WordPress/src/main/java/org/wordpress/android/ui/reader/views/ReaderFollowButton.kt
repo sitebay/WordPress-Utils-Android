@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
 import android.R.integer
 import android.animation.Animator
@@ -11,8 +11,8 @@ import android.util.AttributeSet
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import com.google.android.material.button.MaterialButton
-import org.wordpress.android.R
-import org.wordpress.android.ui.reader.views.ReaderFollowButtonType.FOLLOW_SITE
+import org.sitebay.android.R
+import org.sitebay.android.ui.reader.views.ReaderFollowButtonType.FOLLOW_SITE
 
 /**
  * Follow button used in reader detail

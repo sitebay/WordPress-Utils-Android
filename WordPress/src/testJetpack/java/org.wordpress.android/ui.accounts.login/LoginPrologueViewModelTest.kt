@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.accounts.login
+package org.sitebay.android.ui.accounts.login
 
 import kotlinx.coroutines.InternalCoroutinesApi
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.ui.accounts.LoginNavigationEvents
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowEmailLoginScreen
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowLoginViaSiteAddressScreen
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker
-import org.wordpress.android.ui.accounts.login.LoginPrologueViewModel.UiState
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.ui.accounts.LoginNavigationEvents
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowEmailLoginScreen
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowLoginViaSiteAddressScreen
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker
+import org.sitebay.android.ui.accounts.login.LoginPrologueViewModel.UiState
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.Event
 
 @InternalCoroutinesApi
 class LoginPrologueViewModelTest : BaseUnitTest() {

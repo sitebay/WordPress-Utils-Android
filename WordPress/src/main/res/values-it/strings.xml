@@ -171,8 +171,8 @@ Language: it
     <string name="backup_item_roots">Root WordPress</string>
     <string name="backup_download_details_choose_items_header">Elementi inclusi in questo download</string>
     <string name="gutenberg_native_uploading">Caricamento in corso…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">I blocchi riutilizzabili non sono modificabili su WordPress per iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">I blocchi riutilizzabili non sono modificabili su WordPress per Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">I blocchi riutilizzabili non sono modificabili su WordPress per iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">I blocchi riutilizzabili non sono modificabili su WordPress per Android</string>
     <string name="gutenberg_native_replace_file">Sostituisci file</string>
     <string name="gutenberg_native_replace_audio">Sostituisci</string>
     <string name="gutenberg_native_problem_opening_the_audio">Problema durante l\'apertura dell\'audio</string>
@@ -494,7 +494,7 @@ Language: it
     <string name="media_picker_soft_ask_permissions_denied">%1$s è stato negato l\'accesso alle tue foto. Per risolvere questo problema, modifica le tue autorizzazioni e attiva %2$s e %3$s.</string>
     <string name="media_insert_failed">Inserimento degli elementi multimediali non riuscito.</string>
     <string name="media_insert_failed_with_reason">Inserimento degli elementi multimediali non riuscito: %s</string>
-    <string name="photo_picker_wordpress_media_library">Scegli dalla Libreria multimediale di WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Scegli dalla Libreria multimediale di WordPress</string>
     <string name="reader_label_toolbar_back">Indietro</string>
     <string name="reader_discover_empty_button_text">Inizia ora</string>
     <string name="reader_discover_empty_subtitle">Segui gli argomenti per scoprire nuovi blog</string>
@@ -637,7 +637,7 @@ Language: it
     <string name="create_account">Crea account</string>
     <string name="reset_your_password">Reimposta la password</string>
     <string name="check_email">Controlla l\'email</string>
-    <string name="enter_email_to_continue_wordpress_com">Inserisci il tuo indirizzo email per accedere o creare un account WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Inserisci il tuo indirizzo email per accedere o creare un account WordPress.com.</string>
     <string name="send_link_by_email">Invia link tramite email</string>
     <string name="reader_error_request_failed_title">Si è verificato un errore durante la gestione della richiesta. Riprova più tardi.</string>
     <string name="quick_start_list_update_site_title_title">Imposta il titolo del sito</string>
@@ -916,7 +916,7 @@ Language: it
     <string name="site_cannot_be_loaded">Non siamo in grado di caricare i dati per il tuo sito in questo momento. Riprova più tardi.</string>
     <string name="reader_filter_tags_title">Argomenti</string>
     <string name="suffix_1_000">%sK</string>
-    <string name="gutenberg_native_wordpress_media_library">Libreria multimediale WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">Libreria multimediale WordPress</string>
     <string name="gutenberg_native_unsupported">Non supportato</string>
     <string name="gutenberg_native_take_a_video">Fai un video</string>
     <string name="gutenberg_native_take_a_photo_or_video">Fai un video o scatta una foto</string>
@@ -1357,7 +1357,7 @@ Language: it
     <string name="stats_from_to_dates_in_week_label">%1$s - %2$s</string>
     <string name="stats_follower_label">Follower</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_publicize_followers_label">Follower</string>
     <string name="stats_publicize_service_label">Servizio</string>
     <string name="stats_tags_and_categories_views_label">Visualizzazioni</string>
@@ -1822,7 +1822,7 @@ Language: it
     <string name="plugin_external_link_icon_content_description">Link esterno</string>
     <string name="plugin_icon_content_description">Icona del plugin</string>
     <string name="plugin_home_page">Homepage del plugin</string>
-    <string name="wordpress_dot_org_plugin_page">Pagina del plugin di WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Pagina del plugin di WordPress.org</string>
     <string name="plugin_remove_dialog_message">Desideri rimuovere %1$s da %2$s?\n\nIn questo modo il plugin verrà disattivato e tutti i file e i dati associati verranno eliminati.</string>
     <string name="plugin_remove_dialog_title">Rimuovi plugin</string>
     <string name="plugin_remove_progress_dialog_message">Rimozione di %s in corso…</string>
@@ -1983,7 +1983,7 @@ Language: it
     <string name="login_text_otp">Inviami invece un messaggio con un codice</string>
     <string name="enter_verification_code">Ci sei quasi! Inserisci il codice di verifica dalla tua app di autenticazione.</string>
     <string name="next">Successivo</string>
-    <string name="enter_email_wordpress_com">Accedi a WordPress.com utilizzando un indirizzo email per gestire tutti i tuoi siti WordPress.com.</string>
+    <string name="enter_email_sitebay_com">Accedi a WordPress.com utilizzando un indirizzo email per gestire tutti i tuoi siti WordPress.com.</string>
     <string name="image_optimization_promo_desc">L\'ottimizzazione dell\'immagine restringe l\'immagine per un caricamento più veloce.\n\nPuoi modificare questa opzione in qualsiasi momento nelle impostazioni del sito.</string>
     <string name="image_optimization_promo_title">Attivare l\'ottimizzazione dell\'immagine?</string>
     <string name="leave_off">Escludi</string>
@@ -2541,8 +2541,8 @@ Language: it
     <string name="stats_insights_today">Statistiche odierne</string>
     <string name="stats_insights_all_time">Articoli, visualizzazioni e visitatori dall\'inizio</string>
     <string name="stats_insights">Approfondimenti</string>
-    <string name="me_disconnect_from_wordpress_com">Disconnettiti da WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Connettiti a WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Disconnettiti da WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Connettiti a WordPress.com</string>
     <string name="me_btn_login_logout">Login/Logout</string>
     <string name="account_settings">Impostazioni account</string>
     <string name="me_btn_support">Aiuto e supporto</string>
@@ -2707,7 +2707,7 @@ Language: it
     <string name="new_media">Nuovo supporto</string>
     <string name="local_changes">Modifiche locali</string>
     <string name="image_settings">Impostazioni immagini</string>
-    <string name="wordpress_blog">Blog di WordPress</string>
+    <string name="sitebay_blog">Blog di WordPress</string>
     <string name="error_blog_hidden">Questo blog è nascosto e non può essere caricato. Abilitalo nuovamente nelle impostazioni e riprova.</string>
     <string name="fatal_db_error">Si è verificato un errore durante la creazione del database delle app. Prova a reinstallare l\'app.</string>
     <string name="reader_title_applog">Registro applicazione</string>

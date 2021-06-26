@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel
+package org.sitebay.android.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
@@ -11,22 +11,22 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.test
-import org.wordpress.android.ui.WPWebViewUsageCategory
-import org.wordpress.android.ui.PreviewMode
-import org.wordpress.android.ui.PreviewMode.DESKTOP
-import org.wordpress.android.ui.PreviewMode.MOBILE
-import org.wordpress.android.ui.PreviewMode.TABLET
-import org.wordpress.android.util.DisplayUtilsWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.viewmodel.helpers.ConnectionStatus
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.PreviewModeSelectorStatus
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewContentUiState
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenProgressUiState
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState.WebPreviewFullscreenErrorUiState
-import org.wordpress.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState.WebPreviewFullscreenNotAvailableUiState
+import org.sitebay.android.test
+import org.sitebay.android.ui.WPWebViewUsageCategory
+import org.sitebay.android.ui.PreviewMode
+import org.sitebay.android.ui.PreviewMode.DESKTOP
+import org.sitebay.android.ui.PreviewMode.MOBILE
+import org.sitebay.android.ui.PreviewMode.TABLET
+import org.sitebay.android.util.DisplayUtilsWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.viewmodel.helpers.ConnectionStatus
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.PreviewModeSelectorStatus
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewContentUiState
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenProgressUiState
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState.WebPreviewFullscreenErrorUiState
+import org.sitebay.android.viewmodel.wpwebview.WPWebViewViewModel.WebPreviewUiState.WebPreviewFullscreenUiState.WebPreviewFullscreenNotAvailableUiState
 
 @RunWith(MockitoJUnitRunner::class)
 class WPWebViewViewModelTest {

@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.Activity
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncherWrapper
-import org.wordpress.android.ui.WPWebViewUsageCategory
-import org.wordpress.android.ui.uploads.UploadActionUseCase
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.REMOTE_AUTO_SAVE
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD_AS_DRAFT
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncherWrapper
+import org.sitebay.android.ui.WPWebViewUsageCategory
+import org.sitebay.android.ui.uploads.UploadActionUseCase
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.REMOTE_AUTO_SAVE
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD_AS_DRAFT
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 
 @Reusable

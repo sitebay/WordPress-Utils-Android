@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments
+package org.sitebay.android.ui.comments
 
 import android.R.attr
 import android.content.Context
@@ -9,8 +9,8 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import androidx.recyclerview.widget.RecyclerView.State
-import org.wordpress.android.R.dimen
-import org.wordpress.android.util.RtlUtils
+import org.sitebay.android.R.dimen
+import org.sitebay.android.util.RtlUtils
 import kotlin.math.roundToInt
 
 /**

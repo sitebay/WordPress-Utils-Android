@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
@@ -6,23 +6,23 @@ import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.reader.FollowCommentsUiStateType.DISABLED
-import org.wordpress.android.ui.reader.FollowCommentsUiStateType.GONE
-import org.wordpress.android.ui.reader.FollowCommentsUiStateType.LOADING
-import org.wordpress.android.ui.reader.FollowCommentsUiStateType.VISIBLE_WITH_STATE
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Failure
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowCommentsNotAllowed
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowStateChanged
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Loading
-import org.wordpress.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.UserNotAuthenticated
-import org.wordpress.android.util.distinct
-import org.wordpress.android.util.map
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.reader.FollowCommentsUiStateType.DISABLED
+import org.sitebay.android.ui.reader.FollowCommentsUiStateType.GONE
+import org.sitebay.android.ui.reader.FollowCommentsUiStateType.LOADING
+import org.sitebay.android.ui.reader.FollowCommentsUiStateType.VISIBLE_WITH_STATE
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Failure
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowCommentsNotAllowed
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.FollowStateChanged
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.Loading
+import org.sitebay.android.ui.reader.usecases.ReaderCommentsFollowUseCase.FollowCommentsState.UserNotAuthenticated
+import org.sitebay.android.util.distinct
+import org.sitebay.android.util.map
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ScopedViewModel
 import javax.inject.Inject
 import javax.inject.Named
 

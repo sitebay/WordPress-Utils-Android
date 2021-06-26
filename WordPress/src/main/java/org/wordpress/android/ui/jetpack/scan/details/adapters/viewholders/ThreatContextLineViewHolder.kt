@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.details.adapters.viewholders
+package org.sitebay.android.ui.jetpack.scan.details.adapters.viewholders
 
 import android.text.Spannable
 import android.text.SpannableString
@@ -6,11 +6,11 @@ import android.text.style.ForegroundColorSpan
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.databinding.ThreatContextLinesListContextLineItemBinding
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsListItemState.ThreatContextLinesItemState.ThreatContextLineItemState
-import org.wordpress.android.ui.utils.PaddingBackgroundColorSpan
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.R
+import org.sitebay.android.databinding.ThreatContextLinesListContextLineItemBinding
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsListItemState.ThreatContextLinesItemState.ThreatContextLineItemState
+import org.sitebay.android.ui.utils.PaddingBackgroundColorSpan
+import org.sitebay.android.util.viewBinding
 
 class ThreatContextLineViewHolder(
     parent: ViewGroup,

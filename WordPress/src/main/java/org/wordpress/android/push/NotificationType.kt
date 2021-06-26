@@ -1,4 +1,4 @@
-package org.wordpress.android.push
+package org.sitebay.android.push
 
 enum class NotificationType {
     COMMENT,

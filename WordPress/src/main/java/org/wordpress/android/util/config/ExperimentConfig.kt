@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
 /**
  * This class represents an abstract experiment configuration. An experiment has a list of variants.

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications;
+package org.sitebay.android.ui.notifications;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,48 +24,48 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.datasets.NotificationsTable;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.tools.FormattableRangeType;
-import org.wordpress.android.models.Note;
-import org.wordpress.android.push.GCMMessageHandler;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.CollapseFullScreenDialogFragment;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.ScrollableViewInitializedListener;
-import org.wordpress.android.ui.WPWebViewActivity;
-import org.wordpress.android.ui.comments.CommentActions;
-import org.wordpress.android.ui.comments.CommentDetailFragment;
-import org.wordpress.android.ui.engagement.EngagedPeopleListFragment;
-import org.wordpress.android.ui.engagement.ListScenarioUtils;
-import org.wordpress.android.ui.notifications.adapters.NotesAdapter;
-import org.wordpress.android.ui.notifications.services.NotificationsUpdateServiceStarter;
-import org.wordpress.android.ui.notifications.utils.NotificationsActions;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtils;
-import org.wordpress.android.ui.posts.BasicFragmentDialog;
-import org.wordpress.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
-import org.wordpress.android.ui.reader.ReaderPostDetailFragment;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.stats.StatsViewType;
-import org.wordpress.android.util.AppBarLayoutExtensionsKt;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils.AnalyticsCommentActionSource;
-import org.wordpress.android.util.config.LikesEnhancementsFeatureConfig;
-import org.wordpress.android.widgets.WPSwipeSnackbar;
-import org.wordpress.android.widgets.WPViewPager;
-import org.wordpress.android.widgets.WPViewPagerTransformer;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.datasets.NotificationsTable;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.tools.FormattableRangeType;
+import org.sitebay.android.models.Note;
+import org.sitebay.android.push.GCMMessageHandler;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.CollapseFullScreenDialogFragment;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.ScrollableViewInitializedListener;
+import org.sitebay.android.ui.WPWebViewActivity;
+import org.sitebay.android.ui.comments.CommentActions;
+import org.sitebay.android.ui.comments.CommentDetailFragment;
+import org.sitebay.android.ui.engagement.EngagedPeopleListFragment;
+import org.sitebay.android.ui.engagement.ListScenarioUtils;
+import org.sitebay.android.ui.notifications.adapters.NotesAdapter;
+import org.sitebay.android.ui.notifications.services.NotificationsUpdateServiceStarter;
+import org.sitebay.android.ui.notifications.utils.NotificationsActions;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtils;
+import org.sitebay.android.ui.posts.BasicFragmentDialog;
+import org.sitebay.android.ui.posts.BasicFragmentDialog.BasicDialogPositiveClickInterface;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.ui.reader.ReaderPostDetailFragment;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.stats.StatsViewType;
+import org.sitebay.android.util.AppBarLayoutExtensionsKt;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils.AnalyticsCommentActionSource;
+import org.sitebay.android.util.config.LikesEnhancementsFeatureConfig;
+import org.sitebay.android.widgets.WPSwipeSnackbar;
+import org.sitebay.android.widgets.WPViewPager;
+import org.sitebay.android.widgets.WPViewPagerTransformer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -73,17 +73,17 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.models.Note.NOTE_COMMENT_LIKE_TYPE;
-import static org.wordpress.android.models.Note.NOTE_COMMENT_TYPE;
-import static org.wordpress.android.models.Note.NOTE_FOLLOW_TYPE;
-import static org.wordpress.android.models.Note.NOTE_LIKE_TYPE;
-import static org.wordpress.android.ui.notifications.services.NotificationsUpdateServiceStarter.IS_TAPPED_ON_NOTIFICATION;
+import static org.sitebay.android.models.Note.NOTE_COMMENT_LIKE_TYPE;
+import static org.sitebay.android.models.Note.NOTE_COMMENT_TYPE;
+import static org.sitebay.android.models.Note.NOTE_FOLLOW_TYPE;
+import static org.sitebay.android.models.Note.NOTE_LIKE_TYPE;
+import static org.sitebay.android.ui.notifications.services.NotificationsUpdateServiceStarter.IS_TAPPED_ON_NOTIFICATION;
 
 public class NotificationsDetailActivity extends LocaleAwareActivity implements
         CommentActions.OnNoteCommentActionListener,
         BasicFragmentDialog.BasicDialogPositiveClickInterface, ScrollableViewInitializedListener {
     private static final String ARG_TITLE = "activityTitle";
-    private static final String DOMAIN_WPCOM = "wordpress.com";
+    private static final String DOMAIN_WPCOM = "sitebay.com";
 
     @Inject AccountStore mAccountStore;
     @Inject SiteStore mSiteStore;
@@ -622,7 +622,7 @@ public class NotificationsDetailActivity extends LocaleAwareActivity implements
             if (bundle == null) {
                 bundle = new Bundle();
             }
-            // This is a possible solution to https://github.com/wordpress-mobile/WordPress-Android/issues/5456
+            // This is a possible solution to https://github.com/sitebay-mobile/WordPress-Android/issues/5456
             // See https://issuetracker.google.com/issues/37103380#comment77 for more details
             bundle.putParcelableArray("states", null);
             return bundle;

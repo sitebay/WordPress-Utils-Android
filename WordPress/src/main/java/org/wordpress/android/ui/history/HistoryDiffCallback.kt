@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.os.Bundle
 import androidx.recyclerview.widget.DiffUtil
-import org.wordpress.android.ui.history.HistoryListItem.Revision
+import org.sitebay.android.ui.history.HistoryListItem.Revision
 
 class HistoryDiffCallback(
     private val oldList: List<HistoryListItem>,

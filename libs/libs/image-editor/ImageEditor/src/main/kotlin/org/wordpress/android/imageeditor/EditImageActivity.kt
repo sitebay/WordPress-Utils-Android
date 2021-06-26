@@ -1,4 +1,4 @@
-package org.wordpress.android.imageeditor
+package org.sitebay.android.imageeditor
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +9,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.navigateUp
-import org.wordpress.android.imageeditor.ImageEditor.EditorAction.EditorCancelled
+import org.sitebay.android.imageeditor.ImageEditor.EditorAction.EditorCancelled
 
 class EditImageActivity : AppCompatActivity() {
     private lateinit var viewModel: EditImageViewModel

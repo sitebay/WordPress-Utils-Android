@@ -27,7 +27,7 @@
         tools:ignore="ContentDescription"
         tools:src="@drawable/img_illustration_promo" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/promo_title"
         style="@style/Widget.LoginFlow.TextView.PromoTitle"
         android:layout_width="0dp"

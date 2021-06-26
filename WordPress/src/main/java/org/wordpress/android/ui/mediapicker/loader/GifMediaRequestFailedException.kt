@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 /**
  * An Exception to describe errors within GifMediaDataSource when a [onFailure] is called

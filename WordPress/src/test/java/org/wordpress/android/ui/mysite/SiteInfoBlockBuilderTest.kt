@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
@@ -6,8 +6,8 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.viewmodel.ResourceProvider
 
 @RunWith(MockitoJUnitRunner::class)
 class SiteInfoBlockBuilderTest {

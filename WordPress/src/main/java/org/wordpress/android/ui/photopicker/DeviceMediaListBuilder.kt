@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.content.Context
 import android.database.Cursor
@@ -7,17 +7,17 @@ import android.provider.MediaStore.Images.Media
 import android.provider.MediaStore.Video
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.ui.media.MediaBrowserType
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.MEDIA
-import org.wordpress.android.util.SqlUtils
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.ui.media.MediaBrowserType
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.MEDIA
+import org.sitebay.android.util.SqlUtils
+import org.sitebay.android.util.UriWrapper
 import javax.inject.Inject
 import javax.inject.Named
 
 @Deprecated("This class is being refactored, if you implement any change, please also update " +
-        "{@link org.wordpress.android.ui.mediapicker.loader.DeviceListBuilder}")
+        "{@link org.sitebay.android.ui.mediapicker.loader.DeviceListBuilder}")
 class DeviceMediaListBuilder
 @Inject constructor(
     val context: Context,

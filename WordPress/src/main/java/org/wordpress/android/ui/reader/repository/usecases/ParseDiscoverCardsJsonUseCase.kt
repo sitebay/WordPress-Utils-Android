@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
 import dagger.Reusable
 import org.json.JSONArray
 import org.json.JSONObject
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagList
-import org.wordpress.android.models.ReaderTagType.DEFAULT
-import org.wordpress.android.ui.reader.ReaderConstants
-import org.wordpress.android.util.JSONUtils
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagList
+import org.sitebay.android.models.ReaderTagType.DEFAULT
+import org.sitebay.android.ui.reader.ReaderConstants
+import org.sitebay.android.util.JSONUtils
 import javax.inject.Inject
 
 @Reusable

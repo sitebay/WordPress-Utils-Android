@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.apache.commons.text.StringEscapeUtils;
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.model.TermModel;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.model.TermModel;
 
 import java.util.ArrayList;
 import java.util.List;

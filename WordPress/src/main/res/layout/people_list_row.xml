@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/people_list_row_role_margin_top"
         android:layout_toEndOf="@id/person_avatar">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/person_role"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:textAppearance="?attr/textAppearanceCaption"
             tools:text="role" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/person_display_name"
             style="@style/PersonTextView"
             android:layout_alignParentStart="true"
@@ -45,7 +45,7 @@
             android:textAppearance="?attr/textAppearanceSubtitle1"
             tools:text="display_name" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/person_username"
             style="@style/PersonTextView"
             android:layout_below="@id/person_display_name"
@@ -57,7 +57,7 @@
             android:textAppearance="?attr/textAppearanceBody2"
             tools:text="username" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/follower_subscribed_date"
             style="@style/PersonTextView"
             android:layout_below="@id/person_username"

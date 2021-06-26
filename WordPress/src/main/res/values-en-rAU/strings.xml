@@ -393,7 +393,7 @@ Language: en_AU
     <string name="stats_follower_label">Follower</string>
     <string name="stats_followers_count_message">Total %1$s Followers: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Manage Insights</string>
     <string name="stats_empty_insights_title">No insights added yet</string>
     <string name="stats_no_data_yet">No data yet</string>
@@ -835,7 +835,7 @@ Language: en_AU
     <string name="plugin_external_link_icon_content_description">External link</string>
     <string name="plugin_icon_content_description">Plugin icon</string>
     <string name="plugin_home_page">Plugin home page</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org Plugin page</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org Plugin page</string>
     <string name="plugin_remove_dialog_message">Are you sure you want to remove %1$s from %2$s?\n\nThis will deactivate the plugin and delete all associated files and data.</string>
     <string name="plugin_remove_dialog_title">Remove Plugin</string>
     <string name="plugin_remove_progress_dialog_message">Removing %s…</string>
@@ -985,7 +985,7 @@ Language: en_AU
     <string name="requesting_otp">Requesting a verification code via SMS.</string>
     <string name="enter_verification_code">Almost there! Please enter the verification code from your Authenticator app.</string>
     <string name="next">Next</string>
-    <string name="enter_email_wordpress_com">Log in to WordPress.com using an email address to manage all your WordPress sites.</string>
+    <string name="enter_email_sitebay_com">Log in to WordPress.com using an email address to manage all your WordPress sites.</string>
     <string name="image_optimization_promo_desc">Image optimisation shrinks images for quicker uploading.\n\nYou can change this any time in site settings.</string>
     <string name="image_optimization_promo_title">Turn on image optimisation?</string>
     <string name="leave_off">Leave off</string>
@@ -1530,8 +1530,8 @@ Language: en_AU
     <string name="stats_insights_today">Today\'s Stats</string>
     <string name="stats_insights_all_time">All-time posts, views, and visitors</string>
     <string name="stats_insights">Insights</string>
-    <string name="me_disconnect_from_wordpress_com">Log out of WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Log in to WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Log out of WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Log in to WordPress.com</string>
     <string name="me_btn_login_logout">Login/Logout</string>
     <string name="me_btn_support">Help &amp; Support</string>
     <string name="account_settings">Account Settings</string>
@@ -1659,7 +1659,7 @@ Language: en_AU
     <string name="fatal_db_error">An error occurred while creating the app database. Try reinstalling the app.</string>
     <string name="error_blog_hidden">This blog is hidden and couldn\'t be loaded. Enable it again in settings and try again.</string>
     <string name="error_refresh_media">Media couldn\'t be refreshed at this time</string>
-    <string name="wordpress_blog">WordPress blog</string>
+    <string name="sitebay_blog">WordPress blog</string>
     <string name="image_settings">Image settings</string>
     <string name="local_changes">Local changes</string>
     <string name="privacy_policy">Privacy policy</string>

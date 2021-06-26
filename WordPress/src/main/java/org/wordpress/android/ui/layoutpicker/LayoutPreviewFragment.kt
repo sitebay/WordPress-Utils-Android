@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -14,22 +14,22 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout.LayoutParams
 import androidx.lifecycle.ViewModelProvider
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.LayoutPickerPreviewFragmentBinding
-import org.wordpress.android.ui.FullscreenBottomSheetDialogFragment
-import org.wordpress.android.ui.PreviewMode.DESKTOP
-import org.wordpress.android.ui.PreviewMode.MOBILE
-import org.wordpress.android.ui.PreviewMode.TABLET
-import org.wordpress.android.ui.PreviewModeSelectorPopup
-import org.wordpress.android.ui.layoutpicker.PreviewUiState.Error
-import org.wordpress.android.ui.layoutpicker.PreviewUiState.Loaded
-import org.wordpress.android.ui.layoutpicker.PreviewUiState.Loading
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.DisplayUtilsWrapper
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.setVisible
-import org.wordpress.android.util.skip
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.LayoutPickerPreviewFragmentBinding
+import org.sitebay.android.ui.FullscreenBottomSheetDialogFragment
+import org.sitebay.android.ui.PreviewMode.DESKTOP
+import org.sitebay.android.ui.PreviewMode.MOBILE
+import org.sitebay.android.ui.PreviewMode.TABLET
+import org.sitebay.android.ui.PreviewModeSelectorPopup
+import org.sitebay.android.ui.layoutpicker.PreviewUiState.Error
+import org.sitebay.android.ui.layoutpicker.PreviewUiState.Loaded
+import org.sitebay.android.ui.layoutpicker.PreviewUiState.Loading
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.DisplayUtilsWrapper
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.setVisible
+import org.sitebay.android.util.skip
 import javax.inject.Inject
 
 private const val INITIAL_SCALE = 90

@@ -1,8 +1,8 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.junit.Test
 import org.assertj.core.api.Assertions.assertThat
-import org.wordpress.android.ui.Organization
+import org.sitebay.android.ui.Organization
 
 class OrganizationTest {
     @Test

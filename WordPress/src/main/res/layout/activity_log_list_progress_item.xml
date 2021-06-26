@@ -51,7 +51,7 @@
         android:layout_toEndOf="@id/action_icon"
         android:orientation="vertical">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/action_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             android:textAppearance="?attr/textAppearanceSubtitle1"
             tools:text="Rewinding to June 1 2018 12:22PM" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/action_summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

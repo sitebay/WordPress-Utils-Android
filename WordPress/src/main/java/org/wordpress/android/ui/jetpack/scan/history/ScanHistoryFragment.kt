@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.history
+package org.sitebay.android.ui.jetpack.scan.history
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -10,17 +10,17 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import com.google.android.material.tabs.TabLayout.Tab
 import com.google.android.material.tabs.TabLayoutMediator
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.FullscreenErrorWithRetryBinding
-import org.wordpress.android.databinding.ScanHistoryFragmentBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ScrollableViewInitializedListener
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.TabUiState
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ContentUiState
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ErrorUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.LocaleManagerWrapper
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.FullscreenErrorWithRetryBinding
+import org.sitebay.android.databinding.ScanHistoryFragmentBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ScrollableViewInitializedListener
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.TabUiState
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ContentUiState
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.UiState.ErrorUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.LocaleManagerWrapper
 import javax.inject.Inject
 
 class ScanHistoryFragment : Fragment(R.layout.scan_history_fragment), ScrollableViewInitializedListener {

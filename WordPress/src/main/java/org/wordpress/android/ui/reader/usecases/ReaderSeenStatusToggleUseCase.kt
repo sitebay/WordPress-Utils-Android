@@ -1,24 +1,24 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import kotlinx.coroutines.flow.flow
-import org.wordpress.android.R.string
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.PostSeenState.Error
-import org.wordpress.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.PostSeenState.PostSeenStateChanged
-import org.wordpress.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.PostSeenState.UserNotAuthenticated
-import org.wordpress.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.ReaderPostSeenToggleSource.READER_POST_DETAILS
-import org.wordpress.android.ui.reader.utils.PostSeenStatusApiCallsProvider
-import org.wordpress.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Failure
-import org.wordpress.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Success
-import org.wordpress.android.ui.utils.UiString
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.R.string
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.PostSeenState.Error
+import org.sitebay.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.PostSeenState.PostSeenStateChanged
+import org.sitebay.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.PostSeenState.UserNotAuthenticated
+import org.sitebay.android.ui.reader.usecases.ReaderSeenStatusToggleUseCase.ReaderPostSeenToggleSource.READER_POST_DETAILS
+import org.sitebay.android.ui.reader.utils.PostSeenStatusApiCallsProvider
+import org.sitebay.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Failure
+import org.sitebay.android.ui.reader.utils.PostSeenStatusApiCallsProvider.SeenStatusToggleCallResult.Success
+import org.sitebay.android.ui.utils.UiString
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.NetworkUtilsWrapper
 import javax.inject.Inject
 
 class ReaderSeenStatusToggleUseCase @Inject constructor(

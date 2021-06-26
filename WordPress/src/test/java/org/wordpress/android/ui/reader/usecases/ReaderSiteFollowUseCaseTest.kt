@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.anyOrNull
@@ -18,17 +18,17 @@ import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.ArgumentMatchers.anyString
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.actions.ReaderActions.ActionListener
-import org.wordpress.android.ui.reader.actions.ReaderBlogActionsWrapper
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.Failed.NoNetwork
-import org.wordpress.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.Failed.RequestFailed
-import org.wordpress.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.FollowStatusChanged
-import org.wordpress.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.Success
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.actions.ReaderActions.ActionListener
+import org.sitebay.android.ui.reader.actions.ReaderBlogActionsWrapper
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.Failed.NoNetwork
+import org.sitebay.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.Failed.RequestFailed
+import org.sitebay.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.FollowStatusChanged
+import org.sitebay.android.ui.reader.usecases.ReaderSiteFollowUseCase.FollowSiteState.Success
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 private const val FOLLOW_BLOG_ACTION_LISTENER_PARAM_POSITION = 3
 private const val SOURCE = "source"

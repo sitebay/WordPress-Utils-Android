@@ -178,7 +178,7 @@ Language: es_MX
     <string name="stories_intro_image_caption_first">Cómo crear una entrada de historias</string>
     <string name="stories_intro_image_caption_second">Título de la entrada de historia</string>
     <string name="stories_intro_title_first">Ahora las historias son para todos</string>
-    <string name="photo_picker_wordpress_media_library">Elige desde la biblioteca de medios de WordPress</string>
+    <string name="photo_picker_sitebay_media_library">Elige desde la biblioteca de medios de WordPress</string>
     <string name="media_insert_failed_with_reason">Ha fallado la inserción del medio: %s</string>
     <string name="media_insert_failed">Inserción del medio fallida.</string>
     <string name="reader_label_toolbar_back">Volver</string>
@@ -321,7 +321,7 @@ Language: es_MX
     <string name="send_link_by_email">Enviar el enlace por correo electrónico</string>
     <string name="create_account">Crear una cuenta</string>
     <string name="or_type_your_password">O escribe tu contraseña</string>
-    <string name="enter_email_to_continue_wordpress_com">Introduce tu dirección de correo electrónico para acceder o crear una cuenta de WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">Introduce tu dirección de correo electrónico para acceder o crear una cuenta de WordPress.com.</string>
     <string name="get_started">Primeros pasos</string>
     <string name="check_email">Comprobar el correo electrónico</string>
     <string name="reader_error_request_failed_title">Ha habido un problema al gestionar la solicitud. Por favor, inténtalo de nuevo más tarde.</string>
@@ -594,7 +594,7 @@ Language: es_MX
     <string name="reader_my_likes_display_name">Me gusta</string>
     <string name="site_cannot_be_loaded">No podemos cargar los datos para tu sitio en este momento. Por favor, inténtalo de nuevo más tarde</string>
     <string name="reader_filter_tags_title">Temas</string>
-    <string name="gutenberg_native_wordpress_media_library">Biblioteca de medios de WordPress</string>
+    <string name="gutenberg_native_sitebay_media_library">Biblioteca de medios de WordPress</string>
     <string name="gutenberg_native_unsupported">No compatible</string>
     <string name="gutenberg_native_ungroup">Desagrupar</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">Toca para ocultar el teclado</string>
@@ -1033,7 +1033,7 @@ Language: es_MX
     <string name="stats_follower_label">Follower</string>
     <string name="stats_followers_count_message">Followers %1$s totales: %2$s</string>
     <string name="stats_followers_email">Email</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">Administrar ideas</string>
     <string name="stats_from_to_dates_in_week_label">%1$s - %2$s</string>
     <string name="stats_publicize_followers_label">Seguidores</string>
@@ -1492,7 +1492,7 @@ Language: es_MX
     <string name="plugin_external_link_icon_content_description">Enlace externo</string>
     <string name="plugin_icon_content_description">Icono del plugin</string>
     <string name="plugin_home_page">Web del plugin</string>
-    <string name="wordpress_dot_org_plugin_page">Página del plugin en WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">Página del plugin en WordPress.org</string>
     <string name="plugin_remove_dialog_message">¿Estás seguro de querer borrar %1$s de %2$s?\n\nEsto desactivará el plugin y todos los archivos y datos asociados.</string>
     <string name="plugin_remove_dialog_title">Borrar plugin</string>
     <string name="plugin_remove_progress_dialog_message">Borrando %s…</string>
@@ -1653,7 +1653,7 @@ Language: es_MX
     <string name="login_text_otp">Envíame un mensaje con un código en su lugar</string>
     <string name="enter_verification_code">¡Casi lo tenemos! Por favor, introduce un código de verificación desde tu aplicación Authenticator.</string>
     <string name="next">Siguiente</string>
-    <string name="enter_email_wordpress_com">Accede a WordPress.com usando una dirección de correo electrónico para gestionar todos tus sitios WordPress.</string>
+    <string name="enter_email_sitebay_com">Accede a WordPress.com usando una dirección de correo electrónico para gestionar todos tus sitios WordPress.</string>
     <string name="image_optimization_promo_desc">La optimización de imagen reduce las imágenes para que suban más rápido.\n\nPuedes cambiar esto en cualquier momento en los ajustes del sitio.</string>
     <string name="image_optimization_promo_title">¿Activar optimización de la imagen?</string>
     <string name="leave_off">Detener</string>
@@ -2208,9 +2208,9 @@ Language: es_MX
     <string name="stats_insights_today">Estadísticas de hoy</string>
     <string name="stats_insights_all_time">Entradas, vistas y visitantes de todos los tiempos</string>
     <string name="stats_insights">Detalles</string>
-    <string name="me_disconnect_from_wordpress_com">Salir de WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Salir de WordPress.com</string>
     <string name="me_btn_login_logout">Iniciar/Cerrar sesión</string>
-    <string name="me_connect_to_wordpress_com">Acceder a WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Acceder a WordPress.com</string>
     <string name="account_settings">Configuración de la cuenta</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" no se ocultó porque es el sitio actual</string>
     <string name="me_btn_support">Ayuda y soporte</string>
@@ -2364,7 +2364,7 @@ Language: es_MX
     <string name="trash">Papelera</string>
     <string name="mnu_comment_unapprove">Rechazar</string>
     <string name="dlg_unapproving_comments">Rechazando</string>
-    <string name="wordpress_blog">Blog de WordPress</string>
+    <string name="sitebay_blog">Blog de WordPress</string>
     <string name="reader_title_applog">Registro de la aplicación</string>
     <string name="fatal_db_error">Hubo un error al crear la base de datos de la app. Por favor, intenta reinstalar la app. </string>
     <string name="error_blog_hidden">Este blog está oculto y no se puede cargar. Actívalo de nuevo en ajustes y prueba de nuevo.</string>

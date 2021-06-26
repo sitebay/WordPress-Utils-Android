@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login
+package org.sitebay.android.ui.accounts.login
 
 import android.content.Context
 import android.os.Build.VERSION
@@ -9,16 +9,16 @@ import androidx.annotation.FloatRange
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.LOGIN_PROLOGUE_VIEWED
-import org.wordpress.android.databinding.LoginSignupScreenBinding
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Click
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Flow
-import org.wordpress.android.ui.accounts.UnifiedLoginTracker.Step.PROLOGUE
-import org.wordpress.android.util.analytics.AnalyticsUtils
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.LOGIN_PROLOGUE_VIEWED
+import org.sitebay.android.databinding.LoginSignupScreenBinding
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Click
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Flow
+import org.sitebay.android.ui.accounts.UnifiedLoginTracker.Step.PROLOGUE
+import org.sitebay.android.util.analytics.AnalyticsUtils
 import javax.inject.Inject
 
 class LoginPrologueFragment : Fragment(R.layout.login_signup_screen) {

@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.jetpack.scan.usecases
+package org.sitebay.android.ui.jetpack.scan.usecases
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.fluxc.store.ScanStore.FetchScanHistoryPayload
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.analytics.ScanTracker
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.fluxc.store.ScanStore.FetchScanHistoryPayload
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.analytics.ScanTracker
 import javax.inject.Inject
 import javax.inject.Named
 

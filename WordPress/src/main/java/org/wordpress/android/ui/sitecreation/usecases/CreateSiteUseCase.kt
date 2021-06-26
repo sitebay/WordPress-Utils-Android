@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.sitecreation.usecases
+package org.sitebay.android.ui.sitecreation.usecases
 
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.SiteActionBuilder
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.NewSitePayload
-import org.wordpress.android.fluxc.store.SiteStore.OnNewSiteCreated
-import org.wordpress.android.fluxc.store.SiteStore.SiteVisibility
-import org.wordpress.android.fluxc.store.SiteStore.SiteVisibility.PUBLIC
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceData
-import org.wordpress.android.util.UrlUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.SiteActionBuilder
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.NewSitePayload
+import org.sitebay.android.fluxc.store.SiteStore.OnNewSiteCreated
+import org.sitebay.android.fluxc.store.SiteStore.SiteVisibility
+import org.sitebay.android.fluxc.store.SiteStore.SiteVisibility.PUBLIC
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceData
+import org.sitebay.android.util.UrlUtilsWrapper
 import javax.inject.Inject
 import kotlin.coroutines.Continuation
 import kotlin.coroutines.resume
@@ -36,7 +36,7 @@ class CreateSiteUseCase @Inject constructor(
             throw IllegalStateException("Create site request has already been sent.")
         }
         /*
-         * To create a site with WordPress.com sub-domain, we need to pass the domain name without the "wordpress.com"
+         * To create a site with WordPress.com sub-domain, we need to pass the domain name without the "sitebay.com"
          * whereas to create a site with other domains, we need to pass the full url. This issue is addressed
          * in this use case since it's closest to the network layer.
          *

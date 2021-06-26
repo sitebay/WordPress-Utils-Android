@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.usecases
+package org.sitebay.android.ui.reader.usecases
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
@@ -18,20 +18,20 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.action.AccountAction
-import org.wordpress.android.fluxc.annotations.action.Action
-import org.wordpress.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload
-import org.wordpress.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload.SubscriptionAction
-import org.wordpress.android.fluxc.store.AccountStore.OnSubscriptionUpdated
-import org.wordpress.android.fluxc.store.AccountStore.SubscriptionError
-import org.wordpress.android.test
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.usecases.ReaderSiteNotificationsUseCase.SiteNotificationState.Failed.NoNetwork
-import org.wordpress.android.ui.reader.usecases.ReaderSiteNotificationsUseCase.SiteNotificationState.Failed.RequestFailed
-import org.wordpress.android.ui.reader.usecases.ReaderSiteNotificationsUseCase.SiteNotificationState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.action.AccountAction
+import org.sitebay.android.fluxc.annotations.action.Action
+import org.sitebay.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload
+import org.sitebay.android.fluxc.store.AccountStore.AddOrDeleteSubscriptionPayload.SubscriptionAction
+import org.sitebay.android.fluxc.store.AccountStore.OnSubscriptionUpdated
+import org.sitebay.android.fluxc.store.AccountStore.SubscriptionError
+import org.sitebay.android.test
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.usecases.ReaderSiteNotificationsUseCase.SiteNotificationState.Failed.NoNetwork
+import org.sitebay.android.ui.reader.usecases.ReaderSiteNotificationsUseCase.SiteNotificationState.Failed.RequestFailed
+import org.sitebay.android.ui.reader.usecases.ReaderSiteNotificationsUseCase.SiteNotificationState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 private const val ERROR = "Error"
 @InternalCoroutinesApi

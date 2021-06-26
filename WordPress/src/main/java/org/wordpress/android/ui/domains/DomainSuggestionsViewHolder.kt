@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.domains
+package org.sitebay.android.ui.domains
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
 
 class DomainSuggestionsViewHolder(
     parent: ViewGroup,

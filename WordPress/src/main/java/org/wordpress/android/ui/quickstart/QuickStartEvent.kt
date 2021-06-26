@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.quickstart
+package org.sitebay.android.ui.quickstart
 
 import android.annotation.SuppressLint
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
 
 /**
  * Container for passing around QuickStartTask to destinations and retaining it there

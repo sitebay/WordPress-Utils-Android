@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.previews
+package org.sitebay.android.ui.sitecreation.previews
 
 import android.os.Bundle
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
@@ -18,38 +18,38 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.QuickStartStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged
-import org.wordpress.android.fluxc.store.SiteStore.SiteError
-import org.wordpress.android.fluxc.store.SiteStore.SiteErrorType.GENERIC_ERROR
-import org.wordpress.android.test
-import org.wordpress.android.ui.sitecreation.SiteCreationState
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteCreationCompleted
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotCreated
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotInLocalDb
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewStartServiceData
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewContentUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewConnectionErrorUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewGenericErrorUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenProgressUiState
-import org.wordpress.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewWebErrorUiState
-import org.wordpress.android.ui.sitecreation.services.FetchWpComSiteUseCase
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
-import org.wordpress.android.ui.sitecreation.theme.defaultTemplateSlug
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.UrlUtilsWrapper
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.QuickStartStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged
+import org.sitebay.android.fluxc.store.SiteStore.SiteError
+import org.sitebay.android.fluxc.store.SiteStore.SiteErrorType.GENERIC_ERROR
+import org.sitebay.android.test
+import org.sitebay.android.ui.sitecreation.SiteCreationState
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteCreationCompleted
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotCreated
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.CreateSiteState.SiteNotInLocalDb
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewStartServiceData
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewContentUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewConnectionErrorUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenErrorUiState.SitePreviewGenericErrorUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewFullscreenProgressUiState
+import org.sitebay.android.ui.sitecreation.previews.SitePreviewViewModel.SitePreviewUiState.SitePreviewWebErrorUiState
+import org.sitebay.android.ui.sitecreation.services.FetchWpComSiteUseCase
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
+import org.sitebay.android.ui.sitecreation.theme.defaultTemplateSlug
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.UrlUtilsWrapper
 
 private const val SUB_DOMAIN = "test"
-private const val DOMAIN = ".wordpress.com"
+private const val DOMAIN = ".sitebay.com"
 private const val URL = "$SUB_DOMAIN$DOMAIN"
 private const val REMOTE_SITE_ID = 1L
 private const val LOCAL_SITE_ID = 2

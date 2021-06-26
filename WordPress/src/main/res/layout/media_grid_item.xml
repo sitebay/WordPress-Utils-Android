@@ -47,7 +47,7 @@
                 android:contentDescription="@null"
                 />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/media_grid_item_filetype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:textStyle="bold"
                 tools:text="PDF" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/media_grid_item_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
                 android:visibility="gone"
                 tools:visibility="visible" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/media_grid_item_upload_state"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

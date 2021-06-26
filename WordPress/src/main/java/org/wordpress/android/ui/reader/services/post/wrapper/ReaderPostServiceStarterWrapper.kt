@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.reader.services.post.wrapper
+package org.sitebay.android.ui.reader.services.post.wrapper
 
 import android.content.Context
 import dagger.Reusable
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction
 import javax.inject.Inject
 
 @Reusable

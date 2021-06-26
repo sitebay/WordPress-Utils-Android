@@ -2,7 +2,7 @@
 
 ## Branch Naming
 
-Please read [Feature Branches](https://make.wordpress.org/mobile/handbook/general-guides/git-branching/#feature-branches) in the Handbook to learn how to name your Git branches.
+Please read [Feature Branches](https://make.sitebay.org/mobile/handbook/general-guides/git-branching/#feature-branches) in the Handbook to learn how to name your Git branches.
 
 ## Commits
 
@@ -10,7 +10,7 @@ As you commit code to these branches, don’t tag the issue number in the indivi
 
 ## Anatomy of a Good Pull Request
 
-When you are ready, please, spend time crafting a good Pull Request, since it will have a huge impact on the work of reviewers, release managers and testers. 
+When you are ready, please, spend time crafting a good Pull Request, since it will have a huge impact on the work of reviewers, release managers and testers.
 
 **Title**: A good descriptive title.
 

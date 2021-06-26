@@ -1,18 +1,18 @@
-package org.wordpress.android.viewmodel.main
+package org.sitebay.android.viewmodel.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.ui.main.SitePickerAdapter.SiteRecord
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.Action.AskForSiteSelection
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.Action.ContinueReblogTo
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.Action.NavigateToState
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.ActionType.ASK_FOR_SITE_SELECTION
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.ActionType.CONTINUE_REBLOG_TO
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.ActionType.NAVIGATE_TO_STATE
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_NO_SITE_SELECTED
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_SITE_SELECTED
+import org.sitebay.android.ui.main.SitePickerAdapter.SiteRecord
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.Action.AskForSiteSelection
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.Action.ContinueReblogTo
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.Action.NavigateToState
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.ActionType.ASK_FOR_SITE_SELECTION
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.ActionType.CONTINUE_REBLOG_TO
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.ActionType.NAVIGATE_TO_STATE
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_NO_SITE_SELECTED
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_SITE_SELECTED
 import javax.inject.Inject
 
 class SitePickerViewModel @Inject constructor() : ViewModel() {

@@ -193,8 +193,8 @@ Language: ja_JP
     <string name="backup_item_roots">WordPress ルート</string>
     <string name="backup_download_details_choose_items_header">このダウンロードに含まれるアイテム</string>
     <string name="gutenberg_native_uploading">アップロード中…</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">WordPress for iOS では再利用可能ブロックを編集できません</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">WordPress for Android では再利用可能ブロックを編集できません</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">WordPress for iOS では再利用可能ブロックを編集できません</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">WordPress for Android では再利用可能ブロックを編集できません</string>
     <string name="gutenberg_native_replace_file">ファイルを置換</string>
     <string name="gutenberg_native_replace_audio">音声ファイルを置換</string>
     <string name="gutenberg_native_problem_opening_the_audio">音声を開く際にエラーが発生しました</string>
@@ -518,7 +518,7 @@ Language: ja_JP
     <string name="media_picker_soft_ask_permissions_denied">%1$s は写真へのアクセスを拒否されました。 これを解決するには、権限を編集して%2$sと%3$sをオンにしてください。</string>
     <string name="media_insert_failed">メディアの挿入に失敗しました。</string>
     <string name="media_insert_failed_with_reason">メディアの挿入に失敗しました : %s</string>
-    <string name="photo_picker_wordpress_media_library">WordPress メディアライブラリから選択</string>
+    <string name="photo_picker_sitebay_media_library">WordPress メディアライブラリから選択</string>
     <string name="reader_label_toolbar_back">戻る</string>
     <string name="reader_discover_empty_button_text">今すぐ始める</string>
     <string name="reader_discover_empty_subtitle">トピックをフォローして新しいブログを見つける</string>
@@ -658,7 +658,7 @@ Language: ja_JP
     <string name="login_magic_links_sent_label">この端末でメールをチェックして、WordPress.com から届いたメールにあるリンクをタップしてください。</string>
     <string name="check_email">メールを確認</string>
     <string name="get_started">今すぐ始める</string>
-    <string name="enter_email_to_continue_wordpress_com">メールアドレスを入力してログインするか、WordPress.com アカウントを作成します。</string>
+    <string name="enter_email_to_continue_sitebay_com">メールアドレスを入力してログインするか、WordPress.com アカウントを作成します。</string>
     <string name="create_account">アカウントを作成</string>
     <string name="send_link_by_email">リンクをメールで送信</string>
     <string name="reset_your_password">パスワードをリセット</string>
@@ -940,7 +940,7 @@ Language: ja_JP
     <string name="reader_discover_display_name">ディスカバー</string>
     <string name="reader_filter_tags_title">トピック</string>
     <string name="suffix_1_000">%sK</string>
-    <string name="gutenberg_native_wordpress_media_library">WordPress メディアライブラリ</string>
+    <string name="gutenberg_native_sitebay_media_library">WordPress メディアライブラリ</string>
     <string name="gutenberg_native_ungroup">グループ解除</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard">タップしてキーボードを非表示</string>
     <string name="gutenberg_native_tap_here_to_show_help">タップしてヘルプを表示</string>
@@ -1392,7 +1392,7 @@ Language: ja_JP
     <string name="stats_follower_label">フォロワー</string>
     <string name="stats_followers_count_message">Total %1$s Followers:%2$s</string>
     <string name="stats_followers_email">メール</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_manage_insights">インサイトを管理</string>
     <string name="stats_posts_and_pages_views_label">表示数</string>
     <string name="stats_tags_and_categories_views_label">表示数</string>
@@ -1846,7 +1846,7 @@ Language: ja_JP
     <string name="plugin_external_link_icon_content_description">外部リンク</string>
     <string name="plugin_icon_content_description">プラグインアイコン</string>
     <string name="plugin_home_page">プラグインホームページ</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org プラグインページ</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org プラグインページ</string>
     <string name="plugin_remove_dialog_message">%2$s から %1$s を削除してもよいですか ?\n\nこれにより、プラグインは無効になり、関連するすべてのファイルおよびデータは削除されます。</string>
     <string name="plugin_remove_dialog_title">プラグインの削除</string>
     <string name="plugin_remove_progress_dialog_message">%s の削除中…</string>
@@ -2007,7 +2007,7 @@ Language: ja_JP
     <string name="login_text_otp">代わりに SMS でコードを送信する</string>
     <string name="enter_verification_code">もう少しで完了です。認証アプリから認証コードを入力してください。</string>
     <string name="next">次へ</string>
-    <string name="enter_email_wordpress_com">メールアドレスを使用して WordPress.com にログインすると、自分のすべての WordPress サイトを管理できます。</string>
+    <string name="enter_email_sitebay_com">メールアドレスを使用して WordPress.com にログインすると、自分のすべての WordPress サイトを管理できます。</string>
     <string name="image_optimization_promo_desc">画像の最適化により、画像サイズを縮小して迅速に読み込めます。\n\nこれはサイト設定でいつでも変更できます。</string>
     <string name="image_optimization_promo_title">画像の最適化を有効にしますか ?</string>
     <string name="leave_off">無効のままにする</string>
@@ -2565,9 +2565,9 @@ Language: ja_JP
     <string name="stats_insights_today">今日の統計情報</string>
     <string name="stats_insights_all_time">全期間の投稿、表示数、訪問者</string>
     <string name="stats_insights">まとめ</string>
-    <string name="me_disconnect_from_wordpress_com">WordPress.com からログアウト</string>
+    <string name="me_disconnect_from_sitebay_com">WordPress.com からログアウト</string>
     <string name="me_btn_login_logout">ログイン/ログアウト</string>
-    <string name="me_connect_to_wordpress_com">WordPress.com にログイン</string>
+    <string name="me_connect_to_sitebay_com">WordPress.com にログイン</string>
     <string name="account_settings">アカウント設定</string>
     <string name="me_btn_support">ヘルプ &amp; サポート</string>
     <string name="site_picker_cant_hide_current_site">現在のサイトのため “%s” は非表示になりませんでした</string>
@@ -2731,7 +2731,7 @@ Language: ja_JP
     <string name="toast_comment_unedited">コメントが変更されていません</string>
     <string name="trash">ゴミ箱</string>
     <string name="view_in_browser">ブラウザで表示</string>
-    <string name="wordpress_blog">WordPress ブログ</string>
+    <string name="sitebay_blog">WordPress ブログ</string>
     <string name="fatal_db_error">アプリのデータベースを作成する際にエラーが発生しました。アプリをもう一度インストールしてみてください。</string>
     <string name="post_not_found">投稿を読み込む際にエラーが発生しました。再読み込みしてもう一度お試しください。</string>
     <string name="media_error_no_permission">メディアライブラリを表示する権限がありません</string>

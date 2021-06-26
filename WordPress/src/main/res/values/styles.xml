@@ -289,11 +289,11 @@
 
     <style name="TabBarStyle.WordPress" parent="@android:style/Widget.Material.ActionBar.TabBar">
         <item name="android:showDividers">middle</item>
-        <item name="android:divider">@drawable/tab_divider_wordpress</item>
+        <item name="android:divider">@drawable/tab_divider_sitebay</item>
     </style>
 
     <style name="PopupMenu.WordPress" parent="android:Widget.Material.ListPopupWindow">
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_wordpress</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_sitebay</item>
     </style>
 
     <style name="DropDownListView.Light.WordPress" parent="Widget.AppCompat.ListView.DropDown">
@@ -307,7 +307,7 @@
     <style name="TabTextStyle.WordPress" parent="android:Widget.Material.ActionBar.TabText" />
 
     <style name="DropDownNav.WordPress" parent="android:Widget.Material.Light.Spinner">
-        <item name="android:background">@drawable/spinner_background_ab_wordpress</item>
+        <item name="android:background">@drawable/spinner_background_ab_sitebay</item>
         <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
     </style>
 
@@ -375,7 +375,7 @@
     </style>
 
     <style name="ActionButton.CloseMode.WordPress" parent="android:Widget.Material.ActionButton.CloseMode">
-        <item name="android:background">@drawable/btn_cab_done_wordpress</item>
+        <item name="android:background">@drawable/btn_cab_done_sitebay</item>
     </style>
 
     <style name="MediaSettings" />

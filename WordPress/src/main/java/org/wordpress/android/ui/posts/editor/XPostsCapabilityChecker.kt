@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import androidx.core.util.Consumer
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.XPostsResult
-import org.wordpress.android.fluxc.store.XPostsStore
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.XPostsResult
+import org.sitebay.android.fluxc.store.XPostsStore
 import javax.inject.Inject
 
 class XPostsCapabilityChecker @Inject constructor(

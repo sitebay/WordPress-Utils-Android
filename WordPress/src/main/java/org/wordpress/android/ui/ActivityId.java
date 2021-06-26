@@ -1,8 +1,8 @@
-package org.wordpress.android.ui;
+package org.sitebay.android.ui;
 
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 public enum ActivityId {
     UNKNOWN("Unknown"),

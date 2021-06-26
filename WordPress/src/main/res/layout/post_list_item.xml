@@ -31,7 +31,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:visibility="visible" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                 app:layout_goneMarginTop="@dimen/margin_extra_large"
                 tools:text="Testing title Testing title Testing title Testing title Testing title Testing title Testing title Testing title" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/excerpt"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/title"
                 tools:text="text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt text_excerpt " />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/post_info"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -94,21 +94,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/statuses_label">
 
-                <org.wordpress.android.widgets.PostListButton
+                <org.sitebay.android.widgets.PostListButton
                     android:id="@+id/btn_primary"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center" />
 
-                <org.wordpress.android.widgets.PostListButton
+                <org.sitebay.android.widgets.PostListButton
                     android:id="@+id/btn_secondary"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center" />
 
-                <org.wordpress.android.widgets.PostListButton
+                <org.sitebay.android.widgets.PostListButton
                     android:id="@+id/btn_ternary"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/statuses_label"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

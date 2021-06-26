@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,15 +13,15 @@ import android.webkit.WebViewClient;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.support.ZendeskHelper;
-import org.wordpress.android.ui.WebViewActivity;
-import org.wordpress.android.ui.accounts.HelpActivity;
-import org.wordpress.android.ui.accounts.HelpActivity.Origin;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.support.ZendeskHelper;
+import org.sitebay.android.ui.WebViewActivity;
+import org.sitebay.android.ui.accounts.HelpActivity;
+import org.sitebay.android.ui.accounts.HelpActivity.Origin;
 
 import javax.inject.Inject;
 

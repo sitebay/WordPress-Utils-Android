@@ -1,4 +1,4 @@
-package org.wordpress.android.util.config
+package org.sitebay.android.util.config
 
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
@@ -9,10 +9,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.config.ExperimentConfig.Variant
-import org.wordpress.android.util.config.manual.ManualFeatureConfig
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.config.ExperimentConfig.Variant
+import org.sitebay.android.util.config.manual.ManualFeatureConfig
 
 @RunWith(MockitoJUnitRunner::class)
 class AppConfigTest {

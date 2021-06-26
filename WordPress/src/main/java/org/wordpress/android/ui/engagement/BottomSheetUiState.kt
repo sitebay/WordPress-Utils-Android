@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 sealed class BottomSheetUiState {
     data class UserProfileUiState(

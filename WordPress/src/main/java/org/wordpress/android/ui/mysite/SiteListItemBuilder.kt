@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import android.text.TextUtils
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.main.MySiteFragment
-import org.wordpress.android.ui.mysite.MySiteItem.ListItem
-import org.wordpress.android.ui.plugins.PluginUtilsWrapper
-import org.wordpress.android.ui.themes.ThemeBrowserUtils
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.util.SiteUtilsWrapper
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.main.MySiteFragment
+import org.sitebay.android.ui.mysite.MySiteItem.ListItem
+import org.sitebay.android.ui.plugins.PluginUtilsWrapper
+import org.sitebay.android.ui.themes.ThemeBrowserUtils
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.util.SiteUtilsWrapper
 import java.util.GregorianCalendar
 import java.util.TimeZone
 import javax.inject.Inject
@@ -117,7 +117,7 @@ class SiteListItemBuilder
     fun buildAdminItemIfAvailable(site: SiteModel, onClick: (ListItemAction) -> Unit): ListItem? {
         return if (shouldShowWPAdmin(site)) {
             ListItem(
-                    R.drawable.ic_wordpress_white_24dp,
+                    R.drawable.ic_sitebay_white_24dp,
                     UiStringRes(R.string.my_site_btn_view_admin),
                     secondaryIcon = R.drawable.ic_external_white_24dp,
                     onClick = ListItemInteraction.create(ListItemAction.ADMIN, onClick)

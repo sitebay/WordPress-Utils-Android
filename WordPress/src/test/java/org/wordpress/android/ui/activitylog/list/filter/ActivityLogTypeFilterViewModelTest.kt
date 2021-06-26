@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.activitylog.list.filter
+package org.sitebay.android.ui.activitylog.list.filter
 
 import androidx.core.util.Pair
 import com.nhaarman.mockitokotlin2.KArgumentCaptor
@@ -12,23 +12,23 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.action.ActivityLogAction.FETCH_ACTIVITY_TYPES
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.fluxc.model.activity.ActivityTypeModel
-import org.wordpress.android.fluxc.store.ActivityLogStore
-import org.wordpress.android.fluxc.store.ActivityLogStore.ActivityTypesError
-import org.wordpress.android.fluxc.store.ActivityLogStore.ActivityTypesErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.ActivityLogStore.FetchActivityTypesPayload
-import org.wordpress.android.fluxc.store.ActivityLogStore.OnActivityTypesFetched
-import org.wordpress.android.test
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.ActivityType
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState
-import org.wordpress.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.Content
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel
-import org.wordpress.android.viewmodel.activitylog.DateRange
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.action.ActivityLogAction.FETCH_ACTIVITY_TYPES
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.fluxc.model.activity.ActivityTypeModel
+import org.sitebay.android.fluxc.store.ActivityLogStore
+import org.sitebay.android.fluxc.store.ActivityLogStore.ActivityTypesError
+import org.sitebay.android.fluxc.store.ActivityLogStore.ActivityTypesErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.ActivityLogStore.FetchActivityTypesPayload
+import org.sitebay.android.fluxc.store.ActivityLogStore.OnActivityTypesFetched
+import org.sitebay.android.test
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.ListItemUiState.ActivityType
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState
+import org.sitebay.android.ui.activitylog.list.filter.ActivityLogTypeFilterViewModel.UiState.Content
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel
+import org.sitebay.android.viewmodel.activitylog.DateRange
 
 private const val REMOTE_SITE_ID = 0L
 

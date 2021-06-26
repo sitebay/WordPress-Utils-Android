@@ -1,4 +1,4 @@
-package org.wordpress.android.push
+package org.sitebay.android.push
 
 object NotificationPushIds {
     const val PUSH_NOTIFICATION_ID = 10000

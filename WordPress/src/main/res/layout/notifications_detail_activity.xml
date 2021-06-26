@@ -18,7 +18,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <org.wordpress.android.widgets.WPViewPager
+    <org.sitebay.android.widgets.WPViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

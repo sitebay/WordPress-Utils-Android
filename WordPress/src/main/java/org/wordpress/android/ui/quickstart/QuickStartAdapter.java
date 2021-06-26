@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.quickstart;
+package org.sitebay.android.ui.quickstart;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -19,10 +19,10 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask;
-import org.wordpress.android.util.AniUtils.Duration;
-import org.wordpress.android.util.ViewUtilsKt;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask;
+import org.sitebay.android.util.AniUtils.Duration;
+import org.sitebay.android.util.ViewUtilsKt;
 
 import java.util.ArrayList;
 import java.util.List;

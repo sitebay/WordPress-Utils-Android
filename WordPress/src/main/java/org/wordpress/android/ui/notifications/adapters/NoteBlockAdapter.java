@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.adapters;
+package org.sitebay.android.ui.notifications.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.notifications.blocks.NoteBlock;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.notifications.blocks.NoteBlock;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters;
+package org.sitebay.android.ui.reader.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,16 +10,16 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.ReaderUser;
-import org.wordpress.android.models.ReaderUserList;
-import org.wordpress.android.ui.reader.ReaderActivityLauncher;
-import org.wordpress.android.ui.reader.ReaderInterfaces.DataLoadedListener;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.ReaderUser;
+import org.sitebay.android.models.ReaderUserList;
+import org.sitebay.android.ui.reader.ReaderActivityLauncher;
+import org.sitebay.android.ui.reader.ReaderInterfaces.DataLoadedListener;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import javax.inject.Inject;
 

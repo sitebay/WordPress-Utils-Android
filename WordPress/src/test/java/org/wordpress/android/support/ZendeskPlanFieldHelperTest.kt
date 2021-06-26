@@ -1,4 +1,4 @@
-package org.wordpress.android.support
+package org.sitebay.android.support
 
 import com.automattic.android.tracks.crashlogging.CrashLogging
 import com.nhaarman.mockitokotlin2.any

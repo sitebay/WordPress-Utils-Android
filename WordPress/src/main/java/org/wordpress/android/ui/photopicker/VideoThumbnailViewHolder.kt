@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.photopicker
+package org.sitebay.android.ui.photopicker
 
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ImageView.ScaleType.FIT_CENTER
 import android.widget.TextView
 import kotlinx.coroutines.CoroutineScope
-import org.wordpress.android.R
-import org.wordpress.android.R.id
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.R
+import org.sitebay.android.R.id
+import org.sitebay.android.util.image.ImageManager
 
 /*
  * ViewHolder containing a device thumbnail
@@ -15,7 +15,7 @@ import org.wordpress.android.util.image.ImageManager
 
 @Deprecated(
         "This class is being refactored, if you implement any change, please also update " +
-                "{@link org.wordpress.android.ui.mediapicker.VideoThumbnailViewHolder}"
+                "{@link org.sitebay.android.ui.mediapicker.VideoThumbnailViewHolder}"
 )
 class VideoThumbnailViewHolder(
     parent: ViewGroup,

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.eq
@@ -9,41 +9,41 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.stats.FollowersModel
-import org.wordpress.android.fluxc.model.stats.FollowersModel.FollowerModel
-import org.wordpress.android.fluxc.model.stats.LimitMode
-import org.wordpress.android.fluxc.model.stats.PagedMode
-import org.wordpress.android.fluxc.store.StatsStore.OnStatsFetched
-import org.wordpress.android.fluxc.store.StatsStore.StatsError
-import org.wordpress.android.fluxc.store.StatsStore.StatsErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.stats.insights.FollowersStore
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.StatsUtilsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.BLOCK
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.VIEW_ALL
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Header
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Information
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.AVATAR
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.LoadingItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.TabsItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Title
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.Type.TITLE
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.usecases.FollowersUseCase.FollowersUseCaseFactory
-import org.wordpress.android.ui.stats.refresh.utils.ContentDescriptionHelper
-import org.wordpress.android.ui.stats.refresh.utils.ItemPopupMenuHandler
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.stats.FollowersModel
+import org.sitebay.android.fluxc.model.stats.FollowersModel.FollowerModel
+import org.sitebay.android.fluxc.model.stats.LimitMode
+import org.sitebay.android.fluxc.model.stats.PagedMode
+import org.sitebay.android.fluxc.store.StatsStore.OnStatsFetched
+import org.sitebay.android.fluxc.store.StatsStore.StatsError
+import org.sitebay.android.fluxc.store.StatsStore.StatsErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.stats.insights.FollowersStore
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.StatsUtilsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.BLOCK
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseMode.VIEW_ALL
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase.UseCaseModel.UseCaseState.SUCCESS
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Empty
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Header
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Information
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ListItemWithIcon.IconStyle.AVATAR
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.LoadingItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.TabsItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Title
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.Type.TITLE
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.usecases.FollowersUseCase.FollowersUseCaseFactory
+import org.sitebay.android.ui.stats.refresh.utils.ContentDescriptionHelper
+import org.sitebay.android.ui.stats.refresh.utils.ItemPopupMenuHandler
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Date
 
 class FollowersUseCaseTest : BaseUnitTest() {
@@ -63,7 +63,7 @@ class FollowersUseCaseTest : BaseUnitTest() {
     private val dateSubscribed = Date(10)
     private val sinceLabel = "4 days"
     private val totalCount = 50
-    private val wordPressLabel = "wordpress"
+    private val wordPressLabel = "sitebay"
     private val blockPageSize = 6
     private val viewAllPageSize = 10
     private val blockInitialMode = PagedMode(blockPageSize, false)
@@ -324,7 +324,7 @@ class FollowersUseCaseTest : BaseUnitTest() {
     private fun List<BlockListItem>.assertViewAllFollowersFirstLoad(position: Int): LoadingItem {
         assertThat(this).hasSize(14)
         val tabsItem = this[0] as TabsItem
-        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_wordpress_com)
+        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_sitebay_com)
         assertThat(tabsItem.tabs[1]).isEqualTo(R.string.stats_followers_email)
         assertThat(tabsItem.selectedTabPosition).isEqualTo(position)
         assertThat(this[1]).isEqualTo(Information("Total followers count is 50"))
@@ -359,7 +359,7 @@ class FollowersUseCaseTest : BaseUnitTest() {
         assertThat(this).hasSize(5)
         assertTitle(this[0])
         val tabsItem = this[1] as TabsItem
-        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_wordpress_com)
+        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_sitebay_com)
         assertThat(tabsItem.tabs[1]).isEqualTo(R.string.stats_followers_email)
         assertThat(tabsItem.selectedTabPosition).isEqualTo(position)
         assertThat(this[2]).isEqualTo(Information("Total followers count is 50"))
@@ -383,7 +383,7 @@ class FollowersUseCaseTest : BaseUnitTest() {
         assertThat(this).hasSize(2)
         val tabsItem = this[0] as TabsItem
         assertThat(tabsItem.selectedTabPosition).isEqualTo(position)
-        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_wordpress_com)
+        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_sitebay_com)
         assertThat(tabsItem.tabs[1]).isEqualTo(R.string.stats_followers_email)
         assertThat(this[1]).isEqualTo(Empty())
         return tabsItem
@@ -394,7 +394,7 @@ class FollowersUseCaseTest : BaseUnitTest() {
         assertTitle(this[0])
         val tabsItem = this[1] as TabsItem
         assertThat(tabsItem.selectedTabPosition).isEqualTo(position)
-        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_wordpress_com)
+        assertThat(tabsItem.tabs[0]).isEqualTo(R.string.stats_followers_sitebay_com)
         assertThat(tabsItem.tabs[1]).isEqualTo(R.string.stats_followers_email)
         assertThat(this[2]).isEqualTo(Empty())
         return tabsItem

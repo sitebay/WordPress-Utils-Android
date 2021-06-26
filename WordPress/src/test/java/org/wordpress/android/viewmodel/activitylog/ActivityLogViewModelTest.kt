@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.activitylog
+package org.sitebay.android.viewmodel.activitylog
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.core.util.Pair
@@ -25,43 +25,43 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.action.ActivityLogAction
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.RemoteId
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.fluxc.model.activity.ActivityTypeModel
-import org.wordpress.android.fluxc.store.ActivityLogStore
-import org.wordpress.android.fluxc.store.ActivityLogStore.FetchActivityLogPayload
-import org.wordpress.android.fluxc.store.ActivityLogStore.OnActivityLogFetched
-import org.wordpress.android.test
-import org.wordpress.android.ui.activitylog.ActivityLogNavigationEvents
-import org.wordpress.android.ui.activitylog.ActivityLogNavigationEvents.DownloadBackupFile
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Notice
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Progress.Type.BACKUP_DOWNLOAD
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Progress.Type.RESTORE
-import org.wordpress.android.ui.jetpack.JetpackCapabilitiesUseCase
-import org.wordpress.android.ui.jetpack.JetpackCapabilitiesUseCase.JetpackPurchasedProducts
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState
-import org.wordpress.android.ui.jetpack.backup.download.usecases.GetBackupDownloadStatusUseCase
-import org.wordpress.android.ui.jetpack.backup.download.usecases.PostDismissBackupDownloadUseCase
-import org.wordpress.android.ui.jetpack.common.JetpackBackupDownloadActionState
-import org.wordpress.android.ui.jetpack.restore.RestoreRequestState
-import org.wordpress.android.ui.jetpack.restore.usecases.GetRestoreStatusUseCase
-import org.wordpress.android.ui.stats.refresh.utils.DateUtils
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.analytics.ActivityLogTracker
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ResourceProvider
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel.ActivityLogListStatus
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel.BackupDownloadEvent
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel.EmptyUiState
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel.FiltersUiState.FiltersShown
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel.RestoreEvent
-import org.wordpress.android.viewmodel.activitylog.ActivityLogViewModel.ShowDateRangePicker
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.action.ActivityLogAction
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.RemoteId
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.fluxc.model.activity.ActivityTypeModel
+import org.sitebay.android.fluxc.store.ActivityLogStore
+import org.sitebay.android.fluxc.store.ActivityLogStore.FetchActivityLogPayload
+import org.sitebay.android.fluxc.store.ActivityLogStore.OnActivityLogFetched
+import org.sitebay.android.test
+import org.sitebay.android.ui.activitylog.ActivityLogNavigationEvents
+import org.sitebay.android.ui.activitylog.ActivityLogNavigationEvents.DownloadBackupFile
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Notice
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Progress.Type.BACKUP_DOWNLOAD
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Progress.Type.RESTORE
+import org.sitebay.android.ui.jetpack.JetpackCapabilitiesUseCase
+import org.sitebay.android.ui.jetpack.JetpackCapabilitiesUseCase.JetpackPurchasedProducts
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState
+import org.sitebay.android.ui.jetpack.backup.download.usecases.GetBackupDownloadStatusUseCase
+import org.sitebay.android.ui.jetpack.backup.download.usecases.PostDismissBackupDownloadUseCase
+import org.sitebay.android.ui.jetpack.common.JetpackBackupDownloadActionState
+import org.sitebay.android.ui.jetpack.restore.RestoreRequestState
+import org.sitebay.android.ui.jetpack.restore.usecases.GetRestoreStatusUseCase
+import org.sitebay.android.ui.stats.refresh.utils.DateUtils
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.analytics.ActivityLogTracker
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ResourceProvider
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel.ActivityLogListStatus
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel.BackupDownloadEvent
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel.EmptyUiState
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel.FiltersUiState.FiltersShown
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel.RestoreEvent
+import org.sitebay.android.viewmodel.activitylog.ActivityLogViewModel.ShowDateRangePicker
 import java.util.Calendar
 import java.util.Date
 
@@ -1535,7 +1535,7 @@ class ActivityLogViewModelTest {
             isCompleted = true,
             rewindId = REWIND_ID,
             published = activity().published,
-            url = "www.wordpress.com",
+            url = "www.sitebay.com",
             validUntil = activity().published,
             downloadId = 10L
     )

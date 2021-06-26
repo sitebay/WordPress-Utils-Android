@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.mediapicker
+package org.sitebay.android.ui.mediapicker
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.ClickAction
-import org.wordpress.android.ui.mediapicker.MediaPickerUiItem.ToggleAction
-import org.wordpress.android.util.AccessibilityUtils
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.AniUtils.Duration.SHORT
-import org.wordpress.android.util.ColorUtils.setImageResourceWithTint
-import org.wordpress.android.util.PhotoPickerUtils
-import org.wordpress.android.util.ViewUtils
-import org.wordpress.android.util.WPMediaUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.redirectContextClickToLongPressListener
+import org.sitebay.android.R
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.ClickAction
+import org.sitebay.android.ui.mediapicker.MediaPickerUiItem.ToggleAction
+import org.sitebay.android.util.AccessibilityUtils
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.AniUtils.Duration.SHORT
+import org.sitebay.android.util.ColorUtils.setImageResourceWithTint
+import org.sitebay.android.util.PhotoPickerUtils
+import org.sitebay.android.util.ViewUtils
+import org.sitebay.android.util.WPMediaUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.redirectContextClickToLongPressListener
 import java.util.Locale
 
 class MediaThumbnailViewUtils(val imageManager: ImageManager) {

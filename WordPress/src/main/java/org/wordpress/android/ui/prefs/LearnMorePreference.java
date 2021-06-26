@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -28,10 +28,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.R;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.util.ToastUtils;
 
 public class LearnMorePreference extends Preference implements View.OnClickListener {
     private static final String SUPPORT_CONTENT_JS =

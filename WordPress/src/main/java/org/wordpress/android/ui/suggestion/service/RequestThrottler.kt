@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion.service
+package org.sitebay.android.ui.suggestion.service
 
 class RequestThrottler<K>(
     private val msBeforeRefresh: Long = 60 * 1000L,

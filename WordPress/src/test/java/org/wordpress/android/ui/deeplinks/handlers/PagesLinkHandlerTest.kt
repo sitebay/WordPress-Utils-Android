@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,10 +7,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
-import org.wordpress.android.ui.deeplinks.DeepLinkUriUtils
-import org.wordpress.android.ui.deeplinks.buildUri
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction
+import org.sitebay.android.ui.deeplinks.DeepLinkUriUtils
+import org.sitebay.android.ui.deeplinks.buildUri
 
 @RunWith(MockitoJUnitRunner::class)
 class PagesLinkHandlerTest {
@@ -25,7 +25,7 @@ class PagesLinkHandlerTest {
 
     @Test
     fun `handles pages URI`() {
-        val pagesUri = buildUri(host = "wordpress.com", "pages")
+        val pagesUri = buildUri(host = "sitebay.com", "pages")
 
         val isPagesUri = pagesLinkHandler.shouldHandleUrl(pagesUri)
 
@@ -34,7 +34,7 @@ class PagesLinkHandlerTest {
 
     @Test
     fun `does not handle pages URI with different host`() {
-        val pagesUri = buildUri(host = "wordpress.org", "pages")
+        val pagesUri = buildUri(host = "sitebay.org", "pages")
 
         val isPagesUri = pagesLinkHandler.shouldHandleUrl(pagesUri)
 
@@ -43,7 +43,7 @@ class PagesLinkHandlerTest {
 
     @Test
     fun `does not handle URI with different path`() {
-        val pagesUri = buildUri(host = "wordpress.com", "post")
+        val pagesUri = buildUri(host = "sitebay.com", "post")
 
         val isPagesUri = pagesLinkHandler.shouldHandleUrl(pagesUri)
 

@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors;
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors;
 
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaFile;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_HEADER;
-import static org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_TEMPLATE_BLOCK_BOUNDARY;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_BLOCK_HEADER;
+import static org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessorPatterns.PATTERN_TEMPLATE_BLOCK_BOUNDARY;
 
 public class MediaUploadCompletionProcessor {
     private final BlockProcessorFactory mBlockProcessorFactory;

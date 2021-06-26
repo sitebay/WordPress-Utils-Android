@@ -1,7 +1,7 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import dagger.Reusable
-import org.wordpress.android.WordPress
+import org.sitebay.android.WordPress
 import javax.inject.Inject
 
 @Reusable

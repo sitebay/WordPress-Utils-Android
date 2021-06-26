@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.main
+package org.sitebay.android.viewmodel.main
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import org.assertj.core.api.Assertions.assertThat
@@ -8,14 +8,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.main.SitePickerAdapter.SiteRecord
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.Action
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.Action.AskForSiteSelection
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.Action.ContinueReblogTo
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.Action.NavigateToState
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_NO_SITE_SELECTED
-import org.wordpress.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_SITE_SELECTED
+import org.sitebay.android.ui.main.SitePickerAdapter.SiteRecord
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.Action
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.Action.AskForSiteSelection
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.Action.ContinueReblogTo
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.Action.NavigateToState
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_NO_SITE_SELECTED
+import org.sitebay.android.viewmodel.main.SitePickerViewModel.NavigateState.TO_SITE_SELECTED
 
 @RunWith(MockitoJUnitRunner::class)
 class SitePickerViewModelTest {

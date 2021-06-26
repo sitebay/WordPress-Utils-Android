@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import android.content.Context
 import android.content.DialogInterface
@@ -15,18 +15,18 @@ import androidx.lifecycle.ViewModelStoreOwner
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.engagement.BottomSheetUiState.UserProfileUiState
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.GravatarUtils
-import org.wordpress.android.util.PhotonUtils
-import org.wordpress.android.util.PhotonUtils.Quality.HIGH
-import org.wordpress.android.util.UrlUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
-import org.wordpress.android.util.image.ImageType.BLAVATAR
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.engagement.BottomSheetUiState.UserProfileUiState
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.GravatarUtils
+import org.sitebay.android.util.PhotonUtils
+import org.sitebay.android.util.PhotonUtils.Quality.HIGH
+import org.sitebay.android.util.UrlUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType.AVATAR_WITH_BACKGROUND
+import org.sitebay.android.util.image.ImageType.BLAVATAR
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class UserProfileBottomSheetFragment : BottomSheetDialogFragment() {

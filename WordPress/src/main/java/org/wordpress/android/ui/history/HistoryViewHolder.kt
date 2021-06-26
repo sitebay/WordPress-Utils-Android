@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.history
+package org.sitebay.android.ui.history
 
 import android.os.Bundle
 import android.view.LayoutInflater

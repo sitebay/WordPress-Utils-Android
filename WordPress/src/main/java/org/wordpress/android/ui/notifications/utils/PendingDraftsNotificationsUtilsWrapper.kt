@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.utils
+package org.sitebay.android.ui.notifications.utils
 
 import android.content.Context
 import javax.inject.Inject

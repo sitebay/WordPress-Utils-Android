@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs.categories
+package org.sitebay.android.ui.prefs.categories
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import org.junit.Before

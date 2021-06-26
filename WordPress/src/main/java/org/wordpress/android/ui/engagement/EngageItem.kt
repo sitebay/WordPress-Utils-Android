@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
-import org.wordpress.android.ui.engagement.EngageItem.EngageItemType.LIKED_ITEM
-import org.wordpress.android.ui.engagement.EngageItem.EngageItemType.LIKER
-import org.wordpress.android.ui.engagement.EngageItem.EngageItemType.NEXT_LIKES_PAGE_LOADER
-import org.wordpress.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
+import org.sitebay.android.ui.engagement.EngageItem.EngageItemType.LIKED_ITEM
+import org.sitebay.android.ui.engagement.EngageItem.EngageItemType.LIKER
+import org.sitebay.android.ui.engagement.EngageItem.EngageItemType.NEXT_LIKES_PAGE_LOADER
+import org.sitebay.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
 
 sealed class EngageItem(val type: EngageItemType) {
     data class LikedItem(

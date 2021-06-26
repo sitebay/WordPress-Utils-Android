@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.history
+package org.sitebay.android.ui.jetpack.scan.history
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
@@ -17,25 +17,25 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyBoolean
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.GenericThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.scan.ScanListItemState.ThreatDateItemState
-import org.wordpress.android.ui.jetpack.scan.ScanListItemState.ThreatItemLoadingSkeletonState
-import org.wordpress.android.ui.jetpack.scan.ScanListItemState.ThreatItemState
-import org.wordpress.android.ui.jetpack.scan.ScanNavigationEvents.ShowThreatDetails
-import org.wordpress.android.ui.jetpack.scan.ThreatTestData.genericThreatModel
-import org.wordpress.android.ui.jetpack.scan.builders.ThreatItemBuilder
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.ContentUiState
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.EmptyUiState.EmptyHistory
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType
-import org.wordpress.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.ALL
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.analytics.ScanTracker
-import org.wordpress.android.util.toFormattedDateString
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.GenericThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.scan.ScanListItemState.ThreatDateItemState
+import org.sitebay.android.ui.jetpack.scan.ScanListItemState.ThreatItemLoadingSkeletonState
+import org.sitebay.android.ui.jetpack.scan.ScanListItemState.ThreatItemState
+import org.sitebay.android.ui.jetpack.scan.ScanNavigationEvents.ShowThreatDetails
+import org.sitebay.android.ui.jetpack.scan.ThreatTestData.genericThreatModel
+import org.sitebay.android.ui.jetpack.scan.builders.ThreatItemBuilder
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.ContentUiState
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryListViewModel.ScanHistoryUiState.EmptyUiState.EmptyHistory
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType
+import org.sitebay.android.ui.jetpack.scan.history.ScanHistoryViewModel.ScanHistoryTabType.ALL
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.analytics.ScanTracker
+import org.sitebay.android.util.toFormattedDateString
 import java.util.Calendar
 
 private const val ON_ITEM_CLICKED_PARAM_POSITION = 1

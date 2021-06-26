@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -9,32 +9,32 @@ import androidx.annotation.Nullable;
 
 import org.apache.commons.lang3.StringUtils;
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.editor.Utils;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.post.PostLocation;
-import org.wordpress.android.fluxc.model.post.PostStatus;
-import org.wordpress.android.fluxc.store.PostStore;
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType;
-import org.wordpress.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessor;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.uploads.PostEvents;
-import org.wordpress.android.ui.uploads.UploadUtils;
-import org.wordpress.android.ui.utils.UiString.UiStringText;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.HtmlUtils;
-import org.wordpress.android.util.LocaleManager;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.editor.Utils;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.post.PostLocation;
+import org.sitebay.android.fluxc.model.post.PostStatus;
+import org.sitebay.android.fluxc.store.PostStore;
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType;
+import org.sitebay.android.ui.posts.mediauploadcompletionprocessors.MediaUploadCompletionProcessor;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.uploads.PostEvents;
+import org.sitebay.android.ui.uploads.UploadUtils;
+import org.sitebay.android.ui.utils.UiString.UiStringText;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.HtmlUtils;
+import org.sitebay.android.util.LocaleManager;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.helpers.MediaFile;
 
 import java.text.BreakIterator;
 import java.text.DateFormat;
@@ -297,7 +297,7 @@ public class PostUtils {
     /**
      * Removes the wp-gallery tag and its internals from the given string.
      *
-     * See https://github.com/wordpress-mobile/WordPress-Android/issues/11063
+     * See https://github.com/sitebay-mobile/WordPress-Android/issues/11063
      */
     public static String removeWPGallery(String str) {
         return str.replaceAll("(?s)<!--\\swp:gallery?(.*?)wp:gallery\\s-->", "");
@@ -432,7 +432,7 @@ public class PostUtils {
     public static String replaceMediaFileWithUrlInGutenbergPost(@NonNull String postContent,
                                                  String localMediaId, MediaFile mediaFile, String siteUrl) {
         if (mediaFile != null && contentContainsGutenbergBlocks(postContent)) {
-            String remoteUrl = org.wordpress.android.util.StringUtils
+            String remoteUrl = org.sitebay.android.util.StringUtils
                     .notNullStr(Utils.escapeQuotes(mediaFile.getFileURL()));
             MediaUploadCompletionProcessor processor = new MediaUploadCompletionProcessor(localMediaId, mediaFile,
                     siteUrl);

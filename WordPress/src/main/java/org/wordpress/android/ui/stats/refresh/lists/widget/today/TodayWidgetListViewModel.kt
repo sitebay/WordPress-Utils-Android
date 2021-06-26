@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.today
+package org.sitebay.android.ui.stats.refresh.lists.widget.today
 
 import androidx.annotation.LayoutRes
 import kotlinx.coroutines.runBlocking
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.VisitsModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.stats.insights.TodayInsightsStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
-import org.wordpress.android.ui.stats.refresh.utils.ONE_THOUSAND
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.VisitsModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.stats.insights.TodayInsightsStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.utils.ONE_THOUSAND
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class TodayWidgetListViewModel

@@ -1,3 +1,3 @@
-package org.wordpress.android.ui.suggestion
+package org.sitebay.android.ui.suggestion
 
 enum class SuggestionType { XPosts, Users }

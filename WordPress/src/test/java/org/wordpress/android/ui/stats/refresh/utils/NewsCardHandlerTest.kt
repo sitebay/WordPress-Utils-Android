@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.utils
+package org.sitebay.android.ui.stats.refresh.utils
 
 import com.nhaarman.mockitokotlin2.never
 import com.nhaarman.mockitokotlin2.verify
@@ -8,10 +8,10 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.store.StatsStore
-import org.wordpress.android.fluxc.store.StatsStore.ManagementType
-import org.wordpress.android.fluxc.store.StatsStore.StatsType
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.store.StatsStore
+import org.sitebay.android.fluxc.store.StatsStore.ManagementType
+import org.sitebay.android.fluxc.store.StatsStore.StatsType
 
 class NewsCardHandlerTest : BaseUnitTest() {
     @Mock private lateinit var statsStore: StatsStore

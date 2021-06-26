@@ -1,4 +1,4 @@
-package org.wordpress.android.support;
+package org.sitebay.android.support;
 
 import android.app.Activity;
 import android.util.DisplayMetrics;
@@ -33,8 +33,8 @@ import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.hamcrest.TypeSafeMatcher;
-import org.wordpress.android.R;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.util.image.ImageType;
 
 import java.util.Collection;
 import java.util.function.Supplier;
@@ -64,7 +64,7 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.isA;
-import static org.wordpress.android.support.BetterScrollToAction.scrollTo;
+import static org.sitebay.android.support.BetterScrollToAction.scrollTo;
 
 
 public class WPSupportUtils {
@@ -191,7 +191,7 @@ public class WPSupportUtils {
         try {
             if (isResourceId(locator)) {
                 UiDevice.getInstance(getInstrumentation()).findObject(new UiSelector().resourceId(
-                        "org.wordpress.android:" + locator)).click();
+                        "org.sitebay.android:" + locator)).click();
             } else {
                 UiDevice.getInstance(getInstrumentation()).findObject(new UiSelector().text(locator)).click();
             }

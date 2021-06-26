@@ -1,4 +1,4 @@
-package org.wordpress.android
+package org.sitebay.android
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -9,9 +9,9 @@ import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 import com.yarolegovich.wellsql.WellTableManager
-import org.wordpress.android.fluxc.persistence.WellSqlConfig
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
+import org.sitebay.android.fluxc.persistence.WellSqlConfig
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
 
 class WPWellSqlConfig(context: Context) : WellSqlConfig(context) {
     /**

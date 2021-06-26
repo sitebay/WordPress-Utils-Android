@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
 import android.content.Intent
-import org.wordpress.android.util.UriWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.util.UriWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 class IntentUtils @Inject constructor(

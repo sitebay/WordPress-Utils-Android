@@ -1,4 +1,4 @@
-package org.wordpress.android;
+package org.sitebay.android;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -40,85 +40,85 @@ import com.automattic.android.tracks.crashlogging.CrashLogging;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.wordpress.rest.RestClient;
-import com.wordpress.stories.compose.NotificationTrackerProvider;
-import com.wordpress.stories.compose.frame.StoryNotificationType;
+import com.sitebay.rest.RestClient;
+import com.sitebay.stories.compose.NotificationTrackerProvider;
+import com.sitebay.stories.compose.frame.StoryNotificationType;
 import com.yarolegovich.wellsql.WellSql;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.analytics.Tracker;
-import org.wordpress.android.datasets.NotificationsTable;
-import org.wordpress.android.datasets.ReaderDatabase;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.action.AccountAction;
-import org.wordpress.android.fluxc.generated.AccountActionBuilder;
-import org.wordpress.android.fluxc.generated.ListActionBuilder;
-import org.wordpress.android.fluxc.generated.PostActionBuilder;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.generated.ThemeActionBuilder;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie;
-import org.wordpress.android.fluxc.persistence.WellSqlConfig;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.AccountStore.OnAccountChanged;
-import org.wordpress.android.fluxc.store.AccountStore.OnAuthenticationChanged;
-import org.wordpress.android.fluxc.store.ListStore.RemoveExpiredListsPayload;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.StatsStore;
-import org.wordpress.android.fluxc.tools.FluxCImageLoader;
-import org.wordpress.android.fluxc.utils.ErrorUtils.OnUnexpectedError;
-import org.wordpress.android.modules.AppComponent;
-import org.wordpress.android.modules.DaggerAppComponent;
-import org.wordpress.android.networking.ConnectionChangeReceiver;
-import org.wordpress.android.networking.OAuthAuthenticator;
-import org.wordpress.android.networking.RestClientUtils;
-import org.wordpress.android.push.GCMRegistrationIntentService;
-import org.wordpress.android.push.NotificationType;
-import org.wordpress.android.support.ZendeskHelper;
-import org.wordpress.android.ui.ActivityId;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.ui.notifications.services.NotificationsUpdateServiceStarter;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtils;
-import org.wordpress.android.ui.posts.editor.ImageEditorFileUtils;
-import org.wordpress.android.ui.posts.editor.ImageEditorInitializer;
-import org.wordpress.android.ui.posts.editor.ImageEditorTracker;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.reader.tracker.ReaderTracker;
-import org.wordpress.android.ui.stats.refresh.lists.widget.WidgetUpdater.StatsWidgetUpdaters;
-import org.wordpress.android.ui.stories.media.StoryMediaSaveUploadBridge;
-import org.wordpress.android.ui.uploads.UploadService;
-import org.wordpress.android.ui.uploads.UploadStarter;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.AppLogListener;
-import org.wordpress.android.util.AppLog.LogLevel;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.AppThemeUtils;
-import org.wordpress.android.util.BitmapLruCache;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.EncryptedLogging;
-import org.wordpress.android.util.FluxCUtils;
-import org.wordpress.android.util.LocaleManager;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.PackageUtils;
-import org.wordpress.android.util.ProfilingUtils;
-import org.wordpress.android.util.QuickStartUtils;
-import org.wordpress.android.util.RateLimitedTask;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.UploadWorkerKt;
-import org.wordpress.android.util.VolleyUtils;
-import org.wordpress.android.util.WPActivityUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.experiments.ExPlat;
-import org.wordpress.android.util.config.AppConfig;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.widgets.AppRatingDialog;
-import org.wordpress.android.workers.WordPressWorkersFactory;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.analytics.Tracker;
+import org.sitebay.android.datasets.NotificationsTable;
+import org.sitebay.android.datasets.ReaderDatabase;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.action.AccountAction;
+import org.sitebay.android.fluxc.generated.AccountActionBuilder;
+import org.sitebay.android.fluxc.generated.ListActionBuilder;
+import org.sitebay.android.fluxc.generated.PostActionBuilder;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.generated.ThemeActionBuilder;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie;
+import org.sitebay.android.fluxc.persistence.WellSqlConfig;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.AccountStore.OnAccountChanged;
+import org.sitebay.android.fluxc.store.AccountStore.OnAuthenticationChanged;
+import org.sitebay.android.fluxc.store.ListStore.RemoveExpiredListsPayload;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.StatsStore;
+import org.sitebay.android.fluxc.tools.FluxCImageLoader;
+import org.sitebay.android.fluxc.utils.ErrorUtils.OnUnexpectedError;
+import org.sitebay.android.modules.AppComponent;
+import org.sitebay.android.modules.DaggerAppComponent;
+import org.sitebay.android.networking.ConnectionChangeReceiver;
+import org.sitebay.android.networking.OAuthAuthenticator;
+import org.sitebay.android.networking.RestClientUtils;
+import org.sitebay.android.push.GCMRegistrationIntentService;
+import org.sitebay.android.push.NotificationType;
+import org.sitebay.android.support.ZendeskHelper;
+import org.sitebay.android.ui.ActivityId;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.ui.notifications.services.NotificationsUpdateServiceStarter;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtils;
+import org.sitebay.android.ui.posts.editor.ImageEditorFileUtils;
+import org.sitebay.android.ui.posts.editor.ImageEditorInitializer;
+import org.sitebay.android.ui.posts.editor.ImageEditorTracker;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.reader.tracker.ReaderTracker;
+import org.sitebay.android.ui.stats.refresh.lists.widget.WidgetUpdater.StatsWidgetUpdaters;
+import org.sitebay.android.ui.stories.media.StoryMediaSaveUploadBridge;
+import org.sitebay.android.ui.uploads.UploadService;
+import org.sitebay.android.ui.uploads.UploadStarter;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.AppLogListener;
+import org.sitebay.android.util.AppLog.LogLevel;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.AppThemeUtils;
+import org.sitebay.android.util.BitmapLruCache;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.EncryptedLogging;
+import org.sitebay.android.util.FluxCUtils;
+import org.sitebay.android.util.LocaleManager;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.PackageUtils;
+import org.sitebay.android.util.ProfilingUtils;
+import org.sitebay.android.util.QuickStartUtils;
+import org.sitebay.android.util.RateLimitedTask;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.UploadWorkerKt;
+import org.sitebay.android.util.VolleyUtils;
+import org.sitebay.android.util.WPActivityUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.experiments.ExPlat;
+import org.sitebay.android.util.config.AppConfig;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.widgets.AppRatingDialog;
+import org.sitebay.android.workers.WordPressWorkersFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -135,7 +135,7 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasAndroidInjector;
 import kotlinx.coroutines.CoroutineScope;
 
-import static org.wordpress.android.modules.ThreadModuleKt.APPLICATION_SCOPE;
+import static org.sitebay.android.modules.ThreadModuleKt.APPLICATION_SCOPE;
 
 public class WordPress extends MultiDexApplication implements HasAndroidInjector, LifecycleObserver {
     public static final String SITE = "SITE";
@@ -700,11 +700,11 @@ public class WordPress extends MultiDexApplication implements HasAndroidInjector
                 mDefaultUserAgent = WebSettings.getDefaultUserAgent(getContext());
             } catch (AndroidRuntimeException | NullPointerException | IllegalArgumentException e) {
                 // Catch AndroidRuntimeException that could be raised by the WebView() constructor.
-                // See https://github.com/wordpress-mobile/WordPress-Android/issues/3594
+                // See https://github.com/sitebay-mobile/WordPress-Android/issues/3594
                 // Catch NullPointerException that could be raised by WebSettings.getDefaultUserAgent()
-                // See https://github.com/wordpress-mobile/WordPress-Android/issues/3838
+                // See https://github.com/sitebay-mobile/WordPress-Android/issues/3838
                 // Catch IllegalArgumentException that could be raised by WebSettings.getDefaultUserAgent()
-                // See https://github.com/wordpress-mobile/WordPress-Android/issues/9015
+                // See https://github.com/sitebay-mobile/WordPress-Android/issues/9015
 
                 // initialize with the empty string, it's a rare issue
                 mDefaultUserAgent = "";

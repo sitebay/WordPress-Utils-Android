@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.reader.discover
+package org.sitebay.android.ui.reader.discover
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderRecommendedBlogsCardUiState.ReaderRecommendedBlogUiState
-import org.wordpress.android.ui.reader.discover.viewholders.ReaderRecommendedBlogViewHolder
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderRecommendedBlogsCardUiState.ReaderRecommendedBlogUiState
+import org.sitebay.android.ui.reader.discover.viewholders.ReaderRecommendedBlogViewHolder
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
 
 class ReaderRecommendedBlogsAdapter(
     private val imageManager: ImageManager,

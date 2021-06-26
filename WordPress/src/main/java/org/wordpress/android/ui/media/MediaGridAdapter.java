@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.media;
+package org.sitebay.android.ui.media;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -22,28 +22,28 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.ui.utils.AuthenticationUtils;
-import org.wordpress.android.util.AccessibilityUtils;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ColorUtils;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.PhotoPickerUtils;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.ViewUtils;
-import org.wordpress.android.util.ViewUtilsKt;
-import org.wordpress.android.util.WPMediaUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.ui.utils.AuthenticationUtils;
+import org.sitebay.android.util.AccessibilityUtils;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ColorUtils;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.PhotoPickerUtils;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.ViewUtils;
+import org.sitebay.android.util.ViewUtilsKt;
+import org.sitebay.android.util.WPMediaUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ import java.util.Locale;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import static org.wordpress.android.modules.ThreadModuleKt.APPLICATION_SCOPE;
+import static org.sitebay.android.modules.ThreadModuleKt.APPLICATION_SCOPE;
 
 import kotlinx.coroutines.CoroutineScope;
 

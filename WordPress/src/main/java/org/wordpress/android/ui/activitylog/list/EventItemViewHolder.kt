@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.activitylog.list
+package org.sitebay.android.ui.activitylog.list
 
 import android.os.Bundle
 import android.view.Gravity
@@ -8,11 +8,11 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.ListPopupWindow
 import android.widget.TextView
-import org.wordpress.android.R
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.Event
-import org.wordpress.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction
-import org.wordpress.android.util.ColorUtils
-import org.wordpress.android.util.getColorResIdFromAttribute
+import org.sitebay.android.R
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.Event
+import org.sitebay.android.ui.activitylog.list.ActivityLogListItem.SecondaryAction
+import org.sitebay.android.util.ColorUtils
+import org.sitebay.android.util.getColorResIdFromAttribute
 
 class EventItemViewHolder(
     parent: ViewGroup,

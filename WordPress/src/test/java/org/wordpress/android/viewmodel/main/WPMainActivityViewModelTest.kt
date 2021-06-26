@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.main
+package org.sitebay.android.viewmodel.main
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
@@ -16,32 +16,32 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.FEATURE_ANNOUNCEMENT_SHOWN_ON_APP_UPGRADE
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.FOLLOW_SITE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.PUBLISH_POST
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.UPDATE_SITE_TITLE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.VIEW_SITE
-import org.wordpress.android.test
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_PAGE
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_POST
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_STORY
-import org.wordpress.android.ui.main.MainActionListItem.ActionType.NO_ACTION
-import org.wordpress.android.ui.main.MainActionListItem.CreateAction
-import org.wordpress.android.ui.main.MainFabUiState
-import org.wordpress.android.ui.mysite.QuickStartRepository
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncement
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncementItem
-import org.wordpress.android.ui.whatsnew.FeatureAnnouncementProvider
-import org.wordpress.android.util.BuildConfigWrapper
-import org.wordpress.android.util.NoDelayCoroutineDispatcher
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.util.config.MySiteImprovementsFeatureConfig
-import org.wordpress.android.viewmodel.main.WPMainActivityViewModel.FocusPointInfo
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.FEATURE_ANNOUNCEMENT_SHOWN_ON_APP_UPGRADE
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.FOLLOW_SITE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.PUBLISH_POST
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.UPDATE_SITE_TITLE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.VIEW_SITE
+import org.sitebay.android.test
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_PAGE
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_POST
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.CREATE_NEW_STORY
+import org.sitebay.android.ui.main.MainActionListItem.ActionType.NO_ACTION
+import org.sitebay.android.ui.main.MainActionListItem.CreateAction
+import org.sitebay.android.ui.main.MainFabUiState
+import org.sitebay.android.ui.mysite.QuickStartRepository
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncement
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncementItem
+import org.sitebay.android.ui.whatsnew.FeatureAnnouncementProvider
+import org.sitebay.android.util.BuildConfigWrapper
+import org.sitebay.android.util.NoDelayCoroutineDispatcher
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.util.config.MySiteImprovementsFeatureConfig
+import org.sitebay.android.viewmodel.main.WPMainActivityViewModel.FocusPointInfo
 
 @RunWith(MockitoJUnitRunner::class)
 class WPMainActivityViewModelTest : BaseUnitTest() {
@@ -65,14 +65,14 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
             "14.5",
             "14.7",
             emptyList(),
-            "https://wordpress.org/",
+            "https://sitebay.org/",
             true,
             listOf(
                     FeatureAnnouncementItem(
                             "Test Feature 1",
                             "Test Description 1",
                             "",
-                            "https://wordpress.org/icon1.png"
+                            "https://sitebay.org/icon1.png"
                     )
             )
     )
@@ -120,7 +120,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     /* FAB VISIBILITY */
 
     @Test
-    fun `given wordpress app, when page changed to my site, then fab is visible`() {
+    fun `given sitebay app, when page changed to my site, then fab is visible`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onPageChanged(isOnMySitePageWithValidSite = true, site = initSite(hasFullAccessToContent = true))
@@ -129,7 +129,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when page changed away from my site, then fab is hidden`() {
+    fun `given sitebay app, when page changed away from my site, then fab is hidden`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onPageChanged(isOnMySitePageWithValidSite = false, site = initSite(hasFullAccessToContent = true))
@@ -138,7 +138,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when my site page is resumed, then fab is visible`() {
+    fun `given sitebay app, when my site page is resumed, then fab is visible`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onResume(isOnMySitePageWithValidSite = true, site = initSite(hasFullAccessToContent = true))
@@ -147,7 +147,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when non my site page is resumed, then fab is hidden`() {
+    fun `given sitebay app, when non my site page is resumed, then fab is hidden`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onResume(isOnMySitePageWithValidSite = false, site = initSite(hasFullAccessToContent = true))
@@ -194,7 +194,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     /* FAB TOOLTIP VISIBILITY */
 
     @Test
-    fun `given wordpress app, when page changed to my site, then fab tooltip is visible`() {
+    fun `given sitebay app, when page changed to my site, then fab tooltip is visible`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onPageChanged(isOnMySitePageWithValidSite = true, site = initSite(hasFullAccessToContent = true))
@@ -203,7 +203,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when page changed away from my site, then fab tooltip is hidden`() {
+    fun `given sitebay app, when page changed away from my site, then fab tooltip is hidden`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onPageChanged(isOnMySitePageWithValidSite = false, site = initSite(hasFullAccessToContent = true))
@@ -212,7 +212,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when my site page is resumed, then fab tooltip is visible`() {
+    fun `given sitebay app, when my site page is resumed, then fab tooltip is visible`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onResume(isOnMySitePageWithValidSite = true, site = initSite(hasFullAccessToContent = true))
@@ -221,7 +221,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when non my site page is resumed, then fab tooltip is hidden`() {
+    fun `given sitebay app, when non my site page is resumed, then fab tooltip is hidden`() {
         startViewModelWithDefaultParameters()
 
         viewModel.onResume(isOnMySitePageWithValidSite = false, site = initSite(hasFullAccessToContent = true))
@@ -594,7 +594,7 @@ class WPMainActivityViewModelTest : BaseUnitTest() {
     }
 
     @Test
-    fun `given wordpress app, when app is launched, then feature announcement is shown`() = test {
+    fun `given sitebay app, when app is launched, then feature announcement is shown`() = test {
         whenever(appPrefsWrapper.featureAnnouncementShownVersion).thenReturn(-1)
         whenever(appPrefsWrapper.lastFeatureAnnouncementAppVersionCode).thenReturn(840)
         whenever(featureAnnouncementProvider.getLatestFeatureAnnouncement(true)).thenReturn(

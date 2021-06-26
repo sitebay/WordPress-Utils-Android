@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.accounts.login
+package org.sitebay.android.ui.accounts.login
 
 import androidx.lifecycle.ViewModel
 import javax.inject.Inject

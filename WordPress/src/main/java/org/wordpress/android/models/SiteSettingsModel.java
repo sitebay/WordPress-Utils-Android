@@ -1,4 +1,4 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.content.ContentValues;
 import android.database.Cursor;

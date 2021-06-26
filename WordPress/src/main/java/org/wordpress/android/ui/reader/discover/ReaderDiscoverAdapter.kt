@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.reader.discover
+package org.sitebay.android.ui.reader.discover
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderPostUiState
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderRecommendedBlogsCardUiState
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderWelcomeBannerCardUiState
-import org.wordpress.android.ui.reader.discover.viewholders.ReaderInterestsCardViewHolder
-import org.wordpress.android.ui.reader.discover.viewholders.ReaderPostViewHolder
-import org.wordpress.android.ui.reader.discover.viewholders.ReaderRecommendedBlogsCardViewHolder
-import org.wordpress.android.ui.reader.discover.viewholders.ReaderViewHolder
-import org.wordpress.android.ui.reader.discover.viewholders.WelcomeBannerViewHolder
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderInterestsCardUiState
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderPostUiState
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderRecommendedBlogsCardUiState
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderWelcomeBannerCardUiState
+import org.sitebay.android.ui.reader.discover.viewholders.ReaderInterestsCardViewHolder
+import org.sitebay.android.ui.reader.discover.viewholders.ReaderPostViewHolder
+import org.sitebay.android.ui.reader.discover.viewholders.ReaderRecommendedBlogsCardViewHolder
+import org.sitebay.android.ui.reader.discover.viewholders.ReaderViewHolder
+import org.sitebay.android.ui.reader.discover.viewholders.WelcomeBannerViewHolder
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.image.ImageManager
 
 private const val welcomeBannerViewType: Int = 1
 private const val postViewType: Int = 2

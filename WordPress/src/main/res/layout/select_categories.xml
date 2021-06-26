@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+        <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
             android:id="@+id/ptr_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -25,9 +25,9 @@
                 android:divider="?android:attr/listDivider"
                 android:dividerHeight="@dimen/divider_size" />
 
-        </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+        </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/empty_view"
             style="@style/WordPress.EmptyList.Title"
             android:layout_width="wrap_content"

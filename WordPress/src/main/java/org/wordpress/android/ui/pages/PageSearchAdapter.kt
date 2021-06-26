@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.pages
+package org.sitebay.android.ui.pages
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.pages.PageItem.Page
-import org.wordpress.android.ui.pages.PageItemViewHolder.EmptyViewHolder
-import org.wordpress.android.ui.pages.PageItemViewHolder.PageDividerViewHolder
-import org.wordpress.android.ui.pages.PageItemViewHolder.PageViewHolder
-import org.wordpress.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.pages.PageItem.Page
+import org.sitebay.android.ui.pages.PageItemViewHolder.EmptyViewHolder
+import org.sitebay.android.ui.pages.PageItemViewHolder.PageDividerViewHolder
+import org.sitebay.android.ui.pages.PageItemViewHolder.PageViewHolder
+import org.sitebay.android.ui.utils.UiHelpers
 
 class PageSearchAdapter(
     private val onMenuAction: (PageItem.Action, Page) -> Boolean,

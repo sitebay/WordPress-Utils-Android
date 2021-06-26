@@ -193,8 +193,8 @@ Language: ar
     <string name="backup_item_roots">جذر ووردبريس</string>
     <string name="backup_item_contents">دليل WP-content</string>
     <string name="backup_download_details_choose_items_header">العناصر المضمنة في هذا التنزيل</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_ios">تُعد المكوِّنات القابلة لإعادة الاستخدام غير قابلة للتحرير على ووردبريس بالنسبة إلى نظام تشغيل iOS</string>
-    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_wordpress_for_android">تُعد المكوِّنات القابلة لإعادة الاستخدام غير قابلة للتحرير على ووردبريس بالنسبة إلى نظام تشغيل Android</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_ios">تُعد المكوِّنات القابلة لإعادة الاستخدام غير قابلة للتحرير على ووردبريس بالنسبة إلى نظام تشغيل iOS</string>
+    <string name="gutenberg_native_reusable_blocks_aren_t_editable_on_sitebay_for_android">تُعد المكوِّنات القابلة لإعادة الاستخدام غير قابلة للتحرير على ووردبريس بالنسبة إلى نظام تشغيل Android</string>
     <string name="gutenberg_native_failed_to_insert_audio_file_please_tap_for_options">فشل إدراج الملف الصوتي. يرجى النقر على الخيارات.</string>
     <string name="gutenberg_native_lock_icon">أيقونة القفل</string>
     <string name="gutenberg_native_open">فتح</string>
@@ -518,7 +518,7 @@ Language: ar
     <string name="media_picker_soft_ask_permissions_denied">⁦%1$s⁩ تم رفض الوصول إلى صورك. لإصلاح هذا، حرِّر صلاحياتك وشغِّل ⁦%2$s⁩ و⁦%3$s⁩.</string>
     <string name="media_insert_failed">فشل إدراج الوسائط.</string>
     <string name="media_insert_failed_with_reason">فشل إدراج الوسائط: %s</string>
-    <string name="photo_picker_wordpress_media_library">الاختيار من مكتبة وسائط ووردبريس </string>
+    <string name="photo_picker_sitebay_media_library">الاختيار من مكتبة وسائط ووردبريس </string>
     <string name="reader_label_toolbar_back">رجوع</string>
     <string name="reader_discover_empty_button_text">البدء</string>
     <string name="reader_post_details_header_by_author_name">بواسطة</string>
@@ -660,7 +660,7 @@ Language: ar
     <string name="send_link_by_email">إرسال الرابط عبر البريد الإلكتروني</string>
     <string name="create_account">إنشاء حساب</string>
     <string name="or_type_your_password">أو اكتب كلمة المرور الخاصة بك</string>
-    <string name="enter_email_to_continue_wordpress_com">أدخل عنوان بريدك الإلكتروني لتسجيل الدخول أو إنشاء حساب WordPress.com.</string>
+    <string name="enter_email_to_continue_sitebay_com">أدخل عنوان بريدك الإلكتروني لتسجيل الدخول أو إنشاء حساب WordPress.com.</string>
     <string name="get_started">البدء</string>
     <string name="check_email">التحقق من البريد الإلكتروني</string>
     <string name="reader_error_request_failed_title">حدثت مشكلة أثناء معالجة الطلب. يرجى المحاولة مرة أخرى لاحقاً.</string>
@@ -940,7 +940,7 @@ Language: ar
     <string name="site_cannot_be_loaded">يتعذر علينا تحميل بيانات موقعك الآن. يرجى المحاولة مجددًا في وقت لاحق</string>
     <string name="reader_filter_tags_title">المواضيع</string>
     <string name="suffix_1_000">%sK</string>
-    <string name="gutenberg_native_wordpress_media_library">مكتبة وسائط ووردبريس</string>
+    <string name="gutenberg_native_sitebay_media_library">مكتبة وسائط ووردبريس</string>
     <string name="gutenberg_native_start_writing">بدء الكتابة…</string>
     <string name="gutenberg_native_take_a_video">تسجيل مقطع فيديو</string>
     <string name="gutenberg_native_take_a_photo_or_video">التقاط صورة أو تسجيل فيديو</string>
@@ -1395,7 +1395,7 @@ Language: ar
     <string name="stats_followers_count_message">إجمالي %1$s من المتابعين: %2$s</string>
     <string name="stats_followers_email">البريد الإلكتروني</string>
     <string name="stats_manage_insights">إدارة الرؤى</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_no_data_yet">لا توجد بيانات حتى الآن</string>
     <string name="stats_empty_insights_title">لم تتم إضافة أي رؤى بعد</string>
     <string name="menu_debug">قائمة تصحيح الأخطاء</string>
@@ -1845,7 +1845,7 @@ Language: ar
     <string name="delete_yes">حذف</string>
     <string name="plugin_external_link_icon_content_description">رابط خارجي</string>
     <string name="plugin_icon_content_description">أيقونة الإضافة</string>
-    <string name="wordpress_dot_org_plugin_page">صفحة الإضافة على WordPress.org</string>
+    <string name="sitebay_dot_org_plugin_page">صفحة الإضافة على WordPress.org</string>
     <string name="plugin_home_page">الصفحة الرئيسية للإضافة</string>
     <string name="plugin_remove_dialog_message">هل تريد بالتأكيد إزالة %1$s من %2$s؟\n\nسيؤدي ذلك إلى إلغاء تنشيط المكون الإضافي وحذف جميع الملفات والبيانات المقترنة.</string>
     <string name="plugin_remove_progress_dialog_message">جاري إزالة %s…</string>
@@ -2007,7 +2007,7 @@ Language: ar
     <string name="login_text_otp">أرسل إليّ رمزًا بدلاً من ذلك.</string>
     <string name="enter_verification_code">تقريبًا هناك! يرجى إدخال رمز التحقق من تطبيق الموثق الخاص بك.</string>
     <string name="next">التالي</string>
-    <string name="enter_email_wordpress_com">سجِّل الدخول إلى WordPress.com باستخدام عنوان بريد إلكتروني لإدارة جميع مواقع ووردبريس الخاصة بك.</string>
+    <string name="enter_email_sitebay_com">سجِّل الدخول إلى WordPress.com باستخدام عنوان بريد إلكتروني لإدارة جميع مواقع ووردبريس الخاصة بك.</string>
     <string name="image_optimization_promo_desc">يقلل تحسين الصورة حجم الصور لتحميلها بسرعة.\n\nيمكنك تغيير هذا في أي وقت في إعدادات الموقع.</string>
     <string name="image_optimization_promo_title">هل تريد تشغيل تحسين الصورة؟</string>
     <string name="leave_off">التوقف عن الاستخدام</string>
@@ -2565,9 +2565,9 @@ Language: ar
     <string name="stats_insights_today">إحصاءات اليوم</string>
     <string name="stats_insights_all_time">مقالات ومشاهدات وزوار كل الأوقات</string>
     <string name="stats_insights">الرؤى</string>
-    <string name="me_disconnect_from_wordpress_com">تسجيل الخروج من WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">تسجيل الخروج من WordPress.com</string>
     <string name="me_btn_login_logout">تسجيل الدخول/تسجيل الخروج</string>
-    <string name="me_connect_to_wordpress_com">تسجيل الدخول إلى WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">تسجيل الدخول إلى WordPress.com</string>
     <string name="me_btn_support">المساعدة والدعم</string>
     <string name="site_picker_cant_hide_current_site">\"%s\" لم يكن مخفيًا لأنه الموقع الحالي</string>
     <string name="account_settings">إعدادات الحساب</string>
@@ -2696,7 +2696,7 @@ Language: ar
     <string name="connection_error">خطأ في الاتصال</string>
     <string name="local_draft">مسودة محلية</string>
     <string name="new_post">مقال جديد</string>
-    <string name="wordpress_blog">مدونة ووردبريس</string>
+    <string name="sitebay_blog">مدونة ووردبريس</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
     <string name="reader_title_applog">سجل التطبيق</string>
     <string name="dlg_spamming_comments">تحديد كمزعج</string>

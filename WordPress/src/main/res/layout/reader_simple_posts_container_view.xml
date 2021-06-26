@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/text_related_posts_label"
         style="@style/ReaderTextView.MetaHeader"
         android:layout_width="match_parent"

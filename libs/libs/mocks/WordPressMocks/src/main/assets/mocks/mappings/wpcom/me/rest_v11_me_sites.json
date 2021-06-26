@@ -16,7 +16,7 @@
                       "ID": 106707880,
                       "name": "Tri-County Real Estate",
                       "description": "",
-                      "URL": "https:\/\/tricountyrealestate.wordpress.com",
+                      "URL": "https:\/\/tricountyrealestate.sitebay.com",
                       "user_can_manage": true,
                       "capabilities": {
                         "edit_pages": true,
@@ -48,8 +48,8 @@
                       "subscribers_count": 0,
                       "lang": "en",
                       "icon": {
-                        "img": "https:\/\/tricountyrealestate.files.wordpress.com\/2020\/08\/image-1.jpg?w=96",
-                        "ico": "https:\/\/tricountyrealestate.files.wordpress.com\/2020\/08\/image-1.jpg?w=96",
+                        "img": "https:\/\/tricountyrealestate.files.sitebay.com\/2020\/08\/image-1.jpg?w=96",
+                        "ico": "https:\/\/tricountyrealestate.files.sitebay.com\/2020\/08\/image-1.jpg?w=96",
                         "media_id": 133
                       },
                       "logo": {
@@ -70,11 +70,11 @@
                         "blog_public": -1,
                         "videopress_enabled": false,
                         "upgraded_filetypes_enabled": false,
-                        "login_url": "https:\/\/tricountyrealestate.wordpress.com\/wp-login.php",
-                        "admin_url": "https:\/\/tricountyrealestate.wordpress.com\/wp-admin\/",
+                        "login_url": "https:\/\/tricountyrealestate.sitebay.com\/wp-login.php",
+                        "admin_url": "https:\/\/tricountyrealestate.sitebay.com\/wp-admin\/",
                         "is_mapped_domain": false,
                         "is_redirect": false,
-                        "unmapped_url": "https:\/\/tricountyrealestate.wordpress.com",
+                        "unmapped_url": "https:\/\/tricountyrealestate.sitebay.com",
                         "featured_images_enabled": false,
                         "theme_slug": "pub\/hever",
                         "header_image": false,
@@ -142,7 +142,7 @@
                           "help": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181851541\/help",
                           "posts": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181851541\/posts\/",
                           "comments": "{{request.requestLine.baseUrl}}\/rest\/v1.1\/sites\/181851541\/comments\/",
-                          "xmlrpc": "https:\/\/tricountyrealestate.wordpress.com\/xmlrpc.php",
+                          "xmlrpc": "https:\/\/tricountyrealestate.sitebay.com\/xmlrpc.php",
                           "site_icon": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181851541\/media\/133"
                         }
                       },
@@ -161,7 +161,7 @@
                       "ID": 181851495,
                       "name": "Four Paws Dog Grooming",
                       "description": "",
-                      "URL": "https:\/\/fourpawsdoggrooming.wordpress.com",
+                      "URL": "https:\/\/fourpawsdoggrooming.sitebay.com",
                       "user_can_manage": true,
                       "capabilities": {
                         "edit_pages": true,
@@ -193,8 +193,8 @@
                       "subscribers_count": 0,
                       "lang": "en",
                       "icon": {
-                        "img": "https:\/\/fourpawsdoggrooming.files.wordpress.com\/2020\/08\/cropped-fourpaws-logo-2-1.png?w=96",
-                        "ico": "https:\/\/fourpawsdoggrooming.files.wordpress.com\/2020\/08\/cropped-fourpaws-logo-2-1.png?w=96",
+                        "img": "https:\/\/fourpawsdoggrooming.files.sitebay.com\/2020\/08\/cropped-fourpaws-logo-2-1.png?w=96",
+                        "ico": "https:\/\/fourpawsdoggrooming.files.sitebay.com\/2020\/08\/cropped-fourpaws-logo-2-1.png?w=96",
                         "media_id": 39
                       },
                       "logo": {
@@ -214,11 +214,11 @@
                         "blog_public": -1,
                         "videopress_enabled": false,
                         "upgraded_filetypes_enabled": false,
-                        "login_url": "https:\/\/fourpawsdoggrooming.wordpress.com\/wp-login.php",
-                        "admin_url": "https:\/\/fourpawsdoggrooming.wordpress.com\/wp-admin\/",
+                        "login_url": "https:\/\/fourpawsdoggrooming.sitebay.com\/wp-login.php",
+                        "admin_url": "https:\/\/fourpawsdoggrooming.sitebay.com\/wp-admin\/",
                         "is_mapped_domain": false,
                         "is_redirect": false,
-                        "unmapped_url": "https:\/\/fourpawsdoggrooming.wordpress.com",
+                        "unmapped_url": "https:\/\/fourpawsdoggrooming.sitebay.com",
                         "featured_images_enabled": false,
                         "theme_slug": "pub\/hever",
                         "header_image": false,
@@ -286,7 +286,7 @@
                           "help": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181851495\/help",
                           "posts": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181851495\/posts\/",
                           "comments": "{{request.requestLine.baseUrl}}\/rest\/v1.1\/sites\/181851495\/comments\/",
-                          "xmlrpc": "https:\/\/fourpawsdoggrooming.wordpress.com\/xmlrpc.php",
+                          "xmlrpc": "https:\/\/fourpawsdoggrooming.sitebay.com\/xmlrpc.php",
                           "site_icon": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181851495\/media\/39"
                         }
                       },
@@ -305,7 +305,7 @@
                       "ID": 181977606,
                       "name": "Weekend Bakes",
                       "description": "",
-                      "URL": "https:\/\/weekendbakesblog.wordpress.com",
+                      "URL": "https:\/\/weekendbakesblog.sitebay.com",
                       "user_can_manage": false,
                       "capabilities": {
                         "edit_pages": true,
@@ -337,8 +337,8 @@
                       "subscribers_count": 1,
                       "lang": "en",
                       "icon": {
-                        "img": "https:\/\/weekendbakesblog.files.wordpress.com\/2020\/08\/image.jpg?w=96",
-                        "ico": "https:\/\/weekendbakesblog.files.wordpress.com\/2020\/08\/image.jpg?w=96",
+                        "img": "https:\/\/weekendbakesblog.files.sitebay.com\/2020\/08\/image.jpg?w=96",
+                        "ico": "https:\/\/weekendbakesblog.files.sitebay.com\/2020\/08\/image.jpg?w=96",
                         "media_id": 12
                       },
                       "logo": {
@@ -358,11 +358,11 @@
                         "blog_public": 1,
                         "videopress_enabled": false,
                         "upgraded_filetypes_enabled": false,
-                        "login_url": "https:\/\/weekendbakesblog.wordpress.com\/wp-login.php",
-                        "admin_url": "https:\/\/weekendbakesblog.wordpress.com\/wp-admin\/",
+                        "login_url": "https:\/\/weekendbakesblog.sitebay.com\/wp-login.php",
+                        "admin_url": "https:\/\/weekendbakesblog.sitebay.com\/wp-admin\/",
                         "is_mapped_domain": false,
                         "is_redirect": false,
-                        "unmapped_url": "https:\/\/weekendbakesblog.wordpress.com",
+                        "unmapped_url": "https:\/\/weekendbakesblog.sitebay.com",
                         "featured_images_enabled": false,
                         "theme_slug": "pub\/independent-publisher-2",
                         "header_image": false,
@@ -428,7 +428,7 @@
                           "help": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181977606\/help",
                           "posts": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181977606\/posts\/",
                           "comments": "{{request.requestLine.baseUrl}}\/rest\/v1.1\/sites\/181977606\/comments\/",
-                          "xmlrpc": "https:\/\/weekendbakesblog.wordpress.com\/xmlrpc.php",
+                          "xmlrpc": "https:\/\/weekendbakesblog.sitebay.com\/xmlrpc.php",
                           "site_icon": "{{request.requestLine.baseUrl}}\/rest\/v1.2\/sites\/181977606\/media\/12"
                         }
                       },

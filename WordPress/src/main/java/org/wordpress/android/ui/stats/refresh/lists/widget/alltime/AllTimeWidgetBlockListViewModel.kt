@@ -1,18 +1,18 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.alltime
+package org.sitebay.android.ui.stats.refresh.lists.widget.alltime
 
 import android.content.Context
 import kotlinx.coroutines.runBlocking
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.stats.InsightsAllTimeModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.store.stats.insights.AllTimeInsightsStore
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.WidgetBlockListProvider.BlockItemUiModel
-import org.wordpress.android.ui.stats.refresh.lists.widget.WidgetBlockListProvider.WidgetBlockListViewModel
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
-import org.wordpress.android.ui.stats.refresh.utils.MILLION
-import org.wordpress.android.ui.stats.refresh.utils.StatsUtils
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.stats.InsightsAllTimeModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.stats.insights.AllTimeInsightsStore
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.WidgetBlockListProvider.BlockItemUiModel
+import org.sitebay.android.ui.stats.refresh.lists.widget.WidgetBlockListProvider.WidgetBlockListViewModel
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.utils.MILLION
+import org.sitebay.android.ui.stats.refresh.utils.StatsUtils
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class AllTimeWidgetBlockListViewModel

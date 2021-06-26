@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.times
@@ -13,21 +13,21 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.LikeModel.LikeType.COMMENT_LIKE
-import org.wordpress.android.fluxc.model.LikeModel.LikeType.POST_LIKE
-import org.wordpress.android.test
-import org.wordpress.android.ui.engagement.GetLikesUseCase.CurrentUserInListRequirement.DONT_CARE
-import org.wordpress.android.ui.engagement.GetLikesUseCase.FailureType
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure.EmptyStateData
-import org.wordpress.android.ui.engagement.GetLikesUseCase.GetLikesState.LikesData
-import org.wordpress.android.ui.engagement.GetLikesUseCase.LikeGroupFingerPrint
-import org.wordpress.android.ui.engagement.GetLikesUseCase.PaginationParams
-import org.wordpress.android.ui.engagement.utils.getDefaultLikers
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.LikeModel.LikeType.COMMENT_LIKE
+import org.sitebay.android.fluxc.model.LikeModel.LikeType.POST_LIKE
+import org.sitebay.android.test
+import org.sitebay.android.ui.engagement.GetLikesUseCase.CurrentUserInListRequirement.DONT_CARE
+import org.sitebay.android.ui.engagement.GetLikesUseCase.FailureType
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState.Failure.EmptyStateData
+import org.sitebay.android.ui.engagement.GetLikesUseCase.GetLikesState.LikesData
+import org.sitebay.android.ui.engagement.GetLikesUseCase.LikeGroupFingerPrint
+import org.sitebay.android.ui.engagement.GetLikesUseCase.PaginationParams
+import org.sitebay.android.ui.engagement.utils.getDefaultLikers
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.utils.UiString.UiStringText
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

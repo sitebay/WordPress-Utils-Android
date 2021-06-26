@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget.configuration
+package org.sitebay.android.ui.stats.refresh.lists.widget.configuration
 
 import androidx.lifecycle.MutableLiveData
 import com.nhaarman.mockitokotlin2.verify
@@ -8,15 +8,15 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color.DARK
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureViewModel.WidgetAdded
-import org.wordpress.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureViewModel.WidgetSettingsModel
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsColorSelectionViewModel.Color.DARK
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsSiteSelectionViewModel.SiteUiModel
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureFragment.WidgetType
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureViewModel.WidgetAdded
+import org.sitebay.android.ui.stats.refresh.lists.widget.configuration.StatsWidgetConfigureViewModel.WidgetSettingsModel
+import org.sitebay.android.viewmodel.Event
 
 class StatsWidgetConfigureViewModelTest : BaseUnitTest() {
     @Mock private lateinit var appPrefsWrapper: AppPrefsWrapper
@@ -27,7 +27,7 @@ class StatsWidgetConfigureViewModelTest : BaseUnitTest() {
     private val viewMode = MutableLiveData<Color>()
     private val siteId = 15L
     private val siteName = "WordPress"
-    private val siteUrl = "wordpress.com"
+    private val siteUrl = "sitebay.com"
     private val iconUrl = "icon.jpg"
     private val viewType = WidgetType.WEEK_VIEWS
     @Before

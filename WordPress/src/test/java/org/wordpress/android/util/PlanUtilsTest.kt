@@ -1,12 +1,12 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Test
-import org.wordpress.android.fluxc.model.PlanModel
-import org.wordpress.android.ui.plans.getCurrentPlan
-import org.wordpress.android.ui.plans.isDomainCreditAvailable
+import org.sitebay.android.fluxc.model.PlanModel
+import org.sitebay.android.ui.plans.getCurrentPlan
+import org.sitebay.android.ui.plans.isDomainCreditAvailable
 
 class PlanUtilsTest {
     @Test

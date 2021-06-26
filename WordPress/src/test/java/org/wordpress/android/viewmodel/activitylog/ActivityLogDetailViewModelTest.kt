@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.activitylog
+package org.sitebay.android.viewmodel.activitylog
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockitokotlin2.mock
@@ -14,15 +14,15 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.fluxc.store.ActivityLogStore
-import org.wordpress.android.fluxc.tools.FormattableContent
-import org.wordpress.android.fluxc.tools.FormattableRange
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailModel
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.fluxc.store.ActivityLogStore
+import org.sitebay.android.fluxc.tools.FormattableContent
+import org.sitebay.android.fluxc.tools.FormattableRange
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailModel
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents
+import org.sitebay.android.viewmodel.Event
 import java.util.Date
 
 @RunWith(MockitoJUnitRunner::class)

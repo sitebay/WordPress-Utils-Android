@@ -1,9 +1,9 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import androidx.annotation.StringRes;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
 
 public enum PeopleListFilter implements FilterCriteria {
     TEAM(R.string.people_dropdown_item_team),

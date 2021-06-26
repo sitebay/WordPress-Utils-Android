@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +9,11 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.util.ToastUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.util.ToastUtils;
 
 public class PostSettingsTagsActivity extends LocaleAwareActivity implements TagsSelectedListener {
     public static final String KEY_TAGS = "KEY_TAGS";

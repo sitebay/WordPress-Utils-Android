@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.adapters;
+package org.sitebay.android.ui.notifications.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,22 +17,22 @@ import androidx.core.text.BidiFormatter;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.NotificationsTable;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.models.Note;
-import org.wordpress.android.models.NoticonUtils;
-import org.wordpress.android.ui.comments.CommentUtils;
-import org.wordpress.android.ui.notifications.NotificationsListFragmentPage.OnNoteClickListener;
-import org.wordpress.android.ui.notifications.blocks.NoteBlockClickableSpan;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.RtlUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
-import org.wordpress.android.widgets.BadgedImageView;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.NotificationsTable;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.models.Note;
+import org.sitebay.android.models.NoticonUtils;
+import org.sitebay.android.ui.comments.CommentUtils;
+import org.sitebay.android.ui.notifications.NotificationsListFragmentPage.OnNoteClickListener;
+import org.sitebay.android.ui.notifications.blocks.NoteBlockClickableSpan;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.RtlUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
+import org.sitebay.android.widgets.BadgedImageView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -100,7 +100,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
         // this is on purpose - we don't show more than a hundred or so notifications at a time so no need to set
         // stable IDs. This helps prevent crashes in case a note comes with no ID (we've code checking for that
         // elsewhere, but telling the RecyclerView.Adapter the notes have stable Ids and then failing to provide them
-        // will make things go south as in https://github.com/wordpress-mobile/WordPress-Android/issues/8741
+        // will make things go south as in https://github.com/sitebay-mobile/WordPress-Android/issues/8741
         setHasStableIds(false);
 
         mAvatarSz = (int) context.getResources().getDimension(R.dimen.notifications_avatar_sz);

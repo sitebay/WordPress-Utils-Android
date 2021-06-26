@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors;
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -7,7 +7,7 @@ import com.google.gson.JsonPrimitive;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaFile;
 
 public class GalleryBlockProcessor extends BlockProcessor {
     private String mAttachmentPageUrl;

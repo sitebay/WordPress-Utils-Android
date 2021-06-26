@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.services.update;
+package org.sitebay.android.ui.reader.services.update;
 
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -8,11 +8,11 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.PersistableBundle;
 
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.util.AppLog;
 
 import java.util.EnumSet;
 
-import static org.wordpress.android.JobServiceId.JOB_READER_UPDATE_SERVICE_ID;
+import static org.sitebay.android.JobServiceId.JOB_READER_UPDATE_SERVICE_ID;
 
 /*
  * this class provides a way to decide which kind of Service to start, depending on the platform we're running on

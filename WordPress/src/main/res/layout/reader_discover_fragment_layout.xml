@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/progress_bar"
         app:layout_constraintVertical_bias="0" />
 
-    <org.wordpress.android.ui.ActionableEmptyView
+    <org.sitebay.android.ui.ActionableEmptyView
         android:id="@+id/actionable_empty_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,7 +40,7 @@
         app:aevTitle="@string/reader_discover_no_posts_title"
         tools:visibility="visible" />
 
-    <org.wordpress.android.util.widgets.CustomSwipeRefreshLayout
+    <org.sitebay.android.util.widgets.CustomSwipeRefreshLayout
         android:id="@+id/ptr_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -55,7 +55,7 @@
             android:layout_height="match_parent"
             style="@style/ReaderRecyclerView" />
 
-    </org.wordpress.android.util.widgets.CustomSwipeRefreshLayout>
+    </org.sitebay.android.util.widgets.CustomSwipeRefreshLayout>
 
     <ProgressBar
         android:id="@+id/progress_loading_more"

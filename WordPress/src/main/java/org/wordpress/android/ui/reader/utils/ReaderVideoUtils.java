@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.utils;
+package org.sitebay.android.ui.reader.utils;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -9,12 +9,12 @@ import com.android.volley.toolbox.JsonArrayRequest;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderThumbnailTable;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.MediaUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderThumbnailTable;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.MediaUtils;
 
 public class ReaderVideoUtils {
     private ReaderVideoUtils() {

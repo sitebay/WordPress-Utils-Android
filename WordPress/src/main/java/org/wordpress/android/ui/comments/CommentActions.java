@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.models.Note;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.models.Note;
 
 /**
  * actions related to comments - replies, moderating, etc.

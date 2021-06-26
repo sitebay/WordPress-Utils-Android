@@ -12,8 +12,8 @@
         "status": 200,
         "jsonBody": {
             "ID": 308,
-            "URL": "https://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg",
-            "guid": "http://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg",
+            "URL": "https://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg",
+            "guid": "http://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg",
             "date": "2019-05-08T09:49:00+00:00",
             "post_ID": 295,
             "author_ID": 152748359,
@@ -26,12 +26,12 @@
             "alt": "",
             "icon": "https://s1.wp.com/wp-includes/images/media/default.png",
             "thumbnails": {
-                "thumbnail": "https://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg?w=150",
-                "medium": "https://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg?w=300",
-                "large": "https://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg?w=1024",
-                "post-thumbnail": "https://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg?w=740&h=430&crop=1",
-                "independent-publisher-2-banner": "https://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg?w=1440&h=600&crop=1",
-                "independent-publisher-2-full-width": "https://e2eflowtestingmobile.files.wordpress.com/2019/05/img_0111-14.jpg?w=1100"
+                "thumbnail": "https://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg?w=150",
+                "medium": "https://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg?w=300",
+                "large": "https://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg?w=1024",
+                "post-thumbnail": "https://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg?w=740&h=430&crop=1",
+                "independent-publisher-2-banner": "https://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg?w=1440&h=600&crop=1",
+                "independent-publisher-2-full-width": "https://e2eflowtestingmobile.files.sitebay.com/2019/05/img_0111-14.jpg?w=1100"
             },
             "height": 3024,
             "width": 4032,

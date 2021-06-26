@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.sitecreation.usecases
+package org.sitebay.android.ui.sitecreation.usecases
 
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.ThemeActionBuilder
-import org.wordpress.android.fluxc.store.ThemeStore
-import org.wordpress.android.fluxc.store.ThemeStore.FetchStarterDesignsPayload
-import org.wordpress.android.fluxc.store.ThemeStore.OnStarterDesignsFetched
-import org.wordpress.android.ui.layoutpicker.ThumbDimensionProvider
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.ThemeActionBuilder
+import org.sitebay.android.fluxc.store.ThemeStore
+import org.sitebay.android.fluxc.store.ThemeStore.FetchStarterDesignsPayload
+import org.sitebay.android.fluxc.store.ThemeStore.OnStarterDesignsFetched
+import org.sitebay.android.ui.layoutpicker.ThumbDimensionProvider
 import javax.inject.Inject
 import kotlin.coroutines.Continuation
 import kotlin.coroutines.resume

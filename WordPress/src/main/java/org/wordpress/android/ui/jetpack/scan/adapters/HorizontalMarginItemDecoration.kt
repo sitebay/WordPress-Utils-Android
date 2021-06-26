@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.jetpack.scan.adapters
+package org.sitebay.android.ui.jetpack.scan.adapters
 
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
-import org.wordpress.android.ui.jetpack.common.ViewType
+import org.sitebay.android.ui.jetpack.common.ViewType
 
 class HorizontalMarginItemDecoration(private val defaultMargin: Int) : ItemDecoration() {
     override fun getItemOffsets(

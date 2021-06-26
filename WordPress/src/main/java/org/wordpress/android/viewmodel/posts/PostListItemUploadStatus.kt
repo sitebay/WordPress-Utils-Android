@@ -1,6 +1,6 @@
-package org.wordpress.android.viewmodel.posts
+package org.sitebay.android.viewmodel.posts
 
-import org.wordpress.android.fluxc.store.UploadStore.UploadError
+import org.sitebay.android.fluxc.store.UploadStore.UploadError
 
 data class PostListItemUploadStatus(
     val uploadError: UploadError?,

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.blocks;
+package org.sitebay.android.ui.notifications.blocks;
 
 import android.text.TextUtils;
 

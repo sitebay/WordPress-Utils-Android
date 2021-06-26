@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.deeplinks.handlers
+package org.sitebay.android.ui.deeplinks.handlers
 
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
@@ -8,10 +8,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ShowSignInFlow
-import org.wordpress.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.StartCreateSiteFlow
-import org.wordpress.android.ui.deeplinks.buildUri
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.ShowSignInFlow
+import org.sitebay.android.ui.deeplinks.DeepLinkNavigator.NavigateAction.StartCreateSiteFlow
+import org.sitebay.android.ui.deeplinks.buildUri
 
 @RunWith(MockitoJUnitRunner::class)
 class StartLinkHandlerTest {
@@ -25,7 +25,7 @@ class StartLinkHandlerTest {
 
     @Test
     fun `handles start URI is true`() {
-        val startUri = buildUri("wordpress.com", "start")
+        val startUri = buildUri("sitebay.com", "start")
 
         val isStartUri = startLinkHandler.shouldHandleUrl(startUri)
 
@@ -34,7 +34,7 @@ class StartLinkHandlerTest {
 
     @Test
     fun `does not handle start URI with different host`() {
-        val startUri = buildUri("wordpress.org", "start")
+        val startUri = buildUri("sitebay.org", "start")
 
         val isStartUri = startLinkHandler.shouldHandleUrl(startUri)
 
@@ -43,7 +43,7 @@ class StartLinkHandlerTest {
 
     @Test
     fun `does not handle URI with different path`() {
-        val startUri = buildUri("wordpress.com", "stop")
+        val startUri = buildUri("sitebay.com", "stop")
 
         val isStartUri = startLinkHandler.shouldHandleUrl(startUri)
 
@@ -70,10 +70,10 @@ class StartLinkHandlerTest {
 
     @Test
     fun `builds URL for tracking`() {
-        val startUri = buildUri("wordpress.com", "start")
+        val startUri = buildUri("sitebay.com", "start")
 
         val strippedUrl = startLinkHandler.stripUrl(startUri)
 
-        assertThat(strippedUrl).isEqualTo("wordpress.com/start")
+        assertThat(strippedUrl).isEqualTo("sitebay.com/start")
     }
 }

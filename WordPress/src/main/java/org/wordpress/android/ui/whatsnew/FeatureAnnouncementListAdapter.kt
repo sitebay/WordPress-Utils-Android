@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.whatsnew
+package org.sitebay.android.ui.whatsnew
 
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.util.StringUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.image.ImageType
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.util.StringUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.image.ImageType
 import javax.inject.Inject
 
 class FeatureAnnouncementListAdapter(

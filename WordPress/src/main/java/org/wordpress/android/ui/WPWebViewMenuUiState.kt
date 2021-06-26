@@ -1,4 +1,4 @@
-package org.wordpress.android.ui
+package org.sitebay.android.ui
 
 /**
  * This class is used to model the UI State of the Menu in the WPWebViewActivity

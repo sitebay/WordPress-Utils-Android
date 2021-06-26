@@ -9,7 +9,7 @@
             "ID": 53424024,
             "name": "Discover",
             "description": "A daily selection of the best content published on WordPress, collected for you by humans who love to read.",
-            "URL": "https://discover.wordpress.com",
+            "URL": "https://discover.sitebay.com",
             "jetpack": false,
             "post_count": 3620,
             "subscribers_count": 35560543,
@@ -32,7 +32,7 @@
                     "help": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/help",
                     "posts": "{{request.requestLine.baseUrl}}/rest/v1.2/sites/53424024/posts/",
                     "comments": "{{request.requestLine.baseUrl}}/api/sites/53424024/comments/",
-                    "xmlrpc": "https://discover.wordpress.com/xmlrpc.php",
+                    "xmlrpc": "https://discover.sitebay.com/xmlrpc.php",
                     "featured": "{{request.requestLine.baseUrl}}/rest/v1.2/read/sites/53424024/featured"
                 }
             },
@@ -51,7 +51,7 @@
             },
             "is_multi_author": true,
             "feed_ID": 41325786,
-            "feed_URL": "http://discover.wordpress.com",
+            "feed_URL": "http://discover.sitebay.com",
             "header_image": false,
             "owner": {
                 "ID": 26957695,

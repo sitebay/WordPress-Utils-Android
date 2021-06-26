@@ -1,7 +1,7 @@
-package org.wordpress.android.util.wizard
+package org.sitebay.android.util.wizard
 
 import androidx.lifecycle.LiveData
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.viewmodel.SingleLiveEvent
 
 private const val DEFAULT_STEP_INDEX = -1
 

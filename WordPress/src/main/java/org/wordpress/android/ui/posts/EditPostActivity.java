@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -49,180 +49,180 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.editor.AztecEditorFragment;
-import org.wordpress.android.editor.EditorEditMediaListener;
-import org.wordpress.android.editor.EditorFragmentAbstract;
-import org.wordpress.android.editor.EditorFragmentAbstract.EditorDragAndDropListener;
-import org.wordpress.android.editor.EditorFragmentAbstract.EditorFragmentListener;
-import org.wordpress.android.editor.EditorFragmentAbstract.EditorFragmentNotAddedException;
-import org.wordpress.android.editor.EditorFragmentAbstract.TrackableEvent;
-import org.wordpress.android.editor.EditorFragmentActivity;
-import org.wordpress.android.editor.EditorImageMetaData;
-import org.wordpress.android.editor.EditorImagePreviewListener;
-import org.wordpress.android.editor.EditorImageSettingsListener;
-import org.wordpress.android.editor.EditorMediaUploadListener;
-import org.wordpress.android.editor.EditorMediaUtils;
-import org.wordpress.android.editor.EditorThemeUpdateListener;
-import org.wordpress.android.editor.ExceptionLogger;
-import org.wordpress.android.editor.ImageSettingsDialogFragment;
-import org.wordpress.android.editor.gutenberg.DialogVisibility;
-import org.wordpress.android.editor.gutenberg.GutenbergEditorFragment;
-import org.wordpress.android.editor.gutenberg.GutenbergPropsBuilder;
-import org.wordpress.android.editor.gutenberg.GutenbergWebViewAuthorizationData;
-import org.wordpress.android.editor.gutenberg.StorySaveMediaListener;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.action.AccountAction;
-import org.wordpress.android.fluxc.generated.AccountActionBuilder;
-import org.wordpress.android.fluxc.generated.EditorThemeActionBuilder;
-import org.wordpress.android.fluxc.generated.MediaActionBuilder;
-import org.wordpress.android.fluxc.generated.PostActionBuilder;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.AccountModel;
-import org.wordpress.android.fluxc.model.CauseOfOnPostChanged;
-import org.wordpress.android.fluxc.model.CauseOfOnPostChanged.RemoteAutoSavePost;
-import org.wordpress.android.fluxc.model.EditorTheme;
-import org.wordpress.android.fluxc.model.EditorThemeSupport;
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.post.PostStatus;
-import org.wordpress.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.AccountStore.OnAccountChanged;
-import org.wordpress.android.fluxc.store.EditorThemeStore;
-import org.wordpress.android.fluxc.store.EditorThemeStore.FetchEditorThemePayload;
-import org.wordpress.android.fluxc.store.EditorThemeStore.OnEditorThemeChanged;
-import org.wordpress.android.fluxc.store.MediaStore;
-import org.wordpress.android.fluxc.store.MediaStore.FetchMediaListPayload;
-import org.wordpress.android.fluxc.store.MediaStore.MediaError;
-import org.wordpress.android.fluxc.store.MediaStore.MediaErrorType;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaChanged;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaListFetched;
-import org.wordpress.android.fluxc.store.MediaStore.OnMediaUploaded;
-import org.wordpress.android.fluxc.store.PostStore;
-import org.wordpress.android.fluxc.store.PostStore.OnPostChanged;
-import org.wordpress.android.fluxc.store.PostStore.OnPostUploaded;
-import org.wordpress.android.fluxc.store.PostStore.RemotePostPayload;
-import org.wordpress.android.fluxc.store.QuickStartStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.FetchPrivateAtomicCookiePayload;
-import org.wordpress.android.fluxc.store.SiteStore.OnPrivateAtomicCookieFetched;
-import org.wordpress.android.fluxc.store.UploadStore;
-import org.wordpress.android.fluxc.tools.FluxCImageLoader;
-import org.wordpress.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData;
-import org.wordpress.android.ui.ActivityId;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.PrivateAtCookieRefreshProgressDialog;
-import org.wordpress.android.ui.PrivateAtCookieRefreshProgressDialog.PrivateAtCookieProgressDialogOnDismissListener;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.Shortcut;
-import org.wordpress.android.ui.history.HistoryListItem.Revision;
-import org.wordpress.android.ui.media.MediaBrowserActivity;
-import org.wordpress.android.ui.media.MediaBrowserType;
-import org.wordpress.android.ui.media.MediaPreviewActivity;
-import org.wordpress.android.ui.media.MediaSettingsActivity;
-import org.wordpress.android.ui.pages.SnackbarMessageHolder;
-import org.wordpress.android.ui.photopicker.MediaPickerConstants;
-import org.wordpress.android.ui.photopicker.MediaPickerLauncher;
-import org.wordpress.android.ui.photopicker.PhotoPickerFragment;
-import org.wordpress.android.ui.photopicker.PhotoPickerFragment.PhotoPickerIcon;
-import org.wordpress.android.ui.posts.EditPostRepository.UpdatePostResult;
-import org.wordpress.android.ui.posts.EditPostRepository.UpdatePostResult.Updated;
-import org.wordpress.android.ui.posts.EditPostSettingsFragment.EditPostSettingsCallback;
-import org.wordpress.android.ui.posts.FeaturedImageHelper.EnqueueFeaturedImageResult;
-import org.wordpress.android.ui.posts.InsertMediaDialog.InsertMediaCallback;
-import org.wordpress.android.ui.posts.PostEditorAnalyticsSession.Editor;
-import org.wordpress.android.ui.posts.PostEditorAnalyticsSession.Outcome;
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.PreviewLogicOperationResult;
-import org.wordpress.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType;
-import org.wordpress.android.ui.posts.editor.EditorActionsProvider;
-import org.wordpress.android.ui.posts.editor.EditorPhotoPicker;
-import org.wordpress.android.ui.posts.editor.EditorPhotoPickerListener;
-import org.wordpress.android.ui.posts.editor.EditorTracker;
-import org.wordpress.android.ui.posts.editor.ImageEditorTracker;
-import org.wordpress.android.ui.posts.editor.PostLoadingState;
-import org.wordpress.android.ui.posts.editor.PrimaryEditorAction;
-import org.wordpress.android.ui.posts.editor.SecondaryEditorAction;
-import org.wordpress.android.ui.posts.editor.StorePostViewModel;
-import org.wordpress.android.ui.posts.editor.StorePostViewModel.ActivityFinishState;
-import org.wordpress.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor;
-import org.wordpress.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor.PostFields;
-import org.wordpress.android.ui.posts.editor.StoriesEventListener;
-import org.wordpress.android.ui.posts.editor.XPostsCapabilityChecker;
-import org.wordpress.android.ui.posts.editor.media.AddExistingMediaSource;
-import org.wordpress.android.ui.posts.editor.media.EditorMedia;
-import org.wordpress.android.ui.posts.editor.media.EditorMediaListener;
-import org.wordpress.android.ui.posts.prepublishing.PrepublishingBottomSheetListener;
-import org.wordpress.android.ui.posts.prepublishing.home.usecases.PublishPostImmediatelyUseCase;
-import org.wordpress.android.ui.posts.reactnative.ReactNativeRequestHandler;
-import org.wordpress.android.ui.posts.services.AztecImageLoader;
-import org.wordpress.android.ui.posts.services.AztecVideoLoader;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.ui.prefs.SiteSettingsInterface;
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper;
-import org.wordpress.android.ui.stories.StoryRepositoryWrapper;
-import org.wordpress.android.ui.stories.prefs.StoriesPrefs;
-import org.wordpress.android.ui.stories.usecase.LoadStoryFromStoriesPrefsUseCase;
-import org.wordpress.android.ui.suggestion.SuggestionActivity;
-import org.wordpress.android.ui.suggestion.SuggestionType;
-import org.wordpress.android.ui.uploads.PostEvents;
-import org.wordpress.android.ui.uploads.ProgressEvent;
-import org.wordpress.android.ui.uploads.UploadService;
-import org.wordpress.android.ui.uploads.UploadUtils;
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper;
-import org.wordpress.android.ui.utils.AuthenticationUtils;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.ActivityUtils;
-import org.wordpress.android.util.AniUtils;
-import org.wordpress.android.util.AppBarLayoutExtensionsKt;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.AutolinkUtils;
-import org.wordpress.android.util.DateTimeUtilsWrapper;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.FluxCUtils;
-import org.wordpress.android.util.ListUtils;
-import org.wordpress.android.util.LocaleManager;
-import org.wordpress.android.util.LocaleManagerWrapper;
-import org.wordpress.android.util.MediaUtils;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.PermissionUtils;
-import org.wordpress.android.util.ReblogUtils;
-import org.wordpress.android.util.ShortcutUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StorageUtilsProvider.Source;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.ToastUtils.Duration;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.WPMediaUtils;
-import org.wordpress.android.util.WPPermissionUtils;
-import org.wordpress.android.util.WPUrlUtils;
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils.BlockEditorEnabledSource;
-import org.wordpress.android.util.config.ContactInfoBlockFeatureConfig;
-import org.wordpress.android.util.config.LayoutGridBlockFeatureConfig;
-import org.wordpress.android.util.crashlogging.CrashLoggingExtKt;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.android.util.helpers.MediaGallery;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.viewmodel.helpers.ToastMessageHolder;
-import org.wordpress.android.viewmodel.storage.StorageUtilsViewModel;
-import org.wordpress.android.widgets.AppRatingDialog;
-import org.wordpress.android.widgets.WPSnackbar;
-import org.wordpress.android.widgets.WPViewPager;
-import org.wordpress.aztec.exceptions.DynamicLayoutGetBlockIndexOutOfBoundsException;
-import org.wordpress.aztec.util.AztecLog;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.editor.AztecEditorFragment;
+import org.sitebay.android.editor.EditorEditMediaListener;
+import org.sitebay.android.editor.EditorFragmentAbstract;
+import org.sitebay.android.editor.EditorFragmentAbstract.EditorDragAndDropListener;
+import org.sitebay.android.editor.EditorFragmentAbstract.EditorFragmentListener;
+import org.sitebay.android.editor.EditorFragmentAbstract.EditorFragmentNotAddedException;
+import org.sitebay.android.editor.EditorFragmentAbstract.TrackableEvent;
+import org.sitebay.android.editor.EditorFragmentActivity;
+import org.sitebay.android.editor.EditorImageMetaData;
+import org.sitebay.android.editor.EditorImagePreviewListener;
+import org.sitebay.android.editor.EditorImageSettingsListener;
+import org.sitebay.android.editor.EditorMediaUploadListener;
+import org.sitebay.android.editor.EditorMediaUtils;
+import org.sitebay.android.editor.EditorThemeUpdateListener;
+import org.sitebay.android.editor.ExceptionLogger;
+import org.sitebay.android.editor.ImageSettingsDialogFragment;
+import org.sitebay.android.editor.gutenberg.DialogVisibility;
+import org.sitebay.android.editor.gutenberg.GutenbergEditorFragment;
+import org.sitebay.android.editor.gutenberg.GutenbergPropsBuilder;
+import org.sitebay.android.editor.gutenberg.GutenbergWebViewAuthorizationData;
+import org.sitebay.android.editor.gutenberg.StorySaveMediaListener;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.action.AccountAction;
+import org.sitebay.android.fluxc.generated.AccountActionBuilder;
+import org.sitebay.android.fluxc.generated.EditorThemeActionBuilder;
+import org.sitebay.android.fluxc.generated.MediaActionBuilder;
+import org.sitebay.android.fluxc.generated.PostActionBuilder;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.AccountModel;
+import org.sitebay.android.fluxc.model.CauseOfOnPostChanged;
+import org.sitebay.android.fluxc.model.CauseOfOnPostChanged.RemoteAutoSavePost;
+import org.sitebay.android.fluxc.model.EditorTheme;
+import org.sitebay.android.fluxc.model.EditorThemeSupport;
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.post.PostStatus;
+import org.sitebay.android.fluxc.network.rest.wpcom.site.PrivateAtomicCookie;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.AccountStore.OnAccountChanged;
+import org.sitebay.android.fluxc.store.EditorThemeStore;
+import org.sitebay.android.fluxc.store.EditorThemeStore.FetchEditorThemePayload;
+import org.sitebay.android.fluxc.store.EditorThemeStore.OnEditorThemeChanged;
+import org.sitebay.android.fluxc.store.MediaStore;
+import org.sitebay.android.fluxc.store.MediaStore.FetchMediaListPayload;
+import org.sitebay.android.fluxc.store.MediaStore.MediaError;
+import org.sitebay.android.fluxc.store.MediaStore.MediaErrorType;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaChanged;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaListFetched;
+import org.sitebay.android.fluxc.store.MediaStore.OnMediaUploaded;
+import org.sitebay.android.fluxc.store.PostStore;
+import org.sitebay.android.fluxc.store.PostStore.OnPostChanged;
+import org.sitebay.android.fluxc.store.PostStore.OnPostUploaded;
+import org.sitebay.android.fluxc.store.PostStore.RemotePostPayload;
+import org.sitebay.android.fluxc.store.QuickStartStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.FetchPrivateAtomicCookiePayload;
+import org.sitebay.android.fluxc.store.SiteStore.OnPrivateAtomicCookieFetched;
+import org.sitebay.android.fluxc.store.UploadStore;
+import org.sitebay.android.fluxc.tools.FluxCImageLoader;
+import org.sitebay.android.imageeditor.preview.PreviewImageFragment.Companion.EditImageData;
+import org.sitebay.android.ui.ActivityId;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.PrivateAtCookieRefreshProgressDialog;
+import org.sitebay.android.ui.PrivateAtCookieRefreshProgressDialog.PrivateAtCookieProgressDialogOnDismissListener;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.Shortcut;
+import org.sitebay.android.ui.history.HistoryListItem.Revision;
+import org.sitebay.android.ui.media.MediaBrowserActivity;
+import org.sitebay.android.ui.media.MediaBrowserType;
+import org.sitebay.android.ui.media.MediaPreviewActivity;
+import org.sitebay.android.ui.media.MediaSettingsActivity;
+import org.sitebay.android.ui.pages.SnackbarMessageHolder;
+import org.sitebay.android.ui.photopicker.MediaPickerConstants;
+import org.sitebay.android.ui.photopicker.MediaPickerLauncher;
+import org.sitebay.android.ui.photopicker.PhotoPickerFragment;
+import org.sitebay.android.ui.photopicker.PhotoPickerFragment.PhotoPickerIcon;
+import org.sitebay.android.ui.posts.EditPostRepository.UpdatePostResult;
+import org.sitebay.android.ui.posts.EditPostRepository.UpdatePostResult.Updated;
+import org.sitebay.android.ui.posts.EditPostSettingsFragment.EditPostSettingsCallback;
+import org.sitebay.android.ui.posts.FeaturedImageHelper.EnqueueFeaturedImageResult;
+import org.sitebay.android.ui.posts.InsertMediaDialog.InsertMediaCallback;
+import org.sitebay.android.ui.posts.PostEditorAnalyticsSession.Editor;
+import org.sitebay.android.ui.posts.PostEditorAnalyticsSession.Outcome;
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.PreviewLogicOperationResult;
+import org.sitebay.android.ui.posts.RemotePreviewLogicHelper.RemotePreviewType;
+import org.sitebay.android.ui.posts.editor.EditorActionsProvider;
+import org.sitebay.android.ui.posts.editor.EditorPhotoPicker;
+import org.sitebay.android.ui.posts.editor.EditorPhotoPickerListener;
+import org.sitebay.android.ui.posts.editor.EditorTracker;
+import org.sitebay.android.ui.posts.editor.ImageEditorTracker;
+import org.sitebay.android.ui.posts.editor.PostLoadingState;
+import org.sitebay.android.ui.posts.editor.PrimaryEditorAction;
+import org.sitebay.android.ui.posts.editor.SecondaryEditorAction;
+import org.sitebay.android.ui.posts.editor.StorePostViewModel;
+import org.sitebay.android.ui.posts.editor.StorePostViewModel.ActivityFinishState;
+import org.sitebay.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor;
+import org.sitebay.android.ui.posts.editor.StorePostViewModel.UpdateFromEditor.PostFields;
+import org.sitebay.android.ui.posts.editor.StoriesEventListener;
+import org.sitebay.android.ui.posts.editor.XPostsCapabilityChecker;
+import org.sitebay.android.ui.posts.editor.media.AddExistingMediaSource;
+import org.sitebay.android.ui.posts.editor.media.EditorMedia;
+import org.sitebay.android.ui.posts.editor.media.EditorMediaListener;
+import org.sitebay.android.ui.posts.prepublishing.PrepublishingBottomSheetListener;
+import org.sitebay.android.ui.posts.prepublishing.home.usecases.PublishPostImmediatelyUseCase;
+import org.sitebay.android.ui.posts.reactnative.ReactNativeRequestHandler;
+import org.sitebay.android.ui.posts.services.AztecImageLoader;
+import org.sitebay.android.ui.posts.services.AztecVideoLoader;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.ui.prefs.SiteSettingsInterface;
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper;
+import org.sitebay.android.ui.stories.StoryRepositoryWrapper;
+import org.sitebay.android.ui.stories.prefs.StoriesPrefs;
+import org.sitebay.android.ui.stories.usecase.LoadStoryFromStoriesPrefsUseCase;
+import org.sitebay.android.ui.suggestion.SuggestionActivity;
+import org.sitebay.android.ui.suggestion.SuggestionType;
+import org.sitebay.android.ui.uploads.PostEvents;
+import org.sitebay.android.ui.uploads.ProgressEvent;
+import org.sitebay.android.ui.uploads.UploadService;
+import org.sitebay.android.ui.uploads.UploadUtils;
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper;
+import org.sitebay.android.ui.utils.AuthenticationUtils;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.ActivityUtils;
+import org.sitebay.android.util.AniUtils;
+import org.sitebay.android.util.AppBarLayoutExtensionsKt;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.AutolinkUtils;
+import org.sitebay.android.util.DateTimeUtilsWrapper;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.FluxCUtils;
+import org.sitebay.android.util.ListUtils;
+import org.sitebay.android.util.LocaleManager;
+import org.sitebay.android.util.LocaleManagerWrapper;
+import org.sitebay.android.util.MediaUtils;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.PermissionUtils;
+import org.sitebay.android.util.ReblogUtils;
+import org.sitebay.android.util.ShortcutUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StorageUtilsProvider.Source;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.ToastUtils.Duration;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.WPMediaUtils;
+import org.sitebay.android.util.WPPermissionUtils;
+import org.sitebay.android.util.WPUrlUtils;
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils.BlockEditorEnabledSource;
+import org.sitebay.android.util.config.ContactInfoBlockFeatureConfig;
+import org.sitebay.android.util.config.LayoutGridBlockFeatureConfig;
+import org.sitebay.android.util.crashlogging.CrashLoggingExtKt;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaGallery;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.viewmodel.helpers.ToastMessageHolder;
+import org.sitebay.android.viewmodel.storage.StorageUtilsViewModel;
+import org.sitebay.android.widgets.AppRatingDialog;
+import org.sitebay.android.widgets.WPSnackbar;
+import org.sitebay.android.widgets.WPViewPager;
+import org.sitebay.aztec.exceptions.DynamicLayoutGetBlockIndexOutOfBoundsException;
+import org.sitebay.aztec.util.AztecLog;
 
 import java.io.File;
 import java.math.BigInteger;
@@ -242,10 +242,10 @@ import java.util.regex.Pattern;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.analytics.AnalyticsTracker.Stat.APP_REVIEWS_EVENT_INCREMENTED_BY_PUBLISHING_POST_OR_PAGE;
-import static org.wordpress.android.imageeditor.preview.PreviewImageFragment.PREVIEW_IMAGE_REDUCED_SIZE_FACTOR;
-import static org.wordpress.android.ui.history.HistoryDetailContainerFragment.KEY_REVISION;
-import static org.wordpress.android.editor.gutenberg.GutenbergEditorFragment.MEDIA_ID_NO_FEATURED_IMAGE_SET;
+import static org.sitebay.android.analytics.AnalyticsTracker.Stat.APP_REVIEWS_EVENT_INCREMENTED_BY_PUBLISHING_POST_OR_PAGE;
+import static org.sitebay.android.imageeditor.preview.PreviewImageFragment.PREVIEW_IMAGE_REDUCED_SIZE_FACTOR;
+import static org.sitebay.android.ui.history.HistoryDetailContainerFragment.KEY_REVISION;
+import static org.sitebay.android.editor.gutenberg.GutenbergEditorFragment.MEDIA_ID_NO_FEATURED_IMAGE_SET;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
@@ -593,7 +593,7 @@ public class EditPostActivity extends LocaleAwareActivity implements
 
             if (isRestarting && extras.getBoolean(EXTRA_IS_NEW_POST)) {
                 // editor was on a new post before the switch so, keep that signal.
-                // Fixes https://github.com/wordpress-mobile/gutenberg-mobile/issues/2072
+                // Fixes https://github.com/sitebay-mobile/gutenberg-mobile/issues/2072
                 mIsNewPost = true;
             }
 
@@ -1246,7 +1246,7 @@ public class EditPostActivity extends LocaleAwareActivity implements
 
         // The following null checks should basically be redundant but were added to manage
         // an odd behaviour recorded with Android 8.0.0
-        // (see https://github.com/wordpress-mobile/WordPress-Android/issues/9748 for more information)
+        // (see https://github.com/sitebay-mobile/WordPress-Android/issues/9748 for more information)
         if (switchToGutenbergMenuItem != null) {
             boolean switchToGutenbergVisibility = mShowGutenbergEditor ? false
                     : shouldSwitchToGutenbergBeVisible(mEditorFragment, mSite);
@@ -1440,7 +1440,7 @@ public class EditPostActivity extends LocaleAwareActivity implements
             } else if (itemId == R.id.menu_switch_to_gutenberg) {
                 // The following boolean check should be always redundant but was added to manage
                 // an odd behaviour recorded with Android 8.0.0
-                // (see https://github.com/wordpress-mobile/WordPress-Android/issues/9748 for more information)
+                // (see https://github.com/sitebay-mobile/WordPress-Android/issues/9748 for more information)
                 if (shouldSwitchToGutenbergBeVisible(mEditorFragment, mSite)) {
                     // let's finish this editing instance and start again, but let GB be used
                     mRestartEditorOption = RestartEditorOptions.RESTART_DONT_SUPPRESS_GUTENBERG;
@@ -1799,7 +1799,7 @@ public class EditPostActivity extends LocaleAwareActivity implements
 
             Drawable loadingImagePlaceholder = EditorMediaUtils.getAztecPlaceholderDrawableFromResID(
                     this,
-                    org.wordpress.android.editor.R.drawable.ic_gridicons_image,
+                    org.sitebay.android.editor.R.drawable.ic_gridicons_image,
                     aztecEditorFragment.getMaxMediaSize()
             );
             mAztecImageLoader = new AztecImageLoader(getBaseContext(), mImageManager, loadingImagePlaceholder);
@@ -1808,7 +1808,7 @@ public class EditPostActivity extends LocaleAwareActivity implements
 
             Drawable loadingVideoPlaceholder = EditorMediaUtils.getAztecPlaceholderDrawableFromResID(
                     this,
-                    org.wordpress.android.editor.R.drawable.ic_gridicons_video_camera,
+                    org.sitebay.android.editor.R.drawable.ic_gridicons_video_camera,
                     aztecEditorFragment.getMaxMediaSize()
             );
             aztecEditorFragment.setAztecVideoLoader(new AztecVideoLoader(getBaseContext(), loadingVideoPlaceholder));
@@ -2166,7 +2166,7 @@ public class EditPostActivity extends LocaleAwareActivity implements
      * Can be dropped and replaced by mEditorFragment.hasFailedMediaUploads() when we drop the visual editor.
      * mEditorFragment.isActionInProgress() was added to address a timing issue when adding media and immediately
      * publishing or exiting the visual editor. It's not safe to upload the post in this state.
-     * See https://github.com/wordpress-mobile/WordPress-Editor-Android/issues/294
+     * See https://github.com/sitebay-mobile/WordPress-Editor-Android/issues/294
      */
     private boolean hasFailedMedia() {
         return mEditorFragment.hasFailedMediaUploads() || mEditorFragment.isActionInProgress();

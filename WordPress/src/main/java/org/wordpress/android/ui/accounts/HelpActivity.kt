@@ -1,26 +1,26 @@
-package org.wordpress.android.ui.accounts
+package org.sitebay.android.ui.accounts
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat
-import org.wordpress.android.databinding.HelpActivityBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.support.SupportHelper
-import org.wordpress.android.support.ZendeskExtraTags
-import org.wordpress.android.support.ZendeskHelper
-import org.wordpress.android.ui.ActivityId
-import org.wordpress.android.ui.AppLogViewerActivity
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.prefs.AppPrefs
-import org.wordpress.android.util.SiteUtils
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat
+import org.sitebay.android.databinding.HelpActivityBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.support.SupportHelper
+import org.sitebay.android.support.ZendeskExtraTags
+import org.sitebay.android.support.ZendeskHelper
+import org.sitebay.android.ui.ActivityId
+import org.sitebay.android.ui.AppLogViewerActivity
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.prefs.AppPrefs
+import org.sitebay.android.util.SiteUtils
 import java.util.ArrayList
 import javax.inject.Inject
 
@@ -130,7 +130,7 @@ class HelpActivity : LocaleAwareActivity() {
     }
 
     private fun showFaq() {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://apps.wordpress.com/mobile-app-support/"))
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://apps.sitebay.com/mobile-app-support/"))
         startActivity(intent)
         AnalyticsTracker.track(Stat.SUPPORT_HELP_CENTER_VIEWED)
     }

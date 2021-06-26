@@ -1,4 +1,4 @@
-package org.wordpress.android.support
+package org.sitebay.android.support
 
 import okhttp3.Interceptor
 import okhttp3.Response

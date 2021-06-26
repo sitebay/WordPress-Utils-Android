@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.theme
+package org.sitebay.android.ui.sitecreation.theme
 
 import android.content.Context
 import android.os.Bundle
@@ -11,23 +11,23 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.AppBarLayout
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.HomePagePickerFragmentBinding
-import org.wordpress.android.ui.PreviewModeSelectorPopup
-import org.wordpress.android.ui.layoutpicker.CategoriesAdapter
-import org.wordpress.android.ui.layoutpicker.LayoutCategoryAdapter
-import org.wordpress.android.ui.layoutpicker.LayoutPickerUiState
-import org.wordpress.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Dismiss
-import org.wordpress.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Show
-import org.wordpress.android.ui.sitecreation.theme.DesignPreviewFragment.Companion.DESIGN_PREVIEW_TAG
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.DisplayUtilsWrapper
-import org.wordpress.android.util.ToastUtils
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.setVisible
-import org.wordpress.android.viewmodel.observeEvent
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.HomePagePickerFragmentBinding
+import org.sitebay.android.ui.PreviewModeSelectorPopup
+import org.sitebay.android.ui.layoutpicker.CategoriesAdapter
+import org.sitebay.android.ui.layoutpicker.LayoutCategoryAdapter
+import org.sitebay.android.ui.layoutpicker.LayoutPickerUiState
+import org.sitebay.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Dismiss
+import org.sitebay.android.ui.layoutpicker.LayoutPickerViewModel.DesignPreviewAction.Show
+import org.sitebay.android.ui.sitecreation.theme.DesignPreviewFragment.Companion.DESIGN_PREVIEW_TAG
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.DisplayUtilsWrapper
+import org.sitebay.android.util.ToastUtils
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.setVisible
+import org.sitebay.android.viewmodel.observeEvent
 import javax.inject.Inject
 
 /**

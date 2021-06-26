@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.posts.prepublishing.home.usecases
+package org.sitebay.android.ui.posts.prepublishing.home.usecases
 
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.EditPostRepository
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.PublishButtonUiState
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.SaveButtonUiState
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.ScheduleButtonUiState
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.SubmitButtonUiState
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.UpdateButtonUiState
-import org.wordpress.android.ui.posts.PublishPost
-import org.wordpress.android.ui.posts.editor.EditorActionsProvider
-import org.wordpress.android.ui.posts.editor.PrimaryEditorAction
-import org.wordpress.android.ui.uploads.UploadUtilsWrapper
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.PublishButtonUiState
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.SaveButtonUiState
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.ScheduleButtonUiState
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.SubmitButtonUiState
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ButtonUiState.UpdateButtonUiState
+import org.sitebay.android.ui.posts.PublishPost
+import org.sitebay.android.ui.posts.editor.EditorActionsProvider
+import org.sitebay.android.ui.posts.editor.PrimaryEditorAction
+import org.sitebay.android.ui.uploads.UploadUtilsWrapper
 import javax.inject.Inject
 
 class GetButtonUiStateUseCase @Inject constructor(

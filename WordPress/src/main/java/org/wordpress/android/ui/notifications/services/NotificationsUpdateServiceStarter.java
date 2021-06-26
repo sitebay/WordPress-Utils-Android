@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.services;
+package org.sitebay.android.ui.notifications.services;
 
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
@@ -8,10 +8,10 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.PersistableBundle;
 
-import org.wordpress.android.ui.notifications.NotificationsListFragment;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.ui.notifications.NotificationsListFragment;
+import org.sitebay.android.util.AppLog;
 
-import static org.wordpress.android.JobServiceId.JOB_NOTIFICATIONS_UPDATE_SERVICE_ID;
+import static org.sitebay.android.JobServiceId.JOB_NOTIFICATIONS_UPDATE_SERVICE_ID;
 
 public class NotificationsUpdateServiceStarter {
     public static final String IS_TAPPED_ON_NOTIFICATION = "is-tapped-on-notification";

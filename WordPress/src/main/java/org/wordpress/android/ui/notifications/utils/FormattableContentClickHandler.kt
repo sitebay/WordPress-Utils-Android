@@ -1,39 +1,39 @@
-package org.wordpress.android.ui.notifications.utils
+package org.sitebay.android.ui.notifications.utils
 
 import androidx.fragment.app.FragmentActivity
-import org.wordpress.android.R
-import org.wordpress.android.datasets.ReaderPostTable
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.fluxc.tools.FormattableRange
-import org.wordpress.android.fluxc.tools.FormattableRangeType
-import org.wordpress.android.fluxc.tools.FormattableRangeType.BLOCKQUOTE
-import org.wordpress.android.fluxc.tools.FormattableRangeType.COMMENT
-import org.wordpress.android.fluxc.tools.FormattableRangeType.FOLLOW
-import org.wordpress.android.fluxc.tools.FormattableRangeType.LIKE
-import org.wordpress.android.fluxc.tools.FormattableRangeType.MATCH
-import org.wordpress.android.fluxc.tools.FormattableRangeType.MEDIA
-import org.wordpress.android.fluxc.tools.FormattableRangeType.NOTICON
-import org.wordpress.android.fluxc.tools.FormattableRangeType.PAGE
-import org.wordpress.android.fluxc.tools.FormattableRangeType.POST
-import org.wordpress.android.fluxc.tools.FormattableRangeType.REWIND_DOWNLOAD_READY
-import org.wordpress.android.fluxc.tools.FormattableRangeType.SITE
-import org.wordpress.android.fluxc.tools.FormattableRangeType.STAT
-import org.wordpress.android.fluxc.tools.FormattableRangeType.UNKNOWN
-import org.wordpress.android.fluxc.tools.FormattableRangeType.USER
-import org.wordpress.android.models.ReaderPost
-import org.wordpress.android.ui.ActivityLauncher
-import org.wordpress.android.ui.WPWebViewActivity
-import org.wordpress.android.ui.reader.ReaderActivityLauncher
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.utils.ReaderUtils
-import org.wordpress.android.ui.stats.StatsViewType.FOLLOWERS
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.API
-import org.wordpress.android.util.ToastUtils
+import org.sitebay.android.R
+import org.sitebay.android.datasets.ReaderPostTable
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.tools.FormattableRange
+import org.sitebay.android.fluxc.tools.FormattableRangeType
+import org.sitebay.android.fluxc.tools.FormattableRangeType.BLOCKQUOTE
+import org.sitebay.android.fluxc.tools.FormattableRangeType.COMMENT
+import org.sitebay.android.fluxc.tools.FormattableRangeType.FOLLOW
+import org.sitebay.android.fluxc.tools.FormattableRangeType.LIKE
+import org.sitebay.android.fluxc.tools.FormattableRangeType.MATCH
+import org.sitebay.android.fluxc.tools.FormattableRangeType.MEDIA
+import org.sitebay.android.fluxc.tools.FormattableRangeType.NOTICON
+import org.sitebay.android.fluxc.tools.FormattableRangeType.PAGE
+import org.sitebay.android.fluxc.tools.FormattableRangeType.POST
+import org.sitebay.android.fluxc.tools.FormattableRangeType.REWIND_DOWNLOAD_READY
+import org.sitebay.android.fluxc.tools.FormattableRangeType.SITE
+import org.sitebay.android.fluxc.tools.FormattableRangeType.STAT
+import org.sitebay.android.fluxc.tools.FormattableRangeType.UNKNOWN
+import org.sitebay.android.fluxc.tools.FormattableRangeType.USER
+import org.sitebay.android.models.ReaderPost
+import org.sitebay.android.ui.ActivityLauncher
+import org.sitebay.android.ui.WPWebViewActivity
+import org.sitebay.android.ui.reader.ReaderActivityLauncher
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.utils.ReaderUtils
+import org.sitebay.android.ui.stats.StatsViewType.FOLLOWERS
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.API
+import org.sitebay.android.util.ToastUtils
 import javax.inject.Inject
 
-private const val DOMAIN_WP_COM = "wordpress.com"
+private const val DOMAIN_WP_COM = "sitebay.com"
 
 class FormattableContentClickHandler @Inject constructor(
     val siteStore: SiteStore,

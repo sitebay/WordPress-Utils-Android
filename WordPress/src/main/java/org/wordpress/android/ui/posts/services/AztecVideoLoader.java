@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.services;
+package org.sitebay.android.ui.posts.services;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,10 +10,10 @@ import android.provider.MediaStore.Images.Thumbnails;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 
-import org.wordpress.android.WordPress;
-import org.wordpress.android.ui.utils.AuthenticationUtils;
-import org.wordpress.android.util.ImageUtils;
-import org.wordpress.aztec.Html;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.ui.utils.AuthenticationUtils;
+import org.sitebay.android.util.ImageUtils;
+import org.sitebay.aztec.Html;
 
 import java.io.File;
 import java.lang.ref.WeakReference;

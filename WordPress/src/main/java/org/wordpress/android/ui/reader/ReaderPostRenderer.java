@@ -1,24 +1,24 @@
-package org.wordpress.android.ui.reader;
+package org.sitebay.android.ui.reader;
 
 import android.annotation.SuppressLint;
 import android.net.Uri;
 import android.os.Handler;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderPostDiscoverData;
-import org.wordpress.android.ui.reader.utils.ImageSizeMap;
-import org.wordpress.android.ui.reader.utils.ImageSizeMap.ImageSize;
-import org.wordpress.android.ui.reader.utils.ReaderEmbedScanner;
-import org.wordpress.android.ui.reader.utils.ReaderHtmlUtils;
-import org.wordpress.android.ui.reader.utils.ReaderIframeScanner;
-import org.wordpress.android.ui.reader.utils.ReaderImageScanner;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.ui.reader.views.ReaderWebView;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.DisplayUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderPostDiscoverData;
+import org.sitebay.android.ui.reader.utils.ImageSizeMap;
+import org.sitebay.android.ui.reader.utils.ImageSizeMap.ImageSize;
+import org.sitebay.android.ui.reader.utils.ReaderEmbedScanner;
+import org.sitebay.android.ui.reader.utils.ReaderHtmlUtils;
+import org.sitebay.android.ui.reader.utils.ReaderIframeScanner;
+import org.sitebay.android.ui.reader.utils.ReaderImageScanner;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.ui.reader.views.ReaderWebView;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.DisplayUtils;
+import org.sitebay.android.util.StringUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
@@ -457,7 +457,7 @@ public class ReaderPostRenderer {
                     .append(" opacity:0;}");
         }
 
-        // see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+        // see http://codex.sitebay.org/CSS#WordPress_Generated_Classes
         sbHtml
                 .append(" .wp-caption img { margin-top: 0px; margin-bottom: 0px; }")
                 .append(" .wp-caption .wp-caption-text {")

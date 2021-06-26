@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.never
@@ -10,21 +10,21 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.PlanModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore.OnPlansFetched
-import org.wordpress.android.fluxc.store.SiteStore.PlansError
-import org.wordpress.android.fluxc.store.SiteStore.PlansErrorType
-import org.wordpress.android.fluxc.store.SiteStore.PlansErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.utils.AppLogWrapper
-import org.wordpress.android.test
-import org.wordpress.android.testScope
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.DomainCreditAvailable
-import org.wordpress.android.ui.plans.PlansConstants.PREMIUM_PLAN_ID
-import org.wordpress.android.util.SiteUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.PlanModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore.OnPlansFetched
+import org.sitebay.android.fluxc.store.SiteStore.PlansError
+import org.sitebay.android.fluxc.store.SiteStore.PlansErrorType
+import org.sitebay.android.fluxc.store.SiteStore.PlansErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.utils.AppLogWrapper
+import org.sitebay.android.test
+import org.sitebay.android.testScope
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.DomainCreditAvailable
+import org.sitebay.android.ui.plans.PlansConstants.PREMIUM_PLAN_ID
+import org.sitebay.android.util.SiteUtilsWrapper
 
 class DomainRegistrationHandlerTest : BaseUnitTest() {
     @Mock lateinit var dispatcher: Dispatcher

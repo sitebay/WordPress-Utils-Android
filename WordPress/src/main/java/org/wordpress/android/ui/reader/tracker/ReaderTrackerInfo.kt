@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.tracker
+package org.sitebay.android.ui.reader.tracker
 
 import java.util.Date
 

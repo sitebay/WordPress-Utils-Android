@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.app.Dialog
 import android.content.Context
@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.android.support.AndroidSupportInjection
-import org.wordpress.android.ui.posts.BasicDialogViewModel.BasicDialogModel
+import org.sitebay.android.ui.posts.BasicDialogViewModel.BasicDialogModel
 import javax.inject.Inject
 
 /**

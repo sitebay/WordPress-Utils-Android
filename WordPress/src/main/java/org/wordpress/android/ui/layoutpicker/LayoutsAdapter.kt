@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.layoutpicker
+package org.sitebay.android.ui.layoutpicker
 
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import org.wordpress.android.WordPress
-import org.wordpress.android.util.image.ImageManager
+import org.sitebay.android.WordPress
+import org.sitebay.android.util.image.ImageManager
 import javax.inject.Inject
 
 /**

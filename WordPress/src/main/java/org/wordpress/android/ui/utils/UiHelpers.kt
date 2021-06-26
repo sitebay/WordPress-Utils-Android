@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
-import org.wordpress.android.R
+import org.sitebay.android.R
 import android.app.Dialog
 import android.content.Context
 import android.view.View
@@ -9,16 +9,16 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.ui.utils.UiDimen.UIDimenDPInt
-import org.wordpress.android.ui.utils.UiDimen.UIDimenRes
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.DisplayUtils
+import org.sitebay.android.ui.utils.UiDimen.UIDimenDPInt
+import org.sitebay.android.ui.utils.UiDimen.UIDimenRes
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.DisplayUtils
 import javax.inject.Inject
 import android.graphics.Point
-import org.wordpress.android.ui.utils.UiString.UiStringResWithParams
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.AniUtils.Duration
+import org.sitebay.android.ui.utils.UiString.UiStringResWithParams
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.AniUtils.Duration
 
 class UiHelpers @Inject constructor() {
     fun getPxOfUiDimen(context: Context, uiDimen: UiDimen): Int =

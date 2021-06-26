@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.discover.interests
+package org.sitebay.android.ui.reader.discover.interests
 
 import android.os.Bundle
 import android.view.View
@@ -6,19 +6,19 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ReaderInterestsFragmentLayoutBinding
-import org.wordpress.android.ui.pages.SnackbarMessageHolder
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ContentUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ErrorUiState
-import org.wordpress.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.InitialLoadingUiState
-import org.wordpress.android.ui.reader.viewmodels.ReaderViewModel
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.util.LocaleManager
-import org.wordpress.android.viewmodel.observeEvent
-import org.wordpress.android.widgets.WPSnackbar
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ReaderInterestsFragmentLayoutBinding
+import org.sitebay.android.ui.pages.SnackbarMessageHolder
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.DoneButtonUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ContentUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.ErrorUiState
+import org.sitebay.android.ui.reader.discover.interests.ReaderInterestsViewModel.UiState.InitialLoadingUiState
+import org.sitebay.android.ui.reader.viewmodels.ReaderViewModel
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.util.LocaleManager
+import org.sitebay.android.viewmodel.observeEvent
+import org.sitebay.android.widgets.WPSnackbar
 import javax.inject.Inject
 
 class ReaderInterestsFragment : Fragment(R.layout.reader_interests_fragment_layout) {

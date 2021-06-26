@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.DRAFT
-import org.wordpress.android.fluxc.model.post.PostStatus.PRIVATE
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.DRAFT
+import org.sitebay.android.fluxc.model.post.PostStatus.PRIVATE
 
 @RunWith(MockitoJUnitRunner::class)
 class PostUtilsUnitTest {
@@ -21,7 +21,7 @@ class PostUtilsUnitTest {
          */
         val content = """
 <!-- wp:gallery {"ids":[1554,1549]} -->
-<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://leweo7test.files.wordpress.com/2020/01/pexels-photo-247502.jpeg" data-id="1554" class="wp-image-1554" /><figcaption class="blocks-gallery-item__caption">C1</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://leweo7test.files.wordpress.com/2019/04/img_20191023_150221-1.jpg" data-id="1549" class="wp-image-1549" /><figcaption class="blocks-gallery-item__caption">D2</figcaption></figure></li></ul></figure>
+<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://leweo7test.files.sitebay.com/2020/01/pexels-photo-247502.jpeg" data-id="1554" class="wp-image-1554" /><figcaption class="blocks-gallery-item__caption">C1</figcaption></figure></li><li class="blocks-gallery-item"><figure><img src="https://leweo7test.files.sitebay.com/2019/04/img_20191023_150221-1.jpg" data-id="1549" class="wp-image-1549" /><figcaption class="blocks-gallery-item__caption">D2</figcaption></figure></li></ul></figure>
 <!-- /wp:gallery -->
 
 <!-- wp:paragraph -->
@@ -29,7 +29,7 @@ class PostUtilsUnitTest {
 <!-- /wp:paragraph -->
 
 <!-- wp:gallery {"ids":[1546]} -->
-<figure class="wp-block-gallery columns-1 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://leweo7test.files.wordpress.com/2019/04/kunkka_underlords.png" data-id="1546" class="wp-image-1546" /></figure></li></ul></figure>
+<figure class="wp-block-gallery columns-1 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://leweo7test.files.sitebay.com/2019/04/kunkka_underlords.png" data-id="1546" class="wp-image-1546" /></figure></li></ul></figure>
 <!-- /wp:gallery -->
 """
         val expectedResult = """

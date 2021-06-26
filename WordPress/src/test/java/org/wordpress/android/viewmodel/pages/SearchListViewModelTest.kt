@@ -1,4 +1,4 @@
-package org.wordpress.android.viewmodel.pages
+package org.sitebay.android.viewmodel.pages
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
@@ -14,23 +14,23 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R.string
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.page.PageModel
-import org.wordpress.android.fluxc.model.page.PageStatus.DRAFT
-import org.wordpress.android.fluxc.model.page.PageStatus.PUBLISHED
-import org.wordpress.android.ui.pages.PageItem
-import org.wordpress.android.ui.pages.PageItem.Action.VIEW_PAGE
-import org.wordpress.android.ui.pages.PageItem.Divider
-import org.wordpress.android.ui.pages.PageItem.DraftPage
-import org.wordpress.android.ui.pages.PageItem.Empty
-import org.wordpress.android.ui.pages.PageItem.PublishedPage
-import org.wordpress.android.viewmodel.ResourceProvider
-import org.wordpress.android.viewmodel.pages.PageListViewModel.PageListType
-import org.wordpress.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
-import org.wordpress.android.viewmodel.uistate.ProgressBarUiState
+import org.sitebay.android.R.string
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.page.PageModel
+import org.sitebay.android.fluxc.model.page.PageStatus.DRAFT
+import org.sitebay.android.fluxc.model.page.PageStatus.PUBLISHED
+import org.sitebay.android.ui.pages.PageItem
+import org.sitebay.android.ui.pages.PageItem.Action.VIEW_PAGE
+import org.sitebay.android.ui.pages.PageItem.Divider
+import org.sitebay.android.ui.pages.PageItem.DraftPage
+import org.sitebay.android.ui.pages.PageItem.Empty
+import org.sitebay.android.ui.pages.PageItem.PublishedPage
+import org.sitebay.android.viewmodel.ResourceProvider
+import org.sitebay.android.viewmodel.pages.PageListViewModel.PageListType
+import org.sitebay.android.viewmodel.pages.PostModelUploadUiStateUseCase.PostUploadUiState
+import org.sitebay.android.viewmodel.uistate.ProgressBarUiState
 import java.util.Date
 import java.util.SortedMap
 

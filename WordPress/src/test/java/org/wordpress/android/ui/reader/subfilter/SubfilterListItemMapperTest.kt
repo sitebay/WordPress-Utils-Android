@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.subfilter
+package org.sitebay.android.ui.reader.subfilter
 
 import com.google.gson.JsonParser
 import com.nhaarman.mockitokotlin2.any
@@ -13,14 +13,14 @@ import org.junit.rules.ExpectedException
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagType.FOLLOWED
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Site
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.SiteAll
-import org.wordpress.android.ui.reader.subfilter.SubfilterListItem.Tag
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagType.FOLLOWED
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Site
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.SiteAll
+import org.sitebay.android.ui.reader.subfilter.SubfilterListItem.Tag
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
 import java.lang.IllegalArgumentException
 
 @RunWith(MockitoJUnitRunner::class)

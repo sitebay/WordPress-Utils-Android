@@ -1,4 +1,4 @@
-package org.wordpress.android.support;
+package org.sitebay.android.support;
 
 import androidx.test.espresso.IdlingResource;
 

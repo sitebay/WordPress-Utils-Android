@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.viewmodels
+package org.sitebay.android.ui.reader.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,23 +10,23 @@ import kotlinx.coroutines.withContext
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode.MAIN
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.models.ReaderTagList
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.reader.ReaderEvents
-import org.wordpress.android.ui.reader.tracker.ReaderTab
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.tracker.ReaderTrackerType.MAIN_READER
-import org.wordpress.android.ui.reader.usecases.LoadReaderTabsUseCase
-import org.wordpress.android.ui.reader.utils.DateProvider
-import org.wordpress.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState.ContentUiState
-import org.wordpress.android.util.distinct
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.models.ReaderTagList
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.reader.ReaderEvents
+import org.sitebay.android.ui.reader.tracker.ReaderTab
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.tracker.ReaderTrackerType.MAIN_READER
+import org.sitebay.android.ui.reader.usecases.LoadReaderTabsUseCase
+import org.sitebay.android.ui.reader.utils.DateProvider
+import org.sitebay.android.ui.reader.viewmodels.ReaderViewModel.ReaderUiState.ContentUiState
+import org.sitebay.android.util.distinct
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ScopedViewModel
 import javax.inject.Inject
 import javax.inject.Named
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 enum class EngagementNavigationSource(private val sourceDescription: String) {
     LIKE_NOTIFICATION_LIST("like_notification_list"),

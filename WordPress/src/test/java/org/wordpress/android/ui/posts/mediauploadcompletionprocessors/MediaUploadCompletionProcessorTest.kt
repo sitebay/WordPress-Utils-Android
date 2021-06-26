@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.mediauploadcompletionprocessors
+package org.sitebay.android.ui.posts.mediauploadcompletionprocessors
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
@@ -9,7 +9,7 @@ import org.junit.Before
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
 
-import org.wordpress.android.util.helpers.MediaFile
+import org.sitebay.android.util.helpers.MediaFile
 
 @RunWith(MockitoJUnitRunner::class)
 class MediaUploadCompletionProcessorTest {

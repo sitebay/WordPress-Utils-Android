@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.stories.usecase
+package org.sitebay.android.ui.stories.usecase
 
 import dagger.Reusable
-import org.wordpress.android.ui.posts.EditPostRepository
+import org.sitebay.android.ui.posts.EditPostRepository
 import javax.inject.Inject
 
 @Reusable

@@ -1,4 +1,4 @@
-package org.wordpress.android.push;
+package org.sitebay.android.push;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -19,26 +19,26 @@ import androidx.core.app.RemoteInput;
 
 import org.apache.commons.text.StringEscapeUtils;
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.datasets.NotificationsTable;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.models.Note;
-import org.wordpress.android.ui.main.WPMainActivity;
-import org.wordpress.android.ui.notifications.NotificationEvents;
-import org.wordpress.android.ui.notifications.NotificationsListFragment;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.ui.notifications.utils.NotificationsActions;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtils;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.DateTimeUtils;
-import org.wordpress.android.util.ImageUtils;
-import org.wordpress.android.util.PhotonUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.datasets.NotificationsTable;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.models.Note;
+import org.sitebay.android.ui.main.WPMainActivity;
+import org.sitebay.android.ui.notifications.NotificationEvents;
+import org.sitebay.android.ui.notifications.NotificationsListFragment;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.ui.notifications.utils.NotificationsActions;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtils;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.DateTimeUtils;
+import org.sitebay.android.util.ImageUtils;
+import org.sitebay.android.util.PhotonUtils;
+import org.sitebay.android.util.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -53,15 +53,15 @@ import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-import static org.wordpress.android.push.GCMMessageService.EXTRA_VOICE_OR_INLINE_REPLY;
-import static org.wordpress.android.push.GCMMessageService.PUSH_ARG_NOTE_ID;
-import static org.wordpress.android.push.NotificationPushIds.AUTH_PUSH_NOTIFICATION_ID;
-import static org.wordpress.android.push.NotificationPushIds.GROUP_NOTIFICATION_ID;
-import static org.wordpress.android.push.NotificationPushIds.PUSH_NOTIFICATION_ID;
-import static org.wordpress.android.push.NotificationPushIds.ZENDESK_PUSH_NOTIFICATION_ID;
-import static org.wordpress.android.push.NotificationType.UNKNOWN_NOTE;
-import static org.wordpress.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
-import static org.wordpress.android.ui.notifications.services.NotificationsUpdateServiceStarter.IS_TAPPED_ON_NOTIFICATION;
+import static org.sitebay.android.push.GCMMessageService.EXTRA_VOICE_OR_INLINE_REPLY;
+import static org.sitebay.android.push.GCMMessageService.PUSH_ARG_NOTE_ID;
+import static org.sitebay.android.push.NotificationPushIds.AUTH_PUSH_NOTIFICATION_ID;
+import static org.sitebay.android.push.NotificationPushIds.GROUP_NOTIFICATION_ID;
+import static org.sitebay.android.push.NotificationPushIds.PUSH_NOTIFICATION_ID;
+import static org.sitebay.android.push.NotificationPushIds.ZENDESK_PUSH_NOTIFICATION_ID;
+import static org.sitebay.android.push.NotificationType.UNKNOWN_NOTE;
+import static org.sitebay.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
+import static org.sitebay.android.ui.notifications.services.NotificationsUpdateServiceStarter.IS_TAPPED_ON_NOTIFICATION;
 
 @Singleton
 public class GCMMessageHandler {

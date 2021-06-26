@@ -1,7 +1,7 @@
-package org.wordpress.android.datasets
+package org.sitebay.android.datasets
 
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.ui.reader.utils.ReaderUtilsWrapper
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.ui.reader.utils.ReaderUtilsWrapper
 import javax.inject.Inject
 
 class ReaderBlogTableWrapper

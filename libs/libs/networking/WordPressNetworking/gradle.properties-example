@@ -1,2 +1,2 @@
-wp.db_secret = wordpress
+wp.db_secret = sitebay
 repository = file:///Users/max/work/automattic/WordPress-Android-gh-pages/

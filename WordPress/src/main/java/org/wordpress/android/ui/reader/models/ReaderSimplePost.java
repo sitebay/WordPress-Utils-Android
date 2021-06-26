@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.reader.models;
+package org.sitebay.android.ui.reader.models;
 
 import android.text.TextUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.HtmlUtils;
-import org.wordpress.android.util.JSONUtils;
-import org.wordpress.android.util.PhotonUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.HtmlUtils;
+import org.sitebay.android.util.JSONUtils;
+import org.sitebay.android.util.PhotonUtils;
 
 /**
  * simplified version of a reader post

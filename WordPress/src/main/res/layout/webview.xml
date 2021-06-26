@@ -25,7 +25,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <org.wordpress.android.ui.WPWebView
+        <org.sitebay.android.ui.WPWebView
             android:nestedScrollingEnabled="true"
             android:id="@+id/webView"
             android:layout_width="match_parent"

@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.jetpack.scan
+package org.sitebay.android.ui.jetpack.scan
 
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.utils.UiString
 
 sealed class ScanNavigationEvents {
     data class ShowThreatDetails(val siteModel: SiteModel, val threatId: Long) : ScanNavigationEvents()

@@ -1,6 +1,6 @@
-package org.wordpress.android
+package org.sitebay.android
 
-import org.wordpress.android.modules.DaggerAppComponentTest
+import org.sitebay.android.modules.DaggerAppComponentTest
 
 class WordPressTest : WordPress() {
     override fun initDaggerComponent() {

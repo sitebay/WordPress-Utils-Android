@@ -1,29 +1,29 @@
-package org.wordpress.android.ui.reader.services.post;
+package org.sitebay.android.ui.reader.services.post;
 
 import android.text.TextUtils;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.ReaderPostTable;
-import org.wordpress.android.datasets.ReaderTagTable;
-import org.wordpress.android.models.ReaderPost;
-import org.wordpress.android.models.ReaderPostList;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.models.ReaderTagType;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.actions.ReaderActions;
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostId;
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.ReaderPostTable;
+import org.sitebay.android.datasets.ReaderTagTable;
+import org.sitebay.android.models.ReaderPost;
+import org.sitebay.android.models.ReaderPostList;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.models.ReaderTagType;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.actions.ReaderActions;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostId;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.UrlUtils;
 
 public class ReaderPostLogic {
     private ServiceCompletionListener mCompletionListener;
@@ -123,7 +123,7 @@ public class ReaderPostLogic {
 
         sb.append("&meta=site,likes");
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 // remember when this tag was updated if newer posts were requested
@@ -157,7 +157,7 @@ public class ReaderPostLogic {
             }
         }
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 handleUpdatePostsResponse(null, jsonObject, updateAction, resultListener);
@@ -185,7 +185,7 @@ public class ReaderPostLogic {
             }
         }
 
-        com.wordpress.rest.RestRequest.Listener listener = new RestRequest.Listener() {
+        com.sitebay.rest.RestRequest.Listener listener = new RestRequest.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
                 handleUpdatePostsResponse(null, jsonObject, updateAction, resultListener);

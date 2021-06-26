@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.content.Context
 import androidx.work.Constraints
@@ -16,10 +16,10 @@ import androidx.work.WorkerFactory
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
 import kotlinx.coroutines.runBlocking
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.uploads.UploadStarter
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.uploads.UploadStarter
 import java.util.concurrent.TimeUnit.HOURS
 
 class UploadWorker(

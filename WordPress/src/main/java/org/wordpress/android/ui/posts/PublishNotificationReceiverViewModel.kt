@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.SCHEDULED
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.TEN_MINUTES
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.WHEN_PUBLISHED
-import org.wordpress.android.fluxc.store.PostStore
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.SCHEDULED
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.TEN_MINUTES
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.WHEN_PUBLISHED
+import org.sitebay.android.fluxc.store.PostStore
+import org.sitebay.android.viewmodel.ResourceProvider
 import javax.inject.Inject
 
 class PublishNotificationReceiverViewModel

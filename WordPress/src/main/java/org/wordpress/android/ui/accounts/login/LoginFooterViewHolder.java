@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.accounts.login;
+package org.sitebay.android.ui.accounts.login;
 
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 public class LoginFooterViewHolder extends RecyclerView.ViewHolder {
     private final TextView mFooterTextView;

@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.bloggingreminders
+package org.sitebay.android.ui.bloggingreminders
 
 import androidx.annotation.DrawableRes
-import org.wordpress.android.fluxc.model.BloggingRemindersModel
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Type.CAPTION
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Type.DAY_BUTTONS
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Type.HIGH_EMPHASIS_TEXT
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Type.ILLUSTRATION
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Type.LOW_EMPHASIS_TEXT
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Type.TIP
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersItem.Type.TITLE
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.utils.UiString
+import org.sitebay.android.fluxc.model.BloggingRemindersModel
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Type.CAPTION
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Type.DAY_BUTTONS
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Type.HIGH_EMPHASIS_TEXT
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Type.ILLUSTRATION
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Type.LOW_EMPHASIS_TEXT
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Type.TIP
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersItem.Type.TITLE
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.utils.UiString
 
 sealed class BloggingRemindersItem(val type: Type) {
     enum class Type {

@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.prefs.homepage
+package org.sitebay.android.ui.prefs.homepage
 
 import com.nhaarman.mockitokotlin2.mock
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.page.PageModel
-import org.wordpress.android.fluxc.model.page.PageStatus.PUBLISHED
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsSelectorUiState.PageUiModel
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.page.PageModel
+import org.sitebay.android.fluxc.model.page.PageStatus.PUBLISHED
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsSelectorUiState.PageUiModel
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
 import java.util.Date
 
 @RunWith(MockitoJUnitRunner::class)

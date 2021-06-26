@@ -1,21 +1,21 @@
-package org.wordpress.android.ui.sitecreation.services
+package org.sitebay.android.ui.sitecreation.services
 
 import android.app.Notification
 import android.app.Service
 import android.content.Context
 import android.content.Intent
-import org.wordpress.android.WordPress
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceManager.SiteCreationServiceManagerListener
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
-import org.wordpress.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.AutoForeground
-import org.wordpress.android.util.LocaleManager
+import org.sitebay.android.WordPress
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceManager.SiteCreationServiceManagerListener
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.CREATE_SITE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.FAILURE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.IDLE
+import org.sitebay.android.ui.sitecreation.services.SiteCreationServiceState.SiteCreationStep.SUCCESS
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.AutoForeground
+import org.sitebay.android.util.LocaleManager
 import java.util.HashMap
 import javax.inject.Inject
 

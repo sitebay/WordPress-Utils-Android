@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.stats.refresh.lists
+package org.sitebay.android.ui.stats.refresh.lists
 
 import androidx.recyclerview.widget.DiffUtil.Callback
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.EmptyBlock
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Error
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Loading
-import org.wordpress.android.ui.stats.refresh.lists.StatsBlock.Success
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.EmptyBlock
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Error
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Loading
+import org.sitebay.android.ui.stats.refresh.lists.StatsBlock.Success
 
 class StatsBlockDiffCallback(
     private val oldList: List<StatsBlock>,

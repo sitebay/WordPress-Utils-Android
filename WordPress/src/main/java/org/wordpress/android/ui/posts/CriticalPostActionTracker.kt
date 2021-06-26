@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.fluxc.model.LocalOrRemoteId.LocalId
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.fluxc.model.LocalOrRemoteId.LocalId
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
 
 class CriticalPostActionTracker(
     private val onStateChanged: () -> Unit,

@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.accounts.login.jetpack
+package org.sitebay.android.ui.accounts.login.jetpack
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.accounts.LoginNavigationEvents
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowInstructions
-import org.wordpress.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ScopedViewModel
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.accounts.LoginNavigationEvents
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowInstructions
+import org.sitebay.android.ui.accounts.LoginNavigationEvents.ShowSignInForResultJetpackOnly
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ScopedViewModel
 import javax.inject.Inject
 import javax.inject.Named
 

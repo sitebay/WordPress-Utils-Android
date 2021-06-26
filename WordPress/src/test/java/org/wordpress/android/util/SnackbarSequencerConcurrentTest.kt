@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import android.app.Activity
 import android.view.View
@@ -20,10 +20,10 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.SnackbarItem.Info
-import org.wordpress.android.widgets.WPSnackbarWrapper
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.SnackbarItem.Info
+import org.sitebay.android.widgets.WPSnackbarWrapper
 
 private val TEST_MESSAGE_TEMPLATE = "This is test message number "
 private val SNACKBAR_DURATION_MS = 500L

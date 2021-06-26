@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 
 import android.content.Context;
@@ -7,9 +7,9 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.aztec.plugins.IMediaToolbarButton;
-import org.wordpress.aztec.toolbar.AztecToolbar;
-import org.wordpress.aztec.toolbar.IToolbarAction;
+import org.sitebay.aztec.plugins.IMediaToolbarButton;
+import org.sitebay.aztec.toolbar.AztecToolbar;
+import org.sitebay.aztec.toolbar.IToolbarAction;
 
 public class MediaToolbarCameraButton implements IMediaToolbarButton {
     private IMediaToolbarClickListener mClickListener;

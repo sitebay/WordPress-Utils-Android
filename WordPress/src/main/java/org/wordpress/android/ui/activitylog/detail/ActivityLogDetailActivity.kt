@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.activitylog.detail
+package org.sitebay.android.ui.activitylog.detail
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.databinding.ActivityLogDetailActivityBinding
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.RequestCodes
+import org.sitebay.android.databinding.ActivityLogDetailActivityBinding
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.RequestCodes
 
 class ActivityLogDetailActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

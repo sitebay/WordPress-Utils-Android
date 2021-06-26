@@ -2,7 +2,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.wordpress.android.editor.example" >
+    package="org.sitebay.android.editor.example" >
 
     <application
         android:allowBackup="true"

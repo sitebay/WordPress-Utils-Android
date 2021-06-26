@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import android.content.Context
 import android.os.Bundle
@@ -11,10 +11,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.RecyclerViewBottomSheetBinding
-import org.wordpress.android.viewmodel.main.WPMainActivityViewModel
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.RecyclerViewBottomSheetBinding
+import org.sitebay.android.viewmodel.main.WPMainActivityViewModel
 import javax.inject.Inject
 
 class MainBottomSheetFragment : BottomSheetDialogFragment() {

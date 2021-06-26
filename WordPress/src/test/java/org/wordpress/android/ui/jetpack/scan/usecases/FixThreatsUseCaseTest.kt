@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.scan.usecases
+package org.sitebay.android.ui.jetpack.scan.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -7,17 +7,17 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.action.ScanAction.FIX_THREATS
-import org.wordpress.android.fluxc.store.ScanStore
-import org.wordpress.android.fluxc.store.ScanStore.FixThreatsError
-import org.wordpress.android.fluxc.store.ScanStore.FixThreatsErrorType.INVALID_RESPONSE
-import org.wordpress.android.fluxc.store.ScanStore.OnFixThreatsStarted
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.scan.usecases.FixThreatsUseCase.FixThreatsState.Failure
-import org.wordpress.android.ui.jetpack.scan.usecases.FixThreatsUseCase.FixThreatsState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.action.ScanAction.FIX_THREATS
+import org.sitebay.android.fluxc.store.ScanStore
+import org.sitebay.android.fluxc.store.ScanStore.FixThreatsError
+import org.sitebay.android.fluxc.store.ScanStore.FixThreatsErrorType.INVALID_RESPONSE
+import org.sitebay.android.fluxc.store.ScanStore.OnFixThreatsStarted
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.scan.usecases.FixThreatsUseCase.FixThreatsState.Failure
+import org.sitebay.android.ui.jetpack.scan.usecases.FixThreatsUseCase.FixThreatsState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 
 @InternalCoroutinesApi
 class FixThreatsUseCaseTest : BaseUnitTest() {

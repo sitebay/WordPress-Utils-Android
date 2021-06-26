@@ -1,4 +1,4 @@
-package org.wordpress.android.util.image
+package org.sitebay.android.util.image
 
 enum class BlavatarShape {
     SQUARE,

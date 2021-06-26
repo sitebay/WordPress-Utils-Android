@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.accounts.login
+package org.sitebay.android.ui.accounts.login
 
 import androidx.annotation.LayoutRes
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import org.wordpress.android.R
+import org.sitebay.android.R
 
 class LoginProloguePagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     private val pages = listOf(

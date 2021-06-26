@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.media.services;
+package org.sitebay.android.ui.media.services;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.util.helpers.MediaFile;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.util.helpers.MediaFile;
 
 /**
  * Callbacks - requests for editor capabilities to replace media once it's finished uploading

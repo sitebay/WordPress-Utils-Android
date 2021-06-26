@@ -36,7 +36,7 @@
             app:layout_constraintStart_toStartOf="@id/image_blavatar"
             app:layout_constraintTop_toTopOf="@+id/text_subtitle" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/text_subtitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="text_subtitle" />
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/text_title"
             style="@style/ReaderTextView.Post.Title"
             android:layout_width="0dp"

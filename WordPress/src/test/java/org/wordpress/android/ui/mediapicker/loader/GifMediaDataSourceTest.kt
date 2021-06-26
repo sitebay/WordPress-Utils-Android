@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mediapicker.loader
+package org.sitebay.android.ui.mediapicker.loader
 
 import android.content.Context
 import com.nhaarman.mockitokotlin2.any
@@ -15,18 +15,18 @@ import org.mockito.ArgumentMatchers.anyString
 import org.mockito.Mock
 import org.mockito.Mockito.doAnswer
 import org.mockito.invocation.InvocationOnMock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.test
-import org.wordpress.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.test
+import org.sitebay.android.ui.mediapicker.loader.MediaSource.MediaLoadingResult
 import com.tenor.android.core.model.impl.Result
-import org.wordpress.android.R
-import org.wordpress.android.ui.mediapicker.loader.GifMediaDataSourceTest.GifResponseTestScenario.EmptyList
-import org.wordpress.android.ui.mediapicker.loader.GifMediaDataSourceTest.GifResponseTestScenario.PopulatedList
-import org.wordpress.android.ui.utils.UiString.UiStringRes
-import org.wordpress.android.ui.utils.UiString.UiStringText
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.util.UriUtilsWrapper
-import org.wordpress.android.util.UriWrapper
+import org.sitebay.android.R
+import org.sitebay.android.ui.mediapicker.loader.GifMediaDataSourceTest.GifResponseTestScenario.EmptyList
+import org.sitebay.android.ui.mediapicker.loader.GifMediaDataSourceTest.GifResponseTestScenario.PopulatedList
+import org.sitebay.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.ui.utils.UiString.UiStringText
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.util.UriUtilsWrapper
+import org.sitebay.android.util.UriWrapper
 
 @InternalCoroutinesApi
 class GifMediaDataSourceTest : BaseUnitTest() {

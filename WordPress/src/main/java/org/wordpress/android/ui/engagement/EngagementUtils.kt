@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.engagement
+package org.sitebay.android.ui.engagement
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.LikeModel
-import org.wordpress.android.ui.engagement.EngageItem.Liker
-import org.wordpress.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
+import org.sitebay.android.fluxc.model.LikeModel
+import org.sitebay.android.ui.engagement.EngageItem.Liker
+import org.sitebay.android.ui.engagement.EngagedListNavigationEvent.OpenUserProfileBottomSheet.UserProfile
 import javax.inject.Inject
 
 @Reusable

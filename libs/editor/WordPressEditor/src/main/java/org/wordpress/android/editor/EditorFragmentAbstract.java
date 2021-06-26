@@ -1,4 +1,4 @@
-package org.wordpress.android.editor;
+package org.sitebay.android.editor;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -13,9 +13,9 @@ import androidx.lifecycle.LiveData;
 
 import com.android.volley.toolbox.ImageLoader;
 
-import org.wordpress.android.editor.gutenberg.DialogVisibilityProvider;
-import org.wordpress.android.util.helpers.MediaFile;
-import org.wordpress.android.util.helpers.MediaGallery;
+import org.sitebay.android.editor.gutenberg.DialogVisibilityProvider;
+import org.sitebay.android.util.helpers.MediaFile;
+import org.sitebay.android.util.helpers.MediaGallery;
 
 import java.util.ArrayList;
 import java.util.HashMap;

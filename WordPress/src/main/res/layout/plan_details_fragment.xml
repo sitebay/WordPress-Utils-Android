@@ -17,7 +17,7 @@
         android:paddingStart="0dp"
         android:paddingTop="@dimen/margin_extra_large">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/buy_plan_header"
             android:layout_width="wrap_content"
             android:layout_height="34dp"
@@ -44,7 +44,7 @@
             android:focusable="true"
             android:orientation="vertical">
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/plan_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 tools:text="Micro" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/plan_cost_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:textAppearance="@style/WordPress.ActionMode.SubtitleTextStyle"
                 tools:text="$15 per month" />
 
-            <org.wordpress.android.widgets.WPTextView
+            <org.sitebay.android.widgets.WPTextView
                 android:id="@+id/plan_tagline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

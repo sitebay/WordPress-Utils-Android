@@ -1,13 +1,13 @@
-package org.wordpress.android.ui.stats.refresh.lists.widget
+package org.sitebay.android.ui.stats.refresh.lists.widget
 
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Context
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetUpdater
-import org.wordpress.android.ui.stats.refresh.lists.widget.minified.MinifiedWidgetUpdater
-import org.wordpress.android.ui.stats.refresh.lists.widget.today.TodayWidgetUpdater
-import org.wordpress.android.ui.stats.refresh.lists.widget.views.ViewsWidgetUpdater
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.stats.refresh.lists.widget.alltime.AllTimeWidgetUpdater
+import org.sitebay.android.ui.stats.refresh.lists.widget.minified.MinifiedWidgetUpdater
+import org.sitebay.android.ui.stats.refresh.lists.widget.today.TodayWidgetUpdater
+import org.sitebay.android.ui.stats.refresh.lists.widget.views.ViewsWidgetUpdater
 import javax.inject.Inject
 
 interface WidgetUpdater {

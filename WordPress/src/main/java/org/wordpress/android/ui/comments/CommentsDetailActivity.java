@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.comments;
+package org.sitebay.android.ui.comments;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -16,33 +16,33 @@ import com.google.android.material.appbar.AppBarLayout;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.action.CommentAction;
-import org.wordpress.android.fluxc.generated.CommentActionBuilder;
-import org.wordpress.android.fluxc.model.CommentModel;
-import org.wordpress.android.fluxc.model.CommentStatus;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.CommentStore;
-import org.wordpress.android.fluxc.store.CommentStore.FetchCommentsPayload;
-import org.wordpress.android.fluxc.store.CommentStore.OnCommentChanged;
-import org.wordpress.android.models.CommentList;
-import org.wordpress.android.ui.CollapseFullScreenDialogFragment;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.ui.ScrollableViewInitializedListener;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils.AnalyticsCommentActionSource;
-import org.wordpress.android.widgets.WPViewPager;
-import org.wordpress.android.widgets.WPViewPagerTransformer;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.action.CommentAction;
+import org.sitebay.android.fluxc.generated.CommentActionBuilder;
+import org.sitebay.android.fluxc.model.CommentModel;
+import org.sitebay.android.fluxc.model.CommentStatus;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.CommentStore;
+import org.sitebay.android.fluxc.store.CommentStore.FetchCommentsPayload;
+import org.sitebay.android.fluxc.store.CommentStore.OnCommentChanged;
+import org.sitebay.android.models.CommentList;
+import org.sitebay.android.ui.CollapseFullScreenDialogFragment;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.ui.ScrollableViewInitializedListener;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils.AnalyticsCommentActionSource;
+import org.sitebay.android.widgets.WPViewPager;
+import org.sitebay.android.widgets.WPViewPagerTransformer;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.ui.comments.CommentsListFragment.COMMENTS_PER_PAGE;
+import static org.sitebay.android.ui.comments.CommentsListFragment.COMMENTS_PER_PAGE;
 
 /**
  * @deprecated

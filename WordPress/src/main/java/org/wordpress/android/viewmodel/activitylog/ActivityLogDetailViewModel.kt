@@ -1,21 +1,21 @@
-package org.wordpress.android.viewmodel.activitylog
+package org.sitebay.android.viewmodel.activitylog
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel.ActivityActor
-import org.wordpress.android.fluxc.store.ActivityLogStore
-import org.wordpress.android.fluxc.tools.FormattableRange
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailModel
-import org.wordpress.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T.ACTIVITY_LOG
-import org.wordpress.android.util.toFormattedDateString
-import org.wordpress.android.util.toFormattedTimeString
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.SingleLiveEvent
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel.ActivityActor
+import org.sitebay.android.fluxc.store.ActivityLogStore
+import org.sitebay.android.fluxc.tools.FormattableRange
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailModel
+import org.sitebay.android.ui.activitylog.detail.ActivityLogDetailNavigationEvents
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T.ACTIVITY_LOG
+import org.sitebay.android.util.toFormattedDateString
+import org.sitebay.android.util.toFormattedTimeString
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.SingleLiveEvent
 import javax.inject.Inject
 
 const val ACTIVITY_LOG_ID_KEY: String = "activity_log_id_key"

@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.jetpack.scan
+package org.sitebay.android.ui.jetpack.scan
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.databinding.ScanActivityBinding
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.ActivityLauncher
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.databinding.ScanActivityBinding
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.ActivityLauncher
 
 class ScanActivity : AppCompatActivity() {
     override fun onNewIntent(intent: Intent?) {

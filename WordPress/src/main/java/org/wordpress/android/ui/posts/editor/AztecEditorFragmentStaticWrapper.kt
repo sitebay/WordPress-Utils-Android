@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import android.content.Context
 import dagger.Reusable
-import org.wordpress.android.editor.AztecEditorFragment
+import org.sitebay.android.editor.AztecEditorFragment
 import javax.inject.Inject
 
 /**

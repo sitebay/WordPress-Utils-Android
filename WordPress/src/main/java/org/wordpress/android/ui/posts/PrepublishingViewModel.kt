@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -9,18 +9,18 @@ import androidx.lifecycle.ViewModel
 import kotlinx.parcelize.Parcelize
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.generated.TaxonomyActionBuilder
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged
-import org.wordpress.android.ui.posts.PrepublishingHomeItemUiState.ActionType
-import org.wordpress.android.ui.posts.PrepublishingScreen.ADD_CATEGORY
-import org.wordpress.android.ui.posts.PrepublishingScreen.CATEGORIES
-import org.wordpress.android.ui.posts.PrepublishingScreen.HOME
-import org.wordpress.android.ui.posts.PrepublishingScreen.PUBLISH
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.viewmodel.Event
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.generated.TaxonomyActionBuilder
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged
+import org.sitebay.android.ui.posts.PrepublishingHomeItemUiState.ActionType
+import org.sitebay.android.ui.posts.PrepublishingScreen.ADD_CATEGORY
+import org.sitebay.android.ui.posts.PrepublishingScreen.CATEGORIES
+import org.sitebay.android.ui.posts.PrepublishingScreen.HOME
+import org.sitebay.android.ui.posts.PrepublishingScreen.PUBLISH
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.viewmodel.Event
 import java.io.Serializable
 import javax.inject.Inject
 

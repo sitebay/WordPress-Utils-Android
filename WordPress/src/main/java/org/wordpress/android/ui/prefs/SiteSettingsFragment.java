@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -59,51 +59,51 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.BuildConfig;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.analytics.AnalyticsTracker;
-import org.wordpress.android.analytics.AnalyticsTracker.Stat;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.SiteActionBuilder;
-import org.wordpress.android.fluxc.model.SiteHomepageSettings.ShowOnFront;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.AccountStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.SiteStore.DeleteSiteError;
-import org.wordpress.android.fluxc.store.SiteStore.OnSiteChanged;
-import org.wordpress.android.support.ZendeskHelper;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.WPWebViewActivity;
-import org.wordpress.android.ui.accounts.HelpActivity.Origin;
-import org.wordpress.android.ui.bloggingreminders.BloggingReminderUtils;
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersViewModel;
-import org.wordpress.android.ui.bloggingreminders.BloggingRemindersViewModel.Screen;
-import org.wordpress.android.ui.plans.PlansConstants;
-import org.wordpress.android.ui.prefs.EditTextPreferenceWithValidation.ValidationType;
-import org.wordpress.android.ui.prefs.SiteSettingsFormatDialog.FormatType;
-import org.wordpress.android.ui.prefs.homepage.HomepageSettingsDialog;
-import org.wordpress.android.ui.prefs.timezone.SiteSettingsTimezoneBottomSheet;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.ContextExtensionsKt;
-import org.wordpress.android.util.ContextUtilsKt;
-import org.wordpress.android.util.HtmlUtils;
-import org.wordpress.android.util.LocaleManager;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.SiteUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.UrlUtils;
-import org.wordpress.android.util.ValidationUtils;
-import org.wordpress.android.util.ViewUtilsKt;
-import org.wordpress.android.util.WPActivityUtils;
-import org.wordpress.android.util.WPPrefUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils;
-import org.wordpress.android.util.analytics.AnalyticsUtils.BlockEditorEnabledSource;
-import org.wordpress.android.util.config.BloggingRemindersFeatureConfig;
-import org.wordpress.android.util.config.ManageCategoriesFeatureConfig;
-import org.wordpress.android.widgets.WPSnackbar;
+import org.sitebay.android.BuildConfig;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.analytics.AnalyticsTracker;
+import org.sitebay.android.analytics.AnalyticsTracker.Stat;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.SiteActionBuilder;
+import org.sitebay.android.fluxc.model.SiteHomepageSettings.ShowOnFront;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.AccountStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.SiteStore.DeleteSiteError;
+import org.sitebay.android.fluxc.store.SiteStore.OnSiteChanged;
+import org.sitebay.android.support.ZendeskHelper;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.WPWebViewActivity;
+import org.sitebay.android.ui.accounts.HelpActivity.Origin;
+import org.sitebay.android.ui.bloggingreminders.BloggingReminderUtils;
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersViewModel;
+import org.sitebay.android.ui.bloggingreminders.BloggingRemindersViewModel.Screen;
+import org.sitebay.android.ui.plans.PlansConstants;
+import org.sitebay.android.ui.prefs.EditTextPreferenceWithValidation.ValidationType;
+import org.sitebay.android.ui.prefs.SiteSettingsFormatDialog.FormatType;
+import org.sitebay.android.ui.prefs.homepage.HomepageSettingsDialog;
+import org.sitebay.android.ui.prefs.timezone.SiteSettingsTimezoneBottomSheet;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.ContextExtensionsKt;
+import org.sitebay.android.util.ContextUtilsKt;
+import org.sitebay.android.util.HtmlUtils;
+import org.sitebay.android.util.LocaleManager;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.SiteUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.UrlUtils;
+import org.sitebay.android.util.ValidationUtils;
+import org.sitebay.android.util.ViewUtilsKt;
+import org.sitebay.android.util.WPActivityUtils;
+import org.sitebay.android.util.WPPrefUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils;
+import org.sitebay.android.util.analytics.AnalyticsUtils.BlockEditorEnabledSource;
+import org.sitebay.android.util.config.BloggingRemindersFeatureConfig;
+import org.sitebay.android.util.config.ManageCategoriesFeatureConfig;
+import org.sitebay.android.widgets.WPSnackbar;
 
 import java.util.HashMap;
 import java.util.List;
@@ -112,7 +112,7 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.ui.prefs.WPComSiteSettings.supportsJetpackSiteAcceleratorSettings;
+import static org.sitebay.android.ui.prefs.WPComSiteSettings.supportsJetpackSiteAcceleratorSettings;
 
 /**
  * Allows interfacing with WordPress site settings. Works with WP.com and WP.org v4.5+ (pending).
@@ -141,14 +141,14 @@ public class SiteSettingsFragment extends PreferenceFragment
     public static final String ADDRESS_FORMAT_REGEX = "^(https?://(w{3})?|www\\.)";
 
     /**
-     * url that points to wordpress.com purchases
+     * url that points to sitebay.com purchases
      */
-    public static final String WORDPRESS_PURCHASES_URL = "https://wordpress.com/purchases";
+    public static final String WORDPRESS_PURCHASES_URL = "https://sitebay.com/purchases";
 
     /**
      * url for redirecting free users to empty their sites (start over)
      */
-    public static final String WORDPRESS_EMPTY_SITE_SUPPORT_URL = "https://en.support.wordpress.com/empty-site/";
+    public static final String WORDPRESS_EMPTY_SITE_SUPPORT_URL = "https://en.support.sitebay.com/empty-site/";
 
     /**
      * Used to move the Uncategorized category to the beginning of the category list.
@@ -1689,7 +1689,7 @@ public class SiteSettingsFragment extends PreferenceFragment
         }
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType(ContactsContract.CommonDataKinds.Email.CONTENT_ITEM_TYPE);
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"help@wordpress.com"});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"help@sitebay.com"});
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.start_over_email_subject,
                 SiteUtils.getHomeURLOrHostName(mSite)));
         intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.start_over_email_body, mSite.getUrl()));

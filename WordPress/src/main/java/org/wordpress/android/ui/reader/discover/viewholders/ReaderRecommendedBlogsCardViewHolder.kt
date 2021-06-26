@@ -1,16 +1,16 @@
-package org.wordpress.android.ui.reader.discover.viewholders
+package org.sitebay.android.ui.reader.discover.viewholders
 
 import android.view.ViewGroup
-import org.wordpress.android.R
-import org.wordpress.android.databinding.ReaderRecommendedBlogsCardBinding
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState
-import org.wordpress.android.ui.reader.discover.ReaderCardUiState.ReaderRecommendedBlogsCardUiState
-import org.wordpress.android.ui.reader.discover.ReaderRecommendedBlogsAdapter
-import org.wordpress.android.ui.utils.UiHelpers
-import org.wordpress.android.ui.utils.addItemDivider
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.image.ImageManager
-import org.wordpress.android.util.viewBinding
+import org.sitebay.android.R
+import org.sitebay.android.databinding.ReaderRecommendedBlogsCardBinding
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState
+import org.sitebay.android.ui.reader.discover.ReaderCardUiState.ReaderRecommendedBlogsCardUiState
+import org.sitebay.android.ui.reader.discover.ReaderRecommendedBlogsAdapter
+import org.sitebay.android.ui.utils.UiHelpers
+import org.sitebay.android.ui.utils.addItemDivider
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.image.ImageManager
+import org.sitebay.android.util.viewBinding
 
 class ReaderRecommendedBlogsCardViewHolder(
     parentView: ViewGroup,

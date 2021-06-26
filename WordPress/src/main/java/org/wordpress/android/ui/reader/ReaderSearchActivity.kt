@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.reader
+package org.sitebay.android.ui.reader
 
 import android.os.Bundle
-import org.wordpress.android.R
-import org.wordpress.android.WordPress
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.reader.tracker.ReaderTracker
-import org.wordpress.android.ui.reader.tracker.ReaderTrackerType.MAIN_READER
+import org.sitebay.android.R
+import org.sitebay.android.WordPress
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.reader.tracker.ReaderTracker
+import org.sitebay.android.ui.reader.tracker.ReaderTrackerType.MAIN_READER
 import javax.inject.Inject
 
 /**

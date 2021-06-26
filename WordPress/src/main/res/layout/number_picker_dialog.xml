@@ -15,7 +15,7 @@
         android:textAlignment="viewStart"
         android:textAppearance="?attr/textAppearanceSubtitle1" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/number_picker_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <org.wordpress.android.widgets.WPTextView
+        <org.sitebay.android.widgets.WPTextView
             android:id="@+id/number_picker_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

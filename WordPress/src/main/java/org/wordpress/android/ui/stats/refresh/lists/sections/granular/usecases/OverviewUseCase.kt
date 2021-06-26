@@ -1,33 +1,33 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases
+package org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases
 
 import kotlinx.coroutines.CoroutineDispatcher
-import org.wordpress.android.R
-import org.wordpress.android.analytics.AnalyticsTracker
-import org.wordpress.android.analytics.AnalyticsTracker.Stat.STATS_OVERVIEW_ERROR
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.stats.LimitMode
-import org.wordpress.android.fluxc.model.stats.time.VisitsAndViewsModel
-import org.wordpress.android.fluxc.network.utils.StatsGranularity
-import org.wordpress.android.fluxc.store.StatsStore.TimeStatsType.OVERVIEW
-import org.wordpress.android.fluxc.store.stats.time.VisitsAndViewsStore
-import org.wordpress.android.modules.BG_THREAD
-import org.wordpress.android.modules.UI_THREAD
-import org.wordpress.android.ui.stats.refresh.lists.sections.BaseStatsUseCase
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.GranularUseCaseFactory
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
-import org.wordpress.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewUseCase.UiState
-import org.wordpress.android.ui.stats.refresh.lists.widget.WidgetUpdater.StatsWidgetUpdaters
-import org.wordpress.android.ui.stats.refresh.utils.StatsDateFormatter
-import org.wordpress.android.ui.stats.refresh.utils.StatsSiteProvider
-import org.wordpress.android.ui.stats.refresh.utils.toStatsSection
-import org.wordpress.android.ui.stats.refresh.utils.trackGranular
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.AppLog.T
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.util.analytics.AnalyticsTrackerWrapper
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.analytics.AnalyticsTracker
+import org.sitebay.android.analytics.AnalyticsTracker.Stat.STATS_OVERVIEW_ERROR
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.stats.LimitMode
+import org.sitebay.android.fluxc.model.stats.time.VisitsAndViewsModel
+import org.sitebay.android.fluxc.network.utils.StatsGranularity
+import org.sitebay.android.fluxc.store.StatsStore.TimeStatsType.OVERVIEW
+import org.sitebay.android.fluxc.store.stats.time.VisitsAndViewsStore
+import org.sitebay.android.modules.BG_THREAD
+import org.sitebay.android.modules.UI_THREAD
+import org.sitebay.android.ui.stats.refresh.lists.sections.BaseStatsUseCase
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.BlockListItem.ValueItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.GranularUseCaseFactory
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.SelectedDateProvider
+import org.sitebay.android.ui.stats.refresh.lists.sections.granular.usecases.OverviewUseCase.UiState
+import org.sitebay.android.ui.stats.refresh.lists.widget.WidgetUpdater.StatsWidgetUpdaters
+import org.sitebay.android.ui.stats.refresh.utils.StatsDateFormatter
+import org.sitebay.android.ui.stats.refresh.utils.StatsSiteProvider
+import org.sitebay.android.ui.stats.refresh.utils.toStatsSection
+import org.sitebay.android.ui.stats.refresh.utils.trackGranular
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.AppLog.T
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.util.analytics.AnalyticsTrackerWrapper
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Named
@@ -109,7 +109,7 @@ constructor(
 
     /**
      * Track the incorrect data shown for some users
-     * see https://github.com/wordpress-mobile/WordPress-Android/issues/11412
+     * see https://github.com/sitebay-mobile/WordPress-Android/issues/11412
      */
     private fun logIfIncorrectData(
         model: VisitsAndViewsModel,

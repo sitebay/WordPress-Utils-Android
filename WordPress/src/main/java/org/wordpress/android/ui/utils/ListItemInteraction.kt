@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.utils
+package org.sitebay.android.ui.utils
 
 interface ListItemInteraction {
     fun click()

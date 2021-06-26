@@ -1,29 +1,29 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.management
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.management
 
 import kotlinx.coroutines.InternalCoroutinesApi
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.R
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.store.StatsStore.InsightType
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.ALL_TIME_STATS
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.ANNUAL_SITE_STATS
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.COMMENTS
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.FOLLOWERS
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.FOLLOWER_TOTALS
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.LATEST_POST_SUMMARY
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.MOST_POPULAR_DAY_AND_HOUR
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.POSTING_ACTIVITY
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.PUBLICIZE
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.TAGS_AND_CATEGORIES
-import org.wordpress.android.fluxc.store.StatsStore.InsightType.TODAY_STATS
-import org.wordpress.android.test
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Header
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel.Status
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.R
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.store.StatsStore.InsightType
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.ALL_TIME_STATS
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.ANNUAL_SITE_STATS
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.COMMENTS
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.FOLLOWERS
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.FOLLOWER_TOTALS
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.LATEST_POST_SUMMARY
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.MOST_POPULAR_DAY_AND_HOUR
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.POSTING_ACTIVITY
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.PUBLICIZE
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.TAGS_AND_CATEGORIES
+import org.sitebay.android.fluxc.store.StatsStore.InsightType.TODAY_STATS
+import org.sitebay.android.test
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.Header
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel.Status
 
 class InsightsManagementMapperTest : BaseUnitTest() {
     private lateinit var insightsManagementMapper: InsightsManagementMapper

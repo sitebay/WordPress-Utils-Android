@@ -1,12 +1,12 @@
-package org.wordpress.android.ui.main
+package org.sitebay.android.ui.main
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import org.wordpress.android.R
-import org.wordpress.android.ui.LocaleAwareActivity
-import org.wordpress.android.ui.RequestCodes
-import org.wordpress.android.ui.prefs.AppSettingsFragment.LANGUAGE_CHANGED
+import org.sitebay.android.R
+import org.sitebay.android.ui.LocaleAwareActivity
+import org.sitebay.android.ui.RequestCodes
+import org.sitebay.android.ui.prefs.AppSettingsFragment.LANGUAGE_CHANGED
 
 class MeActivity : LocaleAwareActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

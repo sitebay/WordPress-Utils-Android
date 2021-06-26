@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,36 +17,36 @@ import androidx.fragment.app.FragmentTransaction;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.generated.TaxonomyActionBuilder;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.TermModel;
-import org.wordpress.android.fluxc.store.PostStore;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.fluxc.store.TaxonomyStore;
-import org.wordpress.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged;
-import org.wordpress.android.fluxc.store.TaxonomyStore.OnTermUploaded;
-import org.wordpress.android.fluxc.store.TaxonomyStore.RemoteTermPayload;
-import org.wordpress.android.models.CategoryNode;
-import org.wordpress.android.ui.LocaleAwareActivity;
-import org.wordpress.android.util.NetworkUtils;
-import org.wordpress.android.util.ToastUtils;
-import org.wordpress.android.util.ToastUtils.Duration;
-import org.wordpress.android.util.helpers.ListScrollPositionManager;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper;
-import org.wordpress.android.util.helpers.SwipeToRefreshHelper.RefreshListener;
-import org.wordpress.android.util.widgets.CustomSwipeRefreshLayout;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.generated.TaxonomyActionBuilder;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.TermModel;
+import org.sitebay.android.fluxc.store.PostStore;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.fluxc.store.TaxonomyStore;
+import org.sitebay.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged;
+import org.sitebay.android.fluxc.store.TaxonomyStore.OnTermUploaded;
+import org.sitebay.android.fluxc.store.TaxonomyStore.RemoteTermPayload;
+import org.sitebay.android.models.CategoryNode;
+import org.sitebay.android.ui.LocaleAwareActivity;
+import org.sitebay.android.util.NetworkUtils;
+import org.sitebay.android.util.ToastUtils;
+import org.sitebay.android.util.ToastUtils.Duration;
+import org.sitebay.android.util.helpers.ListScrollPositionManager;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper;
+import org.sitebay.android.util.helpers.SwipeToRefreshHelper.RefreshListener;
+import org.sitebay.android.util.widgets.CustomSwipeRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.ui.posts.EditPostActivity.EXTRA_POST_LOCAL_ID;
-import static org.wordpress.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
+import static org.sitebay.android.ui.posts.EditPostActivity.EXTRA_POST_LOCAL_ID;
+import static org.sitebay.android.util.WPSwipeToRefreshHelper.buildSwipeToRefreshHelper;
 
 public class SelectCategoriesActivity extends LocaleAwareActivity {
     public static final String KEY_SELECTED_CATEGORY_IDS = "KEY_SELECTED_CATEGORY_IDS";

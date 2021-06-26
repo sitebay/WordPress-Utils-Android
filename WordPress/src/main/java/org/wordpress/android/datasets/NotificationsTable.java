@@ -1,4 +1,4 @@
-package org.wordpress.android.datasets;
+package org.sitebay.android.datasets;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -8,10 +8,10 @@ import android.text.TextUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.models.Note;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.SqlUtils;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.models.Note;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.SqlUtils;
 
 import java.util.ArrayList;
 import java.util.List;

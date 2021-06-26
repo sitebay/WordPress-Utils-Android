@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.fluxc.model.PostModel
+import org.sitebay.android.fluxc.model.PostModel
 
 sealed class PostInfoType {
     object PostNoInfo : PostInfoType()

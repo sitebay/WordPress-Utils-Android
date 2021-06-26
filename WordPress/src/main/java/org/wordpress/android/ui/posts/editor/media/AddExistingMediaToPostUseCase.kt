@@ -1,8 +1,8 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.posts.editor.EditorTracker
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.posts.editor.EditorTracker
 import javax.inject.Inject
 
 enum class AddExistingMediaSource {

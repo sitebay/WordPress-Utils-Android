@@ -153,7 +153,7 @@
         "wordads": false,
         "has_jetpack_search_product": true,
         "akismet_show_user_comments_approved": false,
-        "wordpress_api_key": "",
+        "sitebay_api_key": "",
         "dismiss_dash_app_card": false,
         "dismiss_empty_stats_card": false,
         "lang_id": "en_US",

@@ -1,15 +1,15 @@
-package org.wordpress.android.ui.uploads
+package org.sitebay.android.ui.uploads
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.store.UploadStore
-import org.wordpress.android.ui.posts.PostUtilsWrapper
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.DO_NOTHING
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.REMOTE_AUTO_SAVE
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD
-import org.wordpress.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD_AS_DRAFT
-import org.wordpress.android.util.DateTimeUtils
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.store.UploadStore
+import org.sitebay.android.ui.posts.PostUtilsWrapper
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.DO_NOTHING
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.REMOTE_AUTO_SAVE
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD
+import org.sitebay.android.ui.uploads.UploadActionUseCase.UploadAction.UPLOAD_AS_DRAFT
+import org.sitebay.android.util.DateTimeUtils
 import java.util.Date
 import javax.inject.Inject
 

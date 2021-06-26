@@ -1,7 +1,7 @@
-package org.wordpress.android.ui.stats;
+package org.sitebay.android.ui.stats;
 
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
 
 /**
  * Timeframes for the stats pages.

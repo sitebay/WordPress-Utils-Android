@@ -14,10 +14,10 @@
             "ID": 181851495,
             "name": "Four Paws Dog Grooming",
             "description": "",
-            "URL": "https:\/\/fourpawsdoggrooming.wordpress.com",
+            "URL": "https:\/\/fourpawsdoggrooming.sitebay.com",
             "lang": "en",
             "settings": {
-                "admin_url": "https:\/\/fourpawsdoggrooming.wordpress.com\/wp-admin\/",
+                "admin_url": "https:\/\/fourpawsdoggrooming.sitebay.com\/wp-admin\/",
                 "default_ping_status": true,
                 "default_comment_status": true,
                 "instant_search_enabled": false,

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <org.wordpress.android.widgets.WPTextView
+    <org.sitebay.android.widgets.WPTextView
         android:id="@+id/promo_title"
         style="@style/Widget.LoginFlow.TextView.PromoTitle"
         android:layout_width="0dp"

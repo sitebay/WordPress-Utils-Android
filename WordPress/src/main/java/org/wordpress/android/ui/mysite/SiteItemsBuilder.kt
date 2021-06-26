@@ -1,11 +1,11 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.mysite.MySiteItem.CategoryHeader
-import org.wordpress.android.ui.mysite.MySiteItem.ListItem
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.mysite.MySiteItem.CategoryHeader
+import org.sitebay.android.ui.mysite.MySiteItem.ListItem
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 import javax.inject.Inject
 
 class SiteItemsBuilder

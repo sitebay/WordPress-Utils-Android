@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.sitecreation.domains
+package org.sitebay.android.ui.sitecreation.domains
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
@@ -23,20 +23,20 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentCaptor
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.Dispatcher
-import org.wordpress.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
-import org.wordpress.android.fluxc.store.SiteStore.OnSuggestedDomains
-import org.wordpress.android.fluxc.store.SiteStore.SuggestDomainError
-import org.wordpress.android.test
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsFetchSuggestionsErrorUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState.DomainsModelAvailableUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState.DomainsModelUnavailabilityUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsUiState
-import org.wordpress.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsUiState.DomainsUiContentState
-import org.wordpress.android.ui.sitecreation.misc.SiteCreationTracker
-import org.wordpress.android.ui.sitecreation.usecases.FetchDomainsUseCase
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.Dispatcher
+import org.sitebay.android.fluxc.network.rest.wpcom.site.DomainSuggestionResponse
+import org.sitebay.android.fluxc.store.SiteStore.OnSuggestedDomains
+import org.sitebay.android.fluxc.store.SiteStore.SuggestDomainError
+import org.sitebay.android.test
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsFetchSuggestionsErrorUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState.DomainsModelAvailableUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsListItemUiState.DomainsModelUiState.DomainsModelUnavailabilityUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsUiState
+import org.sitebay.android.ui.sitecreation.domains.SiteCreationDomainsViewModel.DomainsUiState.DomainsUiContentState
+import org.sitebay.android.ui.sitecreation.misc.SiteCreationTracker
+import org.sitebay.android.ui.sitecreation.usecases.FetchDomainsUseCase
+import org.sitebay.android.util.NetworkUtilsWrapper
 import org.hamcrest.CoreMatchers.`is` as Is
 
 private const val MULTI_RESULT_DOMAIN_FETCH_RESULT_SIZE = 20
@@ -93,7 +93,7 @@ class SiteCreationDomainsViewModelTest {
                     "${MULTI_RESULT_DOMAIN_FETCH_QUERY.first}-1"
             )
             whenever(mSiteCreationDomainSanitizer.getDomain(any())).thenReturn(
-                    ".wordpress.com"
+                    ".sitebay.com"
             )
             whenever(mSiteCreationDomainSanitizer.sanitizeDomainQuery(any())).thenReturn(
                     createSanitizedDomainResult(isDomainAvailableInSuggestions)
@@ -322,7 +322,7 @@ class SiteCreationDomainsViewModelTest {
     private fun createSuccessfulOnSuggestedDomains(queryResultSizePair: Pair<String, Int>): OnSuggestedDomains {
         val suggestions = (0..(queryResultSizePair.second - 1)).map {
             val response = DomainSuggestionResponse()
-            response.domain_name = "${queryResultSizePair.first}-$it.wordpress.com"
+            response.domain_name = "${queryResultSizePair.first}-$it.sitebay.com"
             response
         }
         return OnSuggestedDomains(queryResultSizePair.first, suggestions)

@@ -1,10 +1,10 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 public class PhotoPickerUtils {
     public static void announceSelectedImageForAccessibility(@NonNull ImageView imageThumbnail, boolean itemSelected) {

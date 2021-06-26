@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.backup.download.usecases
+package org.sitebay.android.ui.jetpack.backup.download.usecases
 
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.whenever
@@ -7,24 +7,24 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.action.ActivityLogAction.BACKUP_DOWNLOAD
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.fluxc.model.activity.BackupDownloadStatusModel
-import org.wordpress.android.fluxc.store.ActivityLogStore
-import org.wordpress.android.fluxc.store.ActivityLogStore.BackupDownloadError
-import org.wordpress.android.fluxc.store.ActivityLogStore.BackupDownloadErrorType.API_ERROR
-import org.wordpress.android.fluxc.store.ActivityLogStore.BackupDownloadErrorType.GENERIC_ERROR
-import org.wordpress.android.fluxc.store.ActivityLogStore.BackupDownloadErrorType.INVALID_RESPONSE
-import org.wordpress.android.fluxc.store.ActivityLogStore.BackupDownloadRequestTypes
-import org.wordpress.android.fluxc.store.ActivityLogStore.OnBackupDownload
-import org.wordpress.android.test
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.NetworkUnavailable
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.OtherRequestRunning
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.RemoteRequestFailure
-import org.wordpress.android.ui.jetpack.backup.download.BackupDownloadRequestState.Success
-import org.wordpress.android.util.NetworkUtilsWrapper
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.action.ActivityLogAction.BACKUP_DOWNLOAD
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.fluxc.model.activity.BackupDownloadStatusModel
+import org.sitebay.android.fluxc.store.ActivityLogStore
+import org.sitebay.android.fluxc.store.ActivityLogStore.BackupDownloadError
+import org.sitebay.android.fluxc.store.ActivityLogStore.BackupDownloadErrorType.API_ERROR
+import org.sitebay.android.fluxc.store.ActivityLogStore.BackupDownloadErrorType.GENERIC_ERROR
+import org.sitebay.android.fluxc.store.ActivityLogStore.BackupDownloadErrorType.INVALID_RESPONSE
+import org.sitebay.android.fluxc.store.ActivityLogStore.BackupDownloadRequestTypes
+import org.sitebay.android.fluxc.store.ActivityLogStore.OnBackupDownload
+import org.sitebay.android.test
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.NetworkUnavailable
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.OtherRequestRunning
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Failure.RemoteRequestFailure
+import org.sitebay.android.ui.jetpack.backup.download.BackupDownloadRequestState.Success
+import org.sitebay.android.util.NetworkUtilsWrapper
 import java.util.Date
 
 @InternalCoroutinesApi
@@ -159,6 +159,6 @@ class PostBackupDownloadUseCaseTest : BaseUnitTest() {
             progress = null,
             downloadCount = 0,
             validUntil = Date(1609690147756),
-            url = "www.wordpress.com"
+            url = "www.sitebay.com"
     )
 }

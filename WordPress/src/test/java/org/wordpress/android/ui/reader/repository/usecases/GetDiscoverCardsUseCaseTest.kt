@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.mock
@@ -13,19 +13,19 @@ import org.junit.runner.RunWith
 import org.mockito.ArgumentMatchers.anyBoolean
 import org.mockito.ArgumentMatchers.anyLong
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.datasets.ReaderBlogTableWrapper
-import org.wordpress.android.datasets.ReaderDiscoverCardsTableWrapper
-import org.wordpress.android.datasets.wrappers.ReaderPostTableWrapper
-import org.wordpress.android.fluxc.utils.AppLogWrapper
-import org.wordpress.android.models.ReaderBlog
-import org.wordpress.android.models.discover.ReaderDiscoverCard.InterestsYouMayLikeCard
-import org.wordpress.android.models.discover.ReaderDiscoverCard.ReaderPostCard
-import org.wordpress.android.models.discover.ReaderDiscoverCard.ReaderRecommendedBlogsCard
-import org.wordpress.android.models.discover.ReaderDiscoverCard.WelcomeBannerCard
-import org.wordpress.android.test
-import org.wordpress.android.ui.prefs.AppPrefsWrapper
-import org.wordpress.android.ui.reader.ReaderConstants
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.datasets.ReaderBlogTableWrapper
+import org.sitebay.android.datasets.ReaderDiscoverCardsTableWrapper
+import org.sitebay.android.datasets.wrappers.ReaderPostTableWrapper
+import org.sitebay.android.fluxc.utils.AppLogWrapper
+import org.sitebay.android.models.ReaderBlog
+import org.sitebay.android.models.discover.ReaderDiscoverCard.InterestsYouMayLikeCard
+import org.sitebay.android.models.discover.ReaderDiscoverCard.ReaderPostCard
+import org.sitebay.android.models.discover.ReaderDiscoverCard.ReaderRecommendedBlogsCard
+import org.sitebay.android.models.discover.ReaderDiscoverCard.WelcomeBannerCard
+import org.sitebay.android.test
+import org.sitebay.android.ui.prefs.AppPrefsWrapper
+import org.sitebay.android.ui.reader.ReaderConstants
 
 @InternalCoroutinesApi
 @RunWith(MockitoJUnitRunner::class)

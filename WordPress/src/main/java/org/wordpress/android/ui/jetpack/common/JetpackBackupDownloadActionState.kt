@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.common
+package org.sitebay.android.ui.jetpack.common
 
 enum class JetpackBackupDownloadActionState(val id: Int) {
     CANCEL(0),

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.suggestion.util;
+package org.sitebay.android.ui.suggestion.util;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
-import org.wordpress.android.ui.suggestion.service.SuggestionService;
+import org.sitebay.android.ui.suggestion.service.SuggestionService;
 
 public class SuggestionServiceConnectionManager implements ServiceConnection {
     private final Context mContext;

@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts.editor.media
+package org.sitebay.android.ui.posts.editor.media
 
 import android.net.Uri
 import com.nhaarman.mockitokotlin2.any
@@ -13,14 +13,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mockito.inOrder
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.fluxc.model.MediaModel
-import org.wordpress.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.test
-import org.wordpress.android.ui.posts.editor.media.CopyMediaToAppStorageUseCase.CopyMediaResult
-import org.wordpress.android.ui.posts.editor.media.GetMediaModelUseCase.CreateMediaModelsResult
-import org.wordpress.android.ui.posts.editor.media.OptimizeMediaUseCase.OptimizeMediaResult
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.fluxc.model.MediaModel
+import org.sitebay.android.fluxc.model.MediaModel.MediaUploadState.QUEUED
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.test
+import org.sitebay.android.ui.posts.editor.media.CopyMediaToAppStorageUseCase.CopyMediaResult
+import org.sitebay.android.ui.posts.editor.media.GetMediaModelUseCase.CreateMediaModelsResult
+import org.sitebay.android.ui.posts.editor.media.OptimizeMediaUseCase.OptimizeMediaResult
 
 @RunWith(MockitoJUnitRunner::class)
 @UseExperimental(InternalCoroutinesApi::class)

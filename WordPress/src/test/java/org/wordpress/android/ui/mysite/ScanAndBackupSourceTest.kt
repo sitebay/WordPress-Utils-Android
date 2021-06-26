@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.InternalCoroutinesApi
@@ -7,14 +7,14 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.wordpress.android.BaseUnitTest
-import org.wordpress.android.TEST_DISPATCHER
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.test
-import org.wordpress.android.testScope
-import org.wordpress.android.ui.jetpack.JetpackCapabilitiesUseCase
-import org.wordpress.android.ui.jetpack.JetpackCapabilitiesUseCase.JetpackPurchasedProducts
-import org.wordpress.android.ui.mysite.MySiteUiState.PartialState.JetpackCapabilities
+import org.sitebay.android.BaseUnitTest
+import org.sitebay.android.TEST_DISPATCHER
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.test
+import org.sitebay.android.testScope
+import org.sitebay.android.ui.jetpack.JetpackCapabilitiesUseCase
+import org.sitebay.android.ui.jetpack.JetpackCapabilitiesUseCase.JetpackPurchasedProducts
+import org.sitebay.android.ui.mysite.MySiteUiState.PartialState.JetpackCapabilities
 
 class ScanAndBackupSourceTest : BaseUnitTest() {
     @Mock lateinit var selectedSiteRepository: SelectedSiteRepository

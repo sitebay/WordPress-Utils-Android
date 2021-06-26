@@ -1,10 +1,10 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import androidx.core.app.NotificationManagerCompat
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import org.wordpress.android.viewmodel.ContextProvider
-import org.wordpress.android.workers.LocalNotification.Type
+import org.sitebay.android.viewmodel.ContextProvider
+import org.sitebay.android.workers.LocalNotification.Type
 import javax.inject.Inject
 
 class LocalNotificationScheduler @Inject constructor(

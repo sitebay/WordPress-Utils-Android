@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.prefs;
+package org.sitebay.android.ui.prefs;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -21,11 +21,11 @@ import androidx.appcompat.app.AlertDialog;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.radiobutton.MaterialRadioButton;
 
-import org.wordpress.android.Constants;
-import org.wordpress.android.R;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.EditTextUtils;
+import org.sitebay.android.Constants;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.EditTextUtils;
 
 /**
  * Custom date/time format dialog

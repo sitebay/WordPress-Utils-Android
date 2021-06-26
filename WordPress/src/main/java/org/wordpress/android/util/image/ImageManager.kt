@@ -1,4 +1,4 @@
-package org.wordpress.android.util.image
+package org.sitebay.android.util.image
 
 import android.app.Activity
 import android.app.Application
@@ -34,13 +34,13 @@ import com.bumptech.glide.request.target.ViewTarget
 import com.bumptech.glide.request.transition.Transition
 import com.bumptech.glide.signature.ObjectKey
 import kotlinx.coroutines.CoroutineScope
-import org.wordpress.android.WordPress
-import org.wordpress.android.modules.GlideApp
-import org.wordpress.android.modules.GlideRequest
-import org.wordpress.android.networking.MShot
-import org.wordpress.android.ui.media.VideoLoader
-import org.wordpress.android.util.AppLog
-import org.wordpress.android.util.image.ImageType.VIDEO
+import org.sitebay.android.WordPress
+import org.sitebay.android.modules.GlideApp
+import org.sitebay.android.modules.GlideRequest
+import org.sitebay.android.networking.MShot
+import org.sitebay.android.ui.media.VideoLoader
+import org.sitebay.android.util.AppLog
+import org.sitebay.android.util.image.ImageType.VIDEO
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -296,7 +296,7 @@ class ImageManager @Inject constructor(
      * Loads an [MShot] into an [ImageView] and attaches a [RequestListener].
      *
      * This is needed because the mshot service redirects to a loading gif image when the thumbnail is not ready.
-     * The loading is handled by [org.wordpress.android.networking.GlideMShotsLoader]
+     * The loading is handled by [org.sitebay.android.networking.GlideMShotsLoader]
      */
     fun loadWithResultListener(view: ImageView, design: MShot, requestListener: RequestListener<Drawable>) {
         val context = view.context

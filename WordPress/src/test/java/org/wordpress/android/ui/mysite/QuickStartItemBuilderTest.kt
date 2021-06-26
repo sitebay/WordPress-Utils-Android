@@ -1,25 +1,25 @@
-package org.wordpress.android.ui.mysite
+package org.sitebay.android.ui.mysite
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.DynamicCardType.CUSTOMIZE_QUICK_START
-import org.wordpress.android.fluxc.model.DynamicCardType.GROW_QUICK_START
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.PUBLISH_POST
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTask.VIEW_SITE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTaskType.CUSTOMIZE
-import org.wordpress.android.fluxc.store.QuickStartStore.QuickStartTaskType.GROW
-import org.wordpress.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard.QuickStartTaskCard
-import org.wordpress.android.ui.mysite.QuickStartRepository.QuickStartCategory
-import org.wordpress.android.ui.mysite.dynamiccards.DynamicCardMenuFragment.DynamicCardMenuModel
-import org.wordpress.android.ui.quickstart.QuickStartTaskDetails.PUBLISH_POST_TUTORIAL
-import org.wordpress.android.ui.quickstart.QuickStartTaskDetails.UPDATE_SITE_TITLE
-import org.wordpress.android.ui.quickstart.QuickStartTaskDetails.VIEW_SITE_TUTORIAL
-import org.wordpress.android.ui.utils.ListItemInteraction
-import org.wordpress.android.ui.utils.UiString.UiStringRes
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.DynamicCardType.CUSTOMIZE_QUICK_START
+import org.sitebay.android.fluxc.model.DynamicCardType.GROW_QUICK_START
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.PUBLISH_POST
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTask.VIEW_SITE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTaskType.CUSTOMIZE
+import org.sitebay.android.fluxc.store.QuickStartStore.QuickStartTaskType.GROW
+import org.sitebay.android.ui.mysite.MySiteItem.DynamicCard.QuickStartCard.QuickStartTaskCard
+import org.sitebay.android.ui.mysite.QuickStartRepository.QuickStartCategory
+import org.sitebay.android.ui.mysite.dynamiccards.DynamicCardMenuFragment.DynamicCardMenuModel
+import org.sitebay.android.ui.quickstart.QuickStartTaskDetails.PUBLISH_POST_TUTORIAL
+import org.sitebay.android.ui.quickstart.QuickStartTaskDetails.UPDATE_SITE_TITLE
+import org.sitebay.android.ui.quickstart.QuickStartTaskDetails.VIEW_SITE_TUTORIAL
+import org.sitebay.android.ui.utils.ListItemInteraction
+import org.sitebay.android.ui.utils.UiString.UiStringRes
 
 @RunWith(MockitoJUnitRunner::class)
 class QuickStartItemBuilderTest {

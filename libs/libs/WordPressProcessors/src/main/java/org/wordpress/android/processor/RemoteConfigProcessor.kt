@@ -1,11 +1,11 @@
-package org.wordpress.android.processor
+package org.sitebay.android.processor
 
 import com.google.auto.service.AutoService
 import com.squareup.kotlinpoet.TypeName
 import com.squareup.kotlinpoet.asTypeName
-import org.wordpress.android.annotation.Experiment
-import org.wordpress.android.annotation.Feature
-import org.wordpress.android.annotation.FeatureInDevelopment
+import org.sitebay.android.annotation.Experiment
+import org.sitebay.android.annotation.Feature
+import org.sitebay.android.annotation.FeatureInDevelopment
 import java.io.File
 import javax.annotation.processing.AbstractProcessor
 import javax.annotation.processing.Processor
@@ -20,9 +20,9 @@ import javax.tools.Diagnostic.Kind
 @AutoService(Processor::class) // For registering the service
 @SupportedSourceVersion(SourceVersion.RELEASE_8) // to support Java 8
 @SupportedAnnotationTypes(
-        "org.wordpress.android.annotation.Experiment",
-        "org.wordpress.android.annotation.Feature",
-        "org.wordpress.android.annotation.FeatureInDevelopment"
+        "org.sitebay.android.annotation.Experiment",
+        "org.sitebay.android.annotation.Feature",
+        "org.sitebay.android.annotation.FeatureInDevelopment"
 )
 class RemoteConfigProcessor : AbstractProcessor() {
     override fun process(p0: MutableSet<out TypeElement>?, roundEnvironment: RoundEnvironment?): Boolean {

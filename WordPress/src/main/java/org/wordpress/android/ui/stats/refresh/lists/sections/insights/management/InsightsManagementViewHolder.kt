@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.stats.refresh.lists.sections.insights.management
+package org.sitebay.android.ui.stats.refresh.lists.sections.insights.management
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,11 +7,11 @@ import android.view.ViewGroup.MarginLayoutParams
 import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import org.wordpress.android.R
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightModelDiffCallback.Payload
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel
-import org.wordpress.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel.Status.ADDED
+import org.sitebay.android.R
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightModelDiffCallback.Payload
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel
+import org.sitebay.android.ui.stats.refresh.lists.sections.insights.management.InsightsManagementViewModel.InsightListItem.InsightModel.Status.ADDED
 
 sealed class InsightsManagementViewHolder(
     parent: ViewGroup,

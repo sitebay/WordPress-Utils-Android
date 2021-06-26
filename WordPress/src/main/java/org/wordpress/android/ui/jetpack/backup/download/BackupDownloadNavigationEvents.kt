@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.jetpack.backup.download
+package org.sitebay.android.ui.jetpack.backup.download
 
 sealed class BackupDownloadNavigationEvents {
     data class ShareLink(val url: String) : BackupDownloadNavigationEvents()

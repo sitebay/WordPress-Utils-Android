@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.reader.views
+package org.sitebay.android.ui.reader.views
 
-import org.wordpress.android.ui.reader.views.uistates.FollowButtonUiState
+import org.sitebay.android.ui.reader.views.uistates.FollowButtonUiState
 
 sealed class ReaderTagHeaderViewUiState {
     data class ReaderTagHeaderUiState(

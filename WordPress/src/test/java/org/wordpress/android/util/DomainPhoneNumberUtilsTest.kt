@@ -1,4 +1,4 @@
-package org.wordpress.android.util
+package org.sitebay.android.util
 
 import org.assertj.core.api.Assertions
 import org.junit.Test

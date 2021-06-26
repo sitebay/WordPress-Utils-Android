@@ -226,9 +226,9 @@ Language: eu_ES
     <string name="stats_insights_today">Gaurko estatistikak</string>
     <string name="stats_insights_all_time">Inoizko bidalketa, ikustaldi eta bisitari guztiak</string>
     <string name="stats_insights">Ezagutzak</string>
-    <string name="me_disconnect_from_wordpress_com">Itxi saioa WordPress.com-en</string>
+    <string name="me_disconnect_from_sitebay_com">Itxi saioa WordPress.com-en</string>
     <string name="me_btn_login_logout">Hasi/itxi saioa</string>
-    <string name="me_connect_to_wordpress_com">Hasi saioa WordPress.com-en</string>
+    <string name="me_connect_to_sitebay_com">Hasi saioa WordPress.com-en</string>
     <string name="account_settings">Kontuaren ezarpenak</string>
     <string name="me_btn_support">Laguntza eta euskarria</string>
     <string name="site_picker_add_self_hosted">Gehitu zuk ostatatutako gunea</string>
@@ -337,7 +337,7 @@ Language: eu_ES
     <string name="category_name">Kategoriaren izena</string>
     <string name="privacy_policy">Pribatutasun politika</string>
     <string name="local_changes">Aldaketa lokalak</string>
-    <string name="wordpress_blog">WordPress-eko bloga</string>
+    <string name="sitebay_blog">WordPress-eko bloga</string>
     <string name="select_categories">Kategoriak aukeratu</string>
     <string name="local_draft">Zirriborro lokala</string>
     <string name="view_in_browser">Nabigatzailean ikusi</string>

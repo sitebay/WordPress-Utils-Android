@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.uploads;
+package org.sitebay.android.ui.uploads;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -13,36 +13,36 @@ import androidx.collection.SparseArrayCompat;
 import androidx.core.app.NotificationCompat;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.model.MediaModel;
-import org.wordpress.android.fluxc.model.PostImmutableModel;
-import org.wordpress.android.fluxc.model.PostModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.model.post.PostStatus;
-import org.wordpress.android.push.NotificationType;
-import org.wordpress.android.push.NotificationsProcessingService;
-import org.wordpress.android.ui.RequestCodes;
-import org.wordpress.android.ui.media.MediaBrowserActivity;
-import org.wordpress.android.ui.notifications.ShareAndDismissNotificationReceiver;
-import org.wordpress.android.ui.notifications.SystemNotificationsTracker;
-import org.wordpress.android.ui.pages.PagesActivity;
-import org.wordpress.android.ui.posts.EditPostActivity;
-import org.wordpress.android.ui.posts.PostUtils;
-import org.wordpress.android.ui.posts.PostsListActivity;
-import org.wordpress.android.ui.posts.PostsListActivityKt;
-import org.wordpress.android.ui.prefs.AppPrefs;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
-import org.wordpress.android.util.SystemServiceFactory;
-import org.wordpress.android.util.WPMeShortlinks;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.model.MediaModel;
+import org.sitebay.android.fluxc.model.PostImmutableModel;
+import org.sitebay.android.fluxc.model.PostModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.model.post.PostStatus;
+import org.sitebay.android.push.NotificationType;
+import org.sitebay.android.push.NotificationsProcessingService;
+import org.sitebay.android.ui.RequestCodes;
+import org.sitebay.android.ui.media.MediaBrowserActivity;
+import org.sitebay.android.ui.notifications.ShareAndDismissNotificationReceiver;
+import org.sitebay.android.ui.notifications.SystemNotificationsTracker;
+import org.sitebay.android.ui.pages.PagesActivity;
+import org.sitebay.android.ui.posts.EditPostActivity;
+import org.sitebay.android.ui.posts.PostUtils;
+import org.sitebay.android.ui.posts.PostsListActivity;
+import org.sitebay.android.ui.posts.PostsListActivityKt;
+import org.sitebay.android.ui.prefs.AppPrefs;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
+import org.sitebay.android.util.SystemServiceFactory;
+import org.sitebay.android.util.WPMeShortlinks;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static org.wordpress.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
-import static org.wordpress.android.ui.pages.PagesActivityKt.EXTRA_PAGE_REMOTE_ID_KEY;
+import static org.sitebay.android.push.NotificationsProcessingService.ARG_NOTIFICATION_TYPE;
+import static org.sitebay.android.ui.pages.PagesActivityKt.EXTRA_PAGE_REMOTE_ID_KEY;
 
 class PostUploadNotifier {
     private final Context mContext;

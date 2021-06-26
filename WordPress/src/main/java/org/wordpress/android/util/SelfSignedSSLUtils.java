@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,9 +11,9 @@ import androidx.appcompat.app.AlertDialog;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import org.wordpress.android.fluxc.network.MemorizingTrustManager;
-import org.wordpress.android.ui.ActivityLauncher;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.fluxc.network.MemorizingTrustManager;
+import org.sitebay.android.ui.ActivityLauncher;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.ByteArrayInputStream;
 import java.security.cert.Certificate;
@@ -30,9 +30,9 @@ public class SelfSignedSSLUtils {
                                             @NonNull final MemorizingTrustManager memorizingTrustManager,
                                             @Nullable final Callback callback) {
         AlertDialog.Builder alert = new MaterialAlertDialogBuilder(context);
-        alert.setTitle(context.getString(org.wordpress.android.R.string.ssl_certificate_error));
-        alert.setMessage(context.getString(org.wordpress.android.R.string.ssl_certificate_ask_trust));
-        alert.setPositiveButton(org.wordpress.android.R.string.yes, new DialogInterface.OnClickListener() {
+        alert.setTitle(context.getString(org.sitebay.android.R.string.ssl_certificate_error));
+        alert.setMessage(context.getString(org.sitebay.android.R.string.ssl_certificate_ask_trust));
+        alert.setPositiveButton(org.sitebay.android.R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
                                         // Add the certificate to our list
                                         memorizingTrustManager.storeLastFailure();
@@ -43,7 +43,7 @@ public class SelfSignedSSLUtils {
                                     }
                                 }
                                );
-        alert.setNeutralButton(org.wordpress.android.R.string.ssl_certificate_details,
+        alert.setNeutralButton(org.sitebay.android.R.string.ssl_certificate_details,
                                new DialogInterface.OnClickListener() {
                                    public void onClick(DialogInterface dialog, int which) {
                                        ActivityLauncher.viewSSLCerts(context, memorizingTrustManager.getLastFailure()

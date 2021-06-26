@@ -1,27 +1,27 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
 import android.text.TextUtils
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.post.PostStatus
-import org.wordpress.android.fluxc.model.post.PostStatus.DRAFT
-import org.wordpress.android.fluxc.model.post.PostStatus.PUBLISHED
-import org.wordpress.android.fluxc.model.post.PostStatus.SCHEDULED
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.TEN_MINUTES
-import org.wordpress.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.WHEN_PUBLISHED
-import org.wordpress.android.fluxc.store.SiteStore
-import org.wordpress.android.ui.posts.EditPostRepository.UpdatePostResult
-import org.wordpress.android.util.DateTimeUtils
-import org.wordpress.android.util.LocaleManagerWrapper
-import org.wordpress.android.viewmodel.Event
-import org.wordpress.android.viewmodel.ResourceProvider
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.post.PostStatus
+import org.sitebay.android.fluxc.model.post.PostStatus.DRAFT
+import org.sitebay.android.fluxc.model.post.PostStatus.PUBLISHED
+import org.sitebay.android.fluxc.model.post.PostStatus.SCHEDULED
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.OFF
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.ONE_HOUR
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.TEN_MINUTES
+import org.sitebay.android.fluxc.store.PostSchedulingNotificationStore.SchedulingReminderModel.Period.WHEN_PUBLISHED
+import org.sitebay.android.fluxc.store.SiteStore
+import org.sitebay.android.ui.posts.EditPostRepository.UpdatePostResult
+import org.sitebay.android.util.DateTimeUtils
+import org.sitebay.android.util.LocaleManagerWrapper
+import org.sitebay.android.viewmodel.Event
+import org.sitebay.android.viewmodel.ResourceProvider
 import java.util.Calendar
 
 abstract class PublishSettingsViewModel

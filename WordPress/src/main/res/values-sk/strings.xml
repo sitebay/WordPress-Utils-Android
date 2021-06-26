@@ -98,7 +98,7 @@ Language: sk
     <string name="stats_comments_authors">Autori</string>
     <string name="stats_follower_since_label">Od</string>
     <string name="stats_followers_email">E-mail</string>
-    <string name="stats_followers_wordpress_com">WordPress.com</string>
+    <string name="stats_followers_sitebay_com">WordPress.com</string>
     <string name="stats_no_data_yet">Zatiaľ žiadne dáta</string>
     <string name="menu_debug">Menu ladenia</string>
     <string name="change_password_dialog_message">Prebieha zmena hesla…</string>
@@ -539,7 +539,7 @@ Language: sk
     <string name="plugin_external_link_icon_content_description">Externý odkaz</string>
     <string name="plugin_icon_content_description">Ikona pluginu</string>
     <string name="plugin_home_page">Domovská stránka pluginu</string>
-    <string name="wordpress_dot_org_plugin_page">WordPress.org stránka pluginov</string>
+    <string name="sitebay_dot_org_plugin_page">WordPress.org stránka pluginov</string>
     <string name="plugin_remove_dialog_message">Ste si istý, že chcete odstrániť %1$s z%2$s?\n\nTýmto deaktivujete pluginy a zmažete všetky príslišné súbory a dáta.</string>
     <string name="plugin_remove_dialog_title">Odstrániť plugin</string>
     <string name="plugin_remove_progress_dialog_message">Odstraňujem %s…</string>
@@ -692,7 +692,7 @@ Language: sk
     <string name="login_text_otp">Radšej mi pošlite kód</string>
     <string name="enter_verification_code">Takmer dokončené! Prosím, zadajte overovací kód z vašej aplikácie Authenticator.</string>
     <string name="next">Ďalej</string>
-    <string name="enter_email_wordpress_com">Prihláste sa do WordPress.com použití e-mailovej adresy a spravujte všetky vaše webové stránky WordPress.</string>
+    <string name="enter_email_sitebay_com">Prihláste sa do WordPress.com použití e-mailovej adresy a spravujte všetky vaše webové stránky WordPress.</string>
     <string name="image_optimization_promo_desc">Optimalizácia obrázkov zmenší obrázky pre rýchlejšie nahranie.\n\nPokyn môžete kedykoľvek zmeniť v nastaveniach webovej stránky.</string>
     <string name="image_optimization_promo_title">Zapnúť optimalizáciu obrázkov?</string>
     <string name="leave_off">Vynechať</string>
@@ -1240,8 +1240,8 @@ Language: sk
     <string name="stats_insights_today">Dnešné štatistiky</string>
     <string name="stats_insights_all_time">Články, zobrazenia a návštevníci počas celej doby</string>
     <string name="stats_insights">Prehľady</string>
-    <string name="me_disconnect_from_wordpress_com">Odhláste sa z WordPress.com</string>
-    <string name="me_connect_to_wordpress_com">Prihláste sa na WordPress.com</string>
+    <string name="me_disconnect_from_sitebay_com">Odhláste sa z WordPress.com</string>
+    <string name="me_connect_to_sitebay_com">Prihláste sa na WordPress.com</string>
     <string name="me_btn_login_logout">Prihlásiť/Odhlásiť</string>
     <string name="me_btn_support">Pomoc a podpora</string>
     <string name="account_settings">Nastavenia účtu</string>
@@ -1374,7 +1374,7 @@ Language: sk
     <string name="fatal_db_error">Počas vytvárania databázy sa vyskytla chyba. Preinštalujte aplikáciu.</string>
     <string name="error_blog_hidden">Blog je skrytý a nemôže byť načítaný. Povoľte ho v nastaveniach a skúste znova.</string>
     <string name="error_refresh_media">Média momentálne nemohli byť obnovené </string>
-    <string name="wordpress_blog">WordPress blog</string>
+    <string name="sitebay_blog">WordPress blog</string>
     <string name="image_settings">Nastavenie obrázka</string>
     <string name="local_changes">Miestne zmeny</string>
     <string name="privacy_policy">Ochrana osobných údajov</string>

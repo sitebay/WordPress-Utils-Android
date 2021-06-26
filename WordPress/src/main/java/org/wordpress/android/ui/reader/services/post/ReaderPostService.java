@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.reader.services.post;
+package org.sitebay.android.ui.reader.services.post;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.models.ReaderTag;
-import org.wordpress.android.ui.reader.ReaderEvents;
-import org.wordpress.android.ui.reader.services.ServiceCompletionListener;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.models.ReaderTag;
+import org.sitebay.android.ui.reader.ReaderEvents;
+import org.sitebay.android.ui.reader.services.ServiceCompletionListener;
+import org.sitebay.android.util.AppLog;
 
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_ACTION;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_BLOG_ID;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_FEED_ID;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG;
-import static org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_ACTION;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_BLOG_ID;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_FEED_ID;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.ARG_TAG;
+import static org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction;
 
 /**
  * service which updates posts with specific tags or in specific blogs/feeds - relies on

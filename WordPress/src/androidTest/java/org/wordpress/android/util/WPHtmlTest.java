@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.test.InstrumentationTestCase;
 import android.text.SpannableStringBuilder;

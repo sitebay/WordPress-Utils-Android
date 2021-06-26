@@ -8,7 +8,7 @@
     android:paddingEnd="16dp"
     android:paddingStart="16dp">
 
-    <org.wordpress.android.ui.WPWebView
+    <org.sitebay.android.ui.WPWebView
         android:id="@+id/web_view"
         android:layout_width="match_parent"
         android:layout_height="200dp"

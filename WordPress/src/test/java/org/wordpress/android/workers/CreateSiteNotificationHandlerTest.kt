@@ -1,4 +1,4 @@
-package org.wordpress.android.workers
+package org.sitebay.android.workers
 
 import com.nhaarman.mockitokotlin2.whenever
 import org.assertj.core.api.Assertions.assertThat
@@ -7,8 +7,8 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.junit.MockitoJUnitRunner
-import org.wordpress.android.fluxc.store.AccountStore
-import org.wordpress.android.fluxc.store.SiteStore
+import org.sitebay.android.fluxc.store.AccountStore
+import org.sitebay.android.fluxc.store.SiteStore
 
 @RunWith(MockitoJUnitRunner::class)
 class CreateSiteNotificationHandlerTest {

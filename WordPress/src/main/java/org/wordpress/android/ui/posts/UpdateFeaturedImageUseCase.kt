@@ -1,9 +1,9 @@
-package org.wordpress.android.ui.posts
+package org.sitebay.android.ui.posts
 
-import org.wordpress.android.fluxc.model.PostImmutableModel
-import org.wordpress.android.fluxc.model.PostModel
-import org.wordpress.android.ui.posts.EditPostRepository.UpdatePostResult
-import org.wordpress.android.ui.posts.EditPostRepository.UpdatePostResult.Updated
+import org.sitebay.android.fluxc.model.PostImmutableModel
+import org.sitebay.android.fluxc.model.PostModel
+import org.sitebay.android.ui.posts.EditPostRepository.UpdatePostResult
+import org.sitebay.android.ui.posts.EditPostRepository.UpdatePostResult.Updated
 import javax.inject.Inject
 
 class UpdateFeaturedImageUseCase @Inject constructor() {

@@ -1,17 +1,17 @@
-package org.wordpress.android.ui.notifications.utils;
+package org.sitebay.android.ui.notifications.utils;
 
 import com.android.volley.VolleyError;
-import com.wordpress.rest.RestRequest;
+import com.sitebay.rest.RestRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.NotificationsTable;
-import org.wordpress.android.models.Note;
-import org.wordpress.android.ui.notifications.NotificationEvents;
-import org.wordpress.android.util.AppLog;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.NotificationsTable;
+import org.sitebay.android.models.Note;
+import org.sitebay.android.ui.notifications.NotificationEvents;
+import org.sitebay.android.util.AppLog;
 
 import java.util.ArrayList;
 import java.util.List;

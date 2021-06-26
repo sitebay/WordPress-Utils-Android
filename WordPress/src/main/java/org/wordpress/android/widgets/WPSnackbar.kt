@@ -1,9 +1,9 @@
-package org.wordpress.android.widgets
+package org.sitebay.android.widgets
 
 import android.view.View
 import androidx.annotation.StringRes
 import com.google.android.material.snackbar.Snackbar
-import org.wordpress.android.util.AccessibilityUtils
+import org.sitebay.android.util.AccessibilityUtils
 
 class WPSnackbar {
     companion object {

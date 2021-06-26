@@ -1,11 +1,11 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import android.text.TextUtils;
 
-import org.wordpress.android.ui.Organization;
-import org.wordpress.android.ui.reader.ReaderConstants;
-import org.wordpress.android.ui.reader.utils.ReaderUtils;
-import org.wordpress.android.util.StringUtils;
+import org.sitebay.android.ui.Organization;
+import org.sitebay.android.ui.reader.ReaderConstants;
+import org.sitebay.android.ui.reader.utils.ReaderUtils;
+import org.sitebay.android.util.StringUtils;
 
 import java.io.Serializable;
 import java.util.Locale;

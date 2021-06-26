@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.jetpack.restore
+package org.sitebay.android.ui.jetpack.restore
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import org.wordpress.android.R
-import org.wordpress.android.fluxc.model.activity.ActivityLogModel
-import org.wordpress.android.ui.jetpack.common.JetpackListItemState
-import org.wordpress.android.ui.jetpack.restore.StateType.COMPLETE
-import org.wordpress.android.ui.jetpack.restore.StateType.DETAILS
-import org.wordpress.android.ui.jetpack.restore.StateType.ERROR
-import org.wordpress.android.ui.jetpack.restore.StateType.PROGRESS
-import org.wordpress.android.ui.jetpack.restore.StateType.WARNING
-import org.wordpress.android.ui.jetpack.restore.ToolbarState.CompleteToolbarState
-import org.wordpress.android.ui.jetpack.restore.ToolbarState.DetailsToolbarState
-import org.wordpress.android.ui.jetpack.restore.ToolbarState.ErrorToolbarState
-import org.wordpress.android.ui.jetpack.restore.ToolbarState.ProgressToolbarState
-import org.wordpress.android.ui.jetpack.restore.ToolbarState.WarningToolbarState
+import org.sitebay.android.R
+import org.sitebay.android.fluxc.model.activity.ActivityLogModel
+import org.sitebay.android.ui.jetpack.common.JetpackListItemState
+import org.sitebay.android.ui.jetpack.restore.StateType.COMPLETE
+import org.sitebay.android.ui.jetpack.restore.StateType.DETAILS
+import org.sitebay.android.ui.jetpack.restore.StateType.ERROR
+import org.sitebay.android.ui.jetpack.restore.StateType.PROGRESS
+import org.sitebay.android.ui.jetpack.restore.StateType.WARNING
+import org.sitebay.android.ui.jetpack.restore.ToolbarState.CompleteToolbarState
+import org.sitebay.android.ui.jetpack.restore.ToolbarState.DetailsToolbarState
+import org.sitebay.android.ui.jetpack.restore.ToolbarState.ErrorToolbarState
+import org.sitebay.android.ui.jetpack.restore.ToolbarState.ProgressToolbarState
+import org.sitebay.android.ui.jetpack.restore.ToolbarState.WarningToolbarState
 import java.util.Date
 
 abstract class RestoreUiState(open val type: StateType) {

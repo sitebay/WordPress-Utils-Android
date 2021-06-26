@@ -1,4 +1,4 @@
-package org.wordpress.android.networking;
+package org.sitebay.android.networking;
 
 /**
  * Interface that provides a method that should perform the necessary task to make sure

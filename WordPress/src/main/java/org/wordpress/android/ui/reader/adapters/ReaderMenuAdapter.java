@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.reader.adapters;
+package org.sitebay.android.ui.reader.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,13 +13,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.content.res.AppCompatResources;
 
-import org.wordpress.android.R;
-import org.wordpress.android.ui.reader.discover.ReaderPostCardAction;
-import org.wordpress.android.ui.reader.discover.ReaderPostCardAction.SecondaryAction;
-import org.wordpress.android.ui.reader.discover.ReaderPostCardActionType;
-import org.wordpress.android.ui.utils.UiHelpers;
-import org.wordpress.android.util.ColorUtils;
-import org.wordpress.android.util.ContextExtensionsKt;
+import org.sitebay.android.R;
+import org.sitebay.android.ui.reader.discover.ReaderPostCardAction;
+import org.sitebay.android.ui.reader.discover.ReaderPostCardAction.SecondaryAction;
+import org.sitebay.android.ui.reader.discover.ReaderPostCardActionType;
+import org.sitebay.android.ui.utils.UiHelpers;
+import org.sitebay.android.util.ColorUtils;
+import org.sitebay.android.util.ContextExtensionsKt;
 
 import java.util.ArrayList;
 import java.util.List;

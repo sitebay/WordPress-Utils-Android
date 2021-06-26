@@ -1,14 +1,14 @@
-package org.wordpress.android.ui.reader.repository.usecases
+package org.sitebay.android.ui.reader.repository.usecases
 
-import org.wordpress.android.models.ReaderTag
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
-import org.wordpress.android.ui.reader.repository.ReaderRepositoryCommunication.Started
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction
-import org.wordpress.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction.REQUEST_NEWER
-import org.wordpress.android.ui.reader.services.post.wrapper.ReaderPostServiceStarterWrapper
-import org.wordpress.android.util.NetworkUtilsWrapper
-import org.wordpress.android.viewmodel.ContextProvider
+import org.sitebay.android.models.ReaderTag
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Error.NetworkUnavailable
+import org.sitebay.android.ui.reader.repository.ReaderRepositoryCommunication.Started
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction
+import org.sitebay.android.ui.reader.services.post.ReaderPostServiceStarter.UpdateAction.REQUEST_NEWER
+import org.sitebay.android.ui.reader.services.post.wrapper.ReaderPostServiceStarterWrapper
+import org.sitebay.android.util.NetworkUtilsWrapper
+import org.sitebay.android.viewmodel.ContextProvider
 import javax.inject.Inject
 
 class FetchPostsForTagUseCase @Inject constructor(

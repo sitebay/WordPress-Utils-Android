@@ -1,8 +1,8 @@
-package org.wordpress.android.models;
+package org.sitebay.android.models;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.wordpress.android.ui.reader.models.ReaderBlogIdPostId;
+import org.sitebay.android.ui.reader.models.ReaderBlogIdPostId;
 
 import java.util.ArrayList;
 

@@ -1,19 +1,19 @@
-package org.wordpress.android.ui.jetpack.scan
+package org.sitebay.android.ui.jetpack.scan
 
-import org.wordpress.android.fluxc.model.scan.threat.BaseThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.CoreFileModificationThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.DatabaseThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.DatabaseThreatModel.Row
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel.ThreatContext
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel.ThreatContext.ContextLine
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.Fixable
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.Fixable.FixType
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.GenericThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel.Extension
-import org.wordpress.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel.Extension.ExtensionType
+import org.sitebay.android.fluxc.model.scan.threat.BaseThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.CoreFileModificationThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.DatabaseThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.DatabaseThreatModel.Row
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel.ThreatContext
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.FileThreatModel.ThreatContext.ContextLine
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.Fixable
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.Fixable.FixType
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.GenericThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.ThreatStatus
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel.Extension
+import org.sitebay.android.fluxc.model.scan.threat.ThreatModel.VulnerableExtensionThreatModel.Extension.ExtensionType
 import java.util.Date
 
 const val TEST_FILE_PATH = "/var/www/html/jp-scan-daily/wp-admin/index.php"

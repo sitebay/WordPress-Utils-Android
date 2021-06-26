@@ -1,11 +1,11 @@
-package org.wordpress.android.modules
+package org.sitebay.android.modules
 
 import android.content.Context
 import dagger.Module
 import dagger.Provides
-import org.wordpress.android.BuildConfig
-import org.wordpress.android.analytics.AnalyticsTrackerNosara
-import org.wordpress.android.analytics.Tracker
+import org.sitebay.android.BuildConfig
+import org.sitebay.android.analytics.AnalyticsTrackerNosara
+import org.sitebay.android.analytics.Tracker
 
 @Module
 class TrackerModule {

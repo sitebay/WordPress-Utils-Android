@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.notifications.blocks;
+package org.sitebay.android.ui.notifications.blocks;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -9,13 +9,13 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.wordpress.android.R;
-import org.wordpress.android.fluxc.tools.FormattableContent;
-import org.wordpress.android.ui.notifications.utils.NotificationsUtilsWrapper;
-import org.wordpress.android.util.FormattableContentUtilsKt;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.fluxc.tools.FormattableContent;
+import org.sitebay.android.ui.notifications.utils.NotificationsUtilsWrapper;
+import org.sitebay.android.util.FormattableContentUtilsKt;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 /**
  * A block that displays information about a User (such as a user that liked a post)

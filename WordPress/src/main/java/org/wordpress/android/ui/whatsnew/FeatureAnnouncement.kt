@@ -1,6 +1,6 @@
-package org.wordpress.android.ui.whatsnew
+package org.sitebay.android.ui.whatsnew
 
-import org.wordpress.android.fluxc.utils.WhatsNewAppVersionUtils
+import org.sitebay.android.fluxc.utils.WhatsNewAppVersionUtils
 
 data class FeatureAnnouncement(
     val appVersionName: String,

@@ -1,20 +1,20 @@
-package org.wordpress.android.ui.posts.editor
+package org.sitebay.android.ui.posts.editor
 
 import android.content.res.Configuration
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView.Orientation
-import org.wordpress.android.R
-import org.wordpress.android.editor.MediaToolbarAction
-import org.wordpress.android.fluxc.model.SiteModel
-import org.wordpress.android.ui.media.MediaBrowserType
-import org.wordpress.android.ui.photopicker.PhotoPickerFragment
-import org.wordpress.android.ui.photopicker.PhotoPickerFragment.PhotoPickerIcon
-import org.wordpress.android.ui.photopicker.PhotoPickerFragment.PhotoPickerListener
-import org.wordpress.android.util.ActivityUtils
-import org.wordpress.android.util.AniUtils
-import org.wordpress.android.util.DisplayUtils
+import org.sitebay.android.R
+import org.sitebay.android.editor.MediaToolbarAction
+import org.sitebay.android.fluxc.model.SiteModel
+import org.sitebay.android.ui.media.MediaBrowserType
+import org.sitebay.android.ui.photopicker.PhotoPickerFragment
+import org.sitebay.android.ui.photopicker.PhotoPickerFragment.PhotoPickerIcon
+import org.sitebay.android.ui.photopicker.PhotoPickerFragment.PhotoPickerListener
+import org.sitebay.android.util.ActivityUtils
+import org.sitebay.android.util.AniUtils
+import org.sitebay.android.util.DisplayUtils
 
 private const val PHOTO_PICKER_TAG = "photo_picker"
 

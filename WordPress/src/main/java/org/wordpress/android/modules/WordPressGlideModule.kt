@@ -1,4 +1,4 @@
-package org.wordpress.android.modules
+package org.sitebay.android.modules
 
 import android.content.Context
 import com.android.volley.RequestQueue
@@ -9,10 +9,10 @@ import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.integration.volley.VolleyUrlLoader
 import com.bumptech.glide.load.model.GlideUrl
 import com.bumptech.glide.module.AppGlideModule
-import org.wordpress.android.WordPress
-import org.wordpress.android.networking.GlideRequestFactory
-import org.wordpress.android.networking.MShot
-import org.wordpress.android.networking.GlideMShotsLoader
+import org.sitebay.android.WordPress
+import org.sitebay.android.networking.GlideRequestFactory
+import org.sitebay.android.networking.MShot
+import org.sitebay.android.networking.GlideMShotsLoader
 import java.io.InputStream
 import javax.inject.Inject
 import javax.inject.Named

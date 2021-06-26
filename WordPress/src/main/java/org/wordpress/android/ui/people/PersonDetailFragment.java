@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.people;
+package org.sitebay.android.ui.people;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -18,18 +18,18 @@ import androidx.fragment.app.Fragment;
 
 import org.apache.commons.text.StringEscapeUtils;
 import org.jetbrains.annotations.NotNull;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.datasets.PeopleTable;
-import org.wordpress.android.fluxc.model.RoleModel;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.SiteStore;
-import org.wordpress.android.models.Person;
-import org.wordpress.android.models.RoleUtils;
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.GravatarUtils;
-import org.wordpress.android.util.image.ImageManager;
-import org.wordpress.android.util.image.ImageType;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.datasets.PeopleTable;
+import org.sitebay.android.fluxc.model.RoleModel;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.SiteStore;
+import org.sitebay.android.models.Person;
+import org.sitebay.android.models.RoleUtils;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.GravatarUtils;
+import org.sitebay.android.util.image.ImageManager;
+import org.sitebay.android.util.image.ImageType;
 
 import java.text.SimpleDateFormat;
 import java.util.List;

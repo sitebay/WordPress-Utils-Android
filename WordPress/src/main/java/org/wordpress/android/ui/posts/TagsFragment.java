@@ -1,4 +1,4 @@
-package org.wordpress.android.ui.posts;
+package org.sitebay.android.ui.posts;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -20,17 +20,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.apache.commons.text.StringEscapeUtils;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-import org.wordpress.android.R;
-import org.wordpress.android.WordPress;
-import org.wordpress.android.fluxc.Dispatcher;
-import org.wordpress.android.fluxc.model.SiteModel;
-import org.wordpress.android.fluxc.store.TaxonomyStore;
-import org.wordpress.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged;
-import org.wordpress.android.util.ActivityUtils;
+import org.sitebay.android.R;
+import org.sitebay.android.WordPress;
+import org.sitebay.android.fluxc.Dispatcher;
+import org.sitebay.android.fluxc.model.SiteModel;
+import org.sitebay.android.fluxc.store.TaxonomyStore;
+import org.sitebay.android.fluxc.store.TaxonomyStore.OnTaxonomyChanged;
+import org.sitebay.android.util.ActivityUtils;
 
 import javax.inject.Inject;
 
-import static org.wordpress.android.ui.posts.PostSettingsTagsActivity.KEY_TAGS;
+import static org.sitebay.android.ui.posts.PostSettingsTagsActivity.KEY_TAGS;
 
 public abstract class TagsFragment extends Fragment implements TextWatcher, View.OnKeyListener, TagSelectedListener {
     private SiteModel mSite;

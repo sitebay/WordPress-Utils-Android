@@ -1,8 +1,8 @@
-package org.wordpress.android.models.wrappers
+package org.sitebay.android.models.wrappers
 
 import dagger.Reusable
-import org.wordpress.android.fluxc.model.TermModel
-import org.wordpress.android.models.CategoryNode
+import org.sitebay.android.fluxc.model.TermModel
+import org.sitebay.android.models.CategoryNode
 import java.util.ArrayList
 import javax.inject.Inject
 

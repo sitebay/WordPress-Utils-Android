@@ -1,10 +1,10 @@
-package org.wordpress.android.ui.jetpack.scan.details.adapters
+package org.sitebay.android.ui.jetpack.scan.details.adapters
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import org.wordpress.android.ui.jetpack.scan.details.ThreatDetailsListItemState.ThreatContextLinesItemState.ThreatContextLineItemState
-import org.wordpress.android.ui.jetpack.scan.details.adapters.viewholders.ThreatContextLineViewHolder
+import org.sitebay.android.ui.jetpack.scan.details.ThreatDetailsListItemState.ThreatContextLinesItemState.ThreatContextLineItemState
+import org.sitebay.android.ui.jetpack.scan.details.adapters.viewholders.ThreatContextLineViewHolder
 
 class ThreatContextLinesAdapter : Adapter<ThreatContextLineViewHolder>() {
     private val items = mutableListOf<ThreatContextLineItemState>()

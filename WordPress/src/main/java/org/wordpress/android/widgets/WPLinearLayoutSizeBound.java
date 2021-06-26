@@ -1,11 +1,11 @@
-package org.wordpress.android.widgets;
+package org.sitebay.android.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-import org.wordpress.android.R;
+import org.sitebay.android.R;
 
 
 public class WPLinearLayoutSizeBound extends LinearLayout {
