@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.app.KeyguardManager;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.os.StatFs;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.File;
 import java.io.IOException;

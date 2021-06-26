@@ -1,4 +1,4 @@
-package org.wordpress.android.util.helpers;
+package org.sitebay.android.util.helpers;
 
 import android.app.Activity;
 import android.text.TextUtils;

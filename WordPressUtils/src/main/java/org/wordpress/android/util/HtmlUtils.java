@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -11,10 +11,10 @@ import android.text.style.ForegroundColorSpan;
 import android.text.style.QuoteSpan;
 
 import org.apache.commons.text.StringEscapeUtils;
-import org.wordpress.android.util.helpers.WPHtmlTagHandler;
-import org.wordpress.android.util.helpers.WPQuoteSpan;
+import org.sitebay.android.util.helpers.WPHtmlTagHandler;
+import org.sitebay.android.util.helpers.WPQuoteSpan;
 
-import static org.wordpress.android.util.AppLog.T.UTILS;
+import static org.sitebay.android.util.AppLog.T.UTILS;
 
 public class HtmlUtils {
     /**
@@ -87,10 +87,10 @@ public class HtmlUtils {
 
     /**
      * Remove {@code <script>..</script>} blocks from the passed string - added to project after noticing
-     * comments on posts that use the "Sociable" plugin ( http://wordpress.org/plugins/sociable/ )
+     * comments on posts that use the "Sociable" plugin ( http://sitebay.org/plugins/sociable/ )
      * may have a script block which contains {@code <!--//-->} followed by a CDATA section followed by {@code <!]]>,}
      * all of which will show up if we don't strip it here.
-     * @see <a href="http://wordpress.org/plugins/sociable/">Wordpress Sociable Plugin</a>
+     * @see <a href="http://sitebay.org/plugins/sociable/">Wordpress Sociable Plugin</a>
      * @return String without {@code <script>..</script>}, {@code <!--//-->} blocks followed by a CDATA section
      * followed by {@code <!]]>,}
      * @param text String containing script tags

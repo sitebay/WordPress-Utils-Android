@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 wordpress.org
+ * Copyright (C) 2011 sitebay.org
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

@@ -1,8 +1,8 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.os.SystemClock;
 
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.ArrayList;
 

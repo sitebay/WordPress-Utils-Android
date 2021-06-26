@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -10,9 +10,9 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
 import androidx.core.app.NotificationCompat;
 
-import static org.wordpress.android.util.AutoForeground.NOTIFICATION_ID_FAILURE;
-import static org.wordpress.android.util.AutoForeground.NOTIFICATION_ID_PROGRESS;
-import static org.wordpress.android.util.AutoForeground.NOTIFICATION_ID_SUCCESS;
+import static org.sitebay.android.util.AutoForeground.NOTIFICATION_ID_FAILURE;
+import static org.sitebay.android.util.AutoForeground.NOTIFICATION_ID_PROGRESS;
+import static org.sitebay.android.util.AutoForeground.NOTIFICATION_ID_SUCCESS;
 
 public class AutoForegroundNotification {
     private static Intent getResumeIntent(Context context) {

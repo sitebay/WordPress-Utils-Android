@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.annotation.TargetApi;
 import android.content.ContentUris;
@@ -17,7 +17,7 @@ import android.webkit.MimeTypeMap;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.DataInputStream;
 import java.io.File;

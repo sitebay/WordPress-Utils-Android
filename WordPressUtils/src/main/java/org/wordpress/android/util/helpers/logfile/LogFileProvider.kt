@@ -1,4 +1,4 @@
-package org.wordpress.android.util.helpers.logfile
+package org.sitebay.android.util.helpers.logfile
 
 import android.content.Context
 import java.io.File

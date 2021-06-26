@@ -40,7 +40,7 @@ dependencies {
     testImplementation "org.robolectric:robolectric:4.4"
     testImplementation 'androidx.test:core:1.0.0'
 
-    lintChecks 'org.wordpress:lint:1.0.1'
+    lintChecks 'org.sitebay:lint:1.0.1'
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test:rules:1.1.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
@@ -88,7 +88,7 @@ android.libraryVariants.all { variant ->
 }
 
 s3PublishLibrary {
-    groupId "org.wordpress"
+    groupId "org.sitebay"
     artifactId "utils"
     from "release"
 }

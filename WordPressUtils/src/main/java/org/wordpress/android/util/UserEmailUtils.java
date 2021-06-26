@@ -1,11 +1,11 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.content.Context;
 import android.util.Patterns;
 
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog.T;
 
 import java.util.regex.Pattern;
 

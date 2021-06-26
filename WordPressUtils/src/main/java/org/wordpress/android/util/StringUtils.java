@@ -1,11 +1,11 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.text.TextUtils;
 
 import androidx.annotation.StringRes;
 
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog.T;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -227,7 +227,7 @@ public class StringUtils {
 
     /*
      * Wrap an image URL in a photon URL
-     * Check out http://developer.wordpress.com/docs/photon/
+     * Check out http://developer.sitebay.com/docs/photon/
      */
     public static String getPhotonUrl(String imageUrl, int size) {
         imageUrl = imageUrl.replace("http://", "").replace("https://", "");

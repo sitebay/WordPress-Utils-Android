@@ -1,5 +1,6 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
+import org.sitebay.android.util.ToastUtils;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;

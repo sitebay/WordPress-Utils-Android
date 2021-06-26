@@ -1,4 +1,4 @@
-package org.wordpress.android.util.helpers.logfile
+package org.sitebay.android.util.helpers.logfile
 
 /**
  * Prunes the Log File Store by retaining only the last `maxLogFileCount` log files.

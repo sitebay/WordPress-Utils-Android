@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -9,9 +9,9 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import org.wordpress.android.util.helpers.logfile.LogFileCleaner;
-import org.wordpress.android.util.helpers.logfile.LogFileProvider;
-import org.wordpress.android.util.helpers.logfile.LogFileWriter;
+import org.sitebay.android.util.helpers.logfile.LogFileCleaner;
+import org.sitebay.android.util.helpers.logfile.LogFileProvider;
+import org.sitebay.android.util.helpers.logfile.LogFileWriter;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

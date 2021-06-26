@@ -1,6 +1,6 @@
 //Add WordPress image fields to ImageSpan object
 
-package org.wordpress.android.util.helpers;
+package org.sitebay.android.util.helpers;
 
 import android.content.Context;
 import android.graphics.Bitmap;

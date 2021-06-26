@@ -1,4 +1,4 @@
-package org.wordpress.android.util.widgets;
+package org.sitebay.android.util.widgets;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,7 +7,7 @@ import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.wordpress.android.util.R;
+import org.sitebay.android.util.R;
 
 /**
  * Custom TextInputLayout to provide a usable getBaseline() and error view padding

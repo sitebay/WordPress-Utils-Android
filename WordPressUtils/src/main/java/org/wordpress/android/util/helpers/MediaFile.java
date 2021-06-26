@@ -1,11 +1,11 @@
-package org.wordpress.android.util.helpers;
+package org.sitebay.android.util.helpers;
 
 import android.text.TextUtils;
 import android.webkit.MimeTypeMap;
 
-import org.wordpress.android.util.MapUtils;
-import org.wordpress.android.util.StringUtils;
-import org.wordpress.android.util.UrlUtils;
+import org.sitebay.android.util.MapUtils;
+import org.sitebay.android.util.StringUtils;
+import org.sitebay.android.util.UrlUtils;
 
 import java.util.Date;
 import java.util.Locale;

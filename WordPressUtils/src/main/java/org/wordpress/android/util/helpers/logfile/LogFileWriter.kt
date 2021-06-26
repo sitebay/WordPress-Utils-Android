@@ -1,11 +1,11 @@
-package org.wordpress.android.util.helpers.logfile
+package org.sitebay.android.util.helpers.logfile
 
 import android.util.Log
 import org.jetbrains.annotations.TestOnly
 import java.io.File
 import java.io.FileWriter
 import java.util.Date
-import org.wordpress.android.util.DateTimeUtils
+import org.sitebay.android.util.DateTimeUtils
 import java.io.IOException
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors

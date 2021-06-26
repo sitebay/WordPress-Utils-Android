@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.text.TextUtils;
 
@@ -7,7 +7,7 @@ import java.net.URL;
 
 /**
  * routines related to the Photon API
- * http://developer.wordpress.com/docs/photon/
+ * http://developer.sitebay.com/docs/photon/
  */
 public class PhotonUtils {
     private PhotonUtils() {
@@ -31,7 +31,7 @@ public class PhotonUtils {
         LOW
     }
 
-    public static final String ATOMIC_MEDIA_PROXY_URL_PREFIX = "https://public-api.wordpress.com/wpcom/v2/sites/";
+    public static final String ATOMIC_MEDIA_PROXY_URL_PREFIX = "https://public-api.sitebay.com/wpcom/v2/sites/";
     public static final String ATOMIC_MEDIA_PROXY_URL_SUFFIX = "/atomic-auth-proxy/file";
 
     public static String getPhotonImageUrl(String imageUrl, int width, int height) {
@@ -126,9 +126,9 @@ public class PhotonUtils {
             }
         }
 
-        // use wordpress.com as the host if image is on wordpress.com since it supports the same
+        // use sitebay.com as the host if image is on sitebay.com since it supports the same
         // query params and, more importantly, can handle images in private blogs
-        if (imageUrl.contains("wordpress.com")) {
+        if (imageUrl.contains("sitebay.com")) {
             return imageUrl + query;
         }
 

@@ -1,4 +1,4 @@
-package org.wordpress.android.util.helpers;
+package org.sitebay.android.util.helpers;
 
 import java.io.Serializable;
 import java.util.ArrayList;

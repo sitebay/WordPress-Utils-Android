@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -7,7 +7,7 @@ import android.webkit.URLUtil;
 
 import androidx.annotation.Nullable;
 
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog.T;
 
 import java.io.UnsupportedEncodingException;
 import java.net.IDN;
@@ -20,8 +20,8 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import static org.wordpress.android.util.PhotonUtils.ATOMIC_MEDIA_PROXY_URL_PREFIX;
-import static org.wordpress.android.util.PhotonUtils.ATOMIC_MEDIA_PROXY_URL_SUFFIX;
+import static org.sitebay.android.util.PhotonUtils.ATOMIC_MEDIA_PROXY_URL_PREFIX;
+import static org.sitebay.android.util.PhotonUtils.ATOMIC_MEDIA_PROXY_URL_SUFFIX;
 
 public class UrlUtils {
     public static String urlEncode(final String text) {
@@ -130,7 +130,7 @@ public class UrlUtils {
         // is slow, so skip it when possible - if we know it's not a relative path (and 99.9% of the
         // time it won't be for our purposes) then we can normalize it without java.net.URI.normalize()
         if (urlString.startsWith("http")
-            && !urlString.contains("build/intermediates/exploded-aar/org.wordpress/graphview/3.1.1")) {
+            && !urlString.contains("build/intermediates/exploded-aar/org.sitebay/graphview/3.1.1")) {
             // return without a trailing slash
             if (urlString.endsWith("/")) {
                 return urlString.substring(0, urlString.length() - 1);

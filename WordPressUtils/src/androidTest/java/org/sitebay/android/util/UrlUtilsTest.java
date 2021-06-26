@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import org.junit.Test;
 
@@ -20,15 +20,15 @@ public class UrlUtilsTest {
 
     @Test
     public void testGetDomainFromUrlWithNoHostDoesNotReturnNull() {
-        assertNotNull(UrlUtils.getHost("wordpress"));
+        assertNotNull(UrlUtils.getHost("sitebay"));
     }
 
     @Test
     public void testGetDomainFromUrlWithHostReturnsHost() {
-        String url = "http://www.wordpress.com";
+        String url = "http://www.sitebay.com";
         String host = UrlUtils.getHost(url);
 
-        assertTrue(host.equals("www.wordpress.com"));
+        assertTrue(host.equals("www.sitebay.com"));
     }
 
     @Test
@@ -97,27 +97,27 @@ public class UrlUtilsTest {
 
     @Test
     public void testHttps1() {
-        assertFalse(UrlUtils.isHttps(buildURL("http://wordpress.com/xmlrpc.php")));
+        assertFalse(UrlUtils.isHttps(buildURL("http://sitebay.com/xmlrpc.php")));
     }
 
     @Test
     public void testHttps2() {
-        assertFalse(UrlUtils.isHttps(buildURL("http://wordpress.com#.b.com/test")));
+        assertFalse(UrlUtils.isHttps(buildURL("http://sitebay.com#.b.com/test")));
     }
 
     @Test
     public void testHttps3() {
-        assertFalse(UrlUtils.isHttps(buildURL("http://wordpress.com/xmlrpc.php")));
+        assertFalse(UrlUtils.isHttps(buildURL("http://sitebay.com/xmlrpc.php")));
     }
 
     @Test
     public void testHttps4() {
-        assertTrue(UrlUtils.isHttps(buildURL("https://wordpress.com")));
+        assertTrue(UrlUtils.isHttps(buildURL("https://sitebay.com")));
     }
 
     @Test
     public void testHttps5() {
-        assertTrue(UrlUtils.isHttps(buildURL("https://wordpress.com/test#test")));
+        assertTrue(UrlUtils.isHttps(buildURL("https://sitebay.com/test#test")));
     }
 
     private URL buildURL(String address) {

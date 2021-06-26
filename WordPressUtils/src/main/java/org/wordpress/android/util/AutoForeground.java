@@ -1,4 +1,4 @@
-package org.wordpress.android.util;
+package org.sitebay.android.util;
 
 import android.app.Notification;
 import android.app.Service;
@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationManagerCompat;
 
 import org.greenrobot.eventbus.EventBus;
-import org.wordpress.android.util.AutoForeground.ServiceState;
+import org.sitebay.android.util.AutoForeground.ServiceState;
 
 import java.util.HashMap;
 import java.util.Map;

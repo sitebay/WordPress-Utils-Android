@@ -1,4 +1,4 @@
-package org.wordpress.android.util.widgets;
+package org.sitebay.android.util.widgets;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

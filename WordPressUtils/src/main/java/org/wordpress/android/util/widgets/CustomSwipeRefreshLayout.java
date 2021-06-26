@@ -1,4 +1,4 @@
-package org.wordpress.android.util.widgets;
+package org.sitebay.android.util.widgets;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,8 +6,8 @@ import android.view.MotionEvent;
 
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import org.wordpress.android.util.AppLog;
-import org.wordpress.android.util.AppLog.T;
+import org.sitebay.android.util.AppLog;
+import org.sitebay.android.util.AppLog.T;
 
 public class CustomSwipeRefreshLayout extends SwipeRefreshLayout {
     public CustomSwipeRefreshLayout(Context context) {
