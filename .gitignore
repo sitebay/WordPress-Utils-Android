@@ -48,7 +48,6 @@ local.properties
 
 # Gradle
 .gradle/
-gradle.properties
 
 # Silver Searcher ignore file
 .agignore

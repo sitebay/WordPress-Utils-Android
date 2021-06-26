@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.wordpress:utils:1.0.0'
+    implementation 'org.sitebay:utils:1.18.10.0'
 }
 ```
 
